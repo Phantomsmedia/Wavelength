@@ -9,9 +9,8 @@ This is a template designed to make mission development more fluid and easy. It 
 
 FAQ:
 
-
-
-
+Q: Who can I ask specific questions about F2?
+A: Batboyx2
 
 
 
