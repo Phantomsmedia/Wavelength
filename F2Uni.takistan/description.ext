@@ -1,0 +1,222 @@
+disabledAI = true; //Disables all AI on mission start
+enableItemsDropping = 0; //Turns off gear dropping while swimming
+loadScreen = "LoadingScreen.jpg"; //Sets our loading screen to our logo (CAN BE CHANGED)
+// ============================================================================================
+
+// F2 - Mission Header
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 970;
+};
+
+// ============================================================================================
+
+// F2 - Respawn Settings
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+respawn = "BIRD";
+// ============================================================================================
+
+// F2 - JIP Reinforcement Options
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+#include "f\common\f_JIP_kitpicker.h"
+#include "f\common\f_JIP_grppicker.h"
+
+// ============================================================================================
+
+// F2 - Start of Params code blocks.
+// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+
+class Params
+{
+
+// ============================================================================================
+
+// F2 - Whether AssignGear should allow Backpacks for OA/BAF/PMC units. Works only on A2 units in CO 1.63 or later.
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+// WARNING: DO NOT DISABLE THIS COMPONENT OR CHANGE POSITION IN PARAMS; IT MUST BE REFERENCABLE
+// AS "paramsarray select 0" FOR GEAR SCRIPTS TO WORK CORRECTLY
+//	class f_param_useBackpacks
+//        {
+//                title = "OA Backpacks";
+//                values[] = {0,1};
+//                texts[] = {"Off","On"};
+//                default = 0;
+//               code = "f_param_useBackpacks = %1";
+//        }; 
+		
+// ============================================================================================
+
+// F2 - ACRE Support
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+// WARNING: DO NOT DISABLE THIS COMPONENT OR CHANGE POSITION IN PARAMS; IT MUST BE REFERENCABLE
+// AS "paramsarray select 1" FOR GEAR SCRIPTS TO WORK CORRECTLY
+
+//        class f_param_acre
+//        {
+//                title = "ACRE";
+//                values[] = {0,1};
+//                texts[] = {"Off","On"};
+//                default = 1;
+//                code = "f_var_acre = %1";
+//        }; 
+
+// ============================================================================================
+
+// F2 - Debug Mode
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+// WARNING: DO NOT DISABLE THIS COMPONENT
+
+//        class f_param_debugMode
+//        {
+//                title = "$STR_f_param_debugMode";
+//                values[] = {0,1};
+//                texts[] = {"Off","On"};
+//                default = 0;
+//                code = "f_var_debugMode = %1";
+//        }; 
+
+
+
+// ============================================================================================
+
+// F2 - AI Skill Selector (coop)
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+//	class f_param_AISkill_Friendly
+//	{
+//		title = "$STR_f_param_AISkill_Friendly";
+//		values[] = {0,1,2,3};
+//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+//		default = 2;
+//		code = "f_param_AISkill_Friendly = %1";
+//	};
+//	class f_param_AISkill_Enemy
+//	{
+//		title = "$STR_f_param_AISkill_Enemy";
+//		values[] = {0,1,2,3};
+//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+//		default = 2;
+//		code = "f_param_AISkill_Enemy = %1";
+//	};
+
+// ============================================================================================
+
+// F2 - AI Skill Selector (A&D)
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+//	class f_param_AISkill_BLUFOR
+//	{
+//		title = "$STR_f_param_AISkill_BLUFOR";
+//		values[] = {0,1,2,3};
+//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+//		default = 2;
+//		code = "f_param_AISkill_BLUFOR = %1";
+//	};
+//	class f_param_AISkill_OPFOR
+//	{
+//		title = "$STR_f_param_AISkill_OPFOR";
+//		values[] = {0,1,2,3};
+//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+//		default = 2;
+//		code = "f_param_AISkill_OPFOR = %1";
+//	};
+
+	class f_param_fogClouds
+	{
+		title = "Rolling/Volumetric Clouds";
+		values[] = {0,1};
+		texts[] = {Off,On};
+		default = 0;
+		code = "f_param_fogClouds = %1";
+	};
+	class f_param_fogDensity
+	{
+		title = "Rolling/Volumetric Clouds: Density";
+		values[] = {10,20,35,50,80,150};
+		texts[] = {Low,Low-Mid,Mid,High-Mid,High,Extreme};
+		default = 35;
+		code = "f_param_fogDensity = %1";
+	};
+	class f_param_fogOpacity
+	{
+		title = "Rolling/Volumetric Clouds: Visibility";
+		values[] = {9.8,7,5,4,1};
+		texts[] = {Low,Low-Mid,Mid,Mid-High,High};
+		default = 5;
+		code = "f_param_fogOpacity = %1";
+	};
+	class f_param_fogType
+	{
+		title = "Rolling/Volumetric Clouds: Type";
+		values[] = {1,2};
+		texts[] = {Fog,Dust};
+		default = 1;
+		code = "f_param_fogType = %1";
+	};
+	class HeadlessClient
+	{
+		title = "Headless Client";
+		values[] = {0,1};
+		texts[] = {"OFF","ON"};
+		default = 0;
+		code = "HeadlessClient = %1";
+	};
+	class f_param_gps
+	{
+		title = "GPS For...";
+		values[] = {2,1,0};
+		texts[] = {"All","Leadership","Nobody"};
+		default = 1;
+		code = "f_param_gps = %1";
+	};
+	class f_param_safestart
+	{
+		title = "Safe-start Time";
+		values[] = {10,5,1,0};
+		texts[] = {"10 Minutes","5 Minutes","1 Minute","Off"};
+		default = 5;
+		code = "f_param_safestart = %1";
+	};
+// ============================================================================================
+
+// F2 - End of Params code blocks.
+// WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
+
+};
+
+// ============================================================================================
+
+// F2 - Kegetys Spectator Script
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+#include "f\common\f_spect\spectating.hpp"
+
+// ============================================================================================
+
+// F2 - Gear Snippets
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+// #include "f\common\f_gearSnippets.hpp"
+
+// ============================================================================================
+
+class RscTitles {
+
+// ============================================================================================
+
+// F2 - Name Tags
+// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
+
+// #include "f\common\f_recog\recogOverlay.hpp"
+
+// ============================================================================================
+
+};
+
+// ============================================================================================

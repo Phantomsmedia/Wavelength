@@ -1,0 +1,93 @@
+BLUFOR
+	_ruckSack
+		CHARLIE
+			ACE_CharliePack ------------> http://imgur.com/RcdgoGZ.jpg -> Light Green/Shitty as Hell
+			ACE_CharliePack_ACU --------> http://imgur.com/ffkBgov.jpg -> Grey/Green Colored ACU, Urban?
+			ACE_CharliePack_FLORA ------> http://imgur.com/dfCFppu.jpg -> Dark Colored Woodland
+			ACE_CharliePack_Multicam ---> http://imgur.com/nDxrL86.jpg -> Light Green Multicam
+			ACE_CharliePack_WMARPAT ----> http://imgur.com/5WiFa63.jpg -> Mid-Green Marpat, Panthera?
+	
+		COYOTE
+			ACE_Coyote_Pack ------------> http://imgur.com/Agr4ip7.jpg -> Brown, Standard Ruck No Camo
+			ACE_Coyote_Pack_Black ------> http://imgur.com/NFgmgFO.jpg -> Straight Black Ruck, Night Ops?
+			ACE_Coyote_Pack_Flora ------> http://imgur.com/qfXmAuo.jpg -> Dark-Green Woodland
+			ACE_Coyote_Pack_Multicam ---> http://imgur.com/ra8UjLx.jpg -> Woodland Multicam
+			ACE_Coyote_Pack_Wood -------> http://imgur.com/UJcwnrM.jpg -> Standard Woodland
+
+		MOLLE
+			ACE_Rucksack_MOLLE_ACU -----> http://imgur.com/no5cvnq.jpg -> ACU, Green/Grey, Urban?
+			ACE_Rucksack_MOLLE_Brown ---> http://imgur.com/UKjWklO.jpg -> Straight Brown Ruck
+			ACE_Rucksack_MOLLE_DMARPAT -> http://imgur.com/VOx8K4j.jpg -> Desert Marpat
+			ACE_Rucksack_MOLLE_Green ---> http://imgur.com/wyfLQ34.jpg -> Straight Green Ruck
+			ACE_Rucksack_MOLLE_WMARPAT -> http://imgur.com/qQBzI8h.jpg -> Woodland Marpat
+			ACE_Rucksack_MOLLE_Wood ----> http://imgur.com/3bjwysI.jpg -> Dark Green Woodland, Panthera?
+	
+		RUSH
+			ACE_VTAC_RUSH72 ------------> http://imgur.com/NNba56s.jpg -> Straight Black, Night/Spec Ops?
+			ACE_VTAC_RUSH72_ACU --------> http://imgur.com/p35I8zQ.jpg -> Grey ACU, Urban Combat?
+			ACE_VTAC_RUSH72_OD ---------> http://imgur.com/pOukAyh.jpg -> Straight Olive Drab
+			
+		F.A.S.T.
+			ACE_FAST_PackEDC -----------> http://imgur.com/v0zrzsp.jpg -> Brown Rucksack
+			ACE_FAST_PackEDC_ACU -------> http://imgur.com/DssOKrM.jpg -> Grey ACU, Urban?
+		
+		ACR
+			ACE_BackPack_ACR_DDPM ------> http://imgur.com/Nn5S9IL.jpg -> Light Desert
+			ACE_BackPack_ACR_DPM -------> http://imgur.com/JszhcTK.jpg -> Dirty/Dark Woodland
+			ACE_BackPack_ACR_FL --------> http://imgur.com/WsWuYWq.jpg -> Dirtier/Darker Woodland
+			ACE_BackPack_ACR_MTP -------> http://imgur.com/kwEqwdp.jpg -> Desert
+			ACE_BackPack_ACR_TT --------> http://imgur.com/9bLag44.jpg -> Woodland/Desert/I Have No Clue (Everglades? Badlands? hehe)
+			
+		GERMAN (Big Coyote)
+			ACE_BackPack_ACU -----------> http://imgur.com/F6OT1IT.jpg -> Snowy Camo, Not Really ACU
+			ACE_BackPack_FL ------------> http://imgur.com/ARw89Us.jpg -> Blotchy Woodland
+			ACE_BackPack_Multicam ------> http://imgur.com/bvtPl7M.jpg -> Tundra?
+			ACE_BackPack_Olive ---------> http://imgur.com/tKavpZo.jpg -> Olive Drab/Green Straight
+			ACE_BackPack_TT ------------> http://imgur.com/gT7RAnb.jpg -> Dirty Desert
+			ACE_BackPack_US ------------> http://imgur.com/3G4UQJv.jpg -> Straight Tan
+			ACE_BackPack_Wood ----------> http://imgur.com/NArqRQS.jpg -> Straight Woodland
+			
+	_radioRuckSack
+		PRC-119
+			ACE_PRC119 -----------------> http://imgur.com/4mLU9HD.jpg -> Standard Green
+			ACE_PRC119_ACU -------------> http://imgur.com/BT4GTzJ.jpg -> Standard Grey/Green ACU, Urban?
+			ACE_PRC119_MAR -------------> http://imgur.com/etA4e1l.jpg -> Standard Woodland
+
+		PRC-117
+			
+			
+			
+	_medicRuckSack
+		CHARLIE
+			ACE_CharliePack_ACU_Medic --> http://imgur.com/Zckl4TX.jpg -> Grey/Green ACU, Urban?
+			
+		MOLLE
+			ACE_Rucksack_MOLLE_ACU_Medic -----> http://imgur.com/no5cvnq.jpg -> ACU, Green/Grey, Urban?
+			ACE_Rucksack_MOLLE_Brown_Medic ---> http://imgur.com/UKjWklO.jpg -> Straight Brown Ruck
+			ACE_Rucksack_MOLLE_DMARPAT_Medic -> http://imgur.com/VOx8K4j.jpg -> Desert Marpat
+			ACE_Rucksack_MOLLE_Green_Medic ---> http://imgur.com/wyfLQ34.jpg -> Straight Green Ruck
+			ACE_Rucksack_MOLLE_WMARPAT_Medic -> http://imgur.com/qQBzI8h.jpg -> Woodland Marpat
+			ACE_Rucksack_MOLLE_Wood_Medic ----> http://imgur.com/3bjwysI.jpg -> Dark Green Woodland, Panthera?
+
+
+
+OPFOR/INDFOR
+	_ruckSack
+		INSURGENCY
+			ACE_ALICE_Backpack ---------------> http://imgur.com/E8nyhoA.jpg -> Straight Olive Drab/Green
+			ACE_BackPack_ACR -----------------> http://imgur.com/iXwdJbg.jpg -> Standard Woodland
+			ACE_Backpack_CivAssault ----------> http://imgur.com/74r9fy8.jpg -> Standard Woodland
+			ACE_Backpack_RPG -----------------> http://imgur.com/zVQ1e28.jpg -> Holds RPG Rounds, Green
+		
+		GENERIC
+			ACE_Rucksack_EAST ----------------> http://imgur.com/egq04qB.jpg -> Woodland, Standard
+			ACE_Rucksack_RD(54,90,91,92,99) --------------> http://imgur.com/egq04qB.jpg -> Woodland, Standard, All RD Backpacks are the same.
+			
+	_medicRuckSack
+		GENERIC
+			ACE_Rucksack_EAST_Medic ----------> http://imgur.com/egq04qB.jpg -> Standard Woodland
+	
+	_radioRuckSack
+		None, Diddly squat, use one of the BLUFOR ones or just not at all.
+
+

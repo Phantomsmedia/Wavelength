@@ -1,0 +1,197 @@
+/*
+Fog script v1.62
+Made by Rockhount[BAfH] (visit us on http://www.bafh.eu/ )
+
+Install:
+Open the editor, create a new unit/object and put the example into the init of the unit, after that save the mission.
+Then open the folder .../Dokuments/ArmA 2 Other Profiles/Nickname/missions/misisonsname and copy the script into the folder.
+
+example: null=[l1,100,11,10,3,7,-0.3,0.1,0.5,1,1,1,13,12,15,true,2,2.1,0.1,4,6,0,3.5,17.5] execFSM "Fog.fsm";
+l1 = name of unit (use "" for markers and when you on a  multiplayer session only want to set the fog around the player: run the script once! with 'Player' (not 'this' and not 'name of the unit/object'!!!), example: null=[Player,200,10,... )
+If the unit/building was destroyed/died or the marker was deleted, the script will exit automatically!
+100 = Maximumdistance
+11 = Minimumdistance
+10 = Count of clouds
+3 = Minimumsize of clouds
+7 = Maximumsize of clouds
+-0.3 = Height of clouds (must be a bit below the ground to look realistic)
+0.1 = Respawntime of clouds
+0.5 = Transparency
+1,1,1 = Color of clouds
+13 = Remove-speed of clouds
+12 = Minimumlifetime of clouds
+15 = Maximumlifetime of clouds
+true = The fog will be effected by wind (for no wind effect: false)
+2 = Windstrength (acts only when the wind effect is 'true')
+2.1 = Random-direction-period(in seconds) (acts only when the wind effect is 'true')
+0.1 = Random-direction-intensity (acts only when the wind effect is 'true')
+4,6,0 = Move-direction-speed (x,y,z) - same effect as wind, but constant and adjustable(acts only when the wind effect is 'false')
+3.5 = Stardaytime (the fog will spawn when the ingametime is 03:30)
+17.5 = Enddaytime (the fog will spawn when the ingametime is 17:30)
+RandomDirectionPeriod 2.1 with RandomDirectionIntensity 0.1 means that 0.1 will be added to the direction-speed (x,y,z-randomized) of a moving-cloud every 2.1 seconds.
+
+An example for norrins revive-script:
+revive_init.sqf:
+NORRNCustomExec1 ="null=[Player,100,11,10,3,7,-0.3,0.1,0.5,1,1,1,13,12,15,true,1,2.1,0.1,4,6,0,0,24] execFSM ""Fog.fsm"";"; // Exec1 occurs following being revived
+NORRNCustomExec3 ="null=[Player,100,11,10,3,7,-0.3,0.1,0.5,1,1,1,13,12,15,true,1,2.1,0.1,4,6,0,0,24] execFSM ""Fog.fsm"";"; // Exec3 occurs when you spawn at base
+*/
+class FSM
+{
+  fsmName = "Fog";
+  class States
+  {
+    class Start
+    {
+      name = "Start";
+      init = "private [""_Center"",""_xdistanz"",""_mdistanz"",""_dichte"",""_msize"",""_xsize"",""_height"",""_zeit"",""_transparency"",""_col1"",""_col2"",""_col3"",""_mlifetime"",""_xlifetime"",""_spawn"",""_wind"",""_windstrength"",""_forward2"",""_right2"",""_up"",""_dirPeroid"",""_dirIntensity"",""_mtime"",""_xtime""];" \n
+       "_Center = _this select 0;" \n
+       "_xdistanz = if (count _this > 1) then {_this select 1} else {80};" \n
+       "_mdistanz = if (count _this > 2) then {_this select 2} else {10};" \n
+       "_dichte = if (count _this > 3) then {_this select 3} else {10};" \n
+       "_msize = if (count _this > 4) then {_this select 4} else {3};" \n
+       "_xsize = if (count _this > 5) then {_this select 5} else {7};" \n
+       "_height = if (count _this > 6) then {_this select 6} else {-0.3};" \n
+       "_zeit = if (count _this > 7) then {_this select 7} else {0.1};" \n
+       "_transparency = if (count _this > 8) then {_this select 8} else {0.5};" \n
+       "_col1 = if (count _this > 9) then {_this select 9} else {1};" \n
+       "_col2 = if (count _this > 10) then {_this select 10} else {1};" \n
+       "_col3 = if (count _this > 11) then {_this select 11} else {1};" \n
+       "_spawn = if (count _this > 12) then {_this select 12} else {15 + (random 1)};" \n
+       "_mlifetime = if (count _this > 13) then {_this select 13} else {8 + (random 1)};" \n
+       "_xlifetime = if (count _this > 14) then {_this select 14} else {15 + (random 1)};" \n
+       "_wind = if (count _this > 15) then {_this select 15} else {true};" \n
+       "_windstrength = if ((count _this > 16) && _wind) then {_this select 16} else {1};" \n
+       "_dirPeroid =  if ((count _this > 17) && _wind) then {_this select 17} else {0};" \n
+       "_dirIntensity =  if ((count _this > 18) && _wind) then {_this select 18} else {0};" \n
+       "_forward2 = if ((count _this > 19) && (!(_wind))) then {_this select 19} else {0};" \n
+       "_right2 = if ((count _this > 20) && (!(_wind))) then {_this select 20} else {0};" \n
+       "_up = if ((count _this > 21) && (!(_wind))) then {_this select 21} else {0};" \n
+       "_mtime =  if (count _this > 22) then {_this select 22} else {0};" \n
+       "_xtime =  if (count _this > 23) then {_this select 23} else {24};";
+      precondition = "";
+      class Links
+      {
+        class isDedicated
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="isDedicated";
+          action="";
+        };
+        class not_isDedicated
+        {
+          priority = 0.000000;
+          to="Fog";
+          precondition = "";
+          condition="!(isDedicated)";
+          action="";
+        };
+      };
+    };
+    class Fog
+    {
+      name = "Fog";
+      init = "private [""_time"",""_zeit"",""_x"",""_height"",""_radius"",""_size"",""_msize"",""_xsize"",""_randomdir"",""_CC"",""_Center"",""_xdistanz"",""_mdistanz"",""_dichte"",""_transparency"",""_col1"",""_col2"",""_col3"",""_Pos"",""_lifetime"",""_mlifetime"",""_xlifetime"",""_spawn"",""_wind"",""_windstrength"",""_right"",""_forward"",""_up"",""_forward2"",""_right2"",""_dirPeroid"",""_dirIntensity"",""_mtime"",""_xtime""];" \n
+       "_time = time + _zeit;" \n
+       "if (typename _Center == typename """") then {_Pos = getMarkerpos _Center} else {_Pos = getPos _Center};" \n
+       "if (_wind) then {_right = (wind select 0) * _windstrength;_forward = (wind select 1) * _windstrength} else {_right = _right2;_forward = _forward2};" \n
+       "if ((daytime > _mtime) && (daytime < _xtime)) then {" \n
+       "for [{_x=1},{_x<=_dichte},{_x=_x+1}] do {" \n
+       "_radius= _mdistanz + random (_xdistanz - _mdistanz);" \n
+       "_CC = [_col1,_col2,_col3,.3*_transparency];" \n
+       "_size = _msize + random (_xsize - _msize);" \n
+       "_randomdir = random 360;" \n
+       "_lifetime = _mlifetime + random (_xlifetime - _mlifetime);" \n
+       "drop [""\ca\data\cl_basic"","""",""Billboard"",_spawn,_lifetime,[(_Pos select 0)+_radius*sin _randomdir,(_Pos select 1)+_radius*cos _randomdir,_height],[_right,_forward,_up],5,0.2,0.1568,0,[_size],[[_col1,_col2,_col3,0],_CC,_CC,_CC,_CC,_CC,_CC,[_col1,_col2,_col3,0]],[0],_dirPeroid,_dirIntensity,"""", """",""""];" \n
+       "};" \n
+       "} else { " \n
+       "_time = time + 5;" \n
+       "};";
+      precondition = "";
+      class Links
+      {
+        class if_object
+        {
+          priority = 0.000000;
+          to="dummy";
+          precondition = "";
+          condition="!(typename _Center == typename """")";
+          action="";
+        };
+        class if_marker
+        {
+          priority = 0.000000;
+          to="dummy_1";
+          precondition = "";
+          condition="typename _Center == typename """"";
+          action="";
+        };
+      };
+    };
+    class End
+    {
+      name = "End";
+      init = "";
+      precondition = "";
+      class Links
+      {
+      };
+    };
+    class dummy
+    {
+      name = "dummy";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class wait
+        {
+          priority = 0.000000;
+          to="Fog";
+          precondition = "";
+          condition="time > _time";
+          action="";
+        };
+        class if_object_or_unit
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="!(alive _Center)";
+          action="";
+        };
+      };
+    };
+    class dummy_1
+    {
+      name = "dummy_1";
+      init = "";
+      precondition = "";
+      class Links
+      {
+        class wait
+        {
+          priority = 0.000000;
+          to="Fog";
+          precondition = "";
+          condition="time > _time";
+          action="";
+        };
+        class if_marker_not_ex
+        {
+          priority = 0.000000;
+          to="End";
+          precondition = "";
+          condition="((getMarkerPos _Center select 0) == 0) && ((getMarkerPos _Center select 1) == 0)";
+          action="";
+        };
+      };
+    };
+  };
+  initState="Start";
+  finalStates[] =
+  {
+    "End",
+  };
+};
