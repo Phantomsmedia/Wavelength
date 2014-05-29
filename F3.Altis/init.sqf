@@ -120,8 +120,8 @@ f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 // F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-// [] execVM "f\setAISKill\f_setAISkill.sqf";
-// f_var_civAI = independent; // Optional: The civilian AI will use this side's settings
+ [] execVM "f\setAISKill\f_setAISkill.sqf";
+ f_var_civAI = independent; // Optional: The civilian AI will use this side's settings
 
 // ====================================================================================
 
@@ -200,6 +200,6 @@ sleep 2;
 // PhanTactical - Farooq's Revive and Medical Management (Drag/Carry)
 // Credits: Farooq's Revive
 // If you wish to change medical style from "All can revive", please refer to the readme inside "FAR_Revive".
-call compileFinal preprocessFileLineNumbers "FAR_revive\FAR_revive_init.sqf";
+//call compileFinal preprocessFileLineNumbers "FAR_revive\FAR_revive_init.sqf";
 
 // ====================================================================================
