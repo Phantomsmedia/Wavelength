@@ -39,6 +39,9 @@ _typeofUnit = toLower (_this select 0);
 _unit = _this select 1;
 _faction = toLower (faction _unit);
 
+
+
+
 // If the unitfaction is different from the group leader's faction and the unit is not a vehicle, the latters faction is used
 if ((_unit isKindOF "CAManBase")&&(_faction != toLower (faction (leader group _unit)))) then {_faction = toLower (faction (leader group _unit))};
 
@@ -269,4 +272,10 @@ if (isNil "_carbine") then { //_carbine should exist unless no faction has been 
 
 if (isServer) then {
 	[] execVM "f\common\folk_assignGearCleanUp.sqf";
+};
+
+// ADD MAP TOOLS TO ALL UNITS
+[] spawn {
+	sleep 5;
+	_unit addWeapon "ACE_Map_Tools";
 };

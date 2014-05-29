@@ -1,3 +1,8 @@
+[] spawn {
+	player allowDamage false;
+	{_x allowDamage false;} forEach playableUnits;
+};
+
 _trg = createTrigger ["EmptyDetector", position player]; 
 _trg setTriggerText "View Distance - 100"; 
 _trg setTriggerActivation ["DELTA", "PRESENT", true]; 

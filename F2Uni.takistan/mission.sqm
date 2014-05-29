@@ -68,7 +68,13 @@ class Mission
 		"mas_usa_rang_ace2_cfg_repl",
 		"CAAir_E_AH6J",
 		"cawheeled2_m1114_armored",
-		"cawheeled_e_hmmwv"
+		"cawheeled_e_hmmwv",
+		"ace_sys_wounds",
+		"ace_main",
+		"ace_sys_repair",
+		"ace_sys_vehicledamage",
+		"ace_sys_aitalk",
+		"ace_sys_viewblock"
 	};
 	addOnsAuto[]=
 	{
@@ -83,6 +89,13 @@ class Mission
 		"rw_characters",
 		"us_military_units",
 		"mas_usa_rang_ace2_cfg_repl",
+		"ace_sys_wounds",
+		"ace_main",
+		"ace_sys_repair",
+		"ace_sys_vehicledamage",
+		"ace_sys_aitalk",
+		"ace_sys_viewblock",
+		"ace_sys_crewserved",
 		"CATracked_E",
 		"CATracked",
 		"caair_e_mi8",
@@ -127,7 +140,6 @@ class Mission
 		"cawheeled_pmc_armoredsuv",
 		"cawheeled_pmc",
 		"acex_veh_m2",
-		"ace_sys_crewserved",
 		"CAWheeled2_LADA",
 		"RW_Wheeled2_V3S",
 		"CAAir_E_AH6J",
@@ -151,7 +163,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=830;
+		items=839;
 		class Item0
 		{
 			side="WEST";
@@ -202,7 +214,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={4999.6353,469.31519,1983.8011};
+					position[]={5005.1792,465.15115,1970.375};
 					id=2;
 					side="LOGIC";
 					vehicle="Logic";
@@ -220,7 +232,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={5031.8267,471.0368,1983.0848};
+					position[]={5015.1709,465.30072,1970.3818};
 					id=3;
 					side="LOGIC";
 					vehicle="FunctionsManager";
@@ -360,7 +372,7 @@ class Mission
 					skill=0.5;
 					text="UnitUN_A1_RRPG";
 					init="GrpUN_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="UN Alpha 1 Rifleman ";
+					description="UN Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -634,7 +646,7 @@ class Mission
 					skill=0.5;
 					text="UnitTK_A1_RRPG";
 					init="GrpTK_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Army Alpha 1 Rifleman ";
+					description="TK Army Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -856,7 +868,7 @@ class Mission
 					skill=0.5;
 					text="UnitUN_B1_RRPG";
 					init="GrpUN_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="UN Bravo 1 Rifleman ";
+					description="UN Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -1078,7 +1090,7 @@ class Mission
 					skill=0.5;
 					text="UnitUN_C1_RRPG";
 					init="GrpUN_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="UN Charlie 1 Rifleman ";
+					description="UN Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -1859,7 +1871,7 @@ class Mission
 					skill=0.5;
 					text="UnitGue_A1_RRPG";
 					init="GrpGue_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Local Alpha 1 Rifleman ";
+					description="TK Local Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -2085,7 +2097,7 @@ class Mission
 					skill=0.5;
 					text="UnitGue_B1_RRPG";
 					init="GrpGue_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Local Bravo 1 Rifleman ";
+					description="TK Local Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -2311,7 +2323,7 @@ class Mission
 					skill=0.5;
 					text="UnitGue_C1_RRPG";
 					init="GrpGue_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Local Charlie 1 Rifleman ";
+					description="TK Local Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -5516,7 +5528,7 @@ class Mission
 					skill=0.5;
 					text="UnitTK_B1_RRPG";
 					init="GrpTK_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Army Bravo 1 Rifleman ";
+					description="TK Army Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -5742,7 +5754,7 @@ class Mission
 					skill=0.5;
 					text="UnitTK_C1_RRPG";
 					init="GrpTK_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Army Charlie 1 Rifleman ";
+					description="TK Army Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -6561,7 +6573,7 @@ class Mission
 					skill=0.5;
 					text="UnitIns_A1_RRPG";
 					init="GrpIns_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Militia Alpha 1 Rifleman ";
+					description="TK Militia Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -6787,7 +6799,7 @@ class Mission
 					skill=0.5;
 					text="UnitIns_B1_RRPG";
 					init="GrpIns_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Militia Bravo 1 Rifleman ";
+					description="TK Militia Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -7013,7 +7025,7 @@ class Mission
 					skill=0.5;
 					text="UnitIns_C1_RRPG";
 					init="GrpIns_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="TK Militia Charlie 1 Rifleman";
+					description="TK Militia Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -11460,12 +11472,12 @@ class Mission
 					azimut=0.32468101;
 					id=740;
 					side="EAST";
-					vehicle="Ins_Soldier_1";
+					vehicle="INS_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitA2Ins_A1_RRPG";
 					init="GrpA2Ins_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="ChDKZ Insurgents Alpha 1 Rifleman ";
+					description="ChDKZ Insurgents Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -11686,12 +11698,12 @@ class Mission
 					azimut=0.32468101;
 					id=754;
 					side="EAST";
-					vehicle="Ins_Soldier_1";
+					vehicle="INS_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitA2Ins_B1_RRPG";
 					init="GrpA2Ins_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="ChDKZ Insurgents Bravo 1 Rifleman ";
+					description="ChDKZ Insurgents Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -11912,12 +11924,12 @@ class Mission
 					azimut=0.32468101;
 					id=768;
 					side="EAST";
-					vehicle="Ins_Soldier_1";
+					vehicle="INS_Soldier_1";
 					player="PLAY CDG";
 					skill=0.5;
 					text="UnitA2Ins_C1_RRPG";
 					init="GrpA2Ins_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="ChDKZ Insurgents Charlie 1 Rifleman ";
+					description="ChDKZ Insurgents Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -12700,7 +12712,7 @@ class Mission
 					skill=0.5;
 					text="UnitA2Gue_A1_RRPG";
 					init="GrpA2Gue_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="NAPA Alpha 1 Rifleman ";
+					description="NAPA Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -12926,7 +12938,7 @@ class Mission
 					skill=0.5;
 					text="UnitA2Gue_B1_RRPG";
 					init="GrpA2Gue_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="NAPA Bravo 1 Rifleman ";
+					description="NAPA Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -13152,7 +13164,7 @@ class Mission
 					skill=0.5;
 					text="UnitA2Gue_C1_RRPG";
 					init="GrpA2Gue_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="NAPA Charlie 1 Rifleman ";
+					description="NAPA Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -14017,7 +14029,7 @@ class Mission
 					skill=0.5;
 					text="UnitUSMCdes_A1_AT";
 					init="GrpUSMCdes_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="USMC Alpha 1 Rifleman ";
+					description="USMC Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -14243,7 +14255,7 @@ class Mission
 					skill=0.5;
 					text="UnitUSMCdes_B1_AT";
 					init="GrpUSMCdes_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="USMC Bravo 1 Rifleman ";
+					description="USMC Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -14469,7 +14481,7 @@ class Mission
 					skill=0.5;
 					text="UnitUSMCdes_C1_AT";
 					init="GrpUSMCdes_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="USMC Charlie 1 Rifleman ";
+					description="USMC Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -15252,7 +15264,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAFdes_A1_AT";
 					init="GrpBAF_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="British Army Alpha 1 Rifleman ";
+					description="British Army Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -15478,7 +15490,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAFdes_B1_AT";
 					init="GrpBAF_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="British Army Bravo 1 Rifleman ";
+					description="British Army Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -15704,7 +15716,7 @@ class Mission
 					skill=0.5;
 					text="UnitBAFdes_C1_AT";
 					init="GrpBAF_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="British Army Charlie 1 Rifleman ";
+					description="British Army Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -16487,7 +16499,7 @@ class Mission
 					skill=0.5;
 					text="UnitRUdes_A1_RRPG";
 					init="GrpRU_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Russian Army Alpha 1 Rifleman";
+					description="Russian Army Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -16713,7 +16725,7 @@ class Mission
 					skill=0.5;
 					text="UnitRUdes_B1_RRPG";
 					init="GrpRU_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Russian Army Bravo 1 Rifleman ";
+					description="Russian Army Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -16939,7 +16951,7 @@ class Mission
 					skill=0.5;
 					text="UnitRUdes_C1_RRPG";
 					init="GrpRU_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Russian Army Charlie 1 Rifleman ";
+					description="Russian Army Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -17722,7 +17734,7 @@ class Mission
 					skill=0.5;
 					text="UnitCDFwin_A1_AT";
 					init="GrpCDFwin_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CDF Alpha 1 Rifleman ";
+					description="CDF Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -17948,7 +17960,7 @@ class Mission
 					skill=0.5;
 					text="UnitCDFwin_B1_AT";
 					init="GrpCDFwin_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CDF Bravo 1 Rifleman ";
+					description="CDF Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -18174,7 +18186,7 @@ class Mission
 					skill=0.5;
 					text="UnitCDFwin_C1_AT";
 					init="GrpCDFwin_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CDF Charlie 1 Rifleman ";
+					description="CDF Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -18957,7 +18969,7 @@ class Mission
 					skill=0.5;
 					text="UnitUSMCwin_A1_AT";
 					init="GrpUSMCwin_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="USMC Alpha 1 Rifleman ";
+					description="USMC Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -19183,7 +19195,7 @@ class Mission
 					skill=0.5;
 					text="UnitUSMCwin_B1_AT";
 					init="GrpUSMCwin_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="USMC Bravo 1 Rifleman ";
+					description="USMC Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -19409,7 +19421,7 @@ class Mission
 					skill=0.5;
 					text="UnitUSMCwin_C1_AT";
 					init="GrpUSMCwin_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="USMC Charlie 1 Rifleman ";
+					description="USMC Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -20192,7 +20204,7 @@ class Mission
 					skill=0.5;
 					text="UnitA2GueWIN_A1_RRPG";
 					init="GrpA2GueWIN_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="NAPA Alpha 1 Rifleman ";
+					description="NAPA Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -20418,7 +20430,7 @@ class Mission
 					skill=0.5;
 					text="UnitA2GueWIN_B1_RRPG";
 					init="GrpA2GueWIN_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="NAPA Bravo 1 Rifleman ";
+					description="NAPA Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -20644,7 +20656,7 @@ class Mission
 					skill=0.5;
 					text="UnitA2GueWIN_C1_RRPG";
 					init="GrpA2GueWIN_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="NAPA Charlie 1 Rifleman ";
+					description="NAPA Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -39066,6 +39078,168 @@ class Mission
 				};
 			};
 		};
+		class Item830
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5015.1729,462.47406,1960.3821};
+					id=2803;
+					side="LOGIC";
+					vehicle="ACE_Wounds_FullHeal";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item831
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5005.165,462.33215,1960.392};
+					id=2804;
+					side="LOGIC";
+					vehicle="ACE_Wounds_EveryoneMedic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item832
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5025.1772,463.12177,1960.4027};
+					id=2805;
+					side="LOGIC";
+					vehicle="ACE_Wounds_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item833
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5005.1948,459.56403,1950.3907};
+					id=2806;
+					side="LOGIC";
+					vehicle="ACE_Required_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item834
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5025.1929,460.02994,1950.3868};
+					id=2807;
+					side="LOGIC";
+					vehicle="ace_sys_repair_tyres";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item835
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5015.1924,456.90686,1940.3643};
+					id=2808;
+					side="LOGIC";
+					vehicle="ACE_Vehicledamage_Enable_Cookoff";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item836
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5005.1924,457.27536,1940.374};
+					id=2809;
+					side="LOGIC";
+					vehicle="ACE_AITalk_Logic";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item837
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5025.1904,457.06909,1940.3817};
+					id=2810;
+					side="LOGIC";
+					vehicle="ACE_Viewblock_EnableAIGrassVB_Mod";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
+		class Item838
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={5015.1836,459.55902,1950.3829};
+					id=2811;
+					side="LOGIC";
+					vehicle="ACE_CSW_AI";
+					leader=1;
+					lock="UNLOCKED";
+					skill=0.60000002;
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -43821,7 +43995,7 @@ class Mission
 		items=43;
 		class Item0
 		{
-			position[]={5397.1084,396.03293,1996.296};
+			position[]={5159.2778,467.35403,1974.9498};
 			name="imp";
 			text="IMPORTANT! COPY THESE!";
 			type="hd_arrow";
