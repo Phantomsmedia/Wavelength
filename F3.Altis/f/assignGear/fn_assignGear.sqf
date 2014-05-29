@@ -85,7 +85,7 @@ if (f_var_debugMode == 1) then
 
 
 if (_faction == "blu_f") then {
-#include "f_assignGear_nato.sqf"
+	#include "f_assignGear_nato.sqf"
 };
 
 
@@ -96,7 +96,7 @@ if (_faction == "blu_f") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "mas_usa_mars") then {
-#include "f_assignGear_usmc.sqf"
+	#include "f_assignGear_usmc.sqf"
 };
 // ====================================================================================
 
@@ -105,7 +105,7 @@ if (_faction == "mas_usa_mars") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "mas_afr_ind") then {
-#include "f_assignGear_agf.sqf"
+	#include "f_assignGear_agf.sqf"
 };
 // ====================================================================================
 
@@ -114,7 +114,7 @@ if (_faction == "mas_afr_ind") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "caf_ag_afr") then {
-#include "f_assignGear_africa.sqf"
+	#include "f_assignGear_africa.sqf"
 };
 // ====================================================================================
 
@@ -123,7 +123,7 @@ if (_faction == "caf_ag_afr") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "BLU_BAF_F") then {
-#include "f_assignGear_baf.sqf"
+	#include "f_assignGear_baf.sqf"
 };
 // ====================================================================================
 
@@ -141,7 +141,7 @@ if (_faction == "opf_f") then {
 // The following block of code executes only if the unit is in a AAF slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
-if(_faction == "ind_f") then {
+if (_faction == "ind_f") then {
 	#include "f_assignGear_aaf.sqf";
 };
 
@@ -152,7 +152,7 @@ if(_faction == "ind_f") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "SUD_RU") then {
-#include "f_assignGear_russia.sqf"
+	#include "f_assignGear_russia.sqf"
 };
 // ====================================================================================
 
@@ -161,7 +161,7 @@ if (_faction == "SUD_RU") then {
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "PMC_POMI") then {
-#include "f_assignGear_pmc.sqf"
+	#include "f_assignGear_pmc.sqf"
 };
 // ====================================================================================
 

@@ -259,7 +259,7 @@ if (_isMan) then {
 // HANDLE CLOTHES
 // Handle clothes and helmets and such using the include file called next.
 
-	#include "f_assignGear_clothes.sqf";
+	//#include "f_assignGear_clothes.sqf";
 
 	// ====================================================================================
 
