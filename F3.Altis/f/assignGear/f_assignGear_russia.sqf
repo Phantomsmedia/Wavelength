@@ -47,7 +47,7 @@ f_param_backpacks = 1;
 _rifle = "arifle_SUD_AK74M";
 _riflemag = "30Rnd_mas_545x39_mag";
 _riflemag_tr = "30Rnd_mas_545x39_T_mag";
-_rifle_attach = nil;
+_rifle_attach = ["optic_sud_cobra"];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "arifle_SUD_AK105";
@@ -72,7 +72,7 @@ _glrifle = "arifle_SUD_AK107_GL";
 _glriflemag = "30rnd_545x39_AK107";
 _glriflemag_tr = "30rnd_545x39_AK107";
 _glmag = "1Rnd_HE_Grenade_shell";
-_glrifle_attach = nil;
+_glrifle_attach = ["optic_sud_krechet_m"];
 
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
