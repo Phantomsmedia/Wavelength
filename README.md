@@ -49,7 +49,7 @@ Developed by
    Batboyx2 (www.phantactical.com Addon Development Team Head)
    Jani J. (www.phantactical.com Community Leader)
    Hunter (Gave us a running start)
-   Ferstaberinde (http://ferstaberinde.com/f2/en/index.php?title=Main_Page Creator of F2/F3 frameworks, venerable badass)
+   Ferstaberinde (www.ferstaberinde.com Creator of F2/F3 frameworks, venerable badass)
 
 
 Tools of The Trade
