@@ -43,9 +43,9 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "optic_hamr";		// ACO
+_scope1 = "optic_mas_aim";		// ACO
 _scope2 = "optic_hamr";			// MRCO Scope - 1x - 6x
-_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
+_scope3 = "optic_MRCO";			// MG Scope
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -73,19 +73,19 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 _rifle = "arifle_mas_m16_a";
 _riflemag = "30Rnd_mas_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
-_rifle_attach = ["acc_pointer_IR","optic_mas_aim"];
+_rifle_attach = [_attach1,_scope1];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "arifle_mas_m4";
 _carbinemag = "30Rnd_mas_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
-_carbine_attach = ["acc_pointer_IR"];
+_carbine_attach = [_attach1];
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "arifle_mas_mp5";
 _smgmag = "30Rnd_mas_9x21_Stanag";
 _smgmag_tr = nil;
-_smg_attach = nil;
+_smg_attach = [_attach1];
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -98,7 +98,7 @@ _glrifle = "arifle_mas_m16_gl";
 _glriflemag = "30Rnd_mas_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
-_glrifle_attach = ["acc_pointer_IR","optic_Hamr"];
+_glrifle_attach = ["_attach1","_scope2"];
 
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
@@ -159,13 +159,13 @@ _sparebarrle = "AGM_SpareBarrel";			// For LMG/MMG Only
 _AR = "LMG_mas_M249_F_a";
 _ARmag = "200Rnd_mas_556x45_Stanag";
 _ARmag_tr = "200Rnd_mas_556x45_T_Stanag";
-_AR_attach = nil;
+_AR_attach = [_scope2];
 
 // Medium MG
 _MMG = "LMG_mas_M240_F";
 _MMGmag = "100Rnd_mas_762x51_Stanag";
 _MMGmag_tr = "100Rnd_mas_762x51_T_Stanag";
-_MMG_attach = ["optic_MRCO"];
+_MMG_attach = [_scope3];
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
