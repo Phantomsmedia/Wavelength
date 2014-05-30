@@ -41,12 +41,46 @@ The best way to use F2/F3 is to begin by reading through all manual pages for th
 http://ferstaberinde.com/f2/en/index.php?title=Main_Page
 
 ===============
+Credits
 
-Credits:
+
 Developed by
-   -Batboyx2
-   -Jani J. (www.phantactical.com)
-   -Hunter (Gave us a running start)
    
-Original F2 Framework
-   -Ferstaberinde (http://ferstaberinde.com/f2/en/index.php?title=Main_Page)
+   Batboyx2 (www.phantactical.com Addon Development Team Head)
+   Jani J. (www.phantactical.com Community Leader)
+   Hunter (Gave us a running start)
+   Ferstaberinde (http://ferstaberinde.com/f2/en/index.php?title=Main_Page Creator of F2/F3 frameworks, venerable badass)
+
+
+Tools of The Trade
+
+	Notepad++ (http://notepad-plus-plus.org/)
+	TextCrawler (http://www.digitalvolcano.co.uk/textcrawler.html)
+	Github (https://github.com/batboyx2/PhanTactical-Mission-Framework)
+	Kegety's ArmA Tools Pack (http://www.kegetys.fi/category/gaming/armamods/)
+
+
+Beta Testers/Mission Developers
+	
+	Duck
+	Duskflame
+	Zesteh
+	Jakeen
+	Muhammad
+	KakePro
+	Shells
+	CKing2013
+	Dodson
+	Sam Brooks (Sexypanda)
+	Hawk
+	Teddy
+	DownWithGravity
+	Jani J. (Phantom)
+	Batboyx2
+	Camden
+	IronDuke
+	JollyJoker
+	AngryEchoSix
+	Zesteh's Fiancee
+	Anyone I managed to forget
+	
