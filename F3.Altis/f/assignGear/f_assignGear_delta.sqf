@@ -36,38 +36,11 @@ f_param_backpacks = 1;
 // ====================================================================================
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
-// ATTACHMENTS - PRIMARY
-_attach1 = "acc_pointer_IR";	// IR Laser
-_attach2 = "acc_flashlight";	// Flashlight
 
-_silencer1 = "muzzle_snds_M";	// 5.56 suppressor
-_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
-
-_scope1 = "optic_ACO_grn";		// ACO
-_scope2 = "optic_MRCO";			// MRCO Scope - 1x - 6x
-_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
-
-// Default setup
-_attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
-
+// Attachments
+// nil = no change
 // [] = remove all
-// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
-// [_scope2] = add _scope2, remove rest
-// false = keep attachments as they are
-
-// ====================================================================================
-
-// ATTACHMENTS - HANDGUN
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
-
-_hg_scope1 = "optic_MRD";			// MRD
-
-// Default setup
-_hg_attachments= []; // The default attachment set for handguns, overwritten in the individual unitType
-
-// ====================================================================================
-
-// WEAPON SELECTION
+// ["acc_pointer_IR","optic_ACO_grn"] = remove all, add items.
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 _rifle = "arifle_mas_hk417c_sd";

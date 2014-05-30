@@ -36,56 +36,29 @@ f_param_backpacks = 1;
 // ====================================================================================
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
-// ATTACHMENTS - PRIMARY
-_attach1 = "acc_pointer_IR";	// IR Laser
-_attach2 = "acc_flashlight";	// Flashlight
 
-_silencer1 = "muzzle_snds_M";	// 5.56 suppressor
-_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
-
-_scope1 = "optic_mas_aim";		// ACO
-_scope2 = "optic_hamr";			// MRCO Scope - 1x - 6x
-_scope3 = "optic_MRCO";			// MG Scope
-
-// Default setup
-_attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
-
+// Attachments
+// nil = no change
 // [] = remove all
-// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
-// [_scope2] = add _scope2, remove rest
-// false = keep attachments as they are
-
-// ====================================================================================
-
-// ATTACHMENTS - HANDGUN
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
-
-_hg_scope1 = "optic_MRD";			// MRD
-
-// Default setup
-_hg_attachments= []; // The default attachment set for handguns, overwritten in the individual unitType
-
-// ====================================================================================
-
-// WEAPON SELECTION
+// ["acc_pointer_IR","optic_ACO_grn"] = remove all, add items.
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 _rifle = "arifle_mas_m16_a";
 _riflemag = "30Rnd_mas_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
-_rifle_attach = [_attach1,_scope1];
+_rifle_attach = ["acc_pointer_IR","optic_mas_aim"];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "arifle_mas_m4";
 _carbinemag = "30Rnd_mas_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
-_carbine_attach = [_attach1];
+_carbine_attach = ["acc_pointer_IR"];
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "arifle_mas_mp5";
 _smgmag = "30Rnd_mas_9x21_Stanag";
 _smgmag_tr = nil;
-_smg_attach = [_attach1];
+_smg_attach = nil;
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -98,7 +71,7 @@ _glrifle = "arifle_mas_m16_gl";
 _glriflemag = "30Rnd_mas_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
-_glrifle_attach = ["_attach1","_scope2"];
+_glrifle_attach = ["acc_pointer_IR","optic_Hamr"];
 
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
@@ -159,13 +132,13 @@ _sparebarrle = "AGM_SpareBarrel";			// For LMG/MMG Only
 _AR = "LMG_mas_M249_F_a";
 _ARmag = "200Rnd_mas_556x45_Stanag";
 _ARmag_tr = "200Rnd_mas_556x45_T_Stanag";
-_AR_attach = [_scope2];
+_AR_attach = nil;
 
 // Medium MG
 _MMG = "LMG_mas_M240_F";
 _MMGmag = "100Rnd_mas_762x51_Stanag";
 _MMGmag_tr = "100Rnd_mas_762x51_T_Stanag";
-_MMG_attach = [_scope3];
+_MMG_attach = ["optic_MRCO"];
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
