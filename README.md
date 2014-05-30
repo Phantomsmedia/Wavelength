@@ -83,5 +83,9 @@ Beta Testers/Mission Developers
 	JollyJoker
 	AngryEchoSix
 	Zesteh's Fiancee
+	Windows
+	Psikys
+	Miles (Tehfocus)
+	Othuv Nolen
 	Anyone I managed to forget
 	
