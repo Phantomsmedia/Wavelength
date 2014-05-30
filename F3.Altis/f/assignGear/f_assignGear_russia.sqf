@@ -36,43 +36,69 @@ f_param_backpacks = 1;
 // ====================================================================================
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
+// ATTACHMENTS - PRIMARY
+_attach1 = "acc_pointer_IR";	// IR Laser
+_attach2 = "acc_flashlight";	// Flashlight
 
+_silencer1 = "muzzle_snds_M";	// 5.56 suppressor
+_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-// Attachments
-// nil = no change
+_scope1 = "optic_sud_cobra";		// ACO
+_scope2 = "optic_sud_krechet_m";			// MRCO Scope - 1x - 6x
+_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
+
+// Default setup
+_attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
+
 // [] = remove all
-// ["acc_pointer_IR","optic_ACO_grn"] = remove all, add items.
+// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
+// [_scope2] = add _scope2, remove rest
+// false = keep attachments as they are
+
+// ====================================================================================
+
+// ATTACHMENTS - HANDGUN
+_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
+
+_hg_scope1 = "optic_MRD";			// MRD
+
+// Default setup
+_hg_attachments= []; // The default attachment set for handguns, overwritten in the individual unitType
+
+// ====================================================================================
+
+// WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 _rifle = "arifle_SUD_AK74M";
 _riflemag = "30Rnd_mas_545x39_mag";
 _riflemag_tr = "30Rnd_mas_545x39_T_mag";
-_rifle_attach = ["optic_sud_cobra"];
+_rifle_attach = [_scope1];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "arifle_SUD_AK105";
 _carbinemag = "30rnd_545x39_AK107";
 _carbinemag_tr = "30rnd_545x39_AK107";
-_carbine_attach = nil;
+_carbine_attach = false;
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "arifle_SUD_AK105";
 _smgmag = "30rnd_545x39_AK107";
 _smgmag_tr = "30rnd_545x39_AK107";
-_smg_attach = nil;
+_smg_attach = false;
 
 // Diver
 _diverWep = "arifle_SDAR_F";
 _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
-_diverWep_attach = nil;
+_diverWep_attach = false;
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "arifle_SUD_AK107_GL";
 _glriflemag = "30rnd_545x39_AK107";
 _glriflemag_tr = "30rnd_545x39_AK107";
 _glmag = "1Rnd_HE_Grenade_shell";
-_glrifle_attach = ["optic_sud_krechet_m"];
+_glrifle_attach = [_scope2];
 
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
@@ -134,13 +160,13 @@ _sparebarrle = "AGM_SpareBarrel";			// For LMG/MMG Only
 _AR = "LMG_SUD_RPK107";
 _ARmag = "75rnd_545x39_RPK107";
 _ARmag_tr = "75rnd_545x39_RPK107";
-_AR_attach = ["acc_pointer_IR","optic_ACO_grn"];
+_AR_attach = [_scope2];
 
 // Medium MG
 _MMG = "LMG_SUD_PECHENEG_M";
 _MMGmag = "100rnd_762x54_PK";
 _MMGmag_tr = "100rnd_762x54_PK";
-_MMG_attach = nil;
+_MMG_attach = [_scope2];
 
 // Rifleman AT
 _RAT = "launch_RPG7V_F";
