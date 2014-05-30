@@ -246,17 +246,17 @@ _backpack = {
 			if (f_param_backpacks <= 1) then {
 				_unit addBackpack _bagsmall;
 				clearMagazineCargoGlobal (unitBackpack _unit);
-				(unitBackpack _unit) addItemCargoGlobal [_medkit,1];
+				//(unitBackpack _unit) addItemCargoGlobal [_medkit,1];
 				(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
-				(unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
+				//(unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
 			};
 			// BACKPACK: HEAVY
 			if (f_param_backpacks == 2) then {
 				_unit addBackpack _bagmedium;
 				clearMagazineCargoGlobal (unitBackpack _unit);
-				(unitBackpack _unit) addItemCargoGlobal [_medkit,1];
+				//(unitBackpack _unit) addItemCargoGlobal [_medkit,1];
 				(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 6];
-				(unitBackpack _unit) addItemCargoGlobal [_firstaid, 12];
+				//(unitBackpack _unit) addItemCargoGlobal [_firstaid, 12];
 			};
 		};
 
@@ -738,7 +738,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addweapon _carbine;
 		_unit addmagazines [_smokegrenade,4];
-		{_unit addItem _firstaid} forEach [1,2,3,4];
+		//{_unit addItem _firstaid} forEach [1,2,3,4];
 		["m"] call _backpack;
 	};
 
