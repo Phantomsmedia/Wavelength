@@ -83,6 +83,16 @@ if (_faction == "usmc") then {
 
 // ====================================================================================
 
+// GEAR: Vietnam US ARMY
+// The following block of code executes only if the player is in a CDF slot; it 
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "I44_A_Army") then {
+#include "folk_assignGear_vietnam.sqf"
+};
+
+// ====================================================================================
+
 // GEAR: CDF
 // The following block of code executes only if the player is in a CDF slot; it 
 // automatically includes a file which contains the appropriate equipment data.

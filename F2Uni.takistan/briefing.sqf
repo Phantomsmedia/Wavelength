@@ -136,6 +136,23 @@ if (_unitfaction == "bis_tk_ins") exitwith {
 
 // ====================================================================================
 
+// BRIEFING: US Army VIETNAM
+// The following block of code executes only if the player is in a US slot; it 
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "I44_A_Army") exitwith {
+
+#include "f\common\f_briefing_vietnam.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+// ====================================================================================
+
 // BRIEFING: TAKISTANI MILITIA
 // The following block of code executes only if the player is in a TAKISTANI MILITIA slot; it 
 // automatically includes a file which contains the appropriate briefing data.

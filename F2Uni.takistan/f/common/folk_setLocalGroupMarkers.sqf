@@ -42,6 +42,49 @@ switch (_unitfaction) do
 
 // ====================================================================================
 
+// MARKERS: US (VIETNAM)
+// Markers seen by players in US slots.
+
+	case "I44_A_Army":
+	{
+		["GrpVIETNAM_CO", 0, "CO", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpVIETNAM_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpVIETNAM_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_B3", 1, "B3", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_CSL", 0, "CSL", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_C1", 1, "C1", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_C2", 1, "C2", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_C3", 1, "C3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_MMG1", 2, "MMG", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_MAT1", 3, "MAT", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_ST1",  4, "ST", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpVIETNAM_HMG1",  2, "HMG", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_MTR1",  5, "MTR", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpVIETNAM_HAT1",  3, "HAT", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_SAM1",  3, "SAM", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_ENG1",  6, "ENG", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_IFV1",  7, "Bison1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_IFV2",  7, "Bison2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
+		["GrpVIETNAM_IFV3",  7, "Bison3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_TNK1",  7, "Thunder", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpVIETNAM_TH1",  8, "BigBird1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_TH2",  8, "BigBird2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpVIETNAM_AH1",  8, "Lightning", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["UnitVIETNAM_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitVIETNAM_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitVIETNAM_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitVIETNAM_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitVIETNAM_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+	};
+	
+// ====================================================================================
+
 // MARKERS: US
 // Markers seen by players in US slots.
 
