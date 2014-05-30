@@ -69,6 +69,7 @@ Beta Testers/Mission Developers
 	Muhammad
 	KakePro
 	Shells
+	Hunter
 	CKing2013
 	Dodson
 	Sam Brooks (Sexypanda)
