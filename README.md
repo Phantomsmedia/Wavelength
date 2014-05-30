@@ -46,10 +46,10 @@ Credits
 
 Developed by
    
-   Batboyx2 (www.phantactical.com Addon Development Team Head)
-   Jani J. (www.phantactical.com Community Leader)
-   Hunter (Gave us a running start)
-   Ferstaberinde (www.ferstaberinde.com Creator of F2/F3 frameworks, venerable badass)
+	Batboyx2 (www.phantactical.com Addon Development Team Head)
+	Jani J. (www.phantactical.com Community Leader)
+	Hunter (Gave us a running start)
+	Ferstaberinde (www.ferstaberinde.com Creator of F2/F3 frameworks, venerable badass)
 
 
 Tools of The Trade
