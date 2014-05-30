@@ -36,64 +36,36 @@
 
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
-// ATTACHMENTS - PRIMARY
-_attach1 = "acc_pointer_IR";	// IR Laser
-_attach2 = "acc_flashlight";	// Flashlight
-
-_silencer1 = "muzzle_snds_M";	// 5.56 suppressor
-_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
-
-_scope1 = "optic_ACO_grn";		// ACO
-_scope2 = "optic_MRCO";			// MRCO Scope - 1x - 6x
-_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
-
-// Default setup
-_attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
-
-// [] = remove all
-// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
-// [_scope2] = add _scope2, remove rest
-// false = keep attachments as they are
-
-// ====================================================================================
-
-// ATTACHMENTS - HANDGUN
-_hg_silencer1 = "muzzle_snds_acp";	// .45 suppressor
-
-_hg_scope1 = "optic_MRD";			// MRD
-
-// Default setup
-_hg_attachments= []; // The default attachment set for handguns, overwritten in the individual unitType
-
-// ====================================================================================
-
-// WEAPON SELECTION
-
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 _rifle = "arifle_Mk20_F";
 _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Yellow";
+_rifle_attach = ["acc_pointer_IR","optic_holosight"];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "arifle_Mk20C_F";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Yellow";
+_carbine_attach = ["acc_pointer_IR"];
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "SMG_02_F";
 _smgmag = "30Rnd_9x21_Mag";
 _smgmag_tr = "30Rnd_9x21_Mag";
+_smg_attach = nil;
 
 // Diver
 _diverWep = "arifle_SDAR_F";
 _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
+_diverWep_attach = nil;
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "arifle_Mk20_GL_MRCO_pointer_F";
 _glriflemag = "30Rnd_556x45_Stanag";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Yellow";
 _glmag = "1Rnd_HE_Grenade_shell";
+_glrifle_attach = ["acc_pointer_IR","optic_mrco"];
 
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
