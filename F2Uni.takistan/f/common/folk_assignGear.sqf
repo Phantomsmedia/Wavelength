@@ -241,14 +241,34 @@ if (_unitFaction == "mas_usa_rang") exitwith {
 	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
 	};
 };
-// USM 80's and 90's
-if (_unitFaction == "usm_usarmy" || _unitFaction == "usm_usmc") exitwith {
-#include "folk_assignGear_USM.sqf"
+// GEAR: US MARINES (90S)
+// The following block of code executes only if the player is in a USM slot; it 
+// automatically includes a file which contains the appropriate equipment data.
+
+
+if (_faction == "usm_usmarinecorps") then {
+#include "folk_assignGear_usm.sqf"
 	if (f_var_debugMode == 1) then
 	{
 	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
 	};
 };
+
+
+// GEAR: US ARMY (80S/90S)
+// The following block of code executes only if the player is in a USM slot; it 
+// automatically includes a file which contains the appropriate equipment data.
+
+
+if (_faction == "usm_usarmy") then {
+#include "folk_assignGear_usm.sqf"
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+
 // PMC
 if (_unitFaction == "bis_pmc") exitwith {
 #include "folk_assignGear_pmc.sqf"
