@@ -125,7 +125,7 @@ _epipen = "AGM_Epipen";  					// 1 Per Soldier, 1 Per TL, 10 Per Medic
 _morphine = "AGM_Morphine";					// 1 Per Soldier, 2 Per TL, 15 Per Medic
 _bloodbag = "AGM_Bloodbag";					// 0 Per Soldier, 0 Per TL, 5 Per Medic
 _earplugs = "AGM_EarBuds";					// For Every Soldier
-_sparebarrle = "AGM_SpareBarrel";			// For LMG/MMG Only
+_sparebarrel = "AGM_SpareBarrel";			// For LMG/MMG Only
 
 // ====================================================================================
 
