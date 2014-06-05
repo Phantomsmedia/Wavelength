@@ -88,6 +88,11 @@ _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 _pistol = "hgun_P07_F";
 _pistolmag = "16Rnd_9x21_Mag";
 
+// Flare Gun (Medic)
+_flaregun = "hgun_Pistol_Signal_F";
+_fgflaregreen = "6Rnd_GreenSignal_F";
+_fgflarered = "6Rnd_RedSignal_F";
+
 // Grenades
 _grenade = "HandGrenade";
 _Mgrenade = "MiniGrenade";
@@ -123,7 +128,7 @@ _epipen = "AGM_Epipen";  					// 1 Per Soldier, 1 Per TL, 10 Per Medic
 _morphine = "AGM_Morphine";					// 1 Per Soldier, 2 Per TL, 15 Per Medic
 _bloodbag = "AGM_Bloodbag";					// 0 Per Soldier, 0 Per TL, 5 Per Medic
 _earplugs = "AGM_EarBuds";					// For Every Soldier
-_sparebarrel = "AGM_SpareBarrel";			// For LMG/MMG Only
+_sparebarrle = "AGM_SpareBarrel";			// For LMG/MMG Only
 
 // ====================================================================================
 
@@ -754,6 +759,10 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_carbinemag,7];
 		_unit addweapon _carbine;
+		_unit addweapon _flaregun;
+		_unit addmagazines [_fgflaregreen,3];
+		_unit addmagazines [_fgflarered,3];
+		_unit addmagazines [_smokegrenade,4];
 		_unit addmagazines [_smokegrenade,4];
 		//{_unit addItem _firstaid} forEach [1,2,3,4];
 		["m"] call _backpack;

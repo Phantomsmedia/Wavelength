@@ -88,6 +88,11 @@ _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 _pistol = "hgun_ACPC2_F";
 _pistolmag = "9Rnd_45ACP_Mag";
 
+// Flare Gun (Medic)
+_flaregun = "hgun_Pistol_Signal_F";
+_fgflaregreen = "6Rnd_GreenSignal_F";
+_fgflarered = "6Rnd_RedSignal_F";
+
 // Grenades
 _grenade = "HandGrenade";
 _Mgrenade = "MiniGrenade";
@@ -755,6 +760,10 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_carbinemag,7];
 		_unit addweapon _carbine;
+		_unit addweapon _flaregun;
+		_unit addmagazines [_fgflaregreen,3];
+		_unit addmagazines [_fgflarered,3];
+		_unit addmagazines [_smokegrenade,4];		
 		_unit addmagazines [_smokegrenade,4];
 		//{_unit addItem _firstaid} forEach [1,2,3,4];
 		["m"] call _backpack;
