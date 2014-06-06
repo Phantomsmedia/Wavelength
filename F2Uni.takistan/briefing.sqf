@@ -102,11 +102,28 @@ if (_unitfaction == "bis_tk") exitwith {
 
 // ====================================================================================
 
-// BRIEFING: 80s and 90s
+// BRIEFING: 80s and 90s Marines
 // The following block of code executes only if the player is in a TAKISTANI ARMY slot; it 
 // automatically includes a file which contains the appropriate briefing data.
 
-if ((_unitfaction == "usm_usmarinecorps") || (_unitfaction == "usm_usarmy")) exitwith {
+if (_unitfaction == "usm_usmarinecorps") exitwith {
+
+#include "f\common\f_briefing_USM.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+// ====================================================================================
+
+// BRIEFING: 80s and 90s Army
+// The following block of code executes only if the player is in a TAKISTANI ARMY slot; it 
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "usm_usarmy") exitwith {
 
 #include "f\common\f_briefing_USM.sqf"
 
