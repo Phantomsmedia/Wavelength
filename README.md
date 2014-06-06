@@ -50,6 +50,7 @@ Developed by
 	Jani J. (www.phantactical.com Community Leader)
 	Hunter (Gave us a running start)
 	Ferstaberinde (www.ferstaberinde.com Creator of F2/F3 frameworks, venerable badass)
+	KakePro (www.phantactical.com Member)
 
 
 Tools of The Trade
