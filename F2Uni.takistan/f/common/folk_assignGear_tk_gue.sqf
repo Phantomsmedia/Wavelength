@@ -67,7 +67,7 @@ _grenade = "HandGrenade_East"; _smokegrenade = "SmokeShell";_smokegrenadegreen =
 
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 	
-_AR = "ACE_RPK74M"; _ARmag = "75Rnd_545x39_RPK";																							// Automatic Rifleman
+_AR = "ACE_RPK"; _ARmag = "ACE_75Rnd_762x39_B_AK47";																							// Automatic Rifleman
 
 _MMG = "PK"; _MMGmag = "100Rnd_762x54_PK";																							// Medium MG
 
