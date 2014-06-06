@@ -55,7 +55,7 @@ _carbine = "ACE_M16A4_Iron"; _carbinemag = "30Rnd_556x45_Stanag"; 														
 
 _smg = "MP5A5"; _smgmag = "30Rnd_9x19_MP5";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
 
-_glrifle = "ACE_M16A2GL_UP"; _glriflemag = "30Rnd_556x45_Stanag"; _glmag = "1Rnd_HE_M203";														// Rifle with GL and HE grenades (CO, DC, FTLs)
+_glrifle = "ACE_M16A4_GL_UP"; _glriflemag = "30Rnd_556x45_Stanag"; _glmag = "1Rnd_HE_M203";														// Rifle with GL and HE grenades (CO, DC, FTLs)
 _glsmokewhite = "1Rnd_Smoke_M203"; _glsmokegreen = "1Rnd_SmokeGreen_M203"; _glsmokered = "1Rnd_SmokeRed_M203";    							// Smoke for FTLs, Squad Leaders, etc 
 _glflarewhite = "FlareWhite_M203"; _glflarered = "FlareRed_M203"; _glflareyellow = "FlareYellow_M203"; _glflaregreen = "FlareGreen_M203";	// Flares for FTLs, Squad Leaders, etc
 
@@ -69,7 +69,7 @@ _grenade = "HandGrenade_West"; _smokegrenade = "SmokeShell";_smokegrenadegreen =
 	
 _AR = "M249_EP1"; _ARmag = "ACE_200Rnd_556x45_T_M249";																							// Automatic Rifleman
 
-_MMG = "M60A4_EP1"; _MMGmag = "100Rnd_762x51_M240";																							// Medium MG
+_MMG = "M240"; _MMGmag = "100Rnd_762x51_M240";																							// Medium MG
 
 _HMG = "M2HD_mini_TriPod_US_Bag_EP1";																										// Heavy MG (note: HMG is an assembled weapon, gunner carries weapon)
 _HMGmount = "Tripod_Bag";																													// Assistant Heavy MG (note: HMG is an assembled weapon, assistant carries bipod/tripd)
