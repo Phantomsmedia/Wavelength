@@ -77,7 +77,7 @@ _baglarge =  "TK_ALICE_Pack_EP1"; 		// 12+ slots
 
 _AR = "ACE_RPK74M"; _ARmag = "75Rnd_545x39_RPK";																								// Automatic Rifleman
 
-_MMG = "PK"; _MMGmag = "100Rnd_762x54_PK";																									// Medium MG
+_MMG = "Pecheneg"; _MMGmag = "100Rnd_762x54_PK";																									// Medium MG
 
 _HMG = "DSHkM_Mini_TriPod_TK_INS_Bag_EP1";																									// Heavy MG (note: HMG is an assembled weapon, gunner carries weapon)
 _HMGmount = "Tripod_Bag";																													// Assistant Heavy MG (note: HMG is an assembled weapon, assistant carries bipod/tripd)
