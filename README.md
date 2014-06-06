@@ -56,6 +56,7 @@ Developed by
 
 Tools of The Trade
 
+	Gear Editing? Six Config Browser (http://browser.six-projects.net/cfg_weapons/classlist?version=67)
 	Notepad++ (http://notepad-plus-plus.org/)
 	TextCrawler (http://www.digitalvolcano.co.uk/textcrawler.html)
 	Github (https://github.com/batboyx2/PhanTactical-Mission-Framework)
