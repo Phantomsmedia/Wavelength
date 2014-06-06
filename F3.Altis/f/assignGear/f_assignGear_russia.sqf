@@ -45,8 +45,8 @@ f_param_backpacks = 1;
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 _rifle = "arifle_SUD_AK74M";
-_riflemag = "30Rnd_mas_545x39_mag";
-_riflemag_tr = "30Rnd_mas_545x39_T_mag";
+_riflemag = "30rnd_762x39_AKM";
+_riflemag_tr = "30rnd_762x39_AKM";
 _rifle_attach = ["optic_sud_cobra"];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
