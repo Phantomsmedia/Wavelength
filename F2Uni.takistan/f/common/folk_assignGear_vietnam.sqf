@@ -54,7 +54,9 @@ _rifle = "M16A2"; _riflemag = "20Rnd_556x45_Stanag";																						// Sta
 
 _carbine = "M16A2"; _carbinemag = "20Rnd_556x45_Stanag"; 																					// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
 
-_smg = ""; _smgmag = "";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
+_smg = "ACE_M3A1"; _smgmag = "ACE_30Rnd_1143x23_B_M3";
+
+_gl = "M79_EP1"; _grlmag = "1Rnd_HE_M203";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
 
 _glrifle = "ACE_M16A2GL_UP"; _glriflemag = "20Rnd_556x45_Stanag"; _glmag = "1Rnd_HE_M203";														// Rifle with GL and HE grenades (CO, DC, FTLs)
 _glsmokewhite = "1Rnd_Smoke_M203"; _glsmokegreen = "1Rnd_SmokeGreen_M203"; _glsmokered = "1Rnd_SmokeRed_M203";    							// Smoke for FTLs, Squad Leaders, etc 
@@ -571,13 +573,13 @@ _unit addweapon _carbine;
 	{
 _unit addWeapon _ruckSack;
 
-{_unit addmagazine _glriflemag} foreach [1,2,3,4,5,6,7,8];
-_unit addweapon _glrifle;
-{_unit addmagazine _glmag} foreach [1,2,3,4,5,6];
-{_unit addmagazine _glsmokewhite} foreach [1,2];
+{_unit addmagazine _grlmag} foreach [1,2,3,4];
+_unit addweapon _gl;
+{_unit addmagazine _pistolmag} foreach [1,2,3,4];
+_unit addweapon _pistol;
 {_unit addmagazine _grenade} foreach [1,2];
 {_unit addmagazine _smokegrenade;} foreach [1,2];
-[_unit , _glriflemag, 7] call ACE_Sys_Ruck_fnc_AddMagToRuck;
+[_unit , _grlmag, 7] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
