@@ -78,9 +78,9 @@ _baglarge =  "ACE_Coyote_Pack_Wood"; 		// 12+ slots
 
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 	
-_AR = "M60A4_EP1"; _ARmag = "100Rnd_762x51_M240";																							// Automatic Rifleman
+_AR = "ACE_M60"; _ARmag = "100Rnd_762x51_M240";																							// Automatic Rifleman
 
-_MMG = "M60A4_EP1"; _MMGmag = "100Rnd_762x51_M240";																							// Medium MG
+_MMG = "ACE_M60"; _MMGmag = "100Rnd_762x51_M240";																							// Medium MG
 
 _HMG = "M2HD_mini_TriPod_US_Bag_EP1";																										// Heavy MG (note: HMG is an assembled weapon, gunner carries weapon)
 _HMGmount = "Tripod_Bag";																													// Assistant Heavy MG (note: HMG is an assembled weapon, assistant carries bipod/tripd)
