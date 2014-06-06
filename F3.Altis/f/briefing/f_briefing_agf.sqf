@@ -21,7 +21,41 @@
 
 _cre = player createDiaryRecord ["diary", ["Radios","
 <br/>
-<img image='InfoSheet.jpg'/>
+<br/>
+Squad Leaders 
+Command Squad - Freq 40 (Command Net) 
+Alpha Squad Lead - Freq 40 (Command Net); Freq 31 (Alpha FT Net) 
+Bravo Squad Lead - Freq 40 (Command Net); Freq 32 (Bravo FT Net) 
+Charlie Squad Lead - Freq 40 (Command Net); Freq 33 (Charlie FT Net) 
+ <br/><br/>
+Fire Team Leaders 
+Alpha 1 Fire Team Leader - Freq 31 (Alpha FT Net) 
+Alpha 2 Fire Team Leader - Freq 31 (Alpha FT Net) 
+Alpha 3 Fire Team Leader - Freq 31 (Alpha FT Net) 
+Bravo 1 Fire Team Leader - Freq 32 (Bravo FT Net) 
+Bravo 2 Fire Team Leader - Freq 32 (Bravo FT Net) 
+Bravo 3 Fire Team Leader - Freq 32 (Bravo FT Net) 
+Charlie 1 Fire Team Leader - Freq 33 (Charlie FT Net) 
+Charlie 2 Fire Team Leader - Freq 33 (Charlie FT Net) 
+Charlie 3 Fire Team Leader - Freq 33 (Charlie FT Net) 
+ <br/><br/>
+GI Radio Channels 
+Alpha 1  - Freq 31.1 (Alpha Net) 
+Alpha 2  - Freq 31.2 (Alpha Net) 
+Alpha 3  - Freq 31.3 (Alpha Net) 
+Bravo 1  - Freq 32.1 (Bravo Net) 
+Bravo 2  - Freq 32.2 (Bravo Net) 
+Bravo 3  - Freq 32.3 (Bravo Net) 
+Charlie 1  - Freq 33.1 (Charlie Net) 
+Charlie 2  - Freq 33.2 (Charlie Net) 
+Charlie 3  - Freq 33.3 (Charlie Net) 
+Command SR (Medic and CMD) - Channel 40.1
+<br/><br/>
+Support Channels
+From 50.1 to 50.9 for Air Support
+From 51.1 to 51.9 for Armor Support
+From 52.1 to 52.9 for Infantry Support (MMG etc)
+<br/>
 "]];
 
 // ====================================================================================
