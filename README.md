@@ -63,13 +63,14 @@ Tools of The Trade
 	Kegety's ArmA Tools Pack (http://www.kegetys.fi/category/gaming/armamods/)
 
 How to Add a Faction
-	mission.sqm                                  X
-	folk_setGroupIDs.sqf                   X
-	fn_folk_assignGear.sqf                 X
-	folk_setLocalGroupMarkers.sqf  X
-	briefing.sqf                                     X
-	create folk_assignGear_(faction)  X
-	create f_briefing_(faction)             X
+
+	mission.sqm
+	folk_setGroupIDs.sqf
+	fn_folk_assignGear.sqf
+	folk_setLocalGroupMarkers.sqf
+	briefing.sqf
+	create folk_assignGear_(faction)
+	create f_briefing_(faction)
 
 Beta Testers/Mission Developers
 	
