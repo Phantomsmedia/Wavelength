@@ -100,6 +100,14 @@ if (_faction == "mas_usa_mars") then {
 };
 // ====================================================================================
 
+// GEAR: BLUFOR > US Army
+// The following block of code executes only if the player is in a US Army slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "AV_USArmy") then {
+	#include "f_assignGear_usarmy.sqf"
+};
+// ====================================================================================
 // GEAR: INDFOR > AGF
 // The following block of code executes only if the player is in a AGF slot; it
 // automatically includes a file which contains the appropriate equipment data.

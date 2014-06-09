@@ -103,6 +103,22 @@ if (_unitfaction == "mas_usa_mars") exitwith {
 };
 // ====================================================================================
 
+// BRIEFING: BLUFOR > US Army
+// The following block of code executes only if the player is in a US Army slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "AV_USArmy") exitwith {
+
+#include "f\briefing\f_briefing_usarmy.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+// ====================================================================================
+
 // BRIEFING: BLUFOR > Delta Ghost
 // The following block of code executes only if the player is in a Delta Ghost slot; it
 // automatically includes a file which contains the appropriate briefing data.

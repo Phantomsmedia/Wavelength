@@ -271,6 +271,59 @@ _groups = [
 ["GrpUSMC_MEU_WOOD_TH8","USMC TH8 -"],
 ["GrpUSMC_MEU_WOOD_AH1","USMC AH1 -"],
 
+// ====================================================================================
+
+// GROUP IDs: BLUFOR > US Army ACU
+// Automatically assigns intelligible names to groups
+
+["GrpUSArmy_ACU_CO","US Army CO -"],
+["GrpUSArmy_ACU_DC","US Army DC -"],
+
+["GrpUSArmy_ACU_ASL","US Army ASL -"],
+["GrpUSArmy_ACU_A1","US Army A1 -"],
+["GrpUSArmy_ACU_A2","US Army A2 -"],
+["GrpUSArmy_ACU_A3","US Army A3 -"],
+
+["GrpUSArmy_ACU_BSL","US Army BSL -"],
+["GrpUSArmy_ACU_B1","US Army B1 -"],
+["GrpUSArmy_ACU_B2","US Army B2 -"],
+["GrpUSArmy_ACU_B3","US Army B3 -"],
+
+["GrpUSArmy_ACU_CSL","US Army CSL -"],
+["GrpUSArmy_ACU_C1","US Army C1 -"],
+["GrpUSArmy_ACU_C2","US Army C2 -"],
+["GrpUSArmy_ACU_C3","US Army C3 -"],
+
+["GrpUSArmy_ACU_MMG1","US Army MMG1 -"],
+["GrpUSArmy_ACU_MAT1","US Army MAT1 -"],
+["GrpUSArmy_ACU_HAT1","US Army HAT1 -"],
+["GrpUSArmy_ACU_HMG1","US Army HMG1 -"],
+["GrpUSArmy_ACU_MTR1","US Army MTR1 -"],
+
+["GrpUSArmy_ACU_ST1","US Army ST1 -"],
+["GrpUSArmy_ACU_DT1","US Army DT1 -"],
+["GrpUSArmy_ACU_ENG1","US Army ENG1 -"],
+
+["GrpUSArmy_ACU_IFV1","US Army IFV1 -"],
+["GrpUSArmy_ACU_IFV2","US Army IFV2 -"],
+["GrpUSArmy_ACU_IFV3","US Army IFV3 -"],
+["GrpUSArmy_ACU_IFV4","US Army IFV4 -"],
+["GrpUSArmy_ACU_IFV5","US Army IFV5 -"],
+["GrpUSArmy_ACU_IFV6","US Army IFV6 -"],
+["GrpUSArmy_ACU_IFV7","US Army IFV7 -"],
+["GrpUSArmy_ACU_IFV8","US Army IFV8 -"],
+["GrpUSArmy_ACU_TNK1","US Army TNK1 -"],
+
+["GrpUSArmy_ACU_TH1","US Army TH1 -"],
+["GrpUSArmy_ACU_TH2","US Army TH2 -"],
+["GrpUSArmy_ACU_TH3","US Army TH3 -"],
+["GrpUSArmy_ACU_TH4","US Army TH4 -"],
+["GrpUSArmy_ACU_TH5","US Army TH5 -"],
+["GrpUSArmy_ACU_TH6","US Army TH6 -"],
+["GrpUSArmy_ACU_TH7","US Army TH7 -"],
+["GrpUSArmy_ACU_TH8","US Army TH8 -"],
+["GrpUSArmy_ACU_AH1","US Army AH1 -"],
+
 
 // ====================================================================================
 
