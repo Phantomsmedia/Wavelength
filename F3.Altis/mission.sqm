@@ -24556,7 +24556,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=26;
+		items=27;
 		class Item0
 		{
 			position[]={374.19958,-0.1004528,1977.5391};
@@ -24672,40 +24672,40 @@ class Mission
 		};
 		class Item11
 		{
-			position[]={500,0,1500};
+			position[]={499.23215,0.07669498,1999.074};
 			name="blu1";
 			text="BLUFOR";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorWEST";
 			a=500;
-			b=1500;
+			b=2000;
 		};
 		class Item12
 		{
-			position[]={1500,0,1500};
+			position[]={1498.2025,0.091218188,2001.8756};
 			name="blu1_1";
 			text="OPFOR";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorEAST";
 			a=500;
-			b=1500;
+			b=2000;
 		};
 		class Item13
 		{
-			position[]={2500,0,1500};
+			position[]={2498.9304,0.10054071,2001.3116};
 			name="blu1_2";
 			text="INDFOR";
 			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorGUER";
 			a=500;
-			b=1500;
+			b=2000;
 		};
 		class Item14
 		{
-			position[]={341.4791,0.0026919059,3053.8713};
+			position[]={381.14389,-0.10626729,4042.4468};
 			name="nlnalsd";
 			text="BLUFOR";
 			type="mil_dot";
@@ -24715,7 +24715,7 @@ class Mission
 		};
 		class Item15
 		{
-			position[]={1325.5938,0.0022456758,3067.3513};
+			position[]={1365.2585,0.043968253,4055.9268};
 			name="nlnalsd_1";
 			text="OPFOR";
 			type="mil_dot";
@@ -24725,7 +24725,7 @@ class Mission
 		};
 		class Item16
 		{
-			position[]={2395.0884,-0.019554848,3053.8713};
+			position[]={2434.7532,0.00024357438,4042.4468};
 			name="nlnalsd_2";
 			text="INDFOR";
 			type="mil_dot";
@@ -24822,6 +24822,16 @@ class Mission
 			text="DO NOT USE PMC";
 			type="mil_dot";
 			colorName="ColorRed";
+			a=0;
+			b=0;
+		};
+		class Item26
+		{
+			position[]={3052.074,-0.096828818,3576.8647};
+			name="blaj_3";
+			text="Special";
+			type="mil_dot";
+			colorName="ColorPink";
 			a=0;
 			b=0;
 		};
