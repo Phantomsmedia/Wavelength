@@ -104,7 +104,7 @@ f_processParamsArray = [] execVM "f\common\f_processParamsArray.sqf";
 // F2 - CO Briefing
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 
-//[] execVM "briefing.sqf";
+[] execVM "briefing.sqf";
 
 
 
