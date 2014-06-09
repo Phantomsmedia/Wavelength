@@ -1,4 +1,3 @@
-//Start F3 Init!
 // ====================================================================================
 // BatScript - TFAR API Global Variables
 // Credits: Please ask Batboyx2 what these do, as he added them.
