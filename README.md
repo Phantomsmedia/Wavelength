@@ -62,6 +62,14 @@ Tools of The Trade
 	Github (https://github.com/batboyx2/PhanTactical-Mission-Framework)
 	Kegety's ArmA Tools Pack (http://www.kegetys.fi/category/gaming/armamods/)
 
+How to Add a Faction
+	mission.sqm                                  X
+	folk_setGroupIDs.sqf                   X
+	fn_folk_assignGear.sqf                 X
+	folk_setLocalGroupMarkers.sqf  X
+	briefing.sqf                                     X
+	create folk_assignGear_(faction)  X
+	create f_briefing_(faction)             X
 
 Beta Testers/Mission Developers
 	
