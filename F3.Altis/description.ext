@@ -205,6 +205,20 @@ class Params
 
 // ============================================================================================
 
+// BATSCRIPT - Headless Client
+// Credits: Please ask Batboyx2
+
+	class f_param_headlessclient
+	{
+		title = "Headless Client";
+		values[] = {0,1};
+		default = 0;
+		texts[] = {"OFF","ON"};
+		code = "f_param_headlessclient = %1";
+	};
+
+// ============================================================================================
+
 // F3 - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 

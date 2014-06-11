@@ -56,6 +56,10 @@ class Mission
 		"caf_HLVW",
 		"caf_TAPV",
 		"a3_map_altis",
+		"jsrs2_amv7_marshal",
+		"jsrs2_mse3_marid",
+		"jsrs2_afv4_gorgon",
+		"A3_Animals_F_Rabbit"
 	};
 	addOnsAuto[]=
 	{
@@ -81,11 +85,14 @@ class Mission
 		"A3_Air_F_Heli_Light_02",
 		"A3_Air_F_Beta_Heli_Transport_02",
 		"A3_Armor_F_AMV",
+		"jsrs2_amv7_marshal",
 		"A3_Air_F_Beta_Heli_Attack_01",
 		"A3_Armor_F_Marid",
+		"jsrs2_mse3_marid",
 		"A3_Air_F_Beta_Heli_Attack_02",
 		"A3_Armor_F_Slammer",
 		"A3_Armor_F_APC_Wheeled_03",
+		"jsrs2_afv4_gorgon",
 		"A3_Armor_F_T100K",
 		"a3_armor_btr100",
 		"mas_usa_usoc_veh",
@@ -111,7 +118,8 @@ class Mission
 		"caf_LeopardC2",
 		"caf_HLVW",
 		"caf_TAPV",
-		"a3_map_altis",
+		"A3_Animals_F_Rabbit",
+		"a3_map_altis"
 	};
 	randomSeed=11823142;
 	class Intel
@@ -21153,7 +21161,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=330;
+		items=331;
 		class Item0
 		{
 			position[]={468.67737,-0.00017216802,1866.9641};
@@ -24552,6 +24560,19 @@ class Mission
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1_7";
+		};
+		class Item330
+		{
+			position[]={3786.7754,-185.97,2512.196};
+			id=1597;
+			side="AMBIENT LIFE";
+			vehicle="Rabbit_F";
+			player="PLAY CDG";
+			skill=0.60000002;
+			text="HC";
+			init="this allowDamage false;";
+			description="Headless Client";
+			forceHeadlessClient = 1;
 		};
 	};
 	class Markers
