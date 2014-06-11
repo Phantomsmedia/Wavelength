@@ -1,5 +1,5 @@
 f_param_backpacks = 1;
-// F3 - Folk Assign Gear Script - Russia
+// F3 - Folk Assign Gear Script - African Government Forces
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
