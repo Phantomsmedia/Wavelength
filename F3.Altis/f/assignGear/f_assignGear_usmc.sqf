@@ -763,8 +763,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addweapon _carbine;
 		_unit addweapon _flaregun;
-		_unit addmagazines [_fgflaregreen,3];
-		_unit addmagazines [_fgflarered,3];
+		_unit addmagazines [_fgflaregreen,4];
+		_unit addmagazines [_fgflarered,4];
 		_unit addmagazines [_smokegrenade,4];		
 		_unit addmagazines [_smokegrenade,4];
 		//{_unit addItem _firstaid} forEach [1,2,3,4];
