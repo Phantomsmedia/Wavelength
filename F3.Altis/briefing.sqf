@@ -87,6 +87,22 @@ if (_unitfaction == "BLU_F") exitwith {
 
 // ====================================================================================
 
+// BRIEFING: BLUFOR > Canadian Maple Farmers TW
+// The following block of code executes only if the player is in a CAF TW slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "CAF_TW") exitwith {
+
+#include "f\briefing\f_briefing_caftw.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+// ====================================================================================
+
 // BRIEFING: BLUFOR > USMC MEU
 // The following block of code executes only if the player is in a USMC slot; it
 // automatically includes a file which contains the appropriate briefing data.

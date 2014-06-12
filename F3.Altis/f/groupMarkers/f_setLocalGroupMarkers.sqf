@@ -90,6 +90,74 @@ switch (_unitfaction) do
 
 // ====================================================================================
 
+// MARKERS: BLUFOR > CAF
+// Markers seen by players in NATO slots.
+
+	case "CAF_TW":
+	{
+		["GrpCAF_WOOD_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_A2", 1, "A2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_A3", 1, "A3", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_BSL", 0, "BSL", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_B1", 1, "B1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_B2", 1, "B2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_B3", 1, "B3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_CSL", 0, "CSL", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_C1", 1, "C1", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_C2", 1, "C2", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_C3", 1, "C3", "ColorGreen"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_MMG1", 2, "MMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_MAT1", 3, "MAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_ST1",  4, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_HMG1",  2, "HMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_MTR1",  5, "MTR1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_HAT1",  3, "HAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_SAM1",  3, "SAM1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_ENG1",  6, "ENG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+ 		["GrpCAF_WOOD_IFV1",  7, "IFV1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_IFV2",  7, "IFV2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_IFV3",  7, "IFV3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_IFV4",  7, "IFV4", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_IFV5",  7, "IFV5", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_IFV6",  7, "IFV6", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_IFV7",  7, "IFV7", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_IFV8",  7, "IFV8", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+ 		["GrpCAF_WOOD_TNK1",  8, "TNK1", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_TH1",  9, "TH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpCAF_WOOD_TH2",  9, "TH2", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpCAF_WOOD_TH3",  9, "TH3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpCAF_WOOD_TH4",  9, "TH4", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpCAF_WOOD_TH5",  9, "TH5", "ColorGreen"] spawn f_fnc_localGroupMarker;
+  		["GrpCAF_WOOD_TH6",  9, "TH6", "ColorGreen"] spawn f_fnc_localGroupMarker;
+   		["GrpCAF_WOOD_TH7",  9, "TH7", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpCAF_WOOD_TH8",  9, "TH8", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_AH1",  9, "AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpCAF_WOOD_DT1",  4, "DT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["UnitCAF_WOOD_CO_M", 0, "COM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitCAF_WOOD_DC_M", 0, "DCM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitCAF_WOOD_ASL_M", 0, "AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitCAF_WOOD_BSL_M", 0, "BM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitCAF_WOOD_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+
+	};
+
+// ====================================================================================
+
 // MARKERS: INDFOR > AGF
 // Markers seen by players in AGF slots.
 

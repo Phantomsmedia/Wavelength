@@ -61,6 +61,59 @@ _groups = [
 
 // ====================================================================================
 
+// GROUP IDs: BLUFOR > CAF TW
+// Automatically assigns intelligible names to groups
+
+["GrpCAF_WOOD_CO","CAF CO -"],
+["GrpCAF_WOOD_DC","CAF DC -"],
+
+["GrpCAF_WOOD_ASL","CAF ASL -"],
+["GrpCAF_WOOD_A1","CAF A1 -"],
+["GrpCAF_WOOD_A2","CAF A2 -"],
+["GrpCAF_WOOD_A3","CAF A3 -"],
+
+["GrpCAF_WOOD_BSL","CAF BSL -"],
+["GrpCAF_WOOD_B1","CAF B1 -"],
+["GrpCAF_WOOD_B2","CAF B2 -"],
+["GrpCAF_WOOD_B3","CAF B3 -"],
+
+["GrpCAF_WOOD_CSL","CAF CSL -"],
+["GrpCAF_WOOD_C1","CAF C1 -"],
+["GrpCAF_WOOD_C2","CAF C2 -"],
+["GrpCAF_WOOD_C3","CAF C3 -"],
+
+["GrpCAF_WOOD_MMG1","CAF MMG1 -"],
+["GrpCAF_WOOD_MAT1","CAF MAT1 -"],
+["GrpCAF_WOOD_HAT1","CAF HAT1 -"],
+["GrpCAF_WOOD_HMG1","CAF HMG1 -"],
+["GrpCAF_WOOD_MTR1","CAF MTR1 -"],
+
+["GrpCAF_WOOD_ST1","CAF ST1 -"],
+["GrpCAF_WOOD_DT1","CAF DT1 -"],
+["GrpCAF_WOOD_ENG1","CAF ENG1 -"],
+
+["GrpCAF_WOOD_IFV1","CAF IFV1 -"],
+["GrpCAF_WOOD_IFV2","CAF IFV2 -"],
+["GrpCAF_WOOD_IFV3","CAF IFV3 -"],
+["GrpCAF_WOOD_IFV4","CAF IFV4 -"],
+["GrpCAF_WOOD_IFV5","CAF IFV5 -"],
+["GrpCAF_WOOD_IFV6","CAF IFV6 -"],
+["GrpCAF_WOOD_IFV7","CAF IFV7 -"],
+["GrpCAF_WOOD_IFV8","CAF IFV8 -"],
+["GrpCAF_WOOD_TNK1","CAF TNK1 -"],
+
+["GrpCAF_WOOD_TH1","CAF TH1 -"],
+["GrpCAF_WOOD_TH2","CAF TH2 -"],
+["GrpCAF_WOOD_TH3","CAF TH3 -"],
+["GrpCAF_WOOD_TH4","CAF TH4 -"],
+["GrpCAF_WOOD_TH5","CAF TH5 -"],
+["GrpCAF_WOOD_TH6","CAF TH6 -"],
+["GrpCAF_WOOD_TH7","CAF TH7 -"],
+["GrpCAF_WOOD_TH8","CAF TH8 -"],
+["GrpCAF_WOOD_AH1","CAF AH1 -"],
+
+// ====================================================================================
+
 // GROUP IDs: BLUFOR > FIA
 // Automatically assigns intelligible names to groups
 
