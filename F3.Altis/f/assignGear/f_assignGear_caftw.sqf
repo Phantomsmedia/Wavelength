@@ -43,15 +43,15 @@ f_param_backpacks = 1;
 // ["acc_pointer_IR","optic_ACO_grn"] = remove all, add items.
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "arifle_MX_pointer_F";
-_riflemag = "30Rnd_65x39_caseless_mag";
-_riflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_rifle = "caf_C7A2";
+_riflemag = "30Rnd_556x45_stanag";
+_riflemag_tr = "30Rnd_556x45_T_stanag";
 _rifle_attach = ["acc_pointer_IR","optic_Aco"];
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_MXC_F";
-_carbinemag = "30Rnd_65x39_caseless_mag";
-_carbinemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_carbine = "caf_c8a3_cqb";
+_carbinemag = "30Rnd_556x45_stanag";
+_carbinemag_tr = "30Rnd_556x45_T_stanag";
 _carbine_attach = ["acc_pointer_IR"];
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
@@ -67,11 +67,11 @@ _diverMag2 = "20Rnd_556x45_UW_mag";
 _diverWep_attach = nil;
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "arifle_MX_GL_F";
-_glriflemag = "30Rnd_65x39_caseless_mag";
-_glriflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_glrifle = "caf_C7A2_M203";
+_glriflemag = "30Rnd_556x45_stanag";
+_glriflemag_tr = "30Rnd_556x45_T_stanag";
 _glmag = "1Rnd_HE_Grenade_shell";
-_glrifle_attach = ["acc_pointer_IR","optic_Hamr"];
+_glrifle_attach = ["acc_pointer_IR","optic_elcan"];
 
 // Smoke for FTLs, Squad Leaders, etc
 _glsmokewhite = "1Rnd_Smoke_Grenade_shell";
@@ -116,9 +116,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_mcamo";			// carries 120, weighs 20
-_bagmedium = "B_FieldPack_khk";				// carries 240, weighs 30
-_baglarge =  "B_Carryall_mcamo"; 				// carries 320, weighs 40
+_bagsmall = "B_CAF_84bag_sgg";			// carries 120, weighs 20
+_bagmedium = "B_CAF_Carryall";				// carries 240, weighs 30
+_baglarge =  "B_CAF_Carryall"; 				// carries 320, weighs 40
 _bagmediumdiver =  "B_AssaultPack_blk";	// used by divers
 _bagTFARlongRANGE = "tf_rt1523g"; // used by ground infantry leaders
 _bagTFARairBORNE = "tf_anarc210"; // used by pilots and other airborne troops
@@ -137,14 +137,16 @@ _sparebarrel = "AGM_SpareBarrel";			// For LMG/MMG Only
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "arifle_MX_SW_F";
-_ARmag = "100Rnd_65x39_caseless_mag";
-_ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
+_AR = "caf_c9a2";
+_ARmag = "200rnd_556x45_Belt";
+_ARmag_tr = "200rnd_556x45_Belt";
+_AR_attach = ["optic_elcan"]
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "caf_c6gpmg";
+_MMGmag = "220rnd_762x51_Belt";
+_MMGmag_tr = "220rnd_762x51_Belt";
+_MMG_attach = ["optic_M2CG"]
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
@@ -159,9 +161,9 @@ _MTR = "B_Mk6Mortar_Wpn";
 _MTRmount = "B_Mk6Mortar_Support";
 
 // Medium AT
-_MAT = "launch_NLAW_F";
-_MATmag1 = "NLAW_F";
-_MATmag2 = "NLAW_F";
+_MAT = "M2CG";
+_MATmag1 = "FFV551_HEAT";
+_MATmag2 = "FFV441_HEDP";
 
 // Surface Air
 _SAM = "launch_B_Titan_F";
