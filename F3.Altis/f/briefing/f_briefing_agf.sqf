@@ -16,47 +16,74 @@
 
 // ====================================================================================
 
+
 // NOTES: RADIO IMAGE
 // The code below creates the administration sub-section of notes.
 
 _cre = player createDiaryRecord ["diary", ["Radios","
 <br/>
-<br/>
-Squad Leaders 
-Command Squad - Freq 40 (Command Net) 
+Squad Leaders
+<br/> 
+Command Squad - Freq 40 (Command Net)
+<br/> 
 Alpha Squad Lead - Freq 40 (Command Net); Freq 31 (Alpha FT Net) 
+<br/>
 Bravo Squad Lead - Freq 40 (Command Net); Freq 32 (Bravo FT Net) 
+<br/>
 Charlie Squad Lead - Freq 40 (Command Net); Freq 33 (Charlie FT Net) 
  <br/><br/>
 Fire Team Leaders 
+<br/>
 Alpha 1 Fire Team Leader - Freq 31 (Alpha FT Net) 
-Alpha 2 Fire Team Leader - Freq 31 (Alpha FT Net) 
+<br/>
+Alpha 2 Fire Team Leader - Freq 31 (Alpha FT Net)
+<br/> 
 Alpha 3 Fire Team Leader - Freq 31 (Alpha FT Net) 
+<br/>
 Bravo 1 Fire Team Leader - Freq 32 (Bravo FT Net) 
-Bravo 2 Fire Team Leader - Freq 32 (Bravo FT Net) 
+<br/>
+Bravo 2 Fire Team Leader - Freq 32 (Bravo FT Net)
+<br/> 
 Bravo 3 Fire Team Leader - Freq 32 (Bravo FT Net) 
+<br/>
 Charlie 1 Fire Team Leader - Freq 33 (Charlie FT Net) 
+<br/>
 Charlie 2 Fire Team Leader - Freq 33 (Charlie FT Net) 
+<br/>
 Charlie 3 Fire Team Leader - Freq 33 (Charlie FT Net) 
  <br/><br/>
 GI Radio Channels 
+<br/>
 Alpha 1  - Freq 31.1 (Alpha Net) 
+<br/>
 Alpha 2  - Freq 31.2 (Alpha Net) 
+<br/>
 Alpha 3  - Freq 31.3 (Alpha Net) 
+<br/>
 Bravo 1  - Freq 32.1 (Bravo Net) 
+<br/>
 Bravo 2  - Freq 32.2 (Bravo Net) 
+<br/>
 Bravo 3  - Freq 32.3 (Bravo Net) 
+<br/>
 Charlie 1  - Freq 33.1 (Charlie Net) 
+<br/>
 Charlie 2  - Freq 33.2 (Charlie Net) 
+<br/>
 Charlie 3  - Freq 33.3 (Charlie Net) 
+<br/>
 Command SR (Medic and CMD) - Channel 40.1
 <br/><br/>
 Support Channels
+<br/>
 From 50.1 to 50.9 for Air Support
+<br/>
 From 51.1 to 51.9 for Armor Support
+<br/>
 From 52.1 to 52.9 for Infantry Support (MMG etc)
 <br/>
 "]];
+
 
 // ====================================================================================
 
