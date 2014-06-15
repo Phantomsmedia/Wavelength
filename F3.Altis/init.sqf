@@ -1,49 +1,4 @@
 // ====================================================================================
-// BATSCRIPT HEADLESS CLIENT HANDLING, BOOYAH
-// HC HANDLING, ENABLED
-
-if (f_param_headlessclient == 1) then { //All handles the HC client and whether it runs or not.
-	if (isServer) then {
-		HCPresent = true;
-		publicVariable "HCPresent";
-	};
-	if (!hasInterface && !isServer) then {
-		HCName = name player;
-		publicVariable "HCName";
-	};
-} else {
-	if (isServer) then {
-		HCPresent = false;
-		HCName = "NOONE";
-		publicVariable "HCPresent";
-		publicVariable "HCName";
-	};
-};
-// ====================================================================================
-// ====================================================================================
-
-// F3 - Briefing
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-f_script_briefing = [] execVM "briefing.sqf";
-
-// ====================================================================================
-// ====================================================================================
-// HC HANDLING, ENABLED
-
-if (!isServer) then {waitUntil{!isNull player}};
-
-if (HCPresent) then {
-	if (!hasInterface && !isServer) then {
-		execVM "pmt_mission_aionly.sqf";
-	};
-} else {
-	if (isServer) then {
-		execVM "pmt_mission_aionly.sqf";
-	};
-};
-// ====================================================================================
-// ====================================================================================
 // BatScript - TFAR API Global Variables
 // Credits: Please ask Batboyx2 what these do, as he added them.
 /*
@@ -69,6 +24,13 @@ enableSaving [false, false];
 // f_var_mapClickTeleport_TimeLimit = 0; 			// If higher than 0 the action will be removed after the given time.
 // f_var_mapClickTeleport_GroupTeleport = false; 	// False: everyone can teleport. True: Only group leaders can teleport and will move their entire group.
 // [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
+
+// ====================================================================================
+
+// F3 - Briefing
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+f_script_briefing = [] execVM "briefing.sqf";
 
 // ====================================================================================
 
