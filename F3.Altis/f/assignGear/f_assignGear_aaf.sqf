@@ -140,9 +140,9 @@ _ARmag_tr = "200Rnd_65x39_cased_Box_Tracer";
 
 // Medium MG
 _MMG = "LMG_Zafir_F";
-_MMG_attach = ["optic_Arco","acc_pointer_IR"];
 _MMGmag = "150Rnd_762x51_Box";
 _MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG_attach = ["optic_Arco","acc_pointer_IR"];
 
 // Rifleman AT
 _RAT = "launch_RPG32_F";
