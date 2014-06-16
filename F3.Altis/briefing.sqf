@@ -87,13 +87,13 @@ if (_unitfaction == "BLU_F") exitwith {
 
 // ====================================================================================
 
-// BRIEFING: BLUFOR > Canadian Maple Farmers TW
-// The following block of code executes only if the player is in a CAF TW slot; it
+// BRIEFING: BLUFOR > United Nations Peacekeeping
+// The following block of code executes only if the player is in a UN slot; it
 // automatically includes a file which contains the appropriate briefing data.
 
-if (_unitfaction == "CAF_TW") exitwith {
+if (_unitfaction == "mas_afr_onu") exitwith {
 
-#include "f\briefing\f_briefing_caftw.sqf"
+#include "f\briefing\f_briefing_un.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then

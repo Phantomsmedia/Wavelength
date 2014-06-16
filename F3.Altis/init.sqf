@@ -1,6 +1,6 @@
 // ====================================================================================
-// BatScript - TFAR API Global Variables
-// Credits: Please ask Batboyx2 what these do, as he added them.
+// PhanTactical - TFAR API Global Variables
+// Credits: Batboy (2014)
 /*
 player setVariable ["TF_no_auto_long_range_radio",false];
 player setVariable ["TF_give_personal_radio_to_regular_soldier",true];

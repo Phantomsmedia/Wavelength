@@ -18,7 +18,7 @@ class Mission
 		"rav_lifter_a3",
 		"mas_afr_rebl_i",
 		"caf_somali_c",
-		"CAF_INF_TW",
+		"mas_afr_rebl_b",
 		"A3_Modules_F_Curator_Curator",
 		"av_indus",
 		"A3_Air_F_Beta_Heli_Transport_01",
@@ -49,13 +49,8 @@ class Mission
 		"BH_EXT",
 		"A3_Air_F_EPB_Heli_Light_03",
 		"A3_Armor_F_EPB_APC_tracked_03",
-		"CAF_Chinook",
-		"caf_lav3",
-		"caf_griffon",
-		"caf_LeopardC2",
-		"caf_HLVW",
-		"caf_TAPV",
-		"a3_map_altis",
+		"A3_Armor_F_EPC_MBT_01",
+		"a3_map_altis"
 	};
 	addOnsAuto[]=
 	{
@@ -74,7 +69,7 @@ class Mission
 		"rav_lifter_a3",
 		"mas_afr_rebl_i",
 		"caf_somali_c",
-		"CAF_INF_TW",
+		"mas_afr_rebl_b",
 		"A3_Modules_F_Curator_Curator",
 		"av_indus",
 		"A3_Air_F_Beta_Heli_Transport_01",
@@ -105,13 +100,8 @@ class Mission
 		"BH_EXT",
 		"A3_Air_F_EPB_Heli_Light_03",
 		"A3_Armor_F_EPB_APC_tracked_03",
-		"CAF_Chinook",
-		"caf_lav3",
-		"caf_griffon",
-		"caf_LeopardC2",
-		"caf_HLVW",
-		"caf_TAPV",
-		"a3_map_altis",
+		"A3_Armor_F_EPC_MBT_01",
+		"a3_map_altis"
 	};
 	randomSeed=11823142;
 	class Intel
@@ -17728,14 +17718,14 @@ class Mission
 					azimut=-1.08269;
 					id=1060;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_off_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_CO";
-					init="GrpCAF_WOOD_CO = group this; nul = [""co"",this] call f_fnc_assignGear;";
-					description="CAF Commander";
+					text="UnitUN_CO";
+					init="GrpUN_CO = group this; nul = [""co"",this] call f_fnc_assignGear;";
+					description="UN Commander";
 				};
 				class Item1
 				{
@@ -17743,13 +17733,13 @@ class Mission
 					azimut=-1.08269;
 					id=1061;
 					side="WEST";
-					vehicle="CAF_MEDIC_TW";
+					vehicle="B_mas_afr_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_CO_M";
-					init="GrpCAF_WOOD_CO = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="CAF Medic";
+					text="UnitUN_CO_M";
+					init="GrpUN_CO = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					description="UN Medic";
 				};
 			};
 		};
@@ -17765,14 +17755,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1062;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_off_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_DC";
-					init="GrpCAF_WOOD_DC = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="CAF Deputy Commander";
+					text="UnitUN_DC";
+					init="GrpUN_DC = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="UN Deputy Commander";
 				};
 				class Item1
 				{
@@ -17780,13 +17770,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1063;
 					side="WEST";
-					vehicle="CAF_MEDIC_TW";
+					vehicle="B_mas_afr_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_DC_M";
-					init="GrpCAF_WOOD_DC = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="CAF Medic";
+					text="UnitUN_DC_M";
+					init="GrpUN_DC = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					description="UN Medic";
 				};
 			};
 		};
@@ -17802,14 +17792,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1064;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_ASL_SL";
-					init="GrpCAF_WOOD_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="CAF Alpha Squad Leader";
+					text="UnitUN_ASL_SL";
+					init="GrpUN_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="UN Alpha Squad Leader";
 				};
 				class Item1
 				{
@@ -17817,13 +17807,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1065;
 					side="WEST";
-					vehicle="CAF_MEDIC_TW";
+					vehicle="B_mas_afr_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_ASL_M";
-					init="GrpCAF_WOOD_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="CAF Alpha Medic";
+					text="UnitUN_ASL_M";
+					init="GrpUN_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					description="UN Alpha Medic";
 				};
 			};
 		};
@@ -17839,14 +17829,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1066;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A1_FTL";
-					init="GrpCAF_WOOD_A1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 1 Fireteam Leader";
+					text="UnitUN_A1_FTL";
+					init="GrpUN_A1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Alpha 1 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -17854,12 +17844,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1067;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A1_AR";
-					init="GrpCAF_WOOD_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 1 Automatic Rifleman";
+					text="UnitUN_A1_AR";
+					init="GrpUN_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Alpha 1 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -17867,12 +17857,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1068;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A1_AAR";
-					init="GrpCAF_WOOD_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 1 Assistant Automatic Rifleman";
+					text="UnitUN_A1_AAR";
+					init="GrpUN_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -17880,12 +17870,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1069;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A1_AT";
-					init="GrpCAF_WOOD_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 1 Rifleman (AT)";
+					text="UnitUN_A1_AT";
+					init="GrpUN_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -17901,14 +17891,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1070;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A2_FTL";
-					init="GrpCAF_WOOD_A2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 2 Fireteam Leader";
+					text="UnitUN_A2_FTL";
+					init="GrpUN_A2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Alpha 2 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -17916,12 +17906,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1071;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A2_AR";
-					init="GrpCAF_WOOD_A2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 2 Automatic Rifleman";
+					text="UnitUN_A2_AR";
+					init="GrpUN_A2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Alpha 2 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -17929,12 +17919,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1072;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A2_AAR";
-					init="GrpCAF_WOOD_A2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 2 Assistant Automatic Rifleman";
+					text="UnitUN_A2_AAR";
+					init="GrpUN_A2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -17942,12 +17932,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1073;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A2_AT";
-					init="GrpCAF_WOOD_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 2 Rifleman (AT)";
+					text="UnitUN_A2_AT";
+					init="GrpUN_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Alpha 2 Rifleman (AT)";
 				};
 			};
 		};
@@ -17963,14 +17953,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1074;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A3_FTL";
-					init="GrpCAF_WOOD_A3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 3 Fireteam Leader";
+					text="UnitUN_A3_FTL";
+					init="GrpUN_A3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Alpha 3 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -17978,12 +17968,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1075;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A3_AR";
-					init="GrpCAF_WOOD_A3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 3 Automatic Rifleman";
+					text="UnitUN_A3_AR";
+					init="GrpUN_A3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Alpha 3 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -17991,12 +17981,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1076;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A3_AAR";
-					init="GrpCAF_WOOD_A3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 3 Assistant Automatic Rifleman";
+					text="UnitUN_A3_AAR";
+					init="GrpUN_A3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -18004,12 +17994,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1077;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_A3_AT";
-					init="GrpCAF_WOOD_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Alpha 3 Rifleman (AT)";
+					text="UnitUN_A3_AT";
+					init="GrpUN_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Alpha 3 Rifleman (AT)";
 				};
 			};
 		};
@@ -18025,14 +18015,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1078;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_SL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_BSL_SL";
-					init="GrpCAF_WOOD_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="CAF Bravo Squad Leader";
+					text="UnitUN_BSL_SL";
+					init="GrpUN_BSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="UN Bravo Squad Leader";
 				};
 				class Item1
 				{
@@ -18040,13 +18030,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1079;
 					side="WEST";
-					vehicle="CAF_MEDIC_TW";
+					vehicle="B_mas_afr_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_BSL_M";
-					init="GrpCAF_WOOD_BSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="CAF Bravo Medic";
+					text="UnitUN_BSL_M";
+					init="GrpUN_BSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					description="UN Bravo Medic";
 				};
 			};
 		};
@@ -18062,14 +18052,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1080;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B1_FTL";
-					init="GrpCAF_WOOD_B1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 1 Fireteam Leader";
+					text="UnitUN_B1_FTL";
+					init="GrpUN_B1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Bravo 1 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -18077,12 +18067,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1081;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B1_AR";
-					init="GrpCAF_WOOD_B1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 1 Automatic Rifleman";
+					text="UnitUN_B1_AR";
+					init="GrpUN_B1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Bravo 1 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -18090,12 +18080,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1082;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B1_AAR";
-					init="GrpCAF_WOOD_B1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 1 Assistant Automatic Rifleman";
+					text="UnitUN_B1_AAR";
+					init="GrpUN_B1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -18103,12 +18093,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1083;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B1_AT";
-					init="GrpCAF_WOOD_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 1 Rifleman (AT)";
+					text="UnitUN_B1_AT";
+					init="GrpUN_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Bravo 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -18124,14 +18114,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1084;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B2_FTL";
-					init="GrpCAF_WOOD_B2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 2 Fireteam Leader";
+					text="UnitUN_B2_FTL";
+					init="GrpUN_B2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Bravo 2 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -18139,12 +18129,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1085;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B2_AR";
-					init="GrpCAF_WOOD_B2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 2 Automatic Rifleman";
+					text="UnitUN_B2_AR";
+					init="GrpUN_B2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Bravo 2 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -18152,12 +18142,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1086;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B2_AAR";
-					init="GrpCAF_WOOD_B2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 2 Assistant Automatic Rifleman";
+					text="UnitUN_B2_AAR";
+					init="GrpUN_B2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -18165,12 +18155,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1087;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B2_AT";
-					init="GrpCAF_WOOD_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 2 Rifleman (AT)";
+					text="UnitUN_B2_AT";
+					init="GrpUN_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Bravo 2 Rifleman (AT)";
 				};
 			};
 		};
@@ -18186,14 +18176,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1088;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B3_FTL";
-					init="GrpCAF_WOOD_B3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 3 Fireteam Leader";
+					text="UnitUN_B3_FTL";
+					init="GrpUN_B3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Bravo 3 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -18201,12 +18191,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1089;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B3_AR";
-					init="GrpCAF_WOOD_B3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 3 Automatic Rifleman";
+					text="UnitUN_B3_AR";
+					init="GrpUN_B3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Bravo 3 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -18214,12 +18204,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1090;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B3_AAR";
-					init="GrpCAF_WOOD_B3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 3 Assistant Automatic Rifleman";
+					text="UnitUN_B3_AAR";
+					init="GrpUN_B3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -18227,12 +18217,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1091;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_B3_AT";
-					init="GrpCAF_WOOD_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Bravo 3 Rifleman (AT)";
+					text="UnitUN_B3_AT";
+					init="GrpUN_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Bravo 3 Rifleman (AT)";
 				};
 			};
 		};
@@ -18248,14 +18238,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1092;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_CSL_SL";
-					init="GrpCAF_WOOD_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="CAF Charlie Squad Leader";
+					text="UnitUN_CSL_SL";
+					init="GrpUN_CSL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="UN Charlie Squad Leader";
 				};
 				class Item1
 				{
@@ -18263,13 +18253,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1093;
 					side="WEST";
-					vehicle="CAF_MEDIC_TW";
+					vehicle="B_mas_afr_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_CSL_M";
-					init="GrpCAF_WOOD_CSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="CAF Charlie Medic";
+					text="UnitUN_CSL_M";
+					init="GrpUN_CSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					description="UN Charlie Medic";
 				};
 			};
 		};
@@ -18285,14 +18275,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1094;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C1_FTL";
-					init="GrpCAF_WOOD_C1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 1 Fireteam Leader";
+					text="UnitUN_C1_FTL";
+					init="GrpUN_C1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Charlie 1 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -18300,12 +18290,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1095;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C1_AR";
-					init="GrpCAF_WOOD_C1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 1 Automatic Rifleman";
+					text="UnitUN_C1_AR";
+					init="GrpUN_C1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Charlie 1 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -18313,12 +18303,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1096;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C1_AAR";
-					init="GrpCAF_WOOD_C1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 1 Assistant Automatic Rifleman";
+					text="UnitUN_C1_AAR";
+					init="GrpUN_C1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -18326,12 +18316,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1097;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C1_AT";
-					init="GrpCAF_WOOD_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 1 Rifleman (AT)";
+					text="UnitUN_C1_AT";
+					init="GrpUN_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Charlie 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -18347,14 +18337,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1098;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C2_FTL";
-					init="GrpCAF_WOOD_C2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 2 Fireteam Leader";
+					text="UnitUN_C2_FTL";
+					init="GrpUN_C2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Charlie 2 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -18362,12 +18352,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1099;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C2_AR";
-					init="GrpCAF_WOOD_C2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 2 Automatic Rifleman";
+					text="UnitUN_C2_AR";
+					init="GrpUN_C2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Charlie 2 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -18375,12 +18365,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1100;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C2_AAR";
-					init="GrpCAF_WOOD_C2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 2 Assistant Automatic Rifleman";
+					text="UnitUN_C2_AAR";
+					init="GrpUN_C2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -18388,12 +18378,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1101;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C2_AT";
-					init="GrpCAF_WOOD_C2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 2 Rifleman (AT)";
+					text="UnitUN_C2_AT";
+					init="GrpUN_C2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Charlie 2 Rifleman (AT)";
 				};
 			};
 		};
@@ -18409,14 +18399,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1102;
 					side="WEST";
-					vehicle="CAF_SECTIONIC_TW";
+					vehicle="B_mas_afr_Soldier_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C3_FTL";
-					init="GrpCAF_WOOD_C3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 3 Fireteam Leader";
+					text="UnitUN_C3_FTL";
+					init="GrpUN_C3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="UN Charlie 3 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -18424,12 +18414,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1103;
 					side="WEST";
-					vehicle="CAF_C6GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AR_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C3_AR";
-					init="GrpCAF_WOOD_C3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 3 Automatic Rifleman";
+					text="UnitUN_C3_AR";
+					init="GrpUN_C3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="UN Charlie 3 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -18437,12 +18427,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1104;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C3_AAR";
-					init="GrpCAF_WOOD_C3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 3 Assistant Automatic Rifleman";
+					text="UnitUN_C3_AAR";
+					init="GrpUN_C3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="UN Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -18450,12 +18440,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1105;
 					side="WEST";
-					vehicle="CAF_RIFLEMAN_TW";
+					vehicle="B_mas_afr_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_C3_AT";
-					init="GrpCAF_WOOD_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="CAF Charlie 3 Rifleman (AT)";
+					text="UnitUN_C3_AT";
+					init="GrpUN_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="UN Charlie 3 Rifleman (AT)";
 				};
 			};
 		};
@@ -18471,14 +18461,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1106;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_soldier_MG_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_MMG1_G";
-					init="GrpCAF_WOOD_MMG1 = group this; nul = [""mmgg"",this] call f_fnc_assignGear;      ";
-					description="CAF Medium MG Team 1 Gunner";
+					text="UnitUN_MMG1_G";
+					init="GrpUN_MMG1 = group this; nul = [""mmgg"",this] call f_fnc_assignGear;      ";
+					description="UN Medium MG Team 1 Gunner";
 				};
 				class Item1
 				{
@@ -18486,12 +18476,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1107;
 					side="WEST";
-					vehicle="CAF_ATASST_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_MMG1_AG";
-					init="GrpCAF_WOOD_MMG1 = group this; nul = [""mmgag"",this] call f_fnc_assignGear; ";
-					description="CAF Medium MG Team 1 Assistant Gunner";
+					text="UnitUN_MMG1_AG";
+					init="GrpUN_MMG1 = group this; nul = [""mmgag"",this] call f_fnc_assignGear; ";
+					description="UN Medium MG Team 1 Assistant Gunner";
 				};
 			};
 		};
@@ -18507,14 +18497,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1108;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_soldier_AT_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_MAT1_G";
-					init="GrpCAF_WOOD_MAT1 = group this; nul = [""matg"",this] call f_fnc_assignGear; ";
-					description="CAF Medium AT Team 1 Gunner";
+					text="UnitUN_MAT1_G";
+					init="GrpUN_MAT1 = group this; nul = [""matg"",this] call f_fnc_assignGear; ";
+					description="UN Medium AT Team 1 Gunner";
 				};
 				class Item1
 				{
@@ -18522,13 +18512,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1109;
 					side="WEST";
-					vehicle="CAF_ATASST_TW";
+					vehicle="B_mas_afr_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					health=0.99000001;
-					text="UnitCAF_WOOD_MAT1_AG";
-					init="GrpCAF_WOOD_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear; ";
-					description="CAF Medium AT Team 1 Assistant Gunner";
+					text="UnitUN_MAT1_AG";
+					init="GrpUN_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear; ";
+					description="UN Medium AT Team 1 Assistant Gunner";
 				};
 			};
 		};
@@ -18544,14 +18534,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1110;
 					side="WEST";
-					vehicle="CAF_CBTENGINEER_TW";
+					vehicle="B_mas_afr_soldier_repair_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_ENG1_FTL";
-					init="GrpCAF_WOOD_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
-					description="CAF Engineer Team 1 Leader";
+					text="UnitUN_ENG1_FTL";
+					init="GrpUN_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
+					description="UN Engineer Team 1 Leader";
 				};
 				class Item1
 				{
@@ -18559,12 +18549,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1111;
 					side="WEST";
-					vehicle="CAF_CBTENGINEER_TW";
+					vehicle="B_mas_afr_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_ENG1_A";
-					init="GrpCAF_WOOD_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
-					description="CAF Engineer Team 1 Assistant";
+					text="UnitUN_ENG1_A";
+					init="GrpUN_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
+					description="UN Engineer Team 1 Assistant";
 				};
 			};
 		};
@@ -18585,9 +18575,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_DT1_TL";
-					init="GrpCAF_WOOD_DT1 = group this; nul = [""div"",this] call f_fnc_assignGear";
-					description="CAF Diver Team 1 Team Leader";
+					text="UnitUN_DT1_TL";
+					init="GrpUN_DT1 = group this; nul = [""div"",this] call f_fnc_assignGear";
+					description="UN Diver Team 1 Team Leader";
 				};
 				class Item1
 				{
@@ -18599,9 +18589,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_DT1_D1";
-					init="GrpCAF_WOOD_DT1 = group this; nul = [""div"",this] call f_fnc_assignGear";
-					description="CAF Diver Team 1 Diver";
+					text="UnitUN_DT1_D1";
+					init="GrpUN_DT1 = group this; nul = [""div"",this] call f_fnc_assignGear";
+					description="UN Diver Team 1 Diver";
 				};
 				class Item2
 				{
@@ -18613,9 +18603,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_DT1_D2";
-					init="GrpCAF_WOOD_DT1 = group this; nul = [""div"",this] call f_fnc_assignGear";
-					description="CAF Diver Team 1 Diver";
+					text="UnitUN_DT1_D2";
+					init="GrpUN_DT1 = group this; nul = [""div"",this] call f_fnc_assignGear";
+					description="UN Diver Team 1 Diver";
 				};
 				class Item3
 				{
@@ -18627,9 +18617,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_DT1_D3";
-					init="GrpCAF_WOOD_DT1 = group this; nul = [""div"",this] call f_fnc_assignGear";
-					description="CAF Diver Team 1 Diver";
+					text="UnitUN_DT1_D3";
+					init="GrpUN_DT1 = group this; nul = [""div"",this] call f_fnc_assignGear";
+					description="UN Diver Team 1 Diver";
 				};
 			};
 		};
@@ -18645,14 +18635,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1116;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH1_P";
-					init="GrpCAF_WOOD_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 1 Pilot";
+					text="UnitUN_TH1_P";
+					init="GrpUN_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 1 Pilot";
 				};
 				class Item1
 				{
@@ -18660,13 +18650,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1117;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH1_CP";
-					init="GrpCAF_WOOD_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 1 Co-Pilot";
+					text="UnitUN_TH1_CP";
+					init="GrpUN_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 1 Co-Pilot";
 				};
 				class Item2
 				{
@@ -18674,13 +18664,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1118;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH1_G1";
-					init="GrpCAF_WOOD_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 1 Gunner";
+					text="UnitUN_TH1_G1";
+					init="GrpUN_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 1 Gunner";
 				};
 				class Item3
 				{
@@ -18688,13 +18678,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1119;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH1_G2";
-					init="GrpCAF_WOOD_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 1 Gunner";
+					text="UnitUN_TH1_G2";
+					init="GrpUN_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 1 Gunner";
 				};
 			};
 		};
@@ -18710,14 +18700,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1120;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH2_P";
-					init="GrpCAF_WOOD_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 2 Pilot";
+					text="UnitUN_TH2_P";
+					init="GrpUN_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 2 Pilot";
 				};
 				class Item1
 				{
@@ -18725,13 +18715,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1121;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH2_CP";
-					init="GrpCAF_WOOD_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 2 Co-Pilot";
+					text="UnitUN_TH2_CP";
+					init="GrpUN_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 2 Co-Pilot";
 				};
 				class Item2
 				{
@@ -18739,13 +18729,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1122;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH2_G1";
-					init="GrpCAF_WOOD_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 2 Gunner";
+					text="UnitUN_TH2_G1";
+					init="GrpUN_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 2 Gunner";
 				};
 				class Item3
 				{
@@ -18753,13 +18743,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1123;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH2_G2";
-					init="GrpCAF_WOOD_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 2 Gunner";
+					text="UnitUN_TH2_G2";
+					init="GrpUN_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 2 Gunner";
 				};
 			};
 		};
@@ -18775,14 +18765,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1124;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH3_P";
-					init="GrpCAF_WOOD_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 3 Pilot";
+					text="UnitUN_TH3_P";
+					init="GrpUN_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 3 Pilot";
 				};
 				class Item1
 				{
@@ -18790,13 +18780,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1125;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH3_CP";
-					init="GrpCAF_WOOD_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 3 Co-Pilot";
+					text="UnitUN_TH3_CP";
+					init="GrpUN_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 3 Co-Pilot";
 				};
 				class Item2
 				{
@@ -18804,13 +18794,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1126;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH3_G1";
-					init="GrpCAF_WOOD_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 3 Gunner";
+					text="UnitUN_TH3_G1";
+					init="GrpUN_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 3 Gunner";
 				};
 				class Item3
 				{
@@ -18818,13 +18808,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1127;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH3_G2";
-					init="GrpCAF_WOOD_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 3 Gunner";
+					text="UnitUN_TH3_G2";
+					init="GrpUN_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 3 Gunner";
 				};
 			};
 		};
@@ -18840,14 +18830,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1128;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH4_P";
-					init="GrpCAF_WOOD_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 4 Pilot";
+					text="UnitUN_TH4_P";
+					init="GrpUN_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 4 Pilot";
 				};
 				class Item1
 				{
@@ -18855,13 +18845,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1129;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH4_CP";
-					init="GrpCAF_WOOD_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 4 Co-Pilot";
+					text="UnitUN_TH4_CP";
+					init="GrpUN_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 4 Co-Pilot";
 				};
 				class Item2
 				{
@@ -18869,13 +18859,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1130;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH4_G1";
-					init="GrpCAF_WOOD_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 4 Gunner";
+					text="UnitUN_TH4_G1";
+					init="GrpUN_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 4 Gunner";
 				};
 				class Item3
 				{
@@ -18883,13 +18873,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1131;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH4_G2";
-					init="GrpCAF_WOOD_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 4 Gunner";
+					text="UnitUN_TH4_G2";
+					init="GrpUN_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 4 Gunner";
 				};
 			};
 		};
@@ -18905,14 +18895,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1132;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH5_P";
-					init="GrpCAF_WOOD_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 5 Pilot";
+					text="UnitUN_TH5_P";
+					init="GrpUN_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 5 Pilot";
 				};
 				class Item1
 				{
@@ -18920,13 +18910,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1133;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH5_CP";
-					init="GrpCAF_WOOD_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 5 Co-Pilot";
+					text="UnitUN_TH5_CP";
+					init="GrpUN_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 5 Co-Pilot";
 				};
 				class Item2
 				{
@@ -18934,13 +18924,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1134;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH5_G1";
-					init="GrpCAF_WOOD_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 5 Gunner";
+					text="UnitUN_TH5_G1";
+					init="GrpUN_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 5 Gunner";
 				};
 				class Item3
 				{
@@ -18948,13 +18938,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1135;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH5_G2";
-					init="GrpCAF_WOOD_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 5 Gunner";
+					text="UnitUN_TH5_G2";
+					init="GrpUN_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 5 Gunner";
 				};
 			};
 		};
@@ -18970,14 +18960,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1136;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH6_P";
-					init="GrpCAF_WOOD_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 6 Pilot";
+					text="UnitUN_TH6_P";
+					init="GrpUN_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 6 Pilot";
 				};
 				class Item1
 				{
@@ -18985,13 +18975,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1137;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH6_CP";
-					init="GrpCAF_WOOD_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 6 Co-Pilot";
+					text="UnitUN_TH6_CP";
+					init="GrpUN_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 6 Co-Pilot";
 				};
 				class Item2
 				{
@@ -18999,13 +18989,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1138;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH6_G1";
-					init="GrpCAF_WOOD_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 6 Gunner";
+					text="UnitUN_TH6_G1";
+					init="GrpUN_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 6 Gunner";
 				};
 				class Item3
 				{
@@ -19013,13 +19003,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1139;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH6_G2";
-					init="GrpCAF_WOOD_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 6 Gunner";
+					text="UnitUN_TH6_G2";
+					init="GrpUN_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 6 Gunner";
 				};
 			};
 		};
@@ -19035,14 +19025,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1140;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH7_P";
-					init="GrpCAF_WOOD_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 7 Pilot";
+					text="UnitUN_TH7_P";
+					init="GrpUN_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 7 Pilot";
 				};
 				class Item1
 				{
@@ -19050,13 +19040,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1141;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH7_CP";
-					init="GrpCAF_WOOD_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 7 Co-Pilot";
+					text="UnitUN_TH7_CP";
+					init="GrpUN_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 7 Co-Pilot";
 				};
 				class Item2
 				{
@@ -19064,13 +19054,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1142;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH7_G1";
-					init="GrpCAF_WOOD_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 7 Gunner";
+					text="UnitUN_TH7_G1";
+					init="GrpUN_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 7 Gunner";
 				};
 				class Item3
 				{
@@ -19078,13 +19068,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1143;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH7_G2";
-					init="GrpCAF_WOOD_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 7 Gunner";
+					text="UnitUN_TH7_G2";
+					init="GrpUN_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 7 Gunner";
 				};
 			};
 		};
@@ -19100,14 +19090,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1144;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH8_P";
-					init="GrpCAF_WOOD_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 8 Pilot";
+					text="UnitUN_TH8_P";
+					init="GrpUN_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 8 Pilot";
 				};
 				class Item1
 				{
@@ -19115,13 +19105,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1145;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH8_CP";
-					init="GrpCAF_WOOD_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 8 Co-Pilot";
+					text="UnitUN_TH8_CP";
+					init="GrpUN_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 8 Co-Pilot";
 				};
 				class Item2
 				{
@@ -19129,13 +19119,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1146;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH8_G1";
-					init="GrpCAF_WOOD_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 8 Gunner";
+					text="UnitUN_TH8_G1";
+					init="GrpUN_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 8 Gunner";
 				};
 				class Item3
 				{
@@ -19143,13 +19133,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1147;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helicrew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TH8_G2";
-					init="GrpCAF_WOOD_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Transport Helo 8 Gunner";
+					text="UnitUN_TH8_G2";
+					init="GrpUN_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Transport Helo 8 Gunner";
 				};
 			};
 		};
@@ -19165,14 +19155,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1148;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV1_C";
-					init="GrpCAF_WOOD_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 1 Commander";
+					text="UnitUN_IFV1_C";
+					init="GrpUN_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 1 Commander";
 				};
 				class Item1
 				{
@@ -19180,13 +19170,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1149;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV1_G";
-					init="GrpCAF_WOOD_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 1 Gunner";
+					text="UnitUN_IFV1_G";
+					init="GrpUN_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 1 Gunner";
 				};
 				class Item2
 				{
@@ -19194,12 +19184,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1150;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV1_D";
-					init="GrpCAF_WOOD_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 1 Driver";
+					text="UnitUN_IFV1_D";
+					init="GrpUN_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 1 Driver";
 				};
 			};
 		};
@@ -19215,14 +19205,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1151;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV2_C";
-					init="GrpCAF_WOOD_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 2 Commander";
+					text="UnitUN_IFV2_C";
+					init="GrpUN_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 2 Commander";
 				};
 				class Item1
 				{
@@ -19230,13 +19220,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1152;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV2_G";
-					init="GrpCAF_WOOD_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 2 Gunner";
+					text="UnitUN_IFV2_G";
+					init="GrpUN_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 2 Gunner";
 				};
 				class Item2
 				{
@@ -19244,12 +19234,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1153;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV2_D";
-					init="GrpCAF_WOOD_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 2 Driver";
+					text="UnitUN_IFV2_D";
+					init="GrpUN_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 2 Driver";
 				};
 			};
 		};
@@ -19265,14 +19255,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1154;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV3_C";
-					init="GrpCAF_WOOD_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 3 Commander";
+					text="UnitUN_IFV3_C";
+					init="GrpUN_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 3 Commander";
 				};
 				class Item1
 				{
@@ -19280,13 +19270,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1155;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV3_G";
-					init="GrpCAF_WOOD_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 3 Gunner";
+					text="UnitUN_IFV3_G";
+					init="GrpUN_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 3 Gunner";
 				};
 				class Item2
 				{
@@ -19294,12 +19284,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1156;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV3_D";
-					init="GrpCAF_WOOD_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 3 Driver";
+					text="UnitUN_IFV3_D";
+					init="GrpUN_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 3 Driver";
 				};
 			};
 		};
@@ -19315,14 +19305,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1157;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV4_C";
-					init="GrpCAF_WOOD_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 4 Commander";
+					text="UnitUN_IFV4_C";
+					init="GrpUN_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 4 Commander";
 				};
 				class Item1
 				{
@@ -19330,13 +19320,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1158;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV4_G";
-					init="GrpCAF_WOOD_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 4 Gunner";
+					text="UnitUN_IFV4_G";
+					init="GrpUN_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 4 Gunner";
 				};
 				class Item2
 				{
@@ -19344,12 +19334,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1159;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV4_D";
-					init="GrpCAF_WOOD_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 4 Driver";
+					text="UnitUN_IFV4_D";
+					init="GrpUN_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 4 Driver";
 				};
 			};
 		};
@@ -19365,14 +19355,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1160;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV5_C";
-					init="GrpCAF_WOOD_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 5 Commander";
+					text="UnitUN_IFV5_C";
+					init="GrpUN_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 5 Commander";
 				};
 				class Item1
 				{
@@ -19380,13 +19370,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1161;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV5_G";
-					init="GrpCAF_WOOD_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 5 Gunner";
+					text="UnitUN_IFV5_G";
+					init="GrpUN_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 5 Gunner";
 				};
 				class Item2
 				{
@@ -19394,12 +19384,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1162;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV5_D";
-					init="GrpCAF_WOOD_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 5 Driver";
+					text="UnitUN_IFV5_D";
+					init="GrpUN_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 5 Driver";
 				};
 			};
 		};
@@ -19415,14 +19405,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1163;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV6_C";
-					init="GrpCAF_WOOD_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 6 Commander";
+					text="UnitUN_IFV6_C";
+					init="GrpUN_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 6 Commander";
 				};
 				class Item1
 				{
@@ -19430,13 +19420,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1164;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV6_G";
-					init="GrpCAF_WOOD_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 6 Gunner";
+					text="UnitUN_IFV6_G";
+					init="GrpUN_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 6 Gunner";
 				};
 				class Item2
 				{
@@ -19444,12 +19434,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1165;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV6_D";
-					init="GrpCAF_WOOD_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 6 Driver";
+					text="UnitUN_IFV6_D";
+					init="GrpUN_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 6 Driver";
 				};
 			};
 		};
@@ -19465,14 +19455,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1166;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV7_C";
-					init="GrpCAF_WOOD_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 7 Commander";
+					text="UnitUN_IFV7_C";
+					init="GrpUN_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 7 Commander";
 				};
 				class Item1
 				{
@@ -19480,13 +19470,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1167;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV7_G";
-					init="GrpCAF_WOOD_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 7 Gunner";
+					text="UnitUN_IFV7_G";
+					init="GrpUN_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 7 Gunner";
 				};
 				class Item2
 				{
@@ -19494,12 +19484,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1168;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV7_D";
-					init="GrpCAF_WOOD_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 7 Driver";
+					text="UnitUN_IFV7_D";
+					init="GrpUN_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 7 Driver";
 				};
 			};
 		};
@@ -19515,14 +19505,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1169;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV8_C";
-					init="GrpCAF_WOOD_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 8 Commander";
+					text="UnitUN_IFV8_C";
+					init="GrpUN_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 8 Commander";
 				};
 				class Item1
 				{
@@ -19530,13 +19520,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1170;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV8_G";
-					init="GrpCAF_WOOD_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 8 Gunner";
+					text="UnitUN_IFV8_G";
+					init="GrpUN_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 8 Gunner";
 				};
 				class Item2
 				{
@@ -19544,12 +19534,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1171;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_IFV8_D";
-					init="GrpCAF_WOOD_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF IFV 8 Driver";
+					text="UnitUN_IFV8_D";
+					init="GrpUN_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN IFV 8 Driver";
 				};
 			};
 		};
@@ -19565,14 +19555,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1172;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TNK1_C";
-					init="GrpCAF_WOOD_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF Tank 1 Commander";
+					text="UnitUN_TNK1_C";
+					init="GrpUN_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN Tank 1 Commander";
 				};
 				class Item1
 				{
@@ -19580,13 +19570,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1173;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TNK1_G";
-					init="GrpCAF_WOOD_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF Tank 1 Gunner";
+					text="UnitUN_TNK1_G";
+					init="GrpUN_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN Tank 1 Gunner";
 				};
 				class Item2
 				{
@@ -19594,12 +19584,12 @@ class Mission
 					azimut=-1.0826902;
 					id=1174;
 					side="WEST";
-					vehicle="CAF_VEHTECH_TW";
+					vehicle="B_mas_afr_crew_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_TNK1_D";
-					init="GrpCAF_WOOD_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
-					description="CAF Tank 1 Driver";
+					text="UnitUN_TNK1_D";
+					init="GrpUN_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					description="UN Tank 1 Driver";
 				};
 			};
 		};
@@ -19615,14 +19605,14 @@ class Mission
 					azimut=-1.0826902;
 					id=1175;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_AH1_P";
-					init="GrpCAF_WOOD_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Attack Helo 1 Pilot";
+					text="UnitUN_AH1_P";
+					init="GrpUN_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Attack Helo 1 Pilot";
 				};
 				class Item1
 				{
@@ -19630,13 +19620,13 @@ class Mission
 					azimut=-1.0826902;
 					id=1176;
 					side="WEST";
-					vehicle="CAF_84GUNNER_TW";
+					vehicle="B_mas_afr_Helipilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitCAF_WOOD_AH1_CP";
-					init="GrpCAF_WOOD_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="CAF Attack Helo 1 Co-Pilot";
+					text="UnitUN_AH1_CP";
+					init="GrpUN_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="UN Attack Helo 1 Co-Pilot";
 				};
 			};
 		};
@@ -24027,10 +24017,10 @@ class Mission
 			azimut=-1.08269;
 			id=1545;
 			side="EMPTY";
-			vehicle="CH_147F";
+			vehicle="B_mas_afr_Heli_Light_02_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehCAF_WOOD_TH1";
+			text="VehUN_TH1";
 		};
 		class Item279
 		{
@@ -24038,10 +24028,10 @@ class Mission
 			azimut=-1.08269;
 			id=1546;
 			side="EMPTY";
-			vehicle="CH_147F";
+			vehicle="B_mas_afr_Heli_Light_02_unarmed_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehCAF_WOOD_TH2";
+			text="VehUN_TH2";
 		};
 		class Item280
 		{
@@ -24049,509 +24039,509 @@ class Mission
 			azimut=-1.08269;
 			id=1547;
 			side="EMPTY";
-			vehicle="CH_147F";
+			vehicle="B_mas_afr_Heli_Light_02_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehCAF_WOOD_TH3";
+			text="VehUN_TH3";
 		};
 		class Item281
 		{
-			position[]={885.31934,-0.10867372,1842.2828};
+			position[]={851.5498,-0.22335994,1817.6344};
 			azimut=-1.08269;
 			id=1548;
 			side="EMPTY";
-			vehicle="CH_147F";
-			leader=1;
+			vehicle="B_mas_afr_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
-			text="VehCAF_WOOD_TH4";
+			text="VehUN_IFV1";
 		};
 		class Item282
 		{
-			position[]={911.33496,-0.19667301,1865.4684};
+			position[]={838.0166,-0.17747474,1863.2809};
 			azimut=-1.08269;
 			id=1549;
 			side="EMPTY";
-			vehicle="CH_147F";
+			vehicle="B_Heli_Attack_01_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehCAF_WOOD_TH5";
+			text="VehUN_AH1";
 		};
 		class Item283
 		{
-			position[]={911.56543,0.022896148,1842.6188};
+			position[]={829.91895,0,1816.8795};
 			azimut=-1.08269;
 			id=1550;
 			side="EMPTY";
-			vehicle="CH_147F";
-			leader=1;
+			vehicle="B_MBT_01_TUSK_F";
 			skill=0.60000002;
-			text="VehCAF_WOOD_TH6";
+			text="VehUN_TNK1";
 		};
 		class Item284
 		{
-			position[]={935.41895,-0.16855812,1866.0446};
+			position[]={853.26465,0.012145229,1927.9879};
 			azimut=-1.08269;
 			id=1551;
 			side="EMPTY";
-			vehicle="CH_147F";
-			leader=1;
+			vehicle="B_mas_afr_Truck_02_covered_F";
 			skill=0.60000002;
-			text="VehCAF_WOOD_TH7";
+			text="VehUN_truck1";
 		};
 		class Item285
 		{
-			position[]={936.14941,-0.047511004,1843.6305};
+			position[]={831.03613,-0.016296655,1943.1129};
 			azimut=-1.08269;
 			id=1552;
 			side="EMPTY";
-			vehicle="CH_147F";
-			leader=1;
+			vehicle="B_mas_afr_MRAP_03_F";
 			skill=0.60000002;
-			text="VehCAF_WOOD_TH8";
+			text="VehUN_car1";
 		};
 		class Item286
 		{
-			position[]={851.5498,-0.22335994,1817.6344};
-			azimut=-1.08269;
-			id=1553;
-			side="EMPTY";
-			vehicle="caf_lav3_isc";
-			skill=0.60000002;
-			text="VehCAF_WOOD_IFV1";
-		};
-		class Item287
-		{
-			position[]={864.06934,-0.041071229,1814.2457};
-			azimut=-1.08269;
-			id=1554;
-			side="EMPTY";
-			vehicle="caf_lav3_isc";
-			skill=0.60000002;
-			text="VehCAF_WOOD_IFV2";
-		};
-		class Item288
-		{
-			position[]={879.66309,-0.20333369,1818.0465};
-			azimut=-1.08269;
-			id=1555;
-			side="EMPTY";
-			vehicle="caf_lav3_isc";
-			skill=0.60000002;
-			text="VehCAF_WOOD_IFV3";
-		};
-		class Item289
-		{
-			position[]={892.17871,-0.12693648,1814.6676};
-			azimut=-1.08269;
-			id=1556;
-			side="EMPTY";
-			vehicle="caf_lav3_isc";
-			skill=0.60000002;
-			text="VehCAF_WOOD_IFV4";
-		};
-		class Item290
-		{
-			position[]={906.19824,-0.043385811,1819.0641};
-			azimut=-1.08269;
-			id=1557;
-			side="EMPTY";
-			vehicle="caf_lav3_isc";
-			skill=0.60000002;
-			text="VehCAF_WOOD_IFV5";
-		};
-		class Item291
-		{
-			position[]={918.71191,-0.15568946,1815.6832};
-			azimut=-1.08269;
-			id=1558;
-			side="EMPTY";
-			vehicle="caf_lav3_isc";
-			skill=0.60000002;
-			text="VehCAF_WOOD_IFV6";
-		};
-		class Item292
-		{
-			position[]={934.30957,0.096789986,1819.4918};
-			azimut=-1.08269;
-			id=1559;
-			side="EMPTY";
-			vehicle="caf_lav3_isc";
-			skill=0.60000002;
-			text="VehCAF_WOOD_IFV7";
-		};
-		class Item293
-		{
-			position[]={946.83301,-0.046512887,1816.1168};
-			azimut=-1.08269;
-			id=1560;
-			side="EMPTY";
-			vehicle="caf_lav3_isc";
-			skill=0.60000002;
-			text="VehCAF_WOOD_IFV8";
-		};
-		class Item294
-		{
-			position[]={838.0166,-0.17747474,1863.2809};
-			azimut=-1.08269;
-			id=1561;
-			side="EMPTY";
-			vehicle="CAF_CH146_F";
-			leader=1;
-			skill=0.60000002;
-			text="VehCAF_WOOD_AH1";
-		};
-		class Item295
-		{
-			position[]={829.91895,0.0043285042,1818.3883};
-			azimut=-1.08269;
-			id=1562;
-			side="EMPTY";
-			vehicle="CAF_LeopardC2_TW";
-			skill=0.60000002;
-			text="VehCAF_WOOD_TNK1";
-		};
-		class Item296
-		{
-			position[]={853.26465,0.012145229,1927.9879};
-			azimut=-1.08269;
-			id=1563;
-			side="EMPTY";
-			vehicle="caf_HLVW_covered";
-			skill=0.60000002;
-			text="VehCAF_WOOD_truck1";
-		};
-		class Item297
-		{
-			position[]={879.19824,-0.12287253,1928.6852};
-			azimut=-1.08269;
-			id=1564;
-			side="EMPTY";
-			vehicle="caf_HLVW_covered";
-			skill=0.60000002;
-			text="VehCAF_WOOD_truck2";
-		};
-		class Item298
-		{
-			position[]={905.7959,-0.048012819,1929.2184};
-			azimut=-1.08269;
-			id=1565;
-			side="EMPTY";
-			vehicle="caf_HLVW_covered";
-			skill=0.60000002;
-			text="VehCAF_WOOD_truck3";
-		};
-		class Item299
-		{
-			position[]={904.36426,-0.12237824,1943.5914};
-			azimut=-1.08269;
-			id=1566;
-			side="EMPTY";
-			vehicle="caf_tapv_gl_tw";
-			skill=0.60000002;
-			text="VehCAF_WOOD_car4";
-		};
-		class Item300
-		{
-			position[]={877.89941,0.10940252,1944.2867};
-			azimut=-1.08269;
-			id=1567;
-			side="EMPTY";
-			vehicle="caf_tapv_gl_tw";
-			skill=0.60000002;
-			text="VehCAF_WOOD_car3";
-		};
-		class Item301
-		{
-			position[]={853.81543,0.13300012,1943.5739};
-			azimut=-1.08269;
-			id=1568;
-			side="EMPTY";
-			vehicle="caf_tapv_50_tw";
-			skill=0.60000002;
-			text="VehCAF_WOOD_car2";
-		};
-		class Item302
-		{
-			position[]={831.03613,-0.016296655,1943.1129};
-			azimut=-1.08269;
-			id=1569;
-			side="EMPTY";
-			vehicle="caf_tapv_50_tw";
-			skill=0.60000002;
-			text="VehCAF_WOOD_car1";
-		};
-		class Item303
-		{
-			position[]={831.14941,0.19009626,1927.318};
-			azimut=-1.08269;
-			id=1570;
-			side="EMPTY";
-			vehicle="caf_tapv_50_tw";
-			skill=0.60000002;
-			text="VehCAF_WOOD_car6";
-		};
-		class Item304
-		{
-			position[]={931.0459,-0.13978672,1942.818};
-			azimut=-1.08269;
-			id=1571;
-			side="EMPTY";
-			vehicle="CAF_TAPV_tw";
-			skill=0.60000002;
-			text="VehCAF_WOOD_car5";
-		};
-		class Item305
-		{
-			position[]={931.73535,0.019978598,1928.9528};
-			azimut=-1.08269;
-			id=1572;
-			side="EMPTY";
-			vehicle="CAF_TAPV_tw";
-			skill=0.60000002;
-			text="VehCAF_WOOD_car7";
-		};
-		class Item306
-		{
-			position[]={932.70996,-0.22633082,1912.7614};
-			azimut=-1.08269;
-			id=1573;
-			side="EMPTY";
-			vehicle="caf_tapv_50_tw";
-			skill=0.60000002;
-			text="VehCAF_WOOD_car8";
-		};
-		class Item307
-		{
 			position[]={932.47754,-0.011017643,1895.402};
 			azimut=-1.08269;
-			id=1574;
+			id=1553;
 			side="EMPTY";
 			vehicle="B_SDV_01_F";
 			skill=0.60000002;
 		};
-		class Item308
+		class Item287
 		{
 			position[]={262.53241,0.11639808,2871.2632};
 			azimut=0.87358499;
-			id=1575;
+			id=1554;
 			side="EMPTY";
 			vehicle="B_Heli_Transport_01_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehUSMCdes_TH1_1";
 		};
-		class Item309
+		class Item288
 		{
 			position[]={261.98163,-0.052453659,2848.4155};
 			azimut=0.87358499;
-			id=1576;
+			id=1555;
 			side="EMPTY";
 			vehicle="B_Heli_Transport_01_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehUSMCdes_TH2_1";
 		};
-		class Item310
+		class Item289
 		{
 			position[]={286.61835,0.041920088,2871.021};
 			azimut=0.87358499;
-			id=1577;
+			id=1556;
 			side="EMPTY";
 			vehicle="B_Heli_Transport_01_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehUSMCdes_TH3_1";
 		};
-		class Item311
+		class Item290
 		{
 			position[]={286.591,0.14350091,2848.5913};
 			azimut=0.87358499;
-			id=1578;
+			id=1557;
 			side="EMPTY";
 			vehicle="B_Heli_Transport_01_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehUSMCdes_TH4_1";
 		};
-		class Item312
+		class Item291
 		{
 			position[]={252.00116,-0.040849082,2825.1108};
 			azimut=0.87358499;
-			id=1579;
+			id=1558;
 			side="EMPTY";
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="VehUSMCdes_IFV1_1";
 		};
-		class Item313
+		class Item292
 		{
 			position[]={264.39569,0.12908749,2821.2983};
 			azimut=0.87358499;
-			id=1580;
+			id=1559;
 			side="EMPTY";
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="VehUSMCdes_IFV2_1";
 		};
-		class Item314
+		class Item293
 		{
 			position[]={280.11053,0.037112445,2824.564};
 			azimut=0.87358499;
-			id=1581;
+			id=1560;
 			side="EMPTY";
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="VehUSMCdes_IFV3_1";
 		};
-		class Item315
+		class Item294
 		{
 			position[]={292.50507,0.04081583,2820.7593};
 			azimut=0.87358499;
-			id=1582;
+			id=1561;
 			side="EMPTY";
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="VehUSMCdes_IFV4_1";
 		};
-		class Item316
+		class Item295
 		{
 			position[]={240.03241,-0.095093049,2871.1929};
 			azimut=0.87358499;
-			id=1583;
+			id=1562;
 			side="EMPTY";
 			vehicle="B_Heli_Attack_01_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehUSMCdes_AH1_1";
 		};
-		class Item317
+		class Item296
 		{
 			position[]={230.40741,0.12740587,2826.603};
 			azimut=0.87358499;
-			id=1584;
+			id=1563;
 			side="EMPTY";
 			vehicle="B_MBT_01_cannon_F";
 			skill=0.60000002;
 			text="VehUSMCdes_TNK1_1";
 		};
-		class Item318
+		class Item297
 		{
 			position[]={257.48163,-0.23565154,2935.3413};
 			azimut=0.87358499;
-			id=1585;
+			id=1564;
 			side="EMPTY";
 			vehicle="B_Truck_01_covered_F";
 			skill=0.60000002;
 			text="VehUSMCdes_truck1_1";
 		};
-		class Item319
+		class Item298
 		{
 			position[]={283.42303,-0.1256246,2935.1538};
 			azimut=0.87358499;
-			id=1586;
+			id=1565;
 			side="EMPTY";
 			vehicle="B_Truck_01_covered_F";
 			skill=0.60000002;
 			text="VehUSMCdes_truck2_1";
 		};
-		class Item320
+		class Item299
 		{
 			position[]={310.02457,0.040117808,2934.7788};
 			azimut=0.87358499;
-			id=1587;
+			id=1566;
 			side="EMPTY";
 			vehicle="B_Truck_01_covered_F";
 			skill=0.60000002;
 			text="VehUSMCdes_truck3_1";
 		};
-		class Item321
+		class Item300
 		{
 			position[]={235.78241,-0.09584941,2951.2163};
 			azimut=0.87358499;
-			id=1588;
+			id=1567;
 			side="EMPTY";
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1";
 		};
-		class Item322
+		class Item301
 		{
 			position[]={335.53629,0.18669617,2900.0718};
 			azimut=0.87358499;
-			id=1589;
+			id=1568;
 			side="EMPTY";
 			vehicle="B_SDV_01_F";
 			skill=0.60000002;
 		};
-		class Item323
+		class Item302
 		{
 			position[]={235.5323,-0.064015649,2935.4602};
 			azimut=0.87358499;
-			id=1590;
+			id=1569;
 			side="EMPTY";
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1_1";
 		};
-		class Item324
+		class Item303
 		{
 			position[]={257.20828,-0.026643507,2951.0518};
 			azimut=0.87358499;
-			id=1591;
+			id=1570;
 			side="EMPTY";
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1_2";
 		};
-		class Item325
+		class Item304
 		{
 			position[]={335.57523,-0.02413968,2948.2153};
 			azimut=0.87358499;
-			id=1592;
+			id=1571;
 			side="EMPTY";
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1_3";
 		};
-		class Item326
+		class Item305
 		{
 			position[]={306.89627,-0.17182286,2949.2974};
 			azimut=0.87358499;
-			id=1593;
+			id=1572;
 			side="EMPTY";
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1_4";
 		};
-		class Item327
+		class Item306
 		{
 			position[]={281.13522,-0.20437834,2950.5498};
 			azimut=0.87358499;
-			id=1594;
+			id=1573;
 			side="EMPTY";
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1_5";
 		};
-		class Item328
+		class Item307
 		{
 			position[]={335.3251,0.051725511,2932.9609};
 			azimut=0.87358499;
-			id=1595;
+			id=1574;
 			side="EMPTY";
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1_6";
 		};
-		class Item329
+		class Item308
 		{
 			position[]={336.40891,-0.081208646,2917.0381};
 			azimut=0.87358499;
-			id=1596;
+			id=1575;
 			side="EMPTY";
 			vehicle="AV_MATV";
 			skill=0.60000002;
 			text="VehUSMCdes_car1_1_7";
+		};
+		class Item309
+		{
+			position[]={911.92615,0,1863.6167};
+			azimut=-1.08269;
+			id=1576;
+			side="EMPTY";
+			vehicle="B_mas_afr_Heli_Light_02_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehUN_TH5";
+		};
+		class Item310
+		{
+			position[]={937.27032,0,1863.7028};
+			azimut=-1.08269;
+			id=1577;
+			side="EMPTY";
+			vehicle="B_mas_afr_Heli_Light_02_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehUN_TH7";
+		};
+		class Item311
+		{
+			position[]={885.15674,0,1840.7635};
+			azimut=-1.08269;
+			id=1578;
+			side="EMPTY";
+			vehicle="B_mas_afr_Heli_Light_02_unarmed_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehUN_TH4";
+		};
+		class Item312
+		{
+			position[]={911.58466,0,1840.7635};
+			azimut=-1.08269;
+			id=1579;
+			side="EMPTY";
+			vehicle="B_mas_afr_Heli_Light_02_unarmed_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehUN_TH6";
+		};
+		class Item313
+		{
+			position[]={936.92883,0,1840.7617};
+			azimut=-1.08269;
+			id=1580;
+			side="EMPTY";
+			vehicle="B_mas_afr_Heli_Light_02_unarmed_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehUN_TH8";
+		};
+		class Item314
+		{
+			position[]={853.31329,0,1943.5231};
+			azimut=-1.08269;
+			id=1581;
+			side="EMPTY";
+			vehicle="B_mas_afr_MRAP_03_F";
+			skill=0.60000002;
+			text="VehUN_car2";
+		};
+		class Item315
+		{
+			position[]={877.21893,0,1942.7064};
+			azimut=-1.08269;
+			id=1582;
+			side="EMPTY";
+			vehicle="B_mas_afr_MRAP_03_F";
+			skill=0.60000002;
+			text="VehUN_car3";
+		};
+		class Item316
+		{
+			position[]={905.66144,0,1942.8236};
+			azimut=-1.08269;
+			id=1583;
+			side="EMPTY";
+			vehicle="B_mas_afr_MRAP_03_F";
+			skill=0.60000002;
+			text="VehUN_car4";
+		};
+		class Item317
+		{
+			position[]={832.37384,0,1927.0619};
+			azimut=-1.08269;
+			id=1584;
+			side="EMPTY";
+			vehicle="B_mas_afr_MRAP_03_hmg_F";
+			skill=0.60000002;
+			text="VehUN_car6";
+		};
+		class Item318
+		{
+			position[]={879.03149,0,1927.4093};
+			azimut=-1.08269;
+			id=1585;
+			side="EMPTY";
+			vehicle="B_mas_afr_Truck_02_covered_F";
+			skill=0.60000002;
+			text="VehUN_truck2";
+		};
+		class Item319
+		{
+			position[]={905.78741,0,1927.4661};
+			azimut=-1.08269;
+			id=1586;
+			side="EMPTY";
+			vehicle="B_mas_afr_Truck_02_covered_F";
+			skill=0.60000002;
+			text="VehUN_truck3";
+		};
+		class Item320
+		{
+			position[]={931.55841,0,1942.9792};
+			azimut=-1.08269;
+			id=1587;
+			side="EMPTY";
+			vehicle="B_mas_afr_MRAP_03_F";
+			skill=0.60000002;
+			text="VehUN_car5";
+		};
+		class Item321
+		{
+			position[]={932.33209,0,1928.3271};
+			azimut=-1.08269;
+			id=1588;
+			side="EMPTY";
+			vehicle="B_mas_afr_MRAP_03_F";
+			skill=0.60000002;
+			text="VehUN_car7";
+		};
+		class Item322
+		{
+			position[]={932.95172,0,1912.0125};
+			azimut=-1.08269;
+			id=1589;
+			side="EMPTY";
+			vehicle="B_mas_afr_MRAP_03_hmg_F";
+			skill=0.60000002;
+			text="VehUN_car8";
+		};
+		class Item323
+		{
+			position[]={863.31384,0,1814.9849};
+			azimut=-1.08269;
+			id=1590;
+			side="EMPTY";
+			vehicle="B_mas_afr_APC_Wheeled_01_cannon_F";
+			skill=0.60000002;
+			text="VehUN_IFV2";
+		};
+		class Item324
+		{
+			position[]={878.78748,0,1818.5884};
+			azimut=-1.08269;
+			id=1591;
+			side="EMPTY";
+			vehicle="B_mas_afr_APC_Wheeled_01_cannon_F";
+			skill=0.60000002;
+			text="VehUN_IFV3";
+		};
+		class Item325
+		{
+			position[]={891.39941,0,1815.0911};
+			azimut=-1.08269;
+			id=1592;
+			side="EMPTY";
+			vehicle="B_mas_afr_APC_Wheeled_01_cannon_F";
+			skill=0.60000002;
+			text="VehUN_IFV4";
+		};
+		class Item326
+		{
+			position[]={905.81305,0,1819.2256};
+			azimut=-1.08269;
+			id=1593;
+			side="EMPTY";
+			vehicle="B_mas_afr_APC_Wheeled_01_cannon_F";
+			skill=0.60000002;
+			text="VehUN_IFV5";
+		};
+		class Item327
+		{
+			position[]={919.06097,0,1815.6221};
+			azimut=-1.08269;
+			id=1594;
+			side="EMPTY";
+			vehicle="B_mas_afr_APC_Wheeled_01_cannon_F";
+			skill=0.60000002;
+			text="VehUN_IFV6";
+		};
+		class Item328
+		{
+			position[]={934.53442,0,1819.5424};
+			azimut=-1.08269;
+			id=1595;
+			side="EMPTY";
+			vehicle="B_mas_afr_APC_Wheeled_01_cannon_F";
+			skill=0.60000002;
+			text="VehUN_IFV7";
+		};
+		class Item329
+		{
+			position[]={947.99432,0,1815.1973};
+			azimut=-1.08269;
+			id=1596;
+			side="EMPTY";
+			vehicle="B_mas_afr_APC_Wheeled_01_cannon_F";
+			skill=0.60000002;
+			text="VehUN_IFV8";
 		};
 	};
 	class Markers
@@ -24799,7 +24789,7 @@ class Mission
 		{
 			position[]={868.04871,0.093281433,1984.3751};
 			name="delta-ghosts_1";
-			text="CAF";
+			text="UN";
 			type="mil_dot";
 			colorName="ColorBlue";
 			a=0;
