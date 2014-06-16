@@ -52,7 +52,7 @@ _medicRuckSack = "ACE_CharliePack_ACU_Medic";
 
 _rifle = "AK_74"; _riflemag = "30Rnd_545x39_AK";																						// Standard Riflemen (Spotter, HMG Assistant Gunner, MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, HAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 
-_carbine = "AK_74"; _carbinemag = "30Rnd_545x39_AK"; 																					// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
+_carbine = "AKS_74"; _carbinemag = "30Rnd_545x39_AK"; 																					// Standard Carabineer (Medic, HMG Gunner, Rifleman (AT), Rifleman (AA), MAT Gunner, HAT Gunner, MTR Gunner, Carabineer)
 
 _smg = "AKS_74_U"; _smgmag = "30Rnd_545x39_AK";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
 
@@ -70,7 +70,7 @@ _grenade = "HandGrenade_West"; _smokegrenade = "SmokeShell";_smokegrenadegreen =
 
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 	
-_AR = "ACE_RPK74M"; _ARmag = "75Rnd_545x39_RPK";																							// Automatic Rifleman
+_AR = "RPK_74"; _ARmag = "75Rnd_545x39_RPK";																							// Automatic Rifleman
 
 _MMG = "PK"; _MMGmag = "100Rnd_762x54_PK";																							// Medium MG
 
