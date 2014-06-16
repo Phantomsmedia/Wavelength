@@ -1,6 +1,6 @@
 PhanTactical-F2/F3 Frameworks
 ===============
-Current CAF TW and PMC are broken factions within F3. DO NOT USE THEM AT ALL.
+PMC is a Broken Faction. Don't Use.
 ===============
 
 This is the repository for the PhanTactical-modified F2 and F3 framework.
@@ -48,11 +48,12 @@ Credits
 
 Developed by
    
-	Batboyx2 (www.phantactical.com Addon Development Team Head)
-	Jani J. (www.phantactical.com Community Leader)
-	KakePro (www.phantactical.com Member)
-	Hunter (Gave us a running start)
-	Ferstaberinde (www.ferstaberinde.com Creator of F2/F3 frameworks, venerable badass)
+	Jani J.       (www.phantactical.com Community Leader)
+	KakePro       (www.phantactical.com Member)
+	Duck          (www.phantactical.com Member)
+	Batboyx2      (www.phantactical.com Addon Development Team Head)
+	Hunter        (Gave us a running start)
+	Ferstaberinde (www.ferstaberinde.com Creator of F2/F3 frameworks)
 
 
 
