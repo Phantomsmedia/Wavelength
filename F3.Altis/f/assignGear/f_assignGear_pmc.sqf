@@ -117,7 +117,7 @@ _bagsmall = "B_AssaultPack_mcamo";			// carries 120, weighs 20
 _bagmedium = "B_FieldPack_khk";				// carries 240, weighs 30
 _baglarge =  "B_Carryall_mcamo"; 				// carries 320, weighs 40
 _bagmediumdiver =  "B_AssaultPack_blk";	// used by divers
-_bagTFARlongRANGE = "tf_rt1523g"; // used by ground infantry leaders
+_bagTFARlongRANGE = "tf_anprc155"; // used by ground infantry leaders
 _bagTFARairBORNE = "tf_anarc210"; // used by pilots and other airborne troops
 
 // ====================================================================================
