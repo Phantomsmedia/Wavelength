@@ -724,9 +724,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "RH_ta31rco";
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -750,9 +748,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "RH_ta31rco";
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: MEDIC
@@ -771,8 +767,7 @@ switch (_typeofUnit) do
 		{_unit addItem _morphine} forEach [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
 		{_unit addItem _epipen} forEach [1,2,3,4,5,6,7,8,9,10];
 		{_unit addItem _bloodbag} forEach [1,2,3,4,5];
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;	
 	};
 
 // LOADOUT: FIRE TEAM LEADER
@@ -794,9 +789,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";
-		_unit addPrimaryweaponItem "RH_ta31rco";		
+		_unit addItem _earplugs;	
 	};
 
 
@@ -831,9 +824,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "RH_compM4s";
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: RIFLEMAN (AT)
@@ -851,8 +842,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;	
 	};
 
 // LOADOUT: MEDIUM MG GUNNER
@@ -886,9 +876,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "RH_compM4s";
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: MEDIUM AT GUNNER
@@ -903,8 +891,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
@@ -923,8 +910,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: MORTAR GUNNER
@@ -938,8 +924,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;	
 	};
 
 // LOADOUT: MORTAR ASSISTANT GUNNER
@@ -954,8 +939,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: VEHICLE CREW
@@ -1002,8 +986,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: ENGINEER (MINES)
@@ -1020,8 +1003,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: RIFLEMAN
@@ -1037,9 +1019,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "RH_compM4s";
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: CARABINEER
@@ -1102,9 +1082,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_unit addPrimaryweaponItem "RH_compM4s";
-		_unit addPrimaryweaponItem "acc_flashlight";		
+		_unit addItem _earplugs;		
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
