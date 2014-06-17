@@ -85,6 +85,15 @@ switch (_unitfaction) do
 		["UnitNATO_ASL_M", 0, "AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitNATO_BSL_M", 0, "BM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitNATO_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		
+		["GrpDELTA_GHOST_ASL", 0, "Spec ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpDELTA_GHOST_A1", 1, "Spec A1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpDELTA_GHOST_A2", 1, "Spec A2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpDELTA_GHOST_A3", 1, "Spec A3", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["UnitDELTA_GHOST_ASL_M", 0, "Spec AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["GrpDELTA_GHOST_AH1",  8, "Spec AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpDELTA_GHOST_TH1",  8, "Spec TH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpDELTA_GHOST_TH2",  8, "Spec TH2", "ColorRed"] spawn f_fnc_localGroupMarker;
 
 	};
 // ====================================================================================
@@ -228,6 +237,15 @@ switch (_unitfaction) do
 		["UnitUN_ASL_M", 0, "AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitUN_BSL_M", 0, "BM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitUN_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		
+		["GrpDELTA_GHOST_ASL", 0, "Spec ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpDELTA_GHOST_A1", 1, "Spec A1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpDELTA_GHOST_A2", 1, "Spec A2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpDELTA_GHOST_A3", 1, "Spec A3", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["UnitDELTA_GHOST_ASL_M", 0, "Spec AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["GrpDELTA_GHOST_AH1",  8, "Spec AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpDELTA_GHOST_TH1",  8, "Spec TH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpDELTA_GHOST_TH2",  8, "Spec TH2", "ColorRed"] spawn f_fnc_localGroupMarker;		
 
 	};
 // ====================================================================================
