@@ -1,0 +1,201 @@
+Hello, everybody!
+
+These are some fictional "Russians" with weapons.
+
+Current Ver: 3.51
+
+Have fun!
+
+Classnames:
+
+Weapons:
+AKM: arifle_SUD_AKM (new)
+AKM with GP25: arifle_SUD_AKM_GL (new)
+SVD: arifle_SUD_SVD (new)
+AK-74M: arifle_SUD_AK74M
+AK-74M with GL: arifle_SUD_AK74M_GL
+AK-107: arifle_SUD_AK107
+AK-107 with GL: arifle_SUD_AK107_GL
+AK-105: arifle_SUD_AK105
+RPK-107: LMG_SUD_RPK107
+SVU-107: srifle_SUD_SVU107
+KSVK: srifle_SUD_KSVK_CAMO
+RPG7: launch_RPG7V_F
+PECHENEG M: LMG_SUD_PECHENEG_M
+
+Magazines: 
+AKM: 30rnd_762x39_AKM
+AK&RPK: 30rnd_545x39_AK107, 75rnd_545x39_RPK107
+PECHENEG_M: 100rnd_762x54_PK
+SVU/SVD: 10rnd_762x54_SVU107
+KSVK uses BIS magazine implemented in Alpha 0.6: 5rnd_127x108_Mag
+RPG32: RPG32_RU_F, RPG32_RU_HE_F
+RPG7: PG7V_F
+
+Units:
+
+Digital flora camo:
+
+SUD_RU_Soldier
+SUD_RU_Soldier_AR
+SUD_RU_Soldier_MG
+SUD_RU_Soldier_GL
+SUD_RU_Soldier_Marksman
+SUD_RU_Soldier_Engineer
+SUD_RU_Soldier_Sapper
+SUD_RU_Soldier_Medic
+SUD_RU_Soldier_AT
+SUD_RU_Soldier_TL
+SUD_RU_Soldier_HPilot
+SUD_RU_Soldier_Crew
+SUD_RU_Soldier_Diver
+SUD_RU_Soldier_Diver_Sapper
+SUD_RU_Soldier_Specnaz
+SUD_RU_Soldier_Specnaz_GL
+SUD_RU_Soldier_Specnaz_Sapper
+SUD_RU_Soldier_Specnaz_Marksman
+SUD_RU_Soldier_Specnaz_HSniper
+SUD_RU_Soldier_UAV
+
+SURPAT Camo:
+
+SUD_RU_Soldier_S
+SUD_RU_Soldier_AR_S
+SUD_RU_Soldier_MG_S
+SUD_RU_Soldier_GL_S
+SUD_RU_Soldier_Marksman_S
+SUD_RU_Soldier_Engineer_S
+SUD_RU_Soldier_Sapper_S
+SUD_RU_Soldier_Medic_S
+SUD_RU_Soldier_AT_S
+SUD_RU_Soldier_TL_S
+SUD_RU_Soldier_Crew_S
+
+
+Uniforms:
+U_SUD_RU_DIGI_UNIFORM01
+U_SUD_RU_DIGI_UNIFORM02
+U_SUD_RU_SURPAT_UNIFORM01
+U_SUD_RU_SURPAT_UNIFORM02
+
+U_SUD_RU_WETSUIT
+U_SUD_RU_Digi_Sniper
+
+Headgear:
+H_SUD_6b27
+H_SUD_6b27_V2
+H_SUD_6b27_SURPAT
+H_SUD_6b27_V2_SURPAT
+H_RU_Pilot_Helmet
+
+Backpacks:
+
+RU_Assaultpack
+RU_AssaultPack_AR
+RU_AssaultPack_MG
+RU_AssaultPack_AT
+RU_AssaultPack_Marksman
+RU_AssaultPack_Diver
+RU_AssaultPack_Diver_Sapper
+RU_AssaultPack_HSniper
+RU_AssaultPack_Sapper
+RU_UAV_01_backpack
+
+Items:
+TGP-A Supressor: muzzle_SUD_TGP_A (was SUD_TGP_A)
+TGP-B Supressor: muzzle_SUD_TGP_B (was SUD_TGP_B)
+PSO1 optics: optic_SUD_PSO1
+PSO4 optics: optic_SUD_PSO4
+PSO4 optics with camo: optic_SUD_PSO4_camo
+1p29 optics: optic_sud_1p29
+Krechet collimator: optic_sud_krechet
+Krechet collimator with monocular: optic_sud_krechet_m
+Cobra collimator: optic_sud_cobra
+Goshawk thermal optics: optic_sud_goshawk
+
+Vehicles:
+
+T100: RU_MBT_02_cannon_F
+BTR100: RU_APC_BTR100_F
+
+Credits:
+BIS
+
+Version history:
+V3.51:
+*Fixed issue with RPG-7
+*New item: Goshawk thermal optics
+*Added units in SURPAT camo
+*Added pecheneg-m and new optics in ammobox
+
+Version history:
+V3.5:
+*New Vehicle - BTR-100 (a BTR-90 and BTR-82 hybrid) with random numbers
+*New weapon - Pecheneg-M machine gun with new hand anim
+*New item: Cobra collimator optics
+*Badguys random t-shirts error fixed
+*Krechet with monocular optics alternative view added
+
+V3.4:
+*New item: Krechet collimator optic with monocular
+*New weapon: RPG-7 for "badguys" with adjustible sights (100-500m)
+*New cool hand anims for AK74M, AK105, AK107
+*Retextured T100 with 10 random numbers (other vehicles are WIP).
+*Fixed sights on rifle grenade launchers (now adjustible from 100 to 400m with a 50m step)
+*Random t-shirt textures for "badguys"
+*Offroads for "badguys"
+
+V3.3:
+*Fixes some issues (now compatible with 1.02)
+*Removed global CowSlot settings
+*New 6b27 inspired helmets
+*New Krechet collimator sights
+*Opfor weapons added (AKM, SVD)
+*Added some "terrorists" to the OPFOR side
+*PSO-1 optics
+*Optic reticles reworked. Now rangefinders on PSOs and 1P29 should work correctly.
+
+V3.2:
+*Now compatible with ARMA3 BETA
+*Units models and textures changed
+*MI-48 added to Russian side
+*Kamaz trucks added to Russian side
+
+V3.1:
+*Weapon sounds issues after BIS update v0.5 fixed
+*5.45x39 ammo hit value reduced to match BIS 5.65 ammo.
+*PBO name changed to SUD_Russians
+*classnames changed, addon name changed to SUD_Russians, prefixes added (!)
+*Magazines from AK can now be used in RPK and vice versa
+*New weapons: AK-74M, AK-74M with GL, KSVK
+*New items: 1p29 4x optics, hat, bandana
+*New units: Recon Operators, Recon Marksman, Recon Sniper (KSVK)
+*New groups: Recon Team, Sniper team
+
+V3.0:
+*Marksman unit had AK magazines in his backpack: Fixed
+*Muzzle flashes are now working
+*BIS supressors replaced with proper ones (TGP-A for AK, RPK, TGP-B for SVU)
+*Iron sights reworked (failed to implement side-mounted rails, new anim sources not yet supported by BinMake)
+*New PSO-4 optics with 12x maginfication for Marksman
+*Minor changes to weapon models
+
+V2.5:
+
+*Fixed helmet issue with players who enabled Development build in Steam
+*SVU-107 sniper rifle added
+*Different squad configurations added
+*Retextured verision of KA-60 added
+*Assault boat added
+
+V2: 
+
+*AK-107 reworked for use of the game optics. Added an AK with a grenade launcher.
+*Added AK-105 and RPK.
+*Added Automatic Rifleman, Grenadier, Marksman, Engineer, Sapper, Medic, AT Soldier, Team Leader, Helicopter Pilot, Diver, Diver-Sapper
+*Created classes for uniform.
+*Created new backpacks
+
+V1:
+
+First release with one soldier and one weapon.
