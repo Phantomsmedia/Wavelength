@@ -55,7 +55,7 @@ _carbine = "FN_FAL"; _carbinemag = "20Rnd_762x51_FNFAL"; 																					//
 
 _smg = "bizon"; _smgmag = "64Rnd_9x19_Bizon";																									// Standard Submachine Gun/Personal Defence Weapon (Vehicle Crew, Aircraft Pilot, Submachinegunner)
 
-_glrifle = "M16A2GL"; _glriflemag = "20Rnd_556x45_Stanag "; _glmag = "1Rnd_HE_GP25";														// Rifle with GL and HE grenades (CO, DC, FTLs)
+_glrifle = "M16A2GL"; _glriflemag = "20Rnd_556x45_Stanag"; _glmag = "1Rnd_HE_GP25";														// Rifle with GL and HE grenades (CO, DC, FTLs)
 _glsmokewhite = "1Rnd_Smoke_GP25"; _glsmokegreen = "1Rnd_SmokeGreen_GP25"; _glsmokered = "1Rnd_SmokeRed_GP25";    							// Smoke for FTLs, Squad Leaders, etc 
 _glflarewhite = "FlareWhite_GP25"; _glflarered = "FlareRed_GP25"; _glflareyellow = "FlareYellow_GP25"; _glflaregreen = "FlareGreen_GP25";	// Flares for FTLs, Squad Leaders, etc
 
