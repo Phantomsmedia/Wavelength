@@ -153,6 +153,7 @@ _unit addweapon _glrifle;									//_COrifle
 {_unit addmagazine _smokegrenadegreen;} foreach [1];
 _unit addWeapon "Binocular";
 _unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _glriflemag, 12] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -180,6 +181,7 @@ _unit addweapon _glrifle;									//_DCrifle
 {_unit addmagazine _smokegrenade;} foreach [1,2];
 {_unit addmagazine _smokegrenadegreen;} foreach [1];
 _unit addWeapon "Binocular";
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _glriflemag, 12] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -205,6 +207,7 @@ _unit addweapon _carbine;
 [_unit , "ACE_Bandage", 10] call ACE_Sys_Ruck_fnc_AddMagToRuck;	
 [_unit , "ACE_Medkit", 10] call ACE_Sys_Ruck_fnc_AddMagToRuck;	
 _unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";
 	};
 
 // LOADOUT: FIRE TEAM LEADER
@@ -225,6 +228,7 @@ _unit addweapon _glrifle;									//_FTLrifle
 {_unit addmagazine _smokegrenadegreen;} foreach [1];
 _unit addweapon "Binocular";
 _unit addweapon "acre_prc148";
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _glriflemag, 12] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -250,6 +254,7 @@ _unit addweapon _AR;
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 _unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";
 		
 	};	
 	
@@ -269,6 +274,7 @@ _unit addWeapon "Binocular";
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 _unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";
 		
 	};				
 	
@@ -287,6 +293,7 @@ _unit addweapon _carbine;
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 _unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";
 	};		
 	
 // LOADOUT: SURFACE TO AIR MISSILE GUNNER 
@@ -305,6 +312,7 @@ _unit addweapon "ItemGPS";
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 _unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";
 
 
 	};			
@@ -324,7 +332,8 @@ _unit addWeapon "Binocular";
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , _RAAmag, 2] call ACE_Sys_Ruck_fnc_AddMagToRuck;
-_unit addweapon "ace_earplugs";			
+_unit addweapon "ace_earplugs";	
+_unit addWeapon "ACE_KeyCuffs";		
 	};
 // LOADOUT: MEDIUM MG GUNNER	
 	case "mmgg":
@@ -344,6 +353,7 @@ _unit addweapon "acre_prc148";
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;	
 _unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";
 		
 	};			
 
@@ -362,7 +372,8 @@ _unit addWeapon "Binocular";
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;	
-_unit addweapon "ace_earplugs";				
+_unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";				
 	};
 	
 	
@@ -386,7 +397,8 @@ _unit addweapon "acre_prc148";
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
-_unit addweapon "ace_earplugs";				
+_unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";				
 			
 	};	
 	
@@ -405,7 +417,8 @@ _unit addWeapon "Binocular";
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Bandage", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;	
 [_unit , _MATmag1, 2] call ACE_Sys_Ruck_fnc_AddMagToRuck;	
-_unit addweapon "ace_earplugs";				
+_unit addweapon "ace_earplugs";
+_unit addWeapon "ACE_KeyCuffs";				
 					
 			
 			
@@ -426,6 +439,7 @@ _unit addweapon _carbine;
 {_unit addmagazine _smokegrenade;} foreach [1];	
 {_unit addmagazine _HATmag1} foreach [1];
 _unit addweapon "acre_prc148";
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _carbinemag, 5] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -442,6 +456,7 @@ _unit addweapon _rifle;
 _unit addWeapon "Binocular";	
 {_unit addmagazine _smokegrenade;} foreach [1,2,3];
 {_unit addmagazine _grenade} foreach [1,2];
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _riflemag, 5] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -466,6 +481,7 @@ if (f_param_gps == 1) then {
 _unit addweapon _SNrifle;
 _unit addweapon "Binocular";
 {_unit addmagazine _smokegrenade;} foreach [1,2,3,4];
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _SNriflemag, 7] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -483,6 +499,7 @@ _unit addWeapon "Binocular_Vector";
 {_unit addmagazine _smokegrenade;} foreach [1,2];
 {_unit addmagazine _grenade} foreach [1,2];
 _unit addweapon "acre_prc148";
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _SNriflemag, 5] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -515,7 +532,8 @@ _unit addWeapon _ruckSack;
 _unit addweapon _carbine;
 {_unit addmagazine _smokegrenade} foreach [1,2];
 {_unit addmagazine _grenade} foreach [1,2];
-_unit addweapon "acre_prc148";		
+_unit addweapon "acre_prc148";
+_unit addWeapon "ACE_KeyCuffs";		
 [_unit , _carbinemag, 5] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -534,6 +552,7 @@ _unit addWeapon _ruckSack;
 _unit addweapon _rifle;
 {_unit addmagazine _grenade} foreach [1,2];
 {_unit addmagazine _smokegrenade;} foreach [1,2];
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _riflemag, 18] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -549,6 +568,7 @@ _unit addWeapon _ruckSack;
 _unit addweapon _carbine;
 {_unit addmagazine _grenade} foreach [1,2];
 {_unit addmagazine _smokegrenade;} foreach [1,2];
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _carbinemag, 18] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morhpine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
@@ -576,6 +596,7 @@ _unit addweapon _glrifle;
 {_unit addmagazine _glsmokewhite} foreach [1,2];
 {_unit addmagazine _grenade} foreach [1,2];
 {_unit addmagazine _smokegrenade;} foreach [1,2];
+_unit addWeapon "ACE_KeyCuffs";
 [_unit , _glriflemag, 7] call ACE_Sys_Ruck_fnc_AddMagToRuck;
 [_unit , "ACE_Morphine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck; 
 [_unit , "ACE_Epinephrine", 1] call ACE_Sys_Ruck_fnc_AddMagToRuck;
