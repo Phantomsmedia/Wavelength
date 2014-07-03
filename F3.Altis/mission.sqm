@@ -51,6 +51,7 @@ class Mission
 		"A3_Air_F_EPB_Heli_Light_03",
 		"A3_Armor_F_EPB_APC_tracked_03",
 		"A3_Armor_F_EPC_MBT_01",
+		"A3_Air_F_Heli_Light_01",
 		"a3_map_altis"
 	};
 	addOnsAuto[]=
@@ -103,6 +104,7 @@ class Mission
 		"A3_Air_F_EPB_Heli_Light_03",
 		"A3_Armor_F_EPB_APC_tracked_03",
 		"A3_Armor_F_EPC_MBT_01",
+		"A3_Air_F_Heli_Light_01",
 		"a3_map_altis"
 	};
 	randomSeed=11823142;
@@ -20137,7 +20139,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=308;
+		items=312;
 		class Item0
 		{
 			position[]={468.67737,-0.00017216802,1866.9641};
@@ -23314,10 +23316,50 @@ class Mission
 			skill=0.60000002;
 			text="VehUN_IFV8";
 		};
+		class Item308
+		{
+			position[]={135.53241,0.33253622,3642.125};
+			id=1511;
+			side="EMPTY";
+			vehicle="B_Heli_Light_01_armed_F";
+			leader=1;
+			skill=0.60000002;
+			init="this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+		};
+		class Item309
+		{
+			position[]={142.81168,0.12919462,3642.1326};
+			id=1512;
+			side="EMPTY";
+			vehicle="B_Heli_Light_01_armed_F";
+			leader=1;
+			skill=0.60000002;
+			init="this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+		};
+		class Item310
+		{
+			position[]={150.11612,0.0016198605,3642.0098};
+			id=1513;
+			side="EMPTY";
+			vehicle="B_Heli_Light_01_armed_F";
+			leader=1;
+			skill=0.60000002;
+			init="this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+		};
+		class Item311
+		{
+			position[]={157.42053,0.18559209,3641.8486};
+			id=1514;
+			side="EMPTY";
+			vehicle="B_Heli_Light_01_armed_F";
+			leader=1;
+			skill=0.60000002;
+			init="this addweapon ""CMFlareLauncher""; this addmagazine ""120Rnd_CMFlare_Chaff_Magazine"";";
+		};
 	};
 	class Markers
 	{
-		items=25;
+		items=26;
 		class Item0
 		{
 			position[]={464.04749,0.078043804,1986.0699};
@@ -23575,6 +23617,15 @@ class Mission
 			colorName="ColorPink";
 			a=0;
 			b=0;
+		};
+		class Item25
+		{
+			position[]={145.2469,0.1354553,3715.3232};
+			name="AH6 With Flares";
+			text="AH6 With Flares";
+			type="hd_arrow";
+			colorName="ColorUNKNOWN";
+			angle=-172.01158;
 		};
 	};
 };
