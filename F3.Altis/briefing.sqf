@@ -201,22 +201,6 @@ if (_unitfaction == "OPF_F") exitwith {
 };
 // ====================================================================================
 
-// BRIEFING: INDEPENDENT > PMC
-// The following block of code executes only if the player is in a PMC slot; it
-// automatically includes a file which contains the appropriate briefing data.
-
-if (_unitfaction == "PMC_POMI") exitwith {
-
-#include "f\briefing\f_briefing_pmc.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-// ====================================================================================
-
 // BRIEFING: INDEPENDENT > Russians
 // The following block of code executes only if the player is in a Russian slot; it
 // automatically includes a file which contains the appropriate briefing data.

@@ -484,61 +484,6 @@ _groups = [
 ["GrpAAF_TH8","AAF TH8 -"],
 ["GrpAAF_AH1","AAF AH1 -"],
 
-
-// ====================================================================================
-
-// GROUP IDs: INDEPENDENT > PMC
-// Automatically assigns intelligible names to groups
-
-["GrpPMC_CO","PMC CO -"],
-["GrpPMC_DC","PMC DC -"],
-
-["GrpPMC_ASL","PMC ASL -"],
-["GrpPMC_A1","PMC A1 -"],
-["GrpPMC_A2","PMC A2 -"],
-["GrpPMC_A3","PMC A3 -"],
-
-["GrpPMC_BSL","PMC BSL -"],
-["GrpPMC_B1","PMC B1 -"],
-["GrpPMC_B2","PMC B2 -"],
-["GrpPMC_B3","PMC B3 -"],
-
-["GrpPMC_CSL","PMC CSL -"],
-["GrpPMC_C1","PMC C1 -"],
-["GrpPMC_C2","PMC C2 -"],
-["GrpPMC_C3","PMC C3 -"],
-
-["GrpPMC_MMG1","PMC MMG1 -"],
-["GrpPMC_MAT1","PMC MAT1 -"],
-["GrpPMC_HAT1","PMC HAT1 -"],
-["GrpPMC_HMG1","PMC HMG1 -"],
-["GrpPMC_MTR1","PMC MTR1 -"],
-
-["GrpPMC_ST1","PMC ST1 -"],
-["GrpPMC_DT1","PMC DT1 -"],
-["GrpPMC_ENG1","PMC ENG1 -"],
-
-["GrpPMC_IFV1","PMC IFV1 -"],
-["GrpPMC_IFV2","PMC IFV2 -"],
-["GrpPMC_IFV3","PMC IFV3 -"],
-["GrpPMC_IFV4","PMC IFV4 -"],
-["GrpPMC_IFV5","PMC IFV5 -"],
-["GrpPMC_IFV6","PMC IFV6 -"],
-["GrpPMC_IFV7","PMC IFV7 -"],
-["GrpPMC_IFV8","PMC IFV8 -"],
-["GrpPMC_TNK1","PMC TNK1 -"],
-
-["GrpPMC_TH1","PMC TH1 -"],
-["GrpPMC_TH2","PMC TH2 -"],
-["GrpPMC_TH3","PMC TH3 -"],
-["GrpPMC_TH4","PMC TH4 -"],
-["GrpPMC_TH5","PMC TH5 -"],
-["GrpPMC_TH6","PMC TH6 -"],
-["GrpPMC_TH7","PMC TH7 -"],
-["GrpPMC_TH8","PMC TH8 -"],
-["GrpPMC_AH1","PMC AH1 -"],
-
-
 // ====================================================================================
 
 // GROUP IDs: INDEPENDENT > Russia

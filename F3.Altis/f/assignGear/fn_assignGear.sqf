@@ -85,7 +85,6 @@ if (_faction == "mas_afr_onu") then {
 	#include "f_assignGear_un.sqf"
 };
 // ====================================================================================
-// ====================================================================================
 // GEAR: BLUFOR > NATO
 // The following block of code executes only if the unit is in a NATO slot; it
 // automatically includes a file which contains the appropriate equipment data.
@@ -164,15 +163,6 @@ if (_faction == "ind_f") then {
 
 if (_faction == "SUD_RU") then {
 	#include "f_assignGear_russia.sqf"
-};
-// ====================================================================================
-
-// GEAR: INDEPENDENT > PMC
-// The following block of code executes only if the player is in a PMC slot; it
-// automatically includes a file which contains the appropriate equipment data.
-
-if (_faction == "PMC_POMI") then {
-	#include "f_assignGear_pmc.sqf"
 };
 // ====================================================================================
 
