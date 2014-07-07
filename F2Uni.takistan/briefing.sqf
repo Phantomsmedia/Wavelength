@@ -69,6 +69,23 @@ if (_unitfaction == "bis_baf") exitwith {
 	};
 };
 
+====================================================================================
+
+// BRIEFING: British Army Falklands Era
+// The following block of code executes only if the player is in a TAKISTANI ARMY slot; it 
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "I44_B_Army") exitwith {
+
+#include "f\common\f_briefing_BArmy.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
 // ====================================================================================
 
 // BRIEFING: 75th Rangers

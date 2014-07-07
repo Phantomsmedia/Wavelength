@@ -110,7 +110,18 @@ if (_faction == "cdf") then {
 if (_faction == "bis_baf") then {
 #include "folk_assignGear_baf.sqf"
 };
+// ====================================================================================
 
+// GEAR: BRITISH ARMED FORCES FALKLANDS ERA
+// The following block of code executes only if the player is in a CDF slot; it 
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "I44_B_Army") then {
+#include "folk_assignGear_BArmy.sqf"if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
 // ====================================================================================
 
 // GEAR: TAKISTANI ARMY
