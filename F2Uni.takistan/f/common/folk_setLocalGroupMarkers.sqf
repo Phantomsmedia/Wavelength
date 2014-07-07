@@ -41,7 +41,48 @@ switch (_unitfaction) do
 {
 
 // ====================================================================================
+// MARKERS: FALKLANDS ERA BRITS
+// Markers seen by players in US slots.
 
+	case "I44_B_Army":
+	{
+		["GrpBAFwo_CO", 0, "CO", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_DC", 0, "DC", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_ASL", 0, "ASL", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_A1", 1, "A1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_A2", 1, "A2", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpBAFwo_A3", 1, "A3", "ColorRed"] spawn fnc_folk_localGroupMarker;		
+		["GrpBAFwo_BSL", 0, "BSL", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_B1", 1, "B1", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_B2", 1, "B2", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_B3", 1, "B3", "ColorBlue"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_CSL", 0, "CSL", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_C1", 1, "C1", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_C2", 1, "C2", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_C3", 1, "C3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_MMG1", 2, "MMG", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_MAT1", 3, "MAT", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_ST1",  4, "ST", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpBAFwo_HMG1",  2, "HMG", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_MTR1",  5, "MTR", "ColorOrange"] spawn fnc_folk_localGroupMarker;	
+		["GrpBAFwo_HAT1",  3, "HAT", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_SAM1",  3, "SAM", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_ENG1",  6, "ENG", "ColorYellow"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_IFV1",  7, "Bison1", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_IFV2",  7, "Bison2", "ColorBlue"] spawn fnc_folk_localGroupMarker;	
+		["GrpBAFwo_IFV3",  7, "Bison3", "ColorGreen"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_TNK1",  7, "Thunder", "ColorRed"] spawn fnc_folk_localGroupMarker;	
+		["GrpBAFwo_TH1",  8, "BigBird1", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_TH2",  8, "BigBird2", "ColorOrange"] spawn fnc_folk_localGroupMarker;
+		["GrpBAFwo_AH1",  8, "Lightning", "ColorRed"] spawn fnc_folk_localGroupMarker;
+		["UnitBAFwo_CO_M", 0, "COM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitBAFwo_DC_M", 0, "DCM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitBAFwo_ASL_M", 0, "AM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;		
+		["UnitBAFwo_BSL_M", 0, "BM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+		["UnitBAFwo_CSL_M", 0, "CM", "ColorBlack"] spawn fnc_folk_localSpecialistMarker;
+	};
+	
+// ====================================================================================
 // MARKERS: US (VIETNAM)
 // Markers seen by players in US slots.
 

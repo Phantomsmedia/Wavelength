@@ -1,7 +1,37 @@
 // F2 - Takistani Group IDs
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f2/en/)
 // ====================================================================================
+// GROUP IDs: FALKLANDS ERA BRITS
+// Automatically assigns intelligible names to groups
 
+GrpBAFwo_CO setGroupId ["US Army CO -","GroupColor0"];
+GrpBAFwo_DC setGroupId ["US Army DC -","GroupColor0"];
+GrpBAFwo_ASL setGroupId ["US Army ASL -","GroupColor0"];
+GrpBAFwo_A1 setGroupId ["US Army A1 -","GroupColor0"];
+GrpBAFwo_A2 setGroupId ["US Army A2 -","GroupColor0"];
+GrpBAFwo_A3 setGroupId ["US Army A3 -","GroupColor0"];
+GrpBAFwo_BSL setGroupId ["US Army BSL -","GroupColor0"];
+GrpBAFwo_B1 setGroupId ["US Army B1 -","GroupColor0"];
+GrpBAFwo_B2 setGroupId ["US Army B2 -","GroupColor0"];
+GrpBAFwo_B3 setGroupId ["US Army B3 -","GroupColor0"];
+GrpBAFwo_CSL setGroupId ["US Army CSL -","GroupColor0"];
+GrpBAFwo_C1 setGroupId ["US Army C1 -","GroupColor0"];
+GrpBAFwo_C2 setGroupId ["US Army C2 -","GroupColor0"];
+GrpBAFwo_C3 setGroupId ["US Army C3 -","GroupColor0"];
+GrpBAFwo_MMG1 setGroupId ["US Army MMG1 -","GroupColor0"];
+GrpBAFwo_MAT1 setGroupId ["US Army MAT1 -","GroupColor0"];
+GrpBAFwo_ST1 setGroupId ["US Army ST1 -","GroupColor0"];
+GrpBAFwo_HMG1 setGroupId ["US Army HMG1 -","GroupColor0"];
+GrpBAFwo_MTR1 setGroupId ["US Army MTR1 -","GroupColor0"];
+GrpBAFwo_HAT1 setGroupId ["US Army HAT1 -","GroupColor0"];
+GrpBAFwo_SAM1 setGroupId ["US Army SAM1 -","GroupColor0"];
+GrpBAFwo_ENG1 setGroupId ["US Army ENG1 -","GroupColor0"];
+GrpBAFwo_IFV1 setGroupId ["US Army IFV1 -","GroupColor0"];
+GrpBAFwo_IFV2 setGroupId ["US Army IFV2 -","GroupColor0"];
+GrpBAFwo_TH1 setGroupId ["US Army TH1 -","GroupColor0"];
+GrpBAFwo_TH2 setGroupId ["US Army TH2 -","GroupColor0"];
+
+// ====================================================================================
 // GROUP IDs: US ARMY (VIETNAM)
 // Automatically assigns intelligible names to groups
 
