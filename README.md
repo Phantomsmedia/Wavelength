@@ -1,7 +1,5 @@
 PhanTactical-F2/F3 Frameworks
 ===============
-PMC is a Broken Faction. Don't Use.
-===============
 
 This is the repository for the PhanTactical-modified F2 and F3 framework.
 
