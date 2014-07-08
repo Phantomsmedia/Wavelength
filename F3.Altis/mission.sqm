@@ -10,7 +10,6 @@ class Mission
 		"A3_Characters_F_INDEP",
 		"sud_russians",
 		"mas_usa_mars_b",
-		"mas_usa_delta_b",
 		"a3_baf_men",
 		"A3_Characters_F_Gamma",
 		"rav_lifter_a3",
@@ -63,7 +62,6 @@ class Mission
 		"A3_Characters_F_INDEP",
 		"sud_russians",
 		"mas_usa_mars_b",
-		"mas_usa_delta_b",
 		"a3_baf_men",
 		"A3_Characters_F_Gamma",
 		"rav_lifter_a3",
@@ -85,14 +83,14 @@ class Mission
 		"A3_Armor_F_T100K",
 		"a3_armor_btr100",
 		"HAFM_ArmA2_Helis",
-		"mas_usa_usoc_veh",
-		"mas_usa_mars_veh",
+		"A3_Air_F_Heli_Light_01",
 		"a3_baf_air",
 		"a3_baf_armored",
 		"A3_Soft_F_HEMTT",
 		"A3_Soft_F_MRAP_01",
 		"DAR_HMMWV",
 		"A3_Boat_F_SDV_01",
+		"mas_usa_mars_veh",
 		"a3_baf_cars",
 		"a3_baf_ships",
 		"A3_Soft_F_MRAP_03",
@@ -104,7 +102,6 @@ class Mission
 		"A3_Air_F_EPB_Heli_Light_03",
 		"A3_Armor_F_EPB_APC_tracked_03",
 		"A3_Armor_F_EPC_MBT_01",
-		"A3_Air_F_Heli_Light_01",
 		"a3_map_altis"
 	};
 	randomSeed=11823142;
@@ -8185,14 +8182,14 @@ class Mission
 					azimut=0.87358499;
 					id=485;
 					side="WEST";
-					vehicle="B_mas_usd_Soldier_off_F";
+					vehicle="B_recon_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_ASL_SL";
-					init="GrpDELTA_GHOST_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha Squad Leader";
+					text="UnitNATO_RECON_ASL_SL";
+					init="GrpNATO_RECON_ASL = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha Squad Leader";
 				};
 				class Item1
 				{
@@ -8200,13 +8197,13 @@ class Mission
 					azimut=0.87358499;
 					id=486;
 					side="WEST";
-					vehicle="B_mas_usd_medic_F";
+					vehicle="B_recon_medic_F";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_ASL_M";
-					init="GrpDELTA_GHOST_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha Medic";
+					text="UnitNATO_RECON_ASL_M";
+					init="GrpNATO_RECON_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha Medic";
 				};
 			};
 		};
@@ -8222,14 +8219,14 @@ class Mission
 					azimut=0.87358499;
 					id=487;
 					side="WEST";
-					vehicle="B_mas_usd_Soldier_TL_F";
+					vehicle="B_recon_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A1_FTL";
-					init="GrpDELTA_GHOST_A1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 1 Fireteam Leader";
+					text="UnitNATO_RECON_A1_FTL";
+					init="GrpNATO_RECON_A1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 1 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -8237,12 +8234,12 @@ class Mission
 					azimut=0.87358499;
 					id=488;
 					side="WEST";
-					vehicle="B_mas_usd_soldier_AR_F";
+					vehicle="B_recon_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A1_AR";
-					init="GrpDELTA_GHOST_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 1 Automatic Rifleman";
+					text="UnitNATO_RECON_A1_AR";
+					init="GrpNATO_RECON_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 1 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -8250,12 +8247,12 @@ class Mission
 					azimut=0.87358499;
 					id=489;
 					side="WEST";
-					vehicle="B_mas_usd_soldier_AR_F";
+					vehicle="B_recon_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A1_AAR";
-					init="GrpDELTA_GHOST_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 1 Assistant Automatic Rifleman";
+					text="UnitNATO_RECON_A1_AAR";
+					init="GrpNATO_RECON_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -8263,12 +8260,12 @@ class Mission
 					azimut=0.87358499;
 					id=490;
 					side="WEST";
-					vehicle="B_mas_usd_soldier_LAT_F";
+					vehicle="B_recon_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A1_AT";
-					init="GrpDELTA_GHOST_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 1 Rifleman (AT)";
+					text="UnitNATO_RECON_A1_AT";
+					init="GrpNATO_RECON_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 1 Rifleman (AT)";
 				};
 			};
 		};
@@ -8284,14 +8281,14 @@ class Mission
 					azimut=0.87358499;
 					id=491;
 					side="WEST";
-					vehicle="B_mas_usd_Soldier_TL_F";
+					vehicle="B_recon_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A2_FTL";
-					init="GrpDELTA_GHOST_A2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 2 Fireteam Leader";
+					text="UnitNATO_RECON_A2_FTL";
+					init="GrpNATO_RECON_A2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 2 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -8299,12 +8296,12 @@ class Mission
 					azimut=0.87358499;
 					id=492;
 					side="WEST";
-					vehicle="B_mas_usd_soldier_AR_F";
+					vehicle="B_recon_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A2_AR";
-					init="GrpDELTA_GHOST_A2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 2 Automatic Rifleman";
+					text="UnitNATO_RECON_A2_AR";
+					init="GrpNATO_RECON_A2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 2 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -8312,12 +8309,12 @@ class Mission
 					azimut=0.87358499;
 					id=493;
 					side="WEST";
-					vehicle="B_mas_usd_soldier_AR_F";
+					vehicle="B_recon_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A2_AAR";
-					init="GrpDELTA_GHOST_A2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 2 Assistant Automatic Rifleman";
+					text="UnitNATO_RECON_A2_AAR";
+					init="GrpNATO_RECON_A2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -8325,12 +8322,12 @@ class Mission
 					azimut=0.87358499;
 					id=494;
 					side="WEST";
-					vehicle="B_mas_usd_soldier_LAT_F";
+					vehicle="B_recon_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A2_AT";
-					init="GrpDELTA_GHOST_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 2 Rifleman (AT)";
+					text="UnitNATO_RECON_A2_AT";
+					init="GrpNATO_RECON_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 2 Rifleman (AT)";
 				};
 			};
 		};
@@ -8346,14 +8343,14 @@ class Mission
 					azimut=0.87358499;
 					id=495;
 					side="WEST";
-					vehicle="B_mas_usd_Soldier_TL_F";
+					vehicle="B_recon_TL_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A3_FTL";
-					init="GrpDELTA_GHOST_A3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 3 Fireteam Leader";
+					text="UnitNATO_RECON_A3_FTL";
+					init="GrpNATO_RECON_A3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 3 Fireteam Leader";
 				};
 				class Item1
 				{
@@ -8361,12 +8358,12 @@ class Mission
 					azimut=0.87358499;
 					id=496;
 					side="WEST";
-					vehicle="B_mas_usd_soldier_AR_F";
+					vehicle="B_recon_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A3_AR";
-					init="GrpDELTA_GHOST_A3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 3 Automatic Rifleman";
+					text="UnitNATO_RECON_A3_AR";
+					init="GrpNATO_RECON_A3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 3 Automatic Rifleman";
 				};
 				class Item2
 				{
@@ -8374,12 +8371,12 @@ class Mission
 					azimut=0.87358499;
 					id=497;
 					side="WEST";
-					vehicle="B_mas_usd_soldier_AR_F";
+					vehicle="B_recon_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A3_AAR";
-					init="GrpDELTA_GHOST_A3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 3 Assistant Automatic Rifleman";
+					text="UnitNATO_RECON_A3_AAR";
+					init="GrpNATO_RECON_A3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
 				{
@@ -8387,12 +8384,12 @@ class Mission
 					azimut=0.87358499;
 					id=498;
 					side="WEST";
-					vehicle="B_mas_usd_Soldierm_F";
+					vehicle="B_recon_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_A3_AT";
-					init="GrpDELTA_GHOST_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
-					description="Ghost Alpha 3 Rifleman (AT)";
+					text="UnitNATO_RECON_A3_AT";
+					init="GrpNATO_RECON_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					description="NATO Recon Alpha 3 Rifleman (AT)";
 				};
 			};
 		};
@@ -8413,9 +8410,9 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_TH1_P";
-					init="GrpDELTA_GHOST_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="Ghost Transport Helo 1 Pilot";
+					text="UnitNATO_RECON_TH1_P";
+					init="GrpNATO_RECON_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="NATO Recon Transport Helo 1 Pilot";
 				};
 				class Item1
 				{
@@ -8423,13 +8420,13 @@ class Mission
 					azimut=0.87358499;
 					id=500;
 					side="WEST";
-					vehicle="B_Helipilot_F";
+					vehicle="B_Pilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_TH1_CP";
-					init="GrpDELTA_GHOST_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="Ghost Transport Helo 1 Co-Pilot";
+					text="UnitNATO_RECON_TH1_CP";
+					init="GrpNATO_RECON_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="NATO Recon Transport Helo 1 Co-Pilot";
 				};
 			};
 		};
@@ -8445,14 +8442,14 @@ class Mission
 					azimut=0.87358499;
 					id=501;
 					side="WEST";
-					vehicle="B_Helipilot_F";
+					vehicle="B_Pilot_F";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_TH2_P";
-					init="GrpDELTA_GHOST_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="Ghost Transport Helo 2 Pilot";
+					text="UnitNATO_RECON_TH2_P";
+					init="GrpNATO_RECON_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="NATO Recon Transport Helo 2 Pilot";
 				};
 				class Item1
 				{
@@ -8460,13 +8457,13 @@ class Mission
 					azimut=0.87358499;
 					id=502;
 					side="WEST";
-					vehicle="B_Helipilot_F";
+					vehicle="B_Pilot_F";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_TH2_CP";
-					init="GrpDELTA_GHOST_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="Ghost Transport Helo 2 Co-Pilot";
+					text="UnitNATO_RECON_TH2_CP";
+					init="GrpNATO_RECON_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="NATO Recon Transport Helo 2 Co-Pilot";
 				};
 			};
 		};
@@ -8487,9 +8484,9 @@ class Mission
 					leader=1;
 					rank="CAPTAIN";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_AH1_P";
-					init="GrpDELTA_GHOST_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="Ghost Attack Helo 1 Pilot";
+					text="UnitNATO_RECON_AH1_P";
+					init="GrpNATO_RECON_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="NATO Recon Attack Helo 1 Pilot";
 				};
 				class Item1
 				{
@@ -8501,9 +8498,9 @@ class Mission
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
-					text="UnitDELTA_GHOST_AH1_CP";
-					init="GrpDELTA_GHOST_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
-					description="Ghost Attack Helo 1 Co-Pilot";
+					text="UnitNATO_RECON_AH1_CP";
+					init="GrpNATO_RECON_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					description="NATO Recon Attack Helo 1 Co-Pilot";
 				};
 			};
 		};
@@ -20892,7 +20889,7 @@ class Mission
 			azimut=0.87358499;
 			id=1273;
 			side="EMPTY";
-			vehicle="B_mas_usr_Heli_Light_01_F";
+			vehicle="B_Heli_Light_01_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehGHOST_TH1";
@@ -20903,7 +20900,7 @@ class Mission
 			azimut=0.87358499;
 			id=1274;
 			side="EMPTY";
-			vehicle="B_mas_usr_Heli_Light_01_F";
+			vehicle="B_Heli_Light_01_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehGHOST_TH2";
@@ -20914,7 +20911,7 @@ class Mission
 			azimut=0.87358499;
 			id=1275;
 			side="EMPTY";
-			vehicle="B_mas_mar_Heli_Light_01_armed_F";
+			vehicle="B_Heli_Light_01_armed_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehGHOST_AH1";
@@ -21140,17 +21137,17 @@ class Mission
 			azimut=0.87358499;
 			id=1297;
 			side="EMPTY";
-			vehicle="B_mas_usr_MRAP_01_hmg_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			text="vehGHOST_car1";
 		};
 		class Item95
 		{
-			position[]={679.66571,0.076015256,1930.53};
+			position[]={679.66571,0.021309856,1930.53};
 			azimut=0.87358499;
 			id=1298;
 			side="EMPTY";
-			vehicle="B_mas_usr_MRAP_01_hmg_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			text="vehGHOST_car2";
 		};
@@ -21160,7 +21157,7 @@ class Mission
 			azimut=0.87358499;
 			id=1299;
 			side="EMPTY";
-			vehicle="B_mas_usr_MRAP_01_hmg_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			text="vehGHOST_car3";
 		};
@@ -21170,7 +21167,7 @@ class Mission
 			azimut=0.87358499;
 			id=1300;
 			side="EMPTY";
-			vehicle="B_mas_usr_MRAP_01_hmg_F";
+			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			text="vehGHOST_car4";
 		};
@@ -23417,7 +23414,7 @@ class Mission
 		{
 			position[]={677.06165,-0.22630119,1986.0762};
 			name="delta-ghosts";
-			text="GHOST";
+			text="NATO RECON / BROKEN";
 			type="mil_dot";
 			colorName="ColorBlue";
 			a=0;
