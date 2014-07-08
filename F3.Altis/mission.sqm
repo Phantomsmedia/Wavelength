@@ -20151,7 +20151,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_CO";
-					init="GrpME_INS_CO = group this; nul = [""co"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_CO = group (_this select 0); nul = [""co"",(_this select 0)] call f_fnc_assignGear;};";
 					description="Insurgent Commander";
 				};
 				class Item1
@@ -20165,7 +20165,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_CO_M";
-					init="GrpME_INS_CO = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_CO = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear;};";
 					description="Insurgent Medic";
 				};
 			};
@@ -20189,7 +20189,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_DC";
-					init="GrpME_INS_DC = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_DC = group (_this select 0); nul = [""dc"",(_this select 0)] call f_fnc_assignGear;};";
 					description="Insurgent Deputy Commander";
 				};
 				class Item1
@@ -20204,7 +20204,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_DC_M";
-					init="GrpME_INS_DC = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_DC = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear;};";
 					description="Insurgent Medic";
 				};
 			};
@@ -20228,7 +20228,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_ASL_SL";
-					init="GrpME_INS_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_ASL = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear;};";
 					description="Insurgent Alpha Squad Leader";
 				};
 				class Item1
@@ -20243,7 +20243,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_ASL_M";
-					init="GrpME_INS_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_ASL = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha Medic";
 				};
 			};
@@ -20267,7 +20267,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_A1_FTL";
-					init="GrpME_INS_A1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A1 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -20281,7 +20281,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_A1_AR";
-					init="GrpME_INS_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A1 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -20295,7 +20295,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_A1_AAR";
-					init="GrpME_INS_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A1 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20309,7 +20309,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_A1_AT";
-					init="GrpME_INS_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A1 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -20333,7 +20333,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_A2_FTL";
-					init="GrpME_INS_A2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A2 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -20347,7 +20347,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_A2_AR";
-					init="GrpME_INS_A2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A2 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -20361,7 +20361,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_A2_AAR";
-					init="GrpME_INS_A2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A2 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20375,7 +20375,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_A2_AT";
-					init="GrpME_INS_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A2 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -20399,7 +20399,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_A3_FTL";
-					init="GrpME_INS_A3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A3 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -20413,7 +20413,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_A3_AR";
-					init="GrpME_INS_A3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A3 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -20427,7 +20427,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_A3_AAR";
-					init="GrpME_INS_A3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A3 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20441,7 +20441,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_A3_AT";
-					init="GrpME_INS_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A3 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -20465,7 +20465,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_BSL_SL";
-					init="GrpME_INS_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_BSL = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo Squad Leader";
 				};
 				class Item1
@@ -20480,7 +20480,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_BSL_M";
-					init="GrpME_INS_BSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_BSL = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo Medic";
 				};
 			};
@@ -20504,7 +20504,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_B1_FTL";
-					init="GrpME_INS_B1 = group this; nul = [""ftl"",this] call f_fnc_BssignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B1 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -20518,7 +20518,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_B1_AR";
-					init="GrpME_INS_B1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B1 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 1 Automatic Rifleman";
 				};
 				class Item2
@@ -20532,7 +20532,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_B1_AAR";
-					init="GrpME_INS_B1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B1 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20546,7 +20546,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_B1_AT";
-					init="GrpME_INS_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B1 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -20570,7 +20570,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_B2_FTL";
-					init="GrpME_INS_B2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B2 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -20584,7 +20584,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_B2_AR";
-					init="GrpME_INS_B2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B2 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -20598,7 +20598,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_B2_AAR";
-					init="GrpME_INS_B2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B2 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20612,7 +20612,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_B2_AT";
-					init="GrpME_INS_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B2 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -20636,7 +20636,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_B3_FTL";
-					init="GrpME_INS_B3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B3 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -20650,7 +20650,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_B3_AR";
-					init="GrpME_INS_B3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B3 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -20664,7 +20664,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_B3_AAR";
-					init="GrpME_INS_B3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B3 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20678,7 +20678,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_B3_AT";
-					init="GrpME_INS_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B3 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -20702,7 +20702,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_CSL_SL";
-					init="GrpME_INS_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_CSL = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie Squad Leader";
 				};
 				class Item1
@@ -20717,7 +20717,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_CSL_M";
-					init="GrpME_INS_CSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_CSL = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie Medic";
 				};
 			};
@@ -20741,7 +20741,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_C1_FTL";
-					init="GrpME_INS_C1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C1 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -20755,7 +20755,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_C1_AR";
-					init="GrpME_INS_C1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C1 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -20769,7 +20769,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_C1_AAR";
-					init="GrpME_INS_C1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C1 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20783,7 +20783,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_C1_AT";
-					init="GrpME_INS_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C1 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -20807,7 +20807,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_C2_FTL";
-					init="GrpME_INS_C2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C2 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -20821,7 +20821,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_C2_AR";
-					init="GrpME_INS_C2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C2 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -20835,7 +20835,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_C2_AAR";
-					init="GrpME_INS_C2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C2 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20849,7 +20849,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_C2_AT";
-					init="GrpME_INS_C2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C2 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -20873,7 +20873,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_C3_FTL";
-					init="GrpME_INS_C3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C3 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -20887,7 +20887,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_C3_AR";
-					init="GrpME_INS_C3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C3 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -20901,7 +20901,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitME_INS_C3_AAR";
-					init="GrpME_INS_C3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C3 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -20915,7 +20915,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpME_INS_C3_AT";
-					init="GrpME_INS_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C3 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Charlie 3 Rifleman (AT)";
 				};
 			};
