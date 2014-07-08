@@ -1,4 +1,9 @@
 // ====================================================================================
+// PF PhanTactical Framework
+// http://phantactical.com
+// https://github.com/Phantomsmedia/PhanTactical-Mission-Framework
+
+// ====================================================================================
 // PhanTactical - TFAR API Global Variables
 // Credits: Batboy (2014)
 /*
