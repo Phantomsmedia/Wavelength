@@ -22383,80 +22383,80 @@ class Mission
 		class Item217
 		{
 			position[]={1278.2592,0.00028402358,1878.3494};
-			azimut=0.87358475;
+			azimut=0.87358499;
 			id=1420;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="UH1H";
 			skill=0.60000002;
 			text="VehAFRICAnormal_TH1";
 		};
 		class Item218
 		{
 			position[]={1277.0131,-0.11365808,1852.5798};
-			azimut=0.87358475;
+			azimut=0.87358499;
 			id=1421;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="UH1H";
 			skill=0.60000002;
 			text="VehAFRICAnormal_TH2";
 		};
 		class Item219
 		{
-			position[]={1304.3685,-0.086302683,1878.2244};
-			azimut=0.87358475;
+			position[]={1304.3685,0,1878.2244};
+			azimut=0.87358499;
 			id=1422;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="UH1H";
 			skill=0.60000002;
 			text="VehAFRICAnormal_TH3";
 		};
 		class Item220
 		{
 			position[]={1303.1146,0.053148281,1852.4431};
-			azimut=0.87358475;
+			azimut=0.87358499;
 			id=1423;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="UH1H";
 			skill=0.60000002;
 			text="VehAFRICAnormal_TH4";
 		};
 		class Item221
 		{
 			position[]={1329.9935,-0.17774181,1877.9119};
-			azimut=0.87358475;
+			azimut=0.87358499;
 			id=1424;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="UH1H";
 			skill=0.60000002;
 			text="VehAFRICAnormal_TH5";
 		};
 		class Item222
 		{
 			position[]={1328.7552,0.028873479,1852.1267};
-			azimut=0.87358475;
+			azimut=0.87358499;
 			id=1425;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="UH1H";
 			skill=0.60000002;
 			text="VehAFRICAnormal_TH6";
 		};
 		class Item223
 		{
 			position[]={1356.0951,-0.045481287,1877.7712};
-			azimut=0.87358475;
+			azimut=0.87358499;
 			id=1426;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="UH1H";
 			skill=0.60000002;
 			text="VehAFRICAnormal_TH7";
 		};
 		class Item224
 		{
 			position[]={1354.849,-0.061880119,1851.9861};
-			azimut=0.87358475;
+			azimut=0.87358499;
 			id=1427;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="UH1H";
 			skill=0.60000002;
 			text="VehAFRICAnormal_TH8";
 		};
