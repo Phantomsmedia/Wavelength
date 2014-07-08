@@ -201,11 +201,3 @@ sleep 10;
 ["Location Unknown","ArmA 3 Mission"] call BIS_fnc_infoText;
 sleep 2;		
         ["Be Serious, Have Fun"] call BIS_fnc_infoText;
-
-// ====================================================================================
-// PhanTactical - Farooq's Revive and Medical Management (Drag/Carry)
-// Credits: Farooq's Revive
-// If you wish to change medical style from "All can revive", please refer to the readme inside "FAR_Revive".
-//call compileFinal preprocessFileLineNumbers "FAR_revive\FAR_revive_init.sqf";
-
-// ====================================================================================
