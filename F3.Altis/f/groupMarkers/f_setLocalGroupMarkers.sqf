@@ -380,8 +380,74 @@ switch (_unitfaction) do
 	};
 // ====================================================================================
 
-// MARKERS: INDFOR > AGF
-// Markers seen by players in AGF slots.
+// MARKERS: INDFOR > MIDDLE EAST INSURGENTS
+// Markers seen by players in ME slots.
+
+	case "caf_ag_me":
+	{
+		["GrpME_INS_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_A2", 1, "A2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_A3", 1, "A3", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_BSL", 0, "BSL", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_B1", 1, "B1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_B2", 1, "B2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_B3", 1, "B3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_CSL", 0, "CSL", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_C1", 1, "C1", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_C2", 1, "C2", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_C3", 1, "C3", "ColorGreen"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_MMG1", 2, "MMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_MAT1", 3, "MAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_ST1",  4, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_HMG1",  2, "HMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_MTR1",  5, "MTR1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_HAT1",  3, "HAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_SAM1",  3, "SAM1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_ENG1",  6, "ENG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+ 		["GrpME_INS_IFV1",  7, "IFV1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_IFV2",  7, "IFV2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_IFV3",  7, "IFV3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_IFV4",  7, "IFV4", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_IFV5",  7, "IFV5", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_IFV6",  7, "IFV6", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_IFV7",  7, "IFV7", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_IFV8",  7, "IFV8", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+ 		["GrpME_INS_TNK1",  7, "TNK1", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_TH1",  8, "TH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpME_INS_TH2",  8, "TH2", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpME_INS_TH3",  8, "TH3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpME_INS_TH4",  8, "TH4", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpME_INS_TH5",  8, "TH5", "ColorGreen"] spawn f_fnc_localGroupMarker;
+  		["GrpME_INS_TH6",  8, "TH6", "ColorGreen"] spawn f_fnc_localGroupMarker;
+   		["GrpME_INS_TH7",  8, "TH7", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpME_INS_TH8",  8, "TH8", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_AH1",  8, "AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpME_INS_DT1",  4, "DT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["UnitME_INS_CO_M", 0, "COM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitME_INS_DC_M", 0, "DCM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitME_INS_ASL_M", 0, "AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitME_INS_BSL_M", 0, "BM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitME_INS_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+	};	
+// ====================================================================================
+
+// MARKERS: INDFOR > AFRICAN
+// Markers seen by players in AFRICAN slots.
 
 	case "caf_ag_afr":
 	{
@@ -444,23 +510,6 @@ switch (_unitfaction) do
 		["UnitAFRICAnormal_BSL_M", 0, "BM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitAFRICAnormal_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 	};
-// ====================================================================================
-
-// MARKERS: BLUFOR > Delta Ghost
-// Markers seen by players in Delta Ghost slots.
-
-	case "mas_usa_delta":
-	{
-		["GrpDELTA_GHOST_ASL", 0, "Spec ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
-		["GrpDELTA_GHOST_A1", 1, "Spec A1", "ColorRed"] spawn f_fnc_localGroupMarker;
-		["GrpDELTA_GHOST_A2", 1, "Spec A2", "ColorRed"] spawn f_fnc_localGroupMarker;
-		["GrpDELTA_GHOST_A3", 1, "Spec A3", "ColorRed"] spawn f_fnc_localGroupMarker;
-		["UnitDELTA_GHOST_ASL_M", 0, "Spec AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
-		["GrpDELTA_GHOST_AH1",  8, "Spec AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
-		["GrpDELTA_GHOST_TH1",  8, "Spec TH1", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpDELTA_GHOST_TH2",  8, "Spec TH2", "ColorRed"] spawn f_fnc_localGroupMarker;
-	};
-
 // ====================================================================================
 
 // MARKERS: BLUFOR > BAF

@@ -66,6 +66,22 @@ if (_unitfaction == "mas_afr_ind") exitwith {
 	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
 	};
 };
+// ====================================================================================
+
+// BRIEFING: OPFOR > MIDDLE EAST INSURGENTS (CAF)
+// The following block of code executes only if the player is in an AGF slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "caf_ag_me") exitwith {
+
+#include "f\briefing\f_briefing_middle_east.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
 
 // ====================================================================================
 
@@ -142,22 +158,6 @@ if (_unitfaction == "mas_usa_mars") exitwith {
 if (_unitfaction == "AV_USArmy") exitwith {
 
 #include "f\briefing\f_briefing_usarmy.sqf"
-
-// DEBUG
-	if (f_var_debugMode == 1) then
-	{
-	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
-	};
-};
-// ====================================================================================
-
-// BRIEFING: BLUFOR > Delta Ghost
-// The following block of code executes only if the player is in a Delta Ghost slot; it
-// automatically includes a file which contains the appropriate briefing data.
-
-if (_unitfaction == "mas_usa_delta") exitwith {
-
-#include "f\briefing\f_briefing_delta.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then

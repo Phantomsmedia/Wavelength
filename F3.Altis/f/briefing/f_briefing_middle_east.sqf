@@ -2,7 +2,7 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
-// FACTION: DELTA
+// FACTION: MIDDLE EAST INSURGENTS (CAF VERSION)
 
 // ====================================================================================
 

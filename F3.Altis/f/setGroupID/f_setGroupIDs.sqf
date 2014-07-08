@@ -590,62 +590,6 @@ _groups = [
 ["GrpBAF_TH7","BAF TH7 -"],
 ["GrpBAF_TH8","BAF TH8 -"],
 ["GrpBAF_AH1","BAF AH1 -"],
-
-
-// ====================================================================================
-
-// GROUP IDs: BLUFOR > DELTA GHOST
-// Automatically assigns intelligible names to groups
-
-["GrpDELTA_GHOST_CO","Ghost CO -"],
-["GrpDELTA_GHOST_DC","Ghost DC -"],
-
-["GrpDELTA_GHOST_ASL","Ghost ASL -"],
-["GrpDELTA_GHOST_A1","Ghost A1 -"],
-["GrpDELTA_GHOST_A2","Ghost A2 -"],
-["GrpDELTA_GHOST_A3","Ghost A3 -"],
-
-["GrpDELTA_GHOST_BSL","Ghost BSL -"],
-["GrpDELTA_GHOST_B1","Ghost B1 -"],
-["GrpDELTA_GHOST_B2","Ghost B2 -"],
-["GrpDELTA_GHOST_B3","Ghost B3 -"],
-
-["GrpDELTA_GHOST_CSL","Ghost CSL -"],
-["GrpDELTA_GHOST_C1","Ghost C1 -"],
-["GrpDELTA_GHOST_C2","Ghost C2 -"],
-["GrpDELTA_GHOST_C3","Ghost C3 -"],
-
-["GrpDELTA_GHOST_MMG1","Ghost MMG1 -"],
-["GrpDELTA_GHOST_MAT1","Ghost MAT1 -"],
-["GrpDELTA_GHOST_HAT1","Ghost HAT1 -"],
-["GrpDELTA_GHOST_HMG1","Ghost HMG1 -"],
-["GrpDELTA_GHOST_MTR1","Ghost MTR1 -"],
-
-["GrpDELTA_GHOST_ST1","Ghost ST1 -"],
-["GrpDELTA_GHOST_DT1","Ghost DT1 -"],
-["GrpDELTA_GHOST_ENG1","Ghost ENG1 -"],
-
-["GrpDELTA_GHOST_IFV1","Ghost IFV1 -"],
-["GrpDELTA_GHOST_IFV2","Ghost IFV2 -"],
-["GrpDELTA_GHOST_IFV3","Ghost IFV3 -"],
-["GrpDELTA_GHOST_IFV4","Ghost IFV4 -"],
-["GrpDELTA_GHOST_IFV5","Ghost IFV5 -"],
-["GrpDELTA_GHOST_IFV6","Ghost IFV6 -"],
-["GrpDELTA_GHOST_IFV7","Ghost IFV7 -"],
-["GrpDELTA_GHOST_IFV8","Ghost IFV8 -"],
-["GrpDELTA_GHOST_TNK1","Ghost TNK1 -"],
-
-["GrpDELTA_GHOST_TH1","Ghost TH1 -"],
-["GrpDELTA_GHOST_TH2","Ghost TH2 -"],
-["GrpDELTA_GHOST_TH3","Ghost TH3 -"],
-["GrpDELTA_GHOST_TH4","Ghost TH4 -"],
-["GrpDELTA_GHOST_TH5","Ghost TH5 -"],
-["GrpDELTA_GHOST_TH6","Ghost TH6 -"],
-["GrpDELTA_GHOST_TH7","Ghost TH7 -"],
-["GrpDELTA_GHOST_TH8","Ghost TH8 -"],
-["GrpDELTA_GHOST_AH1","Ghost AH1 -"],
-
-
 // ====================================================================================
 
 // GROUP IDs: USMC MEU DESERT
@@ -807,6 +751,58 @@ _groups = [
 ["GrpAGF_ARMY_TH8","AGF TH8 -"],
 ["GrpAGF_ARMY_AH1","AGF AH1 -"],
 
+// ====================================================================================
+
+// GROUP IDs: OPFOR > MIDDLE EAST INSURGENTS (CAF)
+// Automatically assigns intelligible names to groups
+
+["GrpME_INS_CO","Insurgent CO -"],
+["GrpME_INS_DC","Insurgent DC -"],
+
+["GrpME_INS_ASL","Insurgent ASL -"],
+["GrpME_INS_A1","Insurgent A1 -"],
+["GrpME_INS_A2","Insurgent A2 -"],
+["GrpME_INS_A3","Insurgent A3 -"],
+
+["GrpME_INS_BSL","Insurgent BSL -"],
+["GrpME_INS_B1","Insurgent B1 -"],
+["GrpME_INS_B2","Insurgent B2 -"],
+["GrpME_INS_B3","Insurgent B3 -"],
+
+["GrpME_INS_CSL","Insurgent CSL -"],
+["GrpME_INS_C1","Insurgent C1 -"],
+["GrpME_INS_C2","Insurgent C2 -"],
+["GrpME_INS_C3","Insurgent C3 -"],
+
+["GrpME_INS_MMG1","Insurgent MMG1 -"],
+["GrpME_INS_MAT1","Insurgent MAT1 -"],
+["GrpME_INS_HAT1","Insurgent HAT1 -"],
+["GrpME_INS_HMG1","Insurgent HMG1 -"],
+["GrpME_INS_MTR1","Insurgent MTR1 -"],
+
+["GrpME_INS_ST1","Insurgent ST1 -"],
+["GrpME_INS_DT1","Insurgent DT1 -"],
+["GrpME_INS_ENG1","Insurgent ENG1 -"],
+
+["GrpME_INS_IFV1","Insurgent IFV1 -"],
+["GrpME_INS_IFV2","Insurgent IFV2 -"],
+["GrpME_INS_IFV3","Insurgent IFV3 -"],
+["GrpME_INS_IFV4","Insurgent IFV4 -"],
+["GrpME_INS_IFV5","Insurgent IFV5 -"],
+["GrpME_INS_IFV6","Insurgent IFV6 -"],
+["GrpME_INS_IFV7","Insurgent IFV7 -"],
+["GrpME_INS_IFV8","Insurgent IFV8 -"],
+["GrpME_INS_TNK1","Insurgent TNK1 -"],
+
+["GrpME_INS_TH1","Insurgent TH1 -"],
+["GrpME_INS_TH2","Insurgent TH2 -"],
+["GrpME_INS_TH3","Insurgent TH3 -"],
+["GrpME_INS_TH4","Insurgent TH4 -"],
+["GrpME_INS_TH5","Insurgent TH5 -"],
+["GrpME_INS_TH6","Insurgent TH6 -"],
+["GrpME_INS_TH7","Insurgent TH7 -"],
+["GrpME_INS_TH8","Insurgent TH8 -"],
+["GrpME_INS_AH1","Insurgent AH1 -"],
 
 // ====================================================================================
 

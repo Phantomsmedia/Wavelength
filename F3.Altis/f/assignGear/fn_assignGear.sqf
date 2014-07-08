@@ -109,6 +109,7 @@ if (_faction == "mas_usa_mars") then {
 if (_faction == "AV_USArmy") then {
 	#include "f_assignGear_usarmy.sqf"
 };
+
 // ====================================================================================
 // GEAR: INDFOR > AGF
 // The following block of code executes only if the player is in a AGF slot; it
@@ -116,6 +117,15 @@ if (_faction == "AV_USArmy") then {
 
 if (_faction == "mas_afr_ind") then {
 	#include "f_assignGear_agf.sqf"
+};
+// ====================================================================================
+
+// GEAR: OPFOR > MIDDLE EAST INSURGENTS (CAF)
+// The following block of code executes only if the player is in a African slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "caf_ag_me") then {
+	#include "f_assignGear_middle_east.sqf"
 };
 // ====================================================================================
 
