@@ -87,7 +87,7 @@ class cfgNotifications
 
 // TAW Tonic - View Distance Script
 
-#include "taw_vd\dialog.hpp"
+#include "f\taw_vd\dialog.hpp"
 
 // ============================================================================================
 // F3 - Start of Params code blocks.
