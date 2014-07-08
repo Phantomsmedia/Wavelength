@@ -74,7 +74,8 @@ How to Add a Faction
 	briefing.sqf
 	create folk_assignGear_(faction)
 	create f_briefing_(faction)
-
+	How to find faction: // hint format["%1", faction player];
+	
 Beta Testers/Mission Developers
 	
 	Duck
