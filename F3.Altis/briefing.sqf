@@ -33,6 +33,22 @@ if (_unitfaction != toLower (faction (leader group player))) then {_unitfaction 
 	{
 	player sideChat format ["DEBUG (briefing.sqf): Player faction: %1",_unitfaction];
 	};
+// ====================================================================================
+
+// BRIEFING: ADMIN
+// The following block of code executes only if the player is the current host
+// it automatically includes a file which contains the appropriate briefing data.
+
+if (serverCommandAvailable "#kick") then {
+
+#include "f\briefing\f_briefing_admin.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+		player sideChat format ["DEBUG (briefing.sqf): Briefing for host selected.",_unitfaction];
+	};
+};
 
 // ====================================================================================
 
