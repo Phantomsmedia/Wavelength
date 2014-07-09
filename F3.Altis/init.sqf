@@ -201,3 +201,5 @@ sleep 10;
 ["Location Unknown","ArmA 3 Mission"] call BIS_fnc_infoText;
 sleep 2;		
         ["Be Serious, Have Fun"] call BIS_fnc_infoText;
+
+// ====================================================================================

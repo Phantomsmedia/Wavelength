@@ -14974,7 +14974,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_CO";
-					init="GrpAFRICAnormal_CO = group this; nul = [""co"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_CO = group (_this select 0); nul = [""co"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Commander";
 				};
 				class Item1
@@ -14988,7 +14988,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_CO_M";
-					init="GrpAFRICAnormal_CO = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_CO = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Medic";
 				};
 			};
@@ -15012,7 +15012,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_DC";
-					init="GrpAFRICAnormal_DC = group this; nul = [""dc"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_DC = group (_this select 0); nul = [""dc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Deputy Commander";
 				};
 				class Item1
@@ -15027,7 +15027,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_DC_M";
-					init="GrpAFRICAnormal_DC = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_DC = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Medic";
 				};
 			};
@@ -15051,7 +15051,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_ASL_SL";
-					init="GrpAFRICAnormal_ASL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_ASL = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha Squad Leader";
 				};
 				class Item1
@@ -15066,7 +15066,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_ASL_M";
-					init="GrpAFRICAnormal_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_ASL = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha Medic";
 				};
 			};
@@ -15090,7 +15090,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A1_FTL";
-					init="GrpAFRICAnormal_A1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A1 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -15104,7 +15104,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A1_AR";
-					init="GrpAFRICAnormal_A1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A1 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -15118,7 +15118,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A1_AAR";
-					init="GrpAFRICAnormal_A1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A1 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15132,7 +15132,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_A1_AT";
-					init="GrpAFRICAnormal_A1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A1 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -15156,7 +15156,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A2_FTL";
-					init="GrpAFRICAnormal_A2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A2 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -15170,7 +15170,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A2_AR";
-					init="GrpAFRICAnormal_A2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A2 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -15184,7 +15184,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A2_AAR";
-					init="GrpAFRICAnormal_A2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A2 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15198,7 +15198,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_A2_AT";
-					init="GrpAFRICAnormal_A2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A2 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -15222,7 +15222,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A3_FTL";
-					init="GrpAFRICAnormal_A3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A3 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -15236,7 +15236,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A3_AR";
-					init="GrpAFRICAnormal_A3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A3 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -15250,7 +15250,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_A3_AAR";
-					init="GrpAFRICAnormal_A3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A3 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15264,7 +15264,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_A3_AT";
-					init="GrpAFRICAnormal_A3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_A3 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -15288,7 +15288,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_BSL_SL";
-					init="GrpAFRICAnormal_BSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_BSL = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo Squad Leader";
 				};
 				class Item1
@@ -15303,7 +15303,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_BSL_M";
-					init="GrpAFRICAnormal_BSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_BSL = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo Medic";
 				};
 			};
@@ -15327,7 +15327,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B1_FTL";
-					init="GrpAFRICAnormal_B1 = group this; nul = [""ftl"",this] call f_fnc_BssignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B1 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -15341,7 +15341,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B1_AR";
-					init="GrpAFRICAnormal_B1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B1 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 1 Automatic Rifleman";
 				};
 				class Item2
@@ -15355,7 +15355,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B1_AAR";
-					init="GrpAFRICAnormal_B1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B1 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15369,7 +15369,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_B1_AT";
-					init="GrpAFRICAnormal_B1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B1 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -15393,7 +15393,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B2_FTL";
-					init="GrpAFRICAnormal_B2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B2 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -15407,7 +15407,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B2_AR";
-					init="GrpAFRICAnormal_B2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B2 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -15421,7 +15421,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B2_AAR";
-					init="GrpAFRICAnormal_B2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B2 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15435,7 +15435,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_B2_AT";
-					init="GrpAFRICAnormal_B2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B2 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -15459,7 +15459,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B3_FTL";
-					init="GrpAFRICAnormal_B3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B3 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -15473,7 +15473,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B3_AR";
-					init="GrpAFRICAnormal_B3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B3 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -15487,7 +15487,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_B3_AAR";
-					init="GrpAFRICAnormal_B3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B3 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15501,7 +15501,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_B3_AT";
-					init="GrpAFRICAnormal_B3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_B3 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -15525,7 +15525,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_CSL_SL";
-					init="GrpAFRICAnormal_CSL = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_CSL = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie Squad Leader";
 				};
 				class Item1
@@ -15540,7 +15540,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_CSL_M";
-					init="GrpAFRICAnormal_CSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_CSL = group (_this select 0); nul = [""m"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie Medic";
 				};
 			};
@@ -15564,7 +15564,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C1_FTL";
-					init="GrpAFRICAnormal_C1 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C1 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -15578,7 +15578,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C1_AR";
-					init="GrpAFRICAnormal_C1 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C1 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -15592,7 +15592,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C1_AAR";
-					init="GrpAFRICAnormal_C1 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C1 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15606,7 +15606,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_C1_AT";
-					init="GrpAFRICAnormal_C1 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C1 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -15630,7 +15630,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C2_FTL";
-					init="GrpAFRICAnormal_C2 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C2 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -15644,7 +15644,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C2_AR";
-					init="GrpAFRICAnormal_C2 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C2 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -15658,7 +15658,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C2_AAR";
-					init="GrpAFRICAnormal_C2 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C2 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15672,7 +15672,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_C2_AT";
-					init="GrpAFRICAnormal_C2 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C2 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -15696,7 +15696,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C3_FTL";
-					init="GrpAFRICAnormal_C3 = group this; nul = [""ftl"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C3 = group (_this select 0); nul = [""ftl"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -15710,7 +15710,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C3_AR";
-					init="GrpAFRICAnormal_C3 = group this; nul = [""ar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C3 = group (_this select 0); nul = [""ar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -15724,7 +15724,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_C3_AAR";
-					init="GrpAFRICAnormal_C3 = group this; nul = [""aar"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C3 = group (_this select 0); nul = [""aar"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -15738,7 +15738,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="GrpAFRICAnormal_C3_AT";
-					init="GrpAFRICAnormal_C3 = group this; nul = [""rat"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_C3 = group (_this select 0); nul = [""rat"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Charlie 3 Rifleman (AT)";
 				};
 			};
@@ -15761,7 +15761,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_MMG1_G";
-					init="GrpAFRICAnormal_MMG1 = group this; nul = [""mmgg"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_MMG1 = group (_this select 0); nul = [""mmgg"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Medium MG Team 1 Gunner";
 				};
 				class Item1
@@ -15774,7 +15774,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_MMG1_AG";
-					init="GrpAFRICAnormal_MMG1 = group this; nul = [""mmgag"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_MMG1 = group (_this select 0); nul = [""mmgag"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Medium MG Team 1 Assistant Gunner";
 				};
 			};
@@ -15797,7 +15797,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_MAT1_G";
-					init="GrpAFRICAnormal_MAT1 = group this; nul = [""matg"",this] call f_fnc_assignGear; ";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_MAT1 = group (_this select 0); nul = [""matg"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Medium AT Team 1 Gunner";
 				};
 				class Item1
@@ -15810,7 +15810,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_MAT1_AG";
-					init="GrpAFRICAnormal_MAT1 = group this; nul = [""matag"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_MAT1 = group (_this select 0); nul = [""matag"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Medium AT Team 1 Assistant Gunner";
 				};
 			};
@@ -15833,7 +15833,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_ENG1_FTL";
-					init="GrpAFRICAnormal_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_ENG1 = group (_this select 0); nul = [""eng"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Engineer Team 1 Leader";
 				};
 				class Item1
@@ -15846,7 +15846,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_ENG1_A";
-					init="GrpAFRICAnormal_ENG1 = group this; nul = [""eng"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_ENG1 = group (_this select 0); nul = [""eng"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Engineer Team 1 Assistant";
 				};
 			};
@@ -15869,7 +15869,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH1_P";
-					init="GrpAFRICAnormal_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -15883,7 +15883,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH1_CP";
-					init="GrpAFRICAnormal_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 1 Co-Pilot";
 				};
 			};
@@ -15906,7 +15906,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH2_P";
-					init="GrpAFRICAnormal_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -15920,7 +15920,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH2_CP";
-					init="GrpAFRICAnormal_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 2 Co-Pilot";
 				};
 			};
@@ -15943,7 +15943,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH3_P";
-					init="GrpAFRICAnormal_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -15957,7 +15957,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH3_CP";
-					init="GrpAFRICAnormal_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 3 Co-Pilot";
 				};
 			};
@@ -15980,7 +15980,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH4_P";
-					init="GrpAFRICAnormal_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -15994,7 +15994,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH4_CP";
-					init="GrpAFRICAnormal_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 4 Co-Pilot";
 				};
 			};
@@ -16017,7 +16017,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH5_P";
-					init="GrpAFRICAnormal_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 5 Pilot";
 				};
 				class Item1
@@ -16031,7 +16031,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH5_CP";
-					init="GrpAFRICAnormal_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 5 Co-Pilot";
 				};
 			};
@@ -16054,7 +16054,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH6_P";
-					init="GrpAFRICAnormal_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 6 Pilot";
 				};
 				class Item1
@@ -16068,7 +16068,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH6_CP";
-					init="GrpAFRICAnormal_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 6 Co-Pilot";
 				};
 			};
@@ -16091,7 +16091,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH7_P";
-					init="GrpAFRICAnormal_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 7 Pilot";
 				};
 				class Item1
@@ -16105,7 +16105,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH7_CP";
-					init="GrpAFRICAnormal_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 7 Co-Pilot";
 				};
 			};
@@ -16128,7 +16128,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH8_P";
-					init="GrpAFRICAnormal_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 8 Pilot";
 				};
 				class Item1
@@ -16142,7 +16142,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH8_CP";
-					init="GrpAFRICAnormal_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 8 Co-Pilot";
 				};
 			};
@@ -16165,7 +16165,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV1_C";
-					init="GrpAFRICAnormal_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 1 Commander";
 				};
 				class Item1
@@ -16179,7 +16179,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV1_G";
-					init="GrpAFRICAnormal_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 1 Gunner";
 				};
 				class Item2
@@ -16192,7 +16192,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV1_D";
-					init="GrpAFRICAnormal_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 1 Driver";
 				};
 			};
@@ -16215,7 +16215,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV2_C";
-					init="GrpAFRICAnormal_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 2 Commander";
 				};
 				class Item1
@@ -16229,7 +16229,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV2_G";
-					init="GrpAFRICAnormal_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 2 Gunner";
 				};
 				class Item2
@@ -16242,7 +16242,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV2_D";
-					init="GrpAFRICAnormal_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 2 Driver";
 				};
 			};
@@ -16265,7 +16265,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV3_C";
-					init="GrpAFRICAnormal_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 3 Commander";
 				};
 				class Item1
@@ -16279,7 +16279,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV3_G";
-					init="GrpAFRICAnormal_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 3 Gunner";
 				};
 				class Item2
@@ -16292,7 +16292,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV3_D";
-					init="GrpAFRICAnormal_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 3 Driver";
 				};
 			};
@@ -16315,7 +16315,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV4_C";
-					init="GrpAFRICAnormal_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 4 Commander";
 				};
 				class Item1
@@ -16329,7 +16329,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV4_G";
-					init="GrpAFRICAnormal_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 4 Gunner";
 				};
 				class Item2
@@ -16342,7 +16342,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV4_D";
-					init="GrpAFRICAnormal_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 4 Driver";
 				};
 			};
@@ -16365,7 +16365,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV5_C";
-					init="GrpAFRICAnormal_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 5 Commander";
 				};
 				class Item1
@@ -16379,7 +16379,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV5_G";
-					init="GrpAFRICAnormal_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 5 Gunner";
 				};
 				class Item2
@@ -16392,7 +16392,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV5_D";
-					init="GrpAFRICAnormal_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 5 Driver";
 				};
 			};
@@ -16415,7 +16415,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV6_C";
-					init="GrpAFRICAnormal_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 6 Commander";
 				};
 				class Item1
@@ -16429,7 +16429,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV6_G";
-					init="GrpAFRICAnormal_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 6 Gunner";
 				};
 				class Item2
@@ -16442,7 +16442,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV6_D";
-					init="GrpAFRICAnormal_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 6 Driver";
 				};
 			};
@@ -16465,7 +16465,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV7_C";
-					init="GrpAFRICAnormal_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 7 Commander";
 				};
 				class Item1
@@ -16479,7 +16479,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV7_G";
-					init="GrpAFRICAnormal_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 7 Gunner";
 				};
 				class Item2
@@ -16492,7 +16492,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV7_D";
-					init="GrpAFRICAnormal_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 7 Driver";
 				};
 			};
@@ -16515,7 +16515,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV8_C";
-					init="GrpAFRICAnormal_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 8 Commander";
 				};
 				class Item1
@@ -16529,7 +16529,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV8_G";
-					init="GrpAFRICAnormal_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 8 Gunner";
 				};
 				class Item2
@@ -16542,7 +16542,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV8_D";
-					init="GrpAFRICAnormal_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 8 Driver";
 				};
 			};
@@ -16565,7 +16565,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TNK1_C";
-					init="GrpAFRICAnormal_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Tank 1 Commander";
 				};
 				class Item1
@@ -16579,7 +16579,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TNK1_G";
-					init="GrpAFRICAnormal_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Tank 1 Gunner";
 				};
 				class Item2
@@ -16592,7 +16592,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TNK1_D";
-					init="GrpAFRICAnormal_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Tank 1 Driver";
 				};
 			};
@@ -16615,7 +16615,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_AH1_P";
-					init="GrpAFRICAnormal_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -16629,7 +16629,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_AH1_CP";
-					init="GrpAFRICAnormal_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Attack Helo 1 Co-Pilot";
 				};
 			};
@@ -24069,7 +24069,7 @@ class Mission
 			side="EMPTY";
 			vehicle="UH1H";
 			skill=0.60000002;
-			text="VehAFRICAnormal_TH1";
+			text="VehFnormal_TH1";
 		};
 		class Item218
 		{
