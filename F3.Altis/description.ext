@@ -318,7 +318,7 @@ class CfgRespawnTemplates
 
 class CfgFunctions
 {
-	#include "taw_vd\CfgFunctions.hpp"
+	#include "f\taw_vd\CfgFunctions.hpp"
 	class F // Defines the "owner"
 	{
 		class common // category
