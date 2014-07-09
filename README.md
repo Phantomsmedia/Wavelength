@@ -1,6 +1,8 @@
 Phramework
 ===============
 
+![Ph](http://i5.minus.com/ib2ovbqhL4YeYU.png)
+
 This is a repo for the Phramework, a tool designed to easy mission development in ArmA 2 and ArmA 3.
 
 This is a template designed to make mission development more fluid and easy. It grants the mission maker the tools to quickly place squads, easily edit unit gear, add detailed briefings and so on into their mission. It is also easy for people who are not familiar with scripting to use. One only has to copy the designed groups and add enemies/objectives and so on like he/she usually would.
