@@ -154,7 +154,7 @@ _MTR = "B_Mk6Mortar_Wpn";
 _MTRmount = "B_Mk6Mortar_Support";
 
 // Medium AT
-_MAT = "launch_I_Titan_short_F";
+_MAT = "launch_B_Titan_short_F";
 _MATmag1 = "Titan_AT";
 _MATmag2 = "Titan_AT";
 

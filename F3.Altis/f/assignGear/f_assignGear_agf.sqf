@@ -156,9 +156,9 @@ _MTR = "B_Mk6Mortar_Wpn";
 _MTRmount = "B_Mk6Mortar_Support";
 
 // Medium AT
-_MAT = "launch_NLAW_F";
-_MATmag1 = "NLAW_F";
-_MATmag2 = "NLAW_F";
+_MAT = "launch_RPG7V_F";
+_MATmag1 = "PG7V_F";
+_MATmag2 = "PG7V_F";
 
 // Surface Air
 _SAM = "launch_I_Titan_F";
