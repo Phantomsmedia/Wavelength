@@ -87,7 +87,7 @@ class cfgNotifications
 
 // TAW Tonic - View Distance Script
 
-#include "f\taw_vd\dialog.hpp"
+#include "taw_vd\dialog.hpp"
 
 // ============================================================================================
 // F3 - Start of Params code blocks.
@@ -318,7 +318,7 @@ class CfgRespawnTemplates
 
 class CfgFunctions
 {
-	#include "f\taw_vd\CfgFunctions.hpp"
+	#include "taw_vd\CfgFunctions.hpp"
 	class F // Defines the "owner"
 	{
 		class common // category
