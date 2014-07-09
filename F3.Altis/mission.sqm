@@ -14,7 +14,6 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"rav_lifter_a3",
 		"mas_afr_rebl_i",
-		"caf_somali_c",
 		"mas_afr_rebl_b",
 		"A3_Modules_F_Curator_Curator",
 		"av_indus",
@@ -50,7 +49,6 @@ class Mission
 		"A3_Armor_F_EPC_MBT_01",
 		"A3_Air_F_Heli_Light_01",
 		"a3_map_altis",
-		"caf_taliban_c"
 	};
 	addOnsAuto[]=
 	{
@@ -65,12 +63,10 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"rav_lifter_a3",
 		"mas_afr_rebl_i",
-		"caf_somali_c",
 		"mas_afr_rebl_b",
 		"A3_Modules_F_Curator_Curator",
 		"av_indus",
 		"agm_medical",
-		"caf_taliban_c",
 		"A3_Air_F_Beta_Heli_Transport_01",
 		"A3_Air_F_Heli_Light_02",
 		"A3_Air_F_Beta_Heli_Transport_02",
@@ -14967,7 +14963,7 @@ class Mission
 					azimut=0.87358499;
 					id=898;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -14983,7 +14979,7 @@ class Mission
 					azimut=0.87358499;
 					id=899;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -15005,7 +15001,7 @@ class Mission
 					azimut=0.87358475;
 					id=900;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15021,7 +15017,7 @@ class Mission
 					azimut=0.87358475;
 					id=901;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -15044,7 +15040,7 @@ class Mission
 					azimut=0.87358475;
 					id=902;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15060,7 +15056,7 @@ class Mission
 					azimut=0.87358475;
 					id=903;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -15083,7 +15079,7 @@ class Mission
 					azimut=0.87358475;
 					id=904;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15099,7 +15095,7 @@ class Mission
 					azimut=0.87358475;
 					id=905;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15113,7 +15109,7 @@ class Mission
 					azimut=0.87358475;
 					id=906;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15127,7 +15123,7 @@ class Mission
 					azimut=0.87358475;
 					id=907;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15149,7 +15145,7 @@ class Mission
 					azimut=0.87358475;
 					id=908;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15165,7 +15161,7 @@ class Mission
 					azimut=0.87358475;
 					id=909;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15179,7 +15175,7 @@ class Mission
 					azimut=0.87358475;
 					id=910;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15193,7 +15189,7 @@ class Mission
 					azimut=0.87358475;
 					id=911;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15215,7 +15211,7 @@ class Mission
 					azimut=0.87358475;
 					id=912;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15231,7 +15227,7 @@ class Mission
 					azimut=0.87358475;
 					id=913;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15245,7 +15241,7 @@ class Mission
 					azimut=0.87358475;
 					id=914;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15259,7 +15255,7 @@ class Mission
 					azimut=0.87358475;
 					id=915;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15281,7 +15277,7 @@ class Mission
 					azimut=0.87358475;
 					id=916;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15297,7 +15293,7 @@ class Mission
 					azimut=0.87358475;
 					id=917;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -15320,7 +15316,7 @@ class Mission
 					azimut=0.87358475;
 					id=918;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15336,7 +15332,7 @@ class Mission
 					azimut=0.87358475;
 					id=919;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15350,7 +15346,7 @@ class Mission
 					azimut=0.87358475;
 					id=920;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15364,7 +15360,7 @@ class Mission
 					azimut=0.87358475;
 					id=921;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15386,7 +15382,7 @@ class Mission
 					azimut=0.87358475;
 					id=922;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15402,7 +15398,7 @@ class Mission
 					azimut=0.87358475;
 					id=923;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15416,7 +15412,7 @@ class Mission
 					azimut=0.87358475;
 					id=924;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15430,7 +15426,7 @@ class Mission
 					azimut=0.87358475;
 					id=925;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15452,7 +15448,7 @@ class Mission
 					azimut=0.87358475;
 					id=926;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15468,7 +15464,7 @@ class Mission
 					azimut=0.87358475;
 					id=927;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15482,7 +15478,7 @@ class Mission
 					azimut=0.87358475;
 					id=928;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15496,7 +15492,7 @@ class Mission
 					azimut=0.87358475;
 					id=929;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15518,7 +15514,7 @@ class Mission
 					azimut=0.87358475;
 					id=930;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15534,7 +15530,7 @@ class Mission
 					azimut=0.87358475;
 					id=931;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -15557,7 +15553,7 @@ class Mission
 					azimut=0.87358475;
 					id=932;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15573,7 +15569,7 @@ class Mission
 					azimut=0.87358475;
 					id=933;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15587,7 +15583,7 @@ class Mission
 					azimut=0.87358475;
 					id=934;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15601,7 +15597,7 @@ class Mission
 					azimut=0.87358475;
 					id=935;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15623,7 +15619,7 @@ class Mission
 					azimut=0.87358475;
 					id=936;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15639,7 +15635,7 @@ class Mission
 					azimut=0.87358475;
 					id=937;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15653,7 +15649,7 @@ class Mission
 					azimut=0.87358475;
 					id=938;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15667,7 +15663,7 @@ class Mission
 					azimut=0.87358475;
 					id=939;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15689,7 +15685,7 @@ class Mission
 					azimut=0.87358475;
 					id=940;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -15705,7 +15701,7 @@ class Mission
 					azimut=0.87358475;
 					id=941;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15719,7 +15715,7 @@ class Mission
 					azimut=0.87358475;
 					id=942;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15733,7 +15729,7 @@ class Mission
 					azimut=0.87358475;
 					id=943;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -15755,7 +15751,7 @@ class Mission
 					azimut=0.87358475;
 					id=944;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -15770,7 +15766,7 @@ class Mission
 					azimut=0.87358475;
 					id=945;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_MMG1_AG";
@@ -15791,7 +15787,7 @@ class Mission
 					azimut=0.87358475;
 					id=946;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -15806,7 +15802,7 @@ class Mission
 					azimut=0.87358475;
 					id=947;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_MAT1_AG";
@@ -15827,7 +15823,7 @@ class Mission
 					azimut=0.87358475;
 					id=948;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -15842,7 +15838,7 @@ class Mission
 					azimut=0.87358475;
 					id=949;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_ENG1_A";
@@ -15863,7 +15859,7 @@ class Mission
 					azimut=0.87358475;
 					id=950;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -15878,7 +15874,7 @@ class Mission
 					azimut=0.87358475;
 					id=951;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -15900,7 +15896,7 @@ class Mission
 					azimut=0.87358475;
 					id=952;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -15915,7 +15911,7 @@ class Mission
 					azimut=0.87358475;
 					id=953;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -15937,7 +15933,7 @@ class Mission
 					azimut=0.87358475;
 					id=954;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -15952,7 +15948,7 @@ class Mission
 					azimut=0.87358475;
 					id=955;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -15974,7 +15970,7 @@ class Mission
 					azimut=0.87358475;
 					id=956;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -15989,7 +15985,7 @@ class Mission
 					azimut=0.87358475;
 					id=957;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -16011,7 +16007,7 @@ class Mission
 					azimut=0.87358475;
 					id=958;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -16026,7 +16022,7 @@ class Mission
 					azimut=0.87358475;
 					id=959;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -16048,7 +16044,7 @@ class Mission
 					azimut=0.87358475;
 					id=960;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -16063,7 +16059,7 @@ class Mission
 					azimut=0.87358475;
 					id=961;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -16085,7 +16081,7 @@ class Mission
 					azimut=0.87358475;
 					id=962;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -16100,7 +16096,7 @@ class Mission
 					azimut=0.87358475;
 					id=963;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -16122,7 +16118,7 @@ class Mission
 					azimut=0.87358475;
 					id=964;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -16137,7 +16133,7 @@ class Mission
 					azimut=0.87358475;
 					id=965;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -16159,7 +16155,7 @@ class Mission
 					azimut=0.87358475;
 					id=966;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16174,7 +16170,7 @@ class Mission
 					azimut=0.87358475;
 					id=967;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16188,7 +16184,7 @@ class Mission
 					azimut=0.87358475;
 					id=968;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV1_D";
@@ -16209,7 +16205,7 @@ class Mission
 					azimut=0.87358475;
 					id=969;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16224,7 +16220,7 @@ class Mission
 					azimut=0.87358475;
 					id=970;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16238,7 +16234,7 @@ class Mission
 					azimut=0.87358475;
 					id=971;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV2_D";
@@ -16259,7 +16255,7 @@ class Mission
 					azimut=0.87358475;
 					id=972;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16274,7 +16270,7 @@ class Mission
 					azimut=0.87358475;
 					id=973;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16288,7 +16284,7 @@ class Mission
 					azimut=0.87358475;
 					id=974;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV3_D";
@@ -16309,7 +16305,7 @@ class Mission
 					azimut=0.87358475;
 					id=975;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16324,7 +16320,7 @@ class Mission
 					azimut=0.87358475;
 					id=976;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16338,7 +16334,7 @@ class Mission
 					azimut=0.87358475;
 					id=977;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV4_D";
@@ -16359,7 +16355,7 @@ class Mission
 					azimut=0.87358475;
 					id=978;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16374,7 +16370,7 @@ class Mission
 					azimut=0.87358475;
 					id=979;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16388,7 +16384,7 @@ class Mission
 					azimut=0.87358475;
 					id=980;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV5_D";
@@ -16409,7 +16405,7 @@ class Mission
 					azimut=0.87358475;
 					id=981;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16424,7 +16420,7 @@ class Mission
 					azimut=0.87358475;
 					id=982;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16438,7 +16434,7 @@ class Mission
 					azimut=0.87358475;
 					id=983;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV6_D";
@@ -16459,7 +16455,7 @@ class Mission
 					azimut=0.87358475;
 					id=984;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16474,7 +16470,7 @@ class Mission
 					azimut=0.87358475;
 					id=985;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16488,7 +16484,7 @@ class Mission
 					azimut=0.87358475;
 					id=986;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV7_D";
@@ -16509,7 +16505,7 @@ class Mission
 					azimut=0.87358475;
 					id=987;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16524,7 +16520,7 @@ class Mission
 					azimut=0.87358475;
 					id=988;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16538,7 +16534,7 @@ class Mission
 					azimut=0.87358475;
 					id=989;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV8_D";
@@ -16559,7 +16555,7 @@ class Mission
 					azimut=0.87358475;
 					id=990;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -16574,7 +16570,7 @@ class Mission
 					azimut=0.87358475;
 					id=991;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -16588,7 +16584,7 @@ class Mission
 					azimut=0.87358475;
 					id=992;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TNK1_D";
@@ -16609,7 +16605,7 @@ class Mission
 					azimut=0.87358475;
 					id=993;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -16624,7 +16620,7 @@ class Mission
 					azimut=0.87358475;
 					id=994;
 					side="EAST";
-					vehicle="CAF_AG_AFR_AK47";
+					vehicle="CAF_AG_AFR_P_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -20144,7 +20140,7 @@ class Mission
 					azimut=0.87358499;
 					id=1203;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20160,7 +20156,7 @@ class Mission
 					azimut=0.87358499;
 					id=1204;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -20182,7 +20178,7 @@ class Mission
 					azimut=0.87358475;
 					id=1205;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20198,7 +20194,7 @@ class Mission
 					azimut=0.87358475;
 					id=1206;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -20221,7 +20217,7 @@ class Mission
 					azimut=0.87358475;
 					id=1207;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20237,7 +20233,7 @@ class Mission
 					azimut=0.87358475;
 					id=1208;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -20260,7 +20256,7 @@ class Mission
 					azimut=0.87358475;
 					id=1209;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20276,7 +20272,7 @@ class Mission
 					azimut=0.87358475;
 					id=1210;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20290,7 +20286,7 @@ class Mission
 					azimut=0.87358475;
 					id=1211;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20304,7 +20300,7 @@ class Mission
 					azimut=0.87358475;
 					id=1212;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20326,7 +20322,7 @@ class Mission
 					azimut=0.87358475;
 					id=1213;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20342,7 +20338,7 @@ class Mission
 					azimut=0.87358475;
 					id=1214;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20356,7 +20352,7 @@ class Mission
 					azimut=0.87358475;
 					id=1215;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20370,7 +20366,7 @@ class Mission
 					azimut=0.87358475;
 					id=1216;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20392,7 +20388,7 @@ class Mission
 					azimut=0.87358475;
 					id=1217;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20408,7 +20404,7 @@ class Mission
 					azimut=0.87358475;
 					id=1218;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20422,7 +20418,7 @@ class Mission
 					azimut=0.87358475;
 					id=1219;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20436,7 +20432,7 @@ class Mission
 					azimut=0.87358475;
 					id=1220;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20458,7 +20454,7 @@ class Mission
 					azimut=0.87358475;
 					id=1221;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20474,7 +20470,7 @@ class Mission
 					azimut=0.87358475;
 					id=1222;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -20497,7 +20493,7 @@ class Mission
 					azimut=0.87358475;
 					id=1223;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20513,7 +20509,7 @@ class Mission
 					azimut=0.87358475;
 					id=1224;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20527,7 +20523,7 @@ class Mission
 					azimut=0.87358475;
 					id=1225;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20541,7 +20537,7 @@ class Mission
 					azimut=0.87358475;
 					id=1226;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20563,7 +20559,7 @@ class Mission
 					azimut=0.87358475;
 					id=1227;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20579,7 +20575,7 @@ class Mission
 					azimut=0.87358475;
 					id=1228;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20593,7 +20589,7 @@ class Mission
 					azimut=0.87358475;
 					id=1229;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20607,7 +20603,7 @@ class Mission
 					azimut=0.87358475;
 					id=1230;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20629,7 +20625,7 @@ class Mission
 					azimut=0.87358475;
 					id=1231;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20645,7 +20641,7 @@ class Mission
 					azimut=0.87358475;
 					id=1232;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20659,7 +20655,7 @@ class Mission
 					azimut=0.87358475;
 					id=1233;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20673,7 +20669,7 @@ class Mission
 					azimut=0.87358475;
 					id=1234;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20695,7 +20691,7 @@ class Mission
 					azimut=0.87358475;
 					id=1235;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20711,7 +20707,7 @@ class Mission
 					azimut=0.87358475;
 					id=1236;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					rank="CORPORAL";
@@ -20734,7 +20730,7 @@ class Mission
 					azimut=0.87358475;
 					id=1237;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20750,7 +20746,7 @@ class Mission
 					azimut=0.87358475;
 					id=1238;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20764,7 +20760,7 @@ class Mission
 					azimut=0.87358475;
 					id=1239;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20778,7 +20774,7 @@ class Mission
 					azimut=0.87358475;
 					id=1240;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20800,7 +20796,7 @@ class Mission
 					azimut=0.87358475;
 					id=1241;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20816,7 +20812,7 @@ class Mission
 					azimut=0.87358475;
 					id=1242;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20830,7 +20826,7 @@ class Mission
 					azimut=0.87358475;
 					id=1243;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20844,7 +20840,7 @@ class Mission
 					azimut=0.87358475;
 					id=1244;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20866,7 +20862,7 @@ class Mission
 					azimut=0.87358475;
 					id=1245;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					lock="UNLOCKED";
@@ -20882,7 +20878,7 @@ class Mission
 					azimut=0.87358475;
 					id=1246;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20896,7 +20892,7 @@ class Mission
 					azimut=0.87358475;
 					id=1247;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20910,7 +20906,7 @@ class Mission
 					azimut=0.87358475;
 					id=1248;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
@@ -20932,7 +20928,7 @@ class Mission
 					azimut=0.87358475;
 					id=1249;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -20947,7 +20943,7 @@ class Mission
 					azimut=0.87358475;
 					id=1250;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_MMG1_AG";
@@ -20968,7 +20964,7 @@ class Mission
 					azimut=0.87358475;
 					id=1251;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -20983,7 +20979,7 @@ class Mission
 					azimut=0.87358475;
 					id=1252;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_MAT1_AG";
@@ -21004,7 +21000,7 @@ class Mission
 					azimut=0.87358475;
 					id=1253;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CORPORAL";
@@ -21019,7 +21015,7 @@ class Mission
 					azimut=0.87358475;
 					id=1254;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_ENG1_A";
@@ -21040,7 +21036,7 @@ class Mission
 					azimut=0.87358475;
 					id=1255;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21055,7 +21051,7 @@ class Mission
 					azimut=0.87358475;
 					id=1256;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -21077,7 +21073,7 @@ class Mission
 					azimut=0.87358475;
 					id=1257;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21092,7 +21088,7 @@ class Mission
 					azimut=0.87358475;
 					id=1258;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -21114,7 +21110,7 @@ class Mission
 					azimut=0.87358475;
 					id=1259;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21129,7 +21125,7 @@ class Mission
 					azimut=0.87358475;
 					id=1260;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -21151,7 +21147,7 @@ class Mission
 					azimut=0.87358475;
 					id=1261;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21166,7 +21162,7 @@ class Mission
 					azimut=0.87358475;
 					id=1262;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -21188,7 +21184,7 @@ class Mission
 					azimut=0.87358475;
 					id=1263;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21203,7 +21199,7 @@ class Mission
 					azimut=0.87358475;
 					id=1264;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -21225,7 +21221,7 @@ class Mission
 					azimut=0.87358475;
 					id=1265;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21240,7 +21236,7 @@ class Mission
 					azimut=0.87358475;
 					id=1266;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -21262,7 +21258,7 @@ class Mission
 					azimut=0.87358475;
 					id=1267;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21277,7 +21273,7 @@ class Mission
 					azimut=0.87358475;
 					id=1268;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -21299,7 +21295,7 @@ class Mission
 					azimut=0.87358475;
 					id=1269;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21314,7 +21310,7 @@ class Mission
 					azimut=0.87358475;
 					id=1270;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -21336,7 +21332,7 @@ class Mission
 					azimut=0.87358475;
 					id=1271;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21351,7 +21347,7 @@ class Mission
 					azimut=0.87358475;
 					id=1272;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21365,7 +21361,7 @@ class Mission
 					azimut=0.87358475;
 					id=1273;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV1_D";
@@ -21386,7 +21382,7 @@ class Mission
 					azimut=0.87358475;
 					id=1274;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21401,7 +21397,7 @@ class Mission
 					azimut=0.87358475;
 					id=1275;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21415,7 +21411,7 @@ class Mission
 					azimut=0.87358475;
 					id=1276;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV2_D";
@@ -21436,7 +21432,7 @@ class Mission
 					azimut=0.87358475;
 					id=1277;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21451,7 +21447,7 @@ class Mission
 					azimut=0.87358475;
 					id=1278;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21465,7 +21461,7 @@ class Mission
 					azimut=0.87358475;
 					id=1279;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV3_D";
@@ -21486,7 +21482,7 @@ class Mission
 					azimut=0.87358475;
 					id=1280;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21501,7 +21497,7 @@ class Mission
 					azimut=0.87358475;
 					id=1281;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21515,7 +21511,7 @@ class Mission
 					azimut=0.87358475;
 					id=1282;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV4_D";
@@ -21536,7 +21532,7 @@ class Mission
 					azimut=0.87358475;
 					id=1283;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21551,7 +21547,7 @@ class Mission
 					azimut=0.87358475;
 					id=1284;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21565,7 +21561,7 @@ class Mission
 					azimut=0.87358475;
 					id=1285;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV5_D";
@@ -21586,7 +21582,7 @@ class Mission
 					azimut=0.87358475;
 					id=1286;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21601,7 +21597,7 @@ class Mission
 					azimut=0.87358475;
 					id=1287;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21615,7 +21611,7 @@ class Mission
 					azimut=0.87358475;
 					id=1288;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV6_D";
@@ -21636,7 +21632,7 @@ class Mission
 					azimut=0.87358475;
 					id=1289;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21651,7 +21647,7 @@ class Mission
 					azimut=0.87358475;
 					id=1290;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21665,7 +21661,7 @@ class Mission
 					azimut=0.87358475;
 					id=1291;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV7_D";
@@ -21686,7 +21682,7 @@ class Mission
 					azimut=0.87358475;
 					id=1292;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21701,7 +21697,7 @@ class Mission
 					azimut=0.87358475;
 					id=1293;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21715,7 +21711,7 @@ class Mission
 					azimut=0.87358475;
 					id=1294;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV8_D";
@@ -21736,7 +21732,7 @@ class Mission
 					azimut=0.87358475;
 					id=1295;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="SERGEANT";
@@ -21751,7 +21747,7 @@ class Mission
 					azimut=0.87358475;
 					id=1296;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
@@ -21765,7 +21761,7 @@ class Mission
 					azimut=0.87358475;
 					id=1297;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_TNK1_D";
@@ -21786,7 +21782,7 @@ class Mission
 					azimut=0.87358475;
 					id=1298;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					leader=1;
 					rank="CAPTAIN";
@@ -21801,7 +21797,7 @@ class Mission
 					azimut=0.87358475;
 					id=1299;
 					side="EAST";
-					vehicle="CAF_AG_ME_AK47";
+					vehicle="CAF_AG_ME_T_AK47";
 					player="PLAY CDG";
 					rank="LIEUTENANT";
 					skill=0.60000002;
@@ -24255,7 +24251,7 @@ class Mission
 			azimut=0.87358499;
 			id=1535;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_Offroad_armed_01";
+			vehicle="CAF_AG_AFR_P_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_car1";
 		};
@@ -24265,7 +24261,7 @@ class Mission
 			azimut=0.87358499;
 			id=1536;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_Offroad_armed_01";
+			vehicle="CAF_AG_AFR_P_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_car6";
 		};
@@ -24275,7 +24271,7 @@ class Mission
 			azimut=0.87358499;
 			id=1537;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_Offroad_armed_01";
+			vehicle="CAF_AG_AFR_P_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_car2";
 		};
@@ -24285,7 +24281,7 @@ class Mission
 			azimut=0.87358499;
 			id=1538;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_Offroad_armed_01";
+			vehicle="CAF_AG_AFR_P_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_car3";
 		};
@@ -24295,7 +24291,7 @@ class Mission
 			azimut=0.87358499;
 			id=1539;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_Offroad_armed_01";
+			vehicle="CAF_AG_AFR_P_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_car4";
 		};
@@ -24305,7 +24301,7 @@ class Mission
 			azimut=0.87358499;
 			id=1540;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_Offroad_armed_01";
+			vehicle="CAF_AG_AFR_P_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_car5";
 		};
@@ -24315,7 +24311,7 @@ class Mission
 			azimut=0.87358499;
 			id=1541;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_Offroad_armed_01";
+			vehicle="CAF_AG_AFR_P_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_car7";
 		};
@@ -24325,7 +24321,7 @@ class Mission
 			azimut=0.87358499;
 			id=1542;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_Offroad_armed_01";
+			vehicle="CAF_AG_AFR_P_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_car8";
 		};
@@ -24335,7 +24331,7 @@ class Mission
 			azimut=0.87358499;
 			id=1543;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_van_01";
+			vehicle="CAF_AG_afr_p_van_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_truck3";
 		};
@@ -24345,7 +24341,7 @@ class Mission
 			azimut=0.87358499;
 			id=1544;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_van_01";
+			vehicle="CAF_AG_afr_p_van_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_truck2";
 		};
@@ -24355,7 +24351,7 @@ class Mission
 			azimut=0.87358499;
 			id=1545;
 			side="EMPTY";
-			vehicle="CAF_AG_AFR_van_01";
+			vehicle="CAF_AG_afr_p_van_01";
 			skill=0.60000002;
 			text="VehAFRICAnormal_truck1";
 		};
@@ -25165,7 +25161,7 @@ class Mission
 			azimut=0.87358499;
 			id=1624;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_Offroad_armed_01";
+			vehicle="CAF_AG_ME_T_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehME_INS_car1";
 		};
@@ -25175,7 +25171,7 @@ class Mission
 			azimut=0.87358499;
 			id=1625;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_Offroad_armed_01";
+			vehicle="CAF_AG_ME_T_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehME_INS_car6";
 		};
@@ -25185,7 +25181,7 @@ class Mission
 			azimut=0.87358499;
 			id=1626;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_Offroad_armed_01";
+			vehicle="CAF_AG_ME_T_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehME_INS_car2";
 		};
@@ -25195,7 +25191,7 @@ class Mission
 			azimut=0.87358499;
 			id=1627;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_Offroad_armed_01";
+			vehicle="CAF_AG_ME_T_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehME_INS_car3";
 		};
@@ -25205,7 +25201,7 @@ class Mission
 			azimut=0.87358499;
 			id=1628;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_Offroad_armed_01";
+			vehicle="CAF_AG_ME_T_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehME_INS_car4";
 		};
@@ -25215,7 +25211,7 @@ class Mission
 			azimut=0.87358499;
 			id=1629;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_Offroad_armed_01";
+			vehicle="CAF_AG_ME_T_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehME_INS_car5";
 		};
@@ -25225,7 +25221,7 @@ class Mission
 			azimut=0.87358499;
 			id=1630;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_Offroad_armed_01";
+			vehicle="CAF_AG_ME_T_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehME_INS_car7";
 		};
@@ -25235,7 +25231,7 @@ class Mission
 			azimut=0.87358499;
 			id=1631;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_Offroad_armed_01";
+			vehicle="CAF_AG_ME_T_Offroad_armed_01";
 			skill=0.60000002;
 			text="VehME_INS_car8";
 		};
@@ -25245,7 +25241,7 @@ class Mission
 			azimut=0.87358499;
 			id=1632;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_van_01";
+			vehicle="CAF_AG_ME_T_van_01";
 			skill=0.60000002;
 			text="VehME_INS_truck3";
 		};
@@ -25255,7 +25251,7 @@ class Mission
 			azimut=0.87358499;
 			id=1633;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_van_01";
+			vehicle="CAF_AG_ME_T_van_01";
 			skill=0.60000002;
 			text="VehME_INS_truck2";
 		};
@@ -25265,7 +25261,7 @@ class Mission
 			azimut=0.87358499;
 			id=1634;
 			side="EMPTY";
-			vehicle="CAF_AG_ME_van_01";
+			vehicle="CAF_AG_ME_T_van_01";
 			skill=0.60000002;
 			text="VehME_INS_truck1";
 		};

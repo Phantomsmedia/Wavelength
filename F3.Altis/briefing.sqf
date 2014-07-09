@@ -72,7 +72,7 @@ if (_unitfaction == "mas_afr_ind") exitwith {
 // The following block of code executes only if the player is in an AGF slot; it
 // automatically includes a file which contains the appropriate briefing data.
 
-if (_unitfaction == "caf_ag_me") exitwith {
+if (_unitfaction == "caf_ag_me_t") exitwith {
 
 #include "f\briefing\f_briefing_middle_east.sqf"
 
@@ -89,7 +89,7 @@ if (_unitfaction == "caf_ag_me") exitwith {
 // The following block of code executes only if the player is in an AGF slot; it
 // automatically includes a file which contains the appropriate briefing data.
 
-if (_unitfaction == "caf_ag_afr") exitwith {
+if (_unitfaction == "caf_ag_afr_p") exitwith {
 
 #include "f\briefing\f_briefing_africa.sqf"
 
