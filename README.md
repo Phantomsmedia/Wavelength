@@ -66,7 +66,6 @@ Beta Testers/Mission Developers
 	Duskflame
 	Zesteh
 	Jakeen
-	Muhammad
 	KakePro
 	Shells
 	Hunter
