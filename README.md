@@ -8,7 +8,7 @@ This is a template designed to make mission development more fluid and easy. It 
 ===============
 Who is The Phramework For?
 
-Ph is aimed at the new ArmA2 mission designer, although it is not intended for complete beginners. To use F2 the mission designer should have a basic understanding of:
+Ph is aimed at the new ArmA2 mission designer, although it is not intended for complete beginners. To use Ph the mission designer should have a basic understanding of:
 
     How to open the MP mission editor
     How to place and edit units, triggers, waypoints and markers in the editor
@@ -17,7 +17,7 @@ Ph is aimed at the new ArmA2 mission designer, although it is not intended for c
     The role of script files (.sqf files)
 
 
-If a mission designer has already created his/her first few missions, everything in F2 should be relatively straightforward. In addition, mission designers with intermediate experience may also find Ph useful as a time-saver, or as the basis for their own personal base framework(s). 
+If a mission designer has already created his/her first few missions, everything in Ph should be relatively straightforward. In addition, mission designers with intermediate experience may also find Ph useful as a time-saver, or as the basis for their own personal base framework(s). 
 
 ===============
 What's Next?
