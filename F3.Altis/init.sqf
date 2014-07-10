@@ -1,18 +1,13 @@
 // ====================================================================================
-// PF PhanTactical Framework
+// Ph Phramework
 // http://phantactical.com
-// https://github.com/Phantomsmedia/PhanTactical-Mission-Framework
+// https://github.com/Phantomsmedia/Phramework
 
 // ====================================================================================
 // PhanTactical - TFAR API Global Variables
-// Credits: Batboy (2014)
-/*
-player setVariable ["TF_no_auto_long_range_radio",false];
-player setVariable ["TF_give_personal_radio_to_regular_soldier",true];
-player setVariable ["TF_defaultWestPersonalRadio",tf_anprc152];
-player setVariable ["TF_defaultEastPersonalRadio",tf_fadak];
-player setVariable ["TF_defaultGuerPersonalRadio",tf_anprc148jem];
-*/
+// Credits: Phramework: http://github.com/phantomsmedia/phramework
+TF_no_auto_long_range_radio = "true";
+
 // ====================================================================================
 
 // F3 - Disable Saving and Auto Saving
@@ -192,7 +187,7 @@ f_var_JIP_GearMenu = true;     // Can JIP/respawned players select their own gea
 
 // ====================================================================================
 // PhanTactical - Intro Text
-// Credits: Jani (2014)
+// Credits: Phramework: http://github.com/phantomsmedia/phramework
 // A good intro text would be, "_DateStamp=Date; (Autosends Date to intro)","Western Takistan" "Mission Name". Or other. Enjoy!
 
 waitUntil{!(isNil "BIS_fnc_init")};
