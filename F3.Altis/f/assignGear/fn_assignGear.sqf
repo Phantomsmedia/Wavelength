@@ -124,7 +124,7 @@ if (_faction == "mas_afr_ind") then {
 // The following block of code executes only if the player is in a African slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
-if (_faction == "caf_ag_me") then {
+if (_faction == "caf_ag_me_t") then {
 	#include "f_assignGear_middle_east.sqf"
 };
 // ====================================================================================
@@ -133,7 +133,7 @@ if (_faction == "caf_ag_me") then {
 // The following block of code executes only if the player is in a African slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
-if (_faction == "caf_ag_afr") then {
+if (_faction == "caf_ag_afr_p") then {
 	#include "f_assignGear_africa.sqf"
 };
 // ====================================================================================
