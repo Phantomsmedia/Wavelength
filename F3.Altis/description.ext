@@ -1,7 +1,7 @@
 // ============================================================================================
 
-// F3 - Mission Header
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Mission Header
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 class Header
 {
@@ -12,25 +12,25 @@ class Header
 
 // ============================================================================================
 
-// F3 - Loading Screen
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Loading Screen
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with the F3 Mission Development Framework";
+onLoadMission = "Made with the Phramework";
 author = "*** Insert mission author name here. ***";
 loadScreen = "logo.jpg";
 
 // ============================================================================================
 
-// F3 - Debug Console
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Debug Console
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 enableDebugConsole = 1;
 
 // ============================================================================================
 
-// F3 - Respawn Settings
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Respawn Settings
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 respawn = 1;
 respawndelay = 3;
@@ -40,7 +40,7 @@ respawnTemplates[] = {"f_spectator","f_JIP"};
 // ============================================================================================
 
 
-// F3 - Start of Notifications block.
+// Ph - Start of Notifications block.
 
 class cfgNotifications
 {
@@ -57,7 +57,7 @@ class cfgNotifications
 		difficulty[] = {}; // Required difficulty settings. All listed difficulties has to be enabled
 	};
 
-	// Notification for the F3 Safe Start Component
+	// Notification for the Ph Safe Start Component
 	class SafeStart
 	{
 		title = "SAFE START";
@@ -66,7 +66,7 @@ class cfgNotifications
 		duration = 15;
 	};
 
-	// Notification for the F3 Authorised Crew Component
+	// Notification for the Ph Authorised Crew Component
 	class UnauthorisedCrew {
 		title= "Non-authorised crew!";
 		description= "%1";
@@ -74,7 +74,7 @@ class cfgNotifications
 		duration = 10;
 	};
 
-	// Notification for the F3 Authorised Crew Component
+	// Notification for the Ph Authorised Crew Component
 	class MapClickTeleport {
 		title= "Teleport";
 		description= "%1";
@@ -90,7 +90,7 @@ class cfgNotifications
 #include "taw_vd\dialog.hpp"
 
 // ============================================================================================
-// F3 - Start of Params code blocks.
+// Ph - Start of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
 class Params
@@ -98,8 +98,8 @@ class Params
 
 // ============================================================================================
 
-// F3 - Debug Mode
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Debug Mode
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
 
     class f_param_debugMode
@@ -113,8 +113,8 @@ class Params
 
 // ============================================================================================
 
-// F3 - Folk Assign Gear Script
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Folk Assign Gear Script
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
     class f_param_backpacks
     {
@@ -127,7 +127,7 @@ class Params
 
 // ============================================================================================
 
-// F3 - ACRE Support
+// Ph - ACRE Support
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
 
     class f_param_acre
@@ -141,7 +141,7 @@ class Params
 
 // ============================================================================================
 
-// F3 - Mission Timer/Safe Start
+// Ph - Mission Timer/Safe Start
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
 
     class f_param_mission_timer
@@ -155,13 +155,13 @@ class Params
 
 // ============================================================================================
 
-// F3 - Mission Conditions Selector
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Mission Conditions Selector
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 // ============================================================================================
 
-// F3 - AI Skill Selector (A&D)
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - AI Skill Selector (A&D)
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 	class f_param_AISkill_BLUFOR
 	{
@@ -192,8 +192,8 @@ class Params
 
 // ============================================================================================
 
-// F3 - Caching
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Caching
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 	class f_param_caching
 	{
@@ -205,15 +205,15 @@ class Params
 
 // ============================================================================================
 
-// F3 - End of Params code blocks.
+// Ph - End of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
 };
 
 // ============================================================================================
 
-// F3 - Briefing Template
-// Credits: BIS - Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Briefing Template
+// Credits: BIS - Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 class CfgDebriefing
 {
@@ -281,18 +281,18 @@ class CfgDebriefing
 
 // ============================================================================================
 
-// F3 - Respawn Templates
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Ph - Respawn Templates
+// Credits: Please see the Ph online manual (http://www.ferstaberinde.com/f3/en/)
 
 class CfgRespawnTemplates
 {
-	// F3 Spectator Script
+	// Ph Spectator Script
 	class f_Spectator
 	{
 		onPlayerRespawn = "f_fnc_CamInit";
 	};
 
-	// F3 JIP Menu
+	// Ph JIP Menu
 	class f_JIP
 	{
 		onPlayerRespawn = "f\JIP\f_JIP_playerRespawn.sqf";
@@ -301,7 +301,7 @@ class CfgRespawnTemplates
 
 // ============================================================================================
 
-// F3 - Menu components
+// Ph - Menu components
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
 
 // Menu components for the JIP Menu
@@ -313,7 +313,7 @@ class CfgRespawnTemplates
 
 // ============================================================================================
 
-// F3 - Functions
+// Ph - Functions
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
 
 class CfgFunctions
