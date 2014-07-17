@@ -198,3 +198,19 @@ sleep 2;
         ["Be Serious, Have Fun"] call BIS_fnc_infoText;
 
 // ====================================================================================
+// Wolfenswan - AI Flashlights Attach / NVGs Off / Flashlights Forced On
+// Credits: Wolfenswan
+
+/*
+   {
+    _unit = _x;
+    if (!local _unit || isplayer _unit || "acc_flashlight" in primaryWeaponItems _unit) exitWith {}; 			// If the unit isn't local, a player or already has a flashlight exit
+    if ("acc_pointer_IR" in primaryWeaponItems _unit) then {_x removePrimaryWeaponItem "acc_pointer_IR"}; 		// Remove laser if equipped
+    _unit addPrimaryWeaponItem "acc_flashlight"; // Add flashlight
+*/        
+    // Remove NVGs
+    // if ({_x in assigneditems _unit} count ["NVGoggles_OPFOR","NVGoggles_INDEP","NVGoggles"] > 0) then {{_unit     unlinkItem _x} forEach ["NVGoggles_OPFOR","NVGoggles_INDEP","NVGoggles"] };
+        
+    // Forces flashlights on
+    // _unit enablegunlights "forceOn";   
+    //} forEach allUnits;
