@@ -154,8 +154,8 @@ _MTRmount = "B_Mk6Mortar_Support";
 
 // Medium AT
 _MAT = "launch_I_Titan_short_F";
-_MATmag1 = "Titan_AT ";
-_MATmag2 = "Titan_AT ";
+_MATmag1 = "Titan_AT";
+_MATmag2 = "Titan_AT";
 
 // Surface Air
 _SAM = "launch_I_Titan_F";
