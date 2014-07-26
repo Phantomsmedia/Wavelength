@@ -34,7 +34,8 @@ _groups = [
 ["GrpNATO_HAT1","NATO HAT1 -"],
 ["GrpNATO_HMG1","NATO HMG1 -"],
 ["GrpNATO_MTR1","NATO MTR1 -"],
-
+["GrpNATO_MSAM1","NATO MSAM1 -"],
+["GrpNATO_HSAM1","NATO HSAM1 -"],
 ["GrpNATO_ST1","NATO ST1 -"],
 ["GrpNATO_DT1","NATO DT1 -"],
 ["GrpNATO_ENG1","NATO ENG1 -"],
@@ -64,53 +65,53 @@ _groups = [
 // GROUP IDs: BLUFOR > United Nations Peacekeeping
 // Automatically assigns intelligible names to groups
 
-["GrpUN_CO","CAF CO -"],
-["GrpUN_DC","CAF DC -"],
+["GrpUN_CO","UN CO -"],
+["GrpUN_DC","UN DC -"],
 
-["GrpUN_ASL","CAF ASL -"],
-["GrpUN_A1","CAF A1 -"],
-["GrpUN_A2","CAF A2 -"],
-["GrpUN_A3","CAF A3 -"],
+["GrpUN_ASL","UN ASL -"],
+["GrpUN_A1","UN A1 -"],
+["GrpUN_A2","UN A2 -"],
+["GrpUN_A3","UN A3 -"],
 
-["GrpUN_BSL","CAF BSL -"],
-["GrpUN_B1","CAF B1 -"],
-["GrpUN_B2","CAF B2 -"],
-["GrpUN_B3","CAF B3 -"],
+["GrpUN_BSL","UN BSL -"],
+["GrpUN_B1","UN B1 -"],
+["GrpUN_B2","UN B2 -"],
+["GrpUN_B3","UN B3 -"],
 
-["GrpUN_CSL","CAF CSL -"],
-["GrpUN_C1","CAF C1 -"],
-["GrpUN_C2","CAF C2 -"],
-["GrpUN_C3","CAF C3 -"],
+["GrpUN_CSL","UN CSL -"],
+["GrpUN_C1","UN C1 -"],
+["GrpUN_C2","UN C2 -"],
+["GrpUN_C3","UN C3 -"],
 
-["GrpUN_MMG1","CAF MMG1 -"],
-["GrpUN_MAT1","CAF MAT1 -"],
-["GrpUN_HAT1","CAF HAT1 -"],
-["GrpUN_HMG1","CAF HMG1 -"],
-["GrpUN_MTR1","CAF MTR1 -"],
+["GrpUN_MMG1","UN MMG1 -"],
+["GrpUN_MAT1","UN MAT1 -"],
+["GrpUN_HAT1","UN HAT1 -"],
+["GrpUN_HMG1","UN HMG1 -"],
+["GrpUN_MTR1","UN MTR1 -"],
 
-["GrpUN_ST1","CAF ST1 -"],
-["GrpUN_DT1","CAF DT1 -"],
-["GrpUN_ENG1","CAF ENG1 -"],
+["GrpUN_ST1","UN ST1 -"],
+["GrpUN_DT1","UN DT1 -"],
+["GrpUN_ENG1","UN ENG1 -"],
 
-["GrpUN_IFV1","CAF IFV1 -"],
-["GrpUN_IFV2","CAF IFV2 -"],
-["GrpUN_IFV3","CAF IFV3 -"],
-["GrpUN_IFV4","CAF IFV4 -"],
-["GrpUN_IFV5","CAF IFV5 -"],
-["GrpUN_IFV6","CAF IFV6 -"],
-["GrpUN_IFV7","CAF IFV7 -"],
-["GrpUN_IFV8","CAF IFV8 -"],
-["GrpUN_TNK1","CAF TNK1 -"],
+["GrpUN_IFV1","UN IFV1 -"],
+["GrpUN_IFV2","UN IFV2 -"],
+["GrpUN_IFV3","UN IFV3 -"],
+["GrpUN_IFV4","UN IFV4 -"],
+["GrpUN_IFV5","UN IFV5 -"],
+["GrpUN_IFV6","UN IFV6 -"],
+["GrpUN_IFV7","UN IFV7 -"],
+["GrpUN_IFV8","UN IFV8 -"],
+["GrpUN_TNK1","UN TNK1 -"],
 
-["GrpUN_TH1","CAF TH1 -"],
-["GrpUN_TH2","CAF TH2 -"],
-["GrpUN_TH3","CAF TH3 -"],
-["GrpUN_TH4","CAF TH4 -"],
-["GrpUN_TH5","CAF TH5 -"],
-["GrpUN_TH6","CAF TH6 -"],
-["GrpUN_TH7","CAF TH7 -"],
-["GrpUN_TH8","CAF TH8 -"],
-["GrpUN_AH1","CAF AH1 -"],
+["GrpUN_TH1","UN TH1 -"],
+["GrpUN_TH2","UN TH2 -"],
+["GrpUN_TH3","UN TH3 -"],
+["GrpUN_TH4","UN TH4 -"],
+["GrpUN_TH5","UN TH5 -"],
+["GrpUN_TH6","UN TH6 -"],
+["GrpUN_TH7","UN TH7 -"],
+["GrpUN_TH8","UN TH8 -"],
+["GrpUN_AH1","UN AH1 -"],
 
 // ====================================================================================
 
@@ -140,7 +141,8 @@ _groups = [
 ["GrpFIA_HAT1","FIA HAT1 -"],
 ["GrpFIA_HMG1","FIA HMG1 -"],
 ["GrpFIA_MTR1","FIA MTR1 -"],
-
+["GrpFIA_MSAM1","FIA MSAM1 -"],
+["GrpFIA_HSAM1","FIA HSAM1 -"],
 ["GrpFIA_ST1","FIA ST1 -"],
 ["GrpFIA_DT1","FIA DT1 -"],
 ["GrpFIA_ENG1","FIA ENG1 -"],
@@ -193,7 +195,8 @@ _groups = [
 ["GrpCSAT_HAT1","CSAT HAT1 -"],
 ["GrpCSAT_HMG1","CSAT HMG1 -"],
 ["GrpCSAT_MTR1","CSAT MTR1 -"],
-
+["GrpCSAT_MSAM1","CSAT MSAM1 -"],
+["GrpCSAT_HSAM1","CSAT HSAM1 -"],
 ["GrpCSAT_ST1","CSAT ST1 -"],
 ["GrpCSAT_DT1","CSAT DT1 -"],
 ["GrpCSAT_ENG1","CSAT ENG1 -"],
@@ -246,7 +249,8 @@ _groups = [
 ["GrpOFIA_HAT1","FIA O HAT1 -"],
 ["GrpOFIA_HMG1","FIA O HMG1 -"],
 ["GrpOFIA_MTR1","FIA O MTR1 -"],
-
+["GrpOFIA_MSAM1","FIA O MSAM1 -"],
+["GrpOFIA_HSAM1","FIA O HSAM1 -"],
 ["GrpOFIA_ST1","FIA O ST1 -"],
 ["GrpOFIA_DT1","FIA O DT1 -"],
 ["GrpOFIA_ENG1","FIA O ENG1 -"],
@@ -377,60 +381,6 @@ _groups = [
 ["GrpUSArmy_ACU_TH8","US Army TH8 -"],
 ["GrpUSArmy_ACU_AH1","US Army AH1 -"],
 
-
-// ====================================================================================
-
-// GROUP IDs: OPFOR > FIA
-// Automatically assigns intelligible names to groups
-
-["GrpOFIA_CO","FIA O CO -"],
-["GrpOFIA_DC","FIA O DC -"],
-
-["GrpOFIA_ASL","FIA O ASL -"],
-["GrpOFIA_A1","FIA O A1 -"],
-["GrpOFIA_A2","FIA O A2 -"],
-["GrpOFIA_A3","FIA O A3 -"],
-
-["GrpOFIA_BSL","FIA O BSL -"],
-["GrpOFIA_B1","FIA O B1 -"],
-["GrpOFIA_B2","FIA O B2 -"],
-["GrpOFIA_B3","FIA O B3 -"],
-
-["GrpOFIA_CSL","FIA O CSL -"],
-["GrpOFIA_C1","FIA O C1 -"],
-["GrpOFIA_C2","FIA O C2 -"],
-["GrpOFIA_C3","FIA O C3 -"],
-
-["GrpOFIA_MMG1","FIA O MMG1 -"],
-["GrpOFIA_MAT1","FIA O MAT1 -"],
-["GrpOFIA_HAT1","FIA O HAT1 -"],
-["GrpOFIA_HMG1","FIA O HMG1 -"],
-["GrpOFIA_MTR1","FIA O MTR1 -"],
-
-["GrpOFIA_ST1","FIA O ST1 -"],
-["GrpOFIA_DT1","FIA O DT1 -"],
-["GrpOFIA_ENG1","FIA O ENG1 -"],
-
-["GrpOFIA_IFV1","FIA O IFV1 -"],
-["GrpOFIA_IFV2","FIA O IFV2 -"],
-["GrpOFIA_IFV3","FIA O IFV3 -"],
-["GrpOFIA_IFV4","FIA O IFV4 -"],
-["GrpOFIA_IFV5","FIA O IFV5 -"],
-["GrpOFIA_IFV6","FIA O IFV6 -"],
-["GrpOFIA_IFV7","FIA O IFV7 -"],
-["GrpOFIA_IFV8","FIA O IFV8 -"],
-["GrpOFIA_TNK1","FIA O TNK1 -"],
-
-["GrpOFIA_TH1","FIA O TH1 -"],
-["GrpOFIA_TH2","FIA O TH2 -"],
-["GrpOFIA_TH3","FIA O TH3 -"],
-["GrpOFIA_TH4","FIA O TH4 -"],
-["GrpOFIA_TH5","FIA O TH5 -"],
-["GrpOFIA_TH6","FIA O TH6 -"],
-["GrpOFIA_TH7","FIA O TH7 -"],
-["GrpOFIA_TH8","FIA O TH8 -"],
-["GrpOFIA_AH1","FIA O AH1 -"],
-
 // ====================================================================================
 
 // GROUP IDs: INDEPENDENT > AAF
@@ -459,7 +409,8 @@ _groups = [
 ["GrpAAF_HAT1","AAF HAT1 -"],
 ["GrpAAF_HMG1","AAF HMG1 -"],
 ["GrpAAF_MTR1","AAF MTR1 -"],
-
+["GrpAAF_MSAM1","AAF MSAM1 -"],
+["GrpAAF_HSAM1","AAF HSAM1 -"],
 ["GrpAAF_ST1","AAF ST1 -"],
 ["GrpAAF_DT1","AAF DT1 -"],
 ["GrpAAF_ENG1","AAF ENG1 -"],
@@ -886,7 +837,8 @@ _groups = [
 ["GrpIFIA_HAT1","FIA I HAT1 -"],
 ["GrpIFIA_HMG1","FIA I HMG1 -"],
 ["GrpIFIA_MTR1","FIA I MTR1 -"],
-
+["GrpIFIA_MSAM1","FIA I MSAM1 -"],
+["GrpIFIA_HSAM1","FIA I HSAM1 -"],
 ["GrpIFIA_ST1","FIA I ST1 -"],
 ["GrpIFIA_DT1","FIA I DT1 -"],
 ["GrpIFIA_ENG1","FIA I ENG1 -"],
