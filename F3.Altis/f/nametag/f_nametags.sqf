@@ -15,7 +15,9 @@ if (!isDedicated && (isNull player)) then
 
 // MODIFYABLE
 f_size_Nametags = 0.04; // The size the names are displayed in
-f_height_Nametags = 0; // The height of the name tags for infantry (0 = hovering over unit, -1 = about belt height)
+f_height_standing_Nametags = 2;
+f_height_crouch_Nametags = 1.5;
+f_height_prone_Nametags = 0.9;
 f_vheight_Nametags = 0; // The height of the name tags for units in vehicles (0 = hovering over vehicle)
 
 f_color_Nametags =  [1,1,1,0.9]; // The color for infantry and units in vehicle cargo (in [red,green, blue, opacity])
@@ -37,7 +39,6 @@ F_ACTIONKEY_NAMETAGS = (actionKeys F_KEY_NAMETAGS) select 0;
 F_KEYNAME_NAMETAGS = actionKeysNames F_KEY_NAMETAGS;
 if (isNil "F_ACTIONKEY_NAMETAGS") then {F_ACTIONKEY_NAMETAGS = 20; F_KEYNAME_NAMETAGS = 'T';}; // If the user has not bound 'TeamSwitch' to a key we default to 'T' to toggle the tags
 
-waitUntil {isNull (findDisplay 46)}; // some misc functions for toggleing nametags
 F_KEYUP_NAMETAG = {
 	_key = _this select 1;
 	_handeld = false;
@@ -58,6 +59,7 @@ F_KEYDOWN_NAMETAG = {
 	};
 	_handeld;
 };
+
 // ====================================================================================
 
 // ADD BRIEFING SECTION
@@ -109,6 +111,8 @@ hintsilent format ["Press %1 to toggle name tags", F_KEYNAME_NAMETAGS ];
 
 sleep 0.1;
 
+waitUntil {!isNull (findDisplay 46)}; // Make sure the display we need is initialized
+
 (findDisplay 46) displayAddEventHandler   ["keyup", "_this call F_KEYUP_NAMETAG"];
 (findDisplay 46) displayAddEventHandler   ["keydown", "_this call F_KEYDOWN_NAMETAG"];
 
@@ -128,7 +132,7 @@ addMissionEventHandler ["Draw3D", {
 		// Start looping through all entities
 		{
 			// Only display units of players side
-			if(side _x == side player && _x != player) then
+			if(side _x == side player && _x != player && !(player iskindof "VirtualMan_F")) then
 			{
 
 				// If the entity is Infantry
@@ -171,7 +175,7 @@ addMissionEventHandler ["Draw3D", {
 						_pos = visiblePosition _x;
 
 						// If the unit is sitting in the driver position or is the driver
-						if(_pos distance (visiblePosition (driver _veh)) > 0.1 || driver _veh == _x) then
+						if(_pos distance (visiblePosition (driver _veh)) > 0.1 && driver _veh == _x) then
 						{
 
 							// If it's the driver calculate the cargo slots
