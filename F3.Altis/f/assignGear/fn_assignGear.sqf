@@ -59,15 +59,10 @@ private [
 "_glrifle_attach","_AR_attach",
 "_MMG_attach","_SNrifle_attach"
 ,"_APmine", "_nvg",
-"_chemgreen","_chemred","_chemblue","_chemyellow"
+"_chemgreen","_chemred","_chemblue","_chemyellow",
+"_epipen","_morphine","_bandage","_bloodbag","_earplugs","_sparebarrel"
 ];
 
-// ====================================================================================
-
-// This variable simply tracks the progress of the gear assignation process, for other
-// scripts to reference.
-
-_unit setVariable ["f_var_assignGear_done",false,true];
 
 // ====================================================================================
 
@@ -81,19 +76,75 @@ if (f_var_debugMode == 1) then
 };
 
 // ====================================================================================
+// GEAR: BLUFOR > UN
+// The following block of code executes only if the unit is in a NATO slot; it
+// automatically includes a file which contains the appropriate equipment data.
 
+
+if (_faction == "mas_afr_onu") then {
+	#include "f_assignGear_un.sqf"
+};
 // ====================================================================================
-
 // GEAR: BLUFOR > NATO
 // The following block of code executes only if the unit is in a NATO slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
 
 if (_faction == "blu_f") then {
-#include "f_assignGear_nato.sqf"
+	#include "f_assignGear_nato.sqf"
+};
+// ====================================================================================
+// GEAR: BLUFOR > USMC MEU
+// The following block of code executes only if the player is in a USMC slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "mas_usa_mars") then {
+	#include "f_assignGear_usmc.sqf"
+};
+// ====================================================================================
+// GEAR: BLUFOR > US Army
+// The following block of code executes only if the player is in a US Army slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "AV_USArmy") then {
+	#include "f_assignGear_usarmy.sqf"
 };
 
+// ====================================================================================
+// GEAR: INDFOR > AGF
+// The following block of code executes only if the player is in a AGF slot; it
+// automatically includes a file which contains the appropriate equipment data.
 
+if (_faction == "mas_afr_ind") then {
+	#include "f_assignGear_agf.sqf"
+};
+// ====================================================================================
+
+// GEAR: OPFOR > MIDDLE EAST INSURGENTS (CAF)
+// The following block of code executes only if the player is in a African slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "caf_ag_me_t") then {
+	#include "f_assignGear_middle_east.sqf"
+};
+// ====================================================================================
+
+// GEAR: OPFOR > AFRICA (CAF)
+// The following block of code executes only if the player is in a African slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "caf_ag_afr_p") then {
+	#include "f_assignGear_africa.sqf"
+};
+// ====================================================================================
+
+// GEAR: BLUFOR > BAF
+// The following block of code executes only if the player is in a BAF slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "BLU_BAF_F") then {
+	#include "f_assignGear_baf.sqf"
+};
 // ====================================================================================
 
 // GEAR: OPFOR > CSAT
@@ -110,10 +161,19 @@ if (_faction == "opf_f") then {
 // The following block of code executes only if the unit is in a AAF slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
-if(_faction == "ind_f") then {
+if (_faction == "ind_f") then {
 	#include "f_assignGear_aaf.sqf";
 };
 
+// ====================================================================================
+
+// GEAR: INDEPENDENT > Russians
+// The following block of code executes only if the player is in a Russian slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "SUD_RU") then {
+	#include "f_assignGear_russia.sqf"
+};
 // ====================================================================================
 
 // GEAR: FIA
@@ -125,11 +185,15 @@ if (_faction in ["blu_g_f","opf_g_f","ind_g_f"]) then {
 };
 
 // ====================================================================================
+// GEAR: ACRE
+// The following block of code executes only if the ACRE parameter is set to true; it
+// automatically includes a file which contains the appropriate equipment data.
+_useACRE = "f_param_acre" call BIS_fnc_getParamValue;;
 
-// This variable simply tracks the progress of the gear assignation process, for other
-// scripts to reference.
-
-_unit setVariable ["f_var_assignGear_done",true,true];
+if (_useACRE == 1) then {
+	_this execVM "f\assignGear\acre\f_ACRE_assignGear.sqf";
+};
+// ====================================================================================
 
 // DEBUG
 
@@ -146,4 +210,14 @@ if (isNil "_carbine") then { //_carbine should exist unless no faction has been 
 	};
 };
 
+// ====================================================================================
+
+// SET CUSTOM FREQUENCIES
+// For TvTs, both sides need to have seperated radio channels, for gameplay purposes.
+// This script adds a predetermined value (0.2, 0.4 or 0.6) to each radio frequency, depending on the unit's side.
+_useACRE = "f_param_acre" call BIS_fnc_getParamValue;;
+
+if (_useACRE == 1) then {
+	_setFreqsHandle = _this execVM "f\assignGear\acre\f_ACRE_setFrequencies.sqf";
+};
 // ====================================================================================
