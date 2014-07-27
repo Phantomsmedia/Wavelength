@@ -414,6 +414,7 @@ switch (_typeofUnit) do
 		_unit addItem _earplugs;
 	};
 
+	
 // LOADOUT: AUTOMATIC RIFLEMAN
 	case "ar":
 	{
