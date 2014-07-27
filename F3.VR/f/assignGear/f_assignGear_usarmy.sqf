@@ -87,12 +87,12 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "RH_m4";
+_rifle = "RH_m4a1_ris";
 _riflemag = "30rnd_556x45_STANAG";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "RH_m4";
+_carbine = "RH_m4a1_ris";
 _carbinemag = "30rnd_556x45_STANAG";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -107,7 +107,7 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "RH_m4_m203";
+_glrifle = "RH_m4a1_ris_m203";
 _glriflemag = "30rnd_556x45_STANAG";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
@@ -178,14 +178,14 @@ _sparebarrel = "AGM_SpareBarrel";			// For LMG/MMG Only
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "arifle_MX_SW_F";
-_ARmag = "100Rnd_65x39_caseless_mag";
-_ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
+_AR = "LMG_mas_M249_F_a";
+_ARmag = "200Rnd_mas_556x45_Stanag";
+_ARmag_tr = "200Rnd_mas_556x45_T_Stanag";
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "LMG_mas_M240_F";
+_MMGmag = "100Rnd_mas_762x51_Stanag";
+_MMGmag_tr = "100Rnd_mas_762x51_T_Stanag";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
@@ -360,7 +360,8 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;
-		_unit addItem _earplugs;		
+		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope2]		
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -384,6 +385,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope2]			
 	};
 
 // LOADOUT: MEDIC
@@ -399,6 +401,7 @@ switch (_typeofUnit) do
 		{_unit addItem _epipen} forEach [1,2,3,4,5,6,7,8,9,10];
 		{_unit addItem _bloodbag} forEach [1,2,3,4,5];
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: FIRE TEAM LEADER
@@ -420,6 +423,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 
@@ -439,6 +443,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
@@ -456,6 +461,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: RIFLEMAN (AT)
@@ -474,6 +480,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // LOADOUT: MEDIUM MG GUNNER
@@ -491,6 +498,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
+		_attachments = [_attach1]			
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
@@ -508,6 +516,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]			
 	};
 
 // LOADOUT: HEAVY MG GUNNER
@@ -524,6 +533,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // LOADOUT: HEAVY MG ASSISTANT GUNNER
@@ -541,6 +551,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: MEDIUM AT GUNNER
@@ -556,6 +567,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: MEDIUM AT ASSISTANT GUNNER
@@ -573,6 +585,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // LOADOUT: HEAVY AT GUNNER
@@ -589,6 +602,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: HEAVY AT ASSISTANT GUNNER
@@ -606,6 +620,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // LOADOUT: MORTAR GUNNER
@@ -622,6 +637,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: MORTAR ASSISTANT GUNNER
@@ -639,6 +655,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: MEDIUM SAM GUNNER
@@ -655,6 +672,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: MEDIUM SAM ASSISTANT GUNNER
@@ -671,6 +689,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // LOADOUT: HEAVY SAM GUNNER
@@ -687,6 +706,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: HEAVY SAM ASSISTANT GUNNER
@@ -704,6 +724,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // LOADOUT: SNIPER
@@ -719,6 +740,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_scope3]	
 	};
 
 // LOADOUT: SPOTTER
@@ -736,6 +758,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // LOADOUT: VEHICLE COMMANDER
@@ -751,6 +774,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: VEHICLE DRIVER
@@ -766,6 +790,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]			
 	};
 
 // LOADOUT: VEHICLE GUNNER
@@ -780,6 +805,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]			
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -794,6 +820,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]			
 	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
@@ -807,6 +834,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]			
 	};
 
 // LOADOUT: AIR VEHICLE CREW
@@ -819,6 +847,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]			
 	};
 
 // LOADOUT: ENGINEER (DEMO)
@@ -836,6 +865,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]			
 	};
 
 // LOADOUT: ENGINEER (MINES)
@@ -853,6 +883,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: UAV OPERATOR
@@ -869,6 +900,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // LOADOUT: Diver
@@ -886,6 +918,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: RIFLEMAN
@@ -902,6 +935,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: CARABINEER
@@ -918,6 +952,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: SUBMACHINEGUNNER
@@ -933,6 +968,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1]		
 	};
 
 // LOADOUT: GRENADIER
@@ -951,6 +987,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1]		
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
