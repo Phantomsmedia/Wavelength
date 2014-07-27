@@ -11,10 +11,10 @@ removeHeadgear this;
 removeGoggles this;
 
 comment "Add containers";
-this forceAddUniform "AV_CombatUniform1_UCP";
+------------- USE THIS //////////// this forceAddUniform "AV_CombatUniform1_UCP";
 for "_i" from 1 to 2 do {this addItemToUniform "AGM_Bandage";};
 for "_i" from 1 to 2 do {this addItemToUniform "30Rnd_556x45_Stanag";};
-this addVest "AV_PlateCarrier3_UCP";
+------------- USE THE ///////////// this addVest "AV_PlateCarrier3_UCP";
 for "_i" from 1 to 4 do {this addItemToVest "AGM_Bandage";};
 for "_i" from 1 to 3 do {this addItemToVest "30Rnd_556x45_Stanag";};
 this addItemToVest "SmokeShellGreen";
@@ -29,7 +29,7 @@ for "_i" from 1 to 3 do {this addItemToBackpack "APERSBoundingMine_Range_Mag";};
 for "_i" from 1 to 2 do {this addItemToBackpack "ClaymoreDirectionalMine_Remote_Mag";};
 for "_i" from 1 to 2 do {this addItemToBackpack "SLAMDirectionalMine_Wire_Mag";};
 this addItemToBackpack "DemoCharge_Remote_Mag";
-this addHeadgear "AV_ACH1_UCP";
+--------------- USE THIS //////////////////this addHeadgear "AV_ACH1_UCP";
 
 comment "Add weapons";
 this addWeapon "arifle_TRG21_F";
