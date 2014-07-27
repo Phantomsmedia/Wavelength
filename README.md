@@ -37,6 +37,7 @@ Developed by
 	Jani J.       (www.phantactical.com Community Leader)
 	KakePro       (www.phantactical.com Member)
 	Duck          (www.phantactical.com Member)
+	Teddy         (www.phantactical.com Member)
 	Gruntin       (www.phantactical.com Member)
 	Hunter        (Gave us a running start | Member circa 2012/13)	
 	Batboyx2      (www.phantactical.com Addon Development Team Head)
