@@ -60,8 +60,8 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "optic_Holosight";	// Holosight
-_scope2 = "optic_MRCO";			// MRCO Scope - 1x - 6x
+_scope1 = "RH_compM4s";	// Holosight
+_scope2 = "RH_ta31rco";			// MRCO Scope - 1x - 6x
 _scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
 
 // Default setup
