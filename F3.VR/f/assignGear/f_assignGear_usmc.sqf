@@ -227,14 +227,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_tshirt","U_B_CombatUniform_mcam_vest"];
-_baseHelmet = ["H_HelmetB","H_HelmetB_plain_mcamo"];
+_baseUniform = ["U_mas_mar_B_CombatUniform_des","U_mas_mar_B_CombatUniform_des_vest","U_mas_mar_B_CombatUniform_des_tshirt"];
+_baseHelmet = ["H_mas_mar_helmetd_us","H_mas_mar_helmetdgog_us"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk","V_TacVest_brn","V_TacVest_camo","V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrier3_rgr"];
+_lightRig = ["V_mas_mar_ChestrigB_rgr"];
+_mediumRig = ["V_mas_mar_PlateCarrier1_rgr_d","V_mas_mar_PlateCarrier2_rgr_d"]; 	// default for all infantry classes
+_heavyRig = ["V_mas_mar_PlateCarrierGL_rgr_d"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -249,21 +249,21 @@ _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_B_CombatUniform_mcam_vest"];
+_crewUniform = ["U_mas_mar_B_CombatUniform_des_tshirt"];
 _crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_TacVest_blk"];
+_crewRig = ["V_mas_mar_ChestrigB_rgr"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_B_GhillieSuit"];
+_ghillieUniform = ["U_mas_mar_B_GhillieSuit_d"];
 _ghillieHelmet = [];
-_ghillieRig = ["V_Chestrig_rgr"];
+_ghillieRig = ["V_mas_mar_ChestrigB_rgr"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["U_B_SpecopsUniform_sgg"];
-_sfhelmet = ["H_HelmetSpecB","H_HelmetSpecB_paint1","H_HelmetSpecB_paint2","H_HelmetSpecB_blk"];
-_sfRig = _mediumRig;
+_sfuniform = ["U_mas_mar_B_CombatUniform_wood_vest2"];
+_sfhelmet = ["H_mas_mar_helmet_g_us","H_mas_mar_helmet_l_us","H_mas_mar_pro_ht","H_mas_mar_helmet_us"];
+_sfRig = ["V_mas_mar_PlateCarrier2_rgr_g"];
 _sfGlasses = [];
 
 // ====================================================================================
