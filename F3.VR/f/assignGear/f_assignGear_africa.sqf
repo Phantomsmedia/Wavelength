@@ -227,14 +227,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_tshirt","U_B_CombatUniform_mcam_vest"];
-_baseHelmet = ["H_HelmetB","H_HelmetB_plain_mcamo"];
+_baseUniform = ["U_mas_afr_O_uniform7","U_mas_afr_O_uniform2","U_mas_afr_O_uniform6"];
+_baseHelmet = ["H_mas_afr_Booniehat_o","H_mas_afr_HelmetO"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk","V_TacVest_brn","V_TacVest_camo","V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrier3_rgr"];
+_lightRig = ["V_mas_afr_BandollierB_rgr","V_mas_afr_BandollierB_blk","V_mas_afr_BandollierO_rgr"];
+_mediumRig = ["V_mas_afr_TacVest_o","V_mas_afr_TacVest_b"]; 	// default for all infantry classes
+_heavyRig = ["V_mas_afr_PlateCarrier1_rgr"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -243,15 +243,15 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_B_HeliPilotCoveralls"];
-_pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotUniform = ["U_mas_afr_O_uniform5"];
+_pilotHelmet = ["H_mas_afr_helmet_ht"];
+_pilotRig = ["V_mas_afr_BandollierO_rgr"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_B_CombatUniform_mcam_vest"];
-_crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_TacVest_blk"];
+_crewUniform = ["U_mas_afr_O_uniform5"];
+_crewHelmet = ["H_mas_afr_headset_b"];
+_crewRig = ["V_mas_afr_BandollierO_rgr"];
 _crewGlasses = [];
 
 // Ghillie
@@ -261,9 +261,9 @@ _ghillieRig = ["V_Chestrig_rgr"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["U_B_SpecopsUniform_sgg"];
-_sfhelmet = ["H_HelmetSpecB","H_HelmetSpecB_paint1","H_HelmetSpecB_paint2","H_HelmetSpecB_blk"];
-_sfRig = _mediumRig;
+_sfuniform = ["U_mas_afr_O_uniform1"];
+_sfhelmet = ["H_mas_afr_HelmetO","H_mas_afr_MilCap_os","H_mas_afr_beret_o","H_mas_afr_Booniehat_o"];
+_sfRig = ["V_mas_afr_TacVest_o"];
 _sfGlasses = [];
 
 // ====================================================================================
