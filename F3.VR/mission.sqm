@@ -22952,28 +22952,28 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={340.55466,5,2917.624};
+					position[]={340.50058,5,2919.0986};
 					id=1387;
 					side="WEST";
 					vehicle="AV_IndUs_AT";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_HAT1_AG_1";
-					init="GrpNATO_HAT1 = group this; [""hatag"",this] call f_fnc_assignGear; ";
-					description="NATO Heavy AT Team 1 Spotter (Leader)";
+					text="UnitUSArmy_ACU_HAT1_AG";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_HAT1 = group this; [""hatag"",this] call f_fnc_assignGear; ";
+					description="US Army Heavy AT Team 1 Spotter (Leader)";
 				};
 				class Item1
 				{
-					position[]={342.95895,5,2915.8672};
+					position[]={342.90488,5,2917.3418};
 					id=1388;
 					side="WEST";
 					vehicle="AV_IndUs_AT";
 					skill=0.60000002;
 					health=0.99000001;
-					text="UnitNATO_HAT1_G_1";
-					init="GrpNATO_HAT1 = group this; [""hatg"",this] call f_fnc_assignGear; ";
-					description="NATO Heavy AT Team 1 Gunner";
+					text="UnitUSArmy_ACU_HAT1_G";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_HAT1 = group this; [""hatg"",this] call f_fnc_assignGear; ";
+					description="US Army Heavy AT Team 1 Gunner";
 				};
 			};
 		};
@@ -22985,28 +22985,28 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={340.85056,5,2905.75};
+					position[]={340.79648,5,2907.2246};
 					id=1389;
 					side="WEST";
 					vehicle="AV_IndUs_Asst_AR";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_MTR1_AG_1";
-					init="GrpNATO_MTR1 = group this; [""mtrag"",this] call f_fnc_assignGear; ";
-					description="NATO Mortar Team 1 Spotter (Leader)";
+					text="UnitUSArmy_ACU_MTR1_AG";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_MTR1 = group this; [""mtrag"",this] call f_fnc_assignGear; ";
+					description="US Army Mortar Team 1 Spotter (Leader)";
 				};
 				class Item1
 				{
-					position[]={343.25485,5,2903.9932};
+					position[]={343.20078,5,2905.4678};
 					id=1390;
 					side="WEST";
 					vehicle="AV_IndUs_Asst_AR";
 					skill=0.60000002;
 					health=0.99000001;
-					text="UnitNATO_MTR1_G_1";
-					init="GrpNATO_MTR1 = group this; [""mtrg"",this] call f_fnc_assignGear; ";
-					description="NATO Mortar Team 1 Gunner";
+					text="UnitUSArmy_ACU_MTR1_G";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_MTR1 = group this; [""mtrg"",this] call f_fnc_assignGear; ";
+					description="US Army Mortar Team 1 Gunner";
 				};
 			};
 		};
@@ -23018,28 +23018,28 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={341.17575,5,2893.9121};
+					position[]={341.12167,5,2895.3867};
 					id=1391;
 					side="WEST";
 					vehicle="AV_IndUs_AT";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_MSAM1_AG_1";
-					init="GrpNATO_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGear; ";
-					description="NATO Medium SAM Team 1 Spotter (Leader)";
+					text="UnitUSArmy_ACU_MSAM1_AG";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGear; ";
+					description="US Army Medium SAM Team 1 Spotter (Leader)";
 				};
 				class Item1
 				{
-					position[]={343.58005,5,2892.1553};
+					position[]={343.52597,5,2893.6299};
 					id=1392;
 					side="WEST";
 					vehicle="AV_IndUs_AT";
 					skill=0.60000002;
 					health=0.99000001;
-					text="UnitNATO_MSAM1_G_1";
-					init="GrpNATO_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGear; ";
-					description="NATO Medium SAM Team 1 Gunner";
+					text="UnitUSArmy_ACU_MSAM1_G";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGear; ";
+					description="US Army Medium SAM Team 1 Gunner";
 				};
 			};
 		};
@@ -23051,28 +23051,28 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={340.86325,5,2880.8086};
+					position[]={340.80917,5,2882.2832};
 					id=1393;
 					side="WEST";
 					vehicle="AV_IndUs_AT";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_HSAM1_AG_1";
-					init="GrpNATO_HSAM1 = group this; [""hsamag"",this] call f_fnc_assignGear; ";
-					description="NATO Heavy SAM Team 1 Spotter (Leader)";
+					text="UnitUSArmy_ACU_HSAM1_AG";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_HSAM1 = group this; [""hsamag"",this] call f_fnc_assignGear; ";
+					description="US Army Heavy SAM Team 1 Spotter (Leader)";
 				};
 				class Item1
 				{
-					position[]={343.26755,5,2879.0518};
+					position[]={343.21347,5,2880.5264};
 					id=1394;
 					side="WEST";
 					vehicle="AV_IndUs_AT";
 					skill=0.60000002;
 					health=0.99000001;
-					text="UnitNATO_HSAM1_G_1";
-					init="GrpNATO_HSAM1 = group this; [""hsamg"",this] call f_fnc_assignGear; ";
-					description="NATO Heavy SAM Team 1 Gunner";
+					text="UnitUSArmy_ACU_HSAM1_G";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_HSAM1 = group this; [""hsamg"",this] call f_fnc_assignGear; ";
+					description="US Army Heavy SAM Team 1 Gunner";
 				};
 			};
 		};
@@ -23084,28 +23084,28 @@ class Mission
 				items=2;
 				class Item0
 				{
-					position[]={340.86325,5,2869.7334};
+					position[]={340.80917,5,2871.208};
 					id=1395;
 					side="WEST";
 					vehicle="AV_IndUs_Sniper";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_ST1_SP_1";
-					init="GrpNATO_ST1 = group this; [""sp"",this] call f_fnc_assignGear; ";
-					description="NATO Sniper Team 1 Spotter (Leader)";
+					text="UnitUSArmy_ACU_ST1_SP";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_ST1 = group this; [""sp"",this] call f_fnc_assignGear; ";
+					description="US Army Sniper Team 1 Spotter (Leader)";
 				};
 				class Item1
 				{
-					position[]={343.26755,5,2867.9766};
+					position[]={343.21347,5,2869.4512};
 					id=1396;
 					side="WEST";
 					vehicle="AV_IndUs_Sniper";
 					skill=0.60000002;
 					health=0.99000001;
-					text="UnitNATO_ST1_SN_1";
-					init="GrpNATO_ST1 = group this; [""sn"",this] call f_fnc_assignGear; ";
-					description="NATO Sniper Team 1 Sniper";
+					text="UnitUSArmy_ACU_ST1_SN";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_ST1 = group this; [""sn"",this] call f_fnc_assignGear; ";
+					description="US Army Sniper Team 1 Sniper";
 				};
 			};
 		};
@@ -23117,49 +23117,49 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={340.53708,5,2857.4668};
+					position[]={340.483,5,2858.9414};
 					id=1397;
 					side="WEST";
 					vehicle="AV_IndUs_EXP";
 					leader=1;
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_ENG1_FTL_1";
-					init="GrpNATO_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
-					description="NATO Engineer Team 1 Leader (Demo)";
+					text="UnitUSArmy_ACU_ENG1_FTL";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					description="US Army Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
 				{
-					position[]={343.24313,5,2855.6699};
+					position[]={343.18906,5,2857.1445};
 					id=1398;
 					side="WEST";
 					vehicle="AV_IndUs_EXP";
 					skill=0.60000002;
-					text="UnitNATO_ENG1_A1_1";
-					init="GrpNATO_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
-					description="NATO Engineer Team 1 Assistant (Demo)";
+					text="UnitUSArmy_ACU_ENG1_A1";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					description="US Army Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
 				{
-					position[]={346.09079,5,2855.5039};
+					position[]={346.03671,5,2856.9785};
 					id=1399;
 					side="WEST";
 					vehicle="AV_IndUs_EXP";
 					skill=0.60000002;
-					text="UnitNATO_ENG1_A2_1";
-					init="GrpNATO_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
-					description="NATO Engineer Team 1 Assistant (Mines)";
+					text="UnitUSArmy_ACU_ENG1_A2";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
+					description="US Army Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
 				{
-					position[]={349.16306,5,2855.4492};
+					position[]={349.10898,5,2856.9238};
 					id=1400;
 					side="WEST";
 					vehicle="AV_IndUs_EXP";
 					skill=0.60000002;
-					text="UnitNATO_ENG1_A3_1";
-					init="GrpNATO_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
-					description="NATO Engineer Team 1 Assistant (Mines)";
+					text="UnitUSArmy_ACU_ENG1_A3";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
+					description="US Army Engineer Team 1 Assistant (Mines)";
 				};
 			};
 		};
@@ -23171,52 +23171,52 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={340.22458,5,2843.2939};
+					position[]={340.1705,5,2844.7686};
 					id=1401;
 					side="WEST";
 					vehicle="B_diver_TL_F";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitNATO_DT1_TL_1";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
-					description="NATO Diver Team 1 Team Leader";
+					text="UnitUSArmy_ACU_DT1_TL";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					description="US Army Diver Team 1 Team Leader";
 				};
 				class Item1
 				{
-					position[]={343.13474,5,2841.1523};
+					position[]={343.08066,5,2842.627};
 					id=1402;
 					side="WEST";
 					vehicle="B_diver_F";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_DT1_D1_1";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
-					description="NATO Diver Team 1 Diver";
+					text="UnitUSArmy_ACU_DT1_D1";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					description="US Army Diver Team 1 Diver";
 				};
 				class Item2
 				{
-					position[]={346.04099,5,2841.0898};
+					position[]={345.98691,5,2842.5645};
 					id=1403;
 					side="WEST";
 					vehicle="B_diver_F";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_DT1_D2_1";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
-					description="NATO Diver Team 1 Diver";
+					text="UnitUSArmy_ACU_DT1_D2";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					description="US Army Diver Team 1 Diver";
 				};
 				class Item3
 				{
-					position[]={349.00583,5,2841.0313};
+					position[]={348.95175,5,2842.5059};
 					id=1404;
 					side="WEST";
 					vehicle="B_diver_F";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_DT1_D3_1";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
-					description="NATO Diver Team 1 Diver";
+					text="UnitUSArmy_ACU_DT1_D3";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					description="US Army Diver Team 1 Diver";
 				};
 			};
 		};
@@ -23228,44 +23228,44 @@ class Mission
 				items=4;
 				class Item0
 				{
-					position[]={340.92575,5,2831.333};
+					position[]={340.87167,5,2832.8076};
 					id=1405;
 					side="WEST";
 					vehicle="AV_IndUs_Rifleman";
 					leader=1;
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="NATO RESERVED FOR JIP";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
 				};
 				class Item1
 				{
-					position[]={343.85056,5,2829.3926};
+					position[]={343.79648,5,2830.8672};
 					id=1406;
 					side="WEST";
 					vehicle="AV_IndUs_Rifleman";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="NATO RESERVED FOR JIP";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
 				};
 				class Item2
 				{
-					position[]={347.18356,5,2829.4316};
+					position[]={347.12949,5,2830.9063};
 					id=1407;
 					side="WEST";
 					vehicle="AV_IndUs_Rifleman";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="NATO RESERVED FOR JIP";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
 				};
 				class Item3
 				{
-					position[]={350.53513,5,2829.5332};
+					position[]={350.48105,5,2831.0078};
 					id=1408;
 					side="WEST";
 					vehicle="AV_IndUs_Rifleman";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
-					description="NATO RESERVED FOR JIP";
+					player="PLAY CDG"; init="GrpUSArmy_ACU_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					description="US Army RESERVED FOR JIP";
 				};
 			};
 		};
