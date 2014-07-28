@@ -31,7 +31,6 @@ class Mission
 		"A3_Armor_F_Slammer",
 		"A3_Armor_F_APC_Wheeled_03",
 		"A3_Armor_F_T100K",
-		"a3_armor_btr100",
 		"HAFM_ArmA2_Helis",
 		"A3_Air_F_Heli_Light_01",
 		"a3_baf_air",
@@ -124,7 +123,6 @@ class Mission
 		"A3_Characters_F_INDEP",
 		"A3_Modules_F",
 		"A3_Characters_F_Bootcamp",
-		"a3_armor_btr100",
 		"HAFM_ArmA2_Helis",
 		"A3_Armor_F_AMV",
 		"A3_Armor_F_Slammer",
@@ -23880,7 +23878,7 @@ class Mission
 			azimut=0.21358237;
 			id=1449;
 			side="EMPTY";
-			vehicle="RU_APC_BTR100_F";
+			vehicle="SUD_BTR100";
 			leader=1;
 			skill=0.60000002;
 			text="VehRUS_IFV5";
@@ -23891,7 +23889,7 @@ class Mission
 			azimut=0.21358237;
 			id=1450;
 			side="EMPTY";
-			vehicle="RU_APC_BTR100_F";
+			vehicle="SUD_BTR100";
 			leader=1;
 			skill=0.60000002;
 			text="VehRUS_IFV6";
@@ -23902,7 +23900,7 @@ class Mission
 			azimut=0.21358237;
 			id=1451;
 			side="EMPTY";
-			vehicle="RU_APC_BTR100_F";
+			vehicle="SUD_BTR100";
 			leader=1;
 			skill=0.60000002;
 			text="VehRUS_IFV7";
@@ -23913,7 +23911,7 @@ class Mission
 			azimut=0.21358237;
 			id=1452;
 			side="EMPTY";
-			vehicle="RU_APC_BTR100_F";
+			vehicle="SUD_BTR100";
 			leader=1;
 			skill=0.60000002;
 			text="VehRUS_IFV8";
