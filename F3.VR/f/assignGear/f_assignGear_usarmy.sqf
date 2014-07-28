@@ -917,8 +917,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_attachments = [_attach1];		
+		_unit addItem _earplugs;		
 	};
 
 // LOADOUT: RIFLEMAN

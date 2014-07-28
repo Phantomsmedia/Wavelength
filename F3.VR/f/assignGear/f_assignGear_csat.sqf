@@ -495,7 +495,7 @@ switch (_typeofUnit) do
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_unit addItem _sparebarrel
+		_unit addItem _sparebarrel;
 		_attachments = [_attach1];
 	};
 
@@ -916,7 +916,6 @@ switch (_typeofUnit) do
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
 	};
 
 // LOADOUT: RIFLEMAN

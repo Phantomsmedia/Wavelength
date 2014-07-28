@@ -918,7 +918,6 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope]
 	};
 
 // LOADOUT: RIFLEMAN
