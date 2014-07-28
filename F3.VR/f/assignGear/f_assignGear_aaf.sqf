@@ -353,7 +353,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope2]
+		_attachments = [_attach1,_scope2];
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -377,7 +377,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope2]
+		_attachments = [_attach1,_scope2];
 	};
 
 // LOADOUT: MEDIC
@@ -415,7 +415,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope2]
+		_attachments = [_attach1,_scope2];
 	};
 
 	
