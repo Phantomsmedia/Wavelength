@@ -227,8 +227,8 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_mas_mar_B_CombatUniform_des","U_mas_mar_B_CombatUniform_des_vest","U_mas_mar_B_CombatUniform_des_tshirt"];
-_baseHelmet = ["H_mas_mar_helmetd_us","H_mas_mar_helmetdgog_us"];
+_baseUniform = ["U_mas_mar_B_CombatUniform_veg","U_mas_mar_B_CombatUniform_veg_vest"];
+_baseHelmet = ["H_mas_mar_helmetv_us","H_mas_mar_helmetvgog_us"];
 _baseGlasses = [];
 
 // Armored vests
@@ -255,7 +255,7 @@ _crewRig = ["V_mas_mar_ChestrigB_rgr"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_mas_mar_B_GhillieSuit_d"];
+_ghillieUniform = ["U_mas_mar_B_GhillieSuit_v"];
 _ghillieHelmet = [];
 _ghillieRig = ["V_mas_mar_ChestrigB_rgr"];
 _ghillieGlasses = [];
