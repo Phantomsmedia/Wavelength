@@ -227,14 +227,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_tshirt","U_B_CombatUniform_mcam_vest"];
-_baseHelmet = ["H_HelmetB","H_HelmetB_plain_mcamo"];
+_baseUniform = ["U_CAF_AG_ME_ROBES_Mil_01","U_CAF_AG_ME_ROBES_mil_01a","U_CAF_AG_ME_ROBES_04a"];
+_baseHelmet = ["H_caf_ag_paktol_04","H_caf_ag_wrap"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk","V_TacVest_brn","V_TacVest_camo","V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrier3_rgr"];
+_lightRig = ["V_BandollierB_khk","V_BandollierB_blk","V_BandollierB_rgr","V_BandollierB_cbr"];
+_mediumRig = ["V_Chestrig_blk","V_Chestrig_oli"]; 	// default for all infantry classes
+_heavyRig = ["V_TacVest_khk"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -243,26 +243,26 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_B_HeliPilotCoveralls"];
+_pilotUniform = ["U_CAF_AG_ME_ROBES_Mil_01"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["V_BandollierB_khk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_B_CombatUniform_mcam_vest"];
-_crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_TacVest_blk"];
+_crewUniform = ["U_CAF_AG_ME_ROBES_Mil_01"];
+_crewHelmet = ["H_caf_ag_wrap"];
+_crewRig = ["V_BandollierB_khk"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_B_GhillieSuit"];
+_ghillieUniform = ["U_CAF_AG_ME_ROBES_Mil_01"];
 _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_rgr"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["U_B_SpecopsUniform_sgg"];
-_sfhelmet = ["H_HelmetSpecB","H_HelmetSpecB_paint1","H_HelmetSpecB_paint2","H_HelmetSpecB_blk"];
+_sfuniform = ["U_CAF_AG_ME_ROBES_Mil_01"];
+_sfhelmet = ["H_caf_ag_wrap","H_caf_ag_paktol_04","H_caf_ag_paktol_03","H_caf_ag_paktol_02"];
 _sfRig = _mediumRig;
 _sfGlasses = [];
 
