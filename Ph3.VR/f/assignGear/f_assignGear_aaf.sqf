@@ -166,15 +166,6 @@ _baghsamag = "I_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
 // ====================================================================================
 
-// MEDICAL
-_bandage = "AGM_Bandage";					// 5 Per Soldier, 10 Per TL, 20 Per Medic
-_epipen = "AGM_Epipen";  					// 1 Per Soldier, 1 Per TL, 10 Per Medic
-_morphine = "AGM_Morphine";					// 1 Per Soldier, 2 Per TL, 15 Per Medic
-_bloodbag = "AGM_Bloodbag";					// 0 Per Soldier, 0 Per TL, 5 Per Medic
-_earplugs = "AGM_EarBuds";					// For Every Soldier
-_sparebarrel = "AGM_SpareBarrel";			// For LMG/MMG Only
-
-// ====================================================================================
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
