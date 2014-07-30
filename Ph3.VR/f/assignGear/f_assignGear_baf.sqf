@@ -87,14 +87,14 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "arifle_MX_pointer_F";
-_riflemag = "30Rnd_65x39_caseless_mag";
-_riflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_rifle = "hlc_rifle_falosw";
+_riflemag = "hlc_20Rnd_762x51_B_fal";
+_riflemag_tr = "hlc_20Rnd_762x51_t_fal";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_MXC_F";
-_carbinemag = "30Rnd_65x39_caseless_mag";
-_carbinemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_carbine = "hlc_rifle_falosw";
+_carbinemag = "hlc_20Rnd_762x51_B_fal";
+_carbinemag_tr = "hlc_20Rnd_762x51_t_fal";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "SMG_01_F";
@@ -107,9 +107,9 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "arifle_MX_GL_F";
-_glriflemag = "30Rnd_65x39_caseless_mag";
-_glriflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_glrifle = "hlc_rifle_osw_GL";
+_glriflemag = "hlc_20Rnd_762x51_B_fal";
+_glriflemag_tr = "hlc_20Rnd_762x51_t_fal";
 _glmag = "1Rnd_HE_Grenade_shell";
 
 // Smoke for FTLs, Squad Leaders, etc
@@ -178,14 +178,14 @@ _sparebarrel = "AGM_SpareBarrel";			// For LMG/MMG Only
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "arifle_MX_SW_F";
-_ARmag = "100Rnd_65x39_caseless_mag";
-_ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
+_AR = "LMG_mas_M249_F";
+_ARmag = "200Rnd_mas_556x45_Stanag";
+_ARmag_tr = "200Rnd_mas_556x45_T_Stanag";
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "LMG_mas_m240_F";
+_MMGmag = "100Rnd_mas_762x51_Stanag";
+_MMGmag_tr = "100Rnd_mas_762x51_T_Stanag";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
