@@ -183,9 +183,9 @@ _ARmag = "100Rnd_65x39_caseless_mag";
 _ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "LMG_Mk200_F";
+_MMGmag = "200Rnd_65x39_Box";
+_MMGmag_tr = "200Rnd_65x39_Box_Tracer";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
