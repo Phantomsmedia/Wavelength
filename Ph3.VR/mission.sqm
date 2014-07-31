@@ -106,6 +106,7 @@ class Mission
 		"map_vr",
 		"A3_Characters_F_EPC",
 		"A3_Structures_F_Mil_Shelters",
+		"a3_trees",
 		"A3_Data_F_Curator_Characters"
 	};
 	addOnsAuto[]=
