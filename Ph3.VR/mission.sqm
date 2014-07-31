@@ -1144,7 +1144,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitRUS_TH1_P";
-					init="GrpRUS_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpRUS_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="Russian Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -1158,7 +1158,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitRUS_TH1_CP";
-					init="GrpRUS_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpRUS_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="Russian Transport Helo 1 Co-Pilot";
 				};
 			};
@@ -1181,7 +1181,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitRUS_TH2_P";
-					init="GrpRUS_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpRUS_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="Russian Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -1195,7 +1195,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitRUS_TH2_CP";
-					init="GrpRUS_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpRUS_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="Russian Transport Helo 2 Co-Pilot";
 				};
 			};
@@ -1218,7 +1218,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitRUS_TH3_P";
-					init="GrpRUS_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpRUS_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="Russian Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -1232,7 +1232,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitRUS_TH3_CP";
-					init="GrpRUS_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpRUS_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="Russian Transport Helo 3 Co-Pilot";
 				};
 			};
@@ -1255,7 +1255,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitRUS_TH4_P";
-					init="GrpRUS_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpRUS_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="Russian Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -1269,7 +1269,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitRUS_TH4_CP";
-					init="GrpRUS_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpRUS_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="Russian Transport Helo 4 Co-Pilot";
 				};
 			};
@@ -1291,7 +1291,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitRUS_IFV1_C";
-					init="GrpRUS_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 1 Commander";
 				};
 				class Item1
@@ -1304,7 +1304,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV1_G";
-					init="GrpRUS_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 1 Gunner";
 				};
 				class Item2
@@ -1317,7 +1317,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV1_D";
-					init="GrpRUS_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 1 Driver";
 				};
 			};
@@ -1339,7 +1339,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitRUS_IFV2_C";
-					init="GrpRUS_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 2 Commander";
 				};
 				class Item1
@@ -1352,7 +1352,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV2_G";
-					init="GrpRUS_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 2 Gunner";
 				};
 				class Item2
@@ -1365,7 +1365,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV2_D";
-					init="GrpRUS_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 2 Driver";
 				};
 			};
@@ -1387,7 +1387,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitRUS_IFV3_C";
-					init="GrpRUS_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 3 Commander";
 				};
 				class Item1
@@ -1400,7 +1400,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV3_G";
-					init="GrpRUS_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 3 Gunner";
 				};
 				class Item2
@@ -1413,7 +1413,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV3_D";
-					init="GrpRUS_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 3 Driver";
 				};
 			};
@@ -1435,7 +1435,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitRUS_IFV4_C";
-					init="GrpRUS_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 4 Commander";
 				};
 				class Item1
@@ -1448,7 +1448,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV4_G";
-					init="GrpRUS_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 4 Gunner";
 				};
 				class Item2
@@ -1461,7 +1461,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV4_D";
-					init="GrpRUS_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 4 Driver";
 				};
 			};
@@ -1483,7 +1483,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitRUS_IFV5_C";
-					init="GrpRUS_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 5 Commander";
 				};
 				class Item1
@@ -1496,7 +1496,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV5_G";
-					init="GrpRUS_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 5 Gunner";
 				};
 				class Item2
@@ -1509,7 +1509,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV5_D";
-					init="GrpRUS_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 5 Driver";
 				};
 			};
@@ -1531,7 +1531,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitRUS_IFV6_C";
-					init="GrpRUS_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 6 Commander";
 				};
 				class Item1
@@ -1544,7 +1544,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV6_G";
-					init="GrpRUS_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 6 Gunner";
 				};
 				class Item2
@@ -1557,7 +1557,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV6_D";
-					init="GrpRUS_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 6 Driver";
 				};
 			};
@@ -1579,7 +1579,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitRUS_IFV7_C";
-					init="GrpRUS_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 7 Commander";
 				};
 				class Item1
@@ -1592,7 +1592,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV7_G";
-					init="GrpRUS_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 7 Gunner";
 				};
 				class Item2
@@ -1605,7 +1605,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV7_D";
-					init="GrpRUS_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear; ";
+					init="GrpRUS_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear; ";
 					description="Russian IFV 7 Driver";
 				};
 			};
@@ -1627,7 +1627,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitRUS_IFV8_C";
-					init="GrpRUS_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 8 Commander";
 				};
 				class Item1
@@ -1640,7 +1640,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV8_G";
-					init="GrpRUS_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 8 Gunner";
 				};
 				class Item2
@@ -1653,7 +1653,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitRUS_IFV8_D";
-					init="GrpRUS_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpRUS_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="Russian IFV 8 Driver";
 				};
 			};
@@ -2542,7 +2542,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH1_P";
-					init="GrpUSMC_MEU_WOOD_TH1 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -2556,7 +2556,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH1_CP";
-					init="GrpUSMC_MEU_WOOD_TH1 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 1 Co-Pilot";
 				};
 				class Item2
@@ -2570,7 +2570,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH1_G1";
-					init="GrpUSMC_MEU_WOOD_TH1 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 1 Gunner";
 				};
 				class Item3
@@ -2584,7 +2584,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH1_G2";
-					init="GrpUSMC_MEU_WOOD_TH1 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 1 Gunner";
 				};
 			};
@@ -2607,7 +2607,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH2_P";
-					init="GrpUSMC_MEU_WOOD_TH2 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -2621,7 +2621,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH2_CP";
-					init="GrpUSMC_MEU_WOOD_TH2 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 2 Co-Pilot";
 				};
 				class Item2
@@ -2635,7 +2635,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH2_G1";
-					init="GrpUSMC_MEU_WOOD_TH2 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 2 Gunner";
 				};
 				class Item3
@@ -2649,7 +2649,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH2_G2";
-					init="GrpUSMC_MEU_WOOD_TH2 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 2 Gunner";
 				};
 			};
@@ -2672,7 +2672,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH3_P";
-					init="GrpUSMC_MEU_WOOD_TH3 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -2686,7 +2686,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH3_CP";
-					init="GrpUSMC_MEU_WOOD_TH3 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 3 Co-Pilot";
 				};
 				class Item2
@@ -2700,7 +2700,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH3_G1";
-					init="GrpUSMC_MEU_WOOD_TH3 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 3 Gunner";
 				};
 				class Item3
@@ -2714,7 +2714,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH3_G2";
-					init="GrpUSMC_MEU_WOOD_TH3 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 3 Gunner";
 				};
 			};
@@ -2737,7 +2737,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH4_P";
-					init="GrpUSMC_MEU_WOOD_TH4 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -2751,7 +2751,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH4_CP";
-					init="GrpUSMC_MEU_WOOD_TH4 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 4 Co-Pilot";
 				};
 				class Item2
@@ -2765,7 +2765,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH4_G1";
-					init="GrpUSMC_MEU_WOOD_TH4 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 4 Gunner";
 				};
 				class Item3
@@ -2779,7 +2779,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TH4_G2";
-					init="GrpUSMC_MEU_WOOD_TH4 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Transport Helo 4 Gunner";
 				};
 			};
@@ -2802,7 +2802,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV1_C";
-					init="GrpUSMC_MEU_WOOD_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 1 Commander";
 				};
 				class Item1
@@ -2816,7 +2816,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV1_G";
-					init="GrpUSMC_MEU_WOOD_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 1 Gunner";
 				};
 				class Item2
@@ -2829,7 +2829,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV1_D";
-					init="GrpUSMC_MEU_WOOD_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 1 Driver";
 				};
 			};
@@ -2852,7 +2852,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV2_C";
-					init="GrpUSMC_MEU_WOOD_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 2 Commander";
 				};
 				class Item1
@@ -2866,7 +2866,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV2_G";
-					init="GrpUSMC_MEU_WOOD_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 2 Gunner";
 				};
 				class Item2
@@ -2879,7 +2879,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV2_D";
-					init="GrpUSMC_MEU_WOOD_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 2 Driver";
 				};
 			};
@@ -2902,7 +2902,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV3_C";
-					init="GrpUSMC_MEU_WOOD_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 3 Commander";
 				};
 				class Item1
@@ -2916,7 +2916,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV3_G";
-					init="GrpUSMC_MEU_WOOD_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 3 Gunner";
 				};
 				class Item2
@@ -2929,7 +2929,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV3_D";
-					init="GrpUSMC_MEU_WOOD_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 3 Driver";
 				};
 			};
@@ -2952,7 +2952,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV4_C";
-					init="GrpUSMC_MEU_WOOD_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 4 Commander";
 				};
 				class Item1
@@ -2966,7 +2966,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV4_G";
-					init="GrpUSMC_MEU_WOOD_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 4 Gunner";
 				};
 				class Item2
@@ -2979,7 +2979,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_IFV4_D";
-					init="GrpUSMC_MEU_WOOD_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC IFV 4 Driver";
 				};
 			};
@@ -3002,7 +3002,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TNK1_C";
-					init="GrpUSMC_MEU_WOOD_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Tank 1 Commander";
 				};
 				class Item1
@@ -3016,7 +3016,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TNK1_G";
-					init="GrpUSMC_MEU_WOOD_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Tank 1 Gunner";
 				};
 				class Item2
@@ -3029,7 +3029,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_TNK1_D";
-					init="GrpUSMC_MEU_WOOD_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Tank 1 Driver";
 				};
 			};
@@ -3052,7 +3052,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_AH1_P";
-					init="GrpUSMC_MEU_WOOD_AH1 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood; ";
+					init="GrpUSMC_MEU_WOOD_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood; ";
 					description="USMC Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -3066,7 +3066,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_AH1_CP";
-					init="GrpUSMC_MEU_WOOD_AH1 = group this; nul = [""p"",this] call f_fnc_assignGearAlternateUSMCWood;";
+					init="GrpUSMC_MEU_WOOD_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGearAlternateUSMCWood;";
 					description="USMC Attack Helo 1 Co-Pilot";
 				};
 			};
@@ -4006,7 +4006,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitBAF_TH1_P";
-					init="GrpBAF_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -4020,7 +4020,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitBAF_TH1_CP";
-					init="GrpBAF_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Transport Helo 1 Co-Pilot";
 				};
 			};
@@ -4043,7 +4043,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitBAF_TH2_P";
-					init="GrpBAF_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -4057,7 +4057,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitBAF_TH2_CP";
-					init="GrpBAF_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Transport Helo 2 Co-Pilot";
 				};
 			};
@@ -4080,7 +4080,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitBAF_TH3_P";
-					init="GrpBAF_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -4094,7 +4094,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitBAF_TH3_CP";
-					init="GrpBAF_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Transport Helo 3 Co-Pilot";
 				};
 			};
@@ -4117,7 +4117,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitBAF_TH4_P";
-					init="GrpBAF_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -4131,7 +4131,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitBAF_TH4_CP";
-					init="GrpBAF_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Transport Helo 4 Co-Pilot";
 				};
 			};
@@ -4154,7 +4154,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_IFV1_C";
-					init="GrpBAF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 1 Commander";
 				};
 				class Item1
@@ -4168,7 +4168,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_IFV1_G";
-					init="GrpBAF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 1 Gunner";
 				};
 				class Item2
@@ -4181,7 +4181,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitBAF_IFV1_D";
-					init="GrpBAF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 1 Driver";
 				};
 			};
@@ -4204,7 +4204,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_IFV2_C";
-					init="GrpBAF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 2 Commander";
 				};
 				class Item1
@@ -4218,7 +4218,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_IFV2_G";
-					init="GrpBAF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 2 Gunner";
 				};
 				class Item2
@@ -4231,7 +4231,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitBAF_IFV2_D";
-					init="GrpBAF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 2 Driver";
 				};
 			};
@@ -4254,7 +4254,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_IFV3_C";
-					init="GrpBAF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 3 Commander";
 				};
 				class Item1
@@ -4268,7 +4268,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_IFV3_G";
-					init="GrpBAF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 3 Gunner";
 				};
 				class Item2
@@ -4281,7 +4281,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitBAF_IFV3_D";
-					init="GrpBAF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 3 Driver";
 				};
 			};
@@ -4304,7 +4304,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_IFV4_C";
-					init="GrpBAF_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 4 Commander";
 				};
 				class Item1
@@ -4318,7 +4318,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_IFV4_G";
-					init="GrpBAF_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 4 Gunner";
 				};
 				class Item2
@@ -4331,7 +4331,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitBAF_IFV4_D";
-					init="GrpBAF_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF IFV 4 Driver";
 				};
 			};
@@ -4354,7 +4354,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_TNK1_C";
-					init="GrpBAF_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF Tank 1 Commander";
 				};
 				class Item1
@@ -4368,7 +4368,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitBAF_TNK1_G";
-					init="GrpBAF_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF Tank 1 Gunner";
 				};
 				class Item2
@@ -4381,7 +4381,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitBAF_TNK1_D";
-					init="GrpBAF_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpBAF_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="BAF Tank 1 Driver";
 				};
 			};
@@ -4404,7 +4404,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitBAF_AH1_P";
-					init="GrpBAF_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -4418,7 +4418,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitBAF_AH1_CP";
-					init="GrpBAF_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpBAF_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="BAF Attack Helo 1 Co-Pilot";
 				};
 			};
@@ -5307,7 +5307,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH1_P";
-					init="GrpUSMC_MEU_DES_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -5321,7 +5321,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH1_CP";
-					init="GrpUSMC_MEU_DES_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 1 Co-Pilot";
 				};
 				class Item2
@@ -5335,7 +5335,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH1_G1";
-					init="GrpUSMC_MEU_DES_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 1 Gunner";
 				};
 				class Item3
@@ -5349,7 +5349,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH1_G2";
-					init="GrpUSMC_MEU_DES_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 1 Gunner";
 				};
 			};
@@ -5372,7 +5372,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH2_P";
-					init="GrpUSMC_MEU_DES_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -5386,7 +5386,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH2_CP";
-					init="GrpUSMC_MEU_DES_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 2 Co-Pilot";
 				};
 				class Item2
@@ -5400,7 +5400,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH2_G1";
-					init="GrpUSMC_MEU_DES_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 2 Gunner";
 				};
 				class Item3
@@ -5414,7 +5414,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH2_G2";
-					init="GrpUSMC_MEU_DES_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 2 Gunner";
 				};
 			};
@@ -5437,7 +5437,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH3_P";
-					init="GrpUSMC_MEU_DES_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -5451,7 +5451,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH3_CP";
-					init="GrpUSMC_MEU_DES_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 3 Co-Pilot";
 				};
 				class Item2
@@ -5465,7 +5465,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH3_G1";
-					init="GrpUSMC_MEU_DES_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 3 Gunner";
 				};
 				class Item3
@@ -5479,7 +5479,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH3_G2";
-					init="GrpUSMC_MEU_DES_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 3 Gunner";
 				};
 			};
@@ -5502,7 +5502,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH4_P";
-					init="GrpUSMC_MEU_DES_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -5516,7 +5516,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH4_CP";
-					init="GrpUSMC_MEU_DES_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 4 Co-Pilot";
 				};
 				class Item2
@@ -5530,7 +5530,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH4_G1";
-					init="GrpUSMC_MEU_DES_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 4 Gunner";
 				};
 				class Item3
@@ -5544,7 +5544,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TH4_G2";
-					init="GrpUSMC_MEU_DES_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Transport Helo 4 Gunner";
 				};
 			};
@@ -5567,7 +5567,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV1_C";
-					init="GrpUSMC_MEU_DES_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 1 Commander";
 				};
 				class Item1
@@ -5581,7 +5581,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV1_G";
-					init="GrpUSMC_MEU_DES_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 1 Gunner";
 				};
 				class Item2
@@ -5594,7 +5594,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV1_D";
-					init="GrpUSMC_MEU_DES_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 1 Driver";
 				};
 			};
@@ -5617,7 +5617,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV2_C";
-					init="GrpUSMC_MEU_DES_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 2 Commander";
 				};
 				class Item1
@@ -5631,7 +5631,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV2_G";
-					init="GrpUSMC_MEU_DES_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 2 Gunner";
 				};
 				class Item2
@@ -5644,7 +5644,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV2_D";
-					init="GrpUSMC_MEU_DES_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 2 Driver";
 				};
 			};
@@ -5667,7 +5667,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV3_C";
-					init="GrpUSMC_MEU_DES_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 3 Commander";
 				};
 				class Item1
@@ -5681,7 +5681,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV3_G";
-					init="GrpUSMC_MEU_DES_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 3 Gunner";
 				};
 				class Item2
@@ -5694,7 +5694,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV3_D";
-					init="GrpUSMC_MEU_DES_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 3 Driver";
 				};
 			};
@@ -5717,7 +5717,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV4_C";
-					init="GrpUSMC_MEU_DES_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 4 Commander";
 				};
 				class Item1
@@ -5731,7 +5731,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV4_G";
-					init="GrpUSMC_MEU_DES_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 4 Gunner";
 				};
 				class Item2
@@ -5744,7 +5744,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_IFV4_D";
-					init="GrpUSMC_MEU_DES_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC IFV 4 Driver";
 				};
 			};
@@ -5767,7 +5767,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TNK1_C";
-					init="GrpUSMC_MEU_DES_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC Tank 1 Commander";
 				};
 				class Item1
@@ -5781,7 +5781,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TNK1_G";
-					init="GrpUSMC_MEU_DES_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC Tank 1 Gunner";
 				};
 				class Item2
@@ -5794,7 +5794,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_TNK1_D";
-					init="GrpUSMC_MEU_DES_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="USMC Tank 1 Driver";
 				};
 			};
@@ -5817,7 +5817,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_AH1_P";
-					init="GrpUSMC_MEU_DES_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -5831,7 +5831,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_AH1_CP";
-					init="GrpUSMC_MEU_DES_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSMC_MEU_DES_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="USMC Attack Helo 1 Co-Pilot";
 				};
 			};
@@ -6758,7 +6758,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_TH1_P";
-					init="GrpAGF_ARMY_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -6772,7 +6772,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_TH1_CP";
-					init="GrpAGF_ARMY_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 1 Co-Pilot";
 				};
 			};
@@ -6795,7 +6795,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_TH2_P";
-					init="GrpAGF_ARMY_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -6809,7 +6809,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_TH2_CP";
-					init="GrpAGF_ARMY_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 2 Co-Pilot";
 				};
 			};
@@ -6832,7 +6832,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_TH3_P";
-					init="GrpAGF_ARMY_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -6846,7 +6846,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_TH3_CP";
-					init="GrpAGF_ARMY_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 3 Co-Pilot";
 				};
 			};
@@ -6869,7 +6869,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_TH4_P";
-					init="GrpAGF_ARMY_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -6883,7 +6883,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_TH4_CP";
-					init="GrpAGF_ARMY_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 4 Co-Pilot";
 				};
 			};
@@ -6905,7 +6905,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV1_C";
-					init="GrpAGF_ARMY_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 1 Commander";
 				};
 				class Item1
@@ -6918,7 +6918,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV1_G";
-					init="GrpAGF_ARMY_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 1 Gunner";
 				};
 				class Item2
@@ -6931,7 +6931,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV1_D";
-					init="GrpAGF_ARMY_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 1 Driver";
 				};
 			};
@@ -6953,7 +6953,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV2_C";
-					init="GrpAGF_ARMY_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 2 Commander";
 				};
 				class Item1
@@ -6966,7 +6966,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV2_G";
-					init="GrpAGF_ARMY_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 2 Gunner";
 				};
 				class Item2
@@ -6979,7 +6979,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV2_D";
-					init="GrpAGF_ARMY_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 2 Driver";
 				};
 			};
@@ -7001,7 +7001,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV3_C";
-					init="GrpAGF_ARMY_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 3 Commander";
 				};
 				class Item1
@@ -7014,7 +7014,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV3_G";
-					init="GrpAGF_ARMY_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 3 Gunner";
 				};
 				class Item2
@@ -7027,7 +7027,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV3_D";
-					init="GrpAGF_ARMY_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 3 Driver";
 				};
 			};
@@ -7049,7 +7049,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV4_C";
-					init="GrpAGF_ARMY_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 4 Commander";
 				};
 				class Item1
@@ -7062,7 +7062,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV4_G";
-					init="GrpAGF_ARMY_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 4 Gunner";
 				};
 				class Item2
@@ -7075,7 +7075,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV4_D";
-					init="GrpAGF_ARMY_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 4 Driver";
 				};
 			};
@@ -7097,7 +7097,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV5_C";
-					init="GrpAGF_ARMY_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 5 Commander";
 				};
 				class Item1
@@ -7110,7 +7110,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV5_G";
-					init="GrpAGF_ARMY_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 5 Gunner";
 				};
 				class Item2
@@ -7123,7 +7123,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV5_D";
-					init="GrpAGF_ARMY_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 5 Driver";
 				};
 			};
@@ -7145,7 +7145,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV6_C";
-					init="GrpAGF_ARMY_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 6 Commander";
 				};
 				class Item1
@@ -7158,7 +7158,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV6_G";
-					init="GrpAGF_ARMY_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 6 Gunner";
 				};
 				class Item2
@@ -7171,7 +7171,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV6_D";
-					init="GrpAGF_ARMY_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 6 Driver";
 				};
 			};
@@ -7193,7 +7193,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV7_C";
-					init="GrpAGF_ARMY_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 7 Commander";
 				};
 				class Item1
@@ -7206,7 +7206,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV7_G";
-					init="GrpAGF_ARMY_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 7 Gunner";
 				};
 				class Item2
@@ -7219,7 +7219,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV7_D";
-					init="GrpAGF_ARMY_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear; ";
+					init="GrpAGF_ARMY_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear; ";
 					description="AGF IFV 7 Driver";
 				};
 			};
@@ -7241,7 +7241,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV8_C";
-					init="GrpAGF_ARMY_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 8 Commander";
 				};
 				class Item1
@@ -7254,7 +7254,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV8_G";
-					init="GrpAGF_ARMY_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 8 Gunner";
 				};
 				class Item2
@@ -7267,7 +7267,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_ARMY_IFV8_D";
-					init="GrpAGF_ARMY_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_ARMY_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 8 Driver";
 				};
 			};
@@ -8176,7 +8176,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAGF_SF_TH1_P";
-					init="GrpAGF_SF_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -8190,7 +8190,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAGF_SF_TH1_CP";
-					init="GrpAGF_SF_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 1 Co-Pilot";
 				};
 			};
@@ -8213,7 +8213,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAGF_SF_TH2_P";
-					init="GrpAGF_SF_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -8227,7 +8227,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAGF_SF_TH2_CP";
-					init="GrpAGF_SF_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 2 Co-Pilot";
 				};
 			};
@@ -8250,7 +8250,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAGF_SF_TH3_P";
-					init="GrpAGF_SF_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -8264,7 +8264,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAGF_SF_TH3_CP";
-					init="GrpAGF_SF_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 3 Co-Pilot";
 				};
 			};
@@ -8287,7 +8287,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAGF_SF_TH4_P";
-					init="GrpAGF_SF_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -8301,7 +8301,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAGF_SF_TH4_CP";
-					init="GrpAGF_SF_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="AGF Transport Helo 4 Co-Pilot";
 				};
 			};
@@ -8323,7 +8323,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV1_C";
-					init="GrpAGF_SF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 1 Commander";
 				};
 				class Item1
@@ -8336,7 +8336,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV1_G";
-					init="GrpAGF_SF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 1 Gunner";
 				};
 				class Item2
@@ -8349,7 +8349,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV1_D";
-					init="GrpAGF_SF_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 1 Driver";
 				};
 			};
@@ -8371,7 +8371,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV2_C";
-					init="GrpAGF_SF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 2 Commander";
 				};
 				class Item1
@@ -8384,7 +8384,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV2_G";
-					init="GrpAGF_SF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 2 Gunner";
 				};
 				class Item2
@@ -8397,7 +8397,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV2_D";
-					init="GrpAGF_SF_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 2 Driver";
 				};
 			};
@@ -8419,7 +8419,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV3_C";
-					init="GrpAGF_SF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 3 Commander";
 				};
 				class Item1
@@ -8432,7 +8432,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV3_G";
-					init="GrpAGF_SF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 3 Gunner";
 				};
 				class Item2
@@ -8445,7 +8445,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV3_D";
-					init="GrpAGF_SF_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 3 Driver";
 				};
 			};
@@ -8467,7 +8467,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV4_C";
-					init="GrpAGF_SF_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 4 Commander";
 				};
 				class Item1
@@ -8480,7 +8480,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV4_G";
-					init="GrpAGF_SF_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 4 Gunner";
 				};
 				class Item2
@@ -8493,7 +8493,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV4_D";
-					init="GrpAGF_SF_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 4 Driver";
 				};
 			};
@@ -8515,7 +8515,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV5_C";
-					init="GrpAGF_SF_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 5 Commander";
 				};
 				class Item1
@@ -8528,7 +8528,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV5_G";
-					init="GrpAGF_SF_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 5 Gunner";
 				};
 				class Item2
@@ -8541,7 +8541,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV5_D";
-					init="GrpAGF_SF_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 5 Driver";
 				};
 			};
@@ -8563,7 +8563,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV6_C";
-					init="GrpAGF_SF_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 6 Commander";
 				};
 				class Item1
@@ -8576,7 +8576,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV6_G";
-					init="GrpAGF_SF_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 6 Gunner";
 				};
 				class Item2
@@ -8589,7 +8589,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV6_D";
-					init="GrpAGF_SF_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 6 Driver";
 				};
 			};
@@ -8611,7 +8611,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV7_C";
-					init="GrpAGF_SF_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 7 Commander";
 				};
 				class Item1
@@ -8624,7 +8624,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV7_G";
-					init="GrpAGF_SF_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 7 Gunner";
 				};
 				class Item2
@@ -8637,7 +8637,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV7_D";
-					init="GrpAGF_SF_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear; ";
+					init="GrpAGF_SF_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear; ";
 					description="AGF IFV 7 Driver";
 				};
 			};
@@ -8659,7 +8659,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV8_C";
-					init="GrpAGF_SF_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 8 Commander";
 				};
 				class Item1
@@ -8672,7 +8672,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV8_G";
-					init="GrpAGF_SF_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 8 Gunner";
 				};
 				class Item2
@@ -8685,7 +8685,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAGF_SF_IFV8_D";
-					init="GrpAGF_SF_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpAGF_SF_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="AGF IFV 8 Driver";
 				};
 			};
@@ -9604,7 +9604,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH1_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -9618,7 +9618,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH1_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 1 Co-Pilot";
 				};
 			};
@@ -9641,7 +9641,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH2_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -9655,7 +9655,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH2_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 2 Co-Pilot";
 				};
 			};
@@ -9678,7 +9678,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH3_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -9692,7 +9692,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH3_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 3 Co-Pilot";
 				};
 			};
@@ -9715,7 +9715,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH4_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -9729,7 +9729,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH4_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 4 Co-Pilot";
 				};
 			};
@@ -9752,7 +9752,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH5_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 5 Pilot";
 				};
 				class Item1
@@ -9766,7 +9766,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH5_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 5 Co-Pilot";
 				};
 			};
@@ -9789,7 +9789,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH6_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 6 Pilot";
 				};
 				class Item1
@@ -9803,7 +9803,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH6_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 6 Co-Pilot";
 				};
 			};
@@ -9826,7 +9826,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH7_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 7 Pilot";
 				};
 				class Item1
@@ -9840,7 +9840,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH7_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 7 Co-Pilot";
 				};
 			};
@@ -9863,7 +9863,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH8_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 8 Pilot";
 				};
 				class Item1
@@ -9877,7 +9877,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TH8_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Transport Helo 8 Co-Pilot";
 				};
 			};
@@ -9900,7 +9900,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV1_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 1 Commander";
 				};
 				class Item1
@@ -9914,7 +9914,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV1_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 1 Gunner";
 				};
 				class Item2
@@ -9927,7 +9927,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV1_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 1 Driver";
 				};
 			};
@@ -9950,7 +9950,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV2_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 2 Commander";
 				};
 				class Item1
@@ -9964,7 +9964,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV2_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 2 Gunner";
 				};
 				class Item2
@@ -9977,7 +9977,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV2_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 2 Driver";
 				};
 			};
@@ -10000,7 +10000,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV3_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 3 Commander";
 				};
 				class Item1
@@ -10014,7 +10014,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV3_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 3 Gunner";
 				};
 				class Item2
@@ -10027,7 +10027,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV3_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 3 Driver";
 				};
 			};
@@ -10050,7 +10050,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV4_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 4 Commander";
 				};
 				class Item1
@@ -10064,7 +10064,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV4_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 4 Gunner";
 				};
 				class Item2
@@ -10077,7 +10077,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV4_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 4 Driver";
 				};
 			};
@@ -10100,7 +10100,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV5_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 5 Commander";
 				};
 				class Item1
@@ -10114,7 +10114,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV5_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 5 Gunner";
 				};
 				class Item2
@@ -10127,7 +10127,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV5_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 5 Driver";
 				};
 			};
@@ -10150,7 +10150,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV6_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 6 Commander";
 				};
 				class Item1
@@ -10164,7 +10164,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV6_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 6 Gunner";
 				};
 				class Item2
@@ -10177,7 +10177,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV6_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 6 Driver";
 				};
 			};
@@ -10200,7 +10200,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV7_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 7 Commander";
 				};
 				class Item1
@@ -10213,7 +10213,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV7_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 7 Gunner";
 				};
 				class Item2
@@ -10226,7 +10226,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV7_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 7 Driver";
 				};
 			};
@@ -10249,7 +10249,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV8_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 8 Commander";
 				};
 				class Item1
@@ -10263,7 +10263,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV8_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 8 Gunner";
 				};
 				class Item2
@@ -10276,7 +10276,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_IFV8_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa IFV 8 Driver";
 				};
 			};
@@ -10299,7 +10299,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TNK1_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Tank 1 Commander";
 				};
 				class Item1
@@ -10313,7 +10313,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TNK1_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Tank 1 Gunner";
 				};
 				class Item2
@@ -10326,7 +10326,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_TNK1_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Tank 1 Driver";
 				};
 			};
@@ -10349,7 +10349,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_AH1_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -10363,7 +10363,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAFRICAnormal_AH1_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Africa Attack Helo 1 Co-Pilot";
 				};
 			};
@@ -11256,7 +11256,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_TH1_P";
-					init="GrpUN_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -11270,7 +11270,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_TH1_CP";
-					init="GrpUN_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 1 Co-Pilot";
 				};
 				class Item2
@@ -11284,7 +11284,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUN_TH1_G1";
-					init="GrpUN_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 1 Gunner";
 				};
 				class Item3
@@ -11298,7 +11298,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TH1_G2";
-					init="GrpUN_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 1 Gunner";
 				};
 			};
@@ -11321,7 +11321,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_TH2_P";
-					init="GrpUN_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -11335,7 +11335,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_TH2_CP";
-					init="GrpUN_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 2 Co-Pilot";
 				};
 				class Item2
@@ -11349,7 +11349,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUN_TH2_G1";
-					init="GrpUN_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 2 Gunner";
 				};
 				class Item3
@@ -11363,7 +11363,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TH2_G2";
-					init="GrpUN_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 2 Gunner";
 				};
 			};
@@ -11386,7 +11386,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_TH3_P";
-					init="GrpUN_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -11400,7 +11400,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_TH3_CP";
-					init="GrpUN_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 3 Co-Pilot";
 				};
 				class Item2
@@ -11414,7 +11414,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUN_TH3_G1";
-					init="GrpUN_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 3 Gunner";
 				};
 				class Item3
@@ -11428,7 +11428,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TH3_G2";
-					init="GrpUN_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 3 Gunner";
 				};
 			};
@@ -11451,7 +11451,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_TH4_P";
-					init="GrpUN_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -11465,7 +11465,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_TH4_CP";
-					init="GrpUN_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 4 Co-Pilot";
 				};
 				class Item2
@@ -11479,7 +11479,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUN_TH4_G1";
-					init="GrpUN_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 4 Gunner";
 				};
 				class Item3
@@ -11493,7 +11493,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TH4_G2";
-					init="GrpUN_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 4 Gunner";
 				};
 			};
@@ -11516,7 +11516,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_TH5_P";
-					init="GrpUN_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH5 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 5 Pilot";
 				};
 				class Item1
@@ -11530,7 +11530,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_TH5_CP";
-					init="GrpUN_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH5 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 5 Co-Pilot";
 				};
 				class Item2
@@ -11544,7 +11544,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUN_TH5_G1";
-					init="GrpUN_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH5 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 5 Gunner";
 				};
 				class Item3
@@ -11558,7 +11558,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TH5_G2";
-					init="GrpUN_TH5 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH5 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 5 Gunner";
 				};
 			};
@@ -11581,7 +11581,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_TH6_P";
-					init="GrpUN_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH6 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 6 Pilot";
 				};
 				class Item1
@@ -11595,7 +11595,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_TH6_CP";
-					init="GrpUN_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH6 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 6 Co-Pilot";
 				};
 				class Item2
@@ -11609,7 +11609,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUN_TH6_G1";
-					init="GrpUN_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH6 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 6 Gunner";
 				};
 				class Item3
@@ -11623,7 +11623,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TH6_G2";
-					init="GrpUN_TH6 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH6 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 6 Gunner";
 				};
 			};
@@ -11646,7 +11646,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_TH7_P";
-					init="GrpUN_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH7 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 7 Pilot";
 				};
 				class Item1
@@ -11660,7 +11660,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_TH7_CP";
-					init="GrpUN_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH7 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 7 Co-Pilot";
 				};
 				class Item2
@@ -11674,7 +11674,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUN_TH7_G1";
-					init="GrpUN_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH7 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 7 Gunner";
 				};
 				class Item3
@@ -11688,7 +11688,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TH7_G2";
-					init="GrpUN_TH7 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH7 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 7 Gunner";
 				};
 			};
@@ -11711,7 +11711,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_TH8_P";
-					init="GrpUN_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH8 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 8 Pilot";
 				};
 				class Item1
@@ -11725,7 +11725,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_TH8_CP";
-					init="GrpUN_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH8 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 8 Co-Pilot";
 				};
 				class Item2
@@ -11739,7 +11739,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUN_TH8_G1";
-					init="GrpUN_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH8 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 8 Gunner";
 				};
 				class Item3
@@ -11753,7 +11753,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TH8_G2";
-					init="GrpUN_TH8 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_TH8 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Transport Helo 8 Gunner";
 				};
 			};
@@ -11776,7 +11776,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV1_C";
-					init="GrpUN_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 1 Commander";
 				};
 				class Item1
@@ -11790,7 +11790,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV1_G";
-					init="GrpUN_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 1 Gunner";
 				};
 				class Item2
@@ -11803,7 +11803,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_IFV1_D";
-					init="GrpUN_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 1 Driver";
 				};
 			};
@@ -11826,7 +11826,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV2_C";
-					init="GrpUN_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 2 Commander";
 				};
 				class Item1
@@ -11840,7 +11840,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV2_G";
-					init="GrpUN_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 2 Gunner";
 				};
 				class Item2
@@ -11853,7 +11853,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_IFV2_D";
-					init="GrpUN_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 2 Driver";
 				};
 			};
@@ -11876,7 +11876,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV3_C";
-					init="GrpUN_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 3 Commander";
 				};
 				class Item1
@@ -11890,7 +11890,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV3_G";
-					init="GrpUN_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 3 Gunner";
 				};
 				class Item2
@@ -11903,7 +11903,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_IFV3_D";
-					init="GrpUN_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 3 Driver";
 				};
 			};
@@ -11926,7 +11926,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV4_C";
-					init="GrpUN_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 4 Commander";
 				};
 				class Item1
@@ -11940,7 +11940,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV4_G";
-					init="GrpUN_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 4 Gunner";
 				};
 				class Item2
@@ -11953,7 +11953,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_IFV4_D";
-					init="GrpUN_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 4 Driver";
 				};
 			};
@@ -11976,7 +11976,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV5_C";
-					init="GrpUN_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 5 Commander";
 				};
 				class Item1
@@ -11990,7 +11990,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV5_G";
-					init="GrpUN_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 5 Gunner";
 				};
 				class Item2
@@ -12003,7 +12003,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_IFV5_D";
-					init="GrpUN_IFV5 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV5 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 5 Driver";
 				};
 			};
@@ -12026,7 +12026,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV6_C";
-					init="GrpUN_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 6 Commander";
 				};
 				class Item1
@@ -12040,7 +12040,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV6_G";
-					init="GrpUN_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 6 Gunner";
 				};
 				class Item2
@@ -12053,7 +12053,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_IFV6_D";
-					init="GrpUN_IFV6 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV6 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 6 Driver";
 				};
 			};
@@ -12076,7 +12076,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV7_C";
-					init="GrpUN_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 7 Commander";
 				};
 				class Item1
@@ -12090,7 +12090,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV7_G";
-					init="GrpUN_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 7 Gunner";
 				};
 				class Item2
@@ -12103,7 +12103,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_IFV7_D";
-					init="GrpUN_IFV7 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV7 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 7 Driver";
 				};
 			};
@@ -12126,7 +12126,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV8_C";
-					init="GrpUN_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 8 Commander";
 				};
 				class Item1
@@ -12140,7 +12140,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_IFV8_G";
-					init="GrpUN_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 8 Gunner";
 				};
 				class Item2
@@ -12153,7 +12153,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_IFV8_D";
-					init="GrpUN_IFV8 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_IFV8 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN IFV 8 Driver";
 				};
 			};
@@ -12176,7 +12176,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TNK1_C";
-					init="GrpUN_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN Tank 1 Commander";
 				};
 				class Item1
@@ -12190,7 +12190,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUN_TNK1_G";
-					init="GrpUN_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN Tank 1 Gunner";
 				};
 				class Item2
@@ -12203,7 +12203,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUN_TNK1_D";
-					init="GrpUN_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUN_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="UN Tank 1 Driver";
 				};
 			};
@@ -12226,7 +12226,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUN_AH1_P";
-					init="GrpUN_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -12240,7 +12240,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUN_AH1_CP";
-					init="GrpUN_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUN_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="UN Attack Helo 1 Co-Pilot";
 				};
 			};
@@ -13175,7 +13175,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH1_P_1";
-					init="GrpUSArmy_ACU_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -13189,7 +13189,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH1_CP_1";
-					init="GrpUSArmy_ACU_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 1 Co-Pilot";
 				};
 				class Item2
@@ -13203,7 +13203,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH1_G1_1";
-					init="GrpUSArmy_ACU_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 1 Gunner";
 				};
 				class Item3
@@ -13217,7 +13217,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH1_G2_1";
-					init="GrpUSArmy_ACU_TH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 1 Gunner";
 				};
 			};
@@ -13240,7 +13240,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH2_P_1";
-					init="GrpUSArmy_ACU_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -13254,7 +13254,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH2_CP_1";
-					init="GrpUSArmy_ACU_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 2 Co-Pilot";
 				};
 				class Item2
@@ -13268,7 +13268,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH2_G1_1";
-					init="GrpUSArmy_ACU_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 2 Gunner";
 				};
 				class Item3
@@ -13282,7 +13282,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH2_G2_1";
-					init="GrpUSArmy_ACU_TH2 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH2 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 2 Gunner";
 				};
 			};
@@ -13305,7 +13305,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH3_P_1";
-					init="GrpUSArmy_ACU_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -13319,7 +13319,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH3_CP_1";
-					init="GrpUSArmy_ACU_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 3 Co-Pilot";
 				};
 				class Item2
@@ -13333,7 +13333,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH3_G1_1";
-					init="GrpUSArmy_ACU_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 3 Gunner";
 				};
 				class Item3
@@ -13347,7 +13347,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH3_G2_1";
-					init="GrpUSArmy_ACU_TH3 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH3 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 3 Gunner";
 				};
 			};
@@ -13370,7 +13370,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH4_P_1";
-					init="GrpUSArmy_ACU_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -13384,7 +13384,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH4_CP_1";
-					init="GrpUSArmy_ACU_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 4 Co-Pilot";
 				};
 				class Item2
@@ -13398,7 +13398,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH4_G1_1";
-					init="GrpUSArmy_ACU_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 4 Gunner";
 				};
 				class Item3
@@ -13412,7 +13412,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TH4_G2_1";
-					init="GrpUSArmy_ACU_TH4 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TH4 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Transport Helo 4 Gunner";
 				};
 			};
@@ -13435,7 +13435,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV1_C_1";
-					init="GrpUSArmy_ACU_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 1 Commander";
 				};
 				class Item1
@@ -13449,7 +13449,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV1_G_1";
-					init="GrpUSArmy_ACU_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 1 Gunner";
 				};
 				class Item2
@@ -13462,7 +13462,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV1_D_1";
-					init="GrpUSArmy_ACU_IFV1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 1 Driver";
 				};
 			};
@@ -13485,7 +13485,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV2_C_1";
-					init="GrpUSArmy_ACU_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 2 Commander";
 				};
 				class Item1
@@ -13499,7 +13499,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV2_G_1";
-					init="GrpUSArmy_ACU_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 2 Gunner";
 				};
 				class Item2
@@ -13512,7 +13512,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV2_D_1";
-					init="GrpUSArmy_ACU_IFV2 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV2 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 2 Driver";
 				};
 			};
@@ -13535,7 +13535,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV3_C_1";
-					init="GrpUSArmy_ACU_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 3 Commander";
 				};
 				class Item1
@@ -13549,7 +13549,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV3_G_1";
-					init="GrpUSArmy_ACU_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 3 Gunner";
 				};
 				class Item2
@@ -13562,7 +13562,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV3_D_1";
-					init="GrpUSArmy_ACU_IFV3 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV3 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 3 Driver";
 				};
 			};
@@ -13585,7 +13585,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV4_C_1";
-					init="GrpUSArmy_ACU_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 4 Commander";
 				};
 				class Item1
@@ -13599,7 +13599,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV4_G_1";
-					init="GrpUSArmy_ACU_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 4 Gunner";
 				};
 				class Item2
@@ -13612,7 +13612,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_IFV4_D_1";
-					init="GrpUSArmy_ACU_IFV4 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_IFV4 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army IFV 4 Driver";
 				};
 			};
@@ -13635,7 +13635,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TNK1_C_1";
-					init="GrpUSArmy_ACU_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army Tank 1 Commander";
 				};
 				class Item1
@@ -13649,7 +13649,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TNK1_G_1";
-					init="GrpUSArmy_ACU_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army Tank 1 Gunner";
 				};
 				class Item2
@@ -13662,7 +13662,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_TNK1_D_1";
-					init="GrpUSArmy_ACU_TNK1 = group this; nul = [""c"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_TNK1 = group this; nul = [""vd"",this] call f_fnc_assignGear;";
 					description="US Army Tank 1 Driver";
 				};
 			};
@@ -13685,7 +13685,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_AH1_P_1";
-					init="GrpUSArmy_ACU_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -13699,7 +13699,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitUSArmy_ACU_AH1_CP_1";
-					init="GrpUSArmy_ACU_AH1 = group this; nul = [""p"",this] call f_fnc_assignGear;";
+					init="GrpUSArmy_ACU_AH1 = group this; nul = [""pcc"",this] call f_fnc_assignGear;";
 					description="US Army Attack Helo 1 Co-Pilot";
 				};
 			};
@@ -14682,7 +14682,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_TH1_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -14696,7 +14696,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_TH1_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH1 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 1 Co-Pilot";
 				};
 			};
@@ -14719,7 +14719,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_TH2_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -14733,7 +14733,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_TH2_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH2 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 2 Co-Pilot";
 				};
 			};
@@ -14756,7 +14756,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_TH3_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -14770,7 +14770,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_TH3_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH3 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 3 Co-Pilot";
 				};
 			};
@@ -14793,7 +14793,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_TH4_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -14807,7 +14807,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_TH4_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH4 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 4 Co-Pilot";
 				};
 			};
@@ -14830,7 +14830,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_TH5_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 5 Pilot";
 				};
 				class Item1
@@ -14844,7 +14844,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_TH5_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH5 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 5 Co-Pilot";
 				};
 			};
@@ -14867,7 +14867,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_TH6_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 6 Pilot";
 				};
 				class Item1
@@ -14881,7 +14881,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_TH6_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH6 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 6 Co-Pilot";
 				};
 			};
@@ -14904,7 +14904,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_TH7_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 7 Pilot";
 				};
 				class Item1
@@ -14918,7 +14918,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_TH7_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH7 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 7 Co-Pilot";
 				};
 			};
@@ -14941,7 +14941,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_TH8_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 8 Pilot";
 				};
 				class Item1
@@ -14955,7 +14955,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_TH8_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TH8 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Transport Helo 8 Co-Pilot";
 				};
 			};
@@ -14978,7 +14978,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_IFV1_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 1 Commander";
 				};
 				class Item1
@@ -14992,7 +14992,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_IFV1_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 1 Gunner";
 				};
 				class Item2
@@ -15005,7 +15005,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV1_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 1 Driver";
 				};
 			};
@@ -15028,7 +15028,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_IFV2_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 2 Commander";
 				};
 				class Item1
@@ -15042,7 +15042,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_IFV2_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 2 Gunner";
 				};
 				class Item2
@@ -15055,7 +15055,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV2_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV2 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 2 Driver";
 				};
 			};
@@ -15078,7 +15078,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_IFV3_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 3 Commander";
 				};
 				class Item1
@@ -15092,7 +15092,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_IFV3_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 3 Gunner";
 				};
 				class Item2
@@ -15105,7 +15105,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV3_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV3 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 3 Driver";
 				};
 			};
@@ -15128,7 +15128,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_IFV4_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 4 Commander";
 				};
 				class Item1
@@ -15142,7 +15142,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_IFV4_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 4 Gunner";
 				};
 				class Item2
@@ -15155,7 +15155,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV4_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV4 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 4 Driver";
 				};
 			};
@@ -15178,7 +15178,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_IFV5_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 5 Commander";
 				};
 				class Item1
@@ -15192,7 +15192,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_IFV5_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 5 Gunner";
 				};
 				class Item2
@@ -15205,7 +15205,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV5_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV5 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 5 Driver";
 				};
 			};
@@ -15228,7 +15228,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_IFV6_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 6 Commander";
 				};
 				class Item1
@@ -15242,7 +15242,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_IFV6_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 6 Gunner";
 				};
 				class Item2
@@ -15255,7 +15255,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV6_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV6 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 6 Driver";
 				};
 			};
@@ -15278,7 +15278,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_IFV7_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 7 Commander";
 				};
 				class Item1
@@ -15292,7 +15292,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_IFV7_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 7 Gunner";
 				};
 				class Item2
@@ -15305,7 +15305,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV7_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV7 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 7 Driver";
 				};
 			};
@@ -15328,7 +15328,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_IFV8_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 8 Commander";
 				};
 				class Item1
@@ -15342,7 +15342,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_IFV8_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 8 Gunner";
 				};
 				class Item2
@@ -15355,7 +15355,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_IFV8_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_IFV8 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent IFV 8 Driver";
 				};
 			};
@@ -15378,7 +15378,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitME_INS_TNK1_C";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Tank 1 Commander";
 				};
 				class Item1
@@ -15392,7 +15392,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitME_INS_TNK1_G";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Tank 1 Gunner";
 				};
 				class Item2
@@ -15405,7 +15405,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitME_INS_TNK1_D";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""c"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_TNK1 = group (_this select 0); nul = [""vd"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Tank 1 Driver";
 				};
 			};
@@ -15428,7 +15428,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitME_INS_AH1_P";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -15442,7 +15442,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitME_INS_AH1_CP";
-					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""p"",(_this select 0)] call f_fnc_assignGear; };";
+					init="0 = [this] spawn { sleep 2; GrpME_INS_AH1 = group (_this select 0); nul = [""pcc"",(_this select 0)] call f_fnc_assignGear; };";
 					description="Insurgent Attack Helo 1 Co-Pilot";
 				};
 			};
