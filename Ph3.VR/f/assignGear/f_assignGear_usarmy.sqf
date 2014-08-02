@@ -163,8 +163,6 @@ _bagmtrg = "B_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "B_Mortar_01_support_F";		// used by Mortar assistant gunner
 _baghsamg = "B_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
-_bagTFARlongRANGE = "tf_rt1523g";			// used by ground infantry leaders
-_bagTFARairBORNE = "tf_anarc210";			// used by pilots and other airborne troops
 
 // ====================================================================================
 // MEDICAL
@@ -363,8 +361,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope2];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1,_scope2];		
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -388,8 +385,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope2];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1,_scope2];			
 	};
 
 // LOADOUT: MEDIC
@@ -520,8 +516,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1,_scope1];			
 	};
 
 // LOADOUT: HEAVY MG GUNNER
@@ -556,8 +551,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1];		
 	};
 
 // LOADOUT: MEDIUM AT GUNNER
@@ -591,8 +585,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1,_scope1];		
 	};
 
 // LOADOUT: HEAVY AT GUNNER
@@ -627,8 +620,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1,_scope1];		
 	};
 
 // LOADOUT: MORTAR GUNNER
@@ -663,8 +655,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1];		
 	};
 
 // LOADOUT: MEDIUM SAM GUNNER
@@ -698,8 +689,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1,_scope1];		
 	};
 
 // LOADOUT: HEAVY SAM GUNNER
@@ -734,8 +724,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1,_scope1];		
 	};
 
 // LOADOUT: SNIPER
@@ -769,8 +758,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-		_unit addBackpack _bagTFARlongRANGE;
+		_attachments = [_attach1,_scope1];		
 	};
 
 // LOADOUT: VEHICLE COMMANDER
