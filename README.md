@@ -6,6 +6,8 @@ Phramework
 
 
 ===============
+Ph2 and Ph3 are derivative of the [F2](http://ferstaberinde.com/f2/en//index.php?title=Main_Page) and [F3](http://ferstaberinde.com/f3/en//index.php?title=Main_Page) works. The content we have edited mainly consists of minor edits to gear, addition of many more factions from mods, and tweaks to the code, as well as a few minor additions. You can track F3's development at https://github.com/ferstaberinde/F3. 
+
 **PH3 Versions:**
 The latest Stable and Development versions can be found via the [release tab](https://github.com/Phantomsmedia/Phramework/releases) and the [direct download](https://github.com/Phantomsmedia/Phramework/archive/master.zip). 
 
