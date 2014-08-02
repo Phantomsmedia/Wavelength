@@ -251,7 +251,7 @@ _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_mas_mar_B_CombatUniform_des_tshirt"];
+_crewUniform = ["U_mas_mar_B_CombatUniform_veg_tshirt"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_mas_mar_ChestrigB_rgr"];
 _crewGlasses = [];
