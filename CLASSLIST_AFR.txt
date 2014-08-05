@@ -1,0 +1,478 @@
+AFRICAN CONFLICT  for A3          by massi
+---------------------------------------------------------------------------
+
+CLASSLIST
+
+
+UN FORCES (BLU) FACTION NAME (TO USE IN ALIVE) :  mas_afr_onu
+
+
+GOVERNATIVES (INDEP) FACTION NAME (TO USE IN ALIVE) :  mas_afr_ind
+
+
+REBELS (OPF) FACTION NAME (TO USE IN ALIVE) :  mas_afr_opf
+
+
+CIVILIAN (CIV) FACTION NAME (TO USE IN ALIVE) :  mas_afr_civ
+
+---------------------------------------------------------------------------
+
+Version: 1.2             
+---------------------------------------------------------------------------
+BLUFOR
+------------------------------------------------------------------------------------
+UN UNITS:
+
+"B_mas_afr_Soldier_F", "B_mas_afr_Soldier_GL_F", "B_mas_afr_Soldier_JTAC_F", "B_mas_afr_soldier_AR_F", "B_mas_afr_soldier_MG_F", "B_mas_afr_Soldier_lite_F", "B_mas_afr_Soldier_off_F", "B_mas_afr_Soldier_off_Fn", "B_mas_afr_Soldier_SL_F", "B_mas_afr_Soldier_TL_F", "B_mas_afr_soldier_M_F", "B_mas_afr_soldier_LAT_F", "B_mas_afr_soldier_AT_F", "B_mas_afr_soldier_LAA_F", "B_mas_afr_medic_F", "B_mas_afr_soldier_repair_F", "B_mas_afr_soldier_exp_F", "B_mas_afr_Helipilot_F", "B_mas_afr_Helicrew_F", "B_mas_afr_crew_F"
+
+
+UN SF ADVISORS UNITS:
+
+"B_mas_afr_recon_F", "B_mas_afr_recon_LAT_F", "B_mas_afr_recon_LAA_F", "B_mas_afr_recon_exp_F", "B_mas_afr_recon_medic_F", "B_mas_afr_recon_TL_F", "B_mas_afr_recon_M_F", "B_mas_afr_recon_JTAC_F", "B_mas_afr_recon_AR_F", "B_mas_afr_recon_UAV_F", "B_mas_afr_recon_Fn", "B_mas_afr_recon_Fl", "B_mas_afr_recon_LAT_Fn", "B_mas_afr_recon_LAA_Fn", "B_mas_afr_recon_exp_Fn", "B_mas_afr_recon_medic_Fn", "B_mas_afr_recon_TL_Fn", "B_mas_afr_recon_M_Fn", "B_mas_afr_recon_JTAC_Fn", "B_mas_afr_recon_AR_Fn"
+
+
+
+UN\PMC PSD:
+
+"B_mas_afr_contract1_F", "B_mas_afr_contract2_F", "B_mas_afr_contract3_F", "B_mas_afr_contract4_F" (UN Observer)
+
+
+
+UN VEHICLES:
+
+
+"B_mas_afr_Quadbike_01_F", "B_mas_afr_Offroad_01_F", "B_mas_afr_Offroad_01_armed_F", "B_mas_afr_Truck_02_logistic_F", "B_mas_afr_Truck_02_medic_F", "B_mas_afr_Truck_02_covered_F", "B_mas_afr_Truck_02_transport_F", "B_mas_afr_Boat_Transport_01_F", "B_mas_afr_Boat_Armed_01_F", "B_mas_afr_Mortar_01_F", "B_mas_afr_static_AT_F", "B_mas_afr_static_AA_F", "B_mas_afr_GMG_01_F", "B_mas_afr_GMG_01_high_F", "B_mas_afr_HMG_01_F", "B_mas_afr_HMG_01_high_F", "B_mas_afr_Heli_Light_02_F", "B_mas_afr_Heli_Light_02_unarmed_F", "B_mas_afr_MRAP_03_F", "B_mas_afr_MRAP_03_med_F", "B_mas_afr_MRAP_03_hmg_F", "B_mas_afr_MRAP_03_gmg_F"
+
+
+
+-------------------------------------------------------------------------------------
+INDEPENDENT
+----------------------------------------------------------------------------------------
+GOVERNATIVES ARMY UNITS:
+
+"I_mas_afr_Soldier_F", "I_mas_afr_Soldier_GL_F", "I_mas_afr_soldier_AR_F", "I_mas_afr_soldier_MG_F","I_mas_afr_Soldier_lite_F", "I_mas_afr_Soldier_off_F", "I_mas_afr_Soldier_off_Fn", "I_mas_afr_Soldier_SL_F", "I_mas_afr_Soldier_TL_F", "I_mas_afr_soldier_M_F", "I_mas_afr_soldier_LAT_F", "I_mas_afr_soldier_LAA_F", "I_mas_afr_medic_F", "I_mas_afr_soldier_repair_F", "I_mas_afr_soldier_exp_F"
+
+GOVERNATIVES ARMY SF UNITS:
+
+"I_mas_afr_recon_F", "I_mas_afr_recon_AR_F", "I_mas_afr_recon_LAT_F", "I_mas_afr_recon_LAA_F", "I_mas_afr_recon_exp_F", "I_mas_afr_recon_medic_F", "I_mas_afr_recon_TL_F", "I_mas_afr_recon_M_F", "I_mas_afr_recon_JTAC_F"
+
+
+
+GOVERNATIVES VEHICLES:
+
+
+"I_mas_afr_Quadbike_01_F", "I_mas_afr_Offroad_01_F", "I_mas_afr_Offroad_01_armed_F", "I_mas_afr_Offroad_01s_F", "I_mas_afr_Offroad_01s_armed_F", "I_mas_afr_Truck_02_logistic_F", "I_mas_afr_Truck_02_covered_F", "I_mas_afr_Truck_02_transport_F", "I_mas_afr_Boat_Transport_01_F", "I_mas_afr_Mortar_01_F", "I_mas_afr_static_AT_F", "I_mas_afr_static_AA_F", "I_mas_afr_GMG_01_F", "I_mas_afr_GMG_01_high_F", "I_mas_afr_HMG_01_F", "I_mas_afr_HMG_01_high_F"
+
+
+-------------------------------------------------------------------------------------
+OPFOR
+----------------------------------------------------------------------------------------
+REBEL ARMY UNITS:
+
+"O_mas_afr_Soldier_F", "O_mas_afr_Soldier_GL_F", "O_mas_afr_soldier_AR_F", "O_mas_afr_soldier_MG_F","O_mas_afr_Soldier_lite_F", "O_mas_afr_Soldier_off_F", "O_mas_afr_Soldier_SL_F", "O_mas_afr_Soldier_TL_Fn", "O_mas_afr_soldier_M_F", "O_mas_afr_soldier_LAT_F", "O_mas_afr_soldier_LAA_F", "O_mas_afr_medic_F", "O_mas_afr_soldier_repair_F", "O_mas_afr_soldier_exp_F"
+
+
+FOREIGN FIGHTERS UNITS:
+
+"O_mas_afr_recon_F", "O_mas_afr_recon_LAT_F", "O_mas_afr_recon_LAA_F", "O_mas_afr_recon_exp_F", "O_mas_afr_recon_medic_F", "O_mas_afr_recon_TL_F", "O_mas_afr_recon_AR_F", "O_mas_afr_recon_M_F", "O_mas_afr_recon_JTAC_F"
+
+
+
+RUSSIAN SPETSNAZ ADVISORS:
+
+"O_mas_afr_rusadv1_F", "O_mas_afr_rusadv2_F", "O_mas_afr_rusadv3_F"
+
+
+
+REBEL ARMED CIVILIAN:
+
+"O_mas_afr_Rebel1_F", "O_mas_afr_Rebel2_F", "O_mas_afr_Rebel3_F","O_mas_afr_Rebel4_F", "O_mas_afr_Rebel5_F", "O_mas_afr_Rebel6_F", "O_mas_afr_Rebel6a_F", "O_mas_afr_Rebel7_F", "O_mas_afr_Rebel8_F", "O_mas_afr_Rebel8a_F"
+
+
+
+REBELS VEHICLES:
+
+"O_mas_afr_Quadbike_01_F", "O_mas_afr_Offroad_01_F", "O_mas_afr_Offroad_01_armed_F", "O_mas_afr_Offroad_01s_F", "O_mas_afr_Offroad_01s_armed_F", "O_mas_afr_Offroad_01c_F", "O_mas_afr_Offroad_01c_armed_F", "O_mas_afr_Truck_02_logistic_F", "O_mas_afr_Truck_02_covered_F", "O_mas_afr_Truck_02_transport_F", "O_mas_afr_Boat_Transport_01_F", "O_mas_afr_Mortar_01_F", "O_mas_afr_static_AT_F", "O_mas_afr_static_AA_F", "O_mas_afr_GMG_01_F", "O_mas_afr_GMG_01_high_F", "O_mas_afr_HMG_01_F", "O_mas_afr_HMG_01_high_F"
+
+
+-------------------------------------------------------------------------------------
+CIVILLIANS
+----------------------------------------------------------------------------------------
+AFRICAN CIVILLIAN  UNITS:
+
+
+"C_mas_afr_1", "C_mas_afr_2", "C_mas_afr_3", "C_mas_afr_4", "C_mas_afr_5", "C_mas_afr_6", "C_mas_afr_7", "C_mas_afr_8", "C_mas_afr_9", "C_mas_afr_10"
+
+
+AFRICAN CIVILIAN VEHICLES:
+
+"C_mas_afr_Offroad_01_F", "C_mas_afr_Truck_02_covered_F", "C_mas_afr_Truck_02_transport_F", "C_mas_afr_Truck_02_refuel_F"
+
+
+-----------------------------------------------------------------------------------
+
+
+BALACLAVA in NVG SLOT with WORKING NVG and RECCE NVGs
+
+
+
+"NVGoggles_mas_mask" : Balaclava black + Headset + NVG(only when NVG swithched ON)
+
+"NVGoggles_mas_mask2" : Balaclava black + NVG(only when NVG swithched ON)
+
+"NVGoggles_mas_mask_b" : Balaclava Skull + Headset + NVG(only when NVG swithched ON)
+
+"NVGoggles_mas_mask2_b" : Balaclava Skull + NVG(only when NVG swithched ON)
+
+"NVGoggles_mas_mask_t" : Balaclava Tan + Headset + NVG(only when NVG swithched ON)
+
+"NVGoggles_mas_mask2_t" : Balaclava Tan + NVG(only when NVG swithched ON)
+
+"NVGoggles_mas_mask3" : multicam wrap + NVG(only when NVG swithched ON)
+
+"NVGoggles_mas"  : NVG Recon(Blufor) - (hided during day, to be used with light headgear\cap\booniehat...)
+
+"NVGoggles_o_mas" : NVG Recon(Opfor) - (hided during day, to be used with light headgear\cap\booniehat...)
+
+---------------------------------------------------------------------------------------
+
+
+
+AMMOBOXES
+
+
+"Box_mas_afr_i_Wps_F", "Box_mas_afr_i_equip_F", "Box_mas_afr_b_Wps_F", "Box_mas_afr_b_equip_F", "Box_mas_afr_o_Wps_F", "Box_mas_afr_o_equip_F"
+
+
+
+LEGEND
+
+_b  (blu)  blufor\UN\SF advisors
+
+_c  (civ)  civillian
+
+_i  (ind)  independent\governatives\gov. SF
+
+_o  (opf)  opfor\rebels\spetsnaz advisors
+
+_equip  gear\uniforms\headgear boxes
+
+_wps   weapons and ammo boxes
+
+
+-------------------------------------------------------------------------------------
+UNIFORMS
+
+"U_mas_afr_B_uniform", "U_mas_afr_B_uniform_s", "U_mas_afr_B_contact1", "U_mas_afr_B_contract2", "U_mas_afr_B_contract4", "U_mas_afr_I_uniform", "U_mas_afr_I_uniform_s", "U_mas_afr_O_uniform1", "U_mas_afr_O_uniform2", "U_mas_afr_O_uniform3", "U_mas_afr_O_uniform4", "U_mas_afr_O_uniform5", "U_mas_afr_O_uniform6", "U_mas_afr_O_uniform7", "U_mas_afr_O_uniform8", "U_mas_afr_O_rebel1", "U_mas_afr_O_rebel2", "U_mas_afr_O_rebel3", "U_mas_afr_O_rebel4", "U_mas_afr_O_rebel5", "U_mas_afr_O_rebel6", "U_mas_afr_O_rebel7", "U_mas_afr_O_rebel8", "U_mas_afr_O_rebel9", "U_mas_afr_O_rebel10", "U_mas_afr_C_Civil1", "U_mas_afr_C_Civil2", "U_mas_afr_C_Civil3", "U_mas_afr_C_Civil4", "U_mas_afr_C_Civil5", "U_mas_afr_C_Civil6", "U_mas_afr_C_Civil7", "U_mas_afr_C_Civil8", "U_mas_afr_C_Civil9", "U_mas_afr_C_Civil10"
+
+
+
+CHEST RIG, PLATE CARRIER AND BANDOLLIERS 
+
+"V_mas_afr_BandollierB_rgr", "V_mas_afr_BandollierO_rgr", "V_mas_afr_Rangemaster_belt", "V_mas_afr_BandollierB_blk", "V_mas_afr_PlateCarrier1_rgr", "V_mas_afr_ChestrigB_rgr_g", "V_mas_afr_ChestrigB_rgr", "V_mas_afr_TacVest_b", "V_mas_afr_TacVest_i", "V_mas_afr_TacVest_o", "V_mas_afr_PlateCarrierIA1_B"
+
+
+HEADGEAR
+
+"H_mas_afr_HelmetB", "H_mas_afr_HelmetI", "H_mas_afr_HelmetO", "H_mas_afr_Cap_headphones", "H_mas_afr_Cap", "H_mas_afr_Cap_onu", "H_mas_afr_c1", "H_mas_afr_c2", "H_mas_afr_c3", "H_mas_afr_c4", "H_mas_afr_MilCap_b", "H_mas_afr_MilCap_bs", "H_mas_afr_MilCap_i", "H_mas_afr_MilCap_is", "H_mas_afr_MilCap_o", "H_mas_afr_MilCap_os", "H_mas_afr_Booniehat_b", "H_mas_afr_Booniehat_b2", "H_mas_afr_Booniehat_o", "H_mas_afr_Booniehat_o2", "H_mas_afr_Booniehat_i", "H_mas_afr_Booniehat_i2", "H_mas_afr_Booniehat_c", "H_mas_afr_Booniehat_c2", "H_mas_afr_Balaclava", "H_mas_afr_beret_b", "H_mas_afr_beret_bs", "H_mas_afr_beret_i", "H_mas_afr_beret_is", "H_mas_afr_beret_o", "H_mas_afr_pro_ht", "H_mas_afr_pro_ht_bala", "H_mas_afr_helmet_ht", "H_mas_afr_helmet_ht_bala", "H_mas_afr_headset_b"
+
+
+LEGEND
+
+_b  (blu)  blufor\UN\SF advisors
+
+_c  (civ)  civillian
+
+_i  (ind)  independent\governatives\gov. SF
+
+_o  (opf)  opfor\rebels\spetsnaz advisors
+
+
+------------------------------------------------------------------------------------------
+
+GROUPS:
+
+
+class CfgGroups {
+	class West {
+		class mas_afr_onu {
+			name = "UN Security Forces";
+			
+			class Infantry {
+				name = "UN Infantry Troops";
+				
+				class BUS_mas_afr_InfSquad_b {
+					name = "Rifle Squad";
+				
+				class BUS_mas_afr_InfSquad_Weapons_b {
+					name = "Fire Support Squad";
+				
+				class BUS_mas_afr_InfTeam_b {
+					name = "Fire Team";
+				
+				class BUS_mas_afr_InfTeam_AT_b {
+					name = "Team Anti-Tank";
+				
+				class BUS_mas_afr_InfTeam_AA_b {
+					name = "Team Anti-Air";
+				
+				class BUS_mas_afr_InfSentry_b {
+					name = "Sentry Patrol";
+			
+			class SpecOps {
+				name = "UN SpecOps Troops";
+				
+				class BUS_mas_afr_InfDetch_rec_h_b {
+					name = "Assault Detachment";
+				
+				class BUS_mas_afr_InfTeam_rec_b {
+					name = "Recon Team(Light)";
+				
+				class BUS_mas_afr_InfTeam_rec_h_b {
+					name = "Recon Team(Heavy)";
+				
+				class BUS_mas_afr_InfAT_b {
+					name = "Team Anti-Tank";
+				
+				class BUS_mas_afr_InfAA_b {
+					name = "Team Anti-Air";
+				
+				class BUS_mas_afr_InfSniper_b {
+					name = "Sniper Team";
+				
+				class BUS_mas_afr_InfPSD_b {
+					name = "UN Contractor PSD Team";
+			
+			class Support {
+				name = "UN Support Troops";
+				
+				class BUS_mas_afr_Support_CLS_b {
+					name = "Combat Medic Team";
+				
+				class BUS_mas_afr_Support_EOD_b {
+					name = "Combat EOD Team";
+				
+				class BUS_mas_afr_Support_ENG_b {
+					name = "Combat Engineer Team";
+			
+			class Motorized {
+				name = "UN Motorized Troops";
+				
+				class BUS_mas_afr_Motrec_Team {
+					name = "Motorized SF Recon";
+				
+				class BUS_mas_afr_Motrec1_Team {
+					name = "Offroad SF Team";
+				
+				class BUS_mas_afr_Motrec2_Team {
+					name = "Offroad SF MG Team";
+				
+				class BUS_mas_afr_MotInf_Team {
+					name = "Motorized Patrol Team";
+
+				class BUS_mas_afr_MotInf_Team_med {
+					name = "Motorized Medic Team";
+				
+				class BUS_mas_afr_MotInf_AT {
+					name = "Motorized Anti-Tank Team";
+				
+				class BUS_mas_afr_MotInf_AA {
+					name = "Motorized Anti-Air Team";
+			
+			class Mechanized {
+				name = "UN Mechanized Troops";
+				
+				class BUS_mas_afr_MechInf_T {
+					name = "Mechanized Assault Squad";
+	
+	class Indep {
+		class mas_afr_ind {
+			name = "African Governatives Forces";
+			
+			class Infantry {
+				name = "Governatives Infantry";
+				
+				class IND_mas_afr_InfSquad_i {
+					name = "Rifle Squad";
+				
+				class IND_mas_afr_InfSquad_Weapons_i {
+					name = "Fire Support Squad";
+				
+				class IND_mas_afr_InfTeam_i {
+					name = "Fire Team";
+				
+				class IND_mas_afr_InfTeam_AT_i {
+					name = "Team Anti-Tank";
+				
+				class IND_mas_afr_InfTeam_AA_i {
+					name = "Team Anti-Air";
+				
+				class IND_mas_afr_InfSentry_i {
+					name = "Sentry Patrol";
+			
+			class SpecOps {
+				name = "Governatives SpecOps";
+				
+				class IND_mas_afr_InfDetch_rec_h_i {
+					name = "Assault Detachment";
+				
+				class IND_mas_afr_InfTeam_rec_h_i {
+					name = "Recon Team";
+				
+				class IND_mas_afr_InfAT_i {
+					name = "Team Anti-Tank";
+				
+				class IND_mas_afr_InfAA_i {
+					name = "Team Anti-Air";
+				
+				class IND_mas_afr_InfSniper_i {
+					name = "Sniper Team";
+			
+			class Support {
+				name = "Support Troops";
+				
+				class IND_mas_afr_Support_CLS_i {
+					name = "Combat Medic Team";
+				
+				class IND_mas_afr_Support_EOD_i {
+					name = "Combat EOD Team";
+				
+				class IND_mas_afr_Support_ENG_i {
+					name = "Combat Engineer Team";
+			
+			class Motorized {
+				name = "Motorized Troops";
+				
+				class IND_mas_afr_Motrec_Team {
+					name = "Motorized SF Recon";
+				
+				class IND_mas_afr_Motrec1_Team {
+					name = "Offroad SF Team";
+				
+				class IND_mas_afr_Motrec2_Team {
+					name = "Offroad MG Team";
+				
+				class IND_mas_afr_MotInf_Team {
+					name = "Motorized Patrol Team";
+				
+				class IND_mas_afr_MotInf_Team_med {
+					name = "Motorized Medic Team";
+				
+				class IND_mas_afr_MotInf_AT {
+					name = "Motorized Anti-Tank Team";
+				
+				class IND_mas_afr_MotInf_AA {
+					name = "Motorized Anti-Air Team";
+				
+				class IND_mas_afr_MechInf_T {
+					name = "Motorized Infantry Squad";
+	
+	class East {
+		class mas_afr_opf {
+			name = "African Rebel Forces";
+			
+			class Infantry {
+				name = "Rebel Infantry Troops";
+				
+				class OPF_mas_afr_InfSquad_o {
+					name = "Rifle Squad";
+
+				class OPF_mas_afr_InfSquad_Weapons_o {
+					name = "Fire Support Squad";
+				
+				class OPF_mas_afr_InfTeam_o {
+					name = "Fire Team";
+				
+				class OPF_mas_afr_InfTeam_AT_o {
+					name = "Team Anti-Tank";
+				
+				class OPF_mas_afr_InfTeam_AA_o {
+					name = "Team Anti-Air";
+				
+				class OPF_mas_afr_InfSentry_o {
+					name = "Sentry Patrol";
+			
+			class SpecOps {
+				name = "Rebel SpecOps Troops";
+				
+				class OPF_mas_afr_InfDetch_rec_h_o {
+					name = "Assault Detachment";
+				
+				class OPF_mas_afr_InfTeam_rec_h_o {
+					name = "Recon Team";
+				
+				class OPF_mas_afr_InfAT_o {
+					name = "Team Anti-Tank";
+				
+				class OPF_mas_afr_InfAA_o {
+					name = "Team Anti-Air";
+				
+				class OPF_mas_afr_InfSniper_o {
+					name = "Sniper Team";
+				
+				class OPF_mas_afr_InfAdvisors_o {
+					name = "Spetsnaz Advisors Team";
+				
+				class OPF_mas_afr_InfRebel_rec_h_o {
+					name = "Armed Civilian group";
+				
+				class OPF_mas_afr_InfRebel_rec {
+					name = "Armed Civilian team";
+			
+			class Support {
+				name = "Rebel Support Troops";
+				
+				class OPF_mas_afr_Support_CLS_o {
+					name = "Combat Medic Team";
+				
+				class OPF_mas_afr_Support_EOD_o {
+					name = "Combat EOD Team";
+				
+				class OPF_mas_afr_Support_ENG_o {
+					name = "Combat Engineer Team";
+			
+			class Motorized {
+				name = "Rebel Motorized Troops";
+				
+				class OPF_mas_afr_Motrec_Team {
+					name = "Motorized SF Recon";
+				
+				class OPF_mas_afr_Motrec1_Team {
+					name = "Offroad SF Team";
+				
+				class OPF_mas_afr_Motrec1civ_Team {
+					name = "Offroad Armed civilian";
+				
+				class OPF_mas_afr_Motrec2_Team {
+					name = "Offroad MG Team";
+				
+				class OPF_mas_afr_MotInf_Team {
+					name = "Motorized Patrol Team";
+				
+				class OPF_mas_afr_MotInf_Team_med {
+					name = "Motorized Medic Team";
+				
+				class OPF_mas_afr_MotInf_AT {
+					name = "Motorized Anti-Tank Team";
+				
+				class OPF_mas_afr_MotInf_AA {
+					name = "Motorized Anti-Air Team";
+				
+				class OPF_mas_afr_MechInf_T {
+					name = "Motorized Infantry Squad";
+	
+	class Civil {
+		name = "Civilians";
+		side = TCivilian;
+		
+		class mas_afr_civ {
+			name = "African Civilians";
+			
+			class Infantry {
+				name = "African Men";
+				
+				class CIV_mas_afr_InfRebel_rec_h_c {
+					name = "Civilian Crowd";
+				
+				class CIV_mas_afr_InfRebel_rec {
+					name = "Civilian Group";
