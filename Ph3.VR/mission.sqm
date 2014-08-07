@@ -104,11 +104,12 @@ class Mission
 		"A3_Structures_F_Ind_SolarPowerPlant",
 		"A3_Structures_F_EPA_Civ_Constructions",
 		"A3_Structures_F_Ind_Cargo",
-		"map_vr"
+		"map_vr",
+		"A3_Characters_F_EPC"
 	};
 	addOnsAuto[]=
 	{
-		"A3_Characters_F_Civil",
+		"A3_Characters_F_EPC",
 		"a3_characters_f",
 		"SUD_RUSSIANS",
 		"mas_usa_mars_b",
@@ -125,6 +126,7 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
+		"A3_Characters_F_Civil",
 		"A3_Modules_F",
 		"A3_Characters_F_Bootcamp",
 		"SUD_BTR100",
@@ -242,10 +244,10 @@ class Mission
 				class Item0
 				{
 					position[]={4327.2666,-0.035069183,2485.2383};
-					azimut=0.87358475;
+					azimut=0.87358499;
 					id=0;
 					side="CIV";
-					vehicle="C_man_polo_1_F";
+					vehicle="C_journalist_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -263,10 +265,10 @@ class Mission
 				class Item0
 				{
 					position[]={4328.3643,-0.034989912,2485.2524};
-					azimut=0.87358475;
+					azimut=0.87358499;
 					id=1;
 					side="CIV";
-					vehicle="C_man_polo_2_F";
+					vehicle="C_journalist_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
