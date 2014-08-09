@@ -111,12 +111,12 @@ _diverMag2 = "20Rnd_556x45_UW_mag";
 _glrifle = "hlc_rifle_aks74_GL";
 _glriflemag = "hlc_30Rnd_545x39_B_AK";
 _glriflemag_tr = "hlc_30Rnd_545x39_T_AK";
-_glmag = "1Rnd_HE_Grenade_shell";
+_glmag = "hlc_VOG25_AK";
 
 // Smoke for FTLs, Squad Leaders, etc
-_glsmokewhite = "1Rnd_Smoke_Grenade_shell";
-_glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
-_glsmokered = "1Rnd_SmokeRed_Grenade_shell";
+_glsmokewhite = "hlc_GRD_White";
+_glsmokegreen = "hlc_GRD_green";
+_glsmokered = "hlc_GRD_red";
 
 // Flares for FTLs, Squad Leaders, etc
 _glflarewhite = "3Rnd_UGL_FlareWhite_F";
