@@ -276,6 +276,59 @@ _groups = [
 ["GrpCSAT_AH1","CSAT AH1 -"],
 
 // ====================================================================================
+// Continuation of CSAT for SF
+// ====================================================================================
+
+["GrpCSATSF_CO","CSAT SF CO -"],
+["GrpCSATSF_DC","CSAT SF DC -"],
+
+["GrpCSATSF_ASL","CSAT SF ASL -"],
+["GrpCSATSF_A1","CSAT SF A1 -"],
+["GrpCSATSF_A2","CSAT SF A2 -"],
+["GrpCSATSF_A3","CSAT SF A3 -"],
+
+["GrpCSATSF_BSL","CSAT SF BSL -"],
+["GrpCSATSF_B1","CSAT SF B1 -"],
+["GrpCSATSF_B2","CSAT SF B2 -"],
+["GrpCSATSF_B3","CSAT SF B3 -"],
+
+["GrpCSATSF_CSL","CSAT SF CSL -"],
+["GrpCSATSF_C1","CSAT SF C1 -"],
+["GrpCSATSF_C2","CSAT SF C2 -"],
+["GrpCSATSF_C3","CSAT SF C3 -"],
+
+["GrpCSATSF_MMG1","CSAT SF MMG1 -"],
+["GrpCSATSF_MAT1","CSAT SF MAT1 -"],
+["GrpCSATSF_HAT1","CSAT SF HAT1 -"],
+["GrpCSATSF_HMG1","CSAT SF HMG1 -"],
+["GrpCSATSF_MTR1","CSAT SF MTR1 -"],
+["GrpCSATSF_MSAM1","CSAT SF MSAM1 -"],
+["GrpCSATSF_HSAM1","CSAT SF HSAM1 -"],
+["GrpCSATSF_ST1","CSAT SF ST1 -"],
+["GrpCSATSF_DT1","CSAT SF DT1 -"],
+["GrpCSATSF_ENG1","CSAT SF ENG1 -"],
+
+["GrpCSATSF_IFV1","CSAT SF IFV1 -"],
+["GrpCSATSF_IFV2","CSAT SF IFV2 -"],
+["GrpCSATSF_IFV3","CSAT SF IFV3 -"],
+["GrpCSATSF_IFV4","CSAT SF IFV4 -"],
+["GrpCSATSF_IFV5","CSAT SF IFV5 -"],
+["GrpCSATSF_IFV6","CSAT SF IFV6 -"],
+["GrpCSATSF_IFV7","CSAT SF IFV7 -"],
+["GrpCSATSF_IFV8","CSAT SF IFV8 -"],
+["GrpCSATSF_TNK1","CSAT SF TNK1 -"],
+
+["GrpCSATSF_TH1","CSAT SF TH1 -"],
+["GrpCSATSF_TH2","CSAT SF TH2 -"],
+["GrpCSATSF_TH3","CSAT SF TH3 -"],
+["GrpCSATSF_TH4","CSAT SF TH4 -"],
+["GrpCSATSF_TH5","CSAT SF TH5 -"],
+["GrpCSATSF_TH6","CSAT SF TH6 -"],
+["GrpCSATSF_TH7","CSAT SF TH7 -"],
+["GrpCSATSF_TH8","CSAT SF TH8 -"],
+["GrpCSATSF_AH1","CSAT SF AH1 -"],
+
+// ====================================================================================
 
 // GROUP IDs: OPFOR > FIA
 // Automatically assigns intelligible names to groups
