@@ -233,3 +233,9 @@ sleep 10;
     // Forces flashlights on
     // _unit enablegunlights "forceOn";   
     //} forEach allUnits;
+
+// ====================================================================================
+// IgiLoad
+// Credits: Igi_PL
+
+	_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
