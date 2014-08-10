@@ -183,9 +183,9 @@ _ARmag = "hlc_45Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_45Rnd_762x39_t_rpk";
 
 // Medium MG
-_MMG = "LMG_mas_pkm_F";
-_MMGmag = "100Rnd_mas_762x54_mag";
-_MMGmag_tr = "100Rnd_mas_762x54_T_mag";
+_MMG = "LMG_Zafir_F";
+_MMGmag = "150Rnd_762x51_Box";
+_MMGmag_tr = "150Rnd_762x51_Box_Tracer ";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
