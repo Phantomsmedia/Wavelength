@@ -231,8 +231,8 @@ _specOp = [];
 // The outfit-piece is randomly selected from the array for each unit
 
 // Woodland-Hex
-_baseUniform = ["U_O_CombatUniform_ocamo"];
-_baseHelmet = ["H_HelmetO_ocamo"];
+_baseUniform = ["U_O_SpecopsUniform_ocamo"];
+_baseHelmet = ["H_HelmetO_ocamo","H_HelmetLeaderO_ocamo"];
 _baseGlasses = [];
 
 // Urban
