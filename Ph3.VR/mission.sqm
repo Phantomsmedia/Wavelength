@@ -27961,7 +27961,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_CO";
-					init="GrpCSATSF_CO = group this; [""co"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_CO = group this; [""co"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Commander";
 				};
 				class Item1
@@ -27973,7 +27973,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_CO_M";
-					init="GrpCSATSF_CO = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_CO = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Medic";
 				};
 				class Item2
@@ -27985,7 +27985,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_CO_UAV";
-					init="GrpCSATSF_CO = group this; [""uav"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_CO = group this; [""uav"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF UAV Operator";
 				};
 				class Item3
@@ -27996,7 +27996,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_CO_D";
-					init="GrpCSATSF_CO = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_CO = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Driver (Repair)";
 				};
 			};
@@ -28018,7 +28018,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_DC";
-					init="GrpCSATSF_DC = group this; [""dc"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_DC = group this; [""dc"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Deputy Commander";
 				};
 				class Item1
@@ -28031,7 +28031,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_DC_M";
-					init="GrpCSATSF_DC = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_DC = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Medic";
 				};
 				class Item2
@@ -28043,7 +28043,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_DC_UAV";
-					init="GrpCSATSF_DC = group this; [""uav"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_DC = group this; [""uav"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF UAV Operator";
 				};
 				class Item3
@@ -28054,7 +28054,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_DC_D";
-					init="GrpCSATSF_DC = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_DC = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Driver (Repair)";
 				};
 			};
@@ -28076,7 +28076,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_ASL_SL";
-					init="GrpCSATSF_ASL = group this; [""dc"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_ASL = group this; [""dc"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha Squad Leader";
 				};
 				class Item1
@@ -28089,7 +28089,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_ASL_M";
-					init="GrpCSATSF_ASL = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_ASL = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha Medic";
 				};
 			};
@@ -28111,7 +28111,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_A1_FTL";
-					init="GrpCSATSF_A1 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A1 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -28123,7 +28123,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A1_AR";
-					init="GrpCSATSF_A1 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A1 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -28135,7 +28135,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A1_AAR";
-					init="GrpCSATSF_A1 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A1 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28147,7 +28147,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A1_AT";
-					init="GrpCSATSF_A1 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A1 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -28169,7 +28169,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_A2_FTL";
-					init="GrpCSATSF_A2 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A2 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -28181,7 +28181,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A2_AR";
-					init="GrpCSATSF_A2 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A2 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -28193,7 +28193,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A2_AAR";
-					init="GrpCSATSF_A2 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A2 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28205,7 +28205,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A2_AT";
-					init="GrpCSATSF_A2 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A2 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -28227,7 +28227,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_A3_FTL";
-					init="GrpCSATSF_A3 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A3 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -28239,7 +28239,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A3_AR";
-					init="GrpCSATSF_A3 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A3 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -28251,7 +28251,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A3_AAR";
-					init="GrpCSATSF_A3 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A3 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28263,7 +28263,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_A3_AT";
-					init="GrpCSATSF_A3 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_A3 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -28285,7 +28285,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_BSL_SL";
-					init="GrpCSATSF_BSL = group this; [""dc"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_BSL = group this; [""dc"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo Squad Leader";
 				};
 				class Item1
@@ -28298,7 +28298,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_BSL_M";
-					init="GrpCSATSF_BSL = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_BSL = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo Medic";
 				};
 			};
@@ -28320,7 +28320,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_B1_FTL";
-					init="GrpCSATSF_B1 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B1 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -28332,7 +28332,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B1_AR";
-					init="GrpCSATSF_B1 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B1 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 1 Automatic Rifleman";
 				};
 				class Item2
@@ -28344,7 +28344,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B1_AAR";
-					init="GrpCSATSF_B1 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B1 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28356,7 +28356,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B1_AT";
-					init="GrpCSATSF_B1 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B1 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -28378,7 +28378,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_B2_FTL";
-					init="GrpCSATSF_B2 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B2 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -28390,7 +28390,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B2_AR";
-					init="GrpCSATSF_B2 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B2 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -28402,7 +28402,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B2_AAR";
-					init="GrpCSATSF_B2 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B2 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28414,7 +28414,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B2_AT";
-					init="GrpCSATSF_B2 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B2 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -28436,7 +28436,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_B3_FTL";
-					init="GrpCSATSF_B3 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B3 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -28448,7 +28448,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B3_AR";
-					init="GrpCSATSF_B3 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B3 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -28460,7 +28460,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B3_AAR";
-					init="GrpCSATSF_B3 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B3 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28472,7 +28472,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_B3_AT";
-					init="GrpCSATSF_B3 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_B3 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -28494,7 +28494,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_CSL_SL";
-					init="GrpCSATSF_CSL = group this; [""dc"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_CSL = group this; [""dc"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie Squad Leader";
 				};
 				class Item1
@@ -28507,7 +28507,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_CSL_M";
-					init="GrpCSATSF_CSL = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_CSL = group this; [""m"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie Medic";
 				};
 			};
@@ -28529,7 +28529,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_C1_FTL";
-					init="GrpCSATSF_C1 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C1 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -28541,7 +28541,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C1_AR";
-					init="GrpCSATSF_C1 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C1 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -28553,7 +28553,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C1_AAR";
-					init="GrpCSATSF_C1 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C1 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28565,7 +28565,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C1_AT";
-					init="GrpCSATSF_C1 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C1 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -28587,7 +28587,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_C2_FTL";
-					init="GrpCSATSF_C2 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C2 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -28599,7 +28599,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C2_AR";
-					init="GrpCSATSF_C2 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C2 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -28611,7 +28611,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C2_AAR";
-					init="GrpCSATSF_C2 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C2 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28623,7 +28623,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C2_AT";
-					init="GrpCSATSF_C2 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C2 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -28645,7 +28645,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_C3_FTL";
-					init="GrpCSATSF_C3 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C3 = group this; [""ftl"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -28657,7 +28657,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C3_AR";
-					init="GrpCSATSF_C3 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C3 = group this; [""ar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -28669,7 +28669,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C3_AAR";
-					init="GrpCSATSF_C3 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C3 = group this; [""aar"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -28681,7 +28681,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSATSF_C3_AT";
-					init="GrpCSATSF_C3 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_C3 = group this; [""rat"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Charlie 3 Rifleman (AT)";
 				};
 			};
@@ -28702,7 +28702,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_TH1_P";
-					init="GrpCSATSF_TH1 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH1;";
+					player="PLAY CDG"; init="GrpCSATSF_TH1 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH1;";
 					description="CSAT SF Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -28714,7 +28714,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TH1_CP";
-					init="GrpCSATSF_TH1 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH1,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_TH1 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH1,[0]];";
 					description="CSAT SF Transport Helo 1 Co-Pilot (Repair)";
 				};
 			};
@@ -28735,7 +28735,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_TH2_P";
-					init="GrpCSATSF_TH2 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH2;";
+					player="PLAY CDG"; init="GrpCSATSF_TH2 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH2;";
 					description="CSAT SF Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -28747,7 +28747,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TH2_CP";
-					init="GrpCSATSF_TH2 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH2,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_TH2 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH2,[0]];";
 					description="CSAT SF Transport Helo 2 Co-Pilot (Repair)";
 				};
 			};
@@ -28768,7 +28768,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_TH3_P";
-					init="GrpCSATSF_TH3 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH3;";
+					player="PLAY CDG"; init="GrpCSATSF_TH3 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH3;";
 					description="CSAT SF Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -28780,7 +28780,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TH3_CP";
-					init="GrpCSATSF_TH3 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH3,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_TH3 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH3,[0]];";
 					description="CSAT SF Transport Helo 3 Co-Pilot (Repair)";
 				};
 			};
@@ -28801,7 +28801,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_TH4_P";
-					init="GrpCSATSF_TH4 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH4;";
+					player="PLAY CDG"; init="GrpCSATSF_TH4 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH4;";
 					description="CSAT SF Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -28813,7 +28813,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TH4_CP";
-					init="GrpCSATSF_TH4 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH4,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_TH4 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH4,[0]];";
 					description="CSAT SF Transport Helo 4 Co-Pilot (Repair)";
 				};
 			};
@@ -28834,7 +28834,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_TH5_P";
-					init="GrpCSATSF_TH5 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH5;";
+					player="PLAY CDG"; init="GrpCSATSF_TH5 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH5;";
 					description="CSAT SF Transport Helo 5 Pilot";
 				};
 				class Item1
@@ -28846,7 +28846,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TH5_CP";
-					init="GrpCSATSF_TH5 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH5,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_TH5 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH5,[0]];";
 					description="CSAT SF Transport Helo 5 Co-Pilot (Repair)";
 				};
 			};
@@ -28867,7 +28867,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_TH6_P";
-					init="GrpCSATSF_TH6 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH6;";
+					player="PLAY CDG"; init="GrpCSATSF_TH6 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH6;";
 					description="CSAT SF Transport Helo 6 Pilot";
 				};
 				class Item1
@@ -28879,7 +28879,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TH6_CP";
-					init="GrpCSATSF_TH6 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH6,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_TH6 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH6,[0]];";
 					description="CSAT SF Transport Helo 6 Co-Pilot (Repair)";
 				};
 			};
@@ -28900,7 +28900,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_TH7_P";
-					init="GrpCSATSF_TH7 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH7;";
+					player="PLAY CDG"; init="GrpCSATSF_TH7 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH7;";
 					description="CSAT SF Transport Helo 7 Pilot";
 				};
 				class Item1
@@ -28912,7 +28912,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TH7_CP";
-					init="GrpCSATSF_TH7 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH7,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_TH7 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH7,[0]];";
 					description="CSAT SF Transport Helo 7 Co-Pilot (Repair)";
 				};
 			};
@@ -28933,7 +28933,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_TH8_P";
-					init="GrpCSATSF_TH8 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH8;";
+					player="PLAY CDG"; init="GrpCSATSF_TH8 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TH8;";
 					description="CSAT SF Transport Helo 8 Pilot";
 				};
 				class Item1
@@ -28945,7 +28945,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TH8_CP";
-					init="GrpCSATSF_TH8 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH8,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_TH8 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_TH8,[0]];";
 					description="CSAT SF Transport Helo 8 Co-Pilot (Repair)";
 				};
 			};
@@ -28966,7 +28966,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV1_C";
-					init="GrpCSATSF_IFV1 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV1;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV1 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV1;";
 					description="CSAT SF IFV 1 Commander";
 				};
 				class Item1
@@ -28978,7 +28978,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV1_G";
-					init="GrpCSATSF_IFV1 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV1;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV1 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV1;";
 					description="CSAT SF IFV 1 Gunner";
 				};
 				class Item2
@@ -28989,7 +28989,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV1_D";
-					init="GrpCSATSF_IFV1 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV1;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV1 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV1;";
 					description="CSAT SF IFV 1 Driver (Repair)";
 				};
 			};
@@ -29010,7 +29010,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV2_C";
-					init="GrpCSATSF_IFV2 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV2;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV2 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV2;";
 					description="CSAT SF IFV 2 Commander";
 				};
 				class Item1
@@ -29022,7 +29022,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV2_G";
-					init="GrpCSATSF_IFV2 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV2;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV2 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV2;";
 					description="CSAT SF IFV 2 Gunner";
 				};
 				class Item2
@@ -29033,7 +29033,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV2_D";
-					init="GrpCSATSF_IFV2 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV2;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV2 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV2;";
 					description="CSAT SF IFV 2 Driver (Repair)";
 				};
 			};
@@ -29054,7 +29054,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV3_C";
-					init="GrpCSATSF_IFV3 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV3;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV3 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV3;";
 					description="CSAT SF IFV 3 Commander";
 				};
 				class Item1
@@ -29066,7 +29066,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV3_G";
-					init="GrpCSATSF_IFV3 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV3;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV3 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV3;";
 					description="CSAT SF IFV 3 Gunner";
 				};
 				class Item2
@@ -29077,7 +29077,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV3_D";
-					init="GrpCSATSF_IFV3 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV3;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV3 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV3;";
 					description="CSAT SF IFV 3 Driver (Repair)";
 				};
 			};
@@ -29098,7 +29098,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV4_C";
-					init="GrpCSATSF_IFV4 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV4;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV4 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV4;";
 					description="CSAT SF IFV 4 Commander";
 				};
 				class Item1
@@ -29110,7 +29110,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV4_G";
-					init="GrpCSATSF_IFV4 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV4;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV4 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV4;";
 					description="CSAT SF IFV 4 Gunner";
 				};
 				class Item2
@@ -29121,7 +29121,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV4_D";
-					init="GrpCSATSF_IFV4 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV4;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV4 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV4;";
 					description="CSAT SF IFV 4 Driver (Repair)";
 				};
 			};
@@ -29142,7 +29142,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV5_C";
-					init="GrpCSATSF_IFV5 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV5;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV5 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV5;";
 					description="CSAT SF IFV 5 Commander";
 				};
 				class Item1
@@ -29154,7 +29154,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV5_G";
-					init="GrpCSATSF_IFV5 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV5;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV5 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV5;";
 					description="CSAT SF IFV 5 Gunner";
 				};
 				class Item2
@@ -29165,7 +29165,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV5_D";
-					init="GrpCSATSF_IFV5 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV5;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV5 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV5;";
 					description="CSAT SF IFV 5 Driver (Repair)";
 				};
 			};
@@ -29186,7 +29186,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV6_C";
-					init="GrpCSATSF_IFV6 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV6;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV6 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV6;";
 					description="CSAT SF IFV 6 Commander";
 				};
 				class Item1
@@ -29198,7 +29198,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV6_G";
-					init="GrpCSATSF_IFV6 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV6;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV6 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV6;";
 					description="CSAT SF IFV 6 Gunner";
 				};
 				class Item2
@@ -29209,7 +29209,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV6_D";
-					init="GrpCSATSF_IFV6 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV6;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV6 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV6;";
 					description="CSAT SF IFV 6 Driver (Repair)";
 				};
 			};
@@ -29230,7 +29230,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV7_C";
-					init="GrpCSATSF_IFV7 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV7;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV7 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV7;";
 					description="CSAT SF IFV 7 Commander";
 				};
 				class Item1
@@ -29242,7 +29242,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV7_G";
-					init="GrpCSATSF_IFV7 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV7;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV7 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV7;";
 					description="CSAT SF IFV 7 Gunner";
 				};
 				class Item2
@@ -29253,7 +29253,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV7_D";
-					init="GrpCSATSF_IFV7 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV7;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV7 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV7;";
 					description="CSAT SF IFV 7 Driver (Repair)";
 				};
 			};
@@ -29274,7 +29274,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV8_C";
-					init="GrpCSATSF_IFV8 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV8;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV8 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_IFV8;";
 					description="CSAT SF IFV 8 Commander";
 				};
 				class Item1
@@ -29286,7 +29286,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV8_G";
-					init="GrpCSATSF_IFV8 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV8;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV8 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_IFV8;";
 					description="CSAT SF IFV 8 Gunner";
 				};
 				class Item2
@@ -29297,7 +29297,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_IFV8_D";
-					init="GrpCSATSF_IFV8 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV8;";
+					player="PLAY CDG"; init="GrpCSATSF_IFV8 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_IFV8;";
 					description="CSAT SF IFV 8 Driver (Repair)";
 				};
 			};
@@ -29318,7 +29318,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_TNK1_C";
-					init="GrpCSATSF_TNK1 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_TNK1;";
+					player="PLAY CDG"; init="GrpCSATSF_TNK1 = group this; [""vc"",this] call f_fnc_assignGearAlternateCSAT; this moveInCommander VehCSATSF_TNK1;";
 					description="CSAT SF Tank 1 Commander";
 				};
 				class Item1
@@ -29330,7 +29330,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_TNK1_G";
-					init="GrpCSATSF_TNK1 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_TNK1;";
+					player="PLAY CDG"; init="GrpCSATSF_TNK1 = group this; [""vg"",this] call f_fnc_assignGearAlternateCSAT; this moveInGunner VehCSATSF_TNK1;";
 					description="CSAT SF Tank 1 Gunner";
 				};
 				class Item2
@@ -29341,7 +29341,7 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					skill=0.60000002;
 					text="UnitCSATSF_TNK1_D";
-					init="GrpCSATSF_TNK1 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TNK1;";
+					player="PLAY CDG"; init="GrpCSATSF_TNK1 = group this; [""vd"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_TNK1;";
 					description="CSAT SF Tank 1 Driver (Repair)";
 				};
 			};
@@ -29362,7 +29362,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSATSF_AH1_P";
-					init="GrpCSATSF_AH1 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_AH1;";
+					player="PLAY CDG"; init="GrpCSATSF_AH1 = group this; [""pp"",this] call f_fnc_assignGearAlternateCSAT; this moveInDriver VehCSATSF_AH1;";
 					description="CSAT SF Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -29374,7 +29374,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSATSF_AH1_CP";
-					init="GrpCSATSF_AH1 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_AH1,[0]];";
+					player="PLAY CDG"; init="GrpCSATSF_AH1 = group this; [""pcc"",this] call f_fnc_assignGearAlternateCSAT; this moveInTurret [VehCSATSF_AH1,[0]];";
 					description="CSAT SF Attack Helo 1 Gunner (Repair)";
 				};
 			};
@@ -29471,7 +29471,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_MMG1_AG";
-					init="GrpCSATSF_MMG1 = group this; [""mmgag"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_MMG1 = group this; [""mmgag"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Medium MG Team 1 Spotter (Leader)";
 				};
 				class Item1
@@ -29482,7 +29482,7 @@ class Mission
 					vehicle="O_Soldier_AR_F";
 					skill=0.60000002;
 					text="UnitCSATSF_MMG1_G";
-					init="GrpCSATSF_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Medium MG Team 1 Gunner";
 				};
 			};
@@ -29503,7 +29503,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_HMG1_AG";
-					init="GrpCSATSF_HMG1 = group this; [""hmgag"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_HMG1 = group this; [""hmgag"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Heavy MG Team 1 Spotter (Leader)";
 				};
 				class Item1
@@ -29514,7 +29514,7 @@ class Mission
 					vehicle="O_support_MG_F";
 					skill=0.60000002;
 					text="UnitCSATSF_HMG1_G";
-					init="GrpCSATSF_HMG1 = group this; [""hmgg"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_HMG1 = group this; [""hmgg"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Heavy MG Team 1 Gunner";
 				};
 			};
@@ -29535,7 +29535,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_MAT1_AG";
-					init="GrpCSATSF_MAT1 = group this; [""matag"",this] call f_fnc_assignGearAlternateCSAT; ";
+					player="PLAY CDG"; init="GrpCSATSF_MAT1 = group this; [""matag"",this] call f_fnc_assignGearAlternateCSAT; ";
 					description="CSAT SF Medium AT Team 1 Spotter (Leader)";
 				};
 				class Item1
@@ -29546,7 +29546,7 @@ class Mission
 					vehicle="O_Soldier_AT_F";
 					skill=0.60000002;
 					text="UnitCSATSF_MAT1_G";
-					init="GrpCSATSF_MAT1 = group this; [""matg"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_MAT1 = group this; [""matg"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Medium AT Team 1 Gunner";
 				};
 			};
@@ -29567,7 +29567,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_HAT1_AG";
-					init="GrpCSATSF_HAT1 = group this; [""hatag"",this] call f_fnc_assignGearAlternateCSAT; ";
+					player="PLAY CDG"; init="GrpCSATSF_HAT1 = group this; [""hatag"",this] call f_fnc_assignGearAlternateCSAT; ";
 					description="CSAT SF Heavy AT Team 1 Spotter (Leader)";
 				};
 				class Item1
@@ -29578,7 +29578,7 @@ class Mission
 					vehicle="O_Soldier_AT_F";
 					skill=0.60000002;
 					text="UnitCSATSF_HAT1_G";
-					init="GrpCSATSF_HAT1 = group this; [""hatg"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_HAT1 = group this; [""hatg"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Heavy AT Team 1 Gunner";
 				};
 			};
@@ -29599,7 +29599,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_MTR1_AG";
-					init="GrpCSATSF_MTR1 = group this; [""mtrag"",this] call f_fnc_assignGearAlternateCSAT; ";
+					player="PLAY CDG"; init="GrpCSATSF_MTR1 = group this; [""mtrag"",this] call f_fnc_assignGearAlternateCSAT; ";
 					description="CSAT SF Mortar Team 1 Spotter (Leader)";
 				};
 				class Item1
@@ -29610,7 +29610,7 @@ class Mission
 					vehicle="O_support_Mort_F";
 					skill=0.60000002;
 					text="UnitCSATSF_MTR1_G";
-					init="GrpCSATSF_MTR1 = group this; [""mtrg"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_MTR1 = group this; [""mtrg"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Mortar Team 1 Gunner";
 				};
 			};
@@ -29631,7 +29631,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_MSAM1_AG";
-					init="GrpCSATSF_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGearAlternateCSAT; ";
+					player="PLAY CDG"; init="GrpCSATSF_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGearAlternateCSAT; ";
 					description="CSAT SF Medium SAM Team 1 Spotter (Leader)";
 				};
 				class Item1
@@ -29642,7 +29642,7 @@ class Mission
 					vehicle="O_Soldier_AA_F";
 					skill=0.60000002;
 					text="UnitCSATSF_MSAM1_G";
-					init="GrpCSATSF_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Medium SAM Team 1 Gunner";
 				};
 			};
@@ -29663,7 +29663,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_HSAM1_AG";
-					init="GrpCSATSF_HSAM1 = group this; [""hsamag"",this] call f_fnc_assignGearAlternateCSAT; ";
+					player="PLAY CDG"; init="GrpCSATSF_HSAM1 = group this; [""hsamag"",this] call f_fnc_assignGearAlternateCSAT; ";
 					description="CSAT SF Heavy SAM Team 1 Spotter (Leader)";
 				};
 				class Item1
@@ -29674,7 +29674,7 @@ class Mission
 					vehicle="O_Soldier_AA_F";
 					skill=0.60000002;
 					text="UnitCSATSF_HSAM1_G";
-					init="GrpCSATSF_HSAM1 = group this; [""hsamg"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_HSAM1 = group this; [""hsamg"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Heavy SAM Team 1 Gunner";
 				};
 			};
@@ -29695,7 +29695,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_ST1_SP";
-					init="GrpCSATSF_ST1 = group this; [""sp"",this] call f_fnc_assignGearAlternateCSAT; ";
+					player="PLAY CDG"; init="GrpCSATSF_ST1 = group this; [""sp"",this] call f_fnc_assignGearAlternateCSAT; ";
 					description="CSAT SF Sniper Team 1 Spotter (Leader)";
 				};
 				class Item1
@@ -29706,7 +29706,7 @@ class Mission
 					vehicle="O_sniper_F";
 					skill=0.60000002;
 					text="UnitCSATSF_ST1_SN";
-					init="GrpCSATSF_ST1 = group this; [""sn"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_ST1 = group this; [""sn"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Sniper Team 1 Sniper";
 				};
 			};
@@ -29727,7 +29727,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_ENG1_FTL";
-					init="GrpCSATSF_ENG1 = group this; [""eng"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_ENG1 = group this; [""eng"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
@@ -29738,7 +29738,7 @@ class Mission
 					vehicle="O_engineer_F";
 					skill=0.60000002;
 					text="UnitCSATSF_ENG1_A1";
-					init="GrpCSATSF_ENG1 = group this; [""eng"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_ENG1 = group this; [""eng"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
@@ -29749,7 +29749,7 @@ class Mission
 					vehicle="O_engineer_F";
 					skill=0.60000002;
 					text="UnitCSATSF_ENG1_A2";
-					init="GrpCSATSF_ENG1 = group this; [""engm"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_ENG1 = group this; [""engm"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
@@ -29760,7 +29760,7 @@ class Mission
 					vehicle="O_engineer_F";
 					skill=0.60000002;
 					text="UnitCSATSF_ENG1_A3";
-					init="GrpCSATSF_ENG1 = group this; [""engm"",this] call f_fnc_assignGearAlternateCSAT;";
+					player="PLAY CDG"; init="GrpCSATSF_ENG1 = group this; [""engm"",this] call f_fnc_assignGearAlternateCSAT;";
 					description="CSAT SF Engineer Team 1 Assistant (Mines)";
 				};
 			};
@@ -29781,7 +29781,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSATSF_DT1_TL";
-					init="GrpCSATSF_DT1 = group this; [""div"",this] call f_fnc_assignGearAlternateCSAT ";
+					player="PLAY CDG"; init="GrpCSATSF_DT1 = group this; [""div"",this] call f_fnc_assignGearAlternateCSAT ";
 					description="CSAT SF Diver Team 1 Team Leader";
 				};
 				class Item1
@@ -29793,7 +29793,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_DT1_D1";
-					init="GrpCSATSF_DT1 = group this; [""div"",this] call f_fnc_assignGearAlternateCSAT ";
+					player="PLAY CDG"; init="GrpCSATSF_DT1 = group this; [""div"",this] call f_fnc_assignGearAlternateCSAT ";
 					description="CSAT SF Diver Team 1 Diver";
 				};
 				class Item2
@@ -29805,7 +29805,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_DT1_D2";
-					init="GrpCSATSF_DT1 = group this; [""div"",this] call f_fnc_assignGearAlternateCSAT ";
+					player="PLAY CDG"; init="GrpCSATSF_DT1 = group this; [""div"",this] call f_fnc_assignGearAlternateCSAT ";
 					description="CSAT SF Diver Team 1 Diver";
 				};
 				class Item3
@@ -29817,7 +29817,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSATSF_DT1_D3";
-					init="GrpCSATSF_DT1 = group this; [""div"",this] call f_fnc_assignGearAlternateCSAT ";
+					player="PLAY CDG"; init="GrpCSATSF_DT1 = group this; [""div"",this] call f_fnc_assignGearAlternateCSAT ";
 					description="CSAT SF Diver Team 1 Diver";
 				};
 			};
@@ -29836,7 +29836,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					leader=1;
 					skill=0.60000002;
-					init="GrpCSATSF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					player="PLAY CDG"; init="GrpCSATSF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="CSAT SF RESERVED FOR JIP";
 				};
 				class Item1
@@ -29846,7 +29846,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="GrpCSATSF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					player="PLAY CDG"; init="GrpCSATSF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="CSAT SF RESERVED FOR JIP";
 				};
 				class Item2
@@ -29856,7 +29856,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="GrpCSATSF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					player="PLAY CDG"; init="GrpCSATSF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="CSAT SF RESERVED FOR JIP";
 				};
 				class Item3
@@ -29866,7 +29866,7 @@ class Mission
 					side="EAST";
 					vehicle="O_Soldier_F";
 					skill=0.60000002;
-					init="GrpCSATSF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					player="PLAY CDG"; init="GrpCSATSF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="CSAT SF RESERVED FOR JIP";
 				};
 			};
