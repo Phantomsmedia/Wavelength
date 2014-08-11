@@ -233,7 +233,7 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["AV_PlateCarrier2_UCP"];
-_mediumRig = ["AV_PlateCarrier3_UCP"]; 	// default for all infantry classes
+_mediumRig = ["AV_PlateCarrier1_UCP"]; 	// default for all infantry classes
 _heavyRig = ["AV_PlateCarrier1_UCP"];
 
 // Diver
@@ -249,7 +249,7 @@ _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_B_CombatUniform_mcam_vest"];
+_crewUniform = ["AV_CombatUniform1_UCP_shortsleeve"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_TacVest_blk"];
 _crewGlasses = [];
