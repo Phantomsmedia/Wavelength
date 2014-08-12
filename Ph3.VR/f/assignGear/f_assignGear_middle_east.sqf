@@ -158,11 +158,11 @@ _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
 _baghmgag = "O_HMG_01_support_F";			// used by Heavy MG assistant gunner
 _baghatg = "O_AT_01_weapon_F";				// used by Heavy AT gunner
-_baghatag = "B_HMG_01_support_F";			// used by Heavy AT assistant gunner
+_baghatag = "O_HMG_01_support_F";			// used by Heavy AT assistant gunner
 _bagmtrg = "O_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "O_Mortar_01_support_F";		// used by Mortar assistant gunner
 _baghsamg = "O_AA_01_weapon_F";				// used by Heavy SAM gunner
-_baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
+_baghsamag = "O_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
 // ====================================================================================
 // MEDICAL
