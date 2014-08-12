@@ -244,10 +244,3 @@ sleep 10;
 } forEach allUnits;
 
 */
-
-
-// ====================================================================================
-// IgiLoad
-// Credits: Igi_PL
-
-	_igiload = execVM "IgiLoad\IgiLoadInit.sqf";
