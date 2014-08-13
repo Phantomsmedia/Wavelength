@@ -194,8 +194,7 @@ f_var_JIP_GearMenu = true;     // Can JIP/respawned players select their own gea
 
 // ====================================================================================
 // PhanTactical - Intro Text
-// Credits: Phramework: http://github.com/phantomsmedia/phramework
-// A good intro text would be, "_DateStamp=Date; (Autosends Date to intro)","Western Takistan" "Mission Name". Or other. Enjoy!
+// Credits: Bourbon Warfare
 
 waitUntil{!(isNil "BIS_fnc_init")};
 sleep 10;
