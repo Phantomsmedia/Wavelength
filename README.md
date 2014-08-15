@@ -1,9 +1,10 @@
 Phramework
 ===============
+[![](http://img.shields.io/badge/Issues-4-red.svg)](https://github.com/Phantomsmedia/Phramework/issues)[![](http://img.shields.io/badge/Release-v2.0.0.5-blue.svg)](https://github.com/Phantomsmedia/Phramework/releases/tag/v2.0.0.5) 
 
 ![Ph](http://i5.minus.com/ib2ovbqhL4YeYU.png)
 
-[![](http://img.shields.io/badge/Issues-4-red.svg)](https://github.com/Phantomsmedia/Phramework/issues)[![](http://img.shields.io/badge/Release-v2.0.0.5-blue.svg)](https://github.com/Phantomsmedia/Phramework/releases/tag/v2.0.0.5) 
+
 
 ===============
 Ph2 and Ph3 are derivative of the [F2](http://ferstaberinde.com/f2/en//index.php?title=Main_Page) and [F3](http://ferstaberinde.com/f3/en//index.php?title=Main_Page) works. The content we have edited mainly consists of minor edits to gear, addition of many more factions from mods, and tweaks to the code, as well as a few minor additions. You can track F3's development at https://github.com/ferstaberinde/F3. 
