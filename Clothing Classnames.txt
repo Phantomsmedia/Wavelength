@@ -1,6 +1,7 @@
 Phramework 3 Clothing Classnames
 Compiled by KakePro
 NOTE: Not all mod clothing is included due to the fact I have to redownload all these mods for their clothing classnames.
+VANILLA CLOTHING: http://browser.six-projects.net/cfg_weapons/classlist?utf8=%E2%9C%93&version=73&commit=Change&options%5Bgroup_by%5D=weap_type&options%5Bcustom_type%5D=&options%5Bfaction%5D=
 
 AFR/AGF Clothing:
 MASKS:
@@ -107,3 +108,13 @@ H_CAF_AG_FUR, H_CAF_AG_FUR2
 H_CAF_AG_BEANIE
 
 H_CAF_AG_BOONIE_01, H_CAF_AG_BOONIE_02
+
+HIDDEN IDENTITIES BALACLAVAS: (Holy shit this took way too long to find.)
+
+Black Balaclava = G_Balaclava_blk
+
+Olive Balaclava = G_Balaclava_oli
+
+Balaclava with Low Profile Goggles = G_Balaclava_lowprofile
+
+Balaclava with Combat Goggles = G_Balaclava_combat
