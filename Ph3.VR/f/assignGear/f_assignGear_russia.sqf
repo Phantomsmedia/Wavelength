@@ -234,7 +234,7 @@ _specOp = [];
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["U_SUD_RU_Digi_Uniform02","U_SUD_RU_Digi_Uniform01"];
 _baseHelmet = ["H_SUD_6b27","H_SUD_6b27_v2"];
-_baseGlasses = ["G_Balaclava_oli",""];
+_baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_RU"];
