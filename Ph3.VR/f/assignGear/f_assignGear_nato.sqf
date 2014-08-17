@@ -165,13 +165,17 @@ _baghsamg = "B_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
 // ====================================================================================
-// MEDICAL
+// AGM MEDICAL AND MISC
 _bandage = "AGM_Bandage";					// 5 Per Soldier, 10 Per TL, 20 Per Medic
 _epipen = "AGM_Epipen";  					// 1 Per Soldier, 1 Per TL, 10 Per Medic
 _morphine = "AGM_Morphine";					// 1 Per Soldier, 2 Per TL, 15 Per Medic
 _bloodbag = "AGM_Bloodbag";					// 0 Per Soldier, 0 Per TL, 5 Per Medic
 _earplugs = "AGM_EarBuds";					// For Every Soldier
 _sparebarrel = "AGM_SpareBarrel";			// For LMG/MMG Only
+_keycuffs = "AGM_CableTie";                 // For FTL Only and 1 Per FTL
+_maptools = "AGM_MapTools";                 // For SLs and CMD
+_defusalkit = "AGM_DefusalKit";             // For Engineers
+_clacker = "AGM_Clacker";                   // For Engineers
 
 // ====================================================================================
 
