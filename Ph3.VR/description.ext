@@ -339,6 +339,7 @@ class CfgFunctions
 			class mpEnd{};
 			class mpEndReceiver{};
 		};
+// Assign Gear for all groups is assigned here. This is called from the init.
 		class assignGear
 		{
 			// Defines the functions to preInit the compling of the assignGear function used by units.
@@ -374,13 +375,93 @@ class CfgFunctions
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
 			class assignGearEUERebels{};			
-		};				
+		};	
+// Briefing for all groups is called here. This is called from the init. 	
+		class briefingAAF
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingAAF{};			
+		};	
+		class briefingAGF
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingAGF{};			
+		};
+		class briefingAfrica
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingAfrica{};			
+		};
+		class briefingBAF
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingBAF{};			
+		};		
+		class briefingCSAT
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingCSAT{};			
+		};		
 		class briefingEUERebels
 		{
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\briefing";
 			class briefingEUERebels{};			
-		};						
+		};		
+		class briefingFIA
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingFIA{};			
+		};		
+		class briefingMiddleEast
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingMiddleEast{};			
+		};		
+		class briefingNATO
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingNATO{};			
+		};	
+		class briefingPolice
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingPolice{};			
+		};			
+		class briefingRussia
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingRussia{};			
+		};	
+		class briefingUN
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingUN{};			
+		};	
+		class briefingUSArmy
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingUSArmy{};			
+		};	
+		class briefingUSMC
+		{
+			// Defines the functions to preInit the compling of the assignGear function used by units.
+			file = "f\briefing";
+			class briefingUSMC{};			
+		};			
+// Continue with normal Desc.ext work.		
 		class setGroupID
 		{
 			file = "f\setGroupID";
