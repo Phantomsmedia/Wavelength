@@ -173,6 +173,10 @@ _morphine = "AGM_Morphine";					// 1 Per Soldier, 2 Per TL, 15 Per Medic
 _bloodbag = "AGM_Bloodbag";					// 0 Per Soldier, 0 Per TL, 5 Per Medic
 _earplugs = "AGM_EarBuds";					// For Every Soldier
 _sparebarrel = "AGM_SpareBarrel";			// For LMG/MMG Only
+_keycuffs = "AGM_CableTie";                 // For FTL Only and 1 Per FTL
+_maptools = "AGM_MapTools";                 // For SLs and CMD
+_defusalkit = "AGM_DefusalKit";             // For Engineers
+_clacker = "AGM_Clacker";                   // For Engineers
 
 // ====================================================================================
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
