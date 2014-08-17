@@ -228,7 +228,7 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["U_CAF_AG_ME_ROBES_Mil_01","U_CAF_AG_ME_ROBES_mil_01a","U_CAF_AG_ME_ROBES_01","U_CAF_AG_ME_ROBES_01a","U_CAF_AG_ME_ROBES_01b","U_CAF_AG_ME_ROBES_01c","U_CAF_AG_ME_ROBES_01d","U_CAF_AG_ME_ROBES_02","U_CAF_AG_ME_ROBES_02a","U_CAF_AG_ME_ROBES_02b","U_CAF_AG_ME_ROBES_02c","U_CAF_AG_ME_ROBES_03","U_CAF_AG_ME_ROBES_03a,","U_CAF_AG_ME_ROBES_03b","U_CAF_AG_ME_ROBES_03c","U_CAF_AG_ME_ROBES_03d","U_CAF_AG_ME_ROBES_04","U_CAF_AG_ME_ROBES_04a","U_CAF_AG_ME_ROBES_04b","U_CAF_AG_ME_ROBES_04c","U_CAF_AG_ME_ROBES_04d"];
-_baseHelmet = ["H_caf_ag_paktol_02","H_caf_ag_paktol_03","H_caf_ag_paktol","H_caf_ag_paktol_04","H_caf_ag_turban","H_caf_ag_wrap","H_ShemagOpen_tan","H_ShemagOpen_khk"];
+_baseHelmet = ["H_caf_ag_paktol_02","H_caf_ag_paktol_03","H_caf_ag_paktol","H_caf_ag_paktol_04","H_caf_ag_turban","H_caf_ag_wrap"];
 _baseGlasses = [];
 
 // Armored vests
