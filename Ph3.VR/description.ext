@@ -389,18 +389,6 @@ class CfgFunctions
 			file = "f\briefing";
 			class briefingAGF{};			
 		};
-		class briefingAlternateCSAT
-		{
-			// Defines the functions to preInit the compling of the assignGear function used by units.
-			file = "f\briefing";
-			class briefingAlternateCSAT{};			
-		};
-		class briefingAlternateNATO
-		{
-			// Defines the functions to preInit the compling of the assignGear function used by units.
-			file = "f\briefing";
-			class briefingAlternateNATO{};			
-		};		
 		class briefingAfrica
 		{
 			// Defines the functions to preInit the compling of the assignGear function used by units.
