@@ -107,7 +107,7 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "hlc_rifle_aks74_GL";
+_glrifle = "hlc_rifle_akmgl";
 _glriflemag = "hlc_30Rnd_762x39_b_ak";
 _glriflemag_tr = "hlc_30Rnd_762x39_t_ak";
 _glmag = "hlc_VOG25_AK";
