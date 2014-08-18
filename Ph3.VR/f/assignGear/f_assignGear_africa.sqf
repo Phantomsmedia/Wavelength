@@ -60,8 +60,8 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "hlc_optic_kobra";	// Holosight
-_scope2 = "HLC_Optic_1p29";			// MRCO Scope - 1x - 6x
+_scope1 = "";	// Holosight
+_scope2 = "";			// MRCO Scope - 1x - 6x
 _scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
 
 // Default setup
@@ -87,12 +87,12 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "hlc_rifle_aks74";
-_riflemag = "hlc_30Rnd_545x39_B_AK";
-_riflemag_tr = "hlc_30Rnd_545x39_T_AK";
+_rifle = "hlc_rifle_akm";
+_riflemag = "hlc_30Rnd_762x39_b_ak";
+_riflemag_tr = "hlc_30Rnd_762x39_t_ak";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "hlc_rifle_aks74";
+_carbine = "hlc_rifle_aks74u";
 _carbinemag = "hlc_30Rnd_545x39_B_AK";
 _carbinemag_tr = "hlc_30Rnd_545x39_T_AK";
 
@@ -108,8 +108,8 @@ _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "hlc_rifle_aks74_GL";
-_glriflemag = "hlc_30Rnd_545x39_B_AK";
-_glriflemag_tr = "hlc_30Rnd_545x39_T_AK";
+_glriflemag = "hlc_30Rnd_762x39_b_ak";
+_glriflemag_tr = "hlc_30Rnd_762x39_t_ak";
 _glmag = "hlc_VOG25_AK";
 
 // Smoke for FTLs, Squad Leaders, etc
@@ -150,8 +150,8 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_cbr";			// carries 120, weighs 20
-_bagmedium = "B_FieldPack_cbr";				// carries 240, weighs 30
+_bagsmall = "B_FieldPack_cbr";				// carries 120, weighs 20
+_bagmedium = "B_Kitbag_cbr";				// carries 240, weighs 30
 _baglarge = "B_Carryall_cbr"; 				// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
@@ -231,13 +231,13 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_mas_afr_O_uniform7","U_mas_afr_O_uniform2","U_mas_afr_O_uniform6"];
-_baseHelmet = ["H_mas_afr_Booniehat_o","H_mas_afr_HelmetO"];
+_baseUniform = ["U_mas_afr_O_rebel8","U_mas_afr_O_rebel6","U_mas_afr_O_rebel1","U_mas_afr_O_rebel5"];
+_baseHelmet = ["H_mas_afr_c3","H_mas_afr_MilCap_os","H_mas_afr_c2","H_mas_afr_Booniehat_o2"];
 _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_mas_afr_BandollierB_rgr","V_mas_afr_BandollierB_blk","V_mas_afr_BandollierO_rgr"];
-_mediumRig = ["V_mas_afr_TacVest_o","V_mas_afr_TacVest_b"]; 	// default for all infantry classes
+_mediumRig = ["V_mas_afr_TacVest_o","V_mas_afr_TacVest_b","V_mas_afr_TacVest_i"]; 	// default for all infantry classes
 _heavyRig = ["V_mas_afr_PlateCarrier1_rgr"];
 
 // Diver
@@ -247,14 +247,14 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_mas_afr_O_uniform5"];
-_pilotHelmet = ["H_mas_afr_helmet_ht"];
+_pilotUniform = ["U_mas_afr_O_rebel10"];
+_pilotHelmet = ["H_mas_afr_headset_b"];
 _pilotRig = ["V_mas_afr_BandollierO_rgr"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_mas_afr_O_uniform5"];
-_crewHelmet = ["H_mas_afr_headset_b"];
+_crewUniform = ["U_mas_afr_O_rebel10"];
+_crewHelmet = ["H_mas_afr_helmet_ht"];
 _crewRig = ["V_mas_afr_BandollierO_rgr"];
 _crewGlasses = [];
 
@@ -265,9 +265,9 @@ _ghillieRig = ["V_Chestrig_rgr"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["U_mas_afr_O_uniform1"];
-_sfhelmet = ["H_mas_afr_HelmetO","H_mas_afr_MilCap_os","H_mas_afr_beret_o","H_mas_afr_Booniehat_o"];
-_sfRig = ["V_mas_afr_TacVest_o"];
+_sfuniform = ["U_mas_afr_O_rebel8"];
+_sfhelmet = ["H_mas_afr_c3","H_mas_afr_MilCap_os","H_mas_afr_c2","H_mas_afr_Booniehat_o2"];
+_sfRig = ["V_mas_afr_TacVest_o","V_mas_afr_TacVest_b","V_mas_afr_TacVest_i"];
 _sfGlasses = [];
 
 // ====================================================================================
