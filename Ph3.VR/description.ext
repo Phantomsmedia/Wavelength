@@ -186,7 +186,7 @@ class Params
 
 // F3 - Mission Conditions Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
+/*
 	class f_param_weather
 	{
 		title = "$STR_f_param_weather";
@@ -219,7 +219,7 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-
+*/
 // ============================================================================================
 
 // F3 - AI Skill Selector
