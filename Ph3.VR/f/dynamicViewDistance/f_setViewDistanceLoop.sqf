@@ -36,7 +36,7 @@ _sleep = 3;
 // player is in a non-cargo position within an actual vehicle, the appropriate view
 // distance is set.
 
-while {true} do {
+while {!isNull player} do {
 	_veh = vehicle player;
 	_seat = "";
 	_vd = f_var_viewDistance_default;
@@ -56,7 +56,7 @@ while {true} do {
 		// DEBUG
 		if (f_var_debugMode == 1) then
 		{
-			player sideChat format ["DEBUG (f\common\f_addSetViewDistanceEHs.sqf): Viewdistance set to: = %1",_vd];
+			player sideChat format ["DEBUG (f\setViewDistance\f_addSetViewDistanceEHs.sqf): Viewdistance set to: = %1",_vd];
 		};
 
 	// Wait until player changes the vehicle or changes seats. Sleep 1s between every check.

@@ -12,6 +12,13 @@ enableSaving [false, false];
 
 // ====================================================================================
 
+// F3 - Mute Orders and Reports
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+enableSentences false;
+
+// ====================================================================================
+
 // F3 - MapClick Teleport
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -55,7 +62,7 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 // F3 - F3 Folk ARPS Group Markers
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-[] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
+f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
 
 // ====================================================================================
 
@@ -63,7 +70,7 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
 
-f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
+f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
 
 // ====================================================================================
 
@@ -80,13 +87,13 @@ f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 // F3 - Dynamic View Distance
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-//f_var_viewDistance_default = 1250;
-//f_var_viewDistance_tank = 2000;
-//f_var_viewDistance_car = 2000;
-//f_var_viewDistance_rotaryWing = 2500;
-//f_var_viewDistance_fixedWing = 5000;
-//f_var_viewDistance_crewOnly = true;
-//[] execVM "f\dynamicViewDistance\f_setViewDistanceLoop.sqf";
+// f_var_viewDistance_default = 1250;
+// f_var_viewDistance_tank = 2000;
+// f_var_viewDistance_car = 2000;
+// f_var_viewDistance_rotaryWing = 2500;
+// f_var_viewDistance_fixedWing = 5000;
+// f_var_viewDistance_crewOnly = true;
+// [] execVM "f\dynamicViewDistance\f_setViewDistanceLoop.sqf";
 
 // ====================================================================================
 
@@ -118,39 +125,26 @@ f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 // F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
- [] execVM "f\setAISKill\f_setAISkill.sqf";
- f_var_civAI = independent; // Optional: The civilian AI will use this side's settings
+// [] execVM "f\setAISKill\f_setAISkill.sqf";
+// f_var_civAI = independent; // Optional: The civilian AI will use this side's settings
 
 // ====================================================================================
 
 // F3 - Name Tags
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
- f_showGroup_Nametags = true;			// Display unit's group (uses GroupID)
- f_showDistance_Nametags = true;	// Show distance to player
- f_showVehicle_Nametags = true;		// Show vehicle player is in
- [20] execVM "f\nametag\f_nametags.sqf";
-
-// ====================================================================================
-
-// F3 - Radio Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\radios\radio_init.sqf";
-
-// ====================================================================================
-
-// F3 - Simple Wounding System
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// [player] execVM "f\simplewoundingsystem\init.sqf";
+// f_showGroup_Nametags = true;				// Display unit's group (uses GroupID)
+// f_showDistance_Nametags = true;			// Show distance to player
+// f_showVehicle_Nametags = true;			// Show vehicle player is in
+// [20] execVM "f\nametag\f_nametags.sqf";
 
 // ====================================================================================
 
 // F3 - Group E&E Check
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-// [GroupName,ObjectName,100,1] execVM "f\server\f_groupEandECheck.sqf";
+// [side,ObjectName or "MarkerName",100,1] execVM "f\EandEcheck\f_EandECheckLoop.sqf";
+// [["Grp1","Grp2"],ObjectName or "MarkerName",100,1] execVM "f\EandEcheck\f_EandECheckLoop.sqf";
 
 // ====================================================================================
 
@@ -164,7 +158,7 @@ f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-// [false] execVM "f\common\f_groupJoinAddOption.sqf";
+// [false] execVM "f\groupJoin\f_groupJoinAction.sqf";
 
 // ====================================================================================
 
@@ -178,9 +172,9 @@ f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 // F3 - JIP setup
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-f_var_JIP_FirstMenu = false;   // Do players connecting for the first time get the JIP menu? - This only works in missions with respawn.
-f_var_JIP_RemoveCorpse = false; // Remove the old corpse of respawning players?
-f_var_JIP_GearMenu = true;     // Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
+f_var_JIP_FirstMenu = false;		// Do players connecting for the first time get the JIP menu? - This only works in missions with respawn.
+f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
+f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
 
 // ====================================================================================
 
@@ -194,6 +188,20 @@ f_var_JIP_GearMenu = true;     // Can JIP/respawned players select their own gea
 // 2 - cache all non-moving units, always exclude vehicle drivers
 // 3 - cache all units, incl. group leaders and vehicle drivers
 f_var_cachingAggressiveness = 2;
+
+// ====================================================================================
+
+// F3 - Radio Systems Support
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+[] execVM "f\radios\radio_init.sqf";
+
+// ====================================================================================
+
+// F3 - Medical Systems Support
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+[] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
 // PhanTactical - Intro Text
@@ -246,3 +254,4 @@ sleep 10;
 } forEach allUnits;
 
 */
+// ====================================================================================

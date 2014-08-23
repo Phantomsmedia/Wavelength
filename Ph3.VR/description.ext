@@ -1,4 +1,9 @@
 // ============================================================================================
+// TAW Tonic - View Distance Script
+
+#include "taw_vd\dialog.hpp"
+
+// ============================================================================================
 
 // F3 - Mission Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
@@ -7,7 +12,7 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 373;
+	maxPlayers = 453;
 };
 
 // ============================================================================================
@@ -57,39 +62,49 @@ class cfgNotifications
 		difficulty[] = {}; // Required difficulty settings. All listed difficulties has to be enabled
 	};
 
-	// Notification for the F3 Safe Start Component
+	// Notifications for the F3 Safe Start Component
 	class SafeStart
 	{
 		title = "SAFE START";
 		description = "%1";
 		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
-		duration = 15;
+		duration = 59;
+	};
+	class SafeStartMissionStarting
+	{
+		title = "SAFE START";
+		description = "%1";
+		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
+		duration = 3;
 	};
 
 	// Notification for the F3 Authorised Crew Component
 	class UnauthorisedCrew {
-		title= "Non-authorised crew!";
+		title= "NON-AUTHORISED CREW!";
 		description= "%1";
 		iconPicture = "\A3\ui_f\data\map\markers\military\warning_ca.paa";
-		duration = 10;
+		duration = 3;
 	};
 
 	// Notification for the F3 Authorised Crew Component
 	class MapClickTeleport {
-		title= "Teleport";
+		title= "NOTE";
 		description= "%1";
 		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
-		duration = 2;
+		duration = 3;
+	};
+
+	// Notification for the F3 JIP Component
+	class JIP {
+		title= "REINFORCEMENTS";
+		description= "%1";
+		iconPicture = "\A3\ui_f\data\map\markers\military\flag_ca.paa";
+		duration = 3;
 	};
 };
 
 // ============================================================================================
 
-// TAW Tonic - View Distance Script
-
-#include "taw_vd\dialog.hpp"
-
-// ============================================================================================
 // F3 - Start of Params code blocks.
 // WARNING: DO NOT DELETE OR COMMENT OUT THIS CODE BLOCK
 
@@ -139,6 +154,7 @@ class Params
             code = "f_var_radios = %1";
     };
 
+
 // ============================================================================================
 
 // F3 - Mission Timer/Safe Start
@@ -158,37 +174,70 @@ class Params
 // F3 - Mission Conditions Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
+	class f_param_weather
+	{
+		title = "$STR_f_param_weather";
+		values[] = {0,1,2,3,4,5,6,7,8};
+		texts[] = {$STR_f_param_weather_Option0,$STR_f_param_weather_Option1,$STR_f_param_weather_Option2,$STR_f_param_weather_Option3,$STR_f_param_weather_Option4,$STR_f_param_weather_Option5,$STR_f_param_weather_Option6,$STR_f_param_weather_Option7,$STR_f_param_weather_Option8};
+		default = 0;
+		function = "f_fnc_setWeather";		// This function is called to apply the values
+		isGlobal = 0;						// Execute this only on the server
+		code = "f_param_weather = %1";
+	};
+
+	class f_param_fog
+	{
+		title = "Fog";
+		values[] = {0,1,2};
+		texts[] = {"None","Light","Heavy"};
+		default = 0;
+		function = "f_fnc_SetFog";			// This function is called to apply the values
+		isGlobal = 0;						// Execute this only on the server
+		code = "f_param_fog = %1";
+	};
+
+    class f_param_timeOfDay
+	{
+		title = "$STR_f_param_timeOfDay";
+		values[] = {0,1,2,3,4,5,6,7};
+		texts[] = {$STR_f_param_timeOfDay_Option0,$STR_f_param_timeOfDay_Option1,$STR_f_param_timeOfDay_Option2,$STR_f_param_timeOfDay_Option3,$STR_f_param_timeOfDay_Option4,$STR_f_param_timeOfDay_Option5,$STR_f_param_timeOfDay_Option6,$STR_f_param_timeOfDay_Option7};
+		default = 4;
+		function = "f_fnc_setTime";			// This function is called to apply the values
+ 		isGlobal = 0;						// Execute this only on the server
+ 		code = "f_param_timeOfDay = %1";
+	};
+
 // ============================================================================================
 
-// F3 - AI Skill Selector (A&D)
+// F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-	class f_param_AISkill_BLUFOR
-	{
-		title = "$STR_f_param_AISkill_BLUFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_BLUFOR = %1";
-	};
-
-	class f_param_AISkill_OPFOR
-	{
-		title = "$STR_f_param_AISkill_OPFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_OPFOR = %1";
-	};
-
-	class f_param_AISkill_INDP
-	{
-		title = "$STR_f_param_AISkill_INDP";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_INDP = %1";
-	};
+//	class f_param_AISkill_BLUFOR
+//	{
+//		title = "$STR_f_param_AISkill_BLUFOR";
+//		values[] = {0,1,2,3};
+//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+//		default = 1;
+//		code = "f_param_AISkill_BLUFOR = %1";
+//	};
+//
+//	class f_param_AISkill_OPFOR
+//	{
+//		title = "$STR_f_param_AISkill_OPFOR";
+//		values[] = {0,1,2,3};
+//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+//		default = 1;
+//		code = "f_param_AISkill_OPFOR = %1";
+//	};
+//
+//	class f_param_AISkill_INDP
+//	{
+//		title = "$STR_f_param_AISkill_INDP";
+//		values[] = {0,1,2,3};
+//		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
+//		default = 1;
+//		code = "f_param_AISkill_INDP = %1";
+//	};
 
 // ============================================================================================
 
@@ -362,7 +411,7 @@ class CfgFunctions
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
 			class assignGearAlternateCSAT{};
-		};					
+		};						
 		class setGroupID
 		{
 			file = "f\setGroupID";

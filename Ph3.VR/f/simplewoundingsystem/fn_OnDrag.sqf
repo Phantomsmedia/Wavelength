@@ -8,13 +8,12 @@ _dragger setVariable ["revive_dragging",_unit,true];
 // the dragger gets a release option.
 if(local _dragger) then
 {
-	_unit addAction [format["Release %1",name _unit],{(_this select 1) setVariable ["revive_dragging",nil,true];(_this select 0) removeAction (_this select 2);}, nil, 6, false, true, "", "true"];
+	_dragger addAction [format["Release %1",name _unit],{(_this select 1) setVariable ["revive_dragging",nil,true];(_this select 1) removeAction (_this select 2);}, nil, 6, false, true, "", "true"];
 };
 // setup the unit and all that fun stuff.
 _unit attachTo [_dragger, [0, 1.1, 0.092]];
-_dragger playMoveNow "acinpknlmstpsraswrfldnon";
-_unit switchMove "AinjPpneMrunSnonWnonDb_grab";
-_unit playMove "AinjPpneMrunSnonWnonDb";
+_dragger switchMove "acinpknlmstpsraswrfldnon";
+_unit switchMove "AinjPpneMrunSnonWnonDb";
 _unit SetDir 180;
 _unit SetPos (getpos _unit);
 
