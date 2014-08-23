@@ -5,7 +5,7 @@
 // RADIO STRUCTURE
 
 // Whether long range radios are automatically added
-tf_no_auto_long_range_radio = true;
+tf_no_auto_long_range_radio = false;
 
 // Should a side use the same short-wave frequencies
 tf_same_sw_frequencies_for_side = true;
