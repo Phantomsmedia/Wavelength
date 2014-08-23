@@ -23,6 +23,8 @@ enableSaving [false, false];
 // f_var_mapClickTeleport_Uses = 0;					// How often the teleport action can be used. 0 = infinite usage.
 // f_var_mapClickTeleport_TimeLimit = 0; 			// If higher than 0 the action will be removed after the given time.
 // f_var_mapClickTeleport_GroupTeleport = false; 	// False: everyone can teleport. True: Only group leaders can teleport and will move their entire group.
+// f_var_mapClickTeleport_Units = [];				// Restrict map click teleport to these units
+// f_var_mapClickTeleport_Height = 0;				// If > 0 map click teleport will act as a HALO drop and automatically assign parachutes to units
 // [] execVM "f\mapClickTeleport\f_mapClickTeleportAction.sqf";
 
 // ====================================================================================
@@ -44,7 +46,7 @@ f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
 // F3 - Buddy Team Colours
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-f_script_setTeamColours = [] execVM "f\common\f_setTeamColours.sqf";
+f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 
 // ====================================================================================
 
@@ -160,14 +162,14 @@ f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
 // F3 - ORBAT Notes
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-[] execVM "f\common\f_orbatNotes.sqf";
+[] execVM "f\briefing\f_orbatNotes.sqf";
 
 // ====================================================================================
 
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-[false] execVM "f\common\f_groupJoinAddOption.sqf";
+// [false] execVM "f\common\f_groupJoinAddOption.sqf";
 
 // ====================================================================================
 
@@ -191,6 +193,12 @@ f_var_JIP_GearMenu = true;     // Can JIP/respawned players select their own gea
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [30] spawn f_fnc_cInit;
+
+// Note: Caching aggressiveness is set using the f_var_cachingAggressiveness variable; possible values:
+// 1 - cache only non-leaders and non-drivers
+// 2 - cache all non-moving units, always exclude vehicle drivers
+// 3 - cache all units, incl. group leaders and vehicle drivers
+f_var_cachingAggressiveness = 2;
 
 // ====================================================================================
 // PhanTactical - Intro Text
