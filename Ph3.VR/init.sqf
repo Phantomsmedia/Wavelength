@@ -4,11 +4,6 @@
 // https://github.com/Phantomsmedia/Phramework
 
 // ====================================================================================
-// PhanTactical - TFAR API Global Variables
-// Credits: Phramework: http://github.com/phantomsmedia/phramework
-TF_no_auto_long_range_radio = "true";
-
-// ====================================================================================
 
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
