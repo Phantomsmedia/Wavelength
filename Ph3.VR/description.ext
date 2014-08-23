@@ -426,6 +426,18 @@ class CfgFunctions
 			file = "f\preMount";
 			class mountGroups{};
 		};
+		class radios
+		{
+			file = "f\radios";
+			class acre_removeRadios{};
+			class acre_addRadios{};
+			class acre_setRadioFrequencies{};
+			class acre_configureSpectatorChat{};
+			class tfr_removeRadios{};
+			class tfr_addRadios{};
+			class tfr_setRadioFrequencies{};
+			class tfr_configureSpectatorChat{};
+		};
 		#include "f\simplewoundingsystem\config.hpp"
 		#include "f\spect\functions.hpp"
 
