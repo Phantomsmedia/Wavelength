@@ -177,7 +177,6 @@ _keycuffs = "AGM_CableTie";                 // For FTL Only and 1 Per FTL
 _maptools = "AGM_MapTools";                 // For SLs and CMD
 _defusalkit = "AGM_DefusalKit";             // For Engineers
 _clacker = "AGM_Clacker";                   // For Engineers
-
 // ====================================================================================
 
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
