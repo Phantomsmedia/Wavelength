@@ -1660,7 +1660,7 @@ class Mission
 				class Item1
 				{
 					position[]={42.624771,5,1593.2878};
-					azimut=-0.65981996;
+					azimut=-0.65982002;
 					id=87;
 					side="WEST";
 					vehicle="B_mas_mar_medic_F_v";
@@ -1669,7 +1669,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_CO_M";
 					init="GrpUSMC_MEU_WOOD_CO = group this; nul = [""m"",this] call f_fnc_assignGearAlternateUSMCWood;";
-					description="USMC Medic";
+					description="USN Corpsman";
 				};
 				class Item2
 				{
@@ -1722,7 +1722,7 @@ class Mission
 				class Item1
 				{
 					position[]={42.517838,5,1578.1624};
-					azimut=-0.65981996;
+					azimut=-0.65982002;
 					id=91;
 					side="WEST";
 					vehicle="B_mas_mar_medic_F_v";
@@ -1731,7 +1731,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_DC_M";
 					init="GrpUSMC_MEU_WOOD_DC = group this; nul = [""m"",this] call f_fnc_assignGearAlternateUSMCWood;";
-					description="USMC Medic";
+					description="USN Corpsman";
 				};
 				class Item2
 				{
@@ -1784,7 +1784,7 @@ class Mission
 				class Item1
 				{
 					position[]={65.619064,5,1593.6694};
-					azimut=-0.65981996;
+					azimut=-0.65982002;
 					id=95;
 					side="WEST";
 					vehicle="B_mas_mar_medic_F_v";
@@ -1793,7 +1793,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_ASL_M";
 					init="GrpUSMC_MEU_WOOD_ASL = group this; nul = [""m"",this] call f_fnc_assignGearAlternateUSMCWood;";
-					description="USMC Alpha Medic";
+					description="USN Alpha Corpsman";
 				};
 			};
 		};
@@ -2007,7 +2007,7 @@ class Mission
 				class Item1
 				{
 					position[]={89.740158,5,1593.5568};
-					azimut=-0.65981996;
+					azimut=-0.65982002;
 					id=109;
 					side="WEST";
 					vehicle="B_mas_mar_medic_F_v";
@@ -2016,7 +2016,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_BSL_M";
 					init="GrpUSMC_MEU_WOOD_BSL = group this; nul = [""m"",this] call f_fnc_assignGearAlternateUSMCWood;";
-					description="USMC Bravo Medic";
+					description="USN Bravo Corpsman";
 				};
 			};
 		};
@@ -2230,7 +2230,7 @@ class Mission
 				class Item1
 				{
 					position[]={116.17363,5,1593.1869};
-					azimut=-0.65981996;
+					azimut=-0.65982002;
 					id=123;
 					side="WEST";
 					vehicle="B_mas_mar_medic_F_v";
@@ -2239,7 +2239,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_WOOD_CSL_M";
 					init="GrpUSMC_MEU_WOOD_CSL = group this; nul = [""m"",this] call f_fnc_assignGearAlternateUSMCWood;";
-					description="USMC Charlie Medic";
+					description="USN Charlie Corpsman";
 				};
 			};
 		};
@@ -4436,7 +4436,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_CO_M";
 					init="GrpUSMC_MEU_DES_CO = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="USMC Medic";
+					description="USN Corpsman";
 				};
 				class Item2
 				{
@@ -4498,7 +4498,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_DC_M";
 					init="GrpUSMC_MEU_DES_DC = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="USMC Medic";
+					description="USN Corpsman";
 				};
 				class Item2
 				{
@@ -4560,7 +4560,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_ASL_M";
 					init="GrpUSMC_MEU_DES_ASL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="USMC Alpha Medic";
+					description="USN Alpha Corpsman";
 				};
 			};
 		};
@@ -4783,7 +4783,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_BSL_M";
 					init="GrpUSMC_MEU_DES_BSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="USMC Bravo Medic";
+					description="USN Bravo Corpsman";
 				};
 			};
 		};
@@ -5006,7 +5006,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitUSMC_MEU_DES_CSL_M";
 					init="GrpUSMC_MEU_DES_CSL = group this; nul = [""m"",this] call f_fnc_assignGear;";
-					description="USMC Charlie Medic";
+					description="USN Charlie Corpsman";
 				};
 			};
 		};
