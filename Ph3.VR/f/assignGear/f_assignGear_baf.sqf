@@ -231,7 +231,7 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_B_CombatUniform_mtp","U_B_CombatUniform_mtp_tshirt","U_B_CombatUniform_mtp_vest"];
+_baseUniform = ["U_B_CombatUniform_mtp","U_B_CombatUniform_mtp_vest"];
 _baseHelmet = ["H_HelmetB_mtp","H_HelmetB_Light_mtp"];
 _baseGlasses = [];
 
@@ -253,7 +253,7 @@ _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_B_CombatUniform_mtp"];
+_crewUniform = ["U_B_CombatUniform_mtp_tshirt"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_TacVest_blk"];
 _crewGlasses = [];
