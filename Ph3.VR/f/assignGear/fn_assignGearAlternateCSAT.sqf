@@ -374,6 +374,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_unit addItem _maptools;
 		_attachments = [_attach1,_scope2,_silencer2];
 	};
 
@@ -398,6 +399,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_unit addItem _maptools;
 		_attachments = [_attach1,_scope2,_silencer2];
 
 	};
@@ -437,6 +439,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_unit addItem _keycuffs;
 		_attachments = [_attach1,_scope1,_silencer2];
 	};
 
@@ -879,6 +882,8 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_unit addItem _defusalkit;
+		_unit addItem _clacker;
 		_attachments = [_attach1,_scope1,_silencer2];
 	};
 
@@ -897,6 +902,8 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_unit addItem _defusalkit;
+		_unit addItem _clacker;
 		_attachments = [_attach1,_silencer2];
 	};
 
