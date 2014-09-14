@@ -11,7 +11,7 @@ Ph2 and Ph3 are derivative of the [F2](http://ferstaberinde.com/f2/en//index.php
 **PH3 Versions:**
 The latest Stable and Development versions can be found via the [release tab](https://github.com/Phantomsmedia/Phramework/releases) and the [direct download](https://github.com/Phantomsmedia/Phramework/archive/master.zip). 
 
-It is advised that you always use the Development version of Ph3, as this is the absolute latest iteration. The Stable version is simply the most recent version that is bug-free. The problem with this, however, is that it may not be using mods that have been added since it's release.
+It is advised that you always use the Stable version of Ph3, as this is the absolute latest iteration with the most stability. The Stable version is simply the most recent version that is bug-free. Development branch is heavily under construction, unstable and many be broken at times. It is a bad choice.
 
 **Installation:**
 
