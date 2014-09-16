@@ -56,8 +56,8 @@
 // ATTACHMENTS - PRIMARY
 _attach1 = "BWA3_acc_LLM01_flash";			// IR Laser & Flashlight
 
-_silencer1 = "muzzle_snds_M";				// Scuba suppressor
-_silencer2 = "BWA3_muzzle_snds_G36";		// Primary suppressor
+_silencer1 = "muzzle_snds_M";				// 5.56 suppressor
+_silencer2 = "BWA3_muzzle_snds_G36";		// 6.5 suppressor
 
 _scope1 = "BWA3_optic_RSAS";				// Holosight
 _scope2 = "BWA3_optic_ZO4x30";				// MRCO Scope - 1x - 6x
@@ -190,9 +190,9 @@ _ARmag = "BWA3_100Rnd_556x45_G36";
 _ARmag_tr = "BWA3_100Rnd_556x45_G36_Tracer";
 
 // Medium MG
-_MMG = "BWA3_MG4";
-_MMGmag = "BWA3_200Rnd_556x45";
-_MMGmag_tr = "BWA3_200Rnd_556x45";
+_MMG = "BWA3_MG5";
+_MMGmag = "BWA3_120Rnd_762x51";
+_MMGmag_tr = "BWA3_120Rnd_762x51";
 
 // Rifleman AT
 _RAT = "BWA3_Pzf3_Loaded";
