@@ -14,7 +14,7 @@ PH3 Versions:
 
 The latest Stable and Development versions can usually be found here(http://phantactical.com/forum/index.php?topic=2036.0). However, the absolute latest version of the development version can be found on GitHub(https://github.com/Phantomsmedia/Phramework).
 
-It is advised that you always use the Development version of Ph3, as this is the absolute latest iteration. The Stable version is simply the most recent version that is bug-free. The problem with this, however, is that it may not be using mods that have been added since it's release.
+It is advised that you always use the Stable version of Ph3.
 
 Installation:
 
