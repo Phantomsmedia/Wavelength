@@ -87,6 +87,71 @@ switch (_unitfaction) do
 	};
 // ====================================================================================
 
+// MARKERS: BLUFOR > Bundeswehr
+// Markers seen by players in Bundeswehr slots.
+
+	case "bwa3_Faction":
+	{
+		["GrpBundeswehr_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_DC", 0, "DC", "ColorYellow"] spawn f_fnc_localGroupMarker;
+
+		["GrpBundeswehr_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_A2", 1, "A2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_A3", 1, "A3", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpBundeswehr_BSL", 0, "BSL", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_B1", 1, "B1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_B2", 1, "B2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_B3", 1, "B3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+
+		["GrpBundeswehr_CSL", 0, "CSL", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_C1", 1, "C1", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_C2", 1, "C2", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_C3", 1, "C3", "ColorGreen"] spawn f_fnc_localGroupMarker;
+
+		["GrpBundeswehr_MMG1", 2, "MMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_HMG1",  2, "HMG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_MAT1", 3, "MAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_HAT1",  3, "HAT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_MTR1",  5, "MTR1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_MSAM1",  3, "MSAM1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_HSAM1",  3, "HSAM1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_ST1",  4, "ST1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_DT1",  4, "DT1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_ENG1",  6, "ENG1", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+ 		["GrpBundeswehr_IFV1",  7, "HAMMER1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_IFV2",  7, "HAMMER2", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_IFV3",  7, "HAMMER3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_IFV4",  7, "HAMMER4", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_IFV5",  7, "HAMMER5", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_IFV6",  7, "HAMMER6", "ColorGreen"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_IFV7",  7, "HAMMER7", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_IFV8",  7, "HAMMER8", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+ 		["GrpBundeswehr_TNK1",  8, "ANVIL1", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["GrpBundeswehr_TH1",  9, "FORGE1", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpBundeswehr_TH2",  9, "FORGE2", "ColorRed"] spawn f_fnc_localGroupMarker;
+ 		["GrpBundeswehr_TH3",  9, "FORGE3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpBundeswehr_TH4",  9, "FORGE4", "ColorBlue"] spawn f_fnc_localGroupMarker;
+ 		["GrpBundeswehr_TH5",  9, "FORGE5", "ColorGreen"] spawn f_fnc_localGroupMarker;
+  		["GrpBundeswehr_TH6",  9, "FORGE6", "ColorGreen"] spawn f_fnc_localGroupMarker;
+   		["GrpBundeswehr_TH7",  9, "FORGE7", "ColorOrange"] spawn f_fnc_localGroupMarker;
+		["GrpBundeswehr_TH8",  9, "FORGE8", "ColorOrange"] spawn f_fnc_localGroupMarker;
+
+		["GrpBundeswehr_AH1",  9, "BELLOWS1", "ColorRed"] spawn f_fnc_localGroupMarker;
+
+		["UnitBundeswehr_CO_M", 0, "COM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitBundeswehr_DC_M", 0, "DCM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitBundeswehr_ASL_M", 0, "AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitBundeswehr_BSL_M", 0, "BM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+		["UnitBundeswehr_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
+
+	};
+// ====================================================================================
+
 // MARKERS: BLUFOR > US Army ACU
 // Markers seen by players in US Army slots.
 /*

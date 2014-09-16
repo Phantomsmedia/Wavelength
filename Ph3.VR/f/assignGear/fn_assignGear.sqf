@@ -100,6 +100,15 @@ if (_faction == "blu_f") then {
 	#include "f_assignGear_nato.sqf"
 };
 // ====================================================================================
+// GEAR: BLUFOR > Bundeswehr
+// The following block of code executes only if the unit is in a NATO slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+
+if (_faction == "bwa3_Faction") then {
+	#include "f_assignGear_bundeswehr.sqf"
+};
+// ====================================================================================
 // GEAR: BLUFOR > USMC MEU
 // The following block of code executes only if the player is in a USMC slot; it
 // automatically includes a file which contains the appropriate equipment data.

@@ -120,6 +120,23 @@ if (_unitfaction == "BLU_F") exitwith {
 
 // ====================================================================================
 
+// BRIEFING: BLUFOR > Bundeswehr
+// The following block of code executes only if the player is in a Bundeswehr slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "bwa3_Faction") exitwith {
+
+#include "f\briefing\f_briefing_bundeswehr.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+// ====================================================================================
+
 // BRIEFING: BLUFOR > United Nations Peacekeeping
 // The following block of code executes only if the player is in a UN slot; it
 // automatically includes a file which contains the appropriate briefing data.

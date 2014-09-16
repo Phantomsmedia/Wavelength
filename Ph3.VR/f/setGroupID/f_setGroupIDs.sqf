@@ -62,6 +62,60 @@ _groups = [
 
 // ====================================================================================
 
+// GROUP IDs: BLUFOR > Bundeswehr
+// Automatically assigns intelligible names to groups
+
+["GrpBundeswehr_CO","Bundeswehr CO -"],
+["GrpBundeswehr_DC","Bundeswehr DC -"],
+
+["GrpBundeswehr_ASL","Bundeswehr ASL -"],
+["GrpBundeswehr_A1","Bundeswehr A1 -"],
+["GrpBundeswehr_A2","Bundeswehr A2 -"],
+["GrpBundeswehr_A3","Bundeswehr A3 -"],
+
+["GrpBundeswehr_BSL","Bundeswehr BSL -"],
+["GrpBundeswehr_B1","Bundeswehr B1 -"],
+["GrpBundeswehr_B2","Bundeswehr B2 -"],
+["GrpBundeswehr_B3","Bundeswehr B3 -"],
+
+["GrpBundeswehr_CSL","Bundeswehr CSL -"],
+["GrpBundeswehr_C1","Bundeswehr C1 -"],
+["GrpBundeswehr_C2","Bundeswehr C2 -"],
+["GrpBundeswehr_C3","Bundeswehr C3 -"],
+
+["GrpBundeswehr_MMG1","Bundeswehr MMG1 -"],
+["GrpBundeswehr_MAT1","Bundeswehr MAT1 -"],
+["GrpBundeswehr_HAT1","Bundeswehr HAT1 -"],
+["GrpBundeswehr_HMG1","Bundeswehr HMG1 -"],
+["GrpBundeswehr_MTR1","Bundeswehr MTR1 -"],
+["GrpBundeswehr_MSAM1","Bundeswehr MSAM1 -"],
+["GrpBundeswehr_HSAM1","Bundeswehr HSAM1 -"],
+["GrpBundeswehr_ST1","Bundeswehr ST1 -"],
+["GrpBundeswehr_DT1","Bundeswehr DT1 -"],
+["GrpBundeswehr_ENG1","Bundeswehr ENG1 -"],
+
+["GrpBundeswehr_IFV1","Bundeswehr IFV1 -"],
+["GrpBundeswehr_IFV2","Bundeswehr IFV2 -"],
+["GrpBundeswehr_IFV3","Bundeswehr IFV3 -"],
+["GrpBundeswehr_IFV4","Bundeswehr IFV4 -"],
+["GrpBundeswehr_IFV5","Bundeswehr IFV5 -"],
+["GrpBundeswehr_IFV6","Bundeswehr IFV6 -"],
+["GrpBundeswehr_IFV7","Bundeswehr IFV7 -"],
+["GrpBundeswehr_IFV8","Bundeswehr IFV8 -"],
+["GrpBundeswehr_TNK1","Bundeswehr TNK1 -"],
+
+["GrpBundeswehr_TH1","Bundeswehr TH1 -"],
+["GrpBundeswehr_TH2","Bundeswehr TH2 -"],
+["GrpBundeswehr_TH3","Bundeswehr TH3 -"],
+["GrpBundeswehr_TH4","Bundeswehr TH4 -"],
+["GrpBundeswehr_TH5","Bundeswehr TH5 -"],
+["GrpBundeswehr_TH6","Bundeswehr TH6 -"],
+["GrpBundeswehr_TH7","Bundeswehr TH7 -"],
+["GrpBundeswehr_TH8","Bundeswehr TH8 -"],
+["GrpBundeswehr_AH1","Bundeswehr AH1 -"],
+
+// ====================================================================================
+
 // GROUP IDs: BLUFOR > United Nations Peacekeeping
 // Automatically assigns intelligible names to groups
 
