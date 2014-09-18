@@ -185,9 +185,9 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "BWA3_G36_LMG";
-_ARmag = "BWA3_100Rnd_556x45_G36";
-_ARmag_tr = "BWA3_100Rnd_556x45_G36_Tracer";
+_AR = "BWA3_MG4";
+_ARmag = "BWA3_200Rnd_556x45";
+_ARmag_tr = "BWA3_200Rnd_556x45";
 
 // Medium MG
 _MMG = "BWA3_MG5";
@@ -774,8 +774,8 @@ switch (_typeofUnit) do
 // LOADOUT: VEHICLE COMMANDER
 	case "vc":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag2,4];
+		_unit addweapon _pistol2;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
@@ -790,8 +790,8 @@ switch (_typeofUnit) do
 // LOADOUT: VEHICLE DRIVER
 	case "vd":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag2,4];
+		_unit addweapon _pistol2;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
@@ -806,8 +806,8 @@ switch (_typeofUnit) do
 // LOADOUT: VEHICLE GUNNER
 	case "vg":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag2,4];
+		_unit addweapon _pistol2;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
@@ -836,8 +836,8 @@ switch (_typeofUnit) do
 // LOADOUT: AIR VEHICLE CREW CHIEF
 	case "pcc":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag2,4];
+		_unit addweapon _pistol2;
 		_unit addmagazines [_smokegrenade,2];
 		["cc"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
@@ -850,8 +850,8 @@ switch (_typeofUnit) do
 // LOADOUT: AIR VEHICLE CREW
 	case "pc":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag2,4];
+		_unit addweapon _pistol2;
 		_unit addmagazines [_smokegrenade,2];
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
@@ -971,8 +971,8 @@ switch (_typeofUnit) do
 // LOADOUT: SUBMACHINEGUNNER
 	case "smg":
 	{
-		_unit addmagazines [_smgmag,7];
-		_unit addweapon _smg;
+		_unit addmagazines [_pistolmag2,4];
+		_unit addweapon _pistol2;
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,3];
