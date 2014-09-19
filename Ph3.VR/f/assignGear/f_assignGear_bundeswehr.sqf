@@ -234,14 +234,26 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["BWA3_Uniform_Fleck","BWA3_Uniform3_Fleck"];
-_baseHelmet = ["BWA3_M92_Fleck"];
+
+// Flecktarn Uniforms
+_baseUniform = ["U_O_CombatUniform_ocamo"];
+_baseHelmet = ["H_HelmetO_ocamo"];
 _baseGlasses = [];
 
-// Armored vests
+// Flecktarn Vests
 _lightRig = ["BWA3_Vest_Fleck"];
-_mediumRig = ["BWA3_Vest_Rifleman1_Fleck"]; 	// default for all infantry classes
+_mediumRig = ["BWA3_Vest_Autorifleman_Fleck","BWA3_Vest_Grenadier_Fleck","BWA3_Vest_Rifleman1_Fleck"]; 			// default for all infantry classes
 _heavyRig = ["BWA3_Vest_Grenadier_Fleck"];
+
+// Tropentarn Uniforms
+//_baseUniform = ["BWA3_Uniform_Tropen","BWA3_Uniform3_Tropen"];
+//_baseHelmet = ["BWA3_M92_Tropen"];
+//_baseGlasses = [];
+
+// Tropentarn Vests
+//_lightRig = ["BWA3_Vest_Tropen"];
+//_mediumRig = ["BWA3_Vest_Autorifleman_Tropen","BWA3_Vest_Grenadier_Tropen","BWA3_Vest_Rifleman1_Tropen"];		// default for all infantry classes
+//_heavyRig = ["BWA3_Vest_Grenadier_Tropen"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -249,23 +261,41 @@ _diverHelmet = [];
 _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
-// Pilot
+// Pilot Flecktarn
 _pilotUniform = ["BWA3_Uniform_Crew_Fleck"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["BWA3_Vest_Fleck"];
 _pilotGlasses = [];
 
-// Crewman
+// Pilot Tropentarn
+//_pilotUniform = ["BWA3_Uniform_Crew_Tropen"];
+//_pilotHelmet = ["H_PilotHelmetHeli_B"];
+//_pilotRig = ["BWA3_Vest_Tropen"];
+//_pilotGlasses = [];
+
+// Crewman Flecktarn
 _crewUniform = ["BWA3_Uniform_Crew_Fleck"];
 _crewHelmet = ["BWA3_CrewmanKSK_Fleck_Headset"];
 _crewRig = ["BWA3_Vest_Fleck"];
 _crewGlasses = [];
 
-// Ghillie
+// Crewman Tropentarn
+//_crewUniform = ["BWA3_Uniform_Crew_Tropen"];
+//_crewHelmet = ["BWA3_CrewmanKSK_Tropen_Headset"];
+//_crewRig = ["BWA3_Vest_Tropen"];
+//_crewGlasses = [];
+
+// Ghillie Flecktarn
 _ghillieUniform = ["BWA3_Uniform_Ghillie_Fleck"];
 _ghillieHelmet = [];
 _ghillieRig = ["BWA3_Vest_Marksman_Fleck"];
 _ghillieGlasses = [];
+
+// Ghillie Tropentarn
+//_ghillieUniform = ["BWA3_Uniform_Ghillie_Tropen"];
+//_ghillieHelmet = [];
+//_ghillieRig = ["BWA3_Vest_Marksman_Tropen"];
+//_ghillieGlasses = [];
 
 // Spec Op
 _sfuniform = ["BWA3_Uniform_Fleck","BWA3_Uniform3_Fleck"];
