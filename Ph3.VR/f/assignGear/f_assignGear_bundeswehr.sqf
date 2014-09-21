@@ -195,13 +195,13 @@ _MMGmag = "BWA3_120Rnd_762x51";
 _MMGmag_tr = "BWA3_120Rnd_762x51";
 
 // Rifleman AT
-_RAT = "BWA3_Pzf3_Loaded";
-_RATmag = "BWA3_Pzf3_IT";
+_RAT = "BWA3_RGW90_Loaded";
+_RATmag = "BWA3_RGW90_HH";
 
 // Medium AT
-_MAT = "BWA3_RGW90_Loaded";
-_MATmag1 = "BWA3_RGW90_HH";
-_MATmag2 = "BWA3_RGW90_HH";
+_MAT = "BWA3_Pzf3_Loaded";
+_MATmag1 = "BWA3_Pzf3_IT";
+_MATmag2 = "BWA3_Pzf3_IT";
 
 // Surface Air
 _SAM = "BWA3_Fliegerfaust";
