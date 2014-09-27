@@ -229,11 +229,16 @@ _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
 _specOp = [];
 
-// Basic clothing
+// Desert Uniforms
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["U_mas_mar_B_CombatUniform_des","U_mas_mar_B_CombatUniform_des_vest","U_mas_mar_B_CombatUniform_des_tshirt"];
 _baseHelmet = ["H_mas_mar_helmetd_us","H_mas_mar_helmetdgog_us"];
 _baseGlasses = [];
+
+// Woodland Uniforms
+//_baseUniform = ["U_mas_mar_B_CombatUniform_veg","U_mas_mar_B_CombatUniform_veg_vest"];
+//_baseHelmet = ["H_mas_mar_helmetv_us","H_mas_mar_helmetvgog_us"];
+//_baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_mas_mar_ChestrigB_rgr"];
@@ -252,17 +257,29 @@ _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
 
-// Crewman
+// Desert Crewman
 _crewUniform = ["U_mas_mar_B_CombatUniform_des_tshirt"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_mas_mar_ChestrigB_rgr"];
 _crewGlasses = [];
 
-// Ghillie
+// Woodland Crewman
+//_crewUniform = ["U_mas_mar_B_CombatUniform_veg_tshirt"];
+//_crewHelmet = ["H_HelmetCrew_B"];
+//_crewRig = ["V_mas_mar_ChestrigB_rgr"];
+//_crewGlasses = [];
+
+// Desert Ghillie
 _ghillieUniform = ["U_mas_mar_B_GhillieSuit_d"];
 _ghillieHelmet = [];
 _ghillieRig = ["V_mas_mar_ChestrigB_rgr"];
 _ghillieGlasses = [];
+
+// Woodland Ghillie
+//_ghillieUniform = ["U_mas_mar_B_GhillieSuit_v"];
+//_ghillieHelmet = [];
+//_ghillieRig = ["V_mas_mar_ChestrigB_rgr"];
+//_ghillieGlasses = [];
 
 // Spec Op
 _sfuniform = ["U_mas_mar_B_CombatUniform_wood_vest2"];
