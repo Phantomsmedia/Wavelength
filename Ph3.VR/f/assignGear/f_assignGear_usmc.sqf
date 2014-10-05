@@ -141,7 +141,7 @@ _medkit = "Medikit";
 _nvg = "NVGoggles";
 
 // UAV Terminal
-_uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
+_uavterminal = "B_UavTerminal";	  // BLUFOR - USMC
 
 // Chemlights
 _chemgreen =  "Chemlight_green";
