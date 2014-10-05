@@ -553,7 +553,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["mmgag"] call _backpack;
-		_unit linkItem _longrange		
 		_unit linkItem _shortrange		
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
@@ -627,7 +626,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["matag"] call _backpack;
-		_unit linkItem _longrange		
 		_unit linkItem _shortrange		
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
@@ -738,7 +736,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
 		["msamag"] call _backpack;
-		_unit linkItem _longrange		
 		_unit linkItem _shortrange		
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
@@ -793,8 +790,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [_scope3];
-		_unit linkItem _shortrange
-		_unit linkItem _longrange		
+		_unit linkItem _shortrange		
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;
