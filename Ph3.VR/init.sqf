@@ -16,6 +16,11 @@ enableSaving [false, false];
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 enableSentences false;
+// ====================================================================================
+
+// BWMF - Mission Timer/Safe Start
+
+if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // ====================================================================================
 
