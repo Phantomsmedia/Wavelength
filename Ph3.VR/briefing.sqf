@@ -59,7 +59,7 @@ if (serverCommandAvailable "#kick") then {
 
 if (_unitfaction == "BLU_F") exitwith {
 
-#include "f\briefing\f_briefing_nato.sqf"
+#include "f\briefing\f_briefing_BLUFOR.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -76,7 +76,7 @@ if (_unitfaction == "BLU_F") exitwith {
 
 if (_unitfaction == "OPF_F") exitwith {
 
-#include "f\briefing\f_briefing_csat.sqf"
+#include "f\briefing\f_briefing_OPFOR.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -92,7 +92,7 @@ if (_unitfaction == "OPF_F") exitwith {
 
 if (_unitfaction == "IND_F") exitwith {
 
-#include "f\briefing\f_briefing_aaf.sqf"
+#include "f\briefing\f_briefing_INDFOR.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
