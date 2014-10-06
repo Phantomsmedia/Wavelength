@@ -158,7 +158,7 @@ class Params
 
 // F3 - Medical Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
+/*
     class f_param_medical
     {
             title = "Medical System";
@@ -167,12 +167,12 @@ class Params
             default = 0;
             code = "f_var_medical = %1";
     };
-
+*/
 // ============================================================================================
 
 // F3 - Mission Timer/Safe Start
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
-
+/*
     class f_param_mission_timer
     {
             title = "$STR_f_param_mission_timer";
@@ -181,7 +181,7 @@ class Params
             default = 0;
             code = "f_param_mission_timer = %1";
     };
-
+*/
 // ============================================================================================
 
 // F3 - Mission Conditions Selector
@@ -256,7 +256,7 @@ class Params
 
 // F3 - Caching
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
+/*
 	class f_param_caching
 	{
 		title = "Cache AI outside distance (m)";
@@ -264,7 +264,7 @@ class Params
 		default = 0;
 		code = "f_param_caching = %1";
 	};
-
+*/
 // ============================================================================================
 
 // F3 - End of Params code blocks.
