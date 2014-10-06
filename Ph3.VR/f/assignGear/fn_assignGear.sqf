@@ -82,6 +82,15 @@ if (f_var_debugMode == 1) then
 };
 
 // ====================================================================================
+// GEAR: BLUFOR > UN
+// The following block of code executes only if the unit is in a NATO slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+
+if (_faction == "mas_afr_onu") then {
+	#include "f_assignGear_un.sqf"
+};
+// ====================================================================================
 // GEAR: BLUFOR > NATO
 // The following block of code executes only if the unit is in a NATO slot; it
 // automatically includes a file which contains the appropriate equipment data.
@@ -89,6 +98,67 @@ if (f_var_debugMode == 1) then
 
 if (_faction == "blu_f") then {
 	#include "f_assignGear_nato.sqf"
+};
+// ====================================================================================
+// GEAR: BLUFOR > Bundeswehr
+// The following block of code executes only if the unit is in a NATO slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+
+if (_faction == "bwa3_Faction") then {
+	#include "f_assignGear_bundeswehr.sqf"
+};
+// ====================================================================================
+// GEAR: BLUFOR > USMC MEU
+// The following block of code executes only if the player is in a USMC slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "mas_usa_mars") then {
+	#include "f_assignGear_usmc.sqf"
+};
+// ====================================================================================
+// GEAR: BLUFOR > US Army
+// The following block of code executes only if the player is in a US Army slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "AV_USArmy") then {
+	#include "f_assignGear_usarmy.sqf"
+};
+
+// ====================================================================================
+// GEAR: INDFOR > AGF
+// The following block of code executes only if the player is in a AGF slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "mas_afr_ind") then {
+	#include "f_assignGear_agf.sqf"
+};
+// ====================================================================================
+
+// GEAR: OPFOR > MIDDLE EAST INSURGENTS (CAF)
+// The following block of code executes only if the player is in a African slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "caf_ag_me_t") then {
+	#include "f_assignGear_middle_east.sqf"
+};
+// ====================================================================================
+
+// GEAR: OPFOR > AFRICA (CAF)
+// The following block of code executes only if the player is in a African slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "caf_ag_afr_p") then {
+	#include "f_assignGear_africa.sqf"
+};
+// ====================================================================================
+
+// GEAR: BLUFOR > BAF
+// The following block of code executes only if the player is in a BAF slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "BLU_BAF_F") then {
+	#include "f_assignGear_baf.sqf"
 };
 // ====================================================================================
 
@@ -108,6 +178,25 @@ if (_faction == "opf_f") then {
 
 if (_faction == "ind_f") then {
 	#include "f_assignGear_aaf.sqf";
+};
+
+// ====================================================================================
+
+// GEAR: INDEPENDENT > Russians
+// The following block of code executes only if the player is in a Russian slot; it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction == "SUD_RU") then {
+	#include "f_assignGear_russia.sqf"
+};
+// ====================================================================================
+
+// GEAR: FIA
+// The following block of code executes only if the unit is in a FIA slot (any faction); it
+// automatically includes a file which contains the appropriate equipment data.
+
+if (_faction in ["blu_g_f","opf_g_f","ind_g_f"]) then {
+	#include "f_assignGear_fia.sqf"
 };
 
 // ====================================================================================

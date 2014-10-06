@@ -53,6 +53,56 @@ if (serverCommandAvailable "#kick") then {
 
 // ====================================================================================
 
+// BRIEFING: INDFOR > AGF
+// The following block of code executes only if the player is in an AGF slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "mas_afr_ind") exitwith {
+
+#include "f\briefing\f_briefing_agf.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+// ====================================================================================
+
+// BRIEFING: OPFOR > MIDDLE EAST INSURGENTS (CAF)
+// The following block of code executes only if the player is in an AGF slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "caf_ag_me_t") exitwith {
+
+#include "f\briefing\f_briefing_middle_east.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+// ====================================================================================
+
+// BRIEFING: OPFOR > AFRICA (CAF)
+// The following block of code executes only if the player is in an AGF slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "caf_ag_afr_p") exitwith {
+
+#include "f\briefing\f_briefing_africa.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+// ====================================================================================
+
 // BRIEFING: BLUFOR > NATO
 // The following block of code executes only if the player is in a NATO slot; it
 // automatically includes a file which contains the appropriate briefing data.
@@ -70,6 +120,105 @@ if (_unitfaction == "BLU_F") exitwith {
 
 // ====================================================================================
 
+// BRIEFING: BLUFOR > Bundeswehr
+// The following block of code executes only if the player is in a Bundeswehr slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "bwa3_Faction") exitwith {
+
+#include "f\briefing\f_briefing_bundeswehr.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+// ====================================================================================
+
+// BRIEFING: BLUFOR > United Nations Peacekeeping
+// The following block of code executes only if the player is in a UN slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "mas_afr_onu") exitwith {
+
+#include "f\briefing\f_briefing_un.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+// ====================================================================================
+
+// BRIEFING: BLUFOR > USMC MEU
+// The following block of code executes only if the player is in a USMC slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "mas_usa_mars") exitwith {
+
+#include "f\briefing\f_briefing_usmc.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+// ====================================================================================
+
+// BRIEFING: BLUFOR > US Army
+// The following block of code executes only if the player is in a US Army slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "AV_USArmy") exitwith {
+
+#include "f\briefing\f_briefing_usarmy.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+// ====================================================================================
+
+// BRIEFING: BLUFOR > BAF
+// The following block of code executes only if the player is in a BAF slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "BLU_BAF_F") exitwith {
+
+#include "f\briefing\f_briefing_baf.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+// ====================================================================================
+
+// BRIEFING: BLUFOR > FIA
+// The following block of code executes only if the player is in a FIA slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "BLU_G_F") exitwith {
+
+#include "f\briefing\f_briefing_fia.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+// ====================================================================================
+
 // BRIEFING: OPFOR > CSAT
 // The following block of code executes only if the player is in a CSAT slot; it
 // automatically includes a file which contains the appropriate briefing data.
@@ -77,6 +226,22 @@ if (_unitfaction == "BLU_F") exitwith {
 if (_unitfaction == "OPF_F") exitwith {
 
 #include "f\briefing\f_briefing_OPFOR.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+// ====================================================================================
+
+// BRIEFING: INDEPENDENT > Russians
+// The following block of code executes only if the player is in a Russian slot; it
+// automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "SUD_RU") exitwith {
+
+#include "f\briefing\f_briefing_russia.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
