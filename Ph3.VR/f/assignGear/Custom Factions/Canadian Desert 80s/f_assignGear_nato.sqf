@@ -231,14 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_tshirt","U_B_CombatUniform_mcam_vest"];
-_baseHelmet = ["H_HelmetB","H_HelmetB_plain_mcamo"];
+_baseUniform = ["MNP_CombatUniform_Canada_D","MNP_CombatUniform_Canada_DS"];
+_baseHelmet = ["MNP_Helmet_Canada_D","MNP_Boonie_CAN_D","MNP_Helmet_Canada_D","MNP_Helmet_Canada_D"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk","V_TacVest_brn","V_TacVest_camo","V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrier3_rgr"];
+_lightRig = ["MNP_Vest_Canada_D2"];
+_mediumRig = ["MNP_Vest_Canada_D2"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_Canada_D"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
