@@ -406,19 +406,7 @@ class CfgFunctions
 			// Defines the functions to preInit the compling of the assignGear function used by units.
 			file = "f\assignGear";
 			class assignGear{};
-		};	
-		class assignGearAlternateNATO
-		{
-			// Defines the functions to preInit the compling of the assignGear function used by units.
-			file = "f\assignGear";
-			class assignGearAlternateNATO{};
-		};		
-		class assignGearAlternateCSAT
-		{
-			// Defines the functions to preInit the compling of the assignGear function used by units.
-			file = "f\assignGear";
-			class assignGearAlternateCSAT{};
-		};						
+		};				
 		class setGroupID
 		{
 			file = "f\setGroupID";
