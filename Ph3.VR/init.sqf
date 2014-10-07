@@ -130,7 +130,7 @@ f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
 // F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-[] execVM "f\setAISKill\f_setAISkill.sqf";
+// [] execVM "f\setAISKill\f_setAISkill.sqf";
 // f_var_civAI = independent; // Optional: The civilian AI will use this side's settings
 
 // ====================================================================================
@@ -186,13 +186,13 @@ f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear?
 // F3 - AI Unit Caching
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-//[30] spawn f_fnc_cInit;
+[30] spawn f_fnc_cInit;
 
 // Note: Caching aggressiveness is set using the f_var_cachingAggressiveness variable; possible values:
 // 1 - cache only non-leaders and non-drivers
 // 2 - cache all non-moving units, always exclude vehicle drivers
 // 3 - cache all units, incl. group leaders and vehicle drivers
-//f_var_cachingAggressiveness = 2;
+f_var_cachingAggressiveness = 2;
 
 // ====================================================================================
 
@@ -206,7 +206,7 @@ f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear?
 // F3 - Medical Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-//[] execVM "f\medical\medical_init.sqf";
+[] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
 // PhanTactical - Intro Text
