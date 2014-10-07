@@ -224,7 +224,7 @@ class Params
 
 // F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
+/*
 	class f_param_AISkill_BLUFOR
 	{
 		title = "$STR_f_param_AISkill_BLUFOR";
@@ -251,7 +251,7 @@ class Params
 		default = 1;
 		code = "f_param_AISkill_INDP = %1";
 	};
-
+*/
 // ============================================================================================
 
 // F3 - Caching
