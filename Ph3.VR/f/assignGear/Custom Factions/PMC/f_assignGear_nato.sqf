@@ -61,7 +61,7 @@ _silencer1 = "muzzle_snds_M";			// 5.56 suppressor
 _silencer2 = "hlc_muzzle_556NATO_KAC";	// 6.5 suppressor
 
 _scope1 = "RH_eotech553";		// ACO
-_scope2 = "optic_MRCO";			// MRCO Scope - 1x - 6x
+_scope2 = "RH_compm4s";			// MRCO Scope - 1x - 6x
 _scope3 = "";					// SOS Scope - 18x - 75x
 
 // Default setup
