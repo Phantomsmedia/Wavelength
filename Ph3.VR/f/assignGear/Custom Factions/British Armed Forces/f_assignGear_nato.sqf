@@ -138,7 +138,7 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles";
+_nvg = "NVGoggles_INDEP";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
@@ -150,9 +150,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_MTP";			// carries 120, weighs 20
-_bagmedium = "B_Kitbag_MTP";				// carries 240, weighs 30
-_baglarge = "B_Carryall_MTP"; 				// carries 320, weighs 40
+_bagsmall = "B_AssaultPack_rgr";			// carries 120, weighs 20
+_bagmedium = "B_TacticalPack_oli";				// carries 240, weighs 30
+_baglarge = "B_Carryall_oli"; 				// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -231,14 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_B_CombatUniform_mtp","U_B_CombatUniform_mtp_vest"];
-_baseHelmet = ["H_HelmetB_mtp","H_HelmetB_Light_mtp"];
+_baseUniform = ["MNP_CombatUniform_DPM_B","MNP_CombatUniform_DPM"];
+_baseHelmet = ["MNP_Boonie_DPM","H_HelmetSpecB","H_Watchcap_camo","H_Watchcap_camo","MNP_Boonie_DPM"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk","V_TacVest_brn","V_TacVest_camo","V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrier1_mtp","V_PlateCarrier2_mtp"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrierGL_mtp"];
+_lightRig = ["V_BandollierB_oli"];
+_mediumRig = ["V_Chestrig_rgr"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_Light_DPM"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -249,13 +249,13 @@ _diverGlasses = ["G_Diving"];
 // Pilot
 _pilotUniform = ["U_B_HeliPilotCoveralls"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["V_BandollierB_oli"];
 _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["U_B_CombatUniform_mtp_tshirt"];
 _crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_TacVest_blk"];
+_crewRig = ["V_Chestrig_rgr"];
 _crewGlasses = [];
 
 // Ghillie
