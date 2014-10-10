@@ -192,17 +192,17 @@ _MMGmag = "hlc_100Rnd_762x51_B_M60E4";
 _MMGmag_tr = "hlc_100Rnd_762x51_T_M60E4";
 
 // Rifleman AT
-_RAT = "BWA3_RGW90_Loaded";
-_RATmag = "BWA3_RGW90_HH";
+_RAT = "launch_NLAW_F";
+_RATmag = "NLAW_F";
 
 // Medium AT
-_MAT = "BWA3_Pzf3_Loaded";
-_MATmag1 = "BWA3_Pzf3_IT";
-_MATmag2 = "BWA3_Pzf3_IT";
+_MAT = "launch_I_Titan_short_F";
+_MATmag1 = "Titan_AT";
+_MATmag2 = "Titan_AP";
 
 // Surface Air
-_SAM = "BWA3_Fliegerfaust";
-_SAMmag = "BWA3_Fliegerfaust_Mag";
+_SAM = "launch_B_Titan_F";
+_SAMmag = "Titan_AA";
 
 // Sniper
 _SNrifle = "hlc_rifle_psg1";
@@ -232,7 +232,7 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["U_I_G_resistanceLeader_F","U_BG_Guerilla2_2","U_BG_Guerilla2_1"];
+_baseUniform = ["U_I_G_resistanceLeader_F","U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla3_1","U_Marshal"];
 _baseHelmet = [];
 _baseGlasses = [];
 
