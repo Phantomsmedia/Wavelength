@@ -61,7 +61,7 @@ _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
 _scope1 = "hlc_optic_kobra";	// Holosight
-_scope2 = "hlc_optic_kobra";	// MRCO Scope - 1x - 6x
+_scope2 = "HLC_Optic_PSO1";		// MRCO Scope - 1x - 6x
 _scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
 
 // Default setup
@@ -87,12 +87,12 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "hlc_rifle_ak12";
+_rifle = "hlc_rifle_aks74";
 _riflemag = "hlc_30Rnd_545x39_B_AK";
 _riflemag_tr = "hlc_30Rnd_545x39_T_AK";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "hlc_rifle_ak12";
+_carbine = "hlc_rifle_aks74";
 _carbinemag = "hlc_30Rnd_545x39_B_AK";
 _carbinemag_tr = "hlc_30Rnd_545x39_T_AK";
 
@@ -124,8 +124,8 @@ _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_Pistol_heavy_01_F";
-_pistolmag = "11Rnd_45ACP_Mag";
+_pistol = "hgun_Rook40_F";
+_pistolmag = "16Rnd_9x21_Mag";
 
 // Grenades
 _grenade = "HandGrenade";
@@ -138,7 +138,7 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles";
+_nvg = "NVGoggles_OPFOR";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
@@ -150,7 +150,7 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_blk";			// carries 120, weighs 20
+_bagsmall = "B_FieldPack_oli";				// carries 120, weighs 20
 _bagmedium = "B_FieldPack_oli";				// carries 240, weighs 30
 _baglarge = "B_Carryall_oli"; 				// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
@@ -183,8 +183,8 @@ _clacker = "AGM_Clacker";                   // For Engineers
 
 // Automatic Rifleman
 _AR = "hlc_rifle_rpk";
-_ARmag = "hlc_45Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_45Rnd_762x39_m_rpk";
+_ARmag = "hlc_75Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
 _MMG = "LMG_Zafir_F";
@@ -192,16 +192,16 @@ _MMGmag = "150Rnd_762x51_Box";
 _MMGmag_tr = "150Rnd_762x51_Box_Tracer";
 
 // Rifleman AT
-_RAT = "launch_NLAW_F";
-_RATmag = "NLAW_F";
+_RAT = "launch_RPG32_F";
+_RATmag = "RPG32_F";
 
 // Medium AT
-_MAT = "launch_NLAW_F";
-_MATmag1 = "NLAW_F";
-_MATmag2 = "NLAW_F";
+_MAT = "launch_O_Titan_short_F";
+_MATmag1 = "Titan_AT";
+_MATmag2 = "Titan_AP";
 
 // Surface Air
-_SAM = "launch_B_Titan_F";
+_SAM = "launch_O_Titan_F";
 _SAMmag = "Titan_AA";
 
 // Sniper
@@ -231,14 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_SUD_RU_Digi_Uniform02","U_SUD_RU_Digi_Uniform01"];
-_baseHelmet = ["H_SUD_6b27","H_SUD_6b27_v2"];
-_baseGlasses = ["G_Balaclava_oli"];
+_baseUniform = ["MNP_CombatUniform_RU_Med","MNP_CombatUniform_RU_Med_B"];
+_baseHelmet = ["MNP_Helmet_RU_LT"];
+_baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_RU"];
-_mediumRig = ["V_ArmorVest_RU","V_ArmorVest2_RU"]; 	// default for all infantry classes
-_heavyRig = ["V_SUD_6b33"];
+_lightRig = ["V_TacVest_blk"];
+_mediumRig = ["MNP_Vest_RU_T","MNP_Vest_RU_T2"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_RU_T2"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -247,28 +247,28 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_RU_Pilot_Suit"];
-_pilotHelmet = ["H_RU_Pilot_Helmet"];
-_pilotRig = ["V_TacVest_RU"];
+_pilotUniform = ["MNP_CombatUniform_RU_Med"];
+_pilotHelmet = ["H_PilotHelmetHeli_B"];
+_pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_SUD_RU_Digi_Uniform02"];
+_crewUniform = ["MNP_CombatUniform_RU_Med_B"];
 _crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_TacVest_RU"];
+_crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_SUD_RU_Digi_Sniper"];
-_ghillieHelmet = [];
-_ghillieRig = ["V_TacVest_RU"];
+_ghillieUniform = ["MNP_CombatUniform_RU_Med"];
+_ghillieHelmet = [MNP_Boonie_RU_T];
+_ghillieRig = ["MNP_Vest_RU_T"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["U_SUD_RU_Digi_Uniform02"];
-_sfhelmet = ["H_Booniehat_RU_DIGI"];
+_sfuniform = ["MNP_CombatUniform_RU_Med"];
+_sfhelmet = ["MNP_Boonie_RU_T"];
 _sfRig = _mediumRig;
-_sfGlasses = ["G_Balaclava_oli"];
+_sfGlasses = [];
 
 // ====================================================================================
 
