@@ -62,7 +62,7 @@ _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
 _scope1 = "optic_Holosight";	// Holosight
 _scope2 = "optic_MRCO";			// MRCO Scope - 1x - 6x
-_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
+_scope3 = "hlc_optic_artel_m14";			// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -205,8 +205,8 @@ _SAM = "launch_B_Titan_F";
 _SAMmag = "Titan_AA";
 
 // Sniper
-_SNrifle = "srifle_LRR_F";
-_SNrifleMag = "7Rnd_408_Mag";
+_SNrifle = "hlc_rifle_M14";
+_SNrifleMag = "hlc_20Rnd_762x51_B_M14";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
@@ -231,8 +231,8 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["MNP_CombatUniform_OD_Rg"];
-_baseHelmet = ["MNP_Helmet_OD"];
+_baseUniform = ["MNP_CombatUniform_Militia_A"];
+_baseHelmet = ["MNP_Helmet_M81","MNP_Boonie_TIG"];
 _baseGlasses = [];
 
 // Armored vests
@@ -247,20 +247,20 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_OD_Rg"];
+_pilotUniform = ["MNP_CombatUniform_Militia_A"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_OD_Rg"];
+_crewUniform = ["MNP_CombatUniform_Militia_A"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_OD_Rg"];
-_ghillieHelmet = [H_Booniehat_oli];
+_ghillieUniform = ["MNP_CombatUniform_Militia_A"];
+_ghillieHelmet = [MNP_Boonie_TIG];
 _ghillieRig = ["V_BandollierB_oli"];
 _ghillieGlasses = [];
 
