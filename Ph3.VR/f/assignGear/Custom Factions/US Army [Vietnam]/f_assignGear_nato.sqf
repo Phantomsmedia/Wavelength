@@ -192,13 +192,13 @@ _MMGmag = "hlc_100Rnd_762x51_B_M60E4";
 _MMGmag_tr = "hlc_100Rnd_762x51_T_M60E4";
 
 // Rifleman AT
-_RAT = "launch_NLAW_F";
-_RATmag = "NLAW_F";
+_RAT = "STI_MAAWS";
+_RATmag = "STI_84MM_HEAT";
 
 // Medium AT
-_MAT = "launch_B_Titan_short_F";
-_MATmag1 = "Titan_AT";
-_MATmag2 = "Titan_AP";
+_MAT = "STI_MAAWS";
+_MATmag1 = "STI_84MM_HE";
+_MATmag2 = "STI_84MM_HEAT";
 
 // Surface Air
 _SAM = "launch_B_Titan_F";
