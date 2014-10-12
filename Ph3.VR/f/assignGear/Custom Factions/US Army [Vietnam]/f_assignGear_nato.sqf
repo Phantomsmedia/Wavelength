@@ -231,8 +231,8 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["MNP_CombatUniform_OD_Rg"];
-_baseHelmet = ["MNP_Helmet_OD"];
+_baseUniform = ["MNP_CombatUniform_Militia_A"];
+_baseHelmet = ["MNP_Helmet_M81","MNP_Boonie_TIG"];
 _baseGlasses = [];
 
 // Armored vests
@@ -247,20 +247,20 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_OD_Rg"];
+_pilotUniform = ["MNP_CombatUniform_Militia_A"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_OD_Rg"];
+_crewUniform = ["MNP_CombatUniform_Militia_A"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_OD_Rg"];
-_ghillieHelmet = [H_Booniehat_oli];
+_ghillieUniform = ["MNP_CombatUniform_Militia_A"];
+_ghillieHelmet = [MNP_Boonie_TIG];
 _ghillieRig = ["V_BandollierB_oli"];
 _ghillieGlasses = [];
 
