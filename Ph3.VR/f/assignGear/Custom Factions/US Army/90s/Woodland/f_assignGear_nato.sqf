@@ -192,8 +192,8 @@ _MMGmag = "sti_100Rnd_762x51";
 _MMGmag_tr = "sti_100Rnd_762x51_Tracer";
 
 // Rifleman AT
-_RAT = "STI_MAAWS";
-_RATmag = "STI_84MM_HEAT";
+_RAT = "STI_M136";
+_RATmag = "STI_M_M136";
 
 // Medium AT
 _MAT = "STI_MAAWS";
