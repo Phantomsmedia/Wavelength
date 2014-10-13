@@ -150,9 +150,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_FieldPack_oli";				// carries 120, weighs 20
-_bagmedium = "B_FieldPack_oli";				// carries 240, weighs 30
-_baglarge = "B_Carryall_oli"; 				// carries 320, weighs 40
+_bagsmall = "B_FieldPack_cbr";				// carries 120, weighs 20
+_bagmedium = "B_FieldPack_cbr";				// carries 240, weighs 30
+_baglarge = "B_Carryall_cbr"; 				// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -233,8 +233,8 @@ _specOp = [];
 // The outfit-piece is randomly selected from the array for each unit
 
 // Uniform
-_baseUniform = ["MNP_CombatUniform_RO2_Rg","MNP_CombatUniform_RO2_Sh"];
-_baseHelmet = ["MNP_Helmet_SOV_Steel","MNP_MilCap_RO_B"];
+_baseUniform = ["MNP_CombatUniform_Militia_DA"];
+_baseHelmet = ["MNP_Helmet_SOVC_DC","MNP_MilCap_RO_B"];
 _baseGlasses = [];
 
 // Armored vests
@@ -249,20 +249,20 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_RO2_Rg"];
+_pilotUniform = ["MNP_CombatUniform_Militia_DA"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_RO2_Rg"];
+_crewUniform = ["MNP_CombatUniform_Militia_DA"];
 _crewHelmet = ["H_HelmetCrew_I"];
 _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_RO2_Sh"];
-_ghillieHelmet = [MNP_MilCap_RO_B];
+_ghillieUniform = ["MNP_CombatUniform_Militia_DA"];
+_ghillieHelmet = [MNP_Boonie_Jigsaw];
 _ghillieRig = ["V_Chestrig_rgr"];
 _ghillieGlasses = [];
 
