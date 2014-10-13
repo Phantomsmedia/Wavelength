@@ -234,7 +234,7 @@ _specOp = [];
 
 // Uniform
 _baseUniform = ["MNP_CombatUniform_China_D"];
-_baseHelmet = ["MNP_Helmet_China_D"];
+_baseHelmet = ["MNP_Helmet_SOVC_CD"];
 _baseGlasses = [];
 
 // Armored vests
