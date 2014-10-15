@@ -239,7 +239,7 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_oli"];
-_mediumRig = ["V_Chestrig_rgr","V_Chestrig_khk",""]; 	// default for all infantry classes
+_mediumRig = ["V_Chestrig_rgr","V_Chestrig_khk"]; 	// default for all infantry classes
 _heavyRig = ["V_Chestrig_rgr"];
 
 // Diver
