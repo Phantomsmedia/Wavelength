@@ -92,7 +92,7 @@ _riflemag = "hlc_30Rnd_545x39_B_AK";
 _riflemag_tr = "hlc_30Rnd_545x39_t_ak";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_MXC_F";
+_carbine = "hlc_rifle_aks74u";
 _carbinemag = "hlc_30Rnd_545x39_B_AK";
 _carbinemag_tr = "hlc_30Rnd_545x39_t_ak";
 
