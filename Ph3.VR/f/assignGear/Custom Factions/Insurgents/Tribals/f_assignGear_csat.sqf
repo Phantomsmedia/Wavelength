@@ -231,14 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_CAF_AG_ME_ROBES_03b","U_CAF_AG_ME_ROBES_04a","U_CAF_AG_ME_ROBES_02","U_CAF_AG_ME_ROBES_01"];
-_baseHelmet = ["H_caf_ag_paktol_04","H_caf_ag_wrap","H_caf_ag_paktol_02","H_caf_ag_turban"];
+_baseUniform = ["U_CAF_AG_ME_ROBES_02a","U_CAF_AG_ME_ROBES_03b","U_CAF_AG_ME_ROBES_04a","U_CAF_AG_ME_ROBES_04d"];
+_baseHelmet = ["H_caf_ag_paktol_02","H_caf_ag_paktol","H_caf_ag_paktol_04","H_caf_ag_wrap"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_Chestrig_oli"];
-_mediumRig = ["V_BandollierB_cbr","V_BandollierB_khk"]; 	// default for all infantry classes
-_heavyRig = ["V_TacVest_khk"];
+_lightRig = ["V_Chestrig_rgr"];
+_mediumRig = ["V_Chestrig_rgr","V_Chestrig_khk"]; 	// default for all infantry classes
+_heavyRig = ["V_Chestrig_rgr"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -247,27 +247,27 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_CAF_AG_ME_ROBES_Mil_01"];
+_pilotUniform = ["U_CAF_AG_ME_ROBES_04a"];
 _pilotHelmet = ["H_caf_ag_wrap"];
-_pilotRig = ["V_BandollierB_khk"];
+_pilotRig = ["V_Chestrig_rgr"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_CAF_AG_ME_ROBES_Mil_01"];
+_crewUniform = ["U_CAF_AG_ME_ROBES_04a"];
 _crewHelmet = ["H_caf_ag_wrap"];
-_crewRig = ["V_BandollierB_khk"];
+_crewRig = ["V_Chestrig_khk"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_CAF_AG_ME_ROBES_Mil_01"];
-_ghillieHelmet = [];
-_ghillieRig = ["V_BandollierB_cbr"];
+_ghillieUniform = ["U_CAF_AG_ME_ROBES_04a"];
+_ghillieHelmet = [H_caf_ag_wrap];
+_ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["U_CAF_AG_ME_ROBES_Mil_01"];
-_sfhelmet = ["H_caf_ag_paktol_04","H_caf_ag_wrap","H_caf_ag_paktol_02","H_caf_ag_turban"];
-_sfRig = _mediumRig;
+_sfuniform = ["U_CAF_AG_ME_ROBES_02a","U_CAF_AG_ME_ROBES_03b","U_CAF_AG_ME_ROBES_04a","U_CAF_AG_ME_ROBES_04d"];
+_sfhelmet = ["H_caf_ag_paktol_02","H_caf_ag_paktol","H_caf_ag_paktol_04","H_caf_ag_wrap"];
+_sfRig = ["V_Chestrig_rgr","V_Chestrig_khk"];
 _sfGlasses = [];
 
 // ====================================================================================
@@ -312,7 +312,6 @@ if (_isMan) then {
 	_unit linkItem _nvg;					// add universal NVG for this faction
 
 	//removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
-	//_unit linkItem "ItemGPS"; 					// add gps to this faction
 	//_unit linkItem "ItemMap";
 	//_unit linkItem "ItemCompass";
 	//_unit linkItem "ItemRadio";
@@ -359,7 +358,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
@@ -384,7 +382,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
@@ -423,7 +420,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
@@ -760,7 +756,6 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemGPS";
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
