@@ -14,7 +14,7 @@ _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
 
 switch ((side player)) do { //longrange, shortrange, rifradio
     case (west): {
-      _radio1 = TF_defaultWestBackpack;
+      _radio1 = "tf_rt1523g_big";
       _radio2 = TF_defaultWestPersonalRadio;
       _radio3 = TF_defaultWestRiflemanRadio;};
     case (east): {
