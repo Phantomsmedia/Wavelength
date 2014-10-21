@@ -260,7 +260,7 @@ _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["MNP_CombatUniform_3Co_Sh"];
-_ghillieHelmet = [H_ShemagOpen_khk];
+_ghillieHelmet = ["H_ShemagOpen_khk"];
 _ghillieRig = ["MNP_Vest_M81b"];
 _ghillieGlasses = [];
 
