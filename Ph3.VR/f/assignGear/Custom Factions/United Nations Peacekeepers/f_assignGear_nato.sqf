@@ -138,7 +138,7 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles";
+_nvg = "NVGoggles_OPFOR";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
@@ -150,9 +150,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_cbr";			// carries 120, weighs 20
-_bagmedium = "B_Kitbag_cbr";				// carries 240, weighs 30
-_baglarge = "B_Carryall_cbr"; 				// carries 320, weighs 40
+_bagsmall = "MNP_B_WD_FP";					// carries 120, weighs 20
+_bagmedium = "MNP_B_WD_FP";					// carries 240, weighs 30
+_baglarge = "MNP_B_WD_CA"; 					// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -231,14 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_mas_afr_B_uniform"];
-_baseHelmet = ["H_mas_afr_HelmetB"];
+_baseUniform = ["MNP_CombatUniform_Wood_A","MNP_CombatUniform_Wood_B"];
+_baseHelmet = ["MNP_Helmet_PAGST_UN"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_mas_afr_TacVest_b"];
-_mediumRig = ["V_mas_afr_TacVest_b"]; 	// default for all infantry classes
-_heavyRig = ["V_mas_afr_TacVest_b"];
+_lightRig = ["V_TacVest_blk"];
+_mediumRig = ["MNP_Vest_M81b"],"MNP_Vest_M81"; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_Ireland"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -247,27 +247,27 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_mas_afr_B_uniform"];
+_pilotUniform = ["MNP_CombatUniform_Wood_A"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_mas_afr_TacVest_b"];
+_pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_mas_afr_B_uniform"];
+_crewUniform = ["MNP_CombatUniform_Wood_B"];
 _crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_mas_afr_TacVest_b"];
+_crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_B_GhillieSuit"];
-_ghillieHelmet = [];	
-_ghillieRig = ["V_mas_afr_TacVest_b"];
+_ghillieUniform = ["MNP_CombatUniform_Wood_A"];
+_ghillieHelmet = [MNP_Helmet_PAGST_UN];	
+_ghillieRig = ["MNP_Vest_M81b"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["U_mas_afr_B_uniform_s"];
-_sfhelmet = ["H_mas_afr_beret_b"];
-_sfRig = ["V_mas_afr_TacVest_i"];
+_sfuniform = ["MNP_CombatUniform_Wood_A"];
+_sfhelmet = ["MNP_Helmet_PAGST_UN"];
+_sfRig = ["MNP_Vest_M81b"];
 _sfGlasses = [];
 
 // ====================================================================================

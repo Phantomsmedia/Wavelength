@@ -232,7 +232,7 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["MNP_CombatUniform_RU_Med","MNP_CombatUniform_RU_Med_B"];
-_baseHelmet = ["MNP_Helmet_RU_LT"];
+_baseHelmet = ["MNP_Helmet_PAGST_RT"];
 _baseGlasses = [];
 
 // Armored vests

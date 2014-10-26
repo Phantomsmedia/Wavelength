@@ -150,9 +150,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_FieldPack_khk";			// carries 120, weighs 20
-_bagmedium = "B_FieldPack_khk";				// carries 240, weighs 30
-_baglarge = "B_Carryall_khk"; 			// carries 320, weighs 40
+_bagsmall = "MNP_B_FieldPack_PLA_Basic";	// carries 120, weighs 20
+_bagmedium = "MNP_B_FieldPack_PLA_Basic";	// carries 240, weighs 30
+_baglarge = "MNP_B_Carryall_PLA_Basic"; 	// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -233,14 +233,14 @@ _specOp = [];
 // The outfit-piece is randomly selected from the array for each unit
 
 // Uniform
-_baseUniform = ["MNP_CombatUniform_China_D"];
-_baseHelmet = ["MNP_Helmet_SOVC_CD"];
+_baseUniform = ["MNP_CombatUniform_China"];
+_baseHelmet = ["MNP_Helmet_PAGST_CN"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_HarnessO_brn"];
-_mediumRig = ["V_HarnessO_brn"]; 	// default for all infantry classes
-_heavyRig = ["V_HarnessO_brn"];
+_lightRig = ["V_TacVest_blk"];
+_mediumRig = ["MNP_Vest_ChinaH_T","MNP_Vest_ChinaH_T2"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_ChinaH_T2"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -249,21 +249,21 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_China_D"];
-_pilotHelmet = ["H_PilotHelmetHeli_O"];
-_pilotRig = ["V_HarnessO_brn"];
+_pilotUniform = ["MNP_CombatUniform_China"];
+_pilotHelmet = ["H_PilotHelmetHeli_B"];
+_pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_China_D"];
-_crewHelmet = ["H_HelmetCrew_I"];
-_crewRig = ["V_HarnessO_brn"];
+_crewUniform = ["MNP_CombatUniform_China"];
+_crewHelmet = ["H_HelmetCrew_B"];
+_crewRig = ["V_TacVest_blk"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_China_D"];
-_ghillieHelmet = [MNP_Boonie_CN_D];
-_ghillieRig = ["V_Chestrig_khk"];
+_ghillieUniform = ["MNP_CombatUniform_China"];
+_ghillieHelmet = [MNP_Boonie_CN_T];
+_ghillieRig = ["V_Chestrig_blk"];
 _ghillieGlasses = [];
 
 // Spec Op

@@ -56,15 +56,15 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "";	// IR Laser
-_attach2 = "";	// Flashlight
+_attach1 = "acc_pointer_IR";	// IR Laser
+_attach2 = "acc_flashlight";	// Flashlight
 
-_silencer1 = "";	// 5.56 suppressor
-_silencer2 = "";	// 6.5 suppressor
+_silencer1 = "muzzle_snds_M";	// 5.56 suppressor
+_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "";		// ACO
-_scope2 = "";			// MRCO Scope - 1x - 6x
-_scope3 = "optic_LRPS";			// SOS Scope - 18x - 75x
+_scope1 = "hlc_optic_kobra";	// ACO
+_scope2 = "HLC_Optic_PSO1";		// MRCO Scope - 1x - 6x
+_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
