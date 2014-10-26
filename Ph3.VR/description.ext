@@ -112,7 +112,15 @@ class Params
 {
 
 // ============================================================================================
-
+// PhanTactical - Forced First Person View
+// Credits: tanaKa - PhanTactical    
+	class First_Person_View 
+	{
+		title = "First Person View Only";
+		values[] = {0, 1};
+		texts[] = {"Disabled", "Enabled"};
+		default = 1;
+	};
 // F3 - Debug Mode
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT

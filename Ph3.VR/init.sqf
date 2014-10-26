@@ -209,6 +209,24 @@ f_var_cachingAggressiveness = 2;
 [] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
+// PhanTactical - First Person View Forced
+// Credits: tanaKa PhanTactical
+if (!isDedicated) then {
+	
+        // Force first person view
+	if (First_Person_View == 1) then {
+		[] spawn {
+			while {true} do {
+				waitUntil {(cameraView == "External")};
+				if ((vehicle player) == player) then { player switchCamera "Internal"; Server globalChat "external view is disabled.";};
+				sleep 0.01;
+			};
+		};
+	};
+};
+
+
+// ====================================================================================
 // PhanTactical - Intro Text
 // Credits: Bourbon Warfare
 
