@@ -187,25 +187,25 @@ _ARmag = "sti_200Rnd_556x45";
 _ARmag_tr = "sti_200Rnd_556x45_Tracer";
 
 // Medium MG
-_MMG = "STI_M240G";
-_MMGmag = "sti_100Rnd_762x51";
-_MMGmag_tr = "sti_100Rnd_762x51_Tracer";
+_MMG = "rhs_weap_m240B";
+_MMGmag = "rhsusf_100Rnd_762x51";
+_MMGmag_tr = "rhsusf_100Rnd_762x51";
 
 // Rifleman AT
-_RAT = "STI_M136";
-_RATmag = "STI_M_M136";
+_RAT = "rhs_weap_M136";
+_RATmag = "rhs_m136_mag";
 
 // Medium AT
-_MAT = "STI_MAAWS";
-_MATmag1 = "STI_84MM_HEAT";
-_MATmag2 = "STI_84MM_HE";
+_MAT = "rhs_weap_fgm148";
+_MATmag1 = "rhs_fgm148_magazine_AT";
+_MATmag2 = "rhs_fgm148_magazine_AT";
 
 // Surface Air
-_SAM = "launch_B_Titan_F";
-_SAMmag = "Titan_AA";
+_SAM = "rhs_weap_fim92";
+_SAMmag = "rhs_fim92_mag";
 
 // Sniper
-_SNrifle = "hlc_rifle_M21";
+_SNrifle = "hlc_rifle_m14dmr";
 _SNrifleMag = "hlc_20Rnd_762x51_B_M14";
 
 // Engineer items

@@ -182,9 +182,9 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "rhs_weap_m249_pip";
-_ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
-_ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
+_AR = "STI_M249";
+_ARmag = "sti_200Rnd_556x45";
+_ARmag_tr = "sti_200Rnd_556x45_Tracer";
 
 // Medium MG
 _MMG = "rhs_weap_m240B";
@@ -254,7 +254,7 @@ _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["rhs_uniform_cu_ucp"];
-_crewHelmet = ["rhsusf_cvc_green_ess"];
+_crewHelmet = ["rhsusf_cvc_helmet"];
 _crewRig = ["rhsusf_iotv_ucp_Repair"];
 _crewGlasses = [];
 
@@ -266,7 +266,7 @@ _ghillieGlasses = ["BWA3_G_Combat_Black"];
 
 // Spec Op
 _sfuniform = ["rhs_uniform_cu_ucp"];
-_sfhelmet = ["rhsusf_ach_helmet_camo_ucp"];
+_sfhelmet = ["rhsusf_ach_helmet_headset_ess_ucp"];
 _sfRig = ["rhsusf_iotv_ucp_Squadleader"];
 _sfGlasses = ["BWA3_G_Combat_Black"];
 

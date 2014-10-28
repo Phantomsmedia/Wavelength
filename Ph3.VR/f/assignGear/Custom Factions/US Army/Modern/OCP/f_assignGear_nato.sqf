@@ -182,9 +182,9 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "rhs_weap_m249_pip";
-_ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
-_ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
+_AR = "STI_M249";
+_ARmag = "sti_200Rnd_556x45";
+_ARmag_tr = "sti_200Rnd_556x45_Tracer";
 
 // Medium MG
 _MMG = "rhs_weap_m240B";
@@ -236,7 +236,7 @@ _baseHelmet = ["rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"];
 _baseGlasses = ["BWA3_G_Combat_Black"];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk"];
+_lightRig = ["rhsusf_iotv_ocp_Repair"];
 _mediumRig = ["rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Teamleader"]; 	// default for all infantry classes
 _heavyRig = ["rhsusf_iotv_ocp_Teamleader"];
 
@@ -254,13 +254,13 @@ _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["rhs_uniform_cu_ocp"];
-_crewHelmet = ["rhsusf_cvc_ess"];
+_crewHelmet = ["rhsusf_cvc_green_helmet"];
 _crewRig = ["rhsusf_iotv_ocp_Repair"];
 _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["rhs_uniform_cu_ocp"];
-_ghillieHelmet = [rhsusf_ach_helmet_camo_ocp];
+_ghillieHelmet = [rhsusf_ach_helmet_headset_ess_ocp];
 _ghillieRig = ["rhsusf_iotv_ocp_Squadleader"];
 _ghillieGlasses = ["BWA3_G_Combat_Black"];
 
