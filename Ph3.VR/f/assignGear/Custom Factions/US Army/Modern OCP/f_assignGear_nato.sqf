@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - US Army OCP
+// F3 - Folk Assign Gear Script - US Army Modern OCP
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -150,9 +150,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "rhsusf_assault_eagleaiii_ucp";					// carries 120, weighs 20
-_bagmedium = "rhsusf_assault_eagleaiii_ucp";				// carries 240, weighs 30
-_baglarge = "B_Carryall_cbr"; 				// carries 320, weighs 40
+_bagsmall = "rhsusf_assault_eagleaiii_ocp";		// carries 120, weighs 20
+_bagmedium = "rhsusf_assault_eagleaiii_ocp";	// carries 240, weighs 30
+_baglarge = "rhsusf_assault_eagleaiii_ocp"; 	// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -231,14 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_cu_ucp""];
-_baseHelmet = ["rhsusf_ach_helmet_ucp","rhsusf_ach_helmet_ESS_ucp"];
+_baseUniform = ["rhs_uniform_cu_ocp""];
+_baseHelmet = ["rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"];
 _baseGlasses = ["BWA3_G_Combat_Black"];
 
 // Armored vests
-_lightRig = ["rhsusf_iotv_ucp_Repair"];
-_mediumRig = ["rhsusf_iotv_ucp_Rifleman","rhsusf_iotv_ucp_Grenadier","rhsusf_iotv_ucp_Teamleader"]; 	// default for all infantry classes
-_heavyRig = ["rhsusf_iotv_ucp_Teamleader"];
+_lightRig = ["rhsusf_iotv_ocp_Repair"];
+_mediumRig = ["rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Grenadier","rhsusf_iotv_ocp_Teamleader"]; 	// default for all infantry classes
+_heavyRig = ["rhsusf_iotv_ocp_Teamleader"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -253,21 +253,21 @@ _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["rhs_uniform_cu_ucp"];
-_crewHelmet = ["rhsusf_cvc_helmet"];
-_crewRig = ["rhsusf_iotv_ucp_Repair"];
+_crewUniform = ["rhs_uniform_cu_ocp"];
+_crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_ess"];
+_crewRig = ["rhsusf_iotv_ocp_Repair"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["rhs_uniform_cu_ucp"];
-_ghillieHelmet = [rhsusf_ach_helmet_camo_ucp];
-_ghillieRig = ["rhsusf_iotv_ucp_Squadleader"];
+_ghillieUniform = ["rhs_uniform_cu_ocp"];
+_ghillieHelmet = [rhsusf_ach_helmet_headset_ess_ocp];
+_ghillieRig = ["rhsusf_iotv_ocp_Squadleader"];
 _ghillieGlasses = ["BWA3_G_Combat_Black"];
 
 // Spec Op
-_sfuniform = ["rhs_uniform_cu_ucp"];
-_sfhelmet = ["rhsusf_ach_helmet_headset_ess_ucp"];
-_sfRig = ["rhsusf_iotv_ucp_Squadleader"];
+_sfuniform = ["rhs_uniform_cu_ocp"];
+_sfhelmet = ["rhsusf_ach_helmet_camo_ocp"];
+_sfRig = ["rhsusf_iotv_ocp_Squadleader"];
 _sfGlasses = ["BWA3_G_Combat_Black"];
 
 // ====================================================================================

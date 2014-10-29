@@ -5,4 +5,4 @@
 
 3.) Paste it in the "assignGear" folder and overwrite the already present file.
 
-4.) In the editor, use the faction of the assignGear it overwritten.
+4.) In the editor, use the faction of the assignGear you've overwritten.

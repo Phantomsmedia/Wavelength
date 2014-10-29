@@ -130,10 +130,10 @@ _pistol = "hgun_ACPC2_F";
 _pistolmag = "9Rnd_45ACP_Mag";
 
 // Grenades
-_grenade = "HandGrenade";
+_grenade = "rhs_mag_rgd5";
 _Mgrenade = "MiniGrenade";
-_smokegrenade = "SmokeShell";
-_smokegrenadegreen = "SmokeShellGreen";
+_smokegrenade = "rhs_mag_nspd";
+_smokegrenadegreen = "rhs_mag_nspn_green";
 
 // misc medical items.
 _firstaid = "FirstAidKit";
@@ -318,7 +318,7 @@ if (_isMan) then {
 		_unit removeItem _nvg;
 	};
 	// uncomment to remove nvgoogles
-	_unit linkItem _nvg;					// add universal NVG for this faction
+						// add universal NVG for this faction
 
 	//removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
 	//_unit linkItem "ItemGPS"; 					// add gps to this faction
@@ -367,7 +367,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
@@ -392,7 +392,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
@@ -432,7 +432,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
@@ -524,7 +524,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_riflemag,7];
 		_unit addmagazines [_riflemag_tr,2];
 		_unit addweapon _rifle;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit addmagazines [_grenade,2];
 		_unit addmagazines [_mgrenade,2];
 		_unit addmagazines [_smokegrenade,2];
@@ -559,7 +559,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
@@ -593,7 +593,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,2];
@@ -628,7 +628,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
@@ -666,7 +666,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		["mtrag"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
@@ -698,7 +698,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
 		["msamag"] call _backpack;
@@ -732,7 +732,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
 		_unit addmagazines [_smokegrenade,1];
@@ -769,7 +769,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_glsmokewhite,4];
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
@@ -786,7 +786,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;

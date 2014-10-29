@@ -62,7 +62,7 @@ _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
 _scope1 = "optic_Aco";			// ACO
 _scope2 = "optic_Hamr";			// MRCO Scope - 1x - 6x
-_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
+_scope3 = "rhs_acc_pso1m2";		// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -128,10 +128,10 @@ _pistol = "hgun_Rook40_F";
 _pistolmag = "16Rnd_9x21_Mag";
 
 // Grenades
-_grenade = "HandGrenade";
+_grenade = "rhs_mag_rgd5";
 _Mgrenade = "MiniGrenade";
-_smokegrenade = "SmokeShell";
-_smokegrenadegreen = "SmokeShellGreen";
+_smokegrenade = "rhs_mag_nspd";
+_smokegrenadegreen = "rhs_mag_nspn_green";
 
 // misc medical items.
 _firstaid = "FirstAidKit";
@@ -182,31 +182,31 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "LMG_Zafir_F";
-_ARmag = "150Rnd_762x51_Box";
-_ARmag_tr = "150Rnd_762x51_Box_Tracer";
+_AR = "hlc_rifle_rpk";
+_ARmag = "hlc_45Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_45Rnd_762x39_t_rpk";
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "rhs_weap_pkp";
+_MMGmag = "rhs_100Rnd_762x54mmR";
+_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Rifleman AT
-_RAT = "launch_RPG32_F";
-_RATmag = "RPG32_F";
+_RAT = "rhs_weap_rpg7";
+_RATmag = "rhs_rpg7_PG7VL_mag";
 
 // Medium AT
-_MAT = "launch_O_Titan_short_F";
-_MATmag1 = "Titan_AT";
-_MATmag2 = "Titan_AP";
+_MAT = "rhs_weap_rpg7";
+_MATmag1 = "rhs_rpg7_PG7VL_mag";
+_MATmag2 = "rhs_rpg7_PG7VL_mag";
 
 // Surface Air
-_SAM = "launch_O_Titan_F";
-_SAMmag = "Titan_AA";
+_SAM = "rhs_weap_igla";
+_SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
-_SNrifle = "srifle_GM6_F";
-_SNrifleMag = "5Rnd_127x108_Mag";
+_SNrifle = "rhs_weap_svdp";
+_SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
