@@ -42,13 +42,17 @@ In-Game Editor:
 
 Once in-game, open up the editor and load up the Ph3.VR template.
 
-When it opens, you will see all the playable factions. Enable markers (F6 key) to better identify which armies are which. Once you choose a faction you want the players to be, delete the rest.
+When it opens, you will see three factions. One for BLUFOR, INDFOR, and OPFOR. Pick the sides you're going to use, and delete the ones you won't.
 
 *Be sure to keep the modules and units next to the "Required Modules" marker. Under no circumstances do you delete these.
 
-*If a faction has an AGM Blue Force Tracker module in the middle of it, keep that aswell.
+To choose your faction, open up your mission's folder, and go to the "f" folder, and then the "assignGear" folder. Delete the the assignGear of the base faction you're going to use.
 
-http://i.imgur.com/5VkOPfZ.jpg
+BLUFOR = f_assignGear_nato
+INDFOR = f_assignGear_aaf
+OPFOR = f_assignGear_csat
+
+Now, open up the "Custom Factions" folder. Inside are all the factions we have in the Phramework. Simply open the folder of the faction of your choice, and paste it back in the "assignGear" folder.
 
 http://i.imgur.com/3YSfDhY.jpg
 
