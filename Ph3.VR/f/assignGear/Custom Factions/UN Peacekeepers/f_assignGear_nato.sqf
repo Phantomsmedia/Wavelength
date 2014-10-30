@@ -261,7 +261,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["rhs_uniform_flora"];
 _ghillieHelmet = [MNP_Helmet_PAGST_UN];	
-_ghillieRig = ["MNP_Vest_M81b"];
+_ghillieRig = ["rhs_6b23_sniper"];
 _ghillieGlasses = [];
 
 // Spec Op

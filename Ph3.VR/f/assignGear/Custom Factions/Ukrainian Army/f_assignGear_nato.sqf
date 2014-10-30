@@ -193,7 +193,7 @@ _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Rifleman AT
 _RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg7_PG7VL_mag";
+_RATmag = "rhs_rpg26_mag";
 
 // Medium AT
 _MAT = "rhs_weap_rpg7";
