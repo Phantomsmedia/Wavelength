@@ -1,8 +1,0 @@
-
-1.) Pick the faction of your choice, and open their folder.
-
-2.) Copy the assignGear file.
-
-3.) Paste it in the "assignGear" folder and overwrite the already present file.
-
-4.) In the editor, use the faction of the assignGear you've overwritten.
