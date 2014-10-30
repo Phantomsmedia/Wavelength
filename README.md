@@ -98,7 +98,7 @@ To change the gear loadouts of units, go to your mission folder, the f folder, a
 
 Weapons:
 
-You can change what weapons a unit uses by simply changing the weapon and ammo classnames
+You can change what weapons a unit uses by simply changing the weapon and ammo classnames.
 
 This rule applies to every item in the assignGear file.
 
