@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - KPA
+// F3 - Folk Assign Gear Script - North Korean Army
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 

@@ -231,7 +231,7 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_cu_ucp""];
+_baseUniform = ["rhs_uniform_cu_ucp"];
 _baseHelmet = ["rhsusf_ach_helmet_ucp","rhsusf_ach_helmet_ESS_ucp"];
 _baseGlasses = ["BWA3_G_Combat_Black"];
 

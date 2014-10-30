@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - CSAT
+// F3 - Folk Assign Gear Script - North Vietnamese Army
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -772,8 +772,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
 		_unit addWeapon "Binocular";
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
@@ -788,8 +786,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
 		["cc"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
@@ -804,8 +800,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -819,8 +813,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit addItem "ItemGPS";
-		_unit assignItem "ItemGPS";
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;

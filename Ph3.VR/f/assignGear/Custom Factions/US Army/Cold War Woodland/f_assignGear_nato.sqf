@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - US Army 90s Desert
+// F3 - Folk Assign Gear Script - US Army Cold War Woodland
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -60,8 +60,8 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "";					// Holosight
-_scope2 = "";					// MRCO Scope - 1x - 6x
+_scope1 = "";	// Holosight
+_scope2 = "";			// MRCO Scope - 1x - 6x
 _scope3 = "hlc_optic_LRT_m14";	// SOS Scope - 18x - 75x
 
 // Default setup
@@ -187,25 +187,25 @@ _ARmag = "sti_200Rnd_556x45";
 _ARmag_tr = "sti_200Rnd_556x45_Tracer";
 
 // Medium MG
-_MMG = "rhs_weap_m240B";
-_MMGmag = "rhsusf_100Rnd_762x51";
-_MMGmag_tr = "rhsusf_100Rnd_762x51";
+_MMG = "STI_M240G";
+_MMGmag = "sti_100Rnd_762x51";
+_MMGmag_tr = "sti_100Rnd_762x51_Tracer";
 
 // Rifleman AT
-_RAT = "rhs_weap_M136";
-_RATmag = "rhs_m136_mag";
+_RAT = "STI_M136";
+_RATmag = "STI_M_M136";
 
 // Medium AT
-_MAT = "rhs_weap_fgm148";
-_MATmag1 = "rhs_fgm148_magazine_AT";
-_MATmag2 = "rhs_fgm148_magazine_AT";
+_MAT = "STI_MAAWS";
+_MATmag1 = "STI_84MM_HEAT";
+_MATmag2 = "STI_84MM_HE";
 
 // Surface Air
-_SAM = "rhs_weap_fim92";
-_SAMmag = "rhs_fim92_mag";
+_SAM = "launch_B_Titan_F";
+_SAMmag = "Titan_AA";
 
 // Sniper
-_SNrifle = "hlc_rifle_m14dmr";
+_SNrifle = "hlc_rifle_M21";
 _SNrifleMag = "hlc_20Rnd_762x51_B_M14";
 
 // Engineer items
@@ -231,8 +231,8 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["MNP_CombatUniform_3Co_A"];
-_baseHelmet = ["MNP_Helmet_3Co"];
+_baseUniform = ["MNP_CombatUniform_Wood_A"];
+_baseHelmet = ["MNP_Helmet_M81"];
 _baseGlasses = [];
 
 // Armored vests
@@ -247,20 +247,20 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_3Co_A"];
+_pilotUniform = ["MNP_CombatUniform_M81_Rg"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_3Co_B"];
+_crewUniform = ["MNP_CombatUniform_Wood_B"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_TacVest_blk"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_3Co_Sh"];
-_ghillieHelmet = ["H_ShemagOpen_khk"];
+_ghillieUniform = ["MNP_CombatUniform_M81_Sh"];
+_ghillieHelmet = [H_Shemag_olive_hs];
 _ghillieRig = ["MNP_Vest_M81b"];
 _ghillieGlasses = [];
 
