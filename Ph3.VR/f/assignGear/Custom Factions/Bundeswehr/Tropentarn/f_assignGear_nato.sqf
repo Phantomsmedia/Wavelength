@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - Bundeswehr
+// F3 - Folk Assign Gear Script - Bundeswehr Tropentarn
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -54,14 +54,15 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "BWA3_acc_LLM01_flash";			// IR Laser & Flashlight
+_attach1 = "RH_peq15";			// IR Laser
+_attach2 = "RH_SFM952V";		// Flashlight
 
-_silencer1 = "muzzle_snds_M";				// 5.56 suppressor
-_silencer2 = "BWA3_muzzle_snds_G36";		// 6.5 suppressor
+_silencer1 = "muzzle_snds_M";	// 5.56 suppressor
+_silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "BWA3_optic_RSAS";				// Holosight
-_scope2 = "BWA3_optic_ZO4x30";				// MRCO Scope - 1x - 6x
-_scope3 = "optic_LRPS";						// SOS Scope - 18x - 75x
+_scope1 = "BWA3_optic_RSAS";	// Holosight
+_scope2 = "BWA3_optic_ZO4x30";	// MRCO Scope - 1x - 6x
+_scope3 = "BWA3_optic_24x72";	// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -126,15 +127,11 @@ _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 _pistol = "BWA3_P8";
 _pistolmag = "BWA3_15Rnd_9x19_P8";
 
-// PDWs (Pilots)
-_pistol2 = "BWA3_MP7";
-_pistolmag2 = "BWA3_40Rnd_46x30_MP7";
-
 // Grenades
 _grenade = "BWA3_DM51A1";
 _Mgrenade = "MiniGrenade";
 _smokegrenade = "BWA3_DM25";
-_smokegrenadeorange = "BWA3_DM32_Orange";
+_smokegrenadegreen = "BWA3_DM32_Orange";
 
 // misc medical items.
 _firstaid = "FirstAidKit";
@@ -195,13 +192,13 @@ _MMGmag = "BWA3_120Rnd_762x51";
 _MMGmag_tr = "BWA3_120Rnd_762x51";
 
 // Rifleman AT
-_RAT = "BWA3_RGW90_Loaded";
-_RATmag = "BWA3_RGW90_HH";
+_RAT = "BWA3_Pzf3";
+_RATmag = "BWA3_Pzf3_IT";
 
 // Medium AT
-_MAT = "BWA3_Pzf3_Loaded";
-_MATmag1 = "BWA3_Pzf3_IT";
-_MATmag2 = "BWA3_Pzf3_IT";
+_MAT = "BWA3_RGW90_Loaded";
+_MATmag1 = "BWA3_RGW90_HH";
+_MATmag2 = "BWA3_RGW90_HH";
 
 // Surface Air
 _SAM = "BWA3_Fliegerfaust";
@@ -234,26 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-
-// Flecktarn Uniforms
-_baseUniform = ["U_O_CombatUniform_ocamo"];
-_baseHelmet = ["H_HelmetO_ocamo"];
+_baseUniform = ["BWA3_Uniform_Tropen","BWA3_Uniform3_Tropen"];
+_baseHelmet = ["BWA3_M92_Tropen"];
 _baseGlasses = [];
 
-// Flecktarn Vests
-_lightRig = ["BWA3_Vest_Fleck"];
-_mediumRig = ["BWA3_Vest_Autorifleman_Fleck","BWA3_Vest_Grenadier_Fleck","BWA3_Vest_Rifleman1_Fleck"]; 			// default for all infantry classes
-_heavyRig = ["BWA3_Vest_Grenadier_Fleck"];
-
-// Tropentarn Uniforms
-//_baseUniform = ["BWA3_Uniform_Tropen","BWA3_Uniform3_Tropen"];
-//_baseHelmet = ["BWA3_M92_Tropen"];
-//_baseGlasses = [];
-
-// Tropentarn Vests
-//_lightRig = ["BWA3_Vest_Tropen"];
-//_mediumRig = ["BWA3_Vest_Autorifleman_Tropen","BWA3_Vest_Grenadier_Tropen","BWA3_Vest_Rifleman1_Tropen"];		// default for all infantry classes
-//_heavyRig = ["BWA3_Vest_Grenadier_Tropen"];
+// Armored vests
+_lightRig = ["V_TacVest_blk","V_TacVest_oli"];
+_mediumRig = ["BWA3_Vest_Rifleman1_Tropen","BWA3_Vest_Autorifleman_Tropen","BWA3_Vest_Grenadier_Tropen"]; 	// default for all infantry classes
+_heavyRig = ["BWA3_Vest_Grenadier_Tropen"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -261,45 +246,27 @@ _diverHelmet = [];
 _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
-// Pilot Flecktarn
-_pilotUniform = ["BWA3_Uniform_Crew_Fleck"];
+// Pilot
+_pilotUniform = ["BWA3_Uniform_Tropen"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["BWA3_Vest_Fleck"];
+_pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
-// Pilot Tropentarn
-//_pilotUniform = ["BWA3_Uniform_Crew_Tropen"];
-//_pilotHelmet = ["H_PilotHelmetHeli_B"];
-//_pilotRig = ["BWA3_Vest_Tropen"];
-//_pilotGlasses = [];
-
-// Crewman Flecktarn
-_crewUniform = ["BWA3_Uniform_Crew_Fleck"];
-_crewHelmet = ["BWA3_CrewmanKSK_Fleck_Headset"];
-_crewRig = ["BWA3_Vest_Fleck"];
+// Crewman
+_crewUniform = ["BWA3_Uniform3_Tropen"];
+_crewHelmet = ["BWA3_CrewmanKSK_Tropen_Headset"];
+_crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
-// Crewman Tropentarn
-//_crewUniform = ["BWA3_Uniform_Crew_Tropen"];
-//_crewHelmet = ["BWA3_CrewmanKSK_Tropen_Headset"];
-//_crewRig = ["BWA3_Vest_Tropen"];
-//_crewGlasses = [];
-
-// Ghillie Flecktarn
-_ghillieUniform = ["BWA3_Uniform_Ghillie_Fleck"];
+// Ghillie
+_ghillieUniform = ["BWA3_Uniform_Ghillie_Tropen"];
 _ghillieHelmet = [];
-_ghillieRig = ["BWA3_Vest_Marksman_Fleck"];
+_ghillieRig = ["BWA3_Vest_Marksman_Tropen"];
 _ghillieGlasses = [];
 
-// Ghillie Tropentarn
-//_ghillieUniform = ["BWA3_Uniform_Ghillie_Tropen"];
-//_ghillieHelmet = [];
-//_ghillieRig = ["BWA3_Vest_Marksman_Tropen"];
-//_ghillieGlasses = [];
-
 // Spec Op
-_sfuniform = ["BWA3_Uniform_Fleck","BWA3_Uniform3_Fleck"];
-_sfhelmet = ["BWA3_Booniehat_Fleck","BWA3_OpsCore_Fleck_Camera","BWA3_OpsCore_Fleck","BWA3_Beret_Jaeger"];
+_sfuniform = ["BWA3_Uniform_Tropen"];
+_sfhelmet = ["BWA3_M92_Tropen"];
 _sfRig = _mediumRig;
 _sfGlasses = [];
 
@@ -362,7 +329,7 @@ _backpack = {
 	_typeofBackPack = _this select 0;
 	switch (_typeofBackPack) do
 	{
-		#include "f_assignGear_bundeswehr_b.sqf";
+		#include "f_assignGear_nato_b.sqf";
 	};
 };
 
@@ -804,8 +771,8 @@ switch (_typeofUnit) do
 // LOADOUT: VEHICLE COMMANDER
 	case "vc":
 	{
-		_unit addmagazines [_pistolmag2,4];
-		_unit addweapon _pistol2;
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
@@ -820,8 +787,8 @@ switch (_typeofUnit) do
 // LOADOUT: VEHICLE DRIVER
 	case "vd":
 	{
-		_unit addmagazines [_pistolmag2,4];
-		_unit addweapon _pistol2;
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
@@ -836,8 +803,8 @@ switch (_typeofUnit) do
 // LOADOUT: VEHICLE GUNNER
 	case "vg":
 	{
-		_unit addmagazines [_pistolmag2,4];
-		_unit addweapon _pistol2;
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
@@ -851,8 +818,8 @@ switch (_typeofUnit) do
 // LOADOUT: AIR VEHICLE PILOTS
 	case "pp":
 	{
-		_unit addmagazines [_pistolmag2,4];
-		_unit addweapon _pistol2;
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
@@ -866,8 +833,8 @@ switch (_typeofUnit) do
 // LOADOUT: AIR VEHICLE CREW CHIEF
 	case "pcc":
 	{
-		_unit addmagazines [_pistolmag2,4];
-		_unit addweapon _pistol2;
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
 		["cc"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
@@ -880,8 +847,8 @@ switch (_typeofUnit) do
 // LOADOUT: AIR VEHICLE CREW
 	case "pc":
 	{
-		_unit addmagazines [_pistolmag2,4];
-		_unit addweapon _pistol2;
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
@@ -1001,8 +968,8 @@ switch (_typeofUnit) do
 // LOADOUT: SUBMACHINEGUNNER
 	case "smg":
 	{
-		_unit addmagazines [_pistolmag2,4];
-		_unit addweapon _pistol2;
+		_unit addmagazines [_smgmag,7];
+		_unit addweapon _smg;
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,3];
