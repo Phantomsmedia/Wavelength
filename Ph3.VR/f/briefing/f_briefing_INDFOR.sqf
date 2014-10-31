@@ -96,7 +96,22 @@ From 52.1 to 52.9 for Infantry Support (MMG etc)
 "]];
 
 // ====================================================================================
+// NOTES: INTEL
+// The code below creates an intel section, which contains pictures.
 
+_intel = player createDiaryRecord ["diary", ["Intel","
+<br/>
+*** Insert information on the first intel piece. ***
+<br/>
+<img image='intel1.jpg'/>
+<br/>
+*** Insert information on the second intel piece. ***
+<br/>
+<img image='intel2.jpg'/>
+<br/>
+"]];
+
+// ====================================================================================
 // NOTES: ADMINISTRATION
 // The code below creates the administration sub-section of notes.
 

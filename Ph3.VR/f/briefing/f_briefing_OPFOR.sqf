@@ -94,6 +94,21 @@ _cre = player createDiaryRecord ["diary", ["Credits","
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
 "]];
+// ====================================================================================
+// NOTES: INTEL
+// The code below creates an intel section, which contains pictures.
+
+_intel = player createDiaryRecord ["diary", ["Intel","
+<br/>
+*** Insert information on the first intel piece. ***
+<br/>
+<img image='intel1.jpg'/>
+<br/>
+*** Insert information on the second intel piece. ***
+<br/>
+<img image='intel2.jpg'/>
+<br/>
+"]];
 
 // ====================================================================================
 
