@@ -151,8 +151,8 @@ _chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "rhs_sidor";					// carries 120, weighs 20
-_bagmedium = "rhs_sidor";					// carries 240, weighs 30
-_baglarge = "rhs_assault_umbts"; 			// carries 320, weighs 40
+_bagmedium = "rhs_assault_umbts";			// carries 240, weighs 30
+_baglarge = "rhs_rpg"; 						// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
