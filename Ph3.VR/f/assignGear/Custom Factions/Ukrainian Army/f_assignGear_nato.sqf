@@ -62,7 +62,7 @@ _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
 _scope1 = "hlc_optic_kobra";	// Kobra
 _scope2 = "HLC_Optic_PSO1";		// PSO Scope - 1x - 6x
-_scope3 = "rhs_acc_pso1m2";		// SOS Scope - 18x - 75x
+_scope3 = "";					// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_scope1]; // The default attachment set for most units, overwritten in the individual unitType
