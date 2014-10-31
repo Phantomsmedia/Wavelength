@@ -247,7 +247,7 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["BWA3_Uniform_Tropen"];
+_pilotUniform = ["BWA3_Uniform_Crew_Tropen"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["BWA3_Vest_Tropen"];
 _pilotGlasses = [];
