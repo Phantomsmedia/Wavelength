@@ -60,9 +60,9 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "";					// ACO
-_scope2 = "";					// MRCO Scope - 1x - 6x
-_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
+_scope1 = "";						// ACO
+_scope2 = "";						// MRCO Scope - 1x - 6x
+_scope3 = "hlc_optic_artel_m14";	// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -205,8 +205,8 @@ _SAM = "caf_Strela";
 _SAMmag = "caf_AA_rocket";
 
 // Sniper
-_SNrifle = "caf_svd";
-_SNrifleMag = "caf_10Rnd_762x54_SVD";
+_SNrifle = "hlc_rifle_M21";
+_SNrifleMag = "hlc_20Rnd_762x51_B_M14";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
