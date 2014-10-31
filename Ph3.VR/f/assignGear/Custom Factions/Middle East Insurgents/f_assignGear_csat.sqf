@@ -128,10 +128,10 @@ _pistol = "hgun_ACPC2_F";
 _pistolmag = "9Rnd_45ACP_Mag";
 
 // Grenades
-_grenade = "rhs_mag_rgd5";
+_grenade = "HandGrenade";
 _Mgrenade = "MiniGrenade";
-_smokegrenade = "rhs_mag_nspd";
-_smokegrenadegreen = "rhs_mag_nspn_green";
+_smokegrenade = "SmokeShell";
+_smokegrenadegreen = "SmokeShellGreen";
 
 // misc medical items.
 _firstaid = "FirstAidKit";
