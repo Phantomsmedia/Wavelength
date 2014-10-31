@@ -60,8 +60,8 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "";	// Holosight
-_scope2 = "";			// MRCO Scope - 1x - 6x
+_scope1 = "";					// Holosight
+_scope2 = "";					// MRCO Scope - 1x - 6x
 _scope3 = "hlc_optic_LRT_m14";	// SOS Scope - 18x - 75x
 
 // Default setup
@@ -138,7 +138,7 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles_OPFOR";
+_nvg = "NVGoggles";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
@@ -309,7 +309,7 @@ if (_isMan) then {
 		_unit removeItem _nvg;
 	};
 	// uncomment to remove nvgoogles
-	_unit linkItem _nvg;					// add universal NVG for this faction
+						// add universal NVG for this faction
 
 	//removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
 	//_unit linkItem "ItemGPS"; 					// add gps to this faction
