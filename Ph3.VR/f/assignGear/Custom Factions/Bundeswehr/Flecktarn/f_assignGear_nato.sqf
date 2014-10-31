@@ -236,7 +236,7 @@ _baseHelmet = ["BWA3_M92_Fleck"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk","V_TacVest_oli"];
+_lightRig = ["BWA3_Vest_Fleck"];
 _mediumRig = ["BWA3_Vest_Rifleman1_Fleck","BWA3_Vest_Autorifleman_Fleck","BWA3_Vest_Grenadier_Fleck"]; 	// default for all infantry classes
 _heavyRig = ["BWA3_Vest_Grenadier_Fleck"];
 
@@ -247,15 +247,15 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["BWA3_Uniform_Fleck"];
+_pilotUniform = ["BWA3_CrewmanKSK_Fleck_Headset"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["BWA3_Vest_Fleck"];
 _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["BWA3_Uniform3_Fleck"];
 _crewHelmet = ["BWA3_CrewmanKSK_Fleck_Headset"];
-_crewRig = ["V_TacVest_oli"];
+_crewRig = ["BWA3_Vest_Fleck"];
 _crewGlasses = [];
 
 // Ghillie

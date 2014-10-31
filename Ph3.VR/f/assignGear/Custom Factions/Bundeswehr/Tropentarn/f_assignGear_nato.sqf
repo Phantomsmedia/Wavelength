@@ -249,13 +249,13 @@ _diverGlasses = ["G_Diving"];
 // Pilot
 _pilotUniform = ["BWA3_Uniform_Tropen"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["BWA3_Vest_Tropen"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["BWA3_Uniform3_Tropen"];
+_crewUniform = ["BWA3_Uniform_Crew_Tropen"];
 _crewHelmet = ["BWA3_CrewmanKSK_Tropen_Headset"];
-_crewRig = ["V_TacVest_oli"];
+_crewRig = ["BWA3_Vest_Tropen"];
 _crewGlasses = [];
 
 // Ghillie
