@@ -256,7 +256,7 @@ _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["MNP_CombatUniform_Rebel_A"];
-_crewHelmet = ["H_Watchcap_camo"];
+_crewHelmet = ["rhs_tsh4","rhs_tsh4_bala","rhs_tsh4_ess","rhs_tsh4_ess_bala"];
 _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
