@@ -249,7 +249,7 @@ _diverGlasses = ["G_Diving"];
 // Pilot
 _pilotUniform = ["rhs_uniform_df15"];
 _pilotHelmet = ["rhs_zsh7a_mike"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["V_TacVestIR_blk"];
 _pilotGlasses = [];
 
 // Crewman
