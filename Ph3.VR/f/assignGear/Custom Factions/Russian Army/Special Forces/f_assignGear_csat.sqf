@@ -231,7 +231,7 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_vdv_emr""];
+_baseUniform = ["rhs_uniform_vdv_emr"];
 _baseHelmet = [];
 _baseGlasses = ["rhs_balaclava"];
 
@@ -506,7 +506,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
-		_attachments = [_attach1,_silencer2];
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
