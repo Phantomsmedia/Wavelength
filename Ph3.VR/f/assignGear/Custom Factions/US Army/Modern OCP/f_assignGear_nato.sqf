@@ -247,9 +247,9 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_B_HeliPilotCoveralls"];
+_pilotUniform = ["rhs_uniform_cu_ocp"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["rhsusf_iotv_ocp_Repair"];
 _pilotGlasses = [];
 
 // Crewman
