@@ -182,27 +182,27 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "STI_M249";
-_ARmag = "sti_200Rnd_556x45";
-_ARmag_tr = "sti_200Rnd_556x45_Tracer";
+_AR = "hlc_lmg_m60";
+_ARmag = "hlc_100Rnd_762x51_B_M60E4";
+_ARmag_tr = "hlc_100Rnd_762x51_T_M60E4";
 
 // Medium MG
-_MMG = "STI_M240G";
-_MMGmag = "sti_100Rnd_762x51";
-_MMGmag_tr = "sti_100Rnd_762x51_Tracer";
+_MMG = "hlc_lmg_m60";
+_MMGmag = "hlc_100Rnd_762x51_B_M60E4";
+_MMGmag_tr = "hlc_100Rnd_762x51_T_M60E4";
 
 // Rifleman AT
-_RAT = "STI_M136";
-_RATmag = "STI_M_M136";
+_RAT = "rhs_weap_M136";
+_RATmag = "rhs_m136_mag";
 
 // Medium AT
 _MAT = "STI_MAAWS";
-_MATmag1 = "STI_84MM_HEAT";
-_MATmag2 = "STI_84MM_HE";
+_MATmag1 = "STI_84MM_HE";
+_MATmag2 = "STI_84MM_HEAT";
 
 // Surface Air
-_SAM = "launch_B_Titan_F";
-_SAMmag = "Titan_AA";
+_SAM = "rhs_weap_fim92";
+_SAMmag = "rhs_fim92_mag";
 
 // Sniper
 _SNrifle = "hlc_rifle_M21";
