@@ -233,7 +233,7 @@ _specOp = [];
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["rhs_uniform_cu_ocp"];
 _baseHelmet = ["rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"];
-_baseGlasses = ["BWA3_G_Combat_Black"];
+_baseGlasses = [];
 
 // Armored vests
 _lightRig = ["rhsusf_iotv_ocp_Repair"];
@@ -260,15 +260,15 @@ _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["rhs_uniform_cu_ocp"];
-_ghillieHelmet = [rhsusf_ach_helmet_headset_ess_ocp];
+_ghillieHelmet = ["rhs_Booniehat_ocp"];
 _ghillieRig = ["rhsusf_iotv_ocp_Squadleader"];
-_ghillieGlasses = ["BWA3_G_Combat_Black"];
+_ghillieGlasses = [];
 
 // Spec Op
 _sfuniform = ["rhs_uniform_cu_ocp"];
 _sfhelmet = ["rhsusf_ach_helmet_camo_ocp"];
 _sfRig = ["rhsusf_iotv_ocp_Squadleader"];
-_sfGlasses = ["BWA3_G_Combat_Black"];
+_sfGlasses = [];
 
 // ====================================================================================
 
