@@ -5,7 +5,6 @@ class Mission
 	{
 		"A3_Characters_F_EPC",
 		"a3_characters_f",
-		"rav_lifter_a3",
 		"A3_Modules_F_Curator_Curator",
 		"A3_Characters_F_BLUFOR",
 		"A3_Characters_F_Gamma",
@@ -147,7 +146,6 @@ class Mission
 		"A3_Structures_F_EPA_Items_Tools",
 		"A3_Structures_F_Items_Electronics",
 		"A3_Structures_F_EPB_Civ_Garbage",
-		"RAV_Lifter_A3",
 		"A3_Structures_F_EPC_Civ_InfoBoards",
 		"CABuildings",
 		"aia_buildings_config",
