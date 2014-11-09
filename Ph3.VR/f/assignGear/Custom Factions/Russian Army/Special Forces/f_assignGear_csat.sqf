@@ -58,7 +58,8 @@ _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
 _silencer1 = "muzzle_snds_M";			// 5.56 suppressor
-_silencer2 = "hlc_muzzle_762SUP_AK";	// 6.5 suppressor
+_silencer2 = "hlc_muzzle_545SUP_AK";	// Rifle & Carbine suppressor
+_silencer3 = "hlc_muzzle_762SUP_AK";	// Autorifleman suppressor
 
 _scope1 = "hlc_optic_kobra";	// Holosight
 _scope2 = "HLC_Optic_1p29";		// MRCO Scope - 1x - 6x
