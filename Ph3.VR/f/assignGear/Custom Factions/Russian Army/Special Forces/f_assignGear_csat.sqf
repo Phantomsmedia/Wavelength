@@ -452,7 +452,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
-		_attachments = [_attach1,_silencer2];
+		_attachments = [_attach1,_silencer3];
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
