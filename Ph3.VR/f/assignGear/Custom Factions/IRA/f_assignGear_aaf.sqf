@@ -192,17 +192,17 @@ _MMGmag = "rhsusf_100Rnd_762x51";
 _MMGmag_tr = "rhsusf_100Rnd_762x51";
 
 // Rifleman AT
-_RAT = "caf_rpg7";
-_RATmag = "caf_PG7V";
+_RAT = "rhs_weap_rpg7";
+_RATmag = "rhs_rpg7_PG7VL_mag";
 
 // Medium AT
-_MAT = "caf_rpg7";
-_MATmag1 = "caf_PG7V";
-_MATmag2 = "caf_PG7V";
+_MAT = "rhs_weap_rpg7";
+_MATmag1 = "rhs_rpg7_PG7VL_mag";
+_MATmag2 = "rhs_rpg7_PG7VL_mag";
 
 // Surface Air
-_SAM = "caf_Strela";
-_SAMmag = "caf_AA_rocket";
+_SAM = "rhs_weap_igla";
+_SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
 _SNrifle = "hlc_rifle_M21";

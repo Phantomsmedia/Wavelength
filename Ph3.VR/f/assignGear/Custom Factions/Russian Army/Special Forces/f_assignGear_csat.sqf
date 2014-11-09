@@ -62,7 +62,7 @@ _silencer2 = "hlc_muzzle_762SUP_AK";	// 6.5 suppressor
 
 _scope1 = "hlc_optic_kobra";	// Holosight
 _scope2 = "HLC_Optic_1p29";		// MRCO Scope - 1x - 6x
-_scope3 = "";					// SOS Scope - 18x - 75x
+_scope3 = "rhs_acc_pso1m2";		// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -187,26 +187,26 @@ _ARmag = "hlc_45Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_45Rnd_762x39_t_rpk";
 
 // Medium MG
-_MMG = "caf_pkm";
-_MMGmag = "CAF_100Rnd_762x54_PKM";
-_MMGmag_tr = "CAF_100Rnd_762x54_PKM";
+_MMG = "rhs_weap_pkp";
+_MMGmag = "rhs_100Rnd_762x54mmR";
+_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Rifleman AT
-_RAT = "caf_rpg7";
-_RATmag = "caf_PG7V";
+_RAT = "rhs_weap_rpg26";
+_RATmag = "rhs_rpg26_mag";
 
 // Medium AT
-_MAT = "caf_rpg7";
-_MATmag1 = "caf_PG7V";
-_MATmag2 = "caf_PG7V";
+_MAT = "rhs_weap_rpg7";
+_MATmag1 = "rhs_rpg7_PG7VL_mag";
+_MATmag2 = "rhs_rpg7_PG7VL_mag";
 
 // Surface Air
-_SAM = "caf_Strela";
-_SAMmag = "caf_AA_rocket";
+_SAM = "rhs_weap_igla";
+_SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
-_SNrifle = "caf_svd";
-_SNrifleMag = "caf_10Rnd_762x54_SVD";
+_SNrifle = "rhs_weap_svdp";
+_SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";

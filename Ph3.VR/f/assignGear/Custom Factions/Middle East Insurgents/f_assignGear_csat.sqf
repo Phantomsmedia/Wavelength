@@ -62,7 +62,7 @@ _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
 _scope1 = "";					// Holosight
 _scope2 = "";					// MRCO Scope - 1x - 6x
-_scope3 = "";					// SOS Scope - 18x - 75x
+_scope3 = "rhs_acc_pso1m2";		// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_scope2]; // The default attachment set for most units, overwritten in the individual unitType
@@ -150,9 +150,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_FieldPack_cbr";				// carries 120, weighs 20
-_bagmedium = "B_FieldPack_cbr";				// carries 240, weighs 30
-_baglarge = "B_Carryall_cbr"; 				// carries 320, weighs 40
+_bagsmall = "rhs_sidor";					// carries 120, weighs 20
+_bagmedium = "rhs_sidor";					// carries 240, weighs 30
+_baglarge = "rhs_rpg"; 						// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -187,26 +187,26 @@ _ARmag = "hlc_45Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_45Rnd_762x39_t_rpk";
 
 // Medium MG
-_MMG = "caf_pkm";
-_MMGmag = "CAF_100Rnd_762x54_PKM";
-_MMGmag_tr = "CAF_100Rnd_762x54_PKM";
+_MMG = "rhs_weap_pkp";
+_MMGmag = "rhs_100Rnd_762x54mmR";
+_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Rifleman AT
-_RAT = "caf_rpg7";
-_RATmag = "caf_PG7V";
+_RAT = "rhs_weap_rpg7";
+_RATmag = "rhs_rpg7_PG7VL_mag";
 
 // Medium AT
-_MAT = "caf_rpg7";
-_MATmag1 = "caf_PG7V";
-_MATmag2 = "caf_PG7V";
+_MAT = "rhs_weap_rpg7";
+_MATmag1 = "rhs_rpg7_PG7VL_mag";
+_MATmag2 = "rhs_rpg7_PG7VL_mag";
 
 // Surface Air
-_SAM = "caf_Strela";
-_SAMmag = "caf_AA_rocket";
+_SAM = "rhs_weap_igla";
+_SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
-_SNrifle = "caf_svd";
-_SNrifleMag = "caf_10Rnd_762x54_SVD";
+_SNrifle = "rhs_weap_svdp_wd";
+_SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";

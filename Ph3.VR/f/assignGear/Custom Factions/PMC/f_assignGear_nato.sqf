@@ -196,13 +196,13 @@ _RAT = "launch_NLAW_F";
 _RATmag = "NLAW_F";
 
 // Medium AT
-_MAT = "launch_I_Titan_short_F";
-_MATmag1 = "Titan_AT";
-_MATmag2 = "Titan_AP";
+_MAT = "rhs_weap_rpg7";
+_MATmag1 = "rhs_rpg7_PG7VL_mag";
+_MATmag2 = "rhs_rpg7_PG7VL_mag";
 
 // Surface Air
-_SAM = "launch_B_Titan_F";
-_SAMmag = "Titan_AA";
+_SAM = "rhs_weap_fim92";
+_SAMmag = "rhs_fim92_mag";
 
 // Sniper
 _SNrifle = "hlc_rifle_psg1";
