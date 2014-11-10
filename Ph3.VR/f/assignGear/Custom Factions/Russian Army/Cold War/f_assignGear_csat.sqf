@@ -406,6 +406,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bloodbag} forEach [1,2,3,4,5];
 		_unit addItem _earplugs;
 		_attachments = [_attach1];
+		[this,"MedB"] call BIS_fnc_setUnitInsignia;
 	};
 
 // LOADOUT: FIRE TEAM LEADER
