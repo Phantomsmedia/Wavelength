@@ -4,6 +4,8 @@
 
 // DECLARE VARIABLES AND FUNCTIONS
 
+sleep 5;
+
 private ["_unit","_textAction"];
 
 // ====================================================================================

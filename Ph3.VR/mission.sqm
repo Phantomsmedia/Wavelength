@@ -5430,7 +5430,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR RESERVED FOR JIP";
 				};
 				class Item1
@@ -5441,7 +5441,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR RESERVED FOR JIP";
 				};
 				class Item2
@@ -5452,7 +5452,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR RESERVED FOR JIP";
 				};
 				class Item3
@@ -5463,7 +5463,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR RESERVED FOR JIP";
 				};
 			};
@@ -5875,7 +5875,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR RESERVED FOR JIP";
 				};
 				class Item1
@@ -5886,7 +5886,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR RESERVED FOR JIP";
 				};
 				class Item2
@@ -5897,7 +5897,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR RESERVED FOR JIP";
 				};
 				class Item3
@@ -5908,7 +5908,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR RESERVED FOR JIP";
 				};
 			};
@@ -6325,7 +6325,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR RESERVED FOR JIP";
 				};
 				class Item1
@@ -6336,7 +6336,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR RESERVED FOR JIP";
 				};
 				class Item2
@@ -6347,7 +6347,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR RESERVED FOR JIP";
 				};
 				class Item3
@@ -6358,7 +6358,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR RESERVED FOR JIP";
 				};
 			};
