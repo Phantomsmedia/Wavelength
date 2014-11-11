@@ -278,3 +278,8 @@ sleep 10;
 
 */
 // ====================================================================================
+// PhanTactical Paradrop Script Enable
+// By tanaKa-
+// Comment to disable for all aircraft
+
+{if (_x isKindOf "Helicopter") then {_x addAction ["PARADROP", "f\paradrop\eject.sqf"]}} foreach vehicles
