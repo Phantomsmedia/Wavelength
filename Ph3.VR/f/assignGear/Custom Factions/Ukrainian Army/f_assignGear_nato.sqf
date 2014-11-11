@@ -407,7 +407,7 @@ switch (_typeofUnit) do
 		{_unit addItem _epipen} forEach [1,2,3,4,5,6,7,8,9,10];
 		{_unit addItem _bloodbag} forEach [1,2,3,4,5];
 		_unit addItem _earplugs;
-		
+		[this,"MedB"] call BIS_fnc_setUnitInsignia;
 	};
 
 // LOADOUT: FIRE TEAM LEADER

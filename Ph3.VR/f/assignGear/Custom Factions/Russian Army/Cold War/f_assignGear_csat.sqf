@@ -260,7 +260,7 @@ _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["rhs_uniform_vdv_flora"];
-_ghillieHelmet = [MNP_Helmet_SOV_Steel];
+_ghillieHelmet = ["MNP_Helmet_SOV_Steel"];
 _ghillieRig = ["rhs_6b23_sniper"];
 _ghillieGlasses = [];
 
@@ -406,6 +406,7 @@ switch (_typeofUnit) do
 		{_unit addItem _bloodbag} forEach [1,2,3,4,5];
 		_unit addItem _earplugs;
 		_attachments = [_attach1];
+		[this,"MedB"] call BIS_fnc_setUnitInsignia;
 	};
 
 // LOADOUT: FIRE TEAM LEADER
