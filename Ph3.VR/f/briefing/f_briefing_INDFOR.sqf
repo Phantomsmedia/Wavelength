@@ -13,7 +13,23 @@
 // _task1 setSimpleTaskDescription ["IN DEPTH OBJECTIVE DESCRIPTION", "SHORT OBJECTIVE DESCRIPTION", "WAYPOINT TEXT"];
 // _task1 setSimpleTaskDestination WAYPOINTLOCATION;
 // _task1 setTaskState "Created";
+// ====================================================================================
 
+// NOTES: PARADROP
+// The code below creates the administration sub-section of notes.
+
+_cre = player createDiaryRecord ["diary", ["Paradrop","
+<br/>
+Paradropping can be done by any units in the cargo/back of an air vehicle, via the mousewheel. It is a red option. Do not press this unless you wish to disembark and deploy a parachute. You should be greater than 30 meters.
+<br/>
+1. Hit Paradrop Option when above 30 meters
+<br/>
+2. Enjoy the static-line drop downwards.
+<br/>
+3. Praise TanaKa. 
+<br/><br/>
+Pilots, copilots and gunners cannot disembark, but the paradrop option is still there. Do not press it, it will deploy an empty parachute. If empty parachutes are seen, the offending member will be kicked from the session. This is a known bug and will be fixed soon. Shouldn't be a problem.
+"]];
 // ====================================================================================
 
 // NOTES: CREDITS
