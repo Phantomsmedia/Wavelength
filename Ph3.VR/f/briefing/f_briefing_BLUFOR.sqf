@@ -18,7 +18,7 @@
 // NOTES: PARADROP
 // The code below creates the administration sub-section of notes.
 
-_cre = player createDiaryRecord ["diary", ["Paradrop","
+_para = player createDiaryRecord ["diary", ["Paradrop","
 <br/>
 Paradropping can be done by any units in the cargo/back of an air vehicle, via the mousewheel. It is a red option. Do not press this unless you wish to disembark and deploy a parachute. You should be greater than 30 meters.
 <br/>
@@ -35,7 +35,7 @@ Pilots, copilots and gunners cannot disembark, but the paradrop option is still 
 // NOTES: RADIO IMAGE
 // The code below creates the administration sub-section of notes.
 
-_cre = player createDiaryRecord ["diary", ["Radios","
+_radio = player createDiaryRecord ["diary", ["Radios","
 <br/>
 Squad Leaders
 <br/> 
