@@ -282,4 +282,4 @@ sleep 10;
 // By tanaKa-
 // Comment to disable for all aircraft
 
-{if (_x isKindOf "AIR") then {_x addAction ["PARADROP", "f\paradrop\eject.sqf"]}} foreach vehicles
+{if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>", "f\paradrop\eject.sqf"]}} foreach vehicles
