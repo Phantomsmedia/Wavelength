@@ -28,7 +28,7 @@ Paradropping can be done by any units in the cargo/back of an air vehicle, via t
 <br/>
 3. Praise TanaKa. 
 <br/><br/>
-Pilots, copilots and gunners cannot disembark, but the paradrop option is still there. Do not press it, it will deploy an empty parachute. If empty parachutes are seen, the offending member will be kicked from the session. This is a known bug and will be fixed soon. Shouldn't be a problem.
+Pilots, copilots, and gunners cannot paradrop, only passengers.
 "]];
 // ====================================================================================
 
