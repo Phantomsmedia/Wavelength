@@ -278,8 +278,8 @@ sleep 10;
 
 */
 // ====================================================================================
-// PhanTactical Paradrop Script Enable
-// By tanaKa-
+// PhanTactical Paradrop Script Enable v2.0
+// By tanaKa- with help from F2kSel
 // Comment to disable for all aircraft
 
-{if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>", "f\paradrop\eject.sqf"]}} foreach vehicles
+{if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>","f\paradrop\eject.sqf",[1],0,false,true,"","_target getCargoIndex player == 0"]}} foreach vehicles;

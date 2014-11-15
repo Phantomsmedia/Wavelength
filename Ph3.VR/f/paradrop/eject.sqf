@@ -1,8 +1,8 @@
 _heli = vehicle player; 
 _Offset = [10,10,0]; 
-_worldPos = _heli modelToWorld _Offset; 
+_worldPos = _heli modelToWorld _Offset;
 
-// _heli setVelocity [0,0,5]; 
+_heli setVelocity [0,2,0]; 
 
 unassignvehicle vehicle player; 
 player action ["eject",vehicle player];  
@@ -18,4 +18,4 @@ waitUntil {((visiblePositionASL player select 2) < 5)};
 sleep 1; 
 
 MoveOut player; 
-deleteVehicle _para;  
+deleteVehicle _para;
