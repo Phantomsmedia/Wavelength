@@ -6,7 +6,7 @@
 
 // ============================================================================================
 
-// RotorLib Simulation Forcing
+// PhanTactical - RotorLib Simulation Forcing
 // Credits: Jani
 //  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off) 
 // MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. 
@@ -123,14 +123,18 @@ class Params
 
 // ============================================================================================
 // PhanTactical - Forced First Person View
-// Credits: tanaKa - PhanTactical    
+// Credits: tanaKa - PhanTactical
+// WARNING: DO NOT DISABLE THIS COMPONENT
+    
 	class First_Person_View 
 	{
 		title = "First Person View Only";
 		values[] = {0, 1};
 		texts[] = {"Disabled", "Enabled"};
-		default = 1;
+		default = 0;
 	};
+// ============================================================================================
+	
 // F3 - Debug Mode
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT

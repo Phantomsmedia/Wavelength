@@ -215,24 +215,13 @@ f_var_cachingAggressiveness = 2;
 [] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
-// PhanTactical - First Person View Forced
-// Credits: tanaKa PhanTactical
-if (!isDedicated) then {
-	
-        // Force first person view
-	if (First_Person_View == 1) then {
-		[] spawn {
-			while {true} do {
-				waitUntil {(cameraView == "External")};
-				if ((vehicle player) == player) then { player switchCamera "Internal"; Server globalChat "external view is disabled.";};
-				sleep 0.01;
-			};
-		};
-	};
-};
 
+// F3 - Thermal On Statics Forced Off
+// Credits: F3 Wiki 
+player addEventHandler ["WeaponAssembled",{(_this select 1) disableTIEquipment true}];
 
 // ====================================================================================
+
 // PhanTactical - Intro Text
 // Credits: Bourbon Warfare
 
@@ -254,6 +243,31 @@ sleep 10;
     0.5
     ] spawn BIS_fnc_dynamicText;
 };
+// ====================================================================================
+
+// PhanTactical - First Person View Forced
+// Credits: tanaKa
+if (!isDedicated) then {
+	
+        // Force first person view
+	if (First_Person_View == 1) then {
+		[] spawn {
+			while {true} do {
+				waitUntil {(cameraView == "External")};
+				if ((vehicle player) == player) then { player switchCamera "Internal"; Server globalChat "external view is disabled.";};
+				sleep 0.01;
+			};
+		};
+	};
+};
+
+// ====================================================================================
+
+// PhanTactical Paradrop Script Enable v2.0
+// By tanaKa- with help from F2kSel
+// Comment to disable for all aircraft
+
+{if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>","f\paradrop\eject.sqf",[1],0,false,true,"","_target getCargoIndex player == 0"]}} foreach vehicles;
 
 // ====================================================================================
 // Wolfenswan - AI Flashlights Attach / NVGs Off / Flashlights Forced On
@@ -284,8 +298,3 @@ sleep 10;
 
 */
 // ====================================================================================
-// PhanTactical Paradrop Script Enable v2.0
-// By tanaKa- with help from F2kSel
-// Comment to disable for all aircraft
-
-{if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>","f\paradrop\eject.sqf",[1],0,false,true,"","_target getCargoIndex player == 0"]}} foreach vehicles;
