@@ -124,7 +124,7 @@ Developed by
 	Teddy         (www.phantactical.com Member)
 	Gruntin       (www.phantactical.com Member)
 	Hunter        (Gave us a running start | Member circa 2012/13)	
-	Batboyx2      (www.phantactical.com Addon Development Team Head)
+	Batboyx2      (Member circa 2014)
 	
 	Great thanks to Ferstaberinde and the team, you can find most of the code within Phramework at https://github.com/ferstaberinde/F3 ! (www.ferstaberinde.com Creator of F2/F3 frameworks)
 
@@ -138,17 +138,6 @@ Tools of The Trade
 	Github (https://github.com/batboyx2/PhanTactical-Mission-Framework)
 	Kegety's ArmA Tools Pack (http://www.kegetys.fi/category/gaming/armamods/)
 
-How to Add a Faction
-
-	mission.sqm
-	folk_setGroupIDs.sqf
-	fn_folk_assignGear.sqf
-	folk_setLocalGroupMarkers.sqf
-	briefing.sqf
-	create folk_assignGear_(faction)
-	create f_briefing_(faction)
-	How to find faction: // hint format["%1", faction player];
-	
 Beta Testers/Mission Developers
 	
 	Duck
