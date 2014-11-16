@@ -488,6 +488,13 @@ class CfgFunctions
 			file = "f\preMount";
 			class mountGroups{};
 		};
+		class zeus
+		{
+			file = "f\zeus";
+			class zeusInit{};
+			class zeusAddAddons{};
+			class zeusAddObjects{};
+		};		
 		class radios
 		{
 			file = "f\radios";
