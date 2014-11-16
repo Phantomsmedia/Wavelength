@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - Russian Army Mountain Flora
+// F3 - Folk Assign Gear Script - MSV Cold War
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -61,7 +61,7 @@ _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
 _scope1 = "";					// ACO
-_scope2 = "rhs_acc_pkas";					// MRCO Scope - 1x - 6x
+_scope2 = "";					// MRCO Scope - 1x - 6x
 _scope3 = "rhs_acc_pso1m2";		// SOS Scope - 18x - 75x
 
 // Default setup
@@ -87,19 +87,19 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_ak74m";
-_riflemag = "rhs_30Rnd_545x39_AK";
-_riflemag_tr = "rhs_30Rnd_545x39_7N10_AK";
+_rifle = "hlc_rifle_akm";
+_riflemag = "hlc_30Rnd_762x39_b_ak";
+_riflemag_tr = "hlc_30Rnd_762x39_t_ak";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_ak74m_folded";
-_carbinemag = "rhs_30Rnd_545x39_AK";
-_carbinemag_tr = "rhs_30Rnd_545x39_7N10_AK";
+_carbine = "hlc_rifle_ak74_dirty";
+_carbinemag = "hlc_30Rnd_545x39_B_AK";
+_carbinemag_tr = "hlc_30Rnd_545x39_t_ak";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "rhs_weap_ak74m_folded";
-_smgmag = "rhs_30Rnd_545x39_AK";
-_smgmag_tr = "rhs_30Rnd_545x39_7N10_AK";
+_smg = "hlc_rifle_aks74u";
+_smgmag = "hlc_30Rnd_545x39_B_AK";
+_smgmag_tr = "hlc_30Rnd_545x39_t_ak";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -107,15 +107,15 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "rhs_weap_ak74m_gp25";
-_glriflemag = "rhs_30Rnd_545x39_AK";
-_glriflemag_tr = "rhs_30Rnd_545x39_7N10_AK";
-_glmag = "rhs_VOG25";
+_glrifle = "hlc_rifle_akmgl";
+_glriflemag = "hlc_30Rnd_762x39_b_ak";
+_glriflemag_tr = "hlc_30Rnd_762x39_t_ak";
+_glmag = "hlc_VOG25_AK";
 
 // Smoke for FTLs, Squad Leaders, etc
-_glsmokewhite = "rhs_VG40OP_white";
-_glsmokegreen = "rhs_VG40OP_green";
-_glsmokered = "rhs_VG40OP_white";
+_glsmokewhite = "hlc_GRD_White";
+_glsmokegreen = "hlc_GRD_green";
+_glsmokered = "hlc_GRD_Red";
 
 // Flares for FTLs, Squad Leaders, etc
 _glflarewhite = "UGL_FlareWhite_F";
@@ -231,14 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_vdv_mflora"];
-_baseHelmet = ["rhs_6b27m_digi_bala","rhs_6b27m_digi","rhs_6b27m_green","rhs_6b27m_green_ess"];
+_baseUniform = ["rhs_uniform_flora"];
+_baseHelmet = ["MNP_Helmet_SOV_Steel"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["rhs_6b23_digi_6sh92"];
-_mediumRig = ["rhs_6b23_digi_6sh92"]; 	// default for all infantry classes
-_heavyRig = ["rhs_6b23_digi_6sh92_vog_headset"];
+_lightRig = ["rhs_vydra_3m"];
+_mediumRig = ["rhs_vydra_3m"]; 	// default for all infantry classes
+_heavyRig = ["rhs_vydra_3m"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -253,21 +253,21 @@ _pilotRig = ["V_TacVestIR_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["rhs_uniform_vdv_mflora"];
+_crewUniform = ["rhs_uniform_flora"];
 _crewHelmet = ["rhs_tsh4","rhs_tsh4_bala","rhs_tsh4_ess","rhs_tsh4_ess_bala"];
-_crewRig = ["rhs_6b23_digi_crew"];
+_crewRig = ["rhs_vydra_3m"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["rhs_uniform_vdv_mflora"];
+_ghillieUniform = ["rhs_uniform_flora"];
 _ghillieHelmet = ["MNP_Helmet_SOV_Steel"];
-_ghillieRig = ["rhs_6b23_sniper"];
+_ghillieRig = ["rhs_vydra_3m"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["rhs_uniform_vdv_mflora"];
+_sfuniform = ["rhs_uniform_flora"];
 _sfhelmet = ["MNP_Helmet_SOV_Steel"];
-_sfRig = ["rhs_6b23_rifleman"];
+_sfRig = ["rhs_vydra_3m"];
 _sfGlasses = [];
 
 
@@ -406,7 +406,6 @@ switch (_typeofUnit) do
 		{_unit addItem _bloodbag} forEach [1,2,3,4,5];
 		_unit addItem _earplugs;
 		_attachments = [_attach1];
-		[this,"MedB"] call BIS_fnc_setUnitInsignia;
 	};
 
 // LOADOUT: FIRE TEAM LEADER

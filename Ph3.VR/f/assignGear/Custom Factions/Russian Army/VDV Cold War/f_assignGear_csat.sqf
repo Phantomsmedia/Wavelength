@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - Russian Army Cold War
+// F3 - Folk Assign Gear Script - VDV Cold War
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -232,13 +232,13 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["rhs_uniform_vdv_flora"];
-_baseHelmet = ["MNP_Helmet_SOV_Steel"];
+_baseHelmet = ["MNP_Beret_VDV"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["rhs_6b23_crew"];
-_mediumRig = ["rhs_6b23_rifleman"]; 	// default for all infantry classes
-_heavyRig = ["rhs_6b23_rifleman"];
+_lightRig = ["rhs_vydra_3m"];
+_mediumRig = ["rhs_vydra_3m"]; 	// default for all infantry classes
+_heavyRig = ["rhs_vydra_3m"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -255,19 +255,19 @@ _pilotGlasses = [];
 // Crewman
 _crewUniform = ["rhs_uniform_vdv_flora"];
 _crewHelmet = ["rhs_tsh4","rhs_tsh4_bala","rhs_tsh4_ess","rhs_tsh4_ess_bala"];
-_crewRig = ["rhs_6b23_crew","rhs_6b23_crewofficer"];
+_crewRig = ["rhs_vydra_3m"];
 _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["rhs_uniform_vdv_flora"];
-_ghillieHelmet = ["MNP_Helmet_SOV_Steel"];
-_ghillieRig = ["rhs_6b23_sniper"];
+_ghillieHelmet = ["MNP_Beret_VDV"];
+_ghillieRig = ["rhs_vydra_3m"];
 _ghillieGlasses = [];
 
 // Spec Op
 _sfuniform = ["rhs_uniform_vdv_flora"];
-_sfhelmet = ["MNP_Helmet_SOV_Steel"];
-_sfRig = ["rhs_6b23_rifleman"];
+_sfhelmet = ["MNP_Beret_VDV"];
+_sfRig = ["rhs_vydra_3m"];
 _sfGlasses = [];
 
 

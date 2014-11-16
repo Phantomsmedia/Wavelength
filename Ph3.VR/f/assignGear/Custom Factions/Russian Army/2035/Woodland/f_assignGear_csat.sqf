@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - Russian 2035 Woodland
+// F3 - Folk Assign Gear Script - 2035 Woodland
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 

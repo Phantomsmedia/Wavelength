@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - US Army Vietnam
+// F3 - Folk Assign Gear Script - Vietnam
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 

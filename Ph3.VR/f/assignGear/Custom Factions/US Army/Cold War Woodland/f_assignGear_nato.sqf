@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - US Army Cold War Woodland
+// F3 - Folk Assign Gear Script - Cold War Woodland
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 

@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - US Army Cold War Desert
+// F3 - Folk Assign Gear Script - Cold War Desert
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
