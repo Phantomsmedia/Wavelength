@@ -374,6 +374,7 @@ switch (_typeofUnit) do
 		_unit addItem _earplugs;
 		_unit addItem _maptools;
 		_attachments = [_attach1,_scope2];
+		[this,"111thID"] call BIS_fnc_setUnitInsignia;
 	};
 
 // LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
@@ -399,6 +400,7 @@ switch (_typeofUnit) do
 		_unit addItem _earplugs;
 		_unit addItem _maptools;
 		_attachments = [_attach1,_scope2];
+		[this,"GryffinRegiment"] call BIS_fnc_setUnitInsignia;
 	};
 
 // LOADOUT: MEDIC
