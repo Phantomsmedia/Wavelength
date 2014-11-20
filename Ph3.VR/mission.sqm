@@ -87,7 +87,9 @@ class Mission
 		"A3_Structures_F_Civ_Constructions",
 		"A3_Armor_F_Panther",
 		"A3_Data_F",
-		"map_vr"
+		"map_vr",
+		"A3_Air_F_Heli_Heli_Transport_03",
+		"A3_Air_F_Heli_Heli_Transport_04"
 	};
 	addOnsAuto[]=
 	{
@@ -103,8 +105,10 @@ class Mission
 		"A3_Air_F_Beta_Heli_Transport_01",
 		"A3_Air_F_Heli_Light_02",
 		"A3_Air_F_Beta_Heli_Transport_02",
+		"A3_Air_F_Heli_Heli_Transport_03",
 		"A3_Armor_F_AMV",
 		"A3_Air_F_Beta_Heli_Attack_01",
+		"A3_Air_F_Heli_Heli_Transport_04",
 		"A3_Armor_F_Marid",
 		"A3_Air_F_Beta_Heli_Attack_02",
 		"A3_Armor_F_Slammer",
@@ -6371,69 +6375,81 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3461.8967,5,1979.4048};
+					position[]={3461.9028,5,1979.4844};
 					class args
 					{
-						items=10;
+						items=12;
 						class Item0
 						{
 							value="1";
 							parentCls="AGM_ModuleMedical";
-							typeName="CoefBleeding";
+							typeName="CoefDamage";
 						};
 						class Item1
 						{
 							value="1";
 							parentCls="AGM_ModuleMedical";
-							typeName="CoefPain";
+							typeName="CoefBleeding";
 						};
 						class Item2
+						{
+							value="1";
+							parentCls="AGM_ModuleMedical";
+							typeName="CoefPain";
+						};
+						class Item3
+						{
+							value="2";
+							parentCls="AGM_ModuleMedical";
+							typeName="CoefNonMedic";
+						};
+						class Item4
 						{
 							value="-1";
 							parentCls="AGM_ModuleMedical";
 							typeName="MaxUnconsciousnessTime";
 						};
-						class Item3
+						class Item5
 						{
 							value="1";
 							parentCls="AGM_ModuleMedical";
 							typeName="AllowNonmedics";
 						};
-						class Item4
-						{
-							value="1";
-							parentCls="AGM_ModuleMedical";
-							typeName="";
-						};
-						class Item5
+						class Item6
 						{
 							value="0";
 							parentCls="AGM_ModuleMedical";
 							typeName="RequireDiagnosis";
 						};
-						class Item6
-						{
-							value="0";
-							parentCls="AGM_ModuleMedical";
-							typeName="PreventInstaDeath";
-						};
 						class Item7
 						{
-							value="0";
+							value="1";
 							parentCls="AGM_ModuleMedical";
-							typeName="PreventDeathWhileUnconscious";
+							typeName="PreventInstaDeath";
 						};
 						class Item8
 						{
 							value="0";
 							parentCls="AGM_ModuleMedical";
-							typeName="SingleBandage";
+							typeName="PreventDeathWhileUnconscious";
 						};
 						class Item9
 						{
 							value="0";
 							parentCls="AGM_ModuleMedical";
+							typeName="SingleBandage";
+						};
+						class Item10
+						{
+							value="0";
+							parentCls="AGM_ModuleMedical";
 							typeName="AllowChatWhileUnconscious";
+						};
+						class Item11
+						{
+							value="1";
+							parentCls="AGM_ModuleMedical";
+							typeName="EnableOverdosing";
 						};
 					};
 					id=391;
@@ -6523,7 +6539,7 @@ class Mission
 			position[]={363.32614,5,1780.4912};
 			id=399;
 			side="EMPTY";
-			vehicle="B_Heli_Transport_01_F";
+			vehicle="B_Heli_Transport_03_unarmed_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH2";
@@ -6713,7 +6729,7 @@ class Mission
 			position[]={1499.9558,5,1780.9136};
 			id=418;
 			side="EMPTY";
-			vehicle="O_Heli_Light_02_unarmed_F";
+			vehicle="O_Heli_Transport_04_covered_F";
 			skill=0.60000002;
 			text="VehCSAT_TH2";
 		};
