@@ -267,7 +267,7 @@ if (!isDedicated) then {
 // By tanaKa- with help from F2kSel
 // Comment to disable for all aircraft
 
-{if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>","f\paradrop\eject.sqf",[1],0,false,true,"","_target getCargoIndex player == 0"]}} foreach vehicles;
+{if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>","f\paradrop\eject.sqf",[1],0,false,true,"","_target getCargoIndex player != -1"]}} foreach vehicles;
 
 // ====================================================================================
 // Wolfenswan - AI Flashlights Attach / NVGs Off / Flashlights Forced On
