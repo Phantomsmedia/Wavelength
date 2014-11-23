@@ -264,11 +264,30 @@ if (!isDedicated) then {
 // ====================================================================================
 
 // PhanTactical Paradrop Script Enable v2.0
-// By tanaKa- with help from F2kSel
+// Credits: tanaKa- with help from F2kSel
 // Comment to disable for all aircraft
 
 {if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>","f\paradrop\eject.sqf",[1],0,false,true,"","_target getCargoIndex player != -1"]}} foreach vehicles;
 
+// ====================================================================================
+
+// PhanTactical ALiVE Custom Blacklist
+// Credits: ALiVE Team 
+
+if(isServer) then {
+	// override default data 
+	// see script/staticData.sqf
+	["MISSION INIT - Waiting"] call ALIVE_fnc_dump;
+ 
+	waitUntil {!isNil "ALiVE_STATIC_DATA_LOADED"};
+ 
+	["MISSION INIT - Continue"] call ALIVE_fnc_dump;
+ 
+	// override static data settings
+	call compile (preprocessFileLineNumbers "f\ALiVE\Blacklists.sqf");
+ 
+	["MISSION INIT - Static data override loaded"] call ALIVE_fnc_dump;
+ };
 // ====================================================================================
 // Wolfenswan - AI Flashlights Attach / NVGs Off / Flashlights Forced On
 // Credits: Wolfenswan
