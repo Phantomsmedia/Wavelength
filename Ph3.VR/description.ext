@@ -128,11 +128,13 @@ class Params
     
 	class First_Person_View 
 	{
-		title = "First Person View Only";
-		values[] = {0, 1};
-		texts[] = {"Disabled", "Enabled"};
-		default = 0;
+			title = "First Person View Only";
+			values[] = {0, 1};
+			texts[] = {"Disabled", "Enabled"};
+			default = 0;
+			isGlobal = 1;
 	};
+
 // ============================================================================================
 	
 // F3 - Debug Mode
