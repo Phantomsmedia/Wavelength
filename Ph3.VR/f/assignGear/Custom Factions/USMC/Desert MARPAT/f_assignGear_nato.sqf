@@ -182,9 +182,9 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "STI_M249";
-_ARmag = "sti_200Rnd_556x45";
-_ARmag_tr = "sti_200Rnd_556x45_Tracer";
+_AR = "rhs_weap_m249_pip";
+_ARmag = "rhsusf_100Rnd_556x45_soft_pouch";
+_ARmag_tr = "rhsusf_100Rnd_556x45_soft_pouch";
 
 // Medium MG
 _MMG = "rhs_weap_m240B";
