@@ -247,14 +247,13 @@ sleep 10;
 
 // PhanTactical - First Person View Forced
 // Credits: tanaKa
-if (!isDedicated) then {
-	
-        // Force first person view
+// if (!isDedicated) then 
+{
 	if (First_Person_View == 1) then {
 		[] spawn {
 			while {true} do {
 				waitUntil {(cameraView == "External")};
-				if ((vehicle player) == player) then { player switchCamera "Internal"; Server globalChat "external view is disabled.";};
+				if ((vehicle player) == player) then {player switchCamera "Internal"};
 				sleep 0.01;
 			};
 		};
