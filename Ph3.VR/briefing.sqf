@@ -123,6 +123,7 @@ if (_unitfaction == "CIV_F") exitwith {
 // ====================================================================================
 
 // DEBUG
+{
 	if (f_var_debugMode == 1) then
 	{
 	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
