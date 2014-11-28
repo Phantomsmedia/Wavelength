@@ -62,7 +62,7 @@ _silencer2 = "hlc_muzzle_556NATO_KAC";	// 6.5 suppressor
 
 _scope1 = "RH_eotech553";		// ACO
 _scope2 = "RH_compm4s";			// MRCO Scope - 1x - 6x
-_scope3 = "";					// SOS Scope - 18x - 75x
+_scope3 = "RH_compm4s";					// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
