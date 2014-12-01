@@ -22,8 +22,8 @@ if(alive _unit) then {
 
 } else {
 
-  // Enable spectator chat
-  [_unit, true] call TFAR_fnc_forceSpectator;
+	// Enable spectator chat
+	[_unit, true] call TFAR_fnc_forceSpectator;
 
 };
 
