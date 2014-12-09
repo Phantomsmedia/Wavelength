@@ -6,6 +6,11 @@
 // https://github.com/Phantomsmedia/Phramework
 
 // ====================================================================================
+// BWMF - DAC Debug Params
+
+[] execVM "DAC\bwmf_dacParams.sqf";
+
+// ====================================================================================
 // BWMF - Headless Client Act.
 //Check HC for 1.36 Headless Client
 
