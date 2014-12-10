@@ -1,6 +1,6 @@
 Phramework
 ===============
-[![](http://img.shields.io/badge/Issues-3-red.svg)](https://github.com/Phantomsmedia/Phramework/issues)[![](http://img.shields.io/badge/Release-v3.0.0.2-blue.svg)](https://github.com/Phantomsmedia/Phramework/releases/tag/v3.0.0.2)![](http://img.shields.io/badge/Project%20Members-5-green.svg)[![](http://img.shields.io/badge/Commit%20History-Master%20Branch-yellowgreen.svg)](https://github.com/Phantomsmedia/Phramework/commits/master)
+[![](http://img.shields.io/badge/Issues-3-red.svg)](https://github.com/Phantomsmedia/Phramework/issues)[![](http://img.shields.io/badge/Release-v3.0.0.4.2-blue.svg)](https://github.com/Phantomsmedia/Phramework/releases/tag/v3.0.0.4.2)![](http://img.shields.io/badge/Project%20Members-5-green.svg)[![](http://img.shields.io/badge/Commit%20History-Master%20Branch-yellowgreen.svg)](https://github.com/Phantomsmedia/Phramework/commits/master)
 ![Ph](http://i5.minus.com/ib2ovbqhL4YeYU.png)
 
 
