@@ -25,7 +25,7 @@ switch (_TypNumber) do
   _Unit_Pool_A = ["O_Heli_Attack_02_F","O_Heli_Light_02_F","O_Heli_Light_02_armed_F"];
   };
 //-------------------------------------------------------------------------------------------------
-// BLUFOR (A3)
+// NATO
   case 1:
   {
     _Unit_Pool_S = ["B_crew_F","B_Helipilot_F","B_Soldier_SL_F","B_soldier_AR_F","B_soldier_AR_F","B_soldier_exp_F","B_soldier_GL_F","B_soldier_GL_F","B_soldier_M_F","B_medic_F","B_soldier_repair_F","B_Soldier_F","B_Soldier_F","B_soldier_LAT_F","B_soldier_LAT_F","B_soldier_lite_F","B_soldier_TL_F","B_soldier_TL_F"];
@@ -34,7 +34,7 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["B_Heli_Light_01_armed_F","B_Heli_Transport_01_camo_F","B_Heli_Light_01_F"];
   };
 //-------------------------------------------------------------------------------------------------
-// Independent (A3)
+// AAF
   case 2:
   {
     _Unit_Pool_S = ["I_crew_F","I_helipilot_F","I_officer_F","I_Soldier_LAT_F","I_Soldier_LAT_F","I_Soldier_M_F","I_Soldier_GL_F","I_Soldier_exp_F","I_engineer_F","I_medic_F","I_Soldier_AR_F","I_Soldier_A_F"];
@@ -43,7 +43,7 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["I_Heli_light_03_F"];
   };
 //-------------------------------------------------------------------------------------------------
-// Civilians (A3)
+// Civilians
   case 3:
   {
     _Unit_Pool_S = ["C_man_1","C_man_1","C_man_1","C_man_polo_1_F","C_man_polo_2_F","C_man_polo_3_F","C_man_polo_4_F","C_man_polo_5_F","C_man_polo_6_F","C_man_1_1_F","C_man_1_2_F","C_man_1_3_F"];
@@ -52,13 +52,13 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
   //-------------------------------------------------------------------------------------------------
-    // FIA BLUFOR (A3) (Uses Nato units for armor and choppers)
+    // FIA
   case 4:
   {
     _Unit_Pool_S = ["B_G_engineer_F","B_G_medic_F","B_G_officer_F","B_G_Soldier_A_F","B_G_Soldier_AR_F","B_G_Soldier_exp_F","B_G_Soldier_F","B_G_Soldier_GL_F","B_G_Soldier_LAT_F","B_G_Soldier_lite_F","B_G_Soldier_M_F","B_G_Soldier_SL_F","B_G_Soldier_TL_F"];
     _Unit_Pool_V = ["B_G_Offroad_01_F","B_G_Offroad_01_armed_F","B_G_Van_01_transport_F","B_G_Van_01_fuel_F"];
-    _Unit_Pool_T = ["B_APC_Wheeled_01_cannon_F","B_APC_Tracked_01_rcws_F","B_MBT_01_cannon_F","B_MBT_01_arty_F","B_MBT_01_mlrs_F"];
-    _Unit_Pool_A = ["B_Heli_Light_01_armed_F","B_Heli_Transport_01_camo_F","B_Heli_Light_01_F"];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
 // Russian MSV (RHS: Russian Armed Forces)
