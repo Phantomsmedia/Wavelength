@@ -79,6 +79,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["RHS_UH60M","RHS_UH60M_MEV","RHS_AH64D_wd"];
   };
 //-------------------------------------------------------------------------------------------------
+// Russian VDV (RHS: United States Armed Forces)
+  case 7:
+  {
+    _Unit_Pool_S = ["rhs_vdv_crew","rhs_pilot","rhs_vdv_sergeant","rhs_vdv_machinegunner","rhs_vdv_machinegunner","rhs_vdv_medic","rhs_vdv_grenadier","rhs_vdv_grenadier","rhs_vdv_rifleman","rhs_vdv_medic","rhs_vdv_engineer","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_LAT","rhs_vdv_LAT","rhs_vdv_rifleman","rhs_vdv_junior_sergeant","rhs_vdv_junior_sergeant"];
+    _Unit_Pool_V = ["rhs_gaz66_vdv","RHS_Ural_VDV_01","RHS_Ural_Open_VDV_01"];
+    _Unit_Pool_T = ["rhs_bmd2","rhs_bmp1d_vdv","rhs_btr70_vdv","rhs_btr60_vdv","rhs_btr80_vdv","rhs_bmp2d_vdv"];
+    _Unit_Pool_A = ["RHS_Mi8AMT_vdv","RHS_Mi8MTV3_vdv","RHS_Mi24V_vdv"];
+  }; 
+//-------------------------------------------------------------------------------------------------
 
   Default
   {
