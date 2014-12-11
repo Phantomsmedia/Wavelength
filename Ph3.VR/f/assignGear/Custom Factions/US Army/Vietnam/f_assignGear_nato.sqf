@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - US Army Vietnam
+// F3 - Folk Assign Gear Script - Vietnam
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -124,12 +124,12 @@ _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "";
-_pistolmag = "";
+_pistol = "hgun_ACPC2_F";
+_pistolmag = "9Rnd_45ACP_Mag";
 
 // Grenades
 _grenade = "HandGrenade";
-_Mgrenade = "";
+_Mgrenade = "MiniGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 
@@ -192,8 +192,8 @@ _MMGmag = "hlc_100Rnd_762x51_B_M60E4";
 _MMGmag_tr = "hlc_100Rnd_762x51_T_M60E4";
 
 // Rifleman AT
-_RAT = "";
-_RATmag = "";
+_RAT = "STI_MAAWS";
+_RATmag = "STI_84MM_HEAT";
 
 // Medium AT
 _MAT = "STI_MAAWS";
@@ -231,14 +231,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["MNP_CombatUniform_OD_Rg"];
-_baseHelmet = ["MNP_Helmet_PAGST_OD"];
+_baseUniform = ["MNP_CombatUniform_Militia_A"];
+_baseHelmet = ["MNP_Helmet_M81","MNP_Boonie_TIG"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk"];
-_mediumRig = ["V_BandollierB_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_BandollierB_rgr"];
+_lightRig = ["V_TacVest_oli"];
+_mediumRig = ["V_BandollierB_oli"]; 	// default for all infantry classes
+_heavyRig = ["V_BandollierB_oli"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -247,26 +247,26 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_OD_Rg"];
+_pilotUniform = ["MNP_CombatUniform_Militia_A"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_OD_Rg"];
-_crewHelmet = ["rhsusf_cvc_green_helmet"];
-_crewRig = ["V_TacVest_blk"];
+_crewUniform = ["MNP_CombatUniform_Militia_A"];
+_crewHelmet = ["H_HelmetCrew_B"];
+_crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_OD_Rg"];
-_ghillieHelmet = [MNP_Helmet_PAGST_OD];
-_ghillieRig = ["V_BandollierB_rgr"];
+_ghillieUniform = ["MNP_CombatUniform_Militia_A"];
+_ghillieHelmet = [MNP_Boonie_TIG];
+_ghillieRig = ["V_BandollierB_oli"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["MNP_CombatUniform_OD_Rg"];
-_sfhelmet = ["MNP_Helmet_PAGST_OD"];
+_sfuniform = ["U_B_SpecopsUniform_sgg"];
+_sfhelmet = ["H_HelmetSpecB","H_HelmetSpecB_paint1","H_HelmetSpecB_paint2","H_HelmetSpecB_blk"];
 _sfRig = _mediumRig;
 _sfGlasses = [];
 
