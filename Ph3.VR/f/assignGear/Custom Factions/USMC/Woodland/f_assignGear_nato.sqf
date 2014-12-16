@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - Desert MARPAT
+// F3 - Folk Assign Gear Script - Woodland
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -231,8 +231,8 @@ _specOp = [];
 
 // Uniforms
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["MNP_CombatUniform_USMC_T","MNP_CombatUniform_USMC_ST"];
-_baseHelmet = ["MNP_Helmet_USMC"];
+_baseUniform = ["MNP_CombatUniform_USMC_D","MNP_CombatUniform_USMC_SD"];
+_baseHelmet = ["MNP_Helmet_USMC_D"];
 _baseGlasses = [];
 
 // Armored vests
@@ -247,26 +247,26 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_USMC_T"];
+_pilotUniform = ["MNP_CombatUniform_USMC_D"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_USMC_ST"];
+_crewUniform = ["MNP_CombatUniform_USMC_SD"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_TacVest_blk"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_USMC_ST"];
-_ghillieHelmet = [MNP_Boonie_USMC];
+_ghillieUniform = ["MNP_CombatUniform_USMC_SD"];
+_ghillieHelmet = [MNP_Boonie_USMC_D];
 _ghillieRig = ["MNP_Vest_USMC"];
 _ghillieGlasses = [];
 
 // Spec Op
-_sfuniform = ["MNP_CombatUniform_USMC_T","MNP_CombatUniform_USMC_ST"];
-_sfhelmet = ["MNP_Helmet_USMC","MNP_Boonie_USMC"];
+_sfuniform = ["MNP_CombatUniform_USMC_D","MNP_CombatUniform_USMC_SD"];
+_sfhelmet = ["MNP_Helmet_USMC_D","MNP_Boonie_USMC_D"];
 _sfRig = ["MNP_Vest_USMC","MNP_Vest_USMC_2"];
 _sfGlasses = [];
 

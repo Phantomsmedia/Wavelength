@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script - Woodland Rebels
+// F3 - Folk Assign Gear Script - Woodland
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
