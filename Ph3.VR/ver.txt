@@ -11,4 +11,4 @@ Do not edit this document.
 
 Do not edit this document.
 
-Version 3.0.0.4.3 Stable
+Version 3.0.0.6 Stable
