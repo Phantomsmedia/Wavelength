@@ -87,6 +87,15 @@ switch (_TypNumber) do
     _Unit_Pool_T = ["rhs_bmd2","rhs_bmp1d_vdv","rhs_btr70_vdv","rhs_btr60_vdv","rhs_btr80_vdv","rhs_bmp2d_vdv"];
     _Unit_Pool_A = ["RHS_Mi8AMT_vdv","RHS_Mi8MTV3_vdv","RHS_Mi24V_vdv"];
   }; 
+ //-------------------------------------------------------------------------------------------------
+// Chechens (Leight's OPFOR Pack)
+  case 8:
+  {
+    _Unit_Pool_S = ["LOP_ChDKZ_Soldier_Crewman","LOP_ChDKZ_Soldier_Pilot","LOP_ChDKZ_Soldier_TL","LOP_ChDKZ_Soldier_AR","LOP_ChDKZ_Soldier_AR","LOP_ChDKZ_Soldier_Medic","LOP_ChDKZ_Soldier_GL","LOP_ChDKZ_Soldier_GL","LOP_ChDKZ_Soldier","LOP_ChDKZ_Soldier_Medic","LOP_ChDKZ_Soldier_Engineer","LOP_ChDKZ_Soldier","LOP_ChDKZ_Soldier","LOP_ChDKZ_Soldier_AT","LOP_ChDKZ_Soldier_AT","LOP_ChDKZ_Soldier","LOP_ChDKZ_Soldier_SL","LOP_ChDKZ_Soldier_SL"];
+    _Unit_Pool_V = ["LOP_ChDKZ_GAZ66o","LOP_ChDKZ_GAZ66","LOP_ChDKZ_UAZ"];
+    _Unit_Pool_T = ["LOP_ChDKZ_BMP1","LOP_ChDKZ_BTR60","LOP_ChDKZ_M113","LOP_ChDKZ_BMP1P","LOP_ChDKZ_BMP2","LOP_ChDKZ_BTR70"];
+    _Unit_Pool_A = ["LOP_ChDKZ_Mi8","LOP_ChDKZ_Mi8"];
+  };  
 //-------------------------------------------------------------------------------------------------
 
   Default
