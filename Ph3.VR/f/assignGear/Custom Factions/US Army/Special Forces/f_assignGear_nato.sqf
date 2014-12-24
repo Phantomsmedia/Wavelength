@@ -63,7 +63,7 @@ _silencer3 = "muzzle_snds_H_MG";		// Autorifleman suppressor
 _silencer4 = "hlc_muzzle_snds_M14";		// Sniper suppressor
 
 _scope1 = "RH_eotech553";		// Holosight
-_scope2 = "RH_ta31rco_2D";		// MRCO Scope - 1x - 6x
+_scope2 = "RH_ta31rco";			// MRCO Scope - 1x - 6x
 _scope3 = "hlc_optic_LRT_m14";	// SOS Scope - 18x - 75x
 
 // Default setup
