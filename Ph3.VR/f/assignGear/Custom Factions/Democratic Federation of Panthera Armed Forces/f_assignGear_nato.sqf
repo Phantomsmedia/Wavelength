@@ -60,9 +60,9 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "optic_Aco";	// Red Dot
-_scope2 = "optic_Hamr";		// RCO
-_scope3 = "optic_SOS";		// SOS Scope - 18x - 75x
+_scope1 = "optic_Aco";			// Red Dot
+_scope2 = "optic_Hamr";			// RCO
+_scope3 = "optic_SOS";			// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -150,9 +150,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_dgtl";					// carries 120, weighs 20
-_bagmedium = "B_FieldPack_oli";			// carries 240, weighs 30
-_baglarge = "B_Carryall_oli"; 						// carries 320, weighs 40
+_bagsmall = "B_AssaultPack_dgtl";			// carries 120, weighs 20
+_bagmedium = "B_FieldPack_oli";				// carries 240, weighs 30
+_baglarge = "B_Carryall_oli"; 				// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -263,12 +263,6 @@ _ghillieUniform = ["MNP_CombatUniform_RO2_Sh"];
 _ghillieHelmet = [H_Watchcap_camo];
 _ghillieRig = ["rhs_vydra_3m"];
 _ghillieGlasses = [];
-
-// Spec Op
-_sfuniform = ["MNP_CombatUniform_RO2_Rg","MNP_CombatUniform_RO2_Rg","MNP_CombatUniform_RO2_Sh"];
-_sfhelmet = ["rhs_6b27m_green","rhs_6b27m_green_bala","rhs_6b27m_green_ess","rhs_6b27m_green_ess_bala","MNP_MilCap_RO_B"];
-_sfRig = _mediumRig;
-_sfGlasses = [];
 
 // ====================================================================================
 
