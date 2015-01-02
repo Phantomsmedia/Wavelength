@@ -118,10 +118,10 @@ Credits
 
 Developed by
    
-	Jani J.       (www.phantactical.com Community Leader)
+	Jani J.       (www.phantactical.com Member)
 	KakePro       (www.phantactical.com Member)
 	Teddy         (www.phantactical.com Member)
-	Gruntin       (www.phantactical.com Member)
+	Gruntin       (www.phantactical.com Moderator)
 	tanaKa        (www.phantactical.com Member)	
 	Hunter        (Gave us a running start | Member circa 2012/13)	
 	Batboyx2      (Member circa 2014)
