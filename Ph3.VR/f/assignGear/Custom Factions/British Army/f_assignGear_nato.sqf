@@ -61,7 +61,7 @@ _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
 _scope1 = "CUP_optic_Eotech533Grey";	// Holosight
-_scope2 = "CUP_optic_SUSAT";			// MRCO Scope - 1x - 6x
+_scope2 = "CUP_optic_ACOG";				// MRCO Scope - 1x - 6x
 _scope3 = "CUP_optic_Leupold_VX3";		// SOS Scope - 18x - 75x
 
 // Default setup
