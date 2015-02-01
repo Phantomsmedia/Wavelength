@@ -51,8 +51,6 @@
 //
 // ====================================================================================
 
-// ====================================================================================
-
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
@@ -62,8 +60,8 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "hlc_optic_kobra";	// ACO
-_scope2 = "HLC_Optic_PSO1";		// MRCO Scope - 1x - 6x
+_scope1 = "";					// ACO
+_scope2 = "";					// MRCO Scope - 1x - 6x
 _scope3 = "rhs_acc_pso1m2";		// SOS Scope - 18x - 75x
 
 // Default setup
@@ -77,7 +75,7 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // ====================================================================================
 
 // ATTACHMENTS - HANDGUN
-_hg_silencer1 = "muzzle_snds_acp";	// 9mm suppressor
+_hg_silencer1 = "muzzle_snds_L";	// 9mm suppressor
 
 _hg_scope1 = "optic_MRD";			// MRD
 
@@ -91,17 +89,17 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 _rifle = "hlc_rifle_akm";
 _riflemag = "hlc_30Rnd_762x39_b_ak";
-_riflemag_tr = "hlc_30Rnd_762x39_b_ak";
+_riflemag_tr = "hlc_30Rnd_762x39_t_ak";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "hlc_rifle_akm";
 _carbinemag = "hlc_30Rnd_762x39_b_ak";
-_carbinemag_tr = "hlc_30Rnd_762x39_b_ak";
+_carbinemag_tr = "hlc_30Rnd_762x39_t_ak";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "SMG_02_F";
-_smgmag = "30Rnd_9x21_Mag";
-_smgmag_tr = "30Rnd_9x21_Mag";
+_smg = "hlc_rifle_aks74u";
+_smgmag = "hlc_30Rnd_545x39_B_AK";
+_smgmag_tr = "hlc_30Rnd_545x39_t_ak";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -111,7 +109,7 @@ _diverMag2 = "20Rnd_556x45_UW_mag";
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "hlc_rifle_akmgl";
 _glriflemag = "hlc_30Rnd_762x39_b_ak";
-_glriflemag_tr = "hlc_30Rnd_762x39_b_ak";
+_glriflemag_tr = "hlc_30Rnd_762x39_t_ak";
 _glmag = "hlc_VOG25_AK";
 
 // Smoke for FTLs, Squad Leaders, etc
@@ -120,20 +118,18 @@ _glsmokegreen = "hlc_GRD_green";
 _glsmokered = "hlc_GRD_Red";
 
 // Flares for FTLs, Squad Leaders, etc
-_glflarewhite = "UGL_FlareWhite_F";
-_glflarered = "UGL_FlareRed_F";
-_glflareyellow = "UGL_FlareYellow_F";
-_glflaregreen = "UGL_FlareGreen_F";
+_glflarewhite = "rhs_VG40OP_white";
+_glflarered = "rhs_VG40OP_red";
+_glflaregreen = "rhs_VG40OP_green";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_ACPC2_F";
-_pistolmag = "9Rnd_45ACP_Mag";
+_pistol = "rhs_weap_pya";
+_pistolmag = "rhs_mag_9x19_17";
 
 // Grenades
-_grenade = "HandGrenade";
-_Mgrenade = "MiniGrenade";
-_smokegrenade = "SmokeShell";
-_smokegrenadegreen = "SmokeShellGreen";
+_grenade = "rhs_mag_rgd5";
+_smokegrenade = "rhs_mag_rdg2_white";
+_smokegrenadegreen = "rhs_mag_rdg2_black";
 
 // misc medical items.
 _firstaid = "FirstAidKit";
@@ -152,9 +148,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_FieldPack_oli";				// carries 120, weighs 20
-_bagmedium = "B_FieldPack_oli";				// carries 240, weighs 30
-_baglarge = "B_TacticalPack_oli"; 			// carries 320, weighs 40
+_bagsmall = "CUP_B_ACRScout_m95";			// carries 120, weighs 20
+_bagmedium = "CUP_B_CivPack_Wdl";			// carries 240, weighs 30
+_baglarge = "CUP_B_ACRPara_m95"; 			// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -185,8 +181,8 @@ _clacker = "AGM_Clacker";                   // For Engineers
 
 // Automatic Rifleman
 _AR = "hlc_rifle_rpk";
-_ARmag = "hlc_45Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_45Rnd_762x39_t_rpk";
+_ARmag = "hlc_75Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
 _MMG = "rhs_weap_pkp";
@@ -207,14 +203,14 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
-_SNrifle = "rhs_weap_svdp";
+_SNrifle = "rhs_weap_svdp_wd";
 _SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
-_ATmine = "ATMine_Range_Mag";
+_ATmine = "rhs_mine_tm62m_mag";
 _satchel = "DemoCharge_Remote_Mag";
-_APmine1 = "APERSBoundingMine_Range_Mag";
-_APmine2 = "APERSMine_Range_Mag";
+_APmine1 = "APERSTripMine_Wire_Mag";
+_APmine2 = "rhs_mine_pmn2_mag";
 
 // ====================================================================================
 
@@ -233,20 +229,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-
-// Woodland-Hex
-_baseUniform = ["MNP_CombatUniform_NKR_Rg"];
-_baseHelmet = ["MNP_MC_OD","H_Bandanna_sand", "H_Watchcap_khk"];
+_baseUniform = ["MNP_CombatUniform_NKC_Rg"];
+_baseHelmet = ["MNP_Helmet_SOVC_NK"];
 _baseGlasses = [];
 
-// Urban
-//_baseUniform = ["MNP_CombatUniform_NKR_Rg"];
-//_baseHelmet = ["MNP_MC_OD","H_Bandanna_sand", "H_Watchcap_khk"];
-
 // Armored vests
-_lightRig = ["V_Chestrig_rgr"];
-_mediumRig = ["V_TacVest_blk"]; 	// default for all infantry classes
-_heavyRig = ["V_TacVest_blk"];
+_lightRig = ["LOP_V_Chestrig_kamysh"];
+_mediumRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"]; 	// default for all infantry classes
+_heavyRig = ["LOP_V_Chestrig_vsr"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -255,21 +245,21 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_NKR_Rg"];
+_pilotUniform = ["MNP_CombatUniform_NKC_Rg"];
 _pilotHelmet = ["H_PilotHelmetHeli_O"];
-_pilotRig = ["V_HarnessO_brn"];
+_pilotRig = ["LOP_V_Chestrig_kamysh"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_NKR_Rg"];
-_crewHelmet = ["H_HelmetCrew_O"];
-_crewRig = ["V_HarnessO_brn"];
+_crewUniform = ["MNP_CombatUniform_NKC_Rg"];
+_crewHelmet = ["rhs_tsh4","rhs_tsh4_bala","rhs_tsh4_ess","rhs_tsh4_ess_bala"];
+_crewRig = ["LOP_V_Chestrig_kamysh"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_NKR_Rg"];
-_ghillieHelmet = [];
-_ghillieRig = ["V_Chestrig_khk"];
+_ghillieUniform = ["MNP_CombatUniform_NKC_Rg"];
+_ghillieHelmet = ["LOP_H_SLA_beret"];
+_ghillieRig = ["LOP_V_Chestrig_vsr"];
 _ghillieGlasses = [];
 
 // ====================================================================================
@@ -310,11 +300,11 @@ if (_isMan) then {
 		_unit unassignItem _nvg;
 		_unit removeItem _nvg;
 	};
-	// uncomment to remove nvgoogles
+	// comment to remove nvgoogles
 						// add universal NVG for this faction
 
 	//removeAllItems _unit;						// remove default items: map, compass, watch, radio (and GPS for team/squad leaders)
-	//_unit linkItem "ItemGPS"; 				// add gps to this faction
+	//_unit linkItem "ItemGPS"; 					// add gps to this faction
 	//_unit linkItem "ItemMap";
 	//_unit linkItem "ItemCompass";
 	//_unit linkItem "ItemRadio";
@@ -1095,6 +1085,7 @@ if !(_isMan) exitWith {};
 #include "f_assignGear_attachments.sqf";
 
 // ====================================================================================
+
 
 // ENSURE UNIT HAS CORRECT WEAPON SELECTED ON SPAWNING
 

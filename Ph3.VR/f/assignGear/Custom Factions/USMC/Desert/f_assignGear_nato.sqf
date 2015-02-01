@@ -54,22 +54,22 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "RH_peq15";			// IR Laser
-_attach2 = "RH_SFM952V";		// Flashlight
+_attach1 = "rhsusf_acc_anpeq15side";	// IR Laser
+_attach2 = "acc_flashlight";			// Flashlight
 
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "RH_compM4s";			// Holosight
-_scope2 = "RH_ta31rco";			// MRCO Scope - 1x - 6x
-_scope3 = "hlc_optic_LRT_m14";	// SOS Scope - 18x - 75x
+_scope1 = "rhsusf_acc_compm4";	// Holosight
+_scope2 = "rhsusf_acc_ACOG";	// MRCO Scope - 1x - 6x
+_scope3 = "rhsusf_acc_LEUPOLDMK4";	// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
 // [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
-// [_scope2]; = add _scope2, remove rest
+// [_scope2] = add _scope2, remove rest
 // false = keep attachments as they are
 
 // ====================================================================================
@@ -87,19 +87,19 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "RH_m16a4";
+_rifle = "rhs_weap_m16a4_carryhandle";
 _riflemag = "30rnd_556x45_STANAG";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "RH_m4a1_ris";
+_carbine = "rhs_weap_m4a1_grip";
 _carbinemag = "30rnd_556x45_STANAG";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "RH_m4a1_ris";
-_smgmag = "30rnd_556x45_STANAG";
-_smgmag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_smg = "hlc_smg_mp5a3";
+_smgmag = "hlc_30Rnd_9x19_B_MP5";
+_smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -107,7 +107,7 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "RH_m16a4gl";
+_glrifle = "rhs_m4a1_m320";
 _glriflemag = "30rnd_556x45_STANAG";
 _glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
@@ -124,12 +124,11 @@ _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_Pistol_heavy_01_F";
-_pistolmag = "11Rnd_45ACP_Mag";
+_pistol = "hgun_ACPC2_F";
+_pistolmag = "9Rnd_45ACP_Mag";
 
 // Grenades
 _grenade = "HandGrenade";
-_Mgrenade = "MiniGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 
@@ -138,10 +137,10 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles_OPFOR";
+_nvg = "rhsusf_ANPVS_14";
 
 // UAV Terminal
-_uavterminal = "B_UavTerminal";	  // BLUFOR - USMC
+_uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
 
 // Chemlights
 _chemgreen =  "Chemlight_green";
@@ -192,21 +191,21 @@ _MMGmag = "rhsusf_100Rnd_762x51";
 _MMGmag_tr = "rhsusf_100Rnd_762x51";
 
 // Rifleman AT
-_RAT = "rhs_weap_M136";
-_RATmag = "rhs_m136_mag";
+_RAT = "rhs_weap_M136_hedp";
+_RATmag = "rhs_m136_hedp_mag";
 
 // Medium AT
-_MAT = "rhs_weap_fgm148";
-_MATmag1 = "rhs_fgm148_magazine_AT";
-_MATmag2 = "rhs_fgm148_magazine_AT";
+_MAT = "CUP_launch_Mk153Mod0";
+_MATmag1 = "CUP_SMAW_HEAA_M";
+_MATmag2 = "CUP_SMAW_HEAA_M";
 
 // Surface Air
 _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Sniper
-_SNrifle = "hlc_rifle_m14dmr";
-_SNrifleMag = "hlc_20Rnd_762x51_B_M14";
+_SNrifle = "rhs_weap_m14ebrri";
+_SNrifleMag = "20Rnd_762x51_Mag";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
@@ -229,10 +228,10 @@ _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
 _specOp = [];
 
-// Uniforms
+// Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["MNP_CombatUniform_USMC_T","MNP_CombatUniform_USMC_ST"];
-_baseHelmet = ["MNP_Helmet_USMC"];
+_baseUniform = ["MNP_CombatUniform_USMC_D","MNP_CombatUniform_USMC_SD"];
+_baseHelmet = ["MNP_Helmet_USMC_D"];
 _baseGlasses = [];
 
 // Armored vests
@@ -247,20 +246,20 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_USMC_T"];
+_pilotUniform = ["U_B_HeliPilotCoveralls"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_USMC_ST"];
-_crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_TacVest_blk"];
+_crewUniform = ["MNP_CombatUniform_USMC_SD"];
+_crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_ess"];
+_crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_USMC_ST"];
-_ghillieHelmet = [MNP_Boonie_USMC];
+_ghillieUniform = ["MNP_CombatUniform_USMC_SD"];
+_ghillieHelmet = ["MNP_Boonie_USMC_D"];
 _ghillieRig = ["MNP_Vest_USMC"];
 _ghillieGlasses = [];
 

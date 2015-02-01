@@ -60,7 +60,7 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
 
-_scope1 = "rhs_acc_pkas";		// Holosight
+_scope1 = "rhs_acc_ekp1";		// Holosight
 _scope2 = "rhs_acc_1p29";		// MRCO Scope - 1x - 6x
 _scope3 = "rhs_acc_pso1m2";		// SOS Scope - 18x - 75x
 
@@ -92,14 +92,14 @@ _riflemag = "rhs_30Rnd_545x39_AK";
 _riflemag_tr = "rhs_30Rnd_545x39_7N10_AK";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_ak74m_2mag_camo";
+_carbine = "rhs_weap_ak74m_camo";
 _carbinemag = "rhs_30Rnd_545x39_AK";
 _carbinemag_tr = "rhs_30Rnd_545x39_7N10_AK";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "hlc_rifle_aks74u";
-_smgmag = "hlc_30Rnd_545x39_B_AK";
-_smgmag_tr = "hlc_30Rnd_545x39_T_AK";
+_smg = "rhs_weap_ak74m_camo";
+_smgmag = "rhs_30Rnd_545x39_AK";
+_smgmag_tr = "rhs_30Rnd_545x39_7N10_AK";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -107,7 +107,7 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "hlc_rifle_aks74_GL";
+_glrifle = "rhs_weap_ak74m_gp25";
 _glriflemag = "rhs_30Rnd_545x39_AK";
 _glriflemag_tr = "rhs_30Rnd_545x39_7N10_AK";
 _glmag = "rhs_VOG25";
@@ -118,27 +118,25 @@ _glsmokegreen = "rhs_GRD40_Green";
 _glsmokered = "rhs_GRD40_Red";
 
 // Flares for FTLs, Squad Leaders, etc
-_glflarewhite = "3Rnd_UGL_FlareWhite_F";
-_glflarered = "3Rnd_UGL_FlareRed_F";
-_glflareyellow = "3Rnd_UGL_FlareYellow_F";
-_glflaregreen = "3Rnd_UGL_FlareGreen_F";
+_glflarewhite = "rhs_VG40OP_white";
+_glflarered = "rhs_VG40OP_red";
+_glflaregreen = "rhs_VG40OP_green";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_Rook40_F";
-_pistolmag = "16Rnd_9x21_Mag";
+_pistol = "rhs_weap_pya";
+_pistolmag = "rhs_mag_9x19_17";
 
 // Grenades
 _grenade = "rhs_mag_rgd5";
-_Mgrenade = "MiniGrenade";
-_smokegrenade = "rhs_mag_nspd";
-_smokegrenadegreen = "rhs_mag_nspn_green";
+_smokegrenade = "rhs_mag_rdg2_white";
+_smokegrenadegreen = "rhs_mag_rdg2_black";
 
 // misc medical items.
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles_INDFOR";
+_nvg = "NVGoggles_OPFOR";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
@@ -150,9 +148,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "rhs_sidor";					// carries 120, weighs 20
-_bagmedium = "rhs_assault_umbts";			// carries 240, weighs 30
-_baglarge = "rhs_rpg"; 						// carries 320, weighs 40
+_bagsmall = "CUP_B_ACRScout_m95";			// carries 120, weighs 20
+_bagmedium = "CUP_B_CivPack_Wdl";			// carries 240, weighs 30
+_baglarge = "CUP_B_ACRPara_m95"; 			// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "O_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -183,8 +181,8 @@ _clacker = "AGM_Clacker";                   // For Engineers
 
 // Automatic Rifleman
 _AR = "hlc_rifle_rpk";
-_ARmag = "hlc_45Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_45Rnd_762x39_t_rpk";
+_ARmag = "hlc_75Rnd_762x39_m_rpk";
+_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
 _MMG = "rhs_weap_pkp";
@@ -209,10 +207,10 @@ _SNrifle = "rhs_weap_svdp_wd";
 _SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
-_ATmine = "ATMine_Range_Mag";
+_ATmine = "rhs_mine_tm62m_mag";
 _satchel = "DemoCharge_Remote_Mag";
-_APmine1 = "APERSBoundingMine_Range_Mag";
-_APmine2 = "APERSMine_Range_Mag";
+_APmine1 = "APERSTripMine_Wire_Mag";
+_APmine2 = "rhs_mine_pmn2_mag";
 
 // ====================================================================================
 

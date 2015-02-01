@@ -129,7 +129,6 @@ _pistolmag = "11Rnd_45ACP_Mag";
 
 // Grenades
 _grenade = "HandGrenade";
-_Mgrenade = "MiniGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 
