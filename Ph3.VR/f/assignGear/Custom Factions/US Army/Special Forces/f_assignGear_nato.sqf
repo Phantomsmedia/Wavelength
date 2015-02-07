@@ -98,7 +98,7 @@ _carbinemag = "30rnd_556x45_STANAG";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "hlc_smg_mp5a3";
+_smg = "hlc_smg_MP5N";
 _smgmag = "hlc_30Rnd_9x19_B_MP5";
 _smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 
