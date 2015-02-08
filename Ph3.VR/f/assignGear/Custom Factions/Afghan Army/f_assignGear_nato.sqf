@@ -54,8 +54,8 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "";					// IR Laser
-_attach2 = "";					// Flashlight
+_attach1 = "rhsusf_acc_anpeq15side";	// IR Laser
+_attach2 = "acc_flashlight";			// Flashlight
 
 _silencer1 = "muzzle_snds_M";	// 5.56 suppressor
 _silencer2 = "muzzle_snds_H";	// 6.5 suppressor
@@ -92,7 +92,7 @@ _riflemag = "30rnd_556x45_STANAG";
 _riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_m16a4_carryhandle";
+_carbine = "rhs_weap_m4_carryhandle";
 _carbinemag = "30rnd_556x45_STANAG";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
@@ -236,8 +236,8 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_oli"];
-_mediumRig = ["LOP_V_CarrierLite_WDL","LOP_V_CarrierRig_WDL"]; 	// default for all infantry classes
-_heavyRig = ["LOP_V_CarrierRig_WDL"];
+_mediumRig = ["LOP_V_Carrier_WDL"]; 	// default for all infantry classes
+_heavyRig = ["LOP_V_Carrier_WDL"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -260,7 +260,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["LOP_U_AA_Fatigue_01"];
 _ghillieHelmet = ["LOP_H_PASGTHelmet_cover_WDL","LOP_H_PASGTHelmet_cover_AA"];
-_ghillieRig = ["LOP_V_CarrierLite_WDL"];
+_ghillieRig = ["LOP_V_Carrier_WDL"];
 _ghillieGlasses = [];
 
 // ====================================================================================
