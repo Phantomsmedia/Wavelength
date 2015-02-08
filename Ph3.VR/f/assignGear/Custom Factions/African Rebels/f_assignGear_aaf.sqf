@@ -136,7 +136,7 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles_INDFOR";
+_nvg = "NVGoggles_INDEP";
 
 // UAV Terminal
 _uavterminal = "O_UavTerminal";
