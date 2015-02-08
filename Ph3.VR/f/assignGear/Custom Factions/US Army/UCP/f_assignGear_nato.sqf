@@ -204,8 +204,8 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Sniper
-_SNrifle = "rhs_weap_m14ebrri";
-_SNrifleMag = "20Rnd_762x51_Mag";
+_SNrifle = "rhs_weap_XM2010";
+_SNrifleMag = "rhsusf_5Rnd_300winmag_xm2010";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
