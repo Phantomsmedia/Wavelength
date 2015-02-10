@@ -137,7 +137,7 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "rhsusf_ANPVS_14";
+_nvg = "NVGoggles";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
