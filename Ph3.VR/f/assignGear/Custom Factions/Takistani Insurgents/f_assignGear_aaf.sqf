@@ -87,7 +87,7 @@ _hg_attachments= []; // The default attachment set for handguns, overwritten in 
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "hlc_rifle_akm";
+_rifle = "hlc_rifle_ak47";
 _riflemag = "hlc_30Rnd_762x39_b_ak";
 _riflemag_tr = "hlc_30Rnd_762x39_t_ak";
 
