@@ -62,7 +62,7 @@ _silencer2 = "muzzle_snds_H";			// 6.5 suppressor
 
 _scope1 = "rhsusf_acc_compm4";			// Holosight
 _scope2 = "rhsusf_acc_ACOG";			// MRCO Scope - 1x - 6x
-_scope3 = "CUP_optic_SB_3_12x50_PMII";	// SOS Scope - 18x - 75x
+_scope3 = "rhsusf_acc_LEUPOLDMK4";		// SOS Scope - 18x - 75x
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -92,14 +92,14 @@ _riflemag = "30Rnd_556x45_Stanag";
 _riflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_m4_grip2";
+_carbine = "rhs_weap_m4_carryhandle_pmag";
 _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "hlc_smg_MP5N";
-_smgmag = "hlc_30Rnd_9x19_B_MP5";
-_smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
+_smg = "hgun_PDW2000_F";
+_smgmag = "30Rnd_9x21_Mag";
+_smgmag_tr = "30Rnd_9x21_Mag";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -124,8 +124,8 @@ _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_ACPC2_F";
-_pistolmag = "9Rnd_45ACP_Mag";
+_pistol = "hgun_P07_F";
+_pistolmag = "16Rnd_9x21_Mag";
 
 // Grenades
 _grenade = "HandGrenade";
@@ -137,7 +137,7 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "rhsusf_ANPVS_14";
+_nvg = "NVGoggles";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";	  // BLUFOR - FIA
@@ -191,8 +191,8 @@ _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Rifleman AT
-_RAT = "rhs_weap_M136_hedp";
-_RATmag = "rhs_m136_hedp_mag";
+_RAT = "launch_NLAW_F";
+_RATmag = "AGM_PreloadedMissileDummy";
 
 // Medium AT
 _MAT = "rhs_weap_rpg7";
@@ -204,8 +204,8 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Sniper
-_SNrifle = "CUP_srifle_AS50";
-_SNrifleMag = "CUP_5Rnd_127x99_as50_M";
+_SNrifle = "rhs_weap_m14ebrri";
+_SNrifleMag = "20Rnd_762x51_Mag";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
