@@ -231,7 +231,7 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
-_baseHelmet = ["rhsusf_ach_bare","rhsusf_ach_bare_tan","H_Cap_khaki_specops_UK","H_Cap_usblack"];
+_baseHelmet = ["rhsusf_ach_bare","rhsusf_ach_bare_tan","H_Cap_khaki_specops_UK","H_Cap_usblack","H_Booniehat_oli","H_Booniehat_khk","H_Booniehat_tan"];
 _baseGlasses = [];
 
 // Armored vests
@@ -259,7 +259,7 @@ _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
-_ghillieHelmet = ["H_Booniehat_oli","H_Booniehat_khk_hs","H_Booniehat_khk","H_Booniehat_tan"];
+_ghillieHelmet = ["H_Booniehat_oli","H_Booniehat_khk","H_Booniehat_tan"];
 _ghillieRig = ["V_TacVest_blk","V_TacVest_khk","V_TacVest_oli"];
 _ghillieGlasses = [];
 
