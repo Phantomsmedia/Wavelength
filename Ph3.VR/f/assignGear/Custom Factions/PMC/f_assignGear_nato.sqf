@@ -259,7 +259,7 @@ _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
-_ghillieHelmet = ["H_Cap_headphones"];
+_ghillieHelmet = ["H_Booniehat_oli","H_Booniehat_khk_hs","H_Booniehat_khk","H_Booniehat_tan"];
 _ghillieRig = ["V_TacVest_blk","V_TacVest_khk","V_TacVest_oli"];
 _ghillieGlasses = [];
 
