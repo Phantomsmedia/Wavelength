@@ -235,8 +235,8 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_khk"];
-_mediumRig = ["LOP_V_CarrierLite_TRI","LOP_V_CarrierRig_TRI"]; 	// default for all infantry classes
-_heavyRig = ["rhs_6b23_6sh92_vog"];
+_mediumRig = ["LOP_V_Carrier_TAN"]; 	// default for all infantry classes
+_heavyRig = ["LOP_V_Carrier_TAN"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -259,7 +259,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["LOP_U_IA_Fatigue_01"];
 _ghillieHelmet = ["LOP_H_PASGTHelmet_cover_TRI"];
-_ghillieRig = ["LOP_V_CarrierLite_TRI"];
+_ghillieRig = ["LOP_V_Carrier_TAN"];
 _ghillieGlasses = [];
 
 // ====================================================================================

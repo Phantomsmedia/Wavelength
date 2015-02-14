@@ -118,10 +118,9 @@ _glsmokegreen = "hlc_GRD_green";
 _glsmokered = "hlc_GRD_Red";
 
 // Flares for FTLs, Squad Leaders, etc
-_glflarewhite = "3Rnd_UGL_FlareWhite_F";
-_glflarered = "3Rnd_UGL_FlareRed_F";
-_glflareyellow = "3Rnd_UGL_FlareYellow_F";
-_glflaregreen = "3Rnd_UGL_FlareGreen_F";
+_glflarewhite = "rhs_VG40OP_white";
+_glflarered = "rhs_VG40OP_red";
+_glflaregreen = "rhs_VG40OP_green";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
 _pistol = "rhs_weap_pya";
@@ -149,9 +148,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_FieldPack_blk";				// carries 120, weighs 20
-_bagmedium = "B_TacticalPack_blk";			// carries 240, weighs 30
-_baglarge = "rhs_rpg"; 						// carries 320, weighs 40
+_bagsmall = "CUP_B_ACRScout_m95";			// carries 120, weighs 20
+_bagmedium = "CUP_B_CivPack_Wdl";			// carries 240, weighs 30
+_baglarge = "CUP_B_ACRPara_m95"; 			// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "O_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -230,14 +229,14 @@ _specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["LOP_U_ISIS_Fatigue_01","LOP_U_ISIS_Fatigue_02","LOP_U_ISIS_Fatigue_03","LOP_U_ISIS_Fatigue_04"];
-_baseHelmet = ["LOP_H_Shemag_ISIS","H_ShemagOpen_khk"];
+_baseUniform = ["LOP_U_IT_Fatigue_01","LOP_U_IT_Fatigue_02","LOP_U_IT_Fatigue_03","LOP_U_IT_Fatigue_04"];
+_baseHelmet = ["LOP_H_Shemag_IT","LOP_H_Turban","H_ShemagOpen_khk","H_ShemagOpen_tan"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_oli"];
-_mediumRig = ["V_TacVest_blk","V_TacVest_camo","V_TacVest_brn","V_TacVest_khk"]; 	// default for all infantry classes
-_heavyRig = ["V_TacVest_blk"];
+_lightRig = ["LOP_V_Chestrig_kamysh"];
+_mediumRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"]; 	// default for all infantry classes
+_heavyRig = ["LOP_V_Chestrig_vsr"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -246,21 +245,21 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["LOP_U_ISIS_Fatigue_01","LOP_U_ISIS_Fatigue_02","LOP_U_ISIS_Fatigue_03","LOP_U_ISIS_Fatigue_04"];
+_baseUniform = ["LOP_U_IT_Fatigue_01","LOP_U_IT_Fatigue_02","LOP_U_IT_Fatigue_03","LOP_U_IT_Fatigue_04"];
 _pilotHelmet = ["H_PilotHelmetHeli_O"];
-_pilotRig = ["V_TacVest_oli"];
+_pilotRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["LOP_U_ISIS_Fatigue_01","LOP_U_ISIS_Fatigue_02","LOP_U_ISIS_Fatigue_03","LOP_U_ISIS_Fatigue_04"];
-_crewHelmet = ["rhs_tsh4","rhs_tsh4_bala","rhs_tsh4_ess","rhs_tsh4_ess_bala"];
+_baseUniform = ["LOP_U_IT_Fatigue_01","LOP_U_IT_Fatigue_02","LOP_U_IT_Fatigue_03","LOP_U_IT_Fatigue_04"];
+_crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
 _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["LOP_U_ISIS_Fatigue_01","LOP_U_ISIS_Fatigue_02","LOP_U_ISIS_Fatigue_03","LOP_U_ISIS_Fatigue_04"];
+_baseUniform = ["LOP_U_IT_Fatigue_01","LOP_U_IT_Fatigue_02","LOP_U_IT_Fatigue_03","LOP_U_IT_Fatigue_04"];
 _ghillieHelmet = ["LOP_H_Shemag_ISIS"];	
-_ghillieRig = ["V_TacVest_blk","V_TacVest_camo","V_TacVest_brn","V_TacVest_khk"];
+_ghillieRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
 _ghillieGlasses = [];
 
 // ====================================================================================
