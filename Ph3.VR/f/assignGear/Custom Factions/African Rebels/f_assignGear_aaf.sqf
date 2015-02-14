@@ -148,7 +148,7 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "CUP_B_ACRScout_m95";			// carries 120, weighs 20
+_bagsmall = "CUP_B_CivPack_Wdl";			// carries 120, weighs 20
 _bagmedium = "CUP_B_CivPack_Wdl";			// carries 240, weighs 30
 _baglarge = "CUP_B_ACRPara_m95"; 			// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
