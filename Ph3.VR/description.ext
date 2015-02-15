@@ -47,25 +47,10 @@ enableDebugConsole = 1;
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-respawn = 3;
+respawn = 1;
 respawndelay = 3;
 respawnOnStart = 0;
-respawnTemplates[] = {"f_JIP","A3GSpectatorCam"};
-
-class CfgRespawnTemplates {
-	class A3GSpectatorCam {
-		displayName = "A3GSpectatorCam";
-		onPlayerKilled = "a3g-spectatorcam\initCam.sqf";
-		respawnDelay = 259200;
-	};
-};
-
-class RscTitles {
-	#include "a3g-spectatorcam\dialog.hpp"
-};
-class CfgFunctions {
-	#include "a3g-spectatorcam\CfgFunctions.hpp"
-};
+respawnTemplates[] = {"f_spectator","f_JIP"};
 
 // ============================================================================================
 
