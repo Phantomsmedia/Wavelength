@@ -234,9 +234,9 @@ _baseHelmet = ["LOP_H_Pakol","LOP_H_Turban","H_ShemagOpen_tan","H_ShemagOpen_khk
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_BandollierB_blk"];
-_mediumRig = ["V_BandollierB_blk"]; 	// default for all infantry classes
-_heavyRig = ["V_BandollierB_blk"];
+_lightRig = ["V_BandollierB_rgr"];
+_mediumRig = ["V_BandollierB_rgr"]; 	// default for all infantry classes
+_heavyRig = ["V_BandollierB_rgr"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -247,19 +247,19 @@ _diverGlasses = ["G_Diving"];
 // Pilot
 _pilotUniform = ["LOP_U_Mil_01","LOP_U_Mil_02","LOP_U_Mil_03","LOP_U_Mil_04"];
 _pilotHelmet = ["LOP_H_Pakol","LOP_H_Turban","H_ShemagOpen_tan","H_ShemagOpen_khk"];
-_pilotRig = ["V_BandollierB_blk"];
+_pilotRig = ["V_BandollierB_rgr"];
 _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["LOP_U_Mil_01","LOP_U_Mil_02","LOP_U_Mil_03","LOP_U_Mil_04"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["V_BandollierB_blk"];
+_crewRig = ["V_BandollierB_rgr"];
 _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["LOP_U_Mil_01","LOP_U_Mil_02","LOP_U_Mil_03","LOP_U_Mil_04"];
 _ghillieHelmet = ["LOP_H_Pakol","LOP_H_Turban","H_ShemagOpen_tan","H_ShemagOpen_khk"];
-_ghillieRig = ["V_BandollierB_blk"];
+_ghillieRig = ["V_BandollierB_rgr"];
 _ghillieGlasses = [];
 
 // ====================================================================================
