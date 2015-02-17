@@ -121,6 +121,8 @@ class Mission
 		"rhs_c_weapons",
 		"dac_source",
 		"A3_Roads_F",
+		"lop_c_men",
+		"rhs_c_a2port_car"
 	};
 	addOnsAuto[]=
 	{
@@ -130,6 +132,7 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
+		"lop_c_men",
 		"A3_Modules_F",
 		"agm_medical",
 		"dac_source",
@@ -189,7 +192,7 @@ class Mission
 		"aia_misc_config",
 		"A3_Structures_F_Mil_Shelters",
 		"A3_Soft_F_Gamma_Offroad",
-		"lop_c_veh_offroad",
+		"a3_soft_f_offroad_01",
 		"A3_Structures_F_Ind_DieselPowerPlant",
 		"A3_Structures_F_EPB_Items_Documents",
 		"A3_Structures_F_Items_Documents",
@@ -200,10 +203,10 @@ class Mission
 		"A3_Structures_F_Civ_Garbage",
 		"A3_Structures_F_Civ_InfoBoards",
 		"A3_Structures_F_EPB_Furniture",
-		"castructures_e_misc_misc_construction",
+		"CAStructures_E_Misc_Misc_Construction",
 		"aia_ca_config",
 		"aia_desert2_config",
-		"castructures_e_misc_misc_garbage",
+		"CAStructures_E_Misc_Misc_Garbage",
 		"A3_Structures_F_Ind_FuelStation",
 		"A3_Structures_F_Furniture",
 		"A3_Structures_F_EPC_Civ_Garbage",
@@ -235,7 +238,7 @@ class Mission
 		"rhs_c_tanks",
 		"rhs_c_2s3",
 		"rhsusf_c_m109",
-		"RHS_A2_CarsImport",
+		"rhs_c_a2port_car",
 		"RHS_US_A2Port_Armor",
 		"rhs_c_radars",
 		"rhs_c_weapons",
@@ -279,7 +282,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="this addAction [""Start Camera"",""camera.sqs"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+					init="this addAction [""Start Camera"",""camera.sqs"",[],2,false,true,"""",""driver _target == _this""];";
 					description="Mission Observer";
 				};
 			};
@@ -300,7 +303,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="this addAction [""Start Camera"",""camera.sqs"",[],2,false,true,"""",""driver _target == _this""]; this allowDamage false;";
+					init="this addAction [""Start Camera"",""camera.sqs"",[],2,false,true,"""",""driver _target == _this""];";
 					description="Mission Observer";
 				};
 			};
