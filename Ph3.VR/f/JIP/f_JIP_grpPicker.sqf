@@ -2,7 +2,6 @@
 #define COMBO (uiNamespace getVariable "GrpPick_Combo")
 #define USEBUTTON (uiNamespace getVariable "GrpPick_UseBtn")
 
-
 GrpPickInit =
 {
     uiNamespace setVariable ["GrpPick_Dlg", _this select 0];

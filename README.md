@@ -1,12 +1,7 @@
+==================================================
 Phramework
-===============
-[![](http://img.shields.io/badge/Issues-2-red.svg)](https://github.com/Phantomsmedia/Phramework/issues)[![](http://img.shields.io/badge/Release-v3.0.0.4.2-blue.svg)](https://github.com/Phantomsmedia/Phramework/releases/tag/v3.0.0.4.2)![](http://img.shields.io/badge/Project%20Members-5-green.svg)[![](http://img.shields.io/badge/Commit%20History-Master%20Branch-yellowgreen.svg)](https://github.com/Phantomsmedia/Phramework/commits/master)
-![Ph](http://i5.minus.com/ib2ovbqhL4YeYU.png)
-
-
-
-===============
-Ph2 and Ph3 are derivative of the [F2](http://ferstaberinde.com/f2/en//index.php?title=Main_Page) and [F3](http://ferstaberinde.com/f3/en//index.php?title=Main_Page) works. The content we have edited mainly consists of minor edits to gear, addition of many more factions from mods, and tweaks to the code, as well as a few minor additions. You can track F3's development at https://github.com/ferstaberinde/F3. 
+==================================================
+Ph3 is a derivative of the [F3](http://ferstaberinde.com/f3/en//index.php?title=Main_Page) work. The content we have edited mainly consists of minor edits to gear, addition of many more factions from mods, and tweaks to the code, as well as a few minor additions. You can track F3's development at https://github.com/ferstaberinde/F3. 
 
 Phramework 3 Tutorial
 

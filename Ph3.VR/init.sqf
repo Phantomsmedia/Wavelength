@@ -1,16 +1,17 @@
-
-
 // ====================================================================================
+
 // Ph Phramework
 // http://phantactical.com
 // https://github.com/Phantomsmedia/Phramework
 
 // ====================================================================================
+
 // BWMF - DAC Debug Params
 
 [] execVM "DAC\bwmf_dacParams.sqf";
 
 // ====================================================================================
+
 // BWMF - Headless Client Act.
 //Check HC for 1.36 Headless Client
 
@@ -25,6 +26,13 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 };
 
 // ====================================================================================
+
+// BWMF - Mission Timer/Safe Start
+
+if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
+
+// ====================================================================================
+
 // F3 - Disable Saving and Auto Saving
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -36,11 +44,6 @@ enableSaving [false, false];
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 enableSentences false;
-// ====================================================================================
-
-// BWMF - Mission Timer/Safe Start
-
-if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // ====================================================================================
 
@@ -94,8 +97,9 @@ f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf"
 // F3 - F3 Common Local Variables
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
-
-f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
+if(isServer) then {
+	f_script_setLocalVars = [] execVM "f\common\f_setLocalVars.sqf";
+};
 
 // ====================================================================================
 
@@ -150,8 +154,15 @@ f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
 // F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
+// f_var_civAI = independent; 		// Optional: The civilian AI will use this side's settings
 // [] execVM "f\setAISKill\f_setAISkill.sqf";
-// f_var_civAI = independent; // Optional: The civilian AI will use this side's settings
+
+// ====================================================================================
+
+// F3 - Assign Gear AI
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+// [] execVM "f\assignGear\f_assignGear_AI.sqf";
 
 // ====================================================================================
 
@@ -174,7 +185,7 @@ f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
 // ====================================================================================
 
 // F3 - ORBAT Notes
-// Credits: PabstMirror
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] execVM "f\briefing\f_orbatNotes.sqf";
 
@@ -182,6 +193,7 @@ f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
 
 // F3 - Loadout Notes
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
 [] execVM "f\briefing\f_loadoutNotes.sqf";
 
 // ====================================================================================
@@ -189,14 +201,14 @@ f_script_setLocalVars = [0] execVM "f\common\f_setLocalVars.sqf";
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-// [false] execVM "f\groupJoin\f_groupJoinAction.sqf";
+[false] execVM "f\groupJoin\f_groupJoinAction.sqf";
 
 // ====================================================================================
 
 // F3 - Mission Timer/Safe Start
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-//[] execVM "f\safeStart\f_safeStart.sqf";
+[] execVM "f\safeStart\f_safeStart.sqf";
 
 // ====================================================================================
 
@@ -232,6 +244,10 @@ f_var_cachingAggressiveness = 2;
 // F3 - Medical Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
+// SWS Config Settings
+// How many extra FirstAidKits (FAKS) each player should receive when using the F3 Simple Wounding System:
+f_wound_extraFAK = 2;
+
 [] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
@@ -239,55 +255,6 @@ f_var_cachingAggressiveness = 2;
 // F3 - Thermal On Statics Forced Off
 // Credits: F3 Wiki 
 player addEventHandler ["WeaponAssembled",{(_this select 1) disableTIEquipment true}];
-
-// ====================================================================================
-
-// PhanTactical - Intro Text
-// Credits: Bourbon Warfare
-
-waitUntil{!(isNil "BIS_fnc_init")};
-sleep 10;
-
-[] spawn {
-    if (isDedicated) exitWith {};
-    waitUntil {player == player};
-    waitUntil {time > 2};
-    _msg = (getPos player) call BIS_fnc_locationDescription;
-    _msg = _msg + format ["<br/>%1/%2/%3", (date select 0), (date select 1), (date select 2)];
-    _msg = _msg + format ["<br/>%1", ([dayTime, "HH:MM"] call BIS_fnc_timeToString)];
-    [
-    _msg,
-    [safezoneX + safezoneW - 0.8,0.50], 
-    [safezoneY + safezoneH - 0.8,0.7], 
-    5,
-    0.5
-    ] spawn BIS_fnc_dynamicText;
-};
-// ====================================================================================
-
-// PhanTactical - First Person View Forced
-// Credits: tanaKa
-if (!isDedicated) then {
-	
-        // Force first person view
-	if (First_Person_View == 1) then {
-		[] spawn {
-			while {true} do {
-				waitUntil {(cameraView == "External")};
-				if ((vehicle player) == player) then { player switchCamera "Internal"; Server globalChat "external view is disabled.";};
-				sleep 0.01;
-			};
-		};
-	};
-};
-
-// ====================================================================================
-
-// PhanTactical Paradrop Script Enable v2.0
-// Credits: tanaKa- with help from F2kSel
-// Comment to disable for all aircraft
-
-{if (_x isKindOf "AIR") then {_x addAction ["<t color='#FF0000'>PARADROP</t>","f\paradrop\eject.sqf",[1],0,false,true,"","_target getCargoIndex player != -1"]}} foreach vehicles;
 
 // ====================================================================================
 
@@ -308,32 +275,4 @@ if(isServer) then {
  
 	["MISSION INIT - Static data override loaded"] call ALIVE_fnc_dump;
  };
-// ====================================================================================
-// Wolfenswan - AI Flashlights Attach / NVGs Off / Flashlights Forced On
-// Credits: Wolfenswan
-
-/*
-
-{
-    private ["_unit"];
-    _unit = _x;
-
-    // Only run where the unit is local, it isn't a player and doesn't have a flashlight
-    if (local _unit && !isplayer _unit && !("acc_flashlight" in primaryWeaponItems _unit)) then {
-
-    // Remove laser if equipped
-    if ("acc_pointer_IR" in primaryWeaponItems _unit) then {_x removePrimaryWeaponItem "acc_pointer_IR"};
-    _unit addPrimaryWeaponItem "acc_flashlight";    // Add flashlight
-
-        // Removes NVGs from unit
-        {
-            if (_x in assigneditems _unit) exitWith {_unit unlinkItem _x};
-        } forEach ["NVGoggles_OPFOR","NVGoggles_INDEP","NVGoggles"];
-    };
-
-    // Forces flashlights on
-     _unit enablegunlights "forceOn";
-} forEach allUnits;
-
-*/
 // ====================================================================================

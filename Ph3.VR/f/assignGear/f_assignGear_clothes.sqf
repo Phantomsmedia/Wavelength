@@ -2,10 +2,17 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
+// Prevent BIS Randomisation System
+// BIS created a system for randomisation unit loadouts, that may overwrite the changes made by this script, this will fix such system.
+
+_unit setVariable ["BIS_enableRandomization", false];
+
+// ====================================================================================
+
 // lets strip him down to the basic
 removeUniform _unit;
-removeheadgear _unit;
-removevest _unit;
+removeHeadgear _unit;
+removeVest _unit;
 
 // Assign default clothes
 _uniform = _baseUniform;
@@ -65,19 +72,22 @@ if (_typeOfUnit in _specOp) then {
 	_glasses = _sfGlasses;
 };
 
-// Add uniforms to unit
+// Add clothing items to unit
 if(count _uniform > 0) then
 {
-	_unit forceadduniform (_uniform call BIS_fnc_selectRandom);
+	_unit forceAddUniform (_uniform call BIS_fnc_selectRandom);
 };
-if(count _Helmet > 0) then
+
+if(count _helmet > 0) then
 {
-	_unit addheadgear (_helmet call BIS_fnc_selectRandom);
+	_unit addHeadgear (_helmet call BIS_fnc_selectRandom);
 };
+
 if(count _rig > 0) then
 {
-	_unit addvest (_rig call BIS_fnc_selectRandom);
+	_unit addVest (_rig call BIS_fnc_selectRandom);
 };
+
 if(count _glasses > 0) then
 {
 	_unit addGoggles (_glasses call BIS_fnc_selectRandom);

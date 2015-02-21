@@ -1,4 +1,4 @@
-// F3 - Folk Assign Gear Script (Server-side)
+// F3 - Folk ARPS Assign Gear Script (Server-side)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -10,21 +10,19 @@ private ["_faction","_typeofUnit","_unit"];
 
 // DETECT unit FACTION
 // The following code detects what faction the unit's slot belongs to, and stores
-// it in the private variable _faction
+// it in the private variable _faction. It can also be passed as an optional parameter.
 
 _typeofUnit = toLower (_this select 0);
 _unit = _this select 1;
+
 _faction = toLower (faction _unit);
-
-// ====================================================================================
-
-// INSIGNIA
-// This block will give units insignia on their uniforms.
-[_unit,_typeofUnit] spawn {
-	#include "f_assignInsignia.sqf"
+if(count _this > 2) then
+{
+  _faction = toLower (_this select 2);
 };
 
 // ====================================================================================
+
 // DECIDE IF THE SCRIPT SHOULD RUN
 // Depending on locality the script decides if it should run
 
@@ -66,8 +64,7 @@ private [
 "_glrifle_attach","_AR_attach",
 "_MMG_attach","_SNrifle_attach"
 ,"_APmine", "_nvg",
-"_chemgreen","_chemred","_chemblue","_chemyellow",
-"_epipen","_morphine","_bandage","_bloodbag","_earplugs","_sparebarrel"
+"_chemgreen","_chemred","_chemblue","_chemyellow"
 ];
 
 // ====================================================================================
@@ -79,9 +76,6 @@ _unit setVariable ["f_var_assignGear_done",false,true];
 
 // ====================================================================================
 
-// If the unitfaction is different from the group leader's faction and the unit is not a vehicle, the latters faction is used
-if ((_unit isKindOF "CAManBase")&&(_faction != toLower (faction (leader group _unit)))) then {_faction = toLower (faction (leader group _unit))};
-
 // DEBUG
 if (f_var_debugMode == 1) then
 {
@@ -89,14 +83,19 @@ if (f_var_debugMode == 1) then
 };
 
 // ====================================================================================
+
+// ====================================================================================
+
 // GEAR: BLUFOR > NATO
 // The following block of code executes only if the unit is in a NATO slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
 
 if (_faction == "blu_f") then {
-	#include "f_assignGear_nato.sqf"
+#include "f_assignGear_nato.sqf"
 };
+
+
 // ====================================================================================
 
 // GEAR: OPFOR > CSAT
@@ -113,15 +112,18 @@ if (_faction == "opf_f") then {
 // The following block of code executes only if the unit is in a AAF slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
-if (_faction == "ind_f") then {
+if(_faction == "ind_f") then {
 	#include "f_assignGear_aaf.sqf";
 };
 
 // ====================================================================================
+
 // This variable simply tracks the progress of the gear assignation process, for other
 // scripts to reference.
 
 _unit setVariable ["f_var_assignGear_done",true,true];
+
+// ====================================================================================
 
 // DEBUG
 

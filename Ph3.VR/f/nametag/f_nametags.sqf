@@ -19,6 +19,7 @@ f_height_standing_Nametags = 2;
 f_height_crouch_Nametags = 1.5;
 f_height_prone_Nametags = 0.9;
 f_vheight_Nametags = 0; // The height of the name tags for units in vehicles (0 = hovering over vehicle)
+F_SHADOW_NAMETAGS = 2; // The shadow for the name tags (0 - 2)
 
 f_color_Nametags =  [1,1,1,0.9]; // The color for infantry and units in vehicle cargo (in [red,green, blue, opacity])
 f_color2_Nametags = [0.5,0.1,0.2,0.9]; // The color for units in driver, gunner and other vehicle positions positions
@@ -174,21 +175,23 @@ addMissionEventHandler ["Draw3D", {
 
 						_pos = visiblePosition _x;
 
-						// If the unit is sitting in the driver position or is the driver
-						if(_pos distance (visiblePosition (driver _veh)) > 0.1 && driver _veh == _x) then
+						// If the unit is a passenger or the driver
+						if (_pos distance (getPosVisual (driver _veh)) > 0.1 || driver _veh == _x) then
 						{
 
 							// If it's the driver calculate the cargo slots
 							if(driver _veh == _x) then
 							{
-								_maxSlots = getNumber(configfile >> "CfgVehicles" >> typeof _veh >> "transportSoldier");
+								// Workaround for http://feedback.arma3.com/view.php?id=21602
+								_maxSlots = getNumber(configfile >> "CfgVehicles" >> typeof _veh >> "transportSoldier") + (count allTurrets [_veh, true] - count allTurrets _veh);
 								_freeSlots = _veh emptyPositions "cargo";
 
-								if (_maxSlots != 0) then {
+								if (_maxSlots > 0) then {
 
-									_suffix = _suffix + format [" (%1/%2)",(_maxSlots-_freeSlots),_maxSlots];
+								_suffix = _suffix + format [" (%1/%2)",(_maxSlots-_freeSlots),_maxSlots];
 
-									[_x,_pos,_suffix] call f_fnc_drawNameTag;
+								[_x,_pos,_suffix] call f_fnc_drawNameTag;
+
 								} else {
 									[_x,_pos,_suffix] call f_fnc_drawNameTag;
 								};
