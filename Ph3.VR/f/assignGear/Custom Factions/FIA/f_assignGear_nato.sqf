@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - NATO
+// F3 - Folk ARPS Assign Gear Script - FIA
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -62,11 +62,11 @@ _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
 _silencer1 = "muzzle_snds_M";	// Scuba Suppressor
-_silencer2 = "muzzle_snds_H";	// Primary Suppressor
+_silencer2 = "muzzle_snds_M";	// Primary Suppressor
 
-_scope1 = "optic_Holosight";	// Short Range
-_scope2 = "optic_Arco";			// Medium Range
-_scope3 = "optic_LRPS";			// Long Range
+_scope1 = "optic_ACO_grn";		// Short Range
+_scope2 = "optic_MRCO";			// Medium Range
+_scope3 = "optic_DMS";			// Long Range
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -81,14 +81,14 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "arifle_MX_pointer_F";
-_riflemag = "30Rnd_65x39_caseless_mag";
-_riflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_rifle = "arifle_TRG21_F";
+_riflemag = "30Rnd_556x45_Stanag";
+_riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_MXC_F";
-_carbinemag = "30Rnd_65x39_caseless_mag";
-_carbinemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_carbine = "arifle_TRG20_F";
+_carbinemag = "30Rnd_556x45_Stanag";
+_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "SMG_01_F";
@@ -101,9 +101,9 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "arifle_MX_GL_F";
-_glriflemag = "30Rnd_65x39_caseless_mag";
-_glriflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
+_glrifle = "arifle_TRG21_GL_F";
+_glriflemag = "30Rnd_556x45_Stanag";
+_glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "1Rnd_HE_Grenade_shell";
 
 // Smoke for FTLs, Squad Leaders, etc
@@ -118,8 +118,8 @@ _glflareyellow = "3Rnd_UGL_FlareYellow_F";
 _glflaregreen = "3Rnd_UGL_FlareGreen_F";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_Pistol_heavy_01_F";
-_pistolmag = "11Rnd_45ACP_Mag";
+_pistol = "hgun_ACPC2_F";
+_pistolmag = "9Rnd_45ACP_Mag";
 
 // Grenades
 _grenade = "HandGrenade";
@@ -143,19 +143,19 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_mcamo";			// carries 120, weighs 20
-_bagmedium = "B_TacticalPack_mcamo";		// carries 240, weighs 30
-_baglarge = "B_Carryall_mcamo"; 			// carries 320, weighs 40
+_bagsmall = "B_AssaultPack_dgtl";			// carries 120, weighs 20
+_bagmedium = "B_TacticalPack_oli";			// carries 240, weighs 30
+_baglarge = "B_Carryall_oli"; 				// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
-_baghmgg = "B_HMG_01_weapon_F";				// used by Heavy MG gunner
-_baghmgag = "B_HMG_01_support_F";			// used by Heavy MG assistant gunner
-_baghatg = "B_AT_01_weapon_F";				// used by Heavy AT gunner
-_baghatag = "B_HMG_01_support_F";			// used by Heavy AT assistant gunner
-_bagmtrg = "B_Mortar_01_weapon_F";			// used by Mortar gunner
-_bagmtrag = "B_Mortar_01_support_F";		// used by Mortar assistant gunner
-_baghsamg = "B_AA_01_weapon_F";				// used by Heavy SAM gunner
-_baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
+_baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
+_baghmgag = "I_HMG_01_support_F";			// used by Heavy MG assistant gunner
+_baghatg = "I_AT_01_weapon_F";				// used by Heavy AT gunner
+_baghatag = "I_HMG_01_support_F";			// used by Heavy AT assistant gunner
+_bagmtrg = "I_Mortar_01_weapon_F";			// used by Mortar gunner
+_bagmtrag = "I_Mortar_01_support_F";		// used by Mortar assistant gunner
+_baghsamg = "I_AA_01_weapon_F";				// used by Heavy SAM gunner
+_baghsamag = "I_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
 // AGM MEDICAL AND MISC
 _bandage = "AGM_Bandage";					// 5 Per Soldier, 10 Per TL, 20 Per Medic
@@ -174,31 +174,31 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "arifle_MX_SW_F";
-_ARmag = "100Rnd_65x39_caseless_mag";
-_ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
+_AR = "LMG_Mk200_F";
+_ARmag = "200Rnd_65x39_cased_Box";
+_ARmag_tr = "200Rnd_65x39_cased_Box_Tracer";
 
 // Medium MG
-_MMG = "LMG_Mk200_F";
-_MMGmag = "200Rnd_65x39_cased_Box";
-_MMGmag_tr = "200Rnd_65x39_cased_Box_Tracer";
+_MMG = "LMG_Zafir_F";
+_MMGmag = "150Rnd_762x51_Box";
+_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
 
 // Rifleman AT
-_RAT = "launch_NLAW_F";
-_RATmag = "AGM_PreloadedMissileDummy";
+_RAT = "launch_RPG32_F";
+_RATmag = "RPG32_F";
 
 // Medium AT
-_MAT = "launch_B_Titan_short_F";
+_MAT = "launch_I_Titan_short_F";
 _MATmag1 = "Titan_AT";
 _MATmag2 = "Titan_AT";
 
 // Surface Air
-_SAM = "launch_B_Titan_F";
+_SAM = "launch_I_Titan_F";
 _SAMmag = "Titan_AA";
 
 // Sniper
-_SNrifle = "srifle_LRR_F";
-_SNrifleMag = "7Rnd_408_Mag";
+_SNrifle = "srifle_EBR_F";
+_SNrifleMag = "20Rnd_762x51_Mag";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
@@ -222,14 +222,14 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_tshirt","U_B_CombatUniform_mcam_vest"];
-_baseHelmet = ["H_HelmetB"];
-_baseGlasses = [];
+_baseUniform = ["U_BG_Guerrilla_6_1","U_BG_Guerilla1_1","U_BG_leader","U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
+_baseHelmet = ["H_Booniehat_dgtl","H_Shemag_olive_hs","H_Cap_oli_hs","H_Bandanna_khk_hs","H_MilCap_gry"];
+_baseGlasses = ["G_Bandanna_beast","G_Bandanna_oli","G_Bandanna_khk","G_Bandanna_blk"];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk","V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrier2_rgr"];
+_lightRig = ["V_TacVest_camo"];
+_mediumRig = ["V_Chestrig_rgr","V_Chestrig_khk","V_Chestrig_blk","V_Chestrig_oli"]; 	// default for all infantry classes
+_heavyRig = ["V_PlateCarrier1_blk"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -238,21 +238,21 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_B_HeliPilotCoveralls"];
-_pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotUniform = ["U_BG_Guerrilla_6_1","U_BG_Guerilla1_1","U_BG_leader","U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
+_pilotHelmet = ["H_PilotHelmetHeli_I"];
+_pilotRig = ["V_TacVest_camo"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_B_CombatUniform_mcam_vest"];
-_crewHelmet = ["H_HelmetCrew_B"];
-_crewRig = ["V_TacVest_oli"];
+_crewUniform = ["U_BG_Guerrilla_6_1","U_BG_Guerilla1_1","U_BG_leader","U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
+_crewHelmet = ["H_HelmetCrew_I"];
+_crewRig = ["V_TacVest_camo"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_B_GhillieSuit"];
-_ghillieHelmet = [];
-_ghillieRig = ["V_Chestrig_rgr"];
+_ghillieUniform = ["U_BG_Guerrilla_6_1","U_BG_Guerilla1_1","U_BG_leader","U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
+_ghillieHelmet = ["H_Shemag_olive_hs"];
+_ghillieRig = ["V_Chestrig_rgr","V_Chestrig_khk","V_Chestrig_blk","V_Chestrig_oli"];
 _ghillieGlasses = [];
 
 // ====================================================================================
@@ -295,7 +295,7 @@ if (_isMan) then {
 	};
 	// uncomment to remove nvgoogles
 	
-	_unit linkItem _nvg;			// Add night vision goggles
+				// Add night vision goggles
 	
 	// ====================================================================================
 

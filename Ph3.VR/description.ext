@@ -68,24 +68,6 @@ class cfgNotifications
 		priority = 9;
 	};
 
-	// Notifications for the F3 Safe Start Component
-	class SafeStart
-	{
-		title = "SAFE START";
-		description = "%1";
-		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
-		duration = 10;
-		priority = 0;
-	};
-	class SafeStartMissionStarting
-	{
-		title = "SAFE START";
-		description = "%1";
-		iconPicture="\A3\UI_F\data\IGUI\Cfg\Actions\settimer_ca.paa";
-		duration = 3;
-		priority = 1;
-	};
-
 	// Notification for the F3 Authorised Crew Component
 	class UnauthorisedCrew {
 		title= "NON-AUTHORISED CREW!";
@@ -177,20 +159,6 @@ class Params
             texts[] = {"Arma 3 Default","F3 Simple Wounding System","Authentic Gameplay Mod"};
             default = 2;
             code = "f_var_medical = %1";
-    };
-
-// ============================================================================================
-
-// F3 - Mission Timer/Safe Start
-// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_mission_timer
-    {
-            title = "$STR_f_param_mission_timer";
-            values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
-            texts[] = {"$STR_f_param_mission_timer_off","1","2","3","4","5","6","7","8","9","10","15"};
-            default = 15;
-            code = "f_param_mission_timer = %1";
     };
 
 // ============================================================================================
