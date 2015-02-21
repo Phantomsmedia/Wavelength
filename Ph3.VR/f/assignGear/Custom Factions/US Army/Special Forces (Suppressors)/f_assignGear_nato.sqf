@@ -66,7 +66,7 @@ _silencer2 = "CUP_muzzle_snds_SCAR_H";	// Primary Suppressor
 _silencer3 = "CUP_muzzle_snds_M110";	// Sniper Suppressor
 
 _scope1 = "CUP_optic_Eotech533";		// Short Range
-_scope2 = "CUP_optic_ELCAN_SpecterDR";	// Medium Range
+_scope2 = "CUP_optic_ACOG";				// Medium Range
 _scope3 = "CUP_optic_Leupold_VX3";		// Long Range
 
 // Default setup
@@ -246,7 +246,7 @@ _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["rhs_uniform_cu_ocp_patchless"];
-_crewHelmet = ["rhsusf_cvc_helmet","rhsusf_cvc_ess"];
+_crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_ess"];
 _crewRig = ["rhsusf_iotv_ocp_Repair"];
 _crewGlasses = [];
 
