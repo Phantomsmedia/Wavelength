@@ -6070,7 +6070,7 @@ class Mission
 					position[]={386.51797,5,3798.3491};
 					class args
 					{
-						items=12;
+						items=15;
 						class Item0
 						{
 							value="1";
@@ -6142,6 +6142,24 @@ class Mission
 							value="1";
 							parentCls="AGM_ModuleMedical";
 							typeName="EnableOverdosing";
+						};
+						class Item12
+						{
+							value="0";
+							parentCls="AGM_ModuleMedical";
+							typeName="RequireMEDEVAC";
+						};
+						class Item13
+						{
+							value="1";
+							parentCls="AGM_ModuleMedical";
+							typeName="AutomaticWakeup";
+						};
+						class Item14
+						{
+							value="1";
+							parentCls="AGM_ModuleMedical";
+							typeName="DisableScreams";
 						};
 					};
 					id=381;
