@@ -113,7 +113,7 @@ Credits
 
 Developed by
    
-	Jani J.       (www.phantactical.com Member)
+	Jani J.       (PhanTactical Founder. He had a good run.)
 	KakePro       (www.phantactical.com Member)
 	Teddy         (www.phantactical.com Member)
 	Gruntin       (www.phantactical.com Moderator)
