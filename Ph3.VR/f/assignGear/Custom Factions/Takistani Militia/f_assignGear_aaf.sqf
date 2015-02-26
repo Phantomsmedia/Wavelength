@@ -58,11 +58,11 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "";					// IR Laser
-_attach2 = "";					// Flashlight
+_attach1 = "acc_pointer_IR";	// IR Laser
+_attach2 = "acc_flashlight";	// Flashlight
 
-_silencer1 = "";				// Scuba Suppressor
-_silencer2 = "";				// Primary Suppressor
+_silencer1 = "muzzle_snds_M";	// Scuba Suppressor
+_silencer2 = "muzzle_snds_H";	// Primary Suppressor
 
 _scope1 = "";					// Short Range
 _scope2 = "";					// Medium Range
@@ -134,7 +134,7 @@ _medkit = "Medikit";
 _nvg = "NVGoggles_INDEP";
 
 // UAV Terminal
-_uavterminal = "O_UavTerminal";
+_uavterminal = "I_UavTerminal";
 
 // Chemlights
 _chemgreen =  "Chemlight_green";
@@ -147,7 +147,7 @@ _bagsmall = "CUP_B_CivPack_Wdl";			// carries 120, weighs 20
 _bagmedium = "CUP_B_CivPack_Wdl";			// carries 240, weighs 30
 _baglarge = "CUP_B_ACRPara_m95"; 			// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
-_baguav = "O_UAV_01_backpack_F";			// used by UAV operator
+_baguav = "I_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "RHS_NSV_Gun_Bag";				// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";			// used by Heavy MG assistant gunner
 _baghatg = "O_AT_01_weapon_F";				// used by Heavy AT gunner
