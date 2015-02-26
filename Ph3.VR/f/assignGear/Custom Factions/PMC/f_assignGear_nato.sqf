@@ -184,8 +184,8 @@ _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Rifleman AT
-_RAT = "rhs_weap_M136_hedp";
-_RATmag = "rhs_m136_hedp_mag";
+_RAT = "launch_NLAW_F";
+_RATmag = "AGM_PreloadedMissileDummy";
 
 // Medium AT
 _MAT = "rhs_weap_rpg7";

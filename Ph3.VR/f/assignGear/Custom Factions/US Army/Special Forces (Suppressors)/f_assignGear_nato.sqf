@@ -184,8 +184,8 @@ _MMGmag = "rhsusf_100Rnd_762x51";
 _MMGmag_tr = "rhsusf_100Rnd_762x51";
 
 // Rifleman AT
-_RAT = "rhs_weap_M136_hedp";
-_RATmag = "rhs_m136_hedp_mag";
+_RAT = "rhs_weap_M136";
+_RATmag = "rhs_m136_mag";
 
 // Medium AT
 _MAT = "rhs_weap_fgm148";
