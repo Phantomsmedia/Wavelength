@@ -129,7 +129,6 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <font size='18'>FIRE SUPPORT PLAN</font>
 <br/>
 *** Insert fire support instructions here. ***
-<br/><br/>
 "]];
 
 // ====================================================================================
