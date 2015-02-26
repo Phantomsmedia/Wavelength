@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - CDF
+// F3 - Folk ARPS Assign Gear Script - Iraqi Army
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -221,14 +221,14 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["LOP_U_CDF_Fatigue_01","LOP_U_CDF_Fatigue_01_slv"];
-_baseHelmet = ["LOP_H_PASGTHelmet_cover_CDF"];
+_baseUniform = ["LOP_U_IA_Fatigue_01","LOP_U_IA_Fatigue_01_slv"];
+_baseHelmet = ["LOP_H_PASGTHelmet_cover_TRI"];
 _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_oli"];
-_mediumRig = ["LOP_V_CarrierRig_CDF"]; 	// default for all infantry classes
-_heavyRig = ["LOP_V_CarrierRig_CDF"];
+_mediumRig = ["LOP_V_CarrierRig_TRI"]; 	// default for all infantry classes
+_heavyRig = ["LOP_V_CarrierRig_TRI"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -237,21 +237,21 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_O_Diving"];
 
 // Pilot
-_pilotUniform = ["LOP_U_CDF_Fatigue_01"];
+_pilotUniform = ["LOP_U_IA_Fatigue_01"];
 _pilotHelmet = ["H_PilotHelmetHeli_O"];
 _pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["LOP_U_CDF_Fatigue_01_slv"];
+_crewUniform = ["LOP_U_IA_Fatigue_01_slv"];
 _crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
 _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["LOP_U_CDF_Fatigue_01","LOP_U_CDF_Fatigue_01_slv"];
+_ghillieUniform = ["LOP_U_IA_Fatigue_01","LOP_U_IA_Fatigue_01_slv"];
 _ghillieHelmet = ["H_Bandanna_khk_hs"];
-_ghillieRig = ["LOP_V_CarrierRig_CDF"];
+_ghillieRig = ["LOP_V_CarrierRig_TRI"];
 _ghillieGlasses = [];
 
 // ====================================================================================
