@@ -130,9 +130,6 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 <br/>
 *** Insert fire support instructions here. ***
 <br/><br/>
-<font size='18'>SPECIAL TASKS</font>
-<br/>
-*** Insert instructions for specific units here. ***
 "]];
 
 // ====================================================================================
