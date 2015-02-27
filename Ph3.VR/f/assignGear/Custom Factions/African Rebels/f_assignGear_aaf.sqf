@@ -231,10 +231,10 @@ _mediumRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"]; 	// default for all
 _heavyRig = ["LOP_V_Chestrig_vsr"];
 
 // Diver
-_diverUniform =  ["U_O_Wetsuit"];
+_diverUniform =  ["U_I_Wetsuit"];
 _diverHelmet = [];
-_diverRig = ["V_RebreatherIR"];
-_diverGlasses = ["G_O_Diving"];
+_diverRig = ["V_RebreatherIA"];
+_diverGlasses = ["G_I_Diving"];
 
 // Pilot
 _pilotUniform = ["LOP_U_AFR_Fatigue_01","LOP_U_AFR_Fatigue_02","LOP_U_AFR_Fatigue_03","LOP_U_AFR_Fatigue_04","LOP_U_AFR_Fatigue_05"];

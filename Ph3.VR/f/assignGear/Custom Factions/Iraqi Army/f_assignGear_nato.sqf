@@ -231,10 +231,10 @@ _mediumRig = ["LOP_V_CarrierRig_TRI"]; 	// default for all infantry classes
 _heavyRig = ["LOP_V_CarrierRig_TRI"];
 
 // Diver
-_diverUniform =  ["U_O_Wetsuit"];
+_diverUniform =  ["U_B_Wetsuit"];
 _diverHelmet = [];
-_diverRig = ["V_RebreatherIR"];
-_diverGlasses = ["G_O_Diving"];
+_diverRig = ["V_RebreatherB"];
+_diverGlasses = ["G_Diving"];
 
 // Pilot
 _pilotUniform = ["LOP_U_IA_Fatigue_01"];
