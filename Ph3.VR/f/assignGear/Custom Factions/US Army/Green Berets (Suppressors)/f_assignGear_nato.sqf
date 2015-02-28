@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - US Army - Green Berets
+// F3 - Folk ARPS Assign Gear Script - US Army - Green Berets (Suppressors)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
