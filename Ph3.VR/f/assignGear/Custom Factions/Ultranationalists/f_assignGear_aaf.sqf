@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Russian Army - Flora
+// F3 - Folk ARPS Assign Gear Script - Ultranationalists
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -62,7 +62,7 @@ _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
 _silencer1 = "muzzle_snds_M";	// Scuba Suppressor
-_silencer2 = "rhs_acc_tgpa";	// Primary Suppressor
+_silencer2 = "rhs_acc_pbs1";	// Primary Suppressor
 
 _scope1 = "rhs_acc_ekp1";		// Short Range
 _scope2 = "rhs_acc_1p29";		// Medium Range
@@ -82,14 +82,14 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_ak74m";
-_riflemag = "rhs_30Rnd_545x39_AK";
-_riflemag_tr = "rhs_30Rnd_545x39_7N10_AK";
+_rifle = "rhs_weap_akm";
+_riflemag = "rhs_30Rnd_762x39mm";
+_riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_ak74m";
-_carbinemag = "rhs_30Rnd_545x39_AK";
-_carbinemag_tr = "rhs_30Rnd_545x39_7N10_AK";
+_carbine = "rhs_weap_akms";
+_carbinemag = "rhs_30Rnd_762x39mm";
+_carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "hlc_rifle_aks74u";
@@ -102,9 +102,9 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "rhs_weap_ak74m_gp25";
-_glriflemag = "rhs_30Rnd_545x39_AK";
-_glriflemag_tr = "rhs_30Rnd_545x39_7N10_AK";
+_glrifle = "rhs_weap_akms_gp25";
+_glriflemag = "rhs_30Rnd_762x39mm";
+_glriflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 _glmag = "rhs_VOG25";
 
 // Smoke for FTLs, Squad Leaders, etc
@@ -118,8 +118,8 @@ _glflarered = "rhs_VG40OP_red";
 _glflaregreen = "rhs_VG40OP_green";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "rhs_weap_pya";
-_pistolmag = "rhs_mag_9x19_17";
+_pistol = "rhs_weap_makarov_pmm";
+_pistolmag = "rhs_mag_9x18_12_57N181S";
 
 // Grenades
 _grenade = "rhs_mag_rgd5";
@@ -131,10 +131,10 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles_OPFOR";
+_nvg = "NVGoggles_INDEP";
 
 // UAV Terminal
-_uavterminal = "O_UavTerminal";
+_uavterminal = "I_UavTerminal";
 
 // Chemlights
 _chemgreen =  "Chemlight_green";
@@ -143,9 +143,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "rhs_sidor";					// carries 120, weighs 20
-_bagmedium = "rhs_assault_umbts";			// carries 240, weighs 30
-_baglarge = "B_Carryall_oli"; 				// carries 320, weighs 40
+_bagsmall = "CUP_B_CivPack_Wdl";			// carries 120, weighs 20
+_bagmedium = "CUP_B_AlicePack_Khaki";		// carries 240, weighs 30
+_baglarge = "CUP_B_ACRPara_m95"; 			// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "RHS_NSV_Gun_Bag";				// used by Heavy MG gunner
@@ -178,7 +178,7 @@ _ARmag = "hlc_75Rnd_762x39_m_rpk";
 _ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
 
 // Medium MG
-_MMG = "rhs_weap_pkp";
+_MMG = "rhs_weap_pkm";
 _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
@@ -196,7 +196,7 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
-_SNrifle = "rhs_weap_svdp";
+_SNrifle = "rhs_weap_svdp_wd";
 _SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
@@ -221,14 +221,14 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_flora_patchless"];
-_baseHelmet = ["rhs_6b27m","rhs_6b27m_ess","rhs_6b28_flora","rhs_6b28_flora_ess"];
-_baseGlasses = [];
+_baseUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
+_baseHelmet = [];
+_baseGlasses = ["G_Balaclava_blk"];
 
 // Armored vests
-_lightRig = ["rhs_6sh92"];
-_mediumRig = ["rhs_6b23_6sh92","rhs_6b23_6sh92_radio","rhs_6b23_6sh92_vog"]; 	// default for all infantry classes
-_heavyRig = ["rhs_6b13_Flora"];
+_lightRig = ["LOP_V_Chestrig_kamysh"];
+_mediumRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];	// default for all infantry classes
+_heavyRig = ["LOP_V_Chestrig_vsr"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -237,21 +237,21 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_O_Diving"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_flora_patchless"];
-_pilotHelmet = ["H_PilotHelmetHeli_O"];
-_pilotRig = ["rhs_6sh92_radio"];
-_pilotGlasses = [];
+_pilotUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
+_pilotHelmet = ["rhs_gssh18"];
+_pilotRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
+_pilotGlasses = ["G_Balaclava_blk"];
 
 // Crewman
-_crewUniform = ["rhs_uniform_flora_patchless"];
-_crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
-_crewRig = ["rhs_6sh92"];
+_crewUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
+_crewHelmet = ["rhs_tsh4"];
+_crewRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["rhs_uniform_flora_patchless"];
-_ghillieHelmet = ["rhs_Booniehat_flora"];
-_ghillieRig = ["rhs_6sh92_headset"];
+_ghillieUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
+_ghillieHelmet = ["H_Shemag_olive"];
+_ghillieRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
 _ghillieGlasses = [];
 
 // ====================================================================================
@@ -294,7 +294,7 @@ if (_isMan) then {
 	};
 	// uncomment to remove nvgoogles
 	
-	_unit linkItem _nvg;			// Add night vision goggles
+				// Add night vision goggles
 	
 	// ====================================================================================
 
