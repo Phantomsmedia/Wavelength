@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - African Rebels
+// F3 - Folk ARPS Assign Gear Script - Takistani Insurgents
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -82,9 +82,9 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "hlc_rifle_g3a3";
-_riflemag = "hlc_20rnd_762x51_b_G3";
-_riflemag_tr = "hlc_20rnd_762x51_T_G3";
+_rifle = "rhs_weap_akm";
+_riflemag = "rhs_30Rnd_762x39mm";
+_riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "rhs_weap_akms";
@@ -150,12 +150,12 @@ _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "RHS_NSV_Gun_Bag";				// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";			// used by Heavy MG assistant gunner
-_baghatg = "I_AT_01_weapon_F";				// used by Heavy AT gunner
-_baghatag = "I_HMG_01_support_F";			// used by Heavy AT assistant gunner
-_bagmtrg = "I_Mortar_01_weapon_F";			// used by Mortar gunner
-_bagmtrag = "I_Mortar_01_support_F";		// used by Mortar assistant gunner
-_baghsamg = "I_AA_01_weapon_F";				// used by Heavy SAM gunner
-_baghsamag = "I_HMG_01_support_F";			// used by Heavy SAM assistant gunner
+_baghatg = "O_AT_01_weapon_F";				// used by Heavy AT gunner
+_baghatag = "O_HMG_01_support_F";			// used by Heavy AT assistant gunner
+_bagmtrg = "O_Mortar_01_weapon_F";			// used by Mortar gunner
+_bagmtrag = "O_Mortar_01_support_F";		// used by Mortar assistant gunner
+_baghsamg = "O_AA_01_weapon_F";				// used by Heavy SAM gunner
+_baghsamag = "O_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
 // AGM MEDICAL AND MISC
 _bandage = "AGM_Bandage";					// 5 Per Soldier, 10 Per TL, 20 Per Medic
@@ -221,14 +221,14 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["LOP_U_AFR_Fatigue_01","LOP_U_AFR_Fatigue_02","LOP_U_AFR_Fatigue_03",LOP_U_AFR_Fatigue_04","LOP_U_AFR_Fatigue_04_slv"];
-_baseHelmet = ["H_Bandanna_camo","H_Booniehat_oli","H_Cap_grn","H_Shemag_olive"];
+_baseUniform = ["LOP_U_Mil_01","LOP_U_Mil_01","LOP_U_Mil_03",LOP_U_Mil_04"];
+_baseHelmet = ["LOP_H_Pakol","H_ShemagOpen_tan","H_ShemagOpen_khk","LOP_H_Turban"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["LOP_V_Chestrig_kamysh"];
-_mediumRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];	// default for all infantry classes
-_heavyRig = ["LOP_V_Chestrig_vsr"];
+_lightRig = ["V_BandollierB_rgr"];
+_mediumRig = ["V_BandollierB_rgr"]; 	// default for all infantry classes
+_heavyRig = ["V_BandollierB_rgr"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -237,21 +237,21 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_O_Diving"];
 
 // Pilot
-_pilotUniform = ["LOP_U_AFR_Fatigue_01","LOP_U_AFR_Fatigue_02","LOP_U_AFR_Fatigue_03",LOP_U_AFR_Fatigue_04","LOP_U_AFR_Fatigue_04_slv"];
+_pilotUniform = ["LOP_U_Mil_01","LOP_U_Mil_01","LOP_U_Mil_03",LOP_U_Mil_04"];
 _pilotHelmet = ["rhs_gssh18"];
-_pilotRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
+_pilotRig = ["V_BandollierB_rgr"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["LOP_U_AFR_Fatigue_01","LOP_U_AFR_Fatigue_02","LOP_U_AFR_Fatigue_03",LOP_U_AFR_Fatigue_04","LOP_U_AFR_Fatigue_04_slv"];
+_crewUniform = ["LOP_U_Mil_01","LOP_U_Mil_01","LOP_U_Mil_03",LOP_U_Mil_04"];
 _crewHelmet = ["rhs_tsh4"];
-_crewRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
+_crewRig = ["V_BandollierB_rgr"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["LOP_U_AFR_Fatigue_01","LOP_U_AFR_Fatigue_02","LOP_U_AFR_Fatigue_03",LOP_U_AFR_Fatigue_04","LOP_U_AFR_Fatigue_04_slv"];
-_ghillieHelmet = ["H_Bandanna_camo","H_Booniehat_oli","H_Cap_grn","H_Shemag_olive"];
-_ghillieRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
+_ghillieUniform = ["LOP_U_Mil_01","LOP_U_Mil_01","LOP_U_Mil_03",LOP_U_Mil_04"];
+_ghillieHelmet = ["LOP_H_Pakol","H_ShemagOpen_tan","H_ShemagOpen_khk","LOP_H_Turban"];
+_ghillieRig = ["V_BandollierB_rgr"];
 _ghillieGlasses = [];
 
 // ====================================================================================
