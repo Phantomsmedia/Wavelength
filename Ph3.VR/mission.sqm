@@ -116,7 +116,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_CO";
 					init="GrpNATO_CO = group this; [""co"",this] call f_fnc_assignGear;";
-					description="BLUFOR Commander";
+					description="BLUFOR Platoon Commander";
 				};
 				class Item1
 				{
@@ -176,7 +176,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_DC";
 					init="GrpNATO_DC = group this; [""dc"",this] call f_fnc_assignGear;";
-					description="BLUFOR Deputy Commander";
+					description="BLUFOR Platoon Sergeant";
 				};
 				class Item1
 				{
@@ -864,7 +864,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitCSAT_CO";
 					init="GrpCSAT_CO = group this; [""co"",this] call f_fnc_assignGear;";
-					description="OPFOR Commander";
+					description="OPFOR Platoon Commander";
 				};
 				class Item1
 				{
@@ -925,7 +925,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitCSAT_DC";
 					init="GrpCSAT_DC = group this; [""dc"",this] call f_fnc_assignGear;";
-					description="OPFOR Deputy Commander";
+					description="OPFOR Platoon Sergeant";
 				};
 				class Item1
 				{
@@ -1763,7 +1763,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitAAF_CO";
 					init="GrpAAF_CO = group this; [""co"",this] call f_fnc_assignGear;";
-					description="INDFOR Commander";
+					description="INDFOR Platoon Commander";
 				};
 				class Item1
 				{
@@ -1820,7 +1820,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitAAF_DC";
 					init="GrpAAF_DC = group this; [""dc"",this] call f_fnc_assignGear;";
-					description="INDFOR Deputy Commander";
+					description="INDFOR Platoon Sergeant";
 				};
 				class Item1
 				{
