@@ -118,8 +118,8 @@ _glflarered = "rhs_VG40OP_red";
 _glflaregreen = "rhs_VG40OP_green";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
-_pistol = "rhs_weap_pkm";
-_pistolmag = "rhs_weap_makarov_pmm";
+_pistol = "rhs_weap_makarov_pmm";
+_pistolmag = "rhs_mag_9x18_12_57N181S";
 
 // Grenades
 _grenade = "rhs_mag_rgd5";
