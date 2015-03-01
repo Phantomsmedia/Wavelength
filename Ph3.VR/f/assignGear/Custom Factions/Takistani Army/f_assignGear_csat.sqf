@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Takistani Insurgents
+// F3 - Folk ARPS Assign Gear Script - Takistani Army
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -131,10 +131,10 @@ _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles_INDEP";
+_nvg = "NVGoggles_OPFOR";
 
 // UAV Terminal
-_uavterminal = "I_UavTerminal";
+_uavterminal = "O_UavTerminal";
 
 // Chemlights
 _chemgreen =  "Chemlight_green";
@@ -147,7 +147,7 @@ _bagsmall = "CUP_B_CivPack_Wdl";			// carries 120, weighs 20
 _bagmedium = "CUP_B_AlicePack_Khaki";		// carries 240, weighs 30
 _baglarge = "CUP_B_ACRPara_m95"; 			// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
-_baguav = "I_UAV_01_backpack_F";			// used by UAV operator
+_baguav = "O_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "RHS_NSV_Gun_Bag";				// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";			// used by Heavy MG assistant gunner
 _baghatg = "O_AT_01_weapon_F";				// used by Heavy AT gunner
@@ -196,7 +196,7 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
-_SNrifle = "rhs_weap_svdp_wd";
+_SNrifle = "rhs_weap_svdp";
 _SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
@@ -221,14 +221,14 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["LOP_U_Mil_01","LOP_U_Mil_01","LOP_U_Mil_03",LOP_U_Mil_04"];
-_baseHelmet = ["LOP_H_Pakol","H_ShemagOpen_tan","H_ShemagOpen_khk","LOP_H_Turban"];
+_baseUniform = ["U_TKA_A3_uniform_02","U_TKA_A3_uniform_03","U_TKA_A3_uniform"];
+_baseHelmet = ["H_TKA_A3_HelmetIA"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_BandollierB_rgr"];
-_mediumRig = ["V_BandollierB_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_BandollierB_rgr"];
+_lightRig = ["V_TacVest_oli"];
+_mediumRig = ["V_TKA_A3_ChestRig"]; 	// default for all infantry classes
+_heavyRig = ["V_TKA_A3_ChestRig"];
 
 // Diver
 _diverUniform =  ["U_O_Wetsuit"];
@@ -237,21 +237,21 @@ _diverRig = ["V_RebreatherIR"];
 _diverGlasses = ["G_O_Diving"];
 
 // Pilot
-_pilotUniform = ["LOP_U_Mil_01","LOP_U_Mil_01","LOP_U_Mil_03",LOP_U_Mil_04"];
-_pilotHelmet = ["rhs_gssh18"];
-_pilotRig = ["V_BandollierB_rgr"];
+_pilotUniform = ["U_TKA_A3_uniform_04"];
+_pilotHelmet = ["H_PilotHelmetHeli_O"];
+_pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["LOP_U_Mil_01","LOP_U_Mil_01","LOP_U_Mil_03",LOP_U_Mil_04"];
-_crewHelmet = ["rhs_tsh4"];
-_crewRig = ["V_BandollierB_rgr"];
+_crewUniform = ["U_TKA_A3_uniform_02"];
+_crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
+_crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["LOP_U_Mil_01","LOP_U_Mil_01","LOP_U_Mil_03",LOP_U_Mil_04"];
-_ghillieHelmet = ["LOP_H_Pakol","H_ShemagOpen_tan","H_ShemagOpen_khk","LOP_H_Turban"];
-_ghillieRig = ["V_BandollierB_rgr"];
+_ghillieUniform = ["U_TKA_A3_uniform_03"];
+_ghillieHelmet = ["H_ShemagOpen_tan"];
+_ghillieRig = ["V_TKA_A3_ChestRig"];
 _ghillieGlasses = [];
 
 // ====================================================================================
