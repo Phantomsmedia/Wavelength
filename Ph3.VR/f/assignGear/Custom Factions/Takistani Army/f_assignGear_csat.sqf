@@ -58,14 +58,14 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "acc_pointer_IR";	// IR Laser
-_attach2 = "acc_flashlight";	// Flashlight
+_attach1 = "";					// IR Laser
+_attach2 = "";					// Flashlight
 
-_silencer1 = "muzzle_snds_M";	// Scuba Suppressor
-_silencer2 = "rhs_acc_pbs1";	// Primary Suppressor
+_silencer1 = "";				// Scuba Suppressor
+_silencer2 = "";				// Primary Suppressor
 
-_scope1 = "rhs_acc_ekp1";		// Short Range
-_scope2 = "rhs_acc_1p29";		// Medium Range
+_scope1 = "";					// Short Range
+_scope2 = "";					// Medium Range
 _scope3 = "rhs_acc_pso1m2";		// Long Range
 _scope4 = "rhs_acc_pgo7v";		// MAT Launcher
 
@@ -82,9 +82,9 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_akm";
-_riflemag = "rhs_30Rnd_762x39mm";
-_riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
+_rifle = "hlc_rifle_FAL5061";
+_riflemag = "hlc_20rnd_762x51_b_fal";
+_riflemag_tr = "hlc_20rnd_762x51_t_fal";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "rhs_weap_akms";
@@ -249,8 +249,8 @@ _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_TKA_A3_uniform_03"];
-_ghillieHelmet = ["H_ShemagOpen_tan"];
+_ghillieUniform = ["U_TKA_A3_SniperGhillie"];
+_ghillieHelmet = [];
 _ghillieRig = ["V_TKA_A3_ChestRig"];
 _ghillieGlasses = [];
 

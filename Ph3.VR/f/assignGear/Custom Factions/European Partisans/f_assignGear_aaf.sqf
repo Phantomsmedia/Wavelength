@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Ultranationalists
+// F3 - Folk ARPS Assign Gear Script - European Partisans
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -66,7 +66,7 @@ _silencer2 = "";				// Primary Suppressor
 
 _scope1 = "";					// Short Range
 _scope2 = "";					// Medium Range
-_scope3 = "rhs_acc_pso1m2";		// Long Range
+_scope3 = "";					// Long Range
 _scope4 = "rhs_acc_pgo7v";		// MAT Launcher
 
 // Default setup
@@ -82,19 +82,19 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_akm";
-_riflemag = "rhs_30Rnd_762x39mm";
-_riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
+_rifle = "hlc_rifle_L1A1SLR";
+_riflemag = "hlc_20rnd_762x51_b_fal";
+_riflemag_tr = "hlc_20rnd_762x51_t_fal";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_akms";
-_carbinemag = "rhs_30Rnd_762x39mm";
-_carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
+_carbine = "hlc_rifle_auga1carb_t";
+_carbinemag = "hlc_30Rnd_556x45_B_AUG";
+_carbinemag_tr = "hlc_30Rnd_556x45_T_AUG";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "hlc_rifle_aks74u";
-_smgmag = "hlc_30Rnd_545x39_B_AK";
-_smgmag_tr = "hlc_30Rnd_545x39_t_ak";
+_smg = "hlc_smg_mp5a3";
+_smgmag = "hlc_30Rnd_9x19_B_MP5";
+_smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -122,9 +122,9 @@ _pistol = "rhs_weap_makarov_pmm";
 _pistolmag = "rhs_mag_9x18_12_57N181S";
 
 // Grenades
-_grenade = "rhs_mag_rgd5";
-_smokegrenade = "rhs_mag_rdg2_white";
-_smokegrenadegreen = "rhs_mag_rdg2_black";
+_grenade = "rhs_mag_m67";
+_smokegrenade = "rhs_mag_an_m8hc";
+_smokegrenadegreen = "rhs_mag_m18_green";
 
 // misc medical items.
 _firstaid = "FirstAidKit";
@@ -173,9 +173,9 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "hlc_rifle_rpk";
-_ARmag = "hlc_75Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
+_AR = "rhs_weap_m249_pip";
+_ARmag = "rhsusf_200Rnd_556x45_soft_pouch";
+_ARmag_tr = "rhsusf_200Rnd_556x45_soft_pouch";
 
 // Medium MG
 _MMG = "rhs_weap_pkm";
@@ -183,8 +183,8 @@ _MMGmag = "rhs_100Rnd_762x54mmR";
 _MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Rifleman AT
-_RAT = "rhs_weap_rpg26";
-_RATmag = "rhs_rpg26_mag";
+_RAT = "launch_NLAW_F";
+_RATmag = "AGM_PreloadedMissileDummy";
 
 // Medium AT
 _MAT = "rhs_weap_rpg7";
@@ -196,14 +196,14 @@ _SAM = "rhs_weap_igla";
 _SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
-_SNrifle = "rhs_weap_svdp_wd";
-_SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
+_SNrifle = "hlc_rifle_psg1";
+_SNrifleMag = "hlc_20rnd_762x51_b_G3";
 
 // Engineer items
-_ATmine = "rhs_mine_tm62m_mag";
+_ATmine = "rhs_mine_M19_mag";
 _satchel = "DemoCharge_Remote_Mag";
-_APmine1 = "rhs_mine_pmn2_mag";
-_APmine2 = "rhs_mine_pmn2_mag";
+_APmine1 = "ClaymoreDirectionalMine_Remote_Mag";
+_APmine2 = "ClaymoreDirectionalMine_Remote_Mag";
 
 // ====================================================================================
 
@@ -221,37 +221,37 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
-_baseHelmet = [];
-_baseGlasses = ["G_Balaclava_blk"];
+_baseUniform = ["TRYK_U_B_PCUGs_BLK","TRYK_U_B_PCUGs_gry","TRYK_U_B_PCUGs_OD","TRYK_U_denim_hood_blk","TRYK_U_denim_jersey_blk","TRYK_U_denim_jersey_blu","TRYK_U_B_Denim_T_BK","TRYK_U_B_Denim_T_WH"];
+_baseHelmet = ["rds_Villager_cap4","rds_Villager_cap1","TRYK_H_Bandana_wig","H_StrawHat_dark","rds_Profiteer_cap1","H_Hat_tan","H_Cap_blk","H_Bandanna_surfer_blk"];
+_baseGlasses = [];
 
 // Armored vests
-_lightRig = ["LOP_V_Chestrig_kamysh"];
-_mediumRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];	// default for all infantry classes
-_heavyRig = ["LOP_V_Chestrig_vsr"];
+_lightRig = ["V_TacVest_blk"];
+_mediumRig = ["TRYK_V_ChestRig","TRYK_V_ChestRig_L"]; 	// default for all infantry classes
+_heavyRig = ["TRYK_V_ChestRig_L"];
 
 // Diver
-_diverUniform =  ["U_O_Wetsuit"];
+_diverUniform =  ["U_I_Wetsuit"];
 _diverHelmet = [];
-_diverRig = ["V_RebreatherIR"];
-_diverGlasses = ["G_O_Diving"];
+_diverRig = ["V_RebreatherIA"];
+_diverGlasses = ["G_I_Diving"];
 
 // Pilot
-_pilotUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
+_pilotUniform = ["TRYK_U_B_PCUGs_BLK","TRYK_U_B_PCUGs_gry","TRYK_U_B_PCUGs_OD","TRYK_U_denim_hood_blk","TRYK_U_denim_jersey_blk","TRYK_U_denim_jersey_blu","TRYK_U_B_Denim_T_BK","TRYK_U_B_Denim_T_WH"];
 _pilotHelmet = ["rhs_gssh18"];
-_pilotRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
-_pilotGlasses = ["G_Balaclava_blk"];
+_pilotRig = ["V_TacVest_blk"];
+_pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
-_crewHelmet = ["rhs_tsh4"];
-_crewRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
+_crewUniform = ["TRYK_U_B_PCUGs_BLK","TRYK_U_B_PCUGs_gry","TRYK_U_B_PCUGs_OD","TRYK_U_denim_hood_blk","TRYK_U_denim_jersey_blk","TRYK_U_denim_jersey_blu","TRYK_U_B_Denim_T_BK","TRYK_U_B_Denim_T_WH"];
+_crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
+_crewRig = ["V_TacVest_blk"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["LOP_U_UA_Fatigue_01","LOP_U_UA_Fatigue_02","LOP_U_UA_Fatigue_04"];
-_ghillieHelmet = ["H_Shemag_olive"];
-_ghillieRig = ["LOP_V_Chestrig_kamysh","LOP_V_Chestrig_vsr"];
+_ghillieUniform = ["TRYK_U_B_PCUGs_BLK","TRYK_U_B_PCUGs_gry","TRYK_U_B_PCUGs_OD","TRYK_U_denim_hood_blk","TRYK_U_denim_jersey_blk","TRYK_U_denim_jersey_blu","TRYK_U_B_Denim_T_BK","TRYK_U_B_Denim_T_WH"];
+_ghillieHelmet = ["H_ShemagOpen_khk"];
+_ghillieRig = ["TRYK_V_ChestRig_L"];
 _ghillieGlasses = [];
 
 // ====================================================================================

@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Russian Army - CDF
+// F3 - Folk ARPS Assign Gear Script - CDF
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -58,14 +58,14 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "acc_pointer_IR";	// IR Laser
-_attach2 = "acc_flashlight";	// Flashlight
+_attach1 = "";					// IR Laser
+_attach2 = "";					// Flashlight
 
-_silencer1 = "muzzle_snds_M";	// Scuba Suppressor
-_silencer2 = "rhs_acc_pbs1";	// Primary Suppressor
+_silencer1 = "";				// Scuba Suppressor
+_silencer2 = "";				// Primary Suppressor
 
-_scope1 = "rhs_acc_ekp1";		// Short Range
-_scope2 = "rhs_acc_1p29";		// Medium Range
+_scope1 = "";					// Short Range
+_scope2 = "";					// Medium Range
 _scope3 = "rhs_acc_pso1m2";		// Long Range
 _scope4 = "rhs_acc_pgo7v";		// MAT Launcher
 
@@ -249,9 +249,9 @@ _crewRig = ["V_CDF_A3_6b23_crew"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_CDF_A3_uniform_ttsko"];
-_ghillieHelmet = ["H_CDF_A3_fieldcap"];
-_ghillieRig = ["V_CDF_A3_6b23_rifleman_01","V_CDF_A3_6b23_rifleman_02"];
+_ghillieUniform = ["U_CDF_A3_SniperGhillie"];
+_ghillieHelmet = [];
+_ghillieRig = ["V_CDF_A3_6b23_rifleman_01"];
 _ghillieGlasses = [];
 
 // ====================================================================================

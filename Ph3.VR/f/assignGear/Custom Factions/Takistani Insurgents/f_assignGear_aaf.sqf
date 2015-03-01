@@ -58,14 +58,14 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "acc_pointer_IR";	// IR Laser
-_attach2 = "acc_flashlight";	// Flashlight
+_attach1 = "";					// IR Laser
+_attach2 = "";					// Flashlight
 
-_silencer1 = "muzzle_snds_M";	// Scuba Suppressor
-_silencer2 = "rhs_acc_pbs1";	// Primary Suppressor
+_silencer1 = "";				// Scuba Suppressor
+_silencer2 = "";				// Primary Suppressor
 
-_scope1 = "rhs_acc_ekp1";		// Short Range
-_scope2 = "rhs_acc_1p29";		// Medium Range
+_scope1 = "";					// Short Range
+_scope2 = "";					// Medium Range
 _scope3 = "rhs_acc_pso1m2";		// Long Range
 _scope4 = "rhs_acc_pgo7v";		// MAT Launcher
 
