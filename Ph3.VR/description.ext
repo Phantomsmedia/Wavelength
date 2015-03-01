@@ -19,7 +19,6 @@ onLoadName = "*** Insert mission name here. ***";
 onLoadMission = "Made with the Phramework.";
 author = "*** Insert mission author name here. ***";
 loadScreen = "loadLogo.jpg";
-overviewPicture = "overviewLogo.jpg";
 
 // ============================================================================================
 
