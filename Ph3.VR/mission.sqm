@@ -116,7 +116,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_CO";
 					init="GrpNATO_CO = group this; [""co"",this] call f_fnc_assignGear;";
-					description="BLUFOR Platoon Commander";
+					description="BLUFOR Platoon Leader";
 				};
 				class Item1
 				{
@@ -864,7 +864,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitCSAT_CO";
 					init="GrpCSAT_CO = group this; [""co"",this] call f_fnc_assignGear;";
-					description="OPFOR Platoon Commander";
+					description="OPFOR Platoon Leader";
 				};
 				class Item1
 				{
@@ -1763,7 +1763,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitAAF_CO";
 					init="GrpAAF_CO = group this; [""co"",this] call f_fnc_assignGear;";
-					description="INDFOR Platoon Commander";
+					description="INDFOR Platoon Leader";
 				};
 				class Item1
 				{

@@ -41,7 +41,7 @@ switch (_unitfaction) do
 
 	case "blu_f":
 	{
-		["GrpNATO_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_PL", 0, "PL", "ColorYellow"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_SGT", 0, "SGT", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
 		["GrpNATO_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -107,7 +107,7 @@ switch (_unitfaction) do
 
 	case "opf_f":
 	{
-		["GrpCSAT_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpCSAT_PL", 0, "PL", "ColorYellow"] spawn f_fnc_localGroupMarker;
 		["GrpCSAT_SGT", 0, "SGT", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
 		["GrpCSAT_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -173,7 +173,7 @@ switch (_unitfaction) do
 
 	case "ind_f":
 	{
-		["GrpAAF_CO", 0, "CO", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["GrpAAF_PL", 0, "PL", "ColorYellow"] spawn f_fnc_localGroupMarker;
 		["GrpAAF_SGT", 0, "SGT", "ColorYellow"] spawn f_fnc_localGroupMarker;
 
 		["GrpAAF_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
