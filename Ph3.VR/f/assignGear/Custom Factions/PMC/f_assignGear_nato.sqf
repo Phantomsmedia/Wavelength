@@ -63,7 +63,6 @@ _attach2 = "rhsusf_acc_anpeq15_light";	// Flashlight
 
 _silencer1 = "muzzle_snds_M";			// Scuba Suppressor
 _silencer2 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
-_silencer3 = "rhs_acc_pbs1";			// Secondary Primary Suppressor
 
 _scope1 = "rhsusf_acc_compm4";			// Short Range
 _scope2 = "rhsusf_acc_ACOG";			// Medium Range

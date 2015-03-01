@@ -58,12 +58,11 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "rhsusf_acc_anpeq15side";	// IR Laser
-_attach2 = "rhsusf_acc_anpeq15_light";	// Flashlight
+_attach1 = "";							// IR Laser
+_attach2 = "";							// Flashlight
 
-_silencer1 = "muzzle_snds_M";			// Scuba Suppressor
-_silencer2 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
-_silencer3 = "rhs_acc_pbs1"				// Secondary Primary Suppressor
+_silencer1 = "";						// Scuba Suppressor
+_silencer2 = "";						// Primary Suppressor
 
 _scope1 = "";							// Short Range
 _scope2 = "";							// Medium Range
