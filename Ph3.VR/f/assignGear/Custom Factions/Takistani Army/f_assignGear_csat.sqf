@@ -238,7 +238,7 @@ _diverGlasses = ["G_O_Diving"];
 
 // Pilot
 _pilotUniform = ["U_TKA_A3_uniform_04"];
-_pilotHelmet = ["H_PilotHelmetHeli_O"];
+_pilotHelmet = ["rhs_zsh7a_mike"];
 _pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
 
