@@ -143,7 +143,7 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_cbr";				// carries 120, weighs 20
+_bagsmall = "B_AssaultPack_rgr";				// carries 120, weighs 20
 _bagmedium = "rhsusf_assault_eagleaiii_coy";	// carries 240, weighs 30
 _baglarge = "B_Kitbag_rgr"; 					// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";			// used by divers
@@ -237,7 +237,7 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_Diving"];
 
 // Pilot
-_pilotUniform = ["U_B_HeliPilotCoveralls"];
+_pilotUniform = ["rhs_uniform_FROG01_wd"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
