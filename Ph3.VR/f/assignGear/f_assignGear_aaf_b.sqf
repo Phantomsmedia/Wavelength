@@ -367,16 +367,78 @@ case "matag":
 	};
 };
 
-// LOADOUT: HEAVY AT GUNNER (HATG)
+// BACKPACK: HAT GUNNER (HATG)
 case "hatg":
 {
-	_unit addBackpack _baghatg;
+	// LOADOUT: LIGHT
+	if (_loadout == 0) then {
+		_unit addBackpack _bagsmall;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
+	};
+	// LOADOUT: MEDIUM
+	if (_loadout == 1) then {
+		_unit addBackpack _bagmedium;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
+	};
+	// LOADOUT: HEAVY
+	if (_loadout == 2) then {
+		_unit addBackpack _bagmedium;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
+	};
 };
 
-// LOADOUT: HEAVY AT ASSISTANT GUNNER (HATAG)
+// BACKPACK: HAT ASSISTANT (HATAG)
 case "hatag":
-{
-	_unit addBackpack _baghatag;
+    {
+	// LOADOUT: LIGHT
+	if (_loadout == 0) then {
+		_unit addBackpack _bagsmall;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 1];
+	};
+	// LOADOUT: MEDIUM
+	if (_loadout == 1) then {
+		_unit addBackpack _bagmedium;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 1];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_grenade, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 2];
+	};
+	// LOADOUT: HEAVY
+	if (_loadout == 2) then {
+		_unit addBackpack _baglarge;
+		clearMagazineCargoGlobal (unitBackpack _unit);
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag1, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_HATmag2, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_carbinemag, 2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_mgrenade, 3];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 3];
+	};
 };
 
 // BACKPACK: MORTAR GUNNER (MTRG)
@@ -391,32 +453,20 @@ case "mtrag":
 	_unit addBackpack _bagmtrag;
 };
 
-// BACKPACK: MEDIUM SAM GUNNER (MSAMG)
-case "msamg":
+// BACKPACK: SAM GUNNER (SAMG)
+case "samg":
 {
 	_unit addBackpack _bagmedium;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
 };
 
-// BACKPACK: MEDIUM SAM ASSISTANT GUNNER (MSAMAG)
-case "msamag":
+// BACKPACK: SAM ASSISTANT GUNNER (SAMAG)
+case "samag":
 {
 	_unit addBackpack _bagmedium;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
-};
-
-// LOADOUT: HEAVY SAM GUNNER (HSAMG)
-case "hsamg":
-{
-	_unit addBackpack _baghsamg;
-};
-
-// LOADOUT: HEAVY SAM ASSISTANT GUNNER (HSAMAG)
-case "hsamag":
-{
-	_unit addBackpack _baghsamag;
 };
 
 // BACKPACK: ENGINEER (DEMO)

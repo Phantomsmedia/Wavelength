@@ -6,8 +6,8 @@
 // The blocks of code below identifies equipment for this faction
 //
 // Defined loadouts:
-//		co			- commander
-//		dc 			- deputy commander / squad leader
+//		pl			- platoon leader
+//		sgt 		- platoon sergeant / squad leader
 //		m 			- medic
 //		ftl			- fire team leader
 //		ar 			- automatic rifleman
@@ -19,14 +19,12 @@
 //		matag		- medium AT assistant
 //		hmgg		- heavy mg gunner (deployable)
 //		hmgag		- heavy mg assistant (deployable)
-//		hatg		- heavy AT gunner (deployable)
-//		hatag		- heavy AT assistant (deployable)
+//		hatg		- heavy AT gunner
+//		hatag		- heavy AT assistant
 //		mtrg		- mortar gunner (deployable)
 //		mtrag		- mortar assistant (deployable)
-//		msamg		- medium SAM gunner
-//		msamag		- medium SAM assistant gunner
-//		hsamg		- heavy SAM gunner (deployable)
-//		hsamag		- heavy SAM assistant gunner (deployable)
+//		samg		- SAM gunner
+//		samag		- SAM assistant gunner
 //		sn			- sniper
 //		sp			- spotter (for sniper)
 //		vc			- vehicle commander
@@ -62,7 +60,7 @@ _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
 _silencer1 = "muzzle_snds_M";	// Scuba Suppressor
-_silencer2 = "muzzle_snds_M";	// Primary Suppressor
+_silencer2 = "muzzle_snds_H";	// Primary Suppressor
 
 _scope1 = "optic_ACO_grn";		// Short Range
 _scope2 = "optic_MRCO";			// Medium Range
@@ -144,17 +142,13 @@ _chemblue = "Chemlight_blue";
 // Backpacks
 _bagsmall = "B_AssaultPack_dgtl";			// carries 120, weighs 20
 _bagmedium = "B_TacticalPack_oli";			// carries 240, weighs 30
-_baglarge = "B_Carryall_oli"; 				// carries 320, weighs 40
+_baglarge = "B_Carryall_dgtl"; 				// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";		// used by divers
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
 _baghmgag = "I_HMG_01_support_F";			// used by Heavy MG assistant gunner
-_baghatg = "I_AT_01_weapon_F";				// used by Heavy AT gunner
-_baghatag = "I_HMG_01_support_F";			// used by Heavy AT assistant gunner
 _bagmtrg = "I_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "I_Mortar_01_support_F";		// used by Mortar assistant gunner
-_baghsamg = "I_AA_01_weapon_F";				// used by Heavy SAM gunner
-_baghsamag = "I_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
 // AGM MEDICAL AND MISC
 _bandage = "AGM_Bandage";					// 5 Per Soldier, 10 Per TL, 20 Per Medic
@@ -172,23 +166,28 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "LMG_Mk200_F";
-_ARmag = "200Rnd_65x39_cased_Box";
-_ARmag_tr = "200Rnd_65x39_cased_Box_Tracer";
+_AR = "LMG_Zafir_F";
+_ARmag = "150Rnd_762x51_Box";
+_ARmag_tr = "150Rnd_762x51_Box_Tracer";
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "LMG_Mk200_F";
+_MMGmag = "200Rnd_65x39_cased_Box";
+_MMGmag_tr = "200Rnd_65x39_cased_Box_Tracer";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
 _RATmag = "AGM_PreloadedMissileDummy";
 
 // Medium AT
-_MAT = "launch_I_Titan_short_F";
-_MATmag1 = "Titan_AT";
-_MATmag2 = "Titan_AT";
+_MAT = "launch_RPG32_F";
+_MATmag1 = "RPG32_F";
+_MATmag2 = "RPG32_F";
+
+// Heavy AT
+_HAT = "launch_I_Titan_short_F";
+_HATmag1 = "Titan_AT";
+_HATmag2 = "Titan_AT";
 
 // Surface Air
 _SAM = "launch_I_Titan_F";
@@ -336,8 +335,8 @@ switch (_typeofUnit) do
 
 // ====================================================================================
 
-// LOADOUT: COMMANDER
-	case "co":
+// LOADOUT: PLATOON LEADER
+	case "pl":
 	{
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
@@ -361,8 +360,8 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_scope2];		
 	};
 
-// LOADOUT: DEPUTY COMMANDER AND SQUAD LEADER
-	case "dc":
+// LOADOUT: PLATOON SERGEANT AND SQUAD LEADER
+	case "sgt":
 	{
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
@@ -589,13 +588,12 @@ switch (_typeofUnit) do
 // LOADOUT: HEAVY AT GUNNER
 	case "hatg":
 	{
+		["hatg"] call _backpack;
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
+		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _carbine;
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_mgrenade,1];
-		_unit addmagazines [_smokegrenade,1];
-		["hatg"] call _backpack;
+		_unit addweapon _HAT;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;
@@ -612,7 +610,7 @@ switch (_typeofUnit) do
 		_unit addWeapon "AGM_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
-		_unit addmagazines [_smokegrenade,1];
+		_unit addmagazines [_smokegrenade,2];
 		["hatag"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
@@ -656,10 +654,10 @@ switch (_typeofUnit) do
 		_attachments = [_attach1];
 	};
 
-// LOADOUT: MEDIUM SAM GUNNER
-	case "msamg":
+// LOADOUT: SAM GUNNER
+	case "samg":
 	{
-		["msamg"] call _backpack;
+		["samg"] call _backpack;
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
@@ -673,8 +671,8 @@ switch (_typeofUnit) do
 		_attachments = [_attach1];
 	};
 
-// LOADOUT: MEDIUM SAM ASSISTANT GUNNER
-	case "msamag":
+// LOADOUT: SAM ASSISTANT GUNNER
+	case "samag":
 	{
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
@@ -682,42 +680,7 @@ switch (_typeofUnit) do
 		_unit addWeapon "AGM_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		["msamag"] call _backpack;
-		{_unit addItem _bandage} foreach [1,2,3,4,5];
-		_unit addItem _morphine;
-		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-	};
-
-// LOADOUT: HEAVY SAM GUNNER
-	case "hsamg":
-	{
-		_unit addmagazines [_carbinemag,7];
-		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_mgrenade,1];
-		_unit addmagazines [_smokegrenade,1];
-		["hsamg"] call _backpack;
-		{_unit addItem _bandage} foreach [1,2,3,4,5];
-		_unit addItem _morphine;
-		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_attachments = [_attach1];
-	};
-
-// LOADOUT: HEAVY SAM ASSISTANT GUNNER
-	case "hsamag":
-	{
-		_unit addmagazines [_carbinemag,7];
-		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
-		_unit addWeapon "AGM_Vector";
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_mgrenade,1];
-		_unit addmagazines [_smokegrenade,1];
-		["hsamag"] call _backpack;
+		["samag"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;
@@ -891,8 +854,8 @@ switch (_typeofUnit) do
 // LOADOUT: UAV OPERATOR
 	case "uav":
 	{
-		_unit addmagazines [_smgmag,5];
-		_unit addweapon _smg;
+		_unit addmagazines [_carbinemag,7];
+		_unit addweapon _carbine;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_mgrenade,1];
