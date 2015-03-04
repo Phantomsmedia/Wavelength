@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - United States Military - US Marine Corps - MARSOC (Suppressors)
+// F3 - Folk ARPS Assign Gear Script - US Army - Green Berets (Suppressors)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -60,13 +60,13 @@ _attach1 = "rhsusf_acc_anpeq15";		// IR Laser
 _attach2 = "rhsusf_acc_anpeq15_light";	// Flashlight
 
 _silencer1 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
-_silencer1 = "";						// Scuba Suppressor
-_silencer3 = "rhsusf_acc_SR25S";		// Sniper Suppressor
+_silencer2 = "";						// Scuba Suppressor
+_silencer3 = "rhsusf_acc_M2010S";		// Sniper Suppressor
 
 _scope1 = "rhsusf_acc_eotech_552";		// Short Range
 _scope2 = "rhsusf_acc_compm4";			// Medium Range
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";	// Long Range
-_scope4 = "CUP_optic_SMAW_Scope";		// MAT Scope
+_scope4 = "CUP_optic_MAAWS_Scope";		// MAT Scope
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -143,7 +143,7 @@ _chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_AssaultPack_rgr";				// carries 120, weighs 20
-_bagmedium = "rhsusf_assault_eagleaiii_coy";	// carries 240, weighs 30
+_bagmedium = "rhsusf_assault_eagleaiii_ocp";	// carries 240, weighs 30
 _baglarge = "B_Kitbag_rgr"; 					// carries 320, weighs 40
 _bagmediumdiver = "B_AssaultPack_blk";			// used by divers
 _baguav = "B_UAV_01_backpack_F";				// used by UAV operator
@@ -182,9 +182,9 @@ _RAT = "rhs_weap_M136";
 _RATmag = "rhs_m136_mag";
 
 // Medium AT
-_MAT = "CUP_launch_Mk153Mod0";
-_MATmag1 = "CUP_SMAW_HEAA_M";
-_MATmag2 = "CUP_SMAW_HEAA_M";
+_MAT = "CUP_launch_MAAWS";
+_MATmag1 = "CUP_MAAWS_HEAT_M";
+_MATmag2 = "CUP_MAAWS_HEAT_M";
 
 // Heavy AT
 _HAT = "rhs_weap_fgm148";
@@ -196,8 +196,8 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Sniper
-_SNrifle = "rhs_weap_sr25_ec";
-_SNrifleMag = "rhsusf_20Rnd_762x51_m118_special_Mag";
+_SNrifle = "rhs_weap_XM2010_sa";
+_SNrifleMag = "rhsusf_5Rnd_300winmag_xm2010";
 
 // Engineer items
 _ATmine = "rhs_mine_M19_mag";
@@ -221,14 +221,14 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["rhs_uniform_FROG01_m81"];
-_baseHelmet = ["rhsusf_mich_bare_norotos","rhsusf_mich_bare_norotos_alt_headset"];
+_baseUniform = ["rhs_uniform_cu_ocp_patchless"];
+_baseHelmet = ["rhsusf_opscore_04_ocp","rhsusf_opscore_03_ocp"];
 _baseGlasses = ["rhs_googles_black"];
 
 // Armored vests
-_lightRig = ["V_TacVest_blk","V_TacVest_brn"];
-_mediumRig = ["rhsusf_spc"]; 	// default for all infantry classes
-_heavyRig = ["rhsusf_spc"];
+_lightRig = ["rhsusf_iotv_ocp"];
+_mediumRig = ["rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Grenadier"]; 	// default for all infantry classes
+_heavyRig = ["rhsusf_iotv_ocp_Grenadier"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -237,21 +237,21 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_B_Diving"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_FROG01_m81"];
+_pilotUniform = ["rhs_uniform_cu_ocp_patchless"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["V_TacVest_blk"];
+_pilotRig = ["rhsusf_iotv_ocp"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["rhs_uniform_FROG01_m81"];
+_crewUniform = ["rhs_uniform_cu_ocp_patchless"];
 _crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_ess"];
-_crewRig = ["V_TacVest_brn"];
+_crewRig = ["rhsusf_iotv_ocp"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["rhs_uniform_FROG01_m81"];
-_ghillieHelmet = ["rhs_Booniehat_m81"];
-_ghillieRig = ["rhsusf_spc"];
+_ghillieUniform = ["rhs_uniform_cu_ocp_patchless"];
+_ghillieHelmet = ["rhs_Booniehat_ocp"];
+_ghillieRig = ["rhsusf_iotv_ocp_Rifleman"];
 _ghillieGlasses = ["rhs_googles_black"];
 
 // ====================================================================================

@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - United States Military - US Army - UCP
+// F3 - Folk ARPS Assign Gear Script - US Army - UCP
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
