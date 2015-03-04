@@ -59,8 +59,8 @@
 _attach1 = "rhsusf_acc_anpeq15side";	// IR Laser
 _attach2 = "rhsusf_acc_anpeq15_light";	// Flashlight
 
-_silencer1 = "muzzle_snds_M";			// Scuba Suppressor
-_silencer2 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
+_silencer1 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
+_silencer2 = "";						// Scuba Suppressor
 
 _scope1 = "rhsusf_acc_compm4";			// Short Range
 _scope2 = "rhsusf_acc_ACOG";			// Medium Range
@@ -71,7 +71,7 @@ _scope4 = "CUP_optic_SMAW_Scope";		// MAT Scope
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
-// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
+// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer2
 // [_scope2] = add _scope2, remove rest
 // false = keep attachments as they are
 
@@ -95,9 +95,9 @@ _smgmag = "hlc_30Rnd_9x19_B_MP5";
 _smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 
 // Diver
-_diverWep = "arifle_SDAR_F";
-_diverMag1 = "30Rnd_556x45_Stanag";
-_diverMag2 = "20Rnd_556x45_UW_mag";
+_diverWep = "hlc_smg_mp5sd5";
+_diverMag1 = "hlc_30Rnd_9x19_B_MP5";
+_diverMag2 = "hlc_30Rnd_9x19_B_MP5";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "rhs_weap_m4_m320";
@@ -879,7 +879,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,3];
-		_attachments = [_attach1,_scope1,_silencer1];
+		_attachments = [_attach1,_scope1,_silencer2];
 		["div"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;

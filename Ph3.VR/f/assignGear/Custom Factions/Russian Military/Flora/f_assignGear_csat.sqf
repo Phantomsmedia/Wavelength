@@ -56,11 +56,11 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "acc_pointer_IR";	// IR Laser
-_attach2 = "acc_flashlight";	// Flashlight
+_attach1 = "";					// IR Laser
+_attach2 = "";					// Flashlight
 
-_silencer1 = "muzzle_snds_M";	// Scuba Suppressor
-_silencer2 = "rhs_acc_tgpa";	// Primary Suppressor
+_silencer1 = "rhs_acc_tgpa";	// Primary Suppressor
+_silencer2 = "muzzle_snds_M";	// Scuba Suppressor
 
 _scope1 = "rhs_acc_ekp1";		// Short Range
 _scope2 = "rhs_acc_1p29";		// Medium Range
@@ -71,7 +71,7 @@ _scope4 = "rhs_acc_pgo7v";		// MAT Launcher
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
 
 // [] = remove all
-// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer1
+// [_attach1,_scope1,_silencer] = remove all, add items assigned in _attach1, _scope1 and _silencer2
 // [_scope2] = add _scope2, remove rest
 // false = keep attachments as they are
 
@@ -879,7 +879,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,3];
-		_attachments = [_attach1,_scope1,_silencer1];
+		_attachments = [_attach1,_scope1,_silencer2];
 		["div"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
