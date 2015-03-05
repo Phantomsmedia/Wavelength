@@ -5966,7 +5966,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=3;
+		items=4;
 		class Item0
 		{
 			position[]={499.8746,5,2496.9395};
@@ -5996,6 +5996,14 @@ class Mission
 			colorName="ColorEAST";
 			a=500;
 			b=500;
+		};
+		class Item3
+		{
+			position[]={498.95639,5,3482.6567};
+			name="required_modules";
+			text="REQUIRED";
+			type="mil_arrow";
+			colorName="ColorRed";
 		};
 	};
 };
