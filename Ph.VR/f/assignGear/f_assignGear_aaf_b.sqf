@@ -444,32 +444,20 @@ case "mtrag":
 	_unit addBackpack _bagmtrag;
 };
 
-// BACKPACK: MEDIUM SAM GUNNER (MSAMG)
-case "msamg":
+// BACKPACK: SAM GUNNER
+case "samg":
 {
 	_unit addBackpack _bagmedium;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
 };
 
-// BACKPACK: MEDIUM SAM ASSISTANT GUNNER (MSAMAG)
-case "msamag":
+// BACKPACK: SAM ASSISTANT GUNNER
+case "samag":
 {
 	_unit addBackpack _bagmedium;
 	clearMagazineCargoGlobal (unitBackpack _unit);
 	(unitBackpack _unit) addMagazineCargoGlobal [_SAMmag, 2];
-};
-
-// LOADOUT: HEAVY SAM GUNNER (HSAMG)
-case "hsamg":
-{
-	_unit addBackpack _baghsamg;
-};
-
-// LOADOUT: HEAVY SAM ASSISTANT GUNNER (HSAMAG)
-case "hsamag":
-{
-	_unit addBackpack _baghsamag;
 };
 
 // BACKPACK: ENGINEER (DEMO)
