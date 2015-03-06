@@ -219,12 +219,12 @@ _specOp = [];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest","U_B_CombatUniform_mcam_tshirt"];
-_baseHelmet = ["H_HelmetSpecB"];
+_baseHelmet = ["H_HelmetB"];
 _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_blk","V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"]; 	// default for all infantry classes
+_mediumRig = ["V_PlateCarrier1_rgr"]; 	// default for all infantry classes
 _heavyRig = ["V_PlateCarrier2_rgr"];
 
 // Diver

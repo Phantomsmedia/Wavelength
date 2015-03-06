@@ -56,7 +56,7 @@ _attach1 = "rhsusf_acc_anpeq15side";	// IR Laser
 _attach2 = "rhsusf_acc_anpeq15_light";	// Flashlight
 
 _silencer1 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
-_silencer2 = "";						// Scuba Suppressor
+_silencer2 = "muzzle_snds_M";			// Scuba Suppressor
 
 _scope1 = "rhsusf_acc_compm4";			// Short Range
 _scope2 = "rhsusf_acc_ACOG";			// Medium Range
@@ -91,9 +91,9 @@ _smgmag = "hlc_30Rnd_9x19_B_MP5";
 _smgmag_tr = "hlc_30Rnd_9x19_B_MP5";
 
 // Diver
-_diverWep = "hlc_smg_mp5sd6";
-_diverMag1 = "hlc_30Rnd_9x19_B_MP5";
-_diverMag2 = "hlc_30Rnd_9x19_B_MP5";
+_diverWep = "arifle_SDAR_F";
+_diverMag1 = "30Rnd_556x45_Stanag";
+_diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
 _glrifle = "rhs_weap_m4_m320";
