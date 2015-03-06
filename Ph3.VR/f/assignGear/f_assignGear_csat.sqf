@@ -183,9 +183,9 @@ _MATmag1 = "RPG32_F";
 _MATmag2 = "RPG32_F";
 
 // Heavy AT
-_MAT = "launch_O_Titan_short_F";
-_MATmag1 = "Titan_AT";
-_MATmag2 = "Titan_AT";
+_HAT = "launch_O_Titan_short_F";
+_HATmag1 = "Titan_AT";
+_HATmag2 = "Titan_AT";
 
 // Surface Air
 _SAM = "launch_O_Titan_F";
@@ -662,6 +662,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,1];
 		_unit addmagazines [_grenade,1];
 		_unit addweapon _SAM;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: SAM ASSISTANT GUNNER
@@ -674,6 +675,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
 		["samag"] call _backpack;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: SNIPER
