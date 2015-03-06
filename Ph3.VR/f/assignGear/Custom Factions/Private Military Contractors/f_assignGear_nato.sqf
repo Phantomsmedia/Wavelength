@@ -52,14 +52,14 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "rhsusf_acc_anpeq15side";	// IR Laser
-_attach2 = "rhsusf_acc_anpeq15_light";	// Flashlight
+_attach1 = "";							// IR Laser
+_attach2 = "";							// Flashlight
 
 _silencer1 = "";						// Primary Suppressor
 _silencer2 = "muzzle_snds_M";			// Scuba Suppressor
 
-_scope1 = "rhsusf_acc_compm4";			// Short Range
-_scope2 = "rhsusf_acc_ACOG";			// Medium Range
+_scope1 = "";							// Short Range
+_scope2 = "";							// Medium Range
 _scope3 = "rhsusf_acc_LEUPOLDMK4_2";	// Long Range
 _scope4 = "rhs_acc_pgo7v";				// MAT Launcher
 
@@ -76,7 +76,7 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_ak103_npz";
+_rifle = "rhs_weap_akm";
 _riflemag = "rhs_30Rnd_762x39mm";
 _riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
