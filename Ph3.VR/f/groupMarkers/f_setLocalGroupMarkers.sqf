@@ -213,4 +213,8 @@ switch (_unitfaction) do
 		["UnitAAF_CSL_M", 0, "CM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 	};
 	
+};
+	
 // ====================================================================================
+
+
