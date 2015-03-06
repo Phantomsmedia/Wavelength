@@ -172,13 +172,6 @@ if(isServer) then {
 
 // ====================================================================================
 
-// F3 - Mission Timer/Safe Start
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\safeStart\f_safeStart.sqf";
-
-// ====================================================================================
-
 // F3 - JIP setup
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
