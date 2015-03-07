@@ -145,10 +145,10 @@ _bagmediumdiver =  "B_AssaultPack_blk";			// used by divers
 _baguav = "B_UAV_01_backpack_F";				// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
-_baghatg = "O_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "O_HMG_01_support_F";				// used by Heavy AT assistant gunner
-_bagmtrg = "O_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "O_Mortar_01_support_F";			// used by Mortar assistant gunner
+_baghatg = "B_AT_01_weapon_F";					// used by Heavy AT gunner
+_baghatag = "B_HMG_01_support_F";				// used by Heavy AT assistant gunner
+_bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
+_bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
 
 // AGM Medical and Misc
 _bandage = "AGM_Bandage";					// 5 Per Soldier, 10 Per TL, 20 Per Medic
