@@ -67,7 +67,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal "b_hq";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Fireteam
@@ -77,7 +77,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_inf";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Machineguns (MMG, HMG)
@@ -87,7 +87,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_support";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Launchers (MAT, HAT, SAM)
@@ -97,7 +97,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_motor_inf";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Sniper Team
@@ -107,7 +107,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_recon";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Mortar Team
@@ -117,7 +117,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_mortar";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Engineers
@@ -127,7 +127,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_maint";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // IFVs and APCs
@@ -137,7 +137,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_mech_inf";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Tanks
@@ -147,7 +147,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_armor";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Transport and Attack Helos
@@ -157,7 +157,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_air";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Planes and jets
@@ -167,7 +167,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_plane";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Artillery
@@ -177,7 +177,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_art";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // Logistics
@@ -187,7 +187,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal  "b_support";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 };
