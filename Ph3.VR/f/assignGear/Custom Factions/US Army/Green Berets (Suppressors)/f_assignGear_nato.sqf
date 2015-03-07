@@ -52,7 +52,7 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "rhsusf_acc_anpeq15";		// IR Laser
+_attach1 = "rhsusf_acc_anpeq15side";	// IR Laser
 _attach2 = "rhsusf_acc_anpeq15_light";	// Flashlight
 
 _silencer1 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
