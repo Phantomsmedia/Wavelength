@@ -198,7 +198,7 @@ _SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
 _ATmine = "rhs_mine_tm62m_mag";
-_satchel = "DemoCharge_Remote_Mag";
+_satchel = "IEDUrbanSmall_Remote_Mag";
 _APmine1 = "rhs_mine_pmn2_mag";
 _APmine2 = "rhs_mine_pmn2_mag";
 
