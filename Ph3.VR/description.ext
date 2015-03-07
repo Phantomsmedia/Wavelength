@@ -419,11 +419,6 @@ class CfgFunctions
 			class mapClickTeleportUnit{};
 			class mapClickTeleportGroup{};
 		};
-		class nametag
-		{
-			file = "f\nametag";
-			class drawNameTag{};
-		};
 		class zeus
 		{
 			file = "f\zeus";

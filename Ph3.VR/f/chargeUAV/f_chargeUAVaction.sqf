@@ -24,15 +24,6 @@ private ["_code"];
 
 // ====================================================================================
 
-// ADD BRIEFING ENTRY
-
-player createDiaryRecord ["diary", ["Charge UAV","
-<br/>
-To charge your UAV it needs to be landed and the engine turned off. The 'Charge UAV' action will appear when facing it. This sets the UAV's fuel to 100% and uses up one of your batteries.
-"]];
-
-// ====================================================================================
-
 // SETUP CODE
 // The following code is executed when the "recharge UAV" action fires
 
