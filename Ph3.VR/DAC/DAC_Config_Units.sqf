@@ -96,15 +96,6 @@ switch (_TypNumber) do
     _Unit_Pool_T = ["LOP_ChDKZ_BMP1","LOP_ChDKZ_BTR60","LOP_ChDKZ_M113","LOP_ChDKZ_BMP1P","LOP_ChDKZ_BMP2","LOP_ChDKZ_BTR70"];
     _Unit_Pool_A = ["LOP_ChDKZ_Mi8","LOP_ChDKZ_Mi8"];
   };  
- //-------------------------------------------------------------------------------------------------
-// ISIS (Leight's OPFOR Pack)
-  case 9:
-  {
-    _Unit_Pool_S = ["LOP_ISIS_Driver","LOP_ISIS_Driver","LOP_ISIS_Soldier_TL","LOP_ISIS_Soldier_AR","LOP_ISIS_Soldier_AR","LOP_ISIS_Soldier_Medic","LOP_ISIS_Soldier_GL","LOP_ISIS_Soldier_GL","LOP_ISIS_Soldier","LOP_ISIS_Soldier_Medic","LOP_ISIS_Soldier_IED","LOP_ISIS_Soldier","LOP_ISIS_Soldier","LOP_ISIS_Soldier_AT","LOP_ISIS_Soldier_AT","LOP_ISIS_Soldier","LOP_ISIS_Soldier_SL","LOP_ISIS_Soldier_SL"];
-    _Unit_Pool_V = ["LOP_ISIS_Technical_M2","LOP_ISIS_M998_D_4DR_FULLTOP","LOP_ISIS_Technical"];
-    _Unit_Pool_T = ["LOP_ISIS_BMP1","LOP_ISIS_BMP1","LOP_ISIS_BTR60","LOP_ISIS_BTR70","LOP_ISIS_M113_D"];
-    _Unit_Pool_A = [];
-  };    
 //-------------------------------------------------------------------------------------------------
 
   Default
