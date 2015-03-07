@@ -52,12 +52,12 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "rhsusf_acc_anpeq15";		// IR Laser
-_attach2 = "rhsusf_acc_anpeq15_light";	// Flashlight
+_attach1 = "CUP_acc_ANPEQ_15";			// IR Laser
+_attach2 = "CUP_acc_Flashlight";		// Flashlight
 
-_silencer1 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
+_silencer1 = "CUP_muzzle_snds_SCAR_H";	// Primary Suppressor
 _silencer2 = "muzzle_snds_M";			// Scuba Suppressor
-_silencer3 = "rhsusf_acc_M2010S";		// Sniper Suppressor
+_silencer3 = "CUP_muzzle_snds_M110";	// Sniper Suppressor
 
 _scope1 = "rhsusf_acc_eotech_552";		// Short Range
 _scope2 = "rhsusf_acc_ACOG";			// Medium Range
@@ -77,14 +77,14 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_mk18_grip2_KAC";
-_riflemag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-_riflemag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+_rifle = "CUP_arifle_Mk17_STD_FG";
+_riflemag = "CUP_20Rnd_762x51_B_SCAR";
+_riflemag_tr = "CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_mk18_grip2";
-_carbinemag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-_carbinemag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+_carbine = "CUP_arifle_Mk17_CQC_FG";
+_carbinemag = "CUP_20Rnd_762x51_B_SCAR";
+_carbinemag_tr = "CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "hlc_smg_mp5sd6";
@@ -97,20 +97,20 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, DC, FTLs)
-_glrifle = "rhs_weap_m4_m320";
-_glriflemag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-_glriflemag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-_glmag = "rhs_mag_M433_HEDP";
+_glrifle = "CUP_arifle_Mk17_STD_EGLM";
+_glriflemag = "CUP_20Rnd_762x51_B_SCAR";
+_glriflemag_tr = "CUP_20Rnd_TE1_Red_Tracer_762x51_SCAR";
+_glmag = "CUP_1Rnd_HEDP_M203";
 
 // Smoke for FTLs, Squad Leaders, etc
-_glsmokewhite = "rhs_mag_m714_White";
-_glsmokegreen = "rhs_mag_m715_Green";
-_glsmokered = "rhs_mag_m713_Red";
+_glsmokewhite = "CUP_1Rnd_Smoke_M203";
+_glsmokegreen = "CUP_1Rnd_SmokeGreen_M203";
+_glsmokered = "CUP_1Rnd_SmokeRed_M203";
 
 // Flares for FTLs, Squad Leaders, etc
-_glflarewhite = "rhs_mag_M585_white";
-_glflarered = "rhs_mag_m662_red";
-_glflaregreen = "rhs_mag_m661_green";
+_glflarewhite = "CUP_FlareWhite_M203";
+_glflarered = "CUP_FlareRed_M203";
+_glflaregreen = "CUP_FlareGreen_M203";
 
 // Pistols (CO, DC, Automatic Rifleman, Medium MG Gunner)
 _pistol = "hgun_Pistol_heavy_01_F";
@@ -194,8 +194,8 @@ _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Sniper
-_SNrifle = "rhs_weap_sr25_ec";
-_SNrifleMag = "rhsusf_20Rnd_762x51_m118_special_Mag";
+_SNrifle = "CUP_srifle_M110";
+_SNrifleMag = "CUP_20Rnd_762x51_B_M110";
 
 // Engineer items
 _ATmine = "rhs_mine_M19_mag";
