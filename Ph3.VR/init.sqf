@@ -152,7 +152,7 @@ if(isServer) then {
 // ====================================================================================
 
 // F3 - ORBAT Notes
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Credits: PabstMirror
 
 [] execVM "f\briefing\f_orbatNotes.sqf";
 
