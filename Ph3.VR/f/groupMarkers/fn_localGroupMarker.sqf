@@ -180,6 +180,16 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.8, 0.8];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
+// Logistics
+	case 12:
+	{
+		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
+		_mkr setMarkerShapeLocal "ICON";
+		_mkrName setMarkerTypeLocal  "b_support";
+		_mkrName setMarkerColorLocal _mkrColor;
+		_mkrName setMarkerSizeLocal [0.8, 0.8];
+		_mkrName setMarkerTextLocal _mkrText;
+	};
 };
 
 // ====================================================================================
