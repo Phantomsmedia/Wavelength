@@ -170,9 +170,9 @@ _ARmag = "rhsusf_200Rnd_556x45_soft_pouch";
 _ARmag_tr = "rhsusf_200Rnd_556x45_soft_pouch";
 
 // Medium MG
-_MMG = "hlc_lmg_M60E4";
-_MMGmag = "hlc_100Rnd_762x51_B_M60E4";
-_MMGmag_tr = "hlc_100Rnd_762x51_T_M60E4";
+_MMG = "rhs_weap_m240B";
+_MMGmag = "rhsusf_100Rnd_762x51";
+_MMGmag_tr = "rhsusf_100Rnd_762x51";
 
 // Rifleman AT
 _RAT = "rhs_weap_M136";
