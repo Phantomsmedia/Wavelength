@@ -227,7 +227,7 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["TRYK_V_tacv1_CY"];
-_mediumRig = ["TRYK_V_tacv1_CY","TRYK_V_tacv1LC_CY",""]; 	// default for all infantry classes
+_mediumRig = ["TRYK_V_tacv1_CY","TRYK_V_tacv1LC_CY"]; 	// default for all infantry classes
 _heavyRig = ["TRYK_V_tacv1LC_CY"];
 
 // Diver
