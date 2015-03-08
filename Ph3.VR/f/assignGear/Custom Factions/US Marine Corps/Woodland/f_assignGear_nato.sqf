@@ -7,7 +7,7 @@
 //
 // Defined loadouts:
 //		pl			- platoon leader
-//		psgt 		- platoon sergeant / squad leader
+//		psg 		- platoon sergeant / squad leader
 //		m 			- medic
 //		ftl			- fire team leader
 //		ar 			- automatic rifleman
@@ -360,13 +360,13 @@ switch (_typeofUnit) do
 	};
 
 // LOADOUT: PLATOON SERGEANT AND SQUAD LEADER
-	case "psgt":
+	case "psg":
 	{
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,3];
 		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_PSGTCrifle
+		_unit addweapon _glrifle;					//_PSGCrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];

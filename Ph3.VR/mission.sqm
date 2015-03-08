@@ -121,8 +121,8 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitNATO_PSGT";
-					init="GrpNATO_PSGT = group this; [""psgt"",this] call f_fnc_assignGear;";
+					text="UnitNATO_PSG";
+					init="GrpNATO_PSG = group this; [""psg"",this] call f_fnc_assignGear;";
 					description="BLUFOR Platoon Sergeant";
 				};
 				class Item2
@@ -837,8 +837,8 @@ class Mission
 					lock="UNLOCKED";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCSAT_PSGT";
-					init="GrpCSAT_PSGT = group this; [""psgt"",this] call f_fnc_assignGear;";
+					text="UnitCSAT_PSG";
+					init="GrpCSAT_PSG = group this; [""psg"",this] call f_fnc_assignGear;";
 					description="OPFOR Platoon Sergeant";
 				};
 			};
@@ -1635,8 +1635,8 @@ class Mission
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitAAF_PSGT";
-					init="GrpAAF_PSGT = group this; [""psgt"",this] call f_fnc_assignGear;";
+					text="UnitAAF_PSG";
+					init="GrpAAF_PSG = group this; [""psg"",this] call f_fnc_assignGear;";
 					description="INDFOR Platoon Sergeant";
 				};
 			};
