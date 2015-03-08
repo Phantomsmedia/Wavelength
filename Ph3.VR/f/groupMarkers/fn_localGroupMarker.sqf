@@ -180,6 +180,7 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
+<<<<<<< HEAD
 // Logistics
 	case 12:
 	{
@@ -190,6 +191,8 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
+=======
+>>>>>>> parent of 80eec09... Added Logistics Team + Moved JIP + Fixed PSGT Marker
 };
 
 // ====================================================================================

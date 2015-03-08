@@ -33,8 +33,6 @@
 //		pp			- air vehicle pilot / co-pilot
 //		pcc			- air vehicle co-pilot (repair) / crew chief (repair)
 //		pc			- air vehicle crew
-//		logil		- logistics
-//		logi		- logistics leader
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
 //		uav			- UAV operator
@@ -797,39 +795,6 @@ switch (_typeofUnit) do
 		_unit addItem _earplugs;
 	};
 
-// LOADOUT: LOGISTICS LEADER
-	case "logil":
-	{
-		_unit addmagazines [_carbinemag,7];
-		_unit addweapon _carbine;
-		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_mgrenade,1];
-		["cc"] call _backpack;
-		{_unit addItem _bandage} foreach [1,2,3,4,5];
-		_unit addItem _morphine;
-		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-	};
-
-
-// LOADOUT: LOGISTICS
-	case "logi":
-	{
-		_unit addmagazines [_carbinemag,7];
-		_unit addweapon _carbine;
-		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_mgrenade,1];
-		["cc"] call _backpack;
-		{_unit addItem _bandage} foreach [1,2,3,4,5];
-		_unit addItem _morphine;
-		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_attachments = [_attach1,_scope1];
-	};
-	
 // LOADOUT: ENGINEER (DEMO)
 	case "eng":
 	{
