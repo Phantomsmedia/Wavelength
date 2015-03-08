@@ -180,19 +180,6 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
-<<<<<<< HEAD
-// Logistics
-	case 12:
-	{
-		_mkr = createMarkerLocal [_mkrName,[(getPos leader _grp select 0),(getPos leader _grp select 1)]];
-		_mkr setMarkerShapeLocal "ICON";
-		_mkrName setMarkerTypeLocal  "b_support";
-		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.6, 0.6];
-		_mkrName setMarkerTextLocal _mkrText;
-	};
-=======
->>>>>>> parent of 80eec09... Added Logistics Team + Moved JIP + Fixed PSGT Marker
 };
 
 // ====================================================================================

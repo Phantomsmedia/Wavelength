@@ -56,7 +56,6 @@ if (!alive _unt) exitWith {};
 switch (_mkrType) do
 {
 
-<<<<<<< HEAD
 // Platoon Sergeant
 	case 0:
 	{
@@ -67,8 +66,6 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.6, 0.6];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
-=======
->>>>>>> parent of 80eec09... Added Logistics Team + Moved JIP + Fixed PSGT Marker
 // Medics
 	case 0:
 	{
@@ -89,7 +86,6 @@ switch (_mkrType) do
 		_mkrName setMarkerSizeLocal [0.4, 0.4];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
-
 };
 
 // ====================================================================================
