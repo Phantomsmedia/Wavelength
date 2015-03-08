@@ -227,8 +227,8 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["rhsusf_iotv_ocp"];
-_mediumRig = ["rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_SAW","rhsusf_iotv_ocp_Grenadier"]; 	// default for all infantry classes
-_heavyRig = ["rhsusf_iotv_ocp_Grenadier"];
+_mediumRig = ["rhsusf_iotv_ocp_Rifleman"]; 	// default for all infantry classes
+_heavyRig = ["rhsusf_iotv_ocp_SAW"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
