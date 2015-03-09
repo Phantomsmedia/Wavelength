@@ -16,7 +16,7 @@ class Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with the Phramework.";
+onLoadMission = "Made with the Phramework";
 author = "*** Insert mission author name here. ***";
 loadScreen = "loadLogo.jpg";
 
@@ -371,13 +371,6 @@ class CfgFunctions
 			file = "f\setGroupID";
 			class setGroupID{};
 		};
-		class missionConditions
-		{
-			file = "f\missionConditions";
-			class SetTime{};
-			class SetFog{};
-			class SetWeather{};
-		};
 		class cache
 		{
 			file = "f\cache";
@@ -390,11 +383,6 @@ class CfgFunctions
 			file = "f\groupMarkers";
 			class localGroupMarker{};
 			class localSpecialistMarker{};
-		};
-		class authorisedCrew
-		{
-			file = "f\authorisedCrew";
-			class authorisedCrewCheck {};
 		};
 		class FTMemberMarkers
 		{
@@ -412,12 +400,6 @@ class CfgFunctions
 		{
 			file = "f\setAISKill";
 			class setAISKill{};
-		};
-		class mapClickTeleport
-		{
-			file = "f\mapClickTeleport";
-			class mapClickTeleportUnit{};
-			class mapClickTeleportGroup{};
 		};
 		class zeus
 		{
