@@ -31,8 +31,6 @@
 //		vg			- vehicle gunner
 //		vd			- vehicle driver (repair)
 //		pp			- air vehicle pilot / co-pilot
-//		pcc			- air vehicle co-pilot (repair) / crew chief (repair)
-//		pc			- air vehicle crew
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
 //		uav			- UAV operator
@@ -214,7 +212,6 @@ _diver = ["div"];
 _pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
-_specOp = [];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
@@ -725,6 +722,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: VEHICLE DRIVER
@@ -740,6 +738,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: VEHICLE GUNNER
@@ -754,6 +753,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -768,6 +768,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: AIR VEHICLE CREW CHIEF
@@ -781,6 +782,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: AIR VEHICLE CREW
@@ -793,6 +795,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: ENGINEER (DEMO)
@@ -861,12 +864,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,3];
-		_attachments = [_attach1,_scope1,_silencer2];
 		["div"] call _backpack;
 		{_unit addItem _bandage} foreach [1,2,3,4,5];
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1,_scope1,_silencer2];
 	};
 
 // LOADOUT: RIFLEMAN
@@ -916,6 +919,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [_attach1];
 	};
 
 // LOADOUT: GRENADIER
