@@ -7,7 +7,7 @@ Phramework 3 Tutorial
 
 PH3 Versions:
 
-The latest Stable and Development versions can usually be found here(http://phantactical.com/forum/index.php?topic=2036.0). However, the absolute latest version of the development version can be found on GitHub(https://github.com/Phantomsmedia/Phramework).
+The latest Stable and Development versions can usually be found here(http://phantactical.com/forum/index.php?topic=2036.0). However, the absolute latest version of the development version can be found on GitHub(https://github.com/Gruntin/Phramework).
 
 It is advised that you always use the Stable version of Ph3.
 
