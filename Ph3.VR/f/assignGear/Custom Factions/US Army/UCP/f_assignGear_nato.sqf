@@ -31,6 +31,8 @@
 //		vg			- vehicle gunner
 //		vd			- vehicle driver (repair)
 //		pp			- air vehicle pilot / co-pilot
+//		pcc			- air vehicle co-pilot (repair) / crew chief (repair)
+//		pc			- air vehicle crew
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
 //		uav			- UAV operator
