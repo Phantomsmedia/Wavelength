@@ -70,6 +70,24 @@ Marauder - Tanks
 
 // ====================================================================================
 
+// NOTES: INTEL
+// The code below creates an intel section, which contains pictures (327x327).
+// Uncomment the next line to use.
+
+//_intel = player createDiaryRecord ["diary", ["Intel","
+<br/>
+*** Insert information on the first intel piece. ***
+<br/>
+<img image='intel1.jpg'/>
+<br/>
+*** Insert information on the second intel piece. ***
+<br/>
+<img image='intel2.jpg'/>
+<br/>
+"]];
+
+// ====================================================================================
+
 // NOTES: RADIO IMAGE
 // The code below creates the administration sub-section of notes.
 
@@ -139,6 +157,16 @@ From 52.1 to 52.9 for Infantry Support (MMG etc)
 
 // ====================================================================================
 
+// NOTES: ADMINISTRATION
+// The code below creates the administration sub-section of notes.
+
+_adm = player createDiaryRecord ["diary", ["Administration","
+<br/>
+*** Insert information on administration and logistics here. ***
+"]];
+
+// ====================================================================================
+
 // NOTES: CREDITS
 // The code below creates the administration sub-section of notes.
 
@@ -147,16 +175,6 @@ _cre = player createDiaryRecord ["diary", ["Credits","
 *** Insert mission credits here. ***
 <br/><br/>
 Made with F3 (http://www.ferstaberinde.com/f3/en/)
-"]];
-
-// ====================================================================================
-
-// NOTES: ADMINISTRATION
-// The code below creates the administration sub-section of notes.
-
-_adm = player createDiaryRecord ["diary", ["Administration","
-<br/>
-*** Insert information on administration and logistics here. ***
 "]];
 
 // ====================================================================================
