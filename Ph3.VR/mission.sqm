@@ -34,7 +34,10 @@ class Mission
 		"dac_source",
 		"map_vr",
 		"BH_EXT",
-		"A3_Air_F_Beta_Heli_Transport_01"
+		"A3_Air_F_Beta_Heli_Transport_01",
+		"A3_Armor_F_Panther",
+		"A3_Armor_F_EPB_APC_tracked_03",
+		"A3_armor_f_beta_APC_Tracked_02"
 	};
 	addOnsAuto[]=
 	{
@@ -51,10 +54,13 @@ class Mission
 		"BH_EXT",
 		"A3_Air_F_Beta_Heli_Transport_02",
 		"A3_Armor_F_AMV",
+		"A3_Armor_F_Panther",
 		"A3_Air_F_Beta_Heli_Attack_01",
+		"A3_armor_f_beta_APC_Tracked_02",
 		"A3_Armor_F_Marid",
 		"A3_Air_F_Beta_Heli_Attack_02",
 		"A3_Armor_F_Slammer",
+		"A3_Armor_F_EPB_APC_tracked_03",
 		"A3_Armor_F_APC_Wheeled_03",
 		"A3_Armor_F_T100K",
 		"A3_Armor_F_EPB_MBT_03",
@@ -5677,7 +5683,7 @@ class Mission
 			position[]={500.23999,5,2453.3284};
 			id=354;
 			side="EMPTY";
-			vehicle="B_APC_Wheeled_01_cannon_F";
+			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
 			text="VehNATO_APC1";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
@@ -5687,7 +5693,7 @@ class Mission
 			position[]={512.69702,5,2449.7151};
 			id=355;
 			side="EMPTY";
-			vehicle="B_APC_Wheeled_01_cannon_F";
+			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
 			text="VehNATO_APC2";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
@@ -5697,7 +5703,7 @@ class Mission
 			position[]={528.3573,5,2453.2151};
 			id=356;
 			side="EMPTY";
-			vehicle="B_APC_Wheeled_01_cannon_F";
+			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
 			text="VehNATO_APC3";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
@@ -5707,7 +5713,7 @@ class Mission
 			position[]={540.81433,5,2449.6018};
 			id=357;
 			side="EMPTY";
-			vehicle="B_APC_Wheeled_01_cannon_F";
+			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
 			text="VehNATO_APC4";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
@@ -5784,7 +5790,7 @@ class Mission
 			position[]={461.34991,5,412.09937};
 			id=365;
 			side="EMPTY";
-			vehicle="O_APC_Wheeled_02_rcws_F";
+			vehicle="O_APC_Tracked_02_cannon_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV1";
@@ -5795,7 +5801,7 @@ class Mission
 			position[]={470.8421,5,405.15015};
 			id=366;
 			side="EMPTY";
-			vehicle="O_APC_Wheeled_02_rcws_F";
+			vehicle="O_APC_Tracked_02_cannon_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV2";
@@ -5806,7 +5812,7 @@ class Mission
 			position[]={488.00903,5,411.76343};
 			id=367;
 			side="EMPTY";
-			vehicle="O_APC_Wheeled_02_rcws_F";
+			vehicle="O_APC_Tracked_02_cannon_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV3";
@@ -5817,7 +5823,7 @@ class Mission
 			position[]={498.86255,5,404.6814};
 			id=368;
 			side="EMPTY";
-			vehicle="O_APC_Wheeled_02_rcws_F";
+			vehicle="O_APC_Tracked_02_cannon_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV4";
@@ -5890,7 +5896,7 @@ class Mission
 			position[]={428.68106,5,1431.7639};
 			id=375;
 			side="EMPTY";
-			vehicle="I_APC_Wheeled_03_cannon_F";
+			vehicle="I_APC_tracked_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV1";
@@ -5901,7 +5907,7 @@ class Mission
 			position[]={441.60489,5,1429.0842};
 			id=376;
 			side="EMPTY";
-			vehicle="I_APC_Wheeled_03_cannon_F";
+			vehicle="I_APC_tracked_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV2";
@@ -5912,7 +5918,7 @@ class Mission
 			position[]={456.55612,5,1431.2991};
 			id=377;
 			side="EMPTY";
-			vehicle="I_APC_Wheeled_03_cannon_F";
+			vehicle="I_APC_tracked_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV3";
@@ -5923,7 +5929,7 @@ class Mission
 			position[]={469.70065,5,1429.1428};
 			id=378;
 			side="EMPTY";
-			vehicle="I_APC_Wheeled_03_cannon_F";
+			vehicle="I_APC_tracked_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV4";
