@@ -570,7 +570,7 @@ case "uav":
 	_unit addBackpack _baguav;
 };
 
-// BACKPACK: CREW CHIEFS & VEHICLE DRIVERS
+// BACKPACK: VEHICLE DRIVERS
 case "cc":
 {
 	_unit addBackpack _bagsmall;
