@@ -85,7 +85,7 @@ switch (_unitfaction) do
  		["GrpNATO_TH3",  9, "NOMAD3", "ColorBlue"] spawn f_fnc_localGroupMarker;
  		["GrpNATO_TH4",  9, "NOMAD4", "ColorBlue"] spawn f_fnc_localGroupMarker;
 
-		["GrpNATO_AH1",  9, "DRAGON1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_AH1",  9, "BANDIT1", "ColorRed"] spawn f_fnc_localGroupMarker;
 
 		["UnitNATO_PL_M", 0, "PLM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
 		["UnitNATO_ASL_M", 0, "AM", "ColorBlack"] spawn f_fnc_localSpecialistMarker;
