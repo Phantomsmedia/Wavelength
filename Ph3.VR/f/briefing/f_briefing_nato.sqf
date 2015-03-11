@@ -61,7 +61,9 @@ Bandit - Attack Helicopters
 <br/><br/>
 Nomad - Transport Helicopters
 <br/><br/>
-Raider - Infantry Fighting Vehicles & Armoured Personnel Carriers
+Raider - Infantry Fighting Vehicles
+<br/><br/>
+Highwayman - Armoured Personnel Carriers
 <br/><br/>
 Marauder - Tanks
 "]];

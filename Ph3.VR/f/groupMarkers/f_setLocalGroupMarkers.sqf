@@ -73,10 +73,11 @@ switch (_unitfaction) do
 		["GrpNATO_IFV2",  7, "RAIDER2", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_IFV3",  7, "RAIDER3", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_IFV4",  7, "RAIDER4", "ColorRed"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_IFV5",  7, "RAIDER5", "ColorBlue"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_IFV6",  7, "RAIDER6", "ColorBlue"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_IFV7",  7, "RAIDER7", "ColorBlue"] spawn f_fnc_localGroupMarker;
-		["GrpNATO_IFV8",  7, "RAIDER8", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		
+		["GrpNATO_APC1",  7, "HIGHWAYMAN1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_APC2",  7, "HIGHWAYMAN2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_APC3",  7, "HIGHWAYMAN3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_APC4",  7, "HIGHWAYMAN4", "ColorBlue"] spawn f_fnc_localGroupMarker;
 
  		["GrpNATO_TNK1",  8, "MARAUDER1", "ColorRed"] spawn f_fnc_localGroupMarker;
 
@@ -133,10 +134,11 @@ switch (_unitfaction) do
 		["GrpCSAT_IFV2",  7, "RAIDER2", "ColorRed"] spawn f_fnc_localGroupMarker;
  		["GrpCSAT_IFV3",  7, "RAIDER3", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpCSAT_IFV4",  7, "RAIDER4", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpCSAT_IFV5",  7, "RAIDER5", "ColorBlue"] spawn f_fnc_localGroupMarker;
-		["GrpCSAT_IFV6",  7, "RAIDER6", "ColorBlue"] spawn f_fnc_localGroupMarker;
- 		["GrpCSAT_IFV7",  7, "RAIDER7", "ColorBlue"] spawn f_fnc_localGroupMarker;
-		["GrpCSAT_IFV8",  7, "RAIDER8", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		
+		["GrpCSAT_APC1",  7, "HIGHWAYMAN1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpCSAT_APC2",  7, "HIGHWAYMAN2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpCSAT_APC3",  7, "HIGHWAYMAN3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpCSAT_APC4",  7, "HIGHWAYMAN4", "ColorBlue"] spawn f_fnc_localGroupMarker;
 
  		["GrpCSAT_TNK1",  8, "MARAUDER1", "ColorRed"] spawn f_fnc_localGroupMarker;
 
@@ -193,10 +195,11 @@ switch (_unitfaction) do
 		["GrpAAF_IFV2",  7, "RAIDER2", "ColorRed"] spawn f_fnc_localGroupMarker;
  		["GrpAAF_IFV3",  7, "RAIDER3", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpAAF_IFV4",  7, "RAIDER4", "ColorRed"] spawn f_fnc_localGroupMarker;
- 		["GrpAAF_IFV5",  7, "RAIDER5", "ColorBlue"] spawn f_fnc_localGroupMarker;
-		["GrpAAF_IFV6",  7, "RAIDER6", "ColorBlue"] spawn f_fnc_localGroupMarker;
- 		["GrpAAF_IFV7",  7, "RAIDER7", "ColorBlue"] spawn f_fnc_localGroupMarker;
-		["GrpAAF_IFV8",  7, "RAIDER8", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		
+		["GrpAAF_APC1",  7, "HIGHWAYMAN1", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpAAF_APC2",  7, "HIGHWAYMAN2", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpAAF_APC3",  7, "HIGHWAYMAN3", "ColorBlue"] spawn f_fnc_localGroupMarker;
+		["GrpAAF_APC4",  7, "HIGHWAYMAN4", "ColorBlue"] spawn f_fnc_localGroupMarker;
 
  		["GrpAAF_TNK1",  8, "MARAUDER1", "ColorRed"] spawn f_fnc_localGroupMarker;
 
