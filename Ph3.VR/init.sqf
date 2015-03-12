@@ -153,6 +153,12 @@ player addEventHandler ["WeaponAssembled",{(_this select 1) disableTIEquipment t
 
 // ====================================================================================
 
+// Disable Friendly Fire Penalties
+
+[] execVM "f\friendlyfire\setPlayersRaitingToMax.sqf";
+
+// ====================================================================================
+
 // BWMF - DAC Debug Params
 
 [] execVM "DAC\bwmf_dacParams.sqf";
