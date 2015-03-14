@@ -16,6 +16,8 @@ _sit = player createDiaryRecord ["diary", ["Situation","
 <font size='18'>FRIENDLY FORCES</font>
 <br/>
 *** Insert information about friendly forces here.***
+"]];
+
 // ====================================================================================
 
 // NOTES: MISSION
