@@ -387,10 +387,12 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addweapon _carbine;
 		_unit addmagazines [_smokegrenade,4];
+		{_unit addItem _firstaid} forEach [1,2,3,4];
 		["m"] call _backpack;
-		{_unit addItem _bandage} foreach [1,2,3,4,5];
-		_unit addItem _morphine;
-		_unit addItem _epipen;
+		{_unit addItem _bandage} forEach [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+		{_unit addItem _morphine} forEach [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+		{_unit addItem _epipen} forEach [1,2,3,4,5,6,7,8,9,10];
+		{_unit addItem _bloodbag} forEach [1,2,3,4,5];
 		_unit addItem _earplugs;
 		_attachments = [_attach1];
 	};
