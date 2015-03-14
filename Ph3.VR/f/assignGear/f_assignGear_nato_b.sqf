@@ -5,8 +5,6 @@
 // BACKPACK: MEDIC
 case "m":
 {
-	// LOADOUT: MEDIUM
-	if (_loadout <= 1) then {
 		_unit addBackpack _bagsmall;
 		clearMagazineCargoGlobal (unitBackpack _unit);
 		(unitBackpack _unit) addItemCargoGlobal [_bandage,30];
