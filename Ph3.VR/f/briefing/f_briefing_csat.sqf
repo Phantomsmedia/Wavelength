@@ -58,13 +58,13 @@ _exe = player createDiaryRecord ["diary", ["Execution","
 _exe = player createDiaryRecord ["diary", ["Signal","
 <br/>
 Bandit - Attack Helicopters
-<br/><br/>
+<br/>
 Nomad - Transport Helicopters
-<br/><br/>
+<br/>
 Raider - Infantry Fighting Vehicles
-<br/><br/>
+<br/>
 Highwayman - Armoured Personnel Carriers
-<br/><br/>
+<br/>
 Marauder - Tanks
 "]];
 
@@ -83,7 +83,6 @@ Marauder - Tanks
 *** Insert information on the second intel piece. ***
 <br/>
 <img image='intel2.jpg'/>
-<br/>
 "]];
 
 // ====================================================================================
