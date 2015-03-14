@@ -42,7 +42,7 @@ switch (_unitfaction) do
 	case "blu_f":
 	{
 		["GrpNATO_PL", 0, "PL", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["UnitNATO_PSG", 0, "PSG", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["UnitNATO_PSG", 0, "PSG", "ColorYellow"] spawn f_fnc_localSpecialistMarker;
 
 		["GrpNATO_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpNATO_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -103,7 +103,7 @@ switch (_unitfaction) do
 	case "opf_f":
 	{
 		["GrpCSAT_PL", 0, "PL", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["UnitCSAT_PSG", 0, "PSG", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["UnitCSAT_PSG", 0, "PSG", "ColorYellow"] spawn f_fnc_localSpecialistMarker;
 
 		["GrpCSAT_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpCSAT_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
@@ -164,7 +164,7 @@ switch (_unitfaction) do
 	case "ind_f":
 	{
 		["GrpAAF_PL", 0, "PL", "ColorYellow"] spawn f_fnc_localGroupMarker;
-		["UnitAAF_PSG", 0, "PSG", "ColorYellow"] spawn f_fnc_localGroupMarker;
+		["UnitAAF_PSG", 0, "PSG", "ColorYellow"] spawn f_fnc_localSpecialistMarker;
 
 		["GrpAAF_ASL", 0, "ASL", "ColorRed"] spawn f_fnc_localGroupMarker;
 		["GrpAAF_A1", 1, "A1", "ColorRed"] spawn f_fnc_localGroupMarker;
