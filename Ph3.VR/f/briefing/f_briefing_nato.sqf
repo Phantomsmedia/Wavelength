@@ -73,7 +73,7 @@ Marauder - Tanks
 // ====================================================================================
 
 // NOTES: INTEL
-// The code below creates an intel section, which contains pictures (327x327).
+// The code below creates an intel section, which contains pictures (300x300).
 
 _intel = player createDiaryRecord ["diary", ["Intel","
 <br/>
