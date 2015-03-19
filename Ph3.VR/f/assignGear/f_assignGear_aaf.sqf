@@ -704,7 +704,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
+		_attachments = [];
 	};
 
 // LOADOUT: VEHICLE DRIVER
@@ -720,7 +720,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
+		_attachments = [];
 	};
 
 // LOADOUT: VEHICLE GUNNER
@@ -735,7 +735,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
+		_attachments = [];
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
@@ -750,7 +750,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
+		_attachments = [];
 	};
 
 // LOADOUT: AIR VEHICLE CREW
@@ -763,7 +763,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
+		_attachments = [];
 	};
 
 // LOADOUT: ENGINEER (DEMO)
@@ -880,7 +880,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_attach1];
+		_attachments = [];
 	};
 
 // LOADOUT: GRENADIER
