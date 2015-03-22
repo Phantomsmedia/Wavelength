@@ -76,12 +76,12 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "rhs_weap_m4a1_carryhandle_grip";
+_rifle = "rhs_weap_m4a1_carryhandle";
 _riflemag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 _riflemag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "rhs_weap_m4a1_carryhandle_grip";
+_carbine = "rhs_weap_m4a1_carryhandle";
 _carbinemag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
 _carbinemag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 
