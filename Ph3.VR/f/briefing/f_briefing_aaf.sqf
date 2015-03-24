@@ -78,12 +78,8 @@ Marauder - Tanks
 _intel = player createDiaryRecord ["diary", ["Intel","
 <br/>
 <img image='intel1.jpg'/>
-<br/>
-*** Insert information on the second intel piece. ***
 <br/><br/>
 <img image='intel2.jpg'/>
-<br/>
-*** Insert information on the first intel piece. ***
 "]];
 
 // ====================================================================================
