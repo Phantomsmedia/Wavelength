@@ -86,9 +86,9 @@ _carbinemag = "rhs_30Rnd_545x39_7N10_AK";
 _carbinemag_tr = "rhs_30Rnd_545x39_AK_green";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "rhs_weap_ak74m_folded";
-_smgmag = "rhs_30Rnd_545x39_7N10_AK";
-_smgmag_tr = "rhs_30Rnd_545x39_AK_green";
+_smg = "CUP_arifle_AKS74U";
+_smgmag = "CUP_30Rnd_545x39_AK_M";
+_smgmag_tr = "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -159,9 +159,9 @@ _clacker = "AGM_Clacker";                   // For Engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "hlc_rifle_rpk";
-_ARmag = "hlc_75Rnd_762x39_m_rpk";
-_ARmag_tr = "hlc_75Rnd_762x39_m_rpk";
+_AR = "CUP_arifle_RPK74";
+_ARmag = "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+_ARmag_tr = "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
 
 // Medium MG
 _MMG = "rhs_weap_pkp";
