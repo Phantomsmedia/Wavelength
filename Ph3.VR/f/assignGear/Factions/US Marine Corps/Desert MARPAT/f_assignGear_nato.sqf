@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - US Marine Corps - Desert
+// F3 - Folk ARPS Assign Gear Script - US Marine Corps - Desert MARPAT
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
