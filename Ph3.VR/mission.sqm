@@ -45,7 +45,6 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
-		"lop_c_men",
 		"A3_Characters_F_Civil",
 		"agm_medical",
 		"dac_source",
