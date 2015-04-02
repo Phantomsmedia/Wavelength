@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Rebels - Woodland
+// F3 - Folk ARPS Assign Gear Script - Rebels - Desert
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -211,14 +211,14 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["MNP_CombatUniform_Militia_C","MNP_CombatUniform_Militia_F","MNP_CombatUniform_Militia_E","MNP_CombatUniform_Militia_A","MNP_CombatUniform_Militia_B"];
-_baseHelmet = ["MNP_Boonie_DPM","MNP_Boonie_USW","MNP_Boonie_TIG","H_Bandanna_camo","H_Beret_blk","H_Bandanna_gry","H_Cap_blk"];
+_baseUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
+_baseHelmet = ["MNP_Boonie_Jigsaw","MNP_Boonie_DDPM","MNP_Boonie_TIG","H_Bandanna_cbr","H_Beret_blk","H_Bandanna_sand","H_Cap_tan"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_oli"];
-_mediumRig = ["V_Chestrig_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_Chestrig_rgr"];
+_lightRig = ["V_TacVest_khk"];
+_mediumRig = ["V_Chestrig_khk"]; 	// default for all infantry classes
+_heavyRig = ["V_Chestrig_khk"];
 
 // Diver
 _diverUniform =  ["U_I_Wetsuit"];
@@ -227,21 +227,21 @@ _diverRig = ["V_RebreatherIA"];
 _diverGlasses = ["G_I_Diving"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_Militia_C","MNP_CombatUniform_Militia_F","MNP_CombatUniform_Militia_E","MNP_CombatUniform_Militia_A","MNP_CombatUniform_Militia_B"];
+_pilotUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
 _pilotHelmet = ["rhs_gssh18"];
-_pilotRig = ["V_TacVest_oli"];
+_pilotRig = ["V_TacVest_khk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_Militia_C","MNP_CombatUniform_Militia_F","MNP_CombatUniform_Militia_E","MNP_CombatUniform_Militia_A","MNP_CombatUniform_Militia_B"];
+_crewUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
 _crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
-_crewRig = ["V_TacVest_oli"];
+_crewRig = ["V_TacVest_khk"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_Militia_C","MNP_CombatUniform_Militia_F","MNP_CombatUniform_Militia_E","MNP_CombatUniform_Militia_A","MNP_CombatUniform_Militia_B"];
-_ghillieHelmet = ["H_Shemag_olive"];
-_ghillieRig = ["V_Chestrig_rgr"];
+_ghillieUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
+_ghillieHelmet = ["H_ShemagOpen_tan"];
+_ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
 // ====================================================================================
