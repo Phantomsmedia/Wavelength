@@ -218,8 +218,8 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_blk"];
-_mediumRig = ["MNP_Vest_Light_M81"]; 	// default for all infantry classes
-_heavyRig = ["MNP_Vest_Light_M81"];
+_mediumRig = ["MNP_Vest_M81"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_M81"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -242,7 +242,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["MNP_CombatUniform_US6co_A"];
 _ghillieHelmet = ["MNP_Boonie_6CO"];
-_ghillieRig = ["MNP_Vest_Light_M81"];
+_ghillieRig = ["MNP_Vest_M81"];
 _ghillieGlasses = [];
 
 // ====================================================================================

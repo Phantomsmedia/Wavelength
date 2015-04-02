@@ -212,14 +212,14 @@ _ghillie = ["sn","sp"];
 
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
-_baseUniform = ["MNP_CombatUniform_M81_Rg"];
+_baseUniform = ["MNP_CombatUniform_Wood_A"];
 _baseHelmet = ["MNP_Helmet_PAGST_M81"];
 _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_blk"];
-_mediumRig = ["MNP_V_OD_Harness"]; 	// default for all infantry classes
-_heavyRig = ["MNP_V_OD_GL_Harness"];
+_mediumRig = ["MNP_Vest_M81"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_M81"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -240,9 +240,9 @@ _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_M81_Rg"];
+_ghillieUniform = ["MNP_CombatUniform_Wood_A"];
 _ghillieHelmet = ["MNP_Boonie_USW"];
-_ghillieRig = ["MNP_V_OD_Harness"];
+_ghillieRig = ["MNP_Vest_M81"];
 _ghillieGlasses = [];
 
 // ====================================================================================
