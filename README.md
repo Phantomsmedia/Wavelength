@@ -25,11 +25,11 @@ By default, the template is set on the Virtual Reality map. This is shown by the
 
 *Keep in mind however, all missions you wish to submit to the community must be named in the following format:
 
-PMT_(CO/TVT)(Player Count)_(Mission Name)
+PT_(CO/TVT)(Player Count)_(Mission Name)
 
 Example:
 
-PMT_CO48_ISIS_Occupation
+PT_CO48_ISIS_Occupation
 
 ================================================================================================================================
 
