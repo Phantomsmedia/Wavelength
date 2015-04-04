@@ -71,6 +71,10 @@ Execution:
 - Fire Support Plan: Orders for fire support units (air, armor, mortars, etc.).
 - Special Tasks: Orders for specific units.
 
+Signal: List of call-signs for the mission's vehicles.
+
+Intel: Pictures relevant to the mission. Pictures must be 300x300 in size. As a courtesy, remove this section if you have no use for it.
+
 Mission: Description of the overall mission.
 
 Situation: Summary of the current situation as of the missions start.
