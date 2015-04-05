@@ -12,7 +12,7 @@ _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
 
 // DEFINE THE RADIOS THAT WILL BE USED
 
-switch ((side player)) do { //longrange, shortrange, rifradio
+switch ((side player)) do { //longrange, shortrange
     case (west): {
       _radio1 = "tf_rt1523g_big";
       _radio2 = TF_defaultWestPersonalRadio;};
@@ -35,28 +35,12 @@ if(_typeOfUnit != "NIL") then {
   // If radios are enabled in the settings
   if(!f_radios_settings_tfr_disableRadios) then {
 
-
-      // Set the list of units that get a rifleman's radio
-      _rifradio = ["ar","aar","rat","samag","mmgag","hmgag","matag","hatag","mtrag","sp","r","car","smg","gren"];
-
       // Set the list of units that get a shortrange radio
-      _shortrange = ["pl", "psgt", "ftl", "m", "samg", "mmgg", "matg", "sn", "mtrg"];
+      _shortrange = ["pl","psgt","ftl","m","ar","aar","rat","samag","samg","mmgag","mmgg","matag","matg","hmgag","hmgg","hatag","hatg","sp","sn","mtrag","mtrg","r","car","smg","gren","vc","pp","eng","engm","div","uav"];
 
       // Give out respective radios
 	  
         if (_typeOfUnit in _shortrange) then {
-          _unit linkItem _radio2;
-        };
-      };
-
-      // Special cases
-      _specialist = ["vc", "pp", "eng", "engm", "div","uav"];
-
-      // If unit is leader of group and in the above list, give SR. Else, give them
-      // a rifleman's radio.
-
-      if (_typeOfUnit in _specialist) then {
-        if (_unit == (leader (group _unit))) then {
           _unit linkItem _radio2;
         };
       };
