@@ -149,6 +149,7 @@ f_wound_extraFAK = 2;
 
 // F3 - Thermal On Statics Forced Off
 // Credits: F3 Wiki 
+
 player addEventHandler ["WeaponAssembled",{(_this select 1) disableTIEquipment true}];
 
 // ====================================================================================
