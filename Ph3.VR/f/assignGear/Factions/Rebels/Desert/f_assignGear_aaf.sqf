@@ -212,7 +212,7 @@ _ghillie = ["sn","sp"];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 _baseUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
-_baseHelmet = ["MNP_Boonie_Jigsaw","MNP_Boonie_DDPM","MNP_Boonie_TIG","H_Bandanna_cbr","H_Beret_blk","H_Bandanna_sand","H_Cap_tan"];
+_baseHelmet = ["H_Shemag_olive","H_ShemagOpen_tan","H_ShemagOpen_khk"];
 _baseGlasses = [];
 
 // Armored vests
@@ -240,7 +240,7 @@ _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
-_ghillieHelmet = ["H_ShemagOpen_tan"];
+_ghillieHelmet = ["H_Shemag_olive","H_ShemagOpen_tan","H_ShemagOpen_khk"];
 _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
