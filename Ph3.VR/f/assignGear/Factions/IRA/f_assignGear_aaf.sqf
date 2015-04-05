@@ -217,8 +217,8 @@ _baseGlasses = ["G_Balaclava_blk","G_Balaclava_oli"];
 
 // Armored vests
 _lightRig = ["V_TacVest_oli"];
-_mediumRig = ["V_Chestrig_blk"]; 	// default for all infantry classes
-_heavyRig = ["V_Chestrig_blk"];
+_mediumRig = ["TRYK_V_ChestRig_L"]; 	// default for all infantry classes
+_heavyRig = ["TRYK_V_ChestRig_L"];
 
 // Diver
 _diverUniform =  ["U_I_Wetsuit"];
@@ -241,7 +241,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["MNP_CombatUniform_Rebel_A","MNP_CombatUniform_Rebel_B"];
 _ghillieHelmet = ["H_Beret_blk"];
-_ghillieRig = ["V_Chestrig_blk"];
+_ghillieRig = ["TRYK_V_ChestRig_L"];
 _ghillieGlasses = ["G_Balaclava_blk","G_Balaclava_oli"];
 
 // ====================================================================================

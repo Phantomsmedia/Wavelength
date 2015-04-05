@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Rebels - Desert
+// F3 - Folk ARPS Assign Gear Script - Insurgents - Desert
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -217,8 +217,8 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_khk"];
-_mediumRig = ["V_Chestrig_khk"]; 	// default for all infantry classes
-_heavyRig = ["V_Chestrig_khk"];
+_mediumRig = ["TRYK_V_ChestRig_L"]; 	// default for all infantry classes
+_heavyRig = ["TRYK_V_ChestRig_L"];
 
 // Diver
 _diverUniform =  ["U_I_Wetsuit"];
@@ -241,7 +241,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
 _ghillieHelmet = ["H_Shemag_olive","H_ShemagOpen_tan","H_ShemagOpen_khk"];
-_ghillieRig = ["V_Chestrig_khk"];
+_ghillieRig = ["TRYK_V_ChestRig_L"];
 _ghillieGlasses = [];
 
 // ====================================================================================

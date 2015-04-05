@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Rebels - Woodland
+// F3 - Folk ARPS Assign Gear Script - Insurgents - Woodland
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -217,8 +217,8 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_oli"];
-_mediumRig = ["V_Chestrig_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_Chestrig_rgr"];
+_mediumRig = ["TRYK_V_ChestRig_L"]; 	// default for all infantry classes
+_heavyRig = ["TRYK_V_ChestRig_L"];
 
 // Diver
 _diverUniform =  ["U_I_Wetsuit"];
@@ -241,7 +241,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["MNP_CombatUniform_Militia_C","MNP_CombatUniform_Militia_F","MNP_CombatUniform_Militia_E","MNP_CombatUniform_Militia_A","MNP_CombatUniform_Militia_B"];
 _ghillieHelmet = ["H_Shemag_olive","H_ShemagOpen_tan","H_ShemagOpen_khk"];
-_ghillieRig = ["V_Chestrig_rgr"];
+_ghillieRig = ["TRYK_V_ChestRig_L"];
 _ghillieGlasses = [];
 
 // ====================================================================================
