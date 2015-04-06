@@ -35,7 +35,10 @@ class Mission
 		"A3_Air_F_Beta_Heli_Transport_01",
 		"A3_Armor_F_Panther",
 		"A3_Armor_F_EPB_APC_tracked_03",
-		"A3_armor_f_beta_APC_Tracked_02"
+		"A3_armor_f_beta_APC_Tracked_02",
+		"A3_Air_F_EPB_Heli_Light_03",
+		"A3_Air_F_Heli_Heli_Light_02",
+		"a3_air_f_heli_light_02"
 	};
 	addOnsAuto[]=
 	{
@@ -48,6 +51,8 @@ class Mission
 		"agm_medical",
 		"dac_source",
 		"A3_Air_F_Beta_Heli_Transport_01",
+		"A3_Air_F_Heli_Heli_Light_02",
+		"a3_air_f_heli_light_02",
 		"A3_Air_F_Beta_Heli_Transport_02",
 		"A3_Armor_F_AMV",
 		"A3_Armor_F_Panther",
@@ -66,6 +71,7 @@ class Mission
 		"A3_Soft_F_HEMTT",
 		"A3_Soft_F_MRAP_02",
 		"A3_Soft_F_EPC_Truck_03",
+		"A3_Air_F_EPB_Heli_Light_03",
 		"map_vr"
 	};
 	randomSeed=11823142;
@@ -5968,7 +5974,7 @@ class Mission
 			position[]={463.51627,5,440.42358};
 			id=375;
 			side="EMPTY";
-			vehicle="opf_unarmed_po30";
+			vehicle="O_Heli_Light_02_v2_F";
 			skill=0.60000002;
 			text="VehCSAT_TH1";
 		};
@@ -6137,7 +6143,7 @@ class Mission
 			position[]={489.60342,5,440.37714};
 			id=392;
 			side="EMPTY";
-			vehicle="opf_unarmed_po30";
+			vehicle="O_Heli_Light_02_v2_F";
 			skill=0.60000002;
 			text="VehCSAT_TH2";
 		};
@@ -6146,7 +6152,7 @@ class Mission
 			position[]={513.534,5,440.68921};
 			id=393;
 			side="EMPTY";
-			vehicle="opf_unarmed_po30";
+			vehicle="O_Heli_Light_02_v2_F";
 			skill=0.60000002;
 			text="VehCSAT_TH3";
 		};
@@ -6155,7 +6161,7 @@ class Mission
 			position[]={542.04401,5,440.64288};
 			id=394;
 			side="EMPTY";
-			vehicle="opf_unarmed_po30";
+			vehicle="O_Heli_Light_02_v2_F";
 			skill=0.60000002;
 			text="VehCSAT_TH4";
 		};
@@ -6374,133 +6380,133 @@ class Mission
 		};
 		class Item41
 		{
-			position[]={406.97849,5,1463.8391};
-			id=415;
-			side="EMPTY";
-			vehicle="ind_ah9";
-			leader=1;
-			skill=0.60000002;
-			text="VehAAF_AH1";
-		};
-		class Item42
-		{
 			position[]={436.60391,5,1556.4553};
-			id=416;
+			id=415;
 			side="EMPTY";
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR1";
 			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
-		class Item43
+		class Item42
 		{
 			position[]={462.93991,5,1556.6389};
-			id=417;
+			id=416;
 			side="EMPTY";
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR2";
 			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
-		class Item44
+		class Item43
 		{
 			position[]={487.29138,5,1557.5374};
-			id=418;
+			id=417;
 			side="EMPTY";
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR3";
 			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
-		class Item45
+		class Item44
 		{
 			position[]={406.99069,5,1540.4397};
-			id=419;
+			id=418;
 			side="EMPTY";
 			vehicle="I_MRAP_03_F";
 			skill=0.60000002;
 			text="VehAAF_CAR1";
 			init="[""v_car"",this] call f_fnc_assignGear";
 		};
-		class Item46
+		class Item45
 		{
 			position[]={420.27551,5,2565.697};
-			id=420;
+			id=419;
 			side="EMPTY";
 			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			text="VehNato_CAR1";
 			init="[""v_car"",this] call f_fnc_assignGear";
 		};
-		class Item47
+		class Item46
 		{
 			position[]={455.33008,5,2582.4978};
-			id=421;
+			id=420;
 			side="EMPTY";
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR1";
 			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
-		class Item48
+		class Item47
 		{
 			position[]={478.94934,5,2581.1189};
-			id=422;
+			id=421;
 			side="EMPTY";
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR2";
 			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
-		class Item49
+		class Item48
 		{
 			position[]={502.79883,5,2582.2673};
-			id=423;
+			id=422;
 			side="EMPTY";
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR3";
 			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
-		class Item50
+		class Item49
 		{
 			position[]={426.28149,5,524.78003};
-			id=424;
+			id=423;
 			side="EMPTY";
 			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			text="VehCSAT_CAR1";
 			init="[""v_car"",this] call f_fnc_assignGear";
 		};
-		class Item51
+		class Item50
 		{
 			position[]={461.89484,5,541.36987};
-			id=425;
+			id=424;
 			side="EMPTY";
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR1";
 			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
-		class Item52
+		class Item51
 		{
 			position[]={484.82745,5,541.1394};
-			id=426;
+			id=425;
 			side="EMPTY";
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR2";
 			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
-		class Item53
+		class Item52
 		{
 			position[]={510.74146,5,541.59644};
-			id=427;
+			id=426;
 			side="EMPTY";
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR3";
 			init="[""v_tr"",this] call f_fnc_assignGear";
+		};
+		class Item53
+		{
+			position[]={408.11456,5,1462.0767};
+			id=427;
+			side="EMPTY";
+			vehicle="I_Heli_light_03_F";
+			leader=1;
+			skill=0.60000002;
+			text="VehAAF_AH1";
 		};
 	};
 	class Markers
