@@ -54,12 +54,16 @@
 _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
+_bipod1 = "bipod_03_F_blk";		// Light Machine Gun
+_bipod2 = "bipod_03_F_blk";		// Medium Machine Gun
+_bipod3 = "bipod_03_F_blk";		// Sniper Rifle
+
 _silencer1 = "muzzle_snds_M";	// Primary Suppressor
 _silencer2 = "muzzle_snds_M";	// Scuba Suppressor
 
 _scope1 = "optic_ACO_grn";		// Short Range
 _scope2 = "optic_MRCO";			// Medium Range
-_scope3 = "optic_LRPS";			// Long Range
+_scope3 = "optic_KHS_blk";		// Long Range
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -162,9 +166,9 @@ _ARmag = "200Rnd_65x39_cased_Box";
 _ARmag_tr = "200Rnd_65x39_cased_Box_Tracer";
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "MMG_02_black_F";
+_MMGmag = "130Rnd_338_Mag";
+_MMGmag_tr = "130Rnd_338_Mag";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
@@ -185,8 +189,8 @@ _SAM = "launch_I_Titan_F";
 _SAMmag = "Titan_AA";
 
 // Sniper
-_SNrifle = "srifle_LRR_F";
-_SNrifleMag = "7Rnd_408_Mag";
+_SNrifle = "srifle_DMR_06_olive_F";
+_SNrifleMag = "20Rnd_762x51_Mag";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
@@ -238,7 +242,7 @@ _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_I_GhillieSuit"];
+_ghillieUniform = ["U_I_FullGhillie_lsh"];
 _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_oli"];
 _ghillieGlasses = [];
@@ -424,7 +428,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
-		_attachments = [_attach1];
+		_attachments = [_attach1,_bipod1];
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
@@ -477,7 +481,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
-		_attachments = [_attach1];
+		_attachments = [_attach1,_bipod2];
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
@@ -668,7 +672,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_scope3];
+		_attachments = [_scope3,_bipod3];
 	};
 
 // LOADOUT: SPOTTER

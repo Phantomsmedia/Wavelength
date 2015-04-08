@@ -57,9 +57,13 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// Primary Suppressor
 _silencer2 = "muzzle_snds_M";	// Scuba Suppressor
 
+_bipod1 = "bipod_01_F_blk";		// Light Machine Gun
+_bipod2 = "bipod_01_F_blk";		// Medium Machine Gun
+_bipod3 = "bipod_01_F_snd";		// Sniper Rifle
+
 _scope1 = "optic_ACO_grn";		// Short Range
 _scope2 = "optic_MRCO";			// Medium Range
-_scope3 = "optic_LRPS";			// Long Range
+_scope3 = "optic_KHS_old";		// Long Range
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -185,8 +189,8 @@ _SAM = "launch_I_Titan_F";
 _SAMmag = "Titan_AA";
 
 // Sniper
-_SNrifle = "srifle_GM6_F";
-_SNrifleMag = "5Rnd_127x108_Mag";
+_SNrifle = "srifle_DMR_06_camo_F";
+_SNrifleMag = "20Rnd_762x51_Mag";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
@@ -424,7 +428,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
-		_attachments = [_attach1];
+		_attachments = [_attach1,_bipod1];
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
@@ -477,7 +481,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
-		_attachments = [_attach1];
+		_attachments = [_attach1,_bipod2];
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
@@ -668,7 +672,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_scope3];
+		_attachments = [_scope3,_bipod3];
 	};
 
 // LOADOUT: SPOTTER

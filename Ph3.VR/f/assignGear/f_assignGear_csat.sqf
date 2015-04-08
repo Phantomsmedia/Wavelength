@@ -54,12 +54,16 @@
 _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
+_bipod1 = "";					// Light Machine Gun
+_bipod2 = "bipod_02_F_hex";		// Medium Machine Gun
+_bipod3 = "bipod_02_F_blk";		// Sniper Rifle
+
 _silencer1 = "muzzle_snds_H";	// Primary Suppressor
 _silencer2 = "muzzle_snds_M";	// Scuba Suppressor
 
 _scope1 = "optic_Aco";			// Short Range
 _scope2 = "optic_Hamr";			// Medium Range
-_scope3 = "optic_LRPS";			// Long Range
+_scope3 = "optic_KHS_hex";		// Long Range
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -162,9 +166,9 @@ _ARmag = "150Rnd_762x51_Box";
 _ARmag_tr = "150Rnd_762x51_Box_Tracer";
 
 // Medium MG
-_MMG = "LMG_Zafir_F";
-_MMGmag = "150Rnd_762x51_Box";
-_MMGmag_tr = "150Rnd_762x51_Box_Tracer";
+_MMG = "MMG_01_hex_F";
+_MMGmag = "150Rnd_93x64_Mag";
+_MMGmag_tr = "150Rnd_93x64_Mag";
 
 // Rifleman AT
 _RAT = "launch_RPG32_F";
@@ -185,8 +189,8 @@ _SAM = "launch_O_Titan_F";
 _SAMmag = "Titan_AA";
 
 // Sniper
-_SNrifle = "srifle_GM6_camo_F";
-_SNrifleMag = "5Rnd_127x108_Mag";
+_SNrifle = "srifle_DMR_05_hex_F";
+_SNrifleMag = "10Rnd_93x64_DMR_05_Mag";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
@@ -238,7 +242,7 @@ _crewRig = ["V_TacVest_brn"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_O_GhillieSuit"];
+_ghillieUniform = ["U_O_FullGhillie_lsh"];
 _ghillieHelmet = [];
 _ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
@@ -424,7 +428,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
-		_attachments = [_attach1];
+		_attachments = [_attach1,_bipod1];
 	};
 
 // LOADOUT: ASSISTANT AUTOMATIC RIFLEMAN
@@ -477,7 +481,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
-		_attachments = [_attach1];
+		_attachments = [_attach1,_bipod2];
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
@@ -668,7 +672,7 @@ switch (_typeofUnit) do
 		_unit addItem _morphine;
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		_attachments = [_scope3];
+		_attachments = [_scope3,_bipod3];
 	};
 
 // LOADOUT: SPOTTER
