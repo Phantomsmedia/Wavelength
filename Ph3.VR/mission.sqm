@@ -2424,7 +2424,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_TH2_CC";
 					init="GrpNATO_TH2 = group this; [""pc"",this] call f_fnc_assignGear;";
-					description="Transport Helo 2 Crew Chief";
+					description="BLUFOR Transport Helo 2 Crew Chief";
 				};
 				class Item3
 				{
@@ -2484,7 +2484,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_TH3_CC";
 					init="GrpNATO_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
-					description="Transport Helo 3 Crew Chief";
+					description="BLUFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
 				{
@@ -2544,7 +2544,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_TH4_CC";
 					init="GrpNATO_TH4 = group this; [""pc"",this] call f_fnc_assignGear;";
-					description="Transport Helo 4 Crew Chief";
+					description="BLUFOR Transport Helo 4 Crew Chief";
 				};
 				class Item3
 				{
