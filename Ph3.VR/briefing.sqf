@@ -53,13 +53,13 @@ if (serverCommandAvailable "#kick") then {
 
 // ====================================================================================
 
-// BRIEFING: BLUFOR > NATO
-// The following block of code executes only if the player is in a NATO slot; it
+// BRIEFING: BLUFOR
+// The following block of code executes only if the player is in a BLUFOR slot; it
 // automatically includes a file which contains the appropriate briefing data.
 
 if (_unitfaction == "blu_f") exitwith {
 
-#include "f\briefing\f_briefing_nato.sqf"
+#include "f\briefing\f_briefing_blufor.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -70,13 +70,13 @@ if (_unitfaction == "blu_f") exitwith {
 
 // ====================================================================================
 
-// BRIEFING: OPFOR > CSAT
-// The following block of code executes only if the player is in a CSAT slot; it
+// BRIEFING: OPFOR
+// The following block of code executes only if the player is in an OPFOR slot; it
 // automatically includes a file which contains the appropriate briefing data.
 
 if (_unitfaction == "opf_f") exitwith {
 
-#include "f\briefing\f_briefing_csat.sqf"
+#include "f\briefing\f_briefing_opfor.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then
@@ -86,13 +86,13 @@ if (_unitfaction == "opf_f") exitwith {
 };
 // ====================================================================================
 
-// BRIEFING: INDEPENDENT > AAF
-// The following block of code executes only if the player is in a AAF
+// BRIEFING: INDFOR
+// The following block of code executes only if the player is in an INDFOR
 // slot; it automatically includes a file which contains the appropriate briefing data.
 
 if (_unitfaction == "ind_f") exitwith {
 
-#include "f\briefing\f_briefing_aaf.sqf"
+#include "f\briefing\f_briefing_indfor.sqf"
 
 // DEBUG
 	if (f_var_debugMode == 1) then

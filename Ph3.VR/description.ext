@@ -416,7 +416,6 @@ class CfgFunctions
 			class tfr_setRadioFrequencies{};
 			class tfr_configureSpectatorChat{};
 		};
-		#include "f\simplewoundingsystem\config.hpp"
 		#include "f\spect\functions.hpp"
 
 	};
