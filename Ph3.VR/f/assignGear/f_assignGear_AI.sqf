@@ -23,9 +23,9 @@ _unitFactions = ["blu_f", "opf_f", "ind_f","blu_g_f","opf_g_f","ind_g_f"];
 // The unit classes and their corresponding F3 Assign Gear Component type
 _unitClasses = [
 
-	["_officer_"	,	"co"	],
-	["_colonel_"	,	"co"	],
-	["_sl_"			,	"dc"	],
+	["_officer_"	,	"pl"	],
+	["_colonel_"	,	"pl"	],
+	["_sl_"			,	"psg"	],
 	["_tl_"			,	"ftl"	],
 	["_lite_"		,	"car"	],
 	["_ar_"			,	"ar"	],
