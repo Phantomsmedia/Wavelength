@@ -242,9 +242,9 @@ _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_B_CTRG_3"];
-_ghillieHelmet = ["H_Watchcap_blk"];
-_ghillieRig = ["V_Chestrig_blk"];
+_ghillieUniform = ["U_B_FullGhillie_lsh"];
+_ghillieHelmet = [];
+_ghillieRig = ["V_Chestrig_rgr"];
 _ghillieGlasses = [];
 
 // ====================================================================================
