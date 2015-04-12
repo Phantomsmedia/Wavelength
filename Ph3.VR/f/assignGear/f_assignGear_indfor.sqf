@@ -216,8 +216,8 @@ _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrierIA1_dgtl","V_PlateCarrierIA2_dgtl"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrierIA2_dgtl"];
+_mediumRig = ["V_PlateCarrierIA1_dgtl","V_PlateCarrierIA2_dgtl","V_PlateCarrierIAGL_dgtl"]; 	// default for all infantry classes
+_heavyRig = ["V_PlateCarrierIAGL_dgtl"];
 
 // Diver
 _diverUniform =  ["U_I_Wetsuit"];
