@@ -158,8 +158,8 @@ _clacker = "AGM_Clacker";                   // For Engineers
 
 // Automatic Rifleman
 _AR = "LMG_Zafir_F";
-_ARmag = "150Rnd_762x51_Box";
-_ARmag_tr = "150Rnd_762x51_Box_Tracer";
+_ARmag = "150Rnd_762x54_Box";
+_ARmag_tr = "150Rnd_762x54_Box_Tracer";
 
 // Medium MG
 _MMG = "MMG_01_hex_F";
