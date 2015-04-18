@@ -12,7 +12,7 @@ _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
 
 // DEFINE THE RADIOS THAT WILL BE USED
 
-switch ((side player)) do { //longrange, shortrange
+switch ((side player)) do { //longrange, shortrange, rifradio
     case (west): {
       _radio1 = "tf_rt1523g_big";
       _radio2 = TF_defaultWestPersonalRadio;
@@ -38,8 +38,12 @@ if(_typeOfUnit != "NIL") then {
   // If radios are enabled in the settings
   if(!f_radios_settings_tfr_disableRadios) then {
 
+
+      // Set the list of units that get a rifleman's radio
+      _rifradio = ["ar","aar","rat","samag","mmgag","hmgag","matag","hatag","mtrag","sp","r","car","smg","gren"];
+
       // Set the list of units that get a shortrange radio
-      _shortrange = ["pl","psgt","ftl","m","ar","aar","rat","samag","samg","mmgag","mmgg","matag","matg","hmgag","hmgg","hatag","hatg","sp","sn","mtrag","mtrg","r","car","smg","gren","vc","pp","eng","engm","div","uav"];
+      _shortrange = ["pl", "psgt", "ftl", "m", "samg", "mmgg", "matg", "sn", "mtrg"];
 
       // Give out respective radios
 
@@ -52,7 +56,10 @@ if(_typeOfUnit != "NIL") then {
       };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 522b870... EXPERIMENTAL: Simplified Radios
       // Special cases
       _specialist = ["vc", "pp", "eng", "engm", "div","uav"];
 
@@ -62,12 +69,18 @@ if(_typeOfUnit != "NIL") then {
       if (_typeOfUnit in _specialist) then {
         if (_unit == (leader (group _unit))) then {
           _unit linkItem _radio2;
+<<<<<<< HEAD
         } else {
           _unit linkItem _radio3;
         };
       };
 
 >>>>>>> parent of fe44e77... Removed Rifleman Radios
+=======
+        };
+      };
+
+>>>>>>> parent of 522b870... EXPERIMENTAL: Simplified Radios
       // Give out LR backpacks according to f\radios\tfr_settings.sqf.
       if(f_radios_settings_tfr_defaultLRBackpacks) then {
         if (_unit == (leader (group _unit))) then {
