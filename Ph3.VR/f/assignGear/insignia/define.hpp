@@ -1,18 +1,18 @@
-class INDFOR_Medic_Badge
+class AAF_Medic_Badge
 {
-	displayName = "INDFOR Medic";
+	displayName = "AAF Medic";
 	author = "F3 Framework";
-	texture = "f\assignGear\insignia\INDFOR_Medic.paa";
+	texture = "f\assignGear\insignia\AAF_Medic.paa";
 };
-class OPFOR_Medic_Badge
+class CSAT_Medic_Badge
 {
-	displayName = "OPFOR Medic";
+	displayName = "CSAT Medic";
 	author = "F3 Framework";
-	texture = "f\assignGear\insignia\OPFOR_Medic.paa";
+	texture = "f\assignGear\insignia\CSAT_Medic.paa";
 };
-class BLUFOR_Medic_Badge
+class NATO_Medic_Badge
 {
-	displayName = "BLUFOR Medic";
+	displayName = "NATO Medic";
 	author = "F3 Framework";
-	texture = "f\assignGear\insignia\BLUFOR_Medic.paa";
+	texture = "f\assignGear\insignia\NATO_Medic.paa";
 };

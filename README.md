@@ -43,6 +43,10 @@ When it opens, you will see three factions. One for BLUFOR, INDFOR, and OPFOR. P
 
 To choose your faction, open up your mission's folder, and go to the "f" folder, and then the "assignGear" folder. Delete the the assignGear of the base faction you're going to use.
 
+BLUFOR = f_assignGear_nato
+INDFOR = f_assignGear_aaf
+OPFOR = f_assignGear_csat
+
 Now, open up the "Custom Factions" folder. Inside are all the factions we have in the Phramework. Simply open the folder of the faction of your choice, and paste it back in the "assignGear" folder.
 
 http://i.imgur.com/3YSfDhY.jpg
@@ -89,7 +93,7 @@ author: Mission author.
 
 Editing Gear Loadouts:
 
-To change the gear loadouts of units, go to your mission folder, the f folder, and open the assignGear folder. Inside are the gear loadouts of different factions. In this case, we'll use f_assignGear_blufor.
+To change the gear loadouts of units, go to your mission folder, the f folder, and open the assignGear folder. Inside are the gear loadouts of different armies. In this case, we'll use f_assignGear_nato.
 
 Weapons:
 
