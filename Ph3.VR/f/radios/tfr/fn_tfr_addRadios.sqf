@@ -55,11 +55,6 @@ if(_typeOfUnit != "NIL") then {
         };
       };
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 522b870... EXPERIMENTAL: Simplified Radios
       // Special cases
       _specialist = ["vc", "pp", "eng", "engm", "div","uav"];
 
@@ -69,18 +64,11 @@ if(_typeOfUnit != "NIL") then {
       if (_typeOfUnit in _specialist) then {
         if (_unit == (leader (group _unit))) then {
           _unit linkItem _radio2;
-<<<<<<< HEAD
         } else {
           _unit linkItem _radio3;
         };
       };
 
->>>>>>> parent of fe44e77... Removed Rifleman Radios
-=======
-        };
-      };
-
->>>>>>> parent of 522b870... EXPERIMENTAL: Simplified Radios
       // Give out LR backpacks according to f\radios\tfr_settings.sqf.
       if(f_radios_settings_tfr_defaultLRBackpacks) then {
         if (_unit == (leader (group _unit))) then {
