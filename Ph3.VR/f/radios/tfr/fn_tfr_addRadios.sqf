@@ -4,7 +4,7 @@
 
 // DECLARE VARIABLES
 
-private["_unit", "_typeOfUnit", "_longRange","_radio1","_radio2", "_backpackItems"];
+private["_unit", "_typeOfUnit", "_longRange","_radio1","_radio2","_radio3", "_backpackItems"];
 
 _unit = player;
 
@@ -15,13 +15,16 @@ _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
 switch ((side player)) do { //longrange, shortrange
     case (west): {
       _radio1 = "tf_rt1523g_big";
-      _radio2 = TF_defaultWestPersonalRadio;};
+      _radio2 = TF_defaultWestPersonalRadio;
+      _radio3 = TF_defaultWestRiflemanRadio;};
     case (east): {
       _radio1 = TF_defaultEastBackpack;
-      _radio2 = TF_defaultEastPersonalRadio;};
+      _radio2 = TF_defaultEastPersonalRadio;
+      _radio3 = TF_defaultEastRiflemanRadio;};
     default {
       _radio1 = TF_defaultGuerBackpack;
-      _radio2 = TF_defaultGuerPersonalRadio;};
+      _radio2 = TF_defaultGuerPersonalRadio;
+      _radio3 = TF_defaultGuerRiflemanRadio;};
 };
 
 // ====================================================================================
@@ -39,12 +42,32 @@ if(_typeOfUnit != "NIL") then {
       _shortrange = ["pl","psgt","ftl","m","ar","aar","rat","samag","samg","mmgag","mmgg","matag","matg","hmgag","hmgg","hatag","hatg","sp","sn","mtrag","mtrg","r","car","smg","gren","vc","pp","eng","engm","div","uav"];
 
       // Give out respective radios
-	  
+
+      if (_typeOfUnit in _rifradio) then {
+        _unit linkItem _radio3;
+      } else {
         if (_typeOfUnit in _shortrange) then {
           _unit linkItem _radio2;
         };
       };
 
+<<<<<<< HEAD
+=======
+      // Special cases
+      _specialist = ["vc", "pp", "eng", "engm", "div","uav"];
+
+      // If unit is leader of group and in the above list, give SR. Else, give them
+      // a rifleman's radio.
+
+      if (_typeOfUnit in _specialist) then {
+        if (_unit == (leader (group _unit))) then {
+          _unit linkItem _radio2;
+        } else {
+          _unit linkItem _radio3;
+        };
+      };
+
+>>>>>>> parent of fe44e77... Removed Rifleman Radios
       // Give out LR backpacks according to f\radios\tfr_settings.sqf.
       if(f_radios_settings_tfr_defaultLRBackpacks) then {
         if (_unit == (leader (group _unit))) then {
