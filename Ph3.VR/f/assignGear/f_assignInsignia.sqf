@@ -28,10 +28,10 @@ _roleBadge = switch (_typeofUnit) do
 	{
 		switch (_faction) do
 		{	
-			case "blu_f": {"NATO_Medic_Badge"};
-			case "opf_f": {"CSAT_Medic_Badge"};
-			case "ind_f": {"AAF_Medic_Badge"};
-			default {"NATO_Medic_Badge"};			
+			case "blu_f": {"BLUFOR_Medic_Badge"};
+			case "opf_f": {"OPFOR_Medic_Badge"};
+			case "ind_f": {"INDFOR_Medic_Badge"};
+			default {"BLUFOR_Medic_Badge"};			
 		};
 	};
 	default {""};

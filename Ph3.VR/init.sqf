@@ -74,13 +74,13 @@ if(isServer) then {
 // [[GroupName or SIDE],100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 // [[GroupName or SIDE],100,{code}] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 
-// BLUFOR > NATO
+// BLUFOR
 // [BLUFOR,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 
-// OPFOR > CSAT
+// OPFOR
 // [OPFOR,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 
-// INDEPENDENT > AAF
+// INDEPENDENT
 // [INDEPENDENT,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
 
 // ====================================================================================
@@ -133,17 +133,6 @@ f_var_cachingAggressiveness = 2;
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 [] execVM "f\radios\radio_init.sqf";
-
-// ====================================================================================
-
-// F3 - Medical Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// SWS Config Settings
-// How many extra FirstAidKits (FAKS) each player should receive when using the F3 Simple Wounding System:
-f_wound_extraFAK = 2;
-
-[] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
 
