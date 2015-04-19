@@ -67,10 +67,6 @@ Execution:
 - Fire Support Plan: Orders for fire support units (air, armor, mortars, etc.).
 - Special Tasks: Orders for specific units.
 
-Signal: List of call-signs for the mission's vehicles.
-
-Intel: Pictures relevant to the mission. Pictures must be 300x300 in size. As a courtesy, remove this section if you have no use for it.
-
 Mission: Description of the overall mission.
 
 Situation: Summary of the current situation as of the missions start.
@@ -89,7 +85,7 @@ author: Mission author.
 
 Editing Gear Loadouts:
 
-To change the gear loadouts of units, go to your mission folder, the f folder, and open the assignGear folder. Inside are the gear loadouts of different factions. In this case, we'll use f_assignGear_blufor.
+To change the gear loadouts of units, go to your mission folder, the f folder, and open the assignGear folder. Inside are the gear loadouts of different factions. In this case, we'll use f_assignGear_nato.
 
 Weapons:
 
@@ -97,15 +93,11 @@ You can change what weapons a unit uses by simply changing the weapon and ammo c
 
 This rule applies to every item in the assignGear file.
 
-http://i.imgur.com/LH68ukJ.jpg
-
 Uniforms:
 
 Ph3 randomly selects a uniform, vest, and helmet from the pool items you put under the "Basic clothing" and "Armored vests" lines.
 
 Certain units have their own gear which you must specify in the lines below.
-
-http://i.imgur.com/c6QGyik.jpg
 
 ===============
 Credits
