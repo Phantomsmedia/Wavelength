@@ -14,8 +14,9 @@ _typeOfUnit = player getVariable "f_var_assignGear";
 
 // Add basic items to all units
 player addItem "AGM_EarBuds";
-{player addItem "AGM_Bandage"} forEach [1,2,3,4,5];
-player addItem "AGM_Morphine";
+{player addItem "AGM_Bandage"} forEach [1,2,3,4,5,6];
+{player addItem "AGM_Morphine"} forEach [1,2];
+player addItem "AGM_Epipen";
 
 if (_typeOfUnit == "m") then
 {

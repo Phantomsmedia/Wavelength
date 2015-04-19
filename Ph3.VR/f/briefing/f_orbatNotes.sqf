@@ -1,4 +1,5 @@
-//Pabst ORBAT
+// Pabst - ORBAT Notes
+// ====================================================================================
 
 waitUntil {scriptDone f_script_setGroupIDs};
 

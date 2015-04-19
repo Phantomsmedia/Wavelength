@@ -94,34 +94,34 @@ if (f_var_debugMode == 1) then
 
 // ====================================================================================
 
-// GEAR: BLUFOR
-// The following block of code executes only if the unit is in a BLUFOR slot; it
+// GEAR: BLUFOR > NATO
+// The following block of code executes only if the unit is in a NATO slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
 
 if (_faction == "blu_f") then {
-#include "f_assignGear_blufor.sqf"
+#include "f_assignGear_nato.sqf"
 };
 
 
 // ====================================================================================
 
-// GEAR: OPFOR
-// The following block of code executes only if the unit is in an OPFOR slot; it
+// GEAR: OPFOR > CSAT
+// The following block of code executes only if the unit is in a CSAT slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
 if (_faction == "opf_f") then {
-	#include "f_assignGear_opfor.sqf"
+	#include "f_assignGear_csat.sqf"
 };
 
 // ====================================================================================
 
-// GEAR: INDEPEDENT
-// The following block of code executes only if the unit is in an INDFOR slot; it
+// GEAR: INDEPEDENT > AAF
+// The following block of code executes only if the unit is in a AAF slot; it
 // automatically includes a file which contains the appropriate equipment data.
 
 if(_faction == "ind_f") then {
-	#include "f_assignGear_indfor.sqf";
+	#include "f_assignGear_aaf.sqf";
 };
 
 // ====================================================================================

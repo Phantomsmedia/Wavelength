@@ -1,12 +1,5 @@
 // ====================================================================================
 
-// F3 - Disable Saving and Auto Saving
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-enableSaving [false, false];
-
-// ====================================================================================
-
 // F3 - Mute Orders and Reports
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -58,33 +51,6 @@ if(isServer) then {
 
 // ====================================================================================
 
-// F3 - Automatic Body Removal
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// f_var_removeBodyDelay = 180;
-// f_var_removeBodyDistance = 500;
-// f_var_doNotRemoveBodies = [];
-// [] execVM "f\removeBody\f_addRemoveBodyEH.sqf";
-
-// ====================================================================================
-
-// F3 - Casualties Cap
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-// [[GroupName or SIDE],100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
-// [[GroupName or SIDE],100,{code}] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
-
-// BLUFOR
-// [BLUFOR,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
-
-// OPFOR
-// [OPFOR,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
-
-// INDEPENDENT
-// [INDEPENDENT,100,1] execVM "f\casualtiesCap\f_CasualtiesCapCheck.sqf";
-
-// ====================================================================================
-
 // F3 - AI Skill Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -101,18 +67,9 @@ if(isServer) then {
 // ====================================================================================
 
 // F3 - ORBAT Notes
-// Credits: PabstMirror
-
-[] execVM "f\briefing\f_orbatNotes.sqf";
-
-// ====================================================================================
-
-// F3 - JIP setup
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-f_var_JIP_FirstMenu = false;		// Do players connecting for the first time get the JIP menu? - This only works in missions with respawn.
-f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
-f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
+[] execVM "f\briefing\f_orbatNotes.sqf";
 
 // ====================================================================================
 
@@ -136,10 +93,10 @@ f_var_cachingAggressiveness = 2;
 
 // ====================================================================================
 
-// F3 - Thermal On Statics Forced Off
-// Credits: F3 Wiki 
+// F3 - Medical Systems Support
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-player addEventHandler ["WeaponAssembled",{(_this select 1) disableTIEquipment true}];
+[] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
 
@@ -149,9 +106,9 @@ player addEventHandler ["WeaponAssembled",{(_this select 1) disableTIEquipment t
 
 // ====================================================================================
 
-// BWMF - DAC Debug Params
+// BWMF - Mission Timer/Safe Start
 
-[] execVM "DAC\bwmf_dacParams.sqf";
+if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // ====================================================================================
 
@@ -167,11 +124,5 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 	case (1): {(!isServer) && {player == HC_SLOT_1}};	//param == "auto"
 	};
 };
-
-// ====================================================================================
-
-// BWMF - Mission Timer/Safe Start
-
-if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // ====================================================================================

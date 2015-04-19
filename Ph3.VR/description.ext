@@ -7,7 +7,7 @@ class Header
 {
 	gameType = Coop;
 	minPlayers = 1;
-	maxPlayers = 457;
+	maxPlayers = 100;
 };
 
 // ============================================================================================
@@ -15,9 +15,9 @@ class Header
 // F3 - Loading Screen
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-onLoadName = "*** Insert mission name here ***";
+onLoadName = "*** Insert mission name here. ***";
 onLoadMission = "Made with the Phramework";
-author = "*** Insert mission author name here ***";
+author = "*** Insert mission author name here. ***";
 loadScreen = "loadLogo.jpg";
 
 // ============================================================================================
@@ -35,7 +35,7 @@ enableDebugConsole = 1;
 respawn = 1;
 respawndelay = 3;
 respawnOnStart = 0;
-respawnTemplates[] = {"f_spectator","f_JIP"};
+respawnTemplates[] = {"Seagull","f_spectator"};
 
 // ============================================================================================
 
@@ -65,33 +65,6 @@ class cfgNotifications
 		iconPicture="\A3\ui_f\data\map\markers\military\warning_ca.paa";
 		duration = 3;
 		priority = 9;
-	};
-
-	// Notification for the F3 Authorised Crew Component
-	class UnauthorisedCrew {
-		title= "NON-AUTHORISED CREW!";
-		description= "%1";
-		iconPicture = "\A3\ui_f\data\map\markers\military\warning_ca.paa";
-		duration = 3;
-		priority = 5;
-	};
-
-	// Notification for the F3 Mapclick Teleport component
-	class MapClickTeleport {
-		title= "NOTE";
-		description= "%1";
-		iconPicture = "\A3\ui_f\data\map\markers\military\start_ca.paa";
-		duration = 3;
-		priority = 5;
-	};
-
-	// Notification for the F3 JIP Component
-	class JIP {
-		title= "REINFORCEMENTS";
-		description= "%1";
-		iconPicture = "\A3\ui_f\data\map\markers\military\flag_ca.paa";
-		duration = 3;
-		priority = 5;
 	};
 };
 
@@ -154,9 +127,9 @@ class Params
     class f_param_medical
     {
             title = "Medical System";
-            values[] = {0,1,2};
-            texts[] = {"Arma 3 Default","F3 Simple Wounding System","Authentic Gameplay Mod"};
-            default = 2;
+            values[] = {0,1};
+            texts[] = {"Arma 3 Default","Authentic Gameplay Mod"};
+            default = 1;
             code = "f_var_medical = %1";
     };
 
@@ -203,24 +176,6 @@ class Params
 		values[] = {0,600,800,1000,1500,2000};
 		default = 0;
 		code = "f_param_caching = %1";
-	};
-	
-	class f_param_dacdebug
-	{
-		title = "DAC Debug";
-		values[] = {0,1};
-		texts[] = {"Off","On"};
-		default = 0;
-		code = "f_param_dacdebug = %1";
-	};
-
-	class ws_param_hc
-	{
-		title = "Headless client";
-		values[] = {0,1};
-		texts[] = {"Off","Auto-Detect"};
-		default = 1;
-		code = "ws_param_hc = %1";
 	};
 
 // ============================================================================================
@@ -311,22 +266,17 @@ class CfgRespawnTemplates
 	{
 		onPlayerRespawn = "f_fnc_CamInit";
 	};
-	
-	// F3 JIP Menu
-	class f_JIP
-	{
-		onPlayerRespawn = "f\JIP\f_JIP_playerRespawn.sqf";
-	};
+  	//Overwrite Vanilla Seagull
+    class Seagull
+    {
+        onPlayerRespawn = "";
+    };
 };
 
 // ============================================================================================
 
 // F3 - Menu components
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
-
-// Menu components for the JIP Menu
-#include "f\JIP\f_JIP_kitpicker.h"
-#include "f\JIP\f_JIP_grppicker.h"
 
 // Menu components for the Spectator Script
 #include "f\spect\config.hpp"
@@ -338,8 +288,6 @@ class CfgRespawnTemplates
 
 class CfgFunctions
 {
-#include "ws_fnc\config.hpp"
-	#include "taw_vd\CfgFunctions.hpp"
 	class F // Defines the "owner"
 	{
 		class common // category
@@ -371,6 +319,13 @@ class CfgFunctions
 			file = "f\setGroupID";
 			class setGroupID{};
 		};
+		class missionConditions
+		{
+			file = "f\missionConditions";
+			class SetTime{};
+			class SetFog{};
+			class SetWeather{};
+		};
 		class cache
 		{
 			file = "f\cache";
@@ -391,11 +346,6 @@ class CfgFunctions
 			class GetMarkerColor{};
 			class LocalFTMarkerSync{};
 		};
-		class bodyRemoval
-		{
-			file = "f\removeBody";
-			class removeBody{};
-		};
 		class setAISkill
 		{
 			file = "f\setAISKill";
@@ -408,6 +358,14 @@ class CfgFunctions
 			class zeusAddAddons{};
 			class zeusAddObjects{};
 		};
+		class acre
+		{
+			file = "f\radios\acre";
+			class acre_removeRadios{};
+			class acre_addRadios{};
+			class acre_setRadioFrequencies{};
+			class acre_configureSpectatorChat{};
+		};
 		class tfr
 		{
 			file = "f\radios\tfr";
@@ -419,6 +377,15 @@ class CfgFunctions
 		#include "f\spect\functions.hpp"
 
 	};
+};
+
+
+// ============================================================================================
+
+// F3 - Custom Insignia
+
+class CfgUnitInsignia {
+	#include "f\assignGear\insignia\define.hpp"
 };
 
 // ============================================================================================
@@ -435,13 +402,5 @@ class CfgFunctions
 // MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. 
 
 forceRotorLibSimulation = 2;
-
-// ============================================================================================
-
-// F3 - Custom Insignia
-
-class CfgUnitInsignia {
-	#include "f\assignGear\insignia\define.hpp"
-};
 
 // ============================================================================================

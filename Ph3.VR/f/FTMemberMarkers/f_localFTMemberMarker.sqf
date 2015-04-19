@@ -23,7 +23,7 @@ _mkrborderName = Format ["mkrB_%1",_unit];
 _pos = getposATL _unit;
 _mkrBorder = createMarkerLocal [_mkrborderName,_pos];
 _mkrBorder setMarkerShapeLocal "ICON";
-_mkrBorder setMarkerTypeLocal "MIL_DOT";
+_mkrBorder setMarkerTypeLocal "MIL_TRIANGLE";
 _mkrBorder setMarkerColorLocal "ColorBlack";
 _mkrBorder setMarkerSizeLocal [0.60, 0.60];
 _mkrBorder setMarkerDirLocal (direction _unit);
@@ -31,7 +31,7 @@ _mkrBorder setMarkerDirLocal (direction _unit);
 // This marker is the real marker
 _mkr = createMarkerLocal [_mkrName,_pos];
 _mkr setMarkerShapeLocal "ICON";
-_mkr setMarkerTypeLocal "MIL_DOT";
+_mkr setMarkerTypeLocal "MIL_TRIANGLE";
 _mkr setMarkerColorLocal (_unit getvariable ["assignedTeam","ColorWhite"]);
 _mkr setMarkerSizeLocal [0.45, 0.45];
 _mkr setMarkerDirLocal (direction _unit);

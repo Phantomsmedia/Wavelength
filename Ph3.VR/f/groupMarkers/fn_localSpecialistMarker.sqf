@@ -56,16 +56,6 @@ if (!alive _unt) exitWith {};
 switch (_mkrType) do
 {
 
-// Platoon Sergeant
-	case 0:
-	{
-		_mkr = createMarkerLocal [_mkrName,[(getPos _unt select 0),(getPos _unt select 1)]];
-		_mkr setMarkerShapeLocal "ICON";
-		_mkrName setMarkerTypeLocal "b_hq";
-		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.6, 0.6];
-		_mkrName setMarkerTextLocal _mkrText;
-	};
 // Medics
 	case 0:
 	{
@@ -73,7 +63,7 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal "b_med";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.4, 0.4];
+		_mkrName setMarkerSizeLocal [0.5, 0.5];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
 // UAV Operator
@@ -83,9 +73,10 @@ switch (_mkrType) do
 		_mkr setMarkerShapeLocal "ICON";
 		_mkrName setMarkerTypeLocal "b_uav";
 		_mkrName setMarkerColorLocal _mkrColor;
-		_mkrName setMarkerSizeLocal [0.4, 0.4];
+		_mkrName setMarkerSizeLocal [0.5, 0.5];
 		_mkrName setMarkerTextLocal _mkrText;
 	};
+
 };
 
 // ====================================================================================

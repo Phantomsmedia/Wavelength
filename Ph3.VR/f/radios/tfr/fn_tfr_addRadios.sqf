@@ -4,7 +4,7 @@
 
 // DECLARE VARIABLES
 
-private["_unit", "_typeOfUnit", "_longRange","_radio1","_radio2", "_backpackItems"];
+private["_unit", "_typeOfUnit", "_longRange","_radio1","_radio2","_radio3", "_backpackItems"];
 
 _unit = player;
 
@@ -14,14 +14,17 @@ _typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
 
 switch ((side player)) do { //longrange, shortrange, rifradio
     case (west): {
-      _radio1 = "tf_rt1523g_big";
-      _radio2 = TF_defaultWestPersonalRadio;};
+      _radio1 = TF_defaultWestBackpack;
+      _radio2 = TF_defaultWestPersonalRadio;
+      _radio3 = TF_defaultWestRiflemanRadio;};
     case (east): {
       _radio1 = TF_defaultEastBackpack;
-      _radio2 = TF_defaultEastPersonalRadio;};
+      _radio2 = TF_defaultEastPersonalRadio;
+      _radio3 = TF_defaultEastRiflemanRadio;};
     default {
       _radio1 = TF_defaultGuerBackpack;
-      _radio2 = TF_defaultGuerPersonalRadio;};
+      _radio2 = TF_defaultGuerPersonalRadio;
+      _radio3 = TF_defaultGuerRiflemanRadio;};
 };
 
 // ====================================================================================
@@ -40,10 +43,13 @@ if(_typeOfUnit != "NIL") then {
       _rifradio = ["ar","aar","rat","samag","mmgag","hmgag","matag","hatag","mtrag","sp","r","car","smg","gren"];
 
       // Set the list of units that get a shortrange radio
-      _shortrange = ["pl", "psgt", "ftl", "m", "samg", "mmgg", "matg", "sn", "mtrg"];
+      _shortrange = ["co", "sl", "ftl", "m", "samg", "mmgg", "matg", "sn", "mtrg"];
 
       // Give out respective radios
-	  
+
+      if (_typeOfUnit in _rifradio) then {
+        _unit linkItem _radio3;
+      } else {
         if (_typeOfUnit in _shortrange) then {
           _unit linkItem _radio2;
         };
@@ -58,6 +64,8 @@ if(_typeOfUnit != "NIL") then {
       if (_typeOfUnit in _specialist) then {
         if (_unit == (leader (group _unit))) then {
           _unit linkItem _radio2;
+        } else {
+          _unit linkItem _radio3;
         };
       };
 
