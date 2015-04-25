@@ -200,7 +200,7 @@ _ghillie = ["sn","sp"];
 // The outfit-piece is randomly selected from the array for each unit
 
 _baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest","U_B_CombatUniform_mcam_tshirt"];
-_baseHelmet = ["H_HelmetB"];
+_baseHelmet = ["H_HelmetB","H_HelmetSpecB"];
 _baseGlasses = [];
 
 // Armored vests
