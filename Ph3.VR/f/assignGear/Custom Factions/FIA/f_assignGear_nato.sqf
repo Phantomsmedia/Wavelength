@@ -370,10 +370,6 @@ switch (_typeofUnit) do
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
-		{_unit addItem _morphine} foreach [1,2];
-		_unit addItem _epipen;
-		_unit addItem _earplugs;
 		["m"] call _backpack;
 		_attachments = [_attach1];
 	};
