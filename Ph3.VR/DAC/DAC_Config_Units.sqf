@@ -61,6 +61,33 @@ switch (_TypNumber) do
     _Unit_Pool_A = [];
   };
 //-------------------------------------------------------------------------------------------------
+// Russian MSV (RHS: Russian Armed Forces)
+  case 5:
+  {
+    _Unit_Pool_S = ["rhs_msv_crew","rhs_pilot_combat_heli","rhs_msv_officer","rhs_msv_machinegunner","rhs_msv_machinegunner","rhs_msv_grenadier","rhs_msv_grenadier","rhs_msv_medic","rhs_msv_rifleman","rhs_msv_rifleman","rhs_msv_LAT","rhs_msv_LAT","rhs_msv_sergeant","rhs_msv_sergeant"];
+    _Unit_Pool_V = ["rhs_tigr_msv","RHS_Ural_msv_01","RHS_Ural_Open_msv_01"];
+    _Unit_Pool_T = ["rhs_btr80_msv"];
+	_Unit_Pool_A = ["RHS_Mi24P_vvsc","RHS_Mi8mt_vvsc","RHS_Mi8AMTSh_vvsc"];
+  };
+//-------------------------------------------------------------------------------------------------
+// US Army Woodland (RHS: United States Armed Forces)
+  case 6:
+  {
+    _Unit_Pool_S = ["rhsusf_army_ocp_crewman","rhsusf_army_ocp_helipilot","rhsusf_army_ocp_squadleader","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_autorifleman","rhsusf_army_ocp_medic","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_grenadier","rhsusf_army_ocp_rifleman","rhsusf_army_ocp_medic","rhsusf_army_ocp_engineer","rhsusf_army_ocp_rifleman","rhsusf_army_ocp_rifleman","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_riflemanat","rhsusf_army_ocp_riflemanl","rhsusf_army_ocp_teamleader","rhsusf_army_ocp_teamleader"];
+    _Unit_Pool_V = ["rhsusf_m998_w_2dr_fulltop","rhsusf_m998_w_2dr_halftop","rhsusf_m998_w_2dr"];
+    _Unit_Pool_T = ["rhsusf_m113_usarmy","RHS_M2A2_wd","RHS_M2A2_BUSKI_WD","RHS_M2A3_BUSKIII_wd","rhsusf_m1a2sep1tuskiwd_usarmy","rhsusf_m109_usarmy"];
+    _Unit_Pool_A = ["RHS_UH60M","RHS_UH60M_MEV","RHS_AH64D_wd"];
+  };
+//-------------------------------------------------------------------------------------------------
+// Russian VDV (RHS: Russian Armed Forces)
+  case 7:
+  {
+    _Unit_Pool_S = ["rhs_vdv_crew","rhs_pilot","rhs_vdv_sergeant","rhs_vdv_machinegunner","rhs_vdv_machinegunner","rhs_vdv_medic","rhs_vdv_grenadier","rhs_vdv_grenadier","rhs_vdv_rifleman","rhs_vdv_medic","rhs_vdv_engineer","rhs_vdv_rifleman","rhs_vdv_rifleman","rhs_vdv_LAT","rhs_vdv_LAT","rhs_vdv_rifleman","rhs_vdv_junior_sergeant","rhs_vdv_junior_sergeant"];
+    _Unit_Pool_V = ["rhs_gaz66_vdv","RHS_Ural_VDV_01","RHS_Ural_Open_VDV_01"];
+    _Unit_Pool_T = ["rhs_bmd2","rhs_bmp1d_vdv","rhs_btr70_vdv","rhs_btr60_vdv","rhs_btr80_vdv","rhs_bmp2d_vdv"];
+    _Unit_Pool_A = ["RHS_Mi8AMT_vdv","RHS_Mi8MTV3_vdv","RHS_Mi24V_vdv"];
+  }; 
+//-------------------------------------------------------------------------------------------------
 
   Default
   {
