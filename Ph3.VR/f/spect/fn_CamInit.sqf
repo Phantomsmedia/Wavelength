@@ -38,8 +38,8 @@ if(isNil "f_cam_VirtualCreated") then
   _newGrp = createGroup sideLogic;
   _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
   _newUnit allowDamage false;
-  _newUnit hideObject true;
-  _newUnit enableSimulation false;
+  _newUnit hideObjectGlobal true;
+  _newUnit enableSimulationGlobal false;
   _newUnit setpos [0,0,5];
   selectPlayer _newUnit;
   waituntil{player == _newUnit};
@@ -66,26 +66,8 @@ switch (f_var_radios) do {
   };
 
 };
-
 // ====================================================================================
 
-
-// enable all factions but your owns groupMarkers. // DISABLED.
-/*
-_oldUnit spawn {
-  _factions = [];
-  {
-    if(!(faction (leader _x) in _factions)) then
-    {
-      _factions = _factions + [faction (leader _x)];
-    };
-  } foreach allGroups;
-  _factions = _factions - [faction _this];
-  {
-      [toLower _x] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
-  } foreach _factions;
-};*/
-// ====================================================================================
 _listBox = 2100;
 lbClear _listBox;
 // set inital values.
@@ -127,10 +109,22 @@ f_cam_ctrl_down = false;
 f_cam_shift_down = false;
 f_cam_freecam_buttons = [false,false,false,false,false,false];
 f_cam_forcedExit = false;
-// 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
-f_cam_sideButton = 0;
-f_cam_sideNames = ["All Sides","Blufor","Opfor","Indfor","Civ"];
+f_freecam_x_speed = 0;
+f_freecam_y_speed = 0;
+f_freecam_z_speed = 0;
 
+
+f_cam_timestamp = time;
+f_cam_muteSpectators = true;
+
+// ====================================================================================
+// Menu (Top left)
+f_cam_menuControls = [2111,2112,2113,2114,2101,4302];
+f_cam_menuShownTime = 0;
+f_cam_menuShown = true;
+f_cam_menuWorking = false;
+f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
+f_cam_sideNames = ["All Sides","Blufor","Opfor","Indfor","Civ"];
 // ====================================================================================
 // Colors
 
@@ -140,6 +134,14 @@ f_cam_indep_color = [independent] call bis_fnc_sideColor;
 f_cam_civ_color = [civilian] call bis_fnc_sideColor;
 f_cam_empty_color = [sideUnknown] call bis_fnc_sideColor;
 
+// ================================
+// Camera
+f_cam_angle = 360;
+f_cam_zoom = 3;
+f_cam_height = 3;
+f_cam_fovZoom = 1.2;
+f_cam_scrollHeight = 0;
+f_cam_cameraMode = 0; // set camera mode (default)
 // ====================================================================================
 
 f_cam_listUnits = [];
@@ -178,8 +180,7 @@ f_cam_GetCurrentCam = {
   };
   _camera
 };
-// set camera mode (default)
-f_cam_cameraMode = 0;
+
 
 // =============================================================================
 
@@ -207,6 +208,13 @@ f_cam_camera camCommit 0;
 f_cam_fakecamera camCommit 0;
 f_cam_camera cameraEffect ["internal","back"];
 f_cam_camera camSetTarget f_cam_fakecamera;
+f_cam_camera camSetFov 1.2;
+f_cam_freecamera camSetFov 1.2;
+f_cam_zeusKey = 21;
+if( count (actionKeys "curatorInterface") > 0 ) then
+{
+    f_cam_zeusKey = (actionKeys "curatorInterface") select 0;
+};
 f_cam_MouseMoving = false;
 cameraEffectEnableHUD true;
 showCinemaBorder false;
@@ -220,8 +228,8 @@ f_cam_fired = [];
 // spawn sub scripts
 call f_fnc_ReloadModes;
 lbSetCurSel [2101,0];
-f_cam_freeCam_script = [] spawn F_fnc_FreeCam;
+//f_cam_freeCam_script = [] spawn F_fnc_FreeCam;
 f_cam_updatevalues_script = [] spawn F_fnc_UpdateValues;
  ["f_spect_tags", "onEachFrame", {_this call F_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
-
+ ["f_spect_cams", "onEachFrame", {_this call F_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;
 };

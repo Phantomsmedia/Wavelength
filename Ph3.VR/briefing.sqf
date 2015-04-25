@@ -120,6 +120,23 @@ if (_unitfaction == "civ_f") exitwith {
 
 // ====================================================================================
 
+// BRIEFING: ZEUS
+// The following block of code executes only if the player is in a ZEUS (Gamelogic) slot; it automatically includes a file which contains the appropriate briefing data.
+
+if (_unitfaction == "") exitwith {
+
+#include "f\briefing\f_briefing_zeus.sqf"
+
+// DEBUG
+	if (f_var_debugMode == 1) then
+	{
+	player sideChat format ["DEBUG (briefing.sqf): Briefing for %1 slot selected.",_unitfaction];
+	};
+};
+
+
+// ====================================================================================
+
 // ERROR CHECKING
 // If the faction of the unit cannot be defined, the script exits with an error.
 

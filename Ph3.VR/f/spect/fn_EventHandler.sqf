@@ -70,7 +70,15 @@ case "MouseZChanged":
 {
     if(!f_cam_ctrl_down) then
     {
-        f_cam_zoom = (f_cam_zoom - ((_args select 1)*f_cam_zoom/5)) max 0.1;
+        switch (f_cam_mode) do {
+            case 0: {
+                f_cam_zoom = ((f_cam_zoom - ((_args select 1)*f_cam_zoom/5)) max 0.1) min 650;
+            };
+            case 3: {
+                f_cam_scrollHeight = (_args select 1);
+            };
+        };
+
     }
     else
     {
@@ -184,11 +192,6 @@ case "KeyDown":
 {
     _key = _args select 1;
     _handled = false;
-    _zeusKey = -1;
-    if( count (actionKeys "curatorInterface") > 0 ) then
-    {
-        _zeusKey = (actionKeys "curatorInterface") select 0;
-    };
     if(!isNull (findDisplay 49)) exitWith {if(_key == 1) then {true}};
     switch (_key) do
     {
@@ -197,7 +200,11 @@ case "KeyDown":
             f_cam_zoom = f_cam_zoom - 1;
             _handled = true;
         };
-        case _zeusKey:
+        case 1:
+        {
+            _handled = false;
+        };
+        case f_cam_zeusKey:
         {
             if(serverCommandAvailable "#kick" || !isNull (getAssignedCuratorLogic player) ) then
             {
@@ -339,6 +346,24 @@ case "KeyDown":
             [] spawn f_fnc_HandleCamera;
              _handled = true;
         };
+        case 25:
+		{
+            f_cam_muteSpectators = !f_cam_muteSpectators;
+            switch (f_var_radios) do {
+              // ACRE
+              case 1: {
+                [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
+              };
+              // TFR
+              case 2: {
+                [player, f_cam_muteSpectators] call TFAR_fnc_forceSpectator;
+              };
+              case 3: {
+                [f_cam_muteSpectators] call acre_api_fnc_setSpectator;
+              };
+
+            };
+        };
         case 29: // CTRL
         {
             f_cam_ctrl_down = true;
@@ -403,6 +428,10 @@ case "KeyUp":
         {
             f_cam_shift_down = false;
             _handled = true;
+        };
+        case 1:
+        {
+            _handled = false;
         };
         case 29:
         {
