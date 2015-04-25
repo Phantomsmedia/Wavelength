@@ -9,18 +9,22 @@ case "m":
 	if (_loadout <= 1) then {
 		_unit addBackpack _bagsmall;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal [_medkit,1];
-		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 4];
-		(unitBackpack _unit) addItemCargoGlobal [_firstaid, 4];
+		(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",15];
+		(unitBackpack player) addItemCargoGlobal ["AGM_Morphine",10];
+		(unitBackpack player) addItemCargoGlobal ["AGM_Epipen",10];
+		(unitBackpack player) addItemCargoGlobal ["AGM_Bloodbag",2];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade,4];
 	};
 
 	// LOADOUT: HEAVY
 	if (_loadout == 2) then {
 		_unit addBackpack _bagmedium;
 		clearMagazineCargoGlobal (unitBackpack _unit);
-		(unitBackpack _unit) addItemCargoGlobal [_medkit,1];
-		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade, 6];
-		(unitBackpack _unit) addItemCargoGlobal [_firstaid, 12];
+		(unitBackpack player) addItemCargoGlobal ["AGM_Bandage",25];
+		(unitBackpack player) addItemCargoGlobal ["AGM_Morphine",15];
+		(unitBackpack player) addItemCargoGlobal ["AGM_Epipen",15];
+		(unitBackpack player) addItemCargoGlobal ["AGM_Bloodbag",4];
+		(unitBackpack _unit) addMagazineCargoGlobal [_smokegrenade,6];
 	};
 };
 
