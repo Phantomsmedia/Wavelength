@@ -56,7 +56,7 @@ _attach2 = "acc_flashlight";	// Flashlight
 
 _bipod1 = "";					// Light Machine Gun
 _bipod2 = "bipod_02_F_blk";		// Medium Machine Gun
-_bipod3 = "bipod_02_F_hex";		// Sniper Rifle
+_bipod3 = "bipod_02_F_blk";		// Sniper Rifle
 
 _silencer1 = "muzzle_snds_H";	// Primary Suppressor
 
