@@ -729,6 +729,7 @@ switch (_typeofUnit) do
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		_attachments = [];
 	};
 
 // LOADOUT: AIR VEHICLE PILOTS
