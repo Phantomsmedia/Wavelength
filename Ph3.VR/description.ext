@@ -332,6 +332,6 @@ class CfgUnitInsignia {
 //  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off) 
 // MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. 
 
-forceRotorLibSimulation = 2;
+forceRotorLibSimulation = 0;
 
 // ============================================================================================
