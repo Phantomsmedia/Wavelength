@@ -132,8 +132,8 @@ _bagsmall = "rhs_sidor";					// small backpack
 _bagmedium = "rhs_assault_umbts";			// medium backpack
 _baglarge =  "B_Carryall_oli"; 				// heavy backpack
 _baguav = "O_UAV_01_backpack_F";			// used by UAV operator
-_baghmgg = "O_HMG_01_weapon_F";				// used by Heavy MG gunner
-_baghmgag = "O_HMG_01_support_F";			// used by Heavy MG assistant gunner
+_baghmgg = "RHS_NSV_Gun_Bag";				// used by Heavy MG gunner
+_baghmgag = "RHS_NSV_Tripod_Bag";			// used by Heavy MG assistant gunner
 _bagmtrg = "O_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "O_Mortar_01_support_F";		// used by Mortar assistant gunner
 
