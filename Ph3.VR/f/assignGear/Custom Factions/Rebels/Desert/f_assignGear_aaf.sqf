@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - AAF
+// F3 - Folk ARPS Assign Gear Script - Rebels (Desert)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -51,18 +51,19 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "acc_pointer_IR";	// IR Laser
-_attach2 = "acc_flashlight";	// Flashlight
+_attach1 = "";					// IR Laser
+_attach2 = "";					// Flashlight
 
-_bipod1 = "bipod_03_F_blk";		// Light Machine Gun
-_bipod2 = "bipod_03_F_blk";		// Medium Machine Gun
-_bipod3 = "bipod_03_F_blk";		// Sniper Rifle
+_bipod1 = "";					// Light Machine Gun
+_bipod2 = "";					// Medium Machine Gun
+_bipod3 = "";					// Sniper Rifle
 
-_silencer1 = "muzzle_snds_M";	// Primary Suppressor
+_silencer1 = "rhs_acc_pbs1";	// Primary Suppressor
 
-_scope1 = "optic_ACO_grn";		// Short Range
-_scope2 = "optic_MRCO";			// Medium Range
-_scope3 = "optic_KHS_blk";		// Long Range
+_scope1 = "";					// Short Range
+_scope2 = "";					// Medium Range
+_scope3 = "rhs_acc_pso1m2";		// Long Range
+_scope4 = "rhs_acc_pgo7v"		// Launcher Scope
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -77,14 +78,14 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "arifle_Mk20_F";
-_riflemag = "30Rnd_556x45_Stanag";
-_riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_rifle = "rhs_weap_akm";
+_riflemag = "rhs_30Rnd_762x39mm";
+_riflemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_Mk20C_F";
-_carbinemag = "30Rnd_556x45_Stanag";
-_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_carbine = "rhs_weap_akms";
+_carbinemag = "rhs_30Rnd_762x39mm";
+_carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "hgun_PDW2000_F";
@@ -92,27 +93,27 @@ _smgmag = "30Rnd_9x21_Mag";
 _smgmag_tr = "30Rnd_9x21_Mag";
 
 // Rifle with GL and HE grenades (CO, SL, FTLs)
-_glrifle = "arifle_Mk20_GL_F";
-_glriflemag = "30Rnd_556x45_Stanag";
-_glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
-_glmag = "1Rnd_HE_Grenade_shell";
+_glrifle = "rhs_weap_akm_gp25";
+_glriflemag = "rhs_30Rnd_762x39mm";
+_glriflemag_tr = "rhs_30Rnd_762x39mm_tracer";
+_glmag = "rhs_VOG25";
 
 // Smoke for FTLs, Squad Leaders, etc
-_glsmokewhite = "1Rnd_Smoke_Grenade_shell";
-_glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
-_glsmokered = "1Rnd_SmokeRed_Grenade_shell";
+_glsmokewhite = "rhs_GRD40_White";
+_glsmokegreen = "rhs_GRD40_Green";
+_glsmokered = "rhs_GRD40_Red";
 
 // Flares for FTLs, Squad Leaders, etc
-_glflare = "UGL_FlareWhite_F";
+_glflare = "rhs_VG40OP_white";
 
 // Pistols (CO, SL, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_ACPC2_F";
-_pistolmag = "9Rnd_45ACP_Mag";
+_pistol = "rhsusf_weap_m1911a1";
+_pistolmag = "rhsusf_mag_7x45acp_MHP";
 
 // Grenades
-_grenade = "HandGrenade";
-_smokegrenade = "SmokeShell";
-_smokegrenadegreen = "SmokeShellGreen";
+_grenade = "rhs_mag_rgd5";
+_smokegrenade = "rhs_mag_rdg2_white";
+_smokegrenadegreen = "rhs_mag_rdg2_black";
 
 // Night Vision Goggles (NVGoggles)
 _nvg = "NVGoggles_INDEP";
@@ -127,12 +128,12 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_dgtl";			// small backpack
-_bagmedium = "B_TacticalPack_oli";			// medium backpack
-_baglarge =  "B_Carryall_oli"; 				// heavy backpack
+_bagsmall = "CUP_B_CivPack_WDL";			// small backpack
+_bagmedium = "CUP_B_CivPack_WDL";			// medium backpack
+_baglarge =  "CUP_B_ACRPara_m95"; 			// heavy backpack
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
-_baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
-_baghmgag = "I_HMG_01_support_F";			// used by Heavy MG assistant gunner
+_baghmgg = "RHS_NSV_Gun_Bag";				// used by Heavy MG gunner
+_baghmgag = "RHS_NSV_Tripod_Bag";			// used by Heavy MG assistant gunner
 _bagmtrg = "I_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "I_Mortar_01_support_F";		// used by Mortar assistant gunner
 
@@ -152,41 +153,41 @@ _clacker = "AGM_Clacker";                   // for engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "LMG_Mk200_F";
-_ARmag = "200Rnd_65x39_cased_Box";
-_ARmag_tr = "200Rnd_65x39_cased_Box_Tracer";
+_AR = "CUP_arifle_RPK74";
+_ARmag = "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
+_ARmag_tr = "CUP_75Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M";
 
 // Medium MG
-_MMG = "MMG_01_tan_F";
-_MMGmag = "150Rnd_93x64_Mag";
-_MMGmag_tr = "150Rnd_93x64_Mag";
+_MMG = "rhs_weap_pkm";
+_MMGmag = "rhs_100Rnd_762x54mmR";
+_MMGmag_tr = "rhs_100Rnd_762x54mmR_green";
 
 // Rifleman AT
-_RAT = "launch_NLAW_F";
-_RATmag = "AGM_PreloadedMissileDummy";
+_RAT = "rhs_weap_rpg26";
+_RATmag = "rhs_rpg26_mag";
 
 // Medium AT
-_MAT = "launch_RPG32_F";
-_MATmag1 = "RPG32_F";
-_MATmag2 = "RPG32_F";
+_MAT = "rhs_weap_rpg7";
+_MATmag1 = "rhs_rpg7_PG7VL_mag";
+_MATmag2 = "rhs_rpg7_PG7VL_mag";
 
 // Heavy AT
-_HAT = "launch_I_Titan_short_F";
-_HATmag1 = "Titan_AT";
-_HATmag2 = "Titan_AT";
+_HAT = "CUP_launch_Metis";
+_HATmag1 = "CUP_AT13_M";
+_HATmag2 = "CUP_AT13_M";
 
 // Surface Air
-_SAM = "launch_I_Titan_F";
-_SAMmag = "Titan_AA";
+_SAM = "rhs_weap_igla";
+_SAMmag = "rhs_mag_9k38_rocket";
 
 // Sniper
-_SNrifle = "srifle_DMR_06_olive_F";
-_SNrifleMag = "20Rnd_762x51_Mag";
+_SNrifle = "rhs_weap_svdp_wd";
+_SNrifleMag = "rhs_10Rnd_762x54mmR_7N1";
 
 // Engineer items
-_ATmine = "ATMine_Range_Mag";
-_satchel = "DemoCharge_Remote_Mag";
-_APmine = "ClaymoreDirectionalMine_Remote_Mag";
+_ATmine = "rhs_mine_tm62m_mag";
+_satchel = "IEDUrbanSmall_Remote_Mag";
+_APmine = "rhs_mine_pmn2_mag";
 
 // ====================================================================================
 
@@ -204,31 +205,31 @@ _ghillie = ["sn","sp"];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["U_I_CombatUniform","U_I_CombatUniform_shortsleeve"];
-_baseHelmet = ["H_HelmetIA"];
+_baseUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
+_baseHelmet = ["H_Booniehat_tan","MNP_Boonie_Jigsaw","MNP_Boonie_DDPM","H_Booniehat_khk","H_ShemagOpen_khk","H_ShemagOpen_tan"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["V_TacVest_oli"];
-_mediumRig = ["V_PlateCarrierIA1_dgtl","V_PlateCarrierIA2_dgtl"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrierIAGL_dgtl"];
+_lightRig = ["V_TacVest_khk"];
+_mediumRig = ["V_Chestrig_khk"]; 	// default for all infantry classes
+_heavyRig = ["V_Chestrig_khk"];
 
 // Pilot
-_pilotUniform = ["U_I_HeliPilotCoveralls"];
-_pilotHelmet = ["H_PilotHelmetHeli_I"];
-_pilotRig = ["V_TacVest_oli"];
+_pilotUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
+_pilotHelmet = ["rhs_gssh18"];
+_pilotRig = ["V_TacVest_khk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_I_CombatUniform_shortsleeve"];
-_crewHelmet = ["H_HelmetCrew_I"];
-_crewRig = ["V_TacVest_oli"];
+_crewUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
+_crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
+_crewRig = ["V_TacVest_khk"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["U_I_FullGhillie_lsh"];
-_ghillieHelmet = [];
-_ghillieRig = ["V_Chestrig_oli"];
+_ghillieUniform = ["MNP_CombatUniform_Militia_DC","MNP_CombatUniform_Militia_DE","MNP_CombatUniform_Militia_DB","MNP_CombatUniform_Militia_DA","MNP_CombatUniform_Militia_DF"];
+_ghillieHelmet = ["H_Booniehat_tan","MNP_Boonie_Jigsaw","MNP_Boonie_DDPM","H_Booniehat_khk","H_ShemagOpen_khk","H_ShemagOpen_tan"];
+_ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
 // ====================================================================================
@@ -271,7 +272,7 @@ if (_isMan) then {
 	};
 	// uncomment to remove nvgoogles
 	
-	_unit linkItem _nvg;			// Add night vision goggles
+				// Add night vision goggles
 	
 	// ====================================================================================
 
@@ -526,6 +527,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _carbine;
 		_unit addweapon _MAT;
+		_unit addItem _scope4;
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
