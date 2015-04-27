@@ -88,9 +88,9 @@ _carbinemag = "rhs_30Rnd_762x39mm";
 _carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "hgun_PDW2000_F";
-_smgmag = "30Rnd_9x21_Mag";
-_smgmag_tr = "30Rnd_9x21_Mag";
+_smg = "CUP_arifle_AKS74U";
+_smgmag = "CUP_30Rnd_545x39_AK_M";
+_smgmag_tr = "CUP_30Rnd_TE1_Green_Tracer_545x39_AK_M";
 
 // Rifle with GL and HE grenades (CO, SL, FTLs)
 _glrifle = "rhs_weap_akm_gp25";
