@@ -54,8 +54,8 @@
 _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
-_bipod1 = "bipod_01_F_blk";		// Light Machine Gun
-_bipod2 = "bipod_01_F_blk";		// Medium Machine Gun
+_bipod1 = "bipod_01_F_snd";		// Light Machine Gun
+_bipod2 = "bipod_01_F_snd";		// Medium Machine Gun
 _bipod3 = "bipod_01_F_snd";		// Sniper Rifle
 
 _silencer1 = "muzzle_snds_H";	// Primary Suppressor
@@ -152,9 +152,9 @@ _clacker = "AGM_Clacker";                   // for engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "LMG_Mk200_F";
-_ARmag = "200Rnd_65x39_cased_Box";
-_ARmag_tr = "200Rnd_65x39_cased_Box_Tracer";
+_AR = "arifle_MX_SW_F";
+_ARmag = "100Rnd_65x39_caseless_mag_Tracer";
+_ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
 
 // Medium MG
 _MMG = "MMG_02_sand_F";
