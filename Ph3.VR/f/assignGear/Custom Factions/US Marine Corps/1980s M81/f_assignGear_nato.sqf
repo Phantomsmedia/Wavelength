@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - US Marine Corps (M81)
+// F3 - Folk ARPS Assign Gear Script - US Marine Corps (1980s M81)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 

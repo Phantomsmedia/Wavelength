@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - US Marine Corps (DBDU)
+// F3 - Folk ARPS Assign Gear Script - US Army (1980s DCU)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -63,7 +63,7 @@ _silencer1 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
 _scope1 = "";							// Short Range
 _scope2 = "";							// Medium Range
 _scope3 = "rhsusf_acc_LEUPOLDMK4";		// Long Range
-_scope4 = "CUP_optic_SMAW_Scope";		// Launcher Scope
+_scope4 = "CUP_optic_MAAWS_Scope";		// Launcher Scope
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -167,9 +167,9 @@ _RAT = "rhs_weap_M136";
 _RATmag = "rhs_m136_mag";
 
 // Medium AT
-_MAT = "CUP_launch_Mk153Mod0";
-_MATmag1 = "CUP_SMAW_HEAA_M_N";
-_MATmag2 = "CUP_SMAW_HEAA_M_N";
+_MAT = "CUP_launch_MAAWS";
+_MATmag1 = "CUP_MAAWS_HEAT_M";
+_MATmag2 = "CUP_MAAWS_HEAT_M";
 
 // Heavy AT
 _HAT = "rhs_weap_fgm148";
@@ -205,31 +205,31 @@ _ghillie = ["sn","sp"];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["MNP_CombatUniform_US6co_A"];
-_baseHelmet = ["MNP_Helmet_PAGST_US6co"];
+_baseUniform = ["MNP_CombatUniform_US3Co_A"];
+_baseHelmet = ["MNP_Helmet_PAGST_US3Co"];
 _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["V_TacVest_blk","V_TacVest_brn"];
-_mediumRig = ["MNP_Vest_6co_A"]; 	// default for all infantry classes
-_heavyRig = ["MNP_Vest_6co_A"];
+_mediumRig = ["MNP_Vest_M81"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_M81"];
 
 // Pilot
-_pilotUniform = ["MNP_CombatUniform_6CO"];
+_pilotUniform = ["MNP_CombatUniform_US3Co_Rg"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
 _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["MNP_CombatUniform_US6co_B"];
-_crewHelmet = ["rhsusf_cvc_helmet","rhsusf_cvc_ess"];
+_crewUniform = ["MNP_CombatUniform_US3Co_B"];
+_crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_ess"];
 _crewRig = ["V_TacVest_brn"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["MNP_CombatUniform_US6co_A"];
-_ghillieHelmet = ["MNP_Boonie_6CO"];
-_ghillieRig = ["MNP_Vest_6co_A"];
+_ghillieUniform = ["MNP_CombatUniform_US3Co_A"];
+_ghillieHelmet = ["MNP_Boonie_3CO"];
+_ghillieRig = ["MNP_Vest_M81"];
 _ghillieGlasses = [];
 
 // ====================================================================================
