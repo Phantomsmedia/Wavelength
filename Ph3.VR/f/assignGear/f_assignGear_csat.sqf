@@ -164,9 +164,9 @@ _RAT = "launch_RPG32_F";
 _RATmag = "RPG32_F";
 
 // Medium AT
-_MAT = "launch_RPG32_F";
-_MATmag1 = "RPG32_F";
-_MATmag2 = "RPG32_F";
+_MAT = "launch_O_Titan_short_F";
+_MATmag1 = "Titan_AT";
+_MATmag2 = "Titan_AT";
 
 // Surface Air
 _SAM = "launch_O_Titan_F";
