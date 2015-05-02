@@ -17,8 +17,6 @@
 //		mmgag		- medium mg assistant
 //		matg		- medium AT gunner
 //		matag		- medium AT assistant
-//		hatg		- heavy AT gunner
-//		hatag		- heavy AT assistant
 //		hmgg		- heavy mg gunner (deployable)
 //		hmgag		- heavy mg assistant (deployable)
 //		mtrg		- mortar gunner (deployable)
@@ -170,11 +168,6 @@ _RATmag = "rhs_rpg26_mag";
 _MAT = "rhs_weap_rpg7";
 _MATmag1 = "rhs_rpg7_PG7VL_mag";
 _MATmag2 = "rhs_rpg7_PG7VL_mag";
-
-// Heavy AT
-_HAT = "CUP_launch_Metis";
-_HATmag1 = "CUP_AT13_M";
-_HATmag2 = "CUP_AT13_M";
 
 // Surface Air
 _SAM = "rhs_weap_igla";
@@ -548,39 +541,6 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		["matag"] call _backpack;
-		_attachments = [_attach1];
-	};
-
-// LOADOUT: HEAVY AT GUNNER
-	case "hatg":
-	{
-		["hatg"] call _backpack;
-		_unit addmagazines [_carbinemag,7];
-		_unit addmagazines [_carbinemag_tr,2];
-		_unit addmagazines [_smokegrenade,2];
-		_unit addweapon _carbine;
-		_unit addweapon _HAT;
-		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
-		{_unit addItem _morphine} foreach [1,2];
-		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		_attachments = [_attach1];
-	};
-
-// LOADOUT: HEAVY AT ASSISTANT GUNNER
-	case "hatag":
-	{
-		_unit addmagazines [_carbinemag,7];
-		_unit addmagazines [_carbinemag_tr,2];
-		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
-		_unit addmagazines [_grenade,1];
-		_unit addmagazines [_smokegrenade,2];
-		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
-		{_unit addItem _morphine} foreach [1,2];
-		_unit addItem _epipen;
-		_unit addItem _earplugs;
-		["hatag"] call _backpack;
 		_attachments = [_attach1];
 	};
 
