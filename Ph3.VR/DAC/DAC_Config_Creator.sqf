@@ -29,7 +29,7 @@ if(isAIcontroller) then {if(local player) then {DAC_Code = 1} else {DAC_Code = 0
 	if(isNil "DAC_AI_AddOn") 		then {		DAC_AI_AddOn		= 1											};
 	if(isNil "DAC_AI_Level") 		then {		DAC_AI_Level		= 3											};
 	if(isNil "DAC_Res_Side") 		then {		DAC_Res_Side		= 2											};
-	if(isNil "DAC_Marker") 			then {		DAC_Marker			= 2											};
+	if(isNil "DAC_Marker") 			then {		DAC_Marker			= 0											};
 	if(isNil "DAC_WP_Speed") 		then {		DAC_WP_Speed		= 0.01										};
 	if(isNil "DAC_Join_Action")		then {		DAC_Join_Action		= false										};
 	if(isNil "DAC_Fast_Init") 		then {		DAC_Fast_Init		= false										};

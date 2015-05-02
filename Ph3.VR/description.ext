@@ -177,6 +177,24 @@ class Params
 		default = 0;
 		code = "f_param_caching = %1";
 	};
+	
+	class f_param_dacdebug
+	{
+		title = "DAC Debug";
+		values[] = {0,1};
+		texts[] = {"Off","On"};
+		default = 0;
+		code = "f_param_dacdebug = %1";
+	};
+
+	class ws_param_hc
+	{
+		title = "Headless client";
+		values[] = {0,1};
+		texts[] = {"Off","Auto-Detect"};
+		default = 1;
+		code = "ws_param_hc = %1";
+	};
 
 // ============================================================================================
 
