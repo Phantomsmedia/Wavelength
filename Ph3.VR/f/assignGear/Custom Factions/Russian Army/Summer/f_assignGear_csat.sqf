@@ -222,7 +222,7 @@ _crewGlasses = [];
 
 // Ghillie
 _ghillieUniform = ["rhs_uniform_emr_patchless"];
-_ghillieHelmet = ["rhs_Booniehat_digi"];
+_ghillieHelmet = ["rhs_fieldcap_digi"];
 _ghillieRig = ["rhs_6b23_digi_sniper"];
 _ghillieGlasses = [];
 
