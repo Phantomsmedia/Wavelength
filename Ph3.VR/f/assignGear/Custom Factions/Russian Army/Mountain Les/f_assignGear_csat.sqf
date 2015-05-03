@@ -204,20 +204,20 @@ _baseHelmet = ["rhs_6b27m_ml","rhs_6b27m_ml_ess"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["rhs_6sh92"];
+_lightRig = ["rhs_6b23_ML"];
 _mediumRig = ["rhs_6b23_ML_6sh92"]; 	// default for all infantry classes
 _heavyRig = ["rhs_6b13_6sh92"];
 
 // Pilot
 _pilotUniform = ["rhs_uniform_flora_patchless_alt"];
 _pilotHelmet = ["rhs_zsh7a_mike"];
-_pilotRig = ["rhs_6sh92"];
+_pilotRig = ["rhs_6b23_ML"];
 _pilotGlasses = [];
 
 // Crewman
 _crewUniform = ["rhs_uniform_flora_patchless_alt"];
 _crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
-_crewRig = ["rhs_6sh92"];
+_crewRig = ["rhs_6b23_ML_crew"];
 _crewGlasses = [];
 
 // Ghillie
