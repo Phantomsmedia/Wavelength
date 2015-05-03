@@ -458,6 +458,7 @@ switch (_typeofUnit) do
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
 		["mmg"] call _backpack;
+		_attachments = [];
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
