@@ -387,7 +387,7 @@ switch (_typeofUnit) do
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		["g"] call _backpack;
-		_attachments = [_attach1,_scope1];
+		_attachments = [_muzzle,_attach1,_scope1];
 	};
 
 
