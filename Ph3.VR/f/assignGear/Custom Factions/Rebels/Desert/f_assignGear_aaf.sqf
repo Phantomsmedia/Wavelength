@@ -61,7 +61,7 @@ _silencer1 = "rhs_acc_pbs1";	// Primary Suppressor
 _scope1 = "";					// Short Range
 _scope2 = "";					// Medium Range
 _scope3 = "rhs_acc_pso1m2";		// Long Range
-_scope4 = "rhs_acc_pgo7v"		// Launcher Scope
+_scope4 = "rhs_acc_pgo7v";		// Launcher Scope
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType

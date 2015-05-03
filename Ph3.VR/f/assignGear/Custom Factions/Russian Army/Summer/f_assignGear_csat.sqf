@@ -129,7 +129,7 @@ _chemblue = "Chemlight_blue";
 // Backpacks
 _bagsmall = "rhs_sidor";					// small backpack
 _bagmedium = "rhs_assault_umbts";			// medium backpack
-_baglarge =  "B_Carryall_oli"; 				// heavy backpack
+_baglarge =  "CUP_B_CivPack_WDL"; 			// heavy backpack
 _baguav = "O_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "RHS_NSV_Gun_Bag";				// used by Heavy MG gunner
 _baghmgag = "RHS_NSV_Tripod_Bag";			// used by Heavy MG assistant gunner
