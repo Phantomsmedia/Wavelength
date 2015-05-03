@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - Russian Army (Flora)
+// F3 - Folk ARPS Assign Gear Script - Russian Army (Mountain Les)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -199,31 +199,31 @@ _ghillie = ["sn","sp"];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["rhs_uniform_flora_patchless"];
-_baseHelmet = ["rhs_6b27m","rhs_6b27m_ess"];
+_baseUniform = ["rhs_uniform_flora_patchless_alt"];
+_baseHelmet = ["rhs_6b27m_ml","rhs_6b27m_ml_ess"];
 _baseGlasses = [];
 
 // Armored vests
 _lightRig = ["rhs_6sh92"];
-_mediumRig = ["rhs_6b23_6sh92"]; 	// default for all infantry classes
-_heavyRig = ["rhs_6b13_Flora_6sh92"];
+_mediumRig = ["rhs_6b23_ML_6sh92"]; 	// default for all infantry classes
+_heavyRig = ["rhs_6b13_6sh92"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_flora_patchless"];
+_pilotUniform = ["rhs_uniform_flora_patchless_alt"];
 _pilotHelmet = ["rhs_zsh7a_mike"];
 _pilotRig = ["rhs_6sh92"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["rhs_uniform_flora_patchless"];
+_crewUniform = ["rhs_uniform_flora_patchless_alt"];
 _crewHelmet = ["rhs_tsh4","rhs_tsh4_ess"];
 _crewRig = ["rhs_6sh92"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["rhs_uniform_flora_patchless"];
+_ghillieUniform = ["rhs_uniform_flora_patchless_alt"];
 _ghillieHelmet = ["rhs_Booniehat_flora"];
-_ghillieRig = ["rhs_6b23_sniper"];
+_ghillieRig = ["rhs_6b23_ML_sniper"];
 _ghillieGlasses = [];
 
 // ====================================================================================
