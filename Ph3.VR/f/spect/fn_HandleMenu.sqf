@@ -37,4 +37,8 @@ switch (_button) do {
     		_control ctrlSetText "First Person";
     	}
 	}
+case 4: { //Splendid cam call
+[] call BIS_fnc_camera} 
+
 };
+ 
