@@ -432,7 +432,7 @@ class CfgRespawnTemplates
 
 class CfgFunctions
 {
-#include "ws_fnc\config.hpp"
+	#include "ws_fnc\config.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
 	class F // Defines the "owner"
 	{
@@ -518,11 +518,13 @@ class CfgFunctions
 			file = "f\nametag";
 			class drawNameTag{};
 		};
-		//class preMount
+		/*
+		class preMount
 		{
 			file = "f\preMount";
 			class mountGroups{};
 		};
+		*/
 		class zeus
 		{
 			file = "f\zeus";
