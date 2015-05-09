@@ -215,3 +215,10 @@ f_wound_extraFAK = 2;
 [] execVM "f\medical\medical_init.sqf";
 
 // ====================================================================================
+
+// Disable Friendly Fire Penalties
+// Credits: Rik (PhanTactical)
+
+[] execVM "f\friendlyfire\setPlayersRaitingToMax.sqf";
+
+// ====================================================================================
