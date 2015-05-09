@@ -1,6 +1,7 @@
 // ============================================================================================
 
 // TAW Tonic - View Distance Script
+// Credits: TAW Tonic
 
 #include "taw_vd\dialog.hpp"
 
@@ -9,7 +10,7 @@
 // PhanTactical - RotorLib Simulation Forcing
 // Credits: Jani
 //  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off) 
-// MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. 
+// MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. <- That legacy code.
 
 forceRotorLibSimulation = 0;
 
