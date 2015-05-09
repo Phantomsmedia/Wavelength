@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - US Marine Corps (Woodland MARPAT)
+// F3 - Folk ARPS Assign Gear Script - US Army (1980s DCU)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -49,19 +49,19 @@
 // GENERAL EQUIPMENT USED BY MULTIPLE CLASSES
 
 // ATTACHMENTS - PRIMARY
-_attach1 = "rhsusf_acc_anpeq15side";	// IR Laser
-_attach2 = "acc_flashlight";			// Flashlight
+_attach1 = "";							// IR Laser
+_attach2 = "";							// Flashlight
 
 _bipod1 = "";							// Light Machine Gun
 _bipod2 = "";							// Medium Machine Gun
-_bipod3 = "rhsusf_acc_harris_bipod";	// Sniper Rifle
+_bipod3 = "";							// Sniper Rifle
 
 _silencer1 = "rhsusf_acc_rotex5_grey";	// Primary Suppressor
 
-_scope1 = "rhsusf_acc_compm4";			// Short Range
-_scope2 = "rhsusf_acc_ACOG";			// Medium Range
-_scope3 = "rhsusf_acc_LEUPOLDMK4_2";	// Long Range
-_scope4 = "CUP_optic_SMAW_Scope";		// Launcher Scope
+_scope1 = "";							// Short Range
+_scope2 = "";							// Medium Range
+_scope3 = "rhsusf_acc_LEUPOLDMK4";		// Long Range
+_scope4 = "CUP_optic_MAAWS_Scope";		// Launcher Scope
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -114,7 +114,7 @@ _smokegrenade = "rhs_mag_an_m8hc";
 _smokegrenadegreen = "rhs_mag_m18_green";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "rhsusf_ANPVS_15";
+_nvg = "NVGoggles";
 
 // UAV Terminal
 _uavterminal = "B_UavTerminal";
@@ -126,9 +126,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "rhsusf_assault_eagleaiii_coy";		// small backpack
-_bagmedium = "rhsusf_assault_eagleaiii_coy";	// medium backpack
-_baglarge =  "rhsusf_assault_eagleaiii_coy"; 	// heavy backpack
+_bagsmall = "MNP_B_WD_FP";						// small backpack
+_bagmedium = "MNP_B_WD_FP";						// medium backpack
+_baglarge =  "MNP_B_WD_CA"; 					// heavy backpack
 _baguav = "B_UAV_01_backpack_F";				// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
@@ -165,17 +165,17 @@ _RAT = "rhs_weap_M136";
 _RATmag = "rhs_m136_mag";
 
 // Medium AT
-_MAT = "CUP_launch_Mk153Mod0";
-_MATmag1 = "CUP_SMAW_HEAA_M_N";
-_MATmag2 = "CUP_SMAW_HEAA_M_N";
+_MAT = "CUP_launch_MAAWS";
+_MATmag1 = "CUP_MAAWS_HEAT_M";
+_MATmag2 = "CUP_MAAWS_HEAT_M";
 
 // Surface Air
 _SAM = "rhs_weap_fim92";
 _SAMmag = "rhs_fim92_mag";
 
 // Sniper
-_SNrifle = "rhs_weap_sr25";
-_SNrifleMag = "rhsusf_20Rnd_762x51_m118_special_Mag";
+_SNrifle = "CUP_srifle_M14";
+_SNrifleMag = "CUP_20Rnd_762x51_DMR";
 
 // Engineer items
 _ATmine = "rhs_mine_M19_mag";
@@ -198,31 +198,31 @@ _ghillie = ["sn","sp"];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["rhs_uniform_FROG01_wd"];
-_baseHelmet = ["rhsusf_mich_helmet_marpatwd"];
+_baseUniform = ["MNP_CombatUniform_US3Co_A"];
+_baseHelmet = ["MNP_Helmet_PAGST_US3Co"];
 _baseGlasses = [];
 
 // Armored vests
-_lightRig = ["rhsusf_spc"];
-_mediumRig = ["rhsusf_spc"]; 	// default for all infantry classes
-_heavyRig = ["rhsusf_spc"];
+_lightRig = ["V_TacVest_blk","V_TacVest_brn"];
+_mediumRig = ["MNP_Vest_M81"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_M81"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_FROG01_wd"];
+_pilotUniform = ["MNP_CombatUniform_US3Co_Rg"];
 _pilotHelmet = ["H_PilotHelmetHeli_B"];
-_pilotRig = ["rhsusf_spc"];
+_pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["rhs_uniform_FROG01_wd"];
+_crewUniform = ["MNP_CombatUniform_US3Co_B"];
 _crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_ess"];
-_crewRig = ["rhsusf_spc"];
+_crewRig = ["V_TacVest_brn"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["rhs_uniform_FROG01_wd"];
-_ghillieHelmet = ["rhs_Booniehat_marpatwd"];
-_ghillieRig = ["rhsusf_spc"];
+_ghillieUniform = ["MNP_CombatUniform_US3Co_A"];
+_ghillieHelmet = ["MNP_Boonie_3CO"];
+_ghillieRig = ["MNP_Vest_M81"];
 _ghillieGlasses = [];
 
 // ====================================================================================
@@ -265,7 +265,7 @@ if (_isMan) then {
 	};
 	// uncomment to remove nvgoogles
 	
-	_unit linkItem _nvg;			// Add night vision goggles
+				// Add night vision goggles
 	
 	// ====================================================================================
 
@@ -373,7 +373,7 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,3];
+		_unit addmagazines [_glmag,5];
 		_unit addmagazines [_glsmokewhite,4];
 		_unit addweapon _glrifle;					//_FTLrifle
 		_unit addmagazines [_grenade,1];
@@ -397,7 +397,7 @@ switch (_typeofUnit) do
 		_unit addweapon _AR;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addmagazines [_pistolmag,2];
+		_unit addmagazines [_pistolmag,4];
 		_unit addweapon _pistol;
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
@@ -450,7 +450,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_MMGmag_tr,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _MMG;
-		_unit addmagazines [_pistolmag,2];
+		_unit addmagazines [_pistolmag,4];
 		_unit addweapon _pistol;
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
@@ -458,7 +458,6 @@ switch (_typeofUnit) do
 		_unit addItem _earplugs;
 		_unit addItem _sparebarrel;
 		["mmg"] call _backpack;
-		_attachments = [];
 	};
 
 // LOADOUT: MEDIUM MG ASSISTANT GUNNER
@@ -617,7 +616,7 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_SNrifleMag,9];
 		_unit addweapon _SNrifle;
-		_unit addmagazines [_pistolmag,2];
+		_unit addmagazines [_pistolmag,4];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];

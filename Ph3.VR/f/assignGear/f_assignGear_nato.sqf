@@ -785,6 +785,7 @@ switch (_typeofUnit) do
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		["r"] call _backpack;
 		_attachments = [_attach1];
 	};
 
@@ -801,6 +802,7 @@ switch (_typeofUnit) do
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		["car"] call _backpack;
 		_attachments = [_attach1];
 	};
 
@@ -816,6 +818,7 @@ switch (_typeofUnit) do
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
+		["smg"] call _backpack;
 		_attachments = [];
 	};
 
@@ -856,6 +859,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
 		_unit addMagazineCargoGlobal [_glmag, 4];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
+		_unit addItemCargoGlobal [_firstaid,4];
 	};
 
 // CARGO: TRUCK - room for 50 weapons and 200 cargo items
@@ -872,6 +876,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 4];
 		_unit addMagazineCargoGlobal [_glmag, 12];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 12];
+		_unit addItemCargoGlobal [_firstaid,8];
 	};
 
 // CARGO: IFV - room for 10 weapons and 100 cargo items
@@ -893,6 +898,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
 		_unit addMagazineCargoGlobal [_glmag, 8];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
+		_unit addItemCargoGlobal [_firstaid,6];
 	};
 
 // ====================================================================================
