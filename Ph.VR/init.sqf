@@ -222,3 +222,10 @@ f_wound_extraFAK = 2;
 [] execVM "f\friendlyfire\setPlayersRaitingToMax.sqf";
 
 // ====================================================================================
+
+// BWMF - Mission Timer/Safe Start
+// Credits: Pabst
+
+if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
+
+// ====================================================================================
