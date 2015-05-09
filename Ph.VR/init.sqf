@@ -229,3 +229,24 @@ f_wound_extraFAK = 2;
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // ====================================================================================
+
+// BWMF - Headless Client Act.
+//Check HC for 1.36 Headless Client
+
+if (isNil "ws_param_hc") then {ws_param_hc = "ws_param_hc" call BIS_fnc_getParamValue;};  //ws_param_hc from description.ext/Params
+isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
+	isServer;
+} else {
+	switch (ws_param_hc) do {
+	case (0): {isServer}; 								//param == "off"
+	case (1): {(!isServer) && {player == HC_SLOT_1}};	//param == "auto"
+	};
+};
+
+// ====================================================================================
+
+// BWMF - DAC Debug Params
+
+[] execVM "DAC\bwmf_dacParams.sqf";
+
+// ====================================================================================

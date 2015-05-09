@@ -179,7 +179,7 @@ class Params
     };
 
 // ============================================================================================
-
+/*
 // F3 - Mission Timer/Safe Start
 // Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -191,9 +191,9 @@ class Params
             default = 0;
             code = "f_param_mission_timer = %1";
     };
-
+*/
 // ============================================================================================
-
+/*
 // F3 - Mission Conditions Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -229,7 +229,7 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-
+*/
 // ============================================================================================
 
 // F3 - AI Skill Selector
@@ -279,6 +279,23 @@ class Params
 		values[] = {0,600,800,1000,1500,2000};
 		default = 0;
 		code = "f_param_caching = %1";
+	};
+		class f_param_dacdebug
+	{
+		title = "DAC Debug";
+		values[] = {0,1};
+		texts[] = {"Off","On"};
+		default = 0;
+		code = "f_param_dacdebug = %1";
+	};
+
+	class ws_param_hc
+	{
+		title = "Headless client";
+		values[] = {0,1};
+		texts[] = {"Off","Auto-Detect"};
+		default = 1;
+		code = "ws_param_hc = %1";
 	};
 
 // ============================================================================================
@@ -400,6 +417,8 @@ class CfgRespawnTemplates
 
 class CfgFunctions
 {
+	#include "ws_fnc\config.hpp"		
+	#include "taw_vd\CfgFunctions.hpp"
 	class F // Defines the "owner"
 	{
 		class common // category
@@ -531,5 +550,19 @@ class CfgFunctions
 class CfgUnitInsignia {
 	#include "f\assignGear\insignia\define.hpp"
 };
+// ============================================================================================
+
+// TAW Tonic - View Distance Script
+
+#include "taw_vd\dialog.hpp"
+
+// ============================================================================================
+
+// PhanTactical - RotorLib Simulation Forcing
+// Credits: Jani
+//  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off) 
+// MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. 
+
+forceRotorLibSimulation = 0;
 
 // ============================================================================================
