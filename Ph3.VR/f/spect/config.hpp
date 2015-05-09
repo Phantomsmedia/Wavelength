@@ -737,7 +737,7 @@ class f_spec_dialog {
             text = "Splendid Cam";
             tooltip = "Open up for Splendid Shots!";
             sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
-            onButtonClick = "[_this select 0,1] call f_fnc_HandleMenu";
+            onButtonClick = "[_this select 0,4] call f_fnc_HandleMenu";
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
