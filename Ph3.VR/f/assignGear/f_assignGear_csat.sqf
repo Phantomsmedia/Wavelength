@@ -314,9 +314,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
@@ -341,9 +338,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
@@ -360,9 +354,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addweapon _carbine;
 		_unit addmagazines [_smokegrenade,4];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -383,9 +374,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		_unit linkItem "ItemGPS";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
@@ -405,9 +393,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -426,9 +411,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_mgrenade,2];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -445,16 +427,13 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
+		["rat"] call _backpack;
 		(unitBackpack _unit) addMagazineCargoGlobal [_RATmag,1];
 		_unit addweapon _RAT;
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
-		["rat"] call _backpack;
 		_attachments = [_attach1];
 	};
 
@@ -467,9 +446,6 @@ switch (_typeofUnit) do
 		_unit addweapon _MMG;
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -486,9 +462,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_riflemag_tr,2];
 		_unit addweapon _rifle;
 		_unit addWeapon "Rangefinder";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
@@ -507,9 +480,6 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -527,9 +497,6 @@ switch (_typeofUnit) do
 		_unit addWeapon "Rangefinder";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -547,9 +514,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addweapon _carbine;
 		_unit addweapon _MAT;
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -564,9 +528,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
 		_unit addWeapon "Rangefinder";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
@@ -585,9 +546,6 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -605,9 +563,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
 		_unit addWeapon "Rangefinder";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -626,9 +581,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,1];
 		_unit addmagazines [_grenade,1];
 		_unit addweapon _SAM;
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -645,9 +597,6 @@ switch (_typeofUnit) do
 		_unit addWeapon "Rangefinder";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,1];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -664,9 +613,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -684,9 +630,6 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_smokegrenade,2];
 		_unit addWeapon "Rangefinder";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		_unit linkItem "ItemGPS";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
@@ -704,9 +647,6 @@ switch (_typeofUnit) do
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
 		_unit addWeapon "Binocular";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -722,9 +662,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -741,9 +678,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -759,9 +693,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -775,9 +706,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -794,9 +722,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_satchel,2];
 		_unit addItem "MineDetector";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -816,9 +741,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_APmine2,2];
 		_unit addItem "MineDetector";
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -836,9 +758,6 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_grenade,1];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		_unit linkItem _uavterminal;
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
@@ -857,9 +776,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,3];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -876,9 +792,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,3];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -894,9 +807,6 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,3];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
@@ -915,15 +825,69 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,3];
 		_unit addmagazines [_mgrenade,3];
 		_unit addmagazines [_smokegrenade,2];
-		_unit linkItem "ItemMap";
-		_unit linkItem "ItemCompass";
-		_unit linkItem "ItemWatch";
 		{_unit addItem _bandage} foreach [1,2,3,4,5,6];
 		{_unit addItem _morphine} foreach [1,2];
 		_unit addItem _epipen;
 		_unit addItem _earplugs;
 		["g"] call _backpack;
 		_attachments = [_attach1];
+	};
+
+// CARGO: CAR - room for 10 weapons and 50 cargo items
+	case "v_car":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addWeaponCargoGlobal [_carbine, 1];
+		_unit addMagazineCargoGlobal [_riflemag, 8];
+		_unit addMagazineCargoGlobal [_glriflemag, 8];
+		_unit addMagazineCargoGlobal [_carbinemag, 8];
+		_unit addMagazineCargoGlobal [_armag, 5];
+		_unit addMagazineCargoGlobal [_ratmag, 1];
+		_unit addMagazineCargoGlobal [_grenade, 4];
+		_unit addMagazineCargoGlobal [_smokegrenade, 4];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_unit addMagazineCargoGlobal [_glmag, 4];
+		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
+	};
+
+// CARGO: TRUCK - room for 50 weapons and 200 cargo items
+	case "v_tr":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addWeaponCargoGlobal [_carbine, 4];
+		_unit addMagazineCargoGlobal [_grenade, 12];
+		_unit addmagazineCargoGlobal [_mgrenade,12];
+		_unit addMagazineCargoGlobal [_smokegrenade, 12];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 4];
+		_unit addMagazineCargoGlobal [_glmag, 12];
+		_unit addMagazineCargoGlobal [_glsmokewhite, 12];
+	};
+
+// CARGO: IFV - room for 10 weapons and 100 cargo items
+	case "v_ifv":
+	{
+		clearWeaponCargoGlobal _unit;
+		clearMagazineCargoGlobal _unit;
+		clearItemCargoGlobal _unit;
+		clearBackpackCargoGlobal _unit;
+		_unit addWeaponCargoGlobal [_carbine, 2];
+		_unit addMagazineCargoGlobal [_riflemag, 10];
+		_unit addMagazineCargoGlobal [_glriflemag, 10];
+		_unit addMagazineCargoGlobal [_carbinemag, 12];
+		_unit addMagazineCargoGlobal [_armag, 8];
+		_unit addMagazineCargoGlobal [_ratmag, 2];
+		_unit addMagazineCargoGlobal [_grenade, 8];
+		_unit addmagazineCargoGlobal [_mgrenade,8];
+		_unit addMagazineCargoGlobal [_smokegrenade, 8];
+		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
+		_unit addMagazineCargoGlobal [_glmag, 8];
+		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
 	};
 
 // ====================================================================================
