@@ -229,7 +229,7 @@ f_wound_extraFAK = 2;
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // ====================================================================================
-
+/*
 // BWMF - Headless Client Act.
 //Check HC for 1.36 Headless Client
 
@@ -242,11 +242,17 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 	case (1): {(!isServer) && {player == HC_SLOT_1}};	//param == "auto"
 	};
 };
-
+*/
 // ====================================================================================
-
+/*
 // BWMF - DAC Debug Params
 
 [] execVM "DAC\bwmf_dacParams.sqf";
+*/
+// ====================================================================================
+
+// VCRPlayer - HC Auto Init
+
+[] execVM "f\headlessclient\aitohc.sqf";
 
 // ====================================================================================
