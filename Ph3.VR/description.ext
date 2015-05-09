@@ -270,6 +270,13 @@ class CfgFunctions
 			file = "f\setGroupID";
 			class setGroupID{};
 		};
+		class missionConditions
+		{
+			file = "f\missionConditions";
+			class SetTime{};
+			class SetFog{};
+			class SetWeather{};
+		};
 		class cache
 		{
 			file = "f\cache";
