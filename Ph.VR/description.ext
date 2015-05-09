@@ -1,5 +1,20 @@
 // ============================================================================================
 
+// TAW Tonic - View Distance Script
+
+#include "taw_vd\dialog.hpp"
+
+// ============================================================================================
+
+// PhanTactical - RotorLib Simulation Forcing
+// Credits: Jani
+//  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off) 
+// MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. 
+
+forceRotorLibSimulation = 0;
+
+// ============================================================================================
+
 // F3 - Mission Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -417,7 +432,7 @@ class CfgRespawnTemplates
 
 class CfgFunctions
 {
-	#include "ws_fnc\config.hpp"		
+#include "ws_fnc\config.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
 	class F // Defines the "owner"
 	{
@@ -550,19 +565,4 @@ class CfgFunctions
 class CfgUnitInsignia {
 	#include "f\assignGear\insignia\define.hpp"
 };
-// ============================================================================================
-
-// TAW Tonic - View Distance Script
-
-#include "taw_vd\dialog.hpp"
-
-// ============================================================================================
-
-// PhanTactical - RotorLib Simulation Forcing
-// Credits: Jani
-//  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off) 
-// MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. 
-
-forceRotorLibSimulation = 0;
-
 // ============================================================================================

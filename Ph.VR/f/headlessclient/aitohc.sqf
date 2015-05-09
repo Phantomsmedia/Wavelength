@@ -10,8 +10,8 @@
  * In the description of the HeadlessClient virtual unit, put HC
  */
 if (!isServer) exitWith {};
-_HC = owner "HC"; //"HC" denotes the name of the unit in-game
-waitUntil {!isNil "HC"};
+_HC = owner "HC_SLOT_1"; //"HC" denotes the name of the unit in-game
+waitUntil {!isNil "HC_SLOT_1"};
 
  ["HCS_addToHC", "onEachFrame", {
     if ((isPlayer)||(_x in units group _HC)) exitWith {};
