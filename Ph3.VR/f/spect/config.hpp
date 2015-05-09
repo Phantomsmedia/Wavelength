@@ -727,15 +727,15 @@ class f_spec_dialog {
             onMouseMoving = "f_cam_menuShownTime=time";
 
         };
-        class SideFilterButton: RscSpectButton
+        class SplendidCamButton: RscSpectButton
         {
             idc = 2112;
             x = 0.0425375 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.04 * safezoneW;
             h = 0.02 * safezoneH;
-            text = "All Sides";
-            tooltip = "Filter by side";
+            text = "Splendid Cam";
+            tooltip = "Open up for Splendid Shots!";
             sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
             onButtonClick = "[_this select 0,1] call f_fnc_HandleMenu";
             onMouseHolding = "f_cam_menuShownTime=time";
