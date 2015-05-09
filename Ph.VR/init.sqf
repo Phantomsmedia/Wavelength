@@ -229,6 +229,15 @@ f_wound_extraFAK = 2;
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // ====================================================================================
+// ==========================================
+// ====================
+// ========
+// ===
+//				//		//		/////////
+//				//		//		//
+//				//////////		//
+//				//		//		/////////
+// ====================================================================================
 /*
 // BWMF - Headless Client Act.
 //Check HC for 1.36 Headless Client
@@ -254,5 +263,12 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 // VCRPlayer - HC Auto Init
 
 [] execVM "f\headlessclient\aitohc.sqf";
+
+// ====================================================================================
+
+// eulerfoiler - HC Round-Robin Load Balancing
+// This requires renaming of of HC to HC_ID and HC2_ID and HC3_ID or something. Check the file that is called.
+
+[] execVM "f\headlessclient\passToHCs.sqf";
 
 // ====================================================================================
