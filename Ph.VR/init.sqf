@@ -165,14 +165,14 @@ if(isServer) then {
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-[false] execVM "f\groupJoin\f_groupJoinAction.sqf";
+// [false] execVM "f\groupJoin\f_groupJoinAction.sqf";
 
 // ====================================================================================
 
 // F3 - Mission Timer/Safe Start
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
-[] execVM "f\safeStart\f_safeStart.sqf";
+// [] execVM "f\safeStart\f_safeStart.sqf";
 
 // ====================================================================================
 
