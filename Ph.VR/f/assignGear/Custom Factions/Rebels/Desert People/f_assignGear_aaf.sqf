@@ -307,7 +307,7 @@ if (_isMan) then {
 
 _backpack = {
 	_typeofBackPack = _this select 0;
-	_loadout = f_param_backpacks;
+	_loadout = 2;
 	if (count _this > 1) then {_loadout = _this select 1};
 	switch (_typeofBackPack) do
 	{
