@@ -291,10 +291,10 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 [] execVM "f\headlessclient\aitohc.sqf";
 
 // ====================================================================================
-
+/*
 // eulerfoiler - HC Round-Robin Load Balancing
 // This requires renaming of of HC to HC_ID and HC2_ID and HC3_ID or something. Check the file that is called.
 
 [] execVM "f\headlessclient\passToHCs.sqf";
-
+*/
 // ====================================================================================
