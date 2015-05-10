@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - US Army (UCP)
+// F3 - Folk ARPS Assign Gear Script - US Army (OCP)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -148,7 +148,7 @@ _chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_AssaultPack_cbr";				// small
-_bagmedium = "rhsusf_assault_eagleaiii_ucp";	// medium
+_bagmedium = "rhsusf_assault_eagleaiii_ocp";	// medium
 _baglarge =  "B_Carryall_cbr"; 					// large
 _bagmediumdiver =  "B_AssaultPack_blk";			// used by divers
 _baguav = "B_UAV_01_backpack_F";				// used by UAV operator
@@ -223,14 +223,14 @@ _ghillie = ["sn","sp"];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["rhs_uniform_cu_ucp"];
-_baseHelmet = ["rhsusf_ach_helmet_ucp","rhsusf_ach_helmet_ESS_ucp"];
+_baseUniform = ["rhs_uniform_cu_ocp"];
+_baseHelmet = ["rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"];
 _baseGlasses = [];
 
 // Vests
-_lightRig = ["rhsusf_iotv_ucp"];
-_mediumRig = ["rhsusf_iotv_ucp_Rifleman"]; 	// default for all infantry classes
-_heavyRig = ["rhsusf_iotv_ucp_SAW"];
+_lightRig = ["rhsusf_iotv_ocp"];
+_mediumRig = ["rhsusf_iotv_ocp_Rifleman"]; 	// default for all infantry classes
+_heavyRig = ["rhsusf_iotv_ocp_SAW"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -239,21 +239,21 @@ _diverRig = ["V_RebreatherB"];
 _diverGlasses = ["G_B_Diving"];
 
 // Pilot
-_pilotUniform = ["rhs_uniform_cu_ucp"];
+_pilotUniform = ["rhs_uniform_cu_ocp"];
 _pilotHelmet = ["rhsusf_hgu56p"];
-_pilotRig = ["rhsusf_iotv_ucp"];
+_pilotRig = ["rhsusf_iotv_ocp"];
 _pilotGlasses = [];
 
 // Crewman
-_crewUniform = ["rhs_uniform_cu_ucp"];
-_crewHelmet = ["rhsusf_cvc_helmet","rhsusf_cvc_ess"];
-_crewRig = ["rhsusf_iotv_ucp_Repair"];
+_crewUniform = ["rhs_uniform_cu_ocp"];
+_crewHelmet = ["rhsusf_cvc_green_helmet","rhsusf_cvc_green_ess"];
+_crewRig = ["rhsusf_iotv_ocp_Repair"];
 _crewGlasses = [];
 
 // Ghillie
-_ghillieUniform = ["rhs_uniform_cu_ucp"];
-_ghillieHelmet = ["rhs_Booniehat_ucp"];
-_ghillieRig = ["rhsusf_iotv_ucp_Rifleman"];
+_ghillieUniform = ["rhs_uniform_cu_ocp"];
+_ghillieHelmet = ["rhs_Booniehat_ocp"];
+_ghillieRig = ["rhsusf_iotv_ocp_Rifleman"];
 _ghillieGlasses = [];
 
 // ====================================================================================
