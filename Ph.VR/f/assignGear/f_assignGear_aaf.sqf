@@ -31,6 +31,7 @@
 //		vg			- vehicle gunner
 //		vd			- vehicle driver (repair)
 //		pp			- air vehicle pilot / co-pilot
+//		pcc			- air vehicle co-pilot (repair) / crew chief (repair)
 //		pc			- air vehicle crew
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
@@ -209,7 +210,7 @@ _APmine = "ClaymoreDirectionalMine_Remote_Mag";
 _light = [];
 _heavy =  ["eng","engm"];
 _diver = ["div"];
-_pilot = ["pp","pc"];
+_pilot = ["pp","pcc","pc"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
 
@@ -675,6 +676,16 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
+		_attachments = [];
+	};
+	
+// LOADOUT: AIR VEHICLE CREW CHIEF
+	case "pcc":
+	{
+		_unit addmagazines [_smgmag,5];
+		_unit addweapon _smg;
+		_unit addmagazines [_smokegrenade,2];
+		["cc"] call _backpack;
 		_attachments = [];
 	};
 

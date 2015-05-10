@@ -1625,12 +1625,12 @@ class Mission
 					position[]={477.38663,5,2496.1968};
 					id=98;
 					side="WEST";
-					vehicle="B_helicrew_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH1_G1";
-					init="GrpNATO_TH1 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH1 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="BLUFOR Transport Helo 1 Crew Chief";
 				};
 				class Item3
@@ -1686,12 +1686,12 @@ class Mission
 					position[]={476.01773,5,468.36377};
 					id=102;
 					side="EAST";
-					vehicle="O_helicrew_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH1_G1";
-					init="GrpCSAT_TH1 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH1 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="OPFOR Transport Helo 1 Crew Chief";
 				};
 				class Item3
@@ -2463,12 +2463,12 @@ class Mission
 					position[]={488.09573,5,1454.0015};
 					id=154;
 					side="GUER";
-					vehicle="I_helicrew_F";
+					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH1_G1";
-					init="GrpAAF_TH1 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH1 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="INDFOR Transport Helo 1 Crew Chief";
 				};
 				class Item3
@@ -2524,12 +2524,12 @@ class Mission
 					position[]={477.60635,5,2468.188};
 					id=158;
 					side="WEST";
-					vehicle="B_helicrew_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH2_G1";
-					init="GrpNATO_TH2 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH2 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="BLUFOR Transport Helo 2 Crew Chief";
 				};
 				class Item3
@@ -2585,12 +2585,12 @@ class Mission
 					position[]={501.48053,5,2496.3218};
 					id=162;
 					side="WEST";
-					vehicle="B_helicrew_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH3_G1";
-					init="GrpNATO_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH3 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="BLUFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
@@ -2646,12 +2646,12 @@ class Mission
 					position[]={502.21002,5,2468.7427};
 					id=166;
 					side="WEST";
-					vehicle="B_helicrew_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH4_G1";
-					init="GrpNATO_TH4 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH4 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="BLUFOR Transport Helo 4 Crew Chief";
 				};
 				class Item3
@@ -2707,12 +2707,12 @@ class Mission
 					position[]={528.23645,5,2496.5796};
 					id=170;
 					side="WEST";
-					vehicle="B_helicrew_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH5_G1";
-					init="GrpNATO_TH5 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH5 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="BLUFOR Transport Helo 5 Crew Chief";
 				};
 				class Item3
@@ -2768,12 +2768,12 @@ class Mission
 					position[]={528.45813,5,2468.5708};
 					id=174;
 					side="WEST";
-					vehicle="B_helicrew_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH6_G1";
-					init="GrpNATO_TH6 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH6 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="BLUFOR Transport Helo 6 Crew Chief";
 				};
 				class Item3
@@ -2829,12 +2829,12 @@ class Mission
 					position[]={552.33118,5,2496.7046};
 					id=178;
 					side="WEST";
-					vehicle="B_helicrew_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH7_G1";
-					init="GrpNATO_TH7 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH7 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="BLUFOR Transport Helo 7 Crew Chief";
 				};
 				class Item3
@@ -2890,12 +2890,12 @@ class Mission
 					position[]={553.05969,5,2469.1235};
 					id=182;
 					side="WEST";
-					vehicle="B_helicrew_F";
+					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH8_G1";
-					init="GrpNATO_TH8 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH8 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="BLUFOR Transport Helo 8 Crew Chief";
 				};
 				class Item3
@@ -3409,12 +3409,12 @@ class Mission
 					position[]={512.43738,5,1454.001};
 					id=215;
 					side="GUER";
-					vehicle="I_helicrew_F";
+					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH2_G1";
-					init="GrpAAF_TH2 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH2 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="INDFOR Transport Helo 2 Crew Chief";
 				};
 				class Item3
@@ -3470,12 +3470,12 @@ class Mission
 					position[]={540.80939,5,1454.4336};
 					id=219;
 					side="GUER";
-					vehicle="I_helicrew_F";
+					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH3_G1";
-					init="GrpAAF_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH3 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="INDFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
@@ -3531,12 +3531,12 @@ class Mission
 					position[]={564.69037,5,1454.2886};
 					id=223;
 					side="GUER";
-					vehicle="I_helicrew_F";
+					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH4_G1";
-					init="GrpAAF_TH4 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH4 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="INDFOR Transport Helo 4 Crew Chief";
 				};
 				class Item3
@@ -3592,12 +3592,12 @@ class Mission
 					position[]={531.28052,5,468.30713};
 					id=227;
 					side="EAST";
-					vehicle="O_helicrew_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH2_G1";
-					init="GrpCSAT_TH2 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH2 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="OPFOR Transport Helo 2 Crew Chief";
 				};
 				class Item3
@@ -3653,12 +3653,12 @@ class Mission
 					position[]={501.92136,5,468.94629};
 					id=231;
 					side="EAST";
-					vehicle="O_helicrew_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH3_G1";
-					init="GrpCSAT_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH3 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="OPFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
@@ -3714,12 +3714,12 @@ class Mission
 					position[]={562.48773,5,467.98438};
 					id=235;
 					side="EAST";
-					vehicle="O_helicrew_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH4_G1";
-					init="GrpCSAT_TH4 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH4 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="OPFOR Transport Helo 4 Crew Chief";
 				};
 				class Item3
@@ -3775,12 +3775,12 @@ class Mission
 					position[]={475.65808,5,441.50586};
 					id=239;
 					side="EAST";
-					vehicle="O_helicrew_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH5_G1";
-					init="GrpCSAT_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH3 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="OPFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
@@ -3836,12 +3836,12 @@ class Mission
 					position[]={502.08923,5,440.23975};
 					id=243;
 					side="EAST";
-					vehicle="O_helicrew_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH6_G1";
-					init="GrpCSAT_TH6 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH6 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="OPFOR Transport Helo 6 Crew Chief";
 				};
 				class Item3
@@ -3897,12 +3897,12 @@ class Mission
 					position[]={531.51593,5,440.13916};
 					id=247;
 					side="EAST";
-					vehicle="O_helicrew_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH7_G1";
-					init="GrpCSAT_TH7 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH7 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="OPFOR Transport Helo 7 Crew Chief";
 				};
 				class Item3
@@ -3958,12 +3958,12 @@ class Mission
 					position[]={562.2926,5,440.77197};
 					id=251;
 					side="EAST";
-					vehicle="O_helicrew_F";
+					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH8_G1";
-					init="GrpCSAT_TH8 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH8 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="OPFOR Transport Helo 8 Crew Chief";
 				};
 				class Item3
@@ -5565,12 +5565,12 @@ class Mission
 					position[]={487.29718,5,1421.1685};
 					id=345;
 					side="GUER";
-					vehicle="I_helicrew_F";
+					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH5_G1";
-					init="GrpAAF_TH5 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH5 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="INDFOR Transport Helo 5 Crew Chief";
 				};
 				class Item3
@@ -5626,12 +5626,12 @@ class Mission
 					position[]={511.82486,5,1420.2163};
 					id=349;
 					side="GUER";
-					vehicle="I_helicrew_F";
+					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH6_G1";
-					init="GrpAAF_TH6 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH6 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="INDFOR Transport Helo 6 Crew Chief";
 				};
 				class Item3
@@ -5687,12 +5687,12 @@ class Mission
 					position[]={539.6864,5,1421.1689};
 					id=353;
 					side="GUER";
-					vehicle="I_helicrew_F";
+					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH7_G1";
-					init="GrpAAF_TH7 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH7 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="INDFOR Transport Helo 7 Crew Chief";
 				};
 				class Item3
@@ -5748,12 +5748,12 @@ class Mission
 					position[]={564.69031,5,1420.6924};
 					id=357;
 					side="GUER";
-					vehicle="I_helicrew_F";
+					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH8_G1";
-					init="GrpAAF_TH8 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH8 = group this; [""pcc"",this] call f_fnc_assignGear;";
 					description="INDFOR Transport Helo 8 Crew Chief";
 				};
 				class Item3
