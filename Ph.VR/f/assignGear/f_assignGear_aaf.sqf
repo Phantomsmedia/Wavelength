@@ -92,7 +92,7 @@ _carbinemag = "30Rnd_556x45_Stanag";
 _carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "SMG_02_F";
+_smg = "hgun_PDW2000_F";
 _smgmag = "30Rnd_9x21_Mag";
 _smgmag_tr = "30Rnd_9x21_Mag";
 
@@ -221,8 +221,8 @@ _baseHelmet = ["H_HelmetIA"];
 _baseGlasses = [];
 
 // Vests
-_lightRig = ["V_PlateCarrierIA1_dgtl"];
-_mediumRig = ["V_PlateCarrierIA2_dgtl"]; 	// default for all infantry classes
+_lightRig = ["V_Chestrig_oli"];
+_mediumRig = ["V_PlateCarrierIA1_dgtl","V_PlateCarrierIA2_dgtl"]; 	// default for all infantry classes
 _heavyRig = ["V_PlateCarrierIAGL_dgtl"];
 
 // Diver
@@ -554,7 +554,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1];
 	};
 
-// LOADOUT: SAM GUNNER
+// LOADOUT: MEDIUM SAM GUNNER
 	case "msamg":
 	{
 		["msamg"] call _backpack;
@@ -567,7 +567,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1];
 	};
 
-// LOADOUT: SAM ASSISTANT GUNNER
+// LOADOUT: MEDIUM SAM ASSISTANT GUNNER
 	case "msamag":
 	{
 		_unit addmagazines [_carbinemag,7];
@@ -577,6 +577,31 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["msamag"] call _backpack;
+		_attachments = [_attach1];
+	};
+	
+// LOADOUT: HEAVY SAM GUNNER
+	case "hsamg":
+	{
+		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addweapon _carbine;
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,2];
+		["hsamg"] call _backpack;
+		_attachments = [_attach1];
+	};
+
+// LOADOUT: HEAVY SAM ASSISTANT GUNNER
+	case "hsamag":
+	{
+		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addweapon _carbine;
+		_unit addWeapon "Rangefinder";
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,2];
+		["hsamag"] call _backpack;
 		_attachments = [_attach1];
 	};
 

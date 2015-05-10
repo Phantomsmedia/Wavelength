@@ -554,7 +554,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1];
 	};
 
-// LOADOUT: SAM GUNNER
+// LOADOUT: MEDIUM SAM GUNNER
 	case "msamg":
 	{
 		["msamg"] call _backpack;
@@ -567,7 +567,7 @@ switch (_typeofUnit) do
 		_attachments = [_attach1];
 	};
 
-// LOADOUT: SAM ASSISTANT GUNNER
+// LOADOUT: MEDIUM SAM ASSISTANT GUNNER
 	case "msamag":
 	{
 		_unit addmagazines [_carbinemag,7];
@@ -577,6 +577,31 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["msamag"] call _backpack;
+		_attachments = [_attach1];
+	};
+	
+// LOADOUT: HEAVY SAM GUNNER
+	case "hsamg":
+	{
+		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addweapon _carbine;
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,2];
+		["hsamg"] call _backpack;
+		_attachments = [_attach1];
+	};
+
+// LOADOUT: HEAVY SAM ASSISTANT GUNNER
+	case "hsamag":
+	{
+		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addweapon _carbine;
+		_unit addWeapon "Rangefinder";
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,2];
+		["hsamag"] call _backpack;
 		_attachments = [_attach1];
 	};
 
