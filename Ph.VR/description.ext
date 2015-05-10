@@ -291,14 +291,14 @@ class Params
 
 	class f_param_caching
 	{
-		title = "Cache AI outside distance (m)";
+		title = "Legacy Cache AI outside distance (m). Keep it off!";
 		values[] = {0,600,800,1000,1500,2000};
 		default = 0;
 		code = "f_param_caching = %1";
 	};
 		class f_param_dacdebug
 	{
-		title = "DAC Debug";
+		title = "Legacy DAC Debug. Keep it off!";
 		values[] = {0,1};
 		texts[] = {"Off","On"};
 		default = 0;
@@ -307,10 +307,10 @@ class Params
 
 	class ws_param_hc
 	{
-		title = "Headless client";
+		title = "Legacy Headless Client. Keep it off!";
 		values[] = {0,1};
 		texts[] = {"Off","Auto-Detect"};
-		default = 1;
+		default = 0;
 		code = "ws_param_hc = %1";
 	};
 
