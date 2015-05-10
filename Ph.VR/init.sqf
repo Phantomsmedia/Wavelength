@@ -264,7 +264,7 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 //				//////////		//
 //				//		//		/////////
 // ====================================================================================
-/*
+
 // BWMF - Headless Client Act.
 //Check HC for 1.36 Headless Client
 
@@ -277,18 +277,17 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 	case (1): {(!isServer) && {player == HC_SLOT_1}};	//param == "auto"
 	};
 };
-*/
+
 // ====================================================================================
-/*
+
 // BWMF - DAC Debug Params
 
 [] execVM "DAC\bwmf_dacParams.sqf";
-*/
 
 // ====================================================================================
 
 // eulerfoiler - HC Round-Robin Load Balancing
-// This requires renaming of of HC to HC_ID and HC2_ID and HC3_ID or something. Check the file that is called.
+// This automatically carries over units and data from Zeus or main spawn. DAC spawn works as well.
 
 execVM "f\headlessclient\passToHCs.sqf";
 
