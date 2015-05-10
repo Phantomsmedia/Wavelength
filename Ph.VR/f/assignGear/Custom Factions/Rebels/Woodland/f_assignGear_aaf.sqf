@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - AAF
+// F3 - Folk ARPS Assign Gear Script - Rebels (Desert)
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 

@@ -177,7 +177,7 @@ _MMGmag_tr = "130Rnd_338_Mag";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
-_RATmag = "NLAW_F";
+_RATmag = "AGM_PreloadedMissileDummy";
 
 // Medium AT
 _MAT = "launch_RPG32_F";
