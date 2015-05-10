@@ -161,7 +161,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_DC";
-					init="GrpNATO_DC = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_DC = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="NATO Deputy Commander";
 				};
 				class Item1
@@ -209,7 +209,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_ASL_SL";
-					init="GrpNATO_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_ASL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="NATO Alpha Squad Leader";
 				};
 				class Item1
@@ -418,7 +418,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_BSL_SL";
-					init="GrpNATO_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_BSL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="NATO Bravo Squad Leader";
 				};
 				class Item1
@@ -627,7 +627,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_CSL_SL";
-					init="GrpNATO_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_CSL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="NATO Charlie Squad Leader";
 				};
 				class Item1
@@ -886,7 +886,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_DC";
-					init="GrpCSAT_DC = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_DC = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="CSAT Deputy Commander";
 				};
 				class Item1
@@ -936,7 +936,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_ASL_SL";
-					init="GrpCSAT_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ASL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="CSAT Alpha Squad Leader";
 				};
 				class Item1
@@ -1159,7 +1159,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_BSL_SL";
-					init="GrpCSAT_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_BSL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="CSAT Bravo Squad Leader";
 				};
 				class Item1
@@ -1382,7 +1382,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_CSL_SL";
-					init="GrpCSAT_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_CSL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="CSAT Charlie Squad Leader";
 				};
 				class Item1
@@ -1772,7 +1772,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_DC";
-					init="GrpAAF_DC = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_DC = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="AAF Deputy Commander";
 				};
 				class Item1
@@ -1818,7 +1818,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_ASL_SL";
-					init="GrpAAF_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_ASL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="AAF Alpha Squad Leader";
 				};
 				class Item1
@@ -2026,7 +2026,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_BSL_SL";
-					init="GrpAAF_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_BSL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="AAF Bravo Squad Leader";
 				};
 				class Item1
@@ -2234,7 +2234,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_CSL_SL";
-					init="GrpAAF_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_CSL = group this; [""sl"",this] call f_fnc_assignGear;";
 					description="AAF Charlie Squad Leader";
 				};
 				class Item1
