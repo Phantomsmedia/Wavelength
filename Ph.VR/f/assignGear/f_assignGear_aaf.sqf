@@ -42,6 +42,7 @@
 //		car			- carabineer
 //		smg			- submachinegunner
 //		gren		- grenadier
+//		dm			- designated marksman
 //
 //		v_car		- car/4x4
 //		v_tr		- truck
@@ -64,7 +65,8 @@ _silencer2 = "muzzle_snds_M";	// Diver
 
 _scope1 = "optic_ACO_grn";		// Short Range
 _scope2 = "optic_MRCO";			// Medium Range
-_scope3 = "optic_KHS_blk";		// Long Range
+_scope3 = "optic_AMS"			// Medium - Long Range
+_scope4 = "optic_KHS_blk";		// Long Range
 
 _bipod1 = "bipod_03_F_blk";		// Light Machine Gun
 _bipod2 = "bipod_03_F_blk";		// Medium Machine Gun
@@ -190,6 +192,10 @@ _SAMmag = "Titan_AA";
 _HAT = "launch_I_Titan_short_F";
 _HATmag1 = "Titan_AT";
 _HATmag2 = "Titan_AP";
+
+// Marksman Rifle
+_DMrifle = "srifle_EBR_F";
+_DMriflemag = "20Rnd_762x51_Mag";
 
 // Sniper
 _SNrifle = "srifle_DMR_06_olive_F";
@@ -615,7 +621,7 @@ switch (_typeofUnit) do
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_attachments = [_scope3,_bipod1];
+		_attachments = [_scope4,_bipod1];
 	};
 
 // LOADOUT: SPOTTER
@@ -795,6 +801,19 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		["g"] call _backpack;
 		_attachments = [_attach1];
+	};
+
+// LOADOUT: DESIGNATED MARKSMAN
+	case "dm":
+	{
+		_unit addmagazines [_DMriflemag,7];
+		_unit addweapon _DMrifle;
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addmagazines [_pistolmag,2];
+		_unit addweapon _pistol;
+		["dm"] call _backpack;
+		_attachments = [_attach1,_scope3];
 	};
 
 // CARGO: CAR - room for 10 weapons and 50 cargo items
