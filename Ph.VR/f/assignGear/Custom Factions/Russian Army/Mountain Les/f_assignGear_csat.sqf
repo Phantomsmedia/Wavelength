@@ -340,7 +340,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2,_muzzle];
@@ -359,7 +359,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2,_muzzle];
@@ -388,7 +388,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2,_muzzle];
