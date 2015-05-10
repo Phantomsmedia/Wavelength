@@ -60,14 +60,14 @@
 _attach1 = "";						// IR Laser
 _attach2 = "";						// Flashlight
 
-_muzzle = "rhs_acc_dtk"				// Russian AK Muzzle
+_muzzle = "rhs_acc_dtk";			// Russian AK Muzzle
 
 _silencer1 = "rhs_acc_dtk4short";	// Primary
 _silencer2 = "muzzle_snds_M";		// Diver
 
 _scope1 = "rhs_acc_ekp1";			// Short Range
 _scope2 = "rhs_acc_1p78";			// Medium Range
-_scope3 = "rhs_acc_pso1m2"			// Medium - Long Range
+_scope3 = "rhs_acc_pso1m2";			// Medium - Long Range
 _scope4 = "rhs_acc_pso1m2";			// Long Range
 
 _bipod1 = "";						// Light Machine Gun

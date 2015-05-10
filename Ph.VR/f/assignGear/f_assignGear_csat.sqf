@@ -65,7 +65,7 @@ _silencer2 = "muzzle_snds_M";	// Diver
 
 _scope1 = "optic_Aco";			// Short Range
 _scope2 = "optic_Hamr";			// Medium Range
-_scope3 = "optic_AMS"			// Medium - Long Range
+_scope3 = "optic_AMS";			// Medium - Long Range
 _scope4 = "optic_KHS_hex";		// Long Range
 
 _bipod1 = "";					// Light Machine Gun
