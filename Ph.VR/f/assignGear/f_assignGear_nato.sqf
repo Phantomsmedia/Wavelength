@@ -58,7 +58,7 @@
 _attach1 = "acc_pointer_IR";	// IR Laser
 _attach2 = "acc_flashlight";	// Flashlight
 
-_silencer1 = "muzzle_snds_M";	// Primary
+_silencer1 = "muzzle_snds_H";	// Primary
 _silencer2 = "muzzle_snds_M";	// Diver
 
 _scope1 = "optic_ACO_grn";		// Short Range
@@ -113,10 +113,7 @@ _glsmokegreen = "1Rnd_SmokeGreen_Grenade_shell";
 _glsmokered = "1Rnd_SmokeRed_Grenade_shell";
 
 // Flares for FTLs, Squad Leaders, etc
-_glflarewhite = "UGL_FlareWhite_F";
-_glflarered = "UGL_FlareRed_F";
-_glflareyellow = "UGL_FlareYellow_F";
-_glflaregreen = "UGL_FlareGreen_F";
+_glflare = "UGL_FlareWhite_F";
 
 // Pistols (CO, SL, Automatic Rifleman, Medium MG Gunner)
 _pistol = "hgun_ACPC2_F";
@@ -126,10 +123,6 @@ _pistolmag = "9Rnd_45ACP_Mag";
 _grenade = "HandGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
-
-// Misc Medical Items.
-_firstaid = "FirstAidKit";
-_medkit = "Medikit";
 
 // Night Vision Goggles (NVGoggles)
 _nvg = "NVGoggles_INDEP";
@@ -144,9 +137,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_dgtl";			// small
-_bagmedium = "B_FieldPack_oli";				// medium
-_baglarge =  "B_Carryall_oli"; 				// large
+_bagsmall = "B_AssaultPack_dgtl";			// carries 120, weighs 20
+_bagmedium = "B_FieldPack_oli";				// carries 200, weighs 30
+_baglarge =  "B_Carryall_oli"; 				// carries 320, weighs 40
 _bagmediumdiver =  "B_AssaultPack_blk";		// used by divers
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -284,7 +277,6 @@ if (_isMan) then {
 	// Add items universal to all units of this faction
 
 	_unit linkItem _nvg;			// Add and equip the faction's nvgs, remove to remove nvgs
-	_unit addItem _firstaid;		// Add a single first aid kit
 	_unit linkItem "ItemMap";		// Add and equip the map
 	_unit linkItem "ItemCompass";	// Add and equip a compass
 	_unit linkItem "ItemRadio";		// Add and equip A3's default radio
@@ -304,7 +296,7 @@ _backpack = {
 	if (count _this > 1) then {_loadout = _this select 1};
 	switch (_typeofBackPack) do
 	{
-		#include "f_assignGear_aaf_b.sqf";
+		#include "f_assignGear_nato_b.sqf";
 	};
 };
 
@@ -892,7 +884,7 @@ switch (_typeofUnit) do
 
 		_unit selectweapon primaryweapon _unit;
 
-		if (true) exitwith {player globalchat format ["DEBUG (f\assignGear\f_assignGear_aaf.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
+		if (true) exitwith {player globalchat format ["DEBUG (f\assignGear\f_assignGear_nato.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
    };
 
 
