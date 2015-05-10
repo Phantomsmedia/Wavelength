@@ -43,7 +43,7 @@ if(_typeOfUnit != "NIL") then {
       _rifradio = ["ar","aar","rat","samag","mmgag","hmgag","matag","hatag","mtrag","sp","r","car","smg","gren"];
 
       // Set the list of units that get a shortrange radio
-      _shortrange = ["co", "dc", "ftl", "m", "samg", "mmgg", "matg", "sn", "mtrg"];
+      _shortrange = ["co", "sl", "ftl", "m", "samg", "mmgg", "matg", "sn", "mtrg"];
 
       // Give out respective radios
 

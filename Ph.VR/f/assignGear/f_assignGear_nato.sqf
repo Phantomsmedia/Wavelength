@@ -7,7 +7,7 @@
 //
 // Defined loadouts:
 //		co			- commander
-//		dc 			- squad leader / deputy commander
+//		sl 			- squad leader
 //		m 			- medic
 //		ftl			- fire team leader
 //		ar 			- automatic rifleman
@@ -345,14 +345,14 @@ switch (_typeofUnit) do
 		_attachments = [_attach1,_scope2];
 	};
 
-// LOADOUT: SQUAD LEADER & DEPUTY COMMANDER
-	case "dc":
+// LOADOUT: SQUAD LEADER
+	case "sl":
 	{
 		_unit addmagazines [_glriflemag,7];
 		_unit addmagazines [_glriflemag_tr,2];
 		_unit addmagazines [_glmag,3];
 		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_DCrifle
+		_unit addweapon _glrifle;					//_SLrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
