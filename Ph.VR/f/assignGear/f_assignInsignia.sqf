@@ -100,60 +100,6 @@ switch (_faction) do
 			["GrpAAF_DC","AAF_DC_Badge"]
 		];
 	};
-	case "blu_g_f" : {
-		_groupBadges = [
-			["GrpFIA_ASL","NATO_ASL_Badge"],
-			["GrpFIA_A1","NATO_A1_Badge"],
-			["GrpFIA_A2","NATO_A2_Badge"],
-			["GrpFIA_A3","NATO_A3_Badge"],
-			["GrpFIA_BSL","NATO_BSL_Badge"],
-			["GrpFIA_B1","NATO_B1_Badge"],
-			["GrpFIA_B2","NATO_B2_Badge"],
-			["GrpFIA_B3","NATO_B3_Badge"],
-			["GrpFIA_CSL","NATO_CSL_Badge"],
-			["GrpFIA_C1","NATO_C1_Badge"],
-			["GrpFIA_C2","NATO_C2_Badge"],
-			["GrpFIA_C3","NATO_C3_Badge"],
-			["GrpFIA_CO","NATO_CO_Badge"],
-			["GrpFIA_DC","NATO_DC_Badge"]
-		];
-	};
-	case "opf_g_f" :{
-		_groupBadges = [
-			["GrpOFIA_ASL","NATO_ASL_Badge"],
-			["GrpOFIA_A1","NATO_A1_Badge"],
-			["GrpOFIA_A2","NATO_A2_Badge"],
-			["GrpOFIA_A3","NATO_A3_Badge"],
-			["GrpOFIA_BSL","NATO_BSL_Badge"],
-			["GrpOFIA_B1","NATO_B1_Badge"],
-			["GrpOFIA_B2","NATO_B2_Badge"],
-			["GrpOFIA_B3","NATO_B3_Badge"],
-			["GrpOFIA_CSL","NATO_CSL_Badge"],
-			["GrpOFIA_C1","NATO_C1_Badge"],
-			["GrpOFIA_C2","NATO_C2_Badge"],
-			["GrpOFIA_C3","NATO_C3_Badge"],
-			["GrpOFIA_CO","NATO_CO_Badge"],
-			["GrpOFIA_DC","NATO_DC_Badge"]
-		];
-	};
-	case "ind_g_f" :{
-		_groupBadges = [
-			["GrpIFIA_ASL","NATO_ASL_Badge"],
-			["GrpIFIA_A1","NATO_A1_Badge"],
-			["GrpIFIA_A2","NATO_A2_Badge"],
-			["GrpIFIA_A3","NATO_A3_Badge"],
-			["GrpIFIA_BSL","NATO_BSL_Badge"],
-			["GrpIFIA_B1","NATO_B1_Badge"],
-			["GrpIFIA_B2","NATO_B2_Badge"],
-			["GrpIFIA_B3","NATO_B3_Badge"],
-			["GrpIFIA_CSL","NATO_CSL_Badge"],
-			["GrpIFIA_C1","NATO_C1_Badge"],
-			["GrpIFIA_C2","NATO_C2_Badge"],
-			["GrpIFIA_C3","NATO_C3_Badge"],
-			["GrpIFIA_CO","NATO_CO_Badge"],
-			["GrpIFIA_DC","NATO_DC_Badge"]
-		];
-	};
 
 };
 
