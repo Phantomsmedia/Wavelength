@@ -229,7 +229,7 @@ _baseGlasses = [];
 
 // Vests
 _lightRig = ["rhsusf_iotv_ocp"];
-_mediumRig = ["rhsusf_iotv_ocp_Squadleader"]; 	// default for all infantry classes
+_mediumRig = ["rhsusf_iotv_ocp_Rifleman"]; 	// default for all infantry classes
 _heavyRig = ["rhsusf_iotv_ocp_SAW"];
 
 // Diver
