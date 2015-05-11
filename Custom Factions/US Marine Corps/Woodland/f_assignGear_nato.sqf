@@ -828,7 +828,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glriflemag, 8];
 		_unit addMagazineCargoGlobal [_carbinemag, 8];
 		_unit addMagazineCargoGlobal [_armag, 5];
-		_unit addMagazineCargoGlobal [_ratmag, 1];
+		_unit addMagazineCargoGlobal [_matmag1, 1];
 		_unit addMagazineCargoGlobal [_grenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
@@ -866,7 +866,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glriflemag, 10];
 		_unit addMagazineCargoGlobal [_carbinemag, 12];
 		_unit addMagazineCargoGlobal [_armag, 8];
-		_unit addMagazineCargoGlobal [_ratmag, 2];
+		_unit addMagazineCargoGlobal [_matmag1, 2];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addmagazineCargoGlobal [_mgrenade,8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
@@ -889,7 +889,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_carbinemag, 5];
 		_unit addMagazineCargoGlobal [_glmag, 5];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
-		_unit addMagazineCargoGlobal [_ratmag, 2];
+		_unit addMagazineCargoGlobal [_matmag1, 2];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_mgrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
@@ -910,7 +910,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_carbinemag, 20];
 		_unit addMagazineCargoGlobal [_glmag, 20];
 		_unit addMagazineCargoGlobal [_glsmokewhite,16];
-		_unit addMagazineCargoGlobal [_ratmag, 6];
+		_unit addMagazineCargoGlobal [_matmag1, 6];
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_mgrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
@@ -931,7 +931,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_carbinemag, 60];
 		_unit addMagazineCargoGlobal [_glmag, 60];
 		_unit addMagazineCargoGlobal [_glsmokewhite,50];
-		_unit addMagazineCargoGlobal [_ratmag, 20];
+		_unit addMagazineCargoGlobal [_matmag1, 20];
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_mgrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
