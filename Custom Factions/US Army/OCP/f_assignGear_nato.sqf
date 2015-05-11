@@ -154,10 +154,10 @@ _bagmediumdiver =  "B_AssaultPack_blk";			// used by divers
 _baguav = "B_UAV_01_backpack_F";				// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
-_baghatg = "B_AT_01_weapon_F";					// used by Heavy AT gunner
-_baghatag = "B_HMG_01_support_F";				// used by Heavy AT assistant gunner
-_bagmtrg = "B_Mortar_01_weapon_F";				// used by Mortar gunner
-_bagmtrag = "B_Mortar_01_support_F";			// used by Mortar assistant gunner
+_baghatg = "RDS_Tow_Gun_Bag";					// used by Heavy AT gunner
+_baghatag = "RDS_Tow_Gun_Bag";					// used by Heavy AT assistant gunner
+_bagmtrg = "RDS_M252_Gun_Bag";					// used by Mortar gunner
+_bagmtrag = "RDS_M252_Bipod_Bag";				// used by Mortar assistant gunner
 _baghsamg = "B_AA_01_weapon_F";					// used by Heavy SAM gunner
 _baghsamag = "B_HMG_01_support_F";				// used by Heavy SAM assistant gunner
 
