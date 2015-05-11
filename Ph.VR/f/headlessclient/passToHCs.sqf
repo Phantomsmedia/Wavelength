@@ -107,8 +107,9 @@ while {true} do {
 
     // If a player is in this group, don't swap to an HC
     { if (isPlayer _x) then { _swap = false; }; } forEach (units _x);
-	// If a unit named "blacklist1" through "blacklist10" is in this group, don't swap to an HC.
-	{if (blacklist1, blacklist2, blacklist3, blacklist4, blacklist5, blacklist6, blacklist7, blacklist8, blacklist9, blacklist10 _x) then {_swap = false;};} forEach (units _x);
+    
+    // If a unit has 'hc_blacklist' set to true and is in this group, don't swap to an HC.
+    {if (_x getVariable ["hc_blacklist", false]) then {_swap = false;};} forEach (units _x);
 	
     // If load balance enabled, round robin between the HCs - else pass all to HC
     if ( _swap ) then {
