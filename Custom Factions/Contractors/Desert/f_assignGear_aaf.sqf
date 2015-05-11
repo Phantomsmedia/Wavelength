@@ -63,13 +63,13 @@ _attach2 = "acc_flashlight";	// Flashlight
 _silencer1 = "muzzle_snds_M";	// Primary
 _silencer2 = "muzzle_snds_M";	// Diver
 
-_scope1 = "rhsusf_acc_compm4";		// Short Range
-_scope2 = "rhsusf_acc_ACOG";			// Medium Range
-_scope3 = "optic_KHS_old";			// Medium - Long Range
+_scope1 = "rhsusf_acc_compm4";	// Short Range
+_scope2 = "rhsusf_acc_ACOG";	// Medium Range
+_scope3 = "optic_KHS_old";		// Medium - Long Range
 _scope4 = "optic_KHS_old";		// Long Range
 
-_bipod1 = "rhs_bipod";		// Light Machine Gun
-_bipod2 = "rhs_bipod";		// Medium Machine Gun
+_bipod1 = "rhs_bipod";			// Light Machine Gun
+_bipod2 = "rhs_bipod";			// Medium Machine Gun
 _bipod3 = "bipod_03_F_blk";		// Sniper
 
 // Default setup
@@ -130,7 +130,7 @@ _grenade = "HandGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 
-// Misc Medical Items.
+// Misc. Medical Items
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
@@ -148,8 +148,8 @@ _chemblue = "Chemlight_blue";
 
 // Backpacks
 _bagsmall = "B_AssaultPack_blk";			// small
-_bagmedium = "B_TacticalPack_blk";				// medium
-_baglarge =  "TRYK_B_Carryall_blk"; 				// large
+_bagmedium = "B_TacticalPack_blk";			// medium
+_baglarge =  "TRYK_B_Carryall_blk"; 		// large
 _bagmediumdiver =  "B_AssaultPack_blk";		// used by divers
 _baguav = "I_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "I_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -160,6 +160,12 @@ _bagmtrg = "I_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "I_Mortar_01_support_F";		// used by Mortar assistant gunner
 _baghsamg = "I_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "I_HMG_01_support_F";			// used by Heavy SAM assistant gunner
+
+// Misc. Equipment
+_sparebarrel = "AGM_SpareBarrel";			// for ARs and MMGs
+_maptools = "AGM_MapTools";                 // for SLs, DCs, and COs
+_defusalkit = "AGM_DefusalKit";             // for engineers
+_clacker = "AGM_Clacker";                   // for engineers
 
 // ====================================================================================
 
@@ -341,6 +347,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2];
 	};
@@ -360,6 +367,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2];
 	};
@@ -403,6 +411,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
+		_unit addItem _sparebarrel;
 		["ar"] call _backpack;
 		_attachments = [_attach1,_bipod1];
 	};
@@ -444,6 +453,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
+		_unit addItem _sparebarrel;
 		["mmg"] call _backpack;
 		_attachments = [_bipod2];
 	};
@@ -713,6 +723,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_satchel,2];
 		_unit addItem "MineDetector";
+		_unit addItem _defusalkit;
+		_unit addItem _clacker;
 		["eng"] call _backpack;
 		_attachments = [_attach1];
 	};
@@ -726,6 +738,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_APmine,2];
 		_unit addItem "MineDetector";
+		_unit addItem _defusalkit;
+		_unit addItem _clacker;
 		["engm"] call _backpack;
 		_attachments = [_attach1];
 	};

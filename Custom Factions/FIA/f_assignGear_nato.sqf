@@ -130,7 +130,7 @@ _grenade = "HandGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 
-// Misc Medical Items.
+// Misc. Medical Items
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
@@ -160,6 +160,12 @@ _bagmtrg = "B_Mortar_01_weapon_F";			// used by Mortar gunner
 _bagmtrag = "B_Mortar_01_support_F";		// used by Mortar assistant gunner
 _baghsamg = "B_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
+
+// Misc. Equipment
+_sparebarrel = "AGM_SpareBarrel";			// for ARs and MMGs
+_maptools = "AGM_MapTools";                 // for SLs, DCs, and COs
+_defusalkit = "AGM_DefusalKit";             // for engineers
+_clacker = "AGM_Clacker";                   // for engineers
 
 // ====================================================================================
 
@@ -341,6 +347,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2];
 	};
@@ -360,6 +367,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2];
 	};
@@ -403,6 +411,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
+		_unit addItem _sparebarrel;
 		["ar"] call _backpack;
 		_attachments = [_attach1,_bipod1];
 	};
@@ -444,6 +453,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
+		_unit addItem _sparebarrel;
 		["mmg"] call _backpack;
 		_attachments = [_bipod2];
 	};
@@ -713,6 +723,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_satchel,2];
 		_unit addItem "MineDetector";
+		_unit addItem _defusalkit;
+		_unit addItem _clacker;
 		["eng"] call _backpack;
 		_attachments = [_attach1];
 	};
@@ -726,6 +738,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_APmine,2];
 		_unit addItem "MineDetector";
+		_unit addItem _defusalkit;
+		_unit addItem _clacker;
 		["engm"] call _backpack;
 		_attachments = [_attach1];
 	};
