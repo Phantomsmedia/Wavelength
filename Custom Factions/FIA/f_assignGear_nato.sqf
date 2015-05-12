@@ -65,10 +65,10 @@ _silencer2 = "muzzle_snds_M";	// Diver
 
 _scope1 = "optic_ACO_grn";		// Short Range
 _scope2 = "optic_MRCO";			// Medium Range
-_scope3 = "optic_KHS_old";		// Long Range
+_scope3 = "optic_AMS";			// Medium - Long Range
 _scope4 = "optic_KHS_old";		// Long Range
 
-_bipod1 = "";					// Light Machine Gun
+_bipod1 = "bipod_03_F_blk";		// Light Machine Gun
 _bipod2 = "bipod_02_F_blk";		// Medium Machine Gun
 _bipod3 = "bipod_03_F_blk";		// Sniper Rifle
 
@@ -172,9 +172,9 @@ _clacker = "AGM_Clacker";                   // for engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "LMG_Zafir_F";
-_ARmag = "150Rnd_762x54_Box";
-_ARmag_tr = "150Rnd_762x54_Box_Tracer";
+_AR = "LMG_Mk200_F";
+_ARmag = "200Rnd_65x39_cased_Box";
+_ARmag_tr = "200Rnd_65x39_cased_Box_Tracer";
 
 // Medium MG
 _MMG = "MMG_01_tan_F";
@@ -195,12 +195,12 @@ _SAM = "launch_I_Titan_F";
 _SAMmag = "Titan_AA";
 
 // Heavy AT
-_HAT = "launch_B_Titan_short_F";
+_HAT = "launch_I_Titan_short_F";
 _HATmag1 = "Titan_AT";
 _HATmag2 = "Titan_AP";
 
 // Marksman Rifle
-_DMrifle = "srifle_DMR_03_tan_F";
+_DMrifle = "srifle_EBR_F";
 _DMriflemag = "20Rnd_762x51_Mag";
 
 // Sniper
@@ -234,7 +234,7 @@ _baseHelmet = ["H_Booniehat_oli","H_Booniehat_tan","H_Booniehat_dgtl","H_Cap_oli
 _baseGlasses = [];
 
 // Vests
-_lightRig = ["V_TacVest_oli"];
+_lightRig = ["V_BandollierB_khk","V_BandollierB_oli"];
 _mediumRig = ["V_Chestrig_rgr","V_Chestrig_khk"]; 	// default for all infantry classes
 _heavyRig = ["V_PlateCarrierIAGL_oli"];
 
