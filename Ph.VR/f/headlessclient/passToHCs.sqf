@@ -31,7 +31,7 @@ while {true} do {
   sleep rebalanceTimer;
 
   // Do not enable load balancing unless more than one HC is present
-  // Leave this variable false, we'll enable it automatically under the right conditions  
+  // Leave this variable false, we'll enable it automatically under the right conditions
   _loadBalance = false;
 
    // Get HC Client ID else set variables to null
@@ -40,7 +40,7 @@ while {true} do {
 
     if (_HC_ID > 2) then {
       diag_log format ["passToHCs: Found HC with Client ID %1", _HC_ID];
-    } else { 
+    } else {
       diag_log "passToHCs: [WARN] HC disconnected";
 
       HC = objNull;
@@ -55,7 +55,7 @@ while {true} do {
 
       if (_HC2_ID > 2) then {
         diag_log format ["passToHCs: Found HC2 with Client ID %1", _HC2_ID];
-      } else { 
+      } else {
         diag_log "passToHCs: [WARN] HC2 disconnected";
 
         HC2 = objNull;
@@ -71,7 +71,7 @@ while {true} do {
 
       if (_HC3_ID > 2) then {
         diag_log format ["passToHCs: Found HC2 with Client ID %1", _HC3_ID];
-      } else { 
+      } else {
         diag_log "passToHCs: [WARN] HC3 disconnected";
 
         HC3 = objNull;
@@ -81,7 +81,7 @@ while {true} do {
   };
 
   // If no HCs present, wait for HC to rejoin
-  if ( (isNull HC) && (isNull HC2) && (isNull HC3) ) then { waitUntil {!isNull HC}; };  
+  if ( (isNull HC) && (isNull HC2) && (isNull HC3) ) then { waitUntil {!isNull HC}; };
 
   // Check to auto enable Round-Robin load balancing strategy
   if ( (!isNull HC && !isNull HC2) || (!isNull HC && !isNull HC3) || (!isNull HC2 && !isNull HC3) ) then { _loadBalance = true; };
@@ -96,7 +96,7 @@ while {true} do {
   // Determine first HC to start with
   _currentHC = 0;
 
-  if (!isNull HC) then { _currentHC = 1; } else { 
+  if (!isNull HC) then { _currentHC = 1; } else {
     if (!isNull HC2) then { _currentHC = 2; } else { _currentHC = 3; };
   };
 
@@ -105,12 +105,20 @@ while {true} do {
   {
     _swap = true;
 
-    // If a player is in this group, don't swap to an HC
-    { if (isPlayer _x) then { _swap = false; }; } forEach (units _x);
-    
-    // If a unit has 'hc_blacklist' set to true and is in this group, don't swap to an HC.
-    {if (_x getVariable ["hc_blacklist", false]) then {_swap = false;};} forEach (units _x);
-	
+    {
+      // If a player is in this group, don't swap to an HC
+      if (isPlayer _x) exitWith { _swap = false; };
+
+      // If a unit has 'hc_blacklist' set to true and is in this group, don't swap to an HC.
+      if (_x getVariable ["hc_blacklist", false]) exitWith { _swap = false; };
+
+      // If unit is in a vehicle check if vehicle or crew is blacklisted
+      if (vehicle _x != _x) then {
+        if ((vehicle _x) getVariable ["hc_blacklist", false]) exitWith { _swap = false; };
+      };
+
+    } forEach (units _x);
+
     // If load balance enabled, round robin between the HCs - else pass all to HC
     if ( _swap ) then {
       _rc = false;
