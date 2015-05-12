@@ -118,6 +118,13 @@ while {true} do {
       };
 
     } forEach (units _x);
+    
+    // Check if group has already been transfered
+    if ( _swap ) then {
+      if (_x getVariable ["hc_transfered", false]) then {
+        _swap = false;
+      };
+    };
 
     // If load balance enabled, round robin between the HCs - else pass all to HC
     if ( _swap ) then {
@@ -140,7 +147,10 @@ while {true} do {
       };
 
       // If the transfer was successful, count it for accounting and diagnostic information
-      if ( _rc ) then { _numTransfered = _numTransfered + 1; };
+      if ( _rc ) then { 
+        _x setVariable ["hc_transfered", true];
+        _numTransfered = _numTransfered + 1; 
+      };
     };
   } forEach (allGroups);
 
