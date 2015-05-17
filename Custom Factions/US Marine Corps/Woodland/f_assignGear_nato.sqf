@@ -86,13 +86,13 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 _rifle = "rhs_weap_m16a4_carryhandle";
-_riflemag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-_riflemag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+_riflemag = "30Rnd_556x45_Stanag";
+_riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "rhs_weap_m4a1_carryhandle";
-_carbinemag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-_carbinemag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+_carbinemag = "30Rnd_556x45_Stanag";
+_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "CUP_smg_MP5A5";
@@ -106,8 +106,8 @@ _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, SL, FTLs)
 _glrifle = "rhs_weap_m16a4_carryhandle_M203";
-_glriflemag = "rhs_mag_30Rnd_556x45_M855A1_Stanag";
-_glriflemag_tr = "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+_glriflemag = "30Rnd_556x45_Stanag";
+_glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
 _glmag = "rhs_mag_M441_HE";
 
 // Smoke for FTLs, Squad Leaders, etc
