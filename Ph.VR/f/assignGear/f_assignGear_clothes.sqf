@@ -37,7 +37,15 @@ if (_typeOfUnit in _pilot) then {
 	_helmet = _pilotHelmet;
 	_uniform = _pilotUniform;
 	_rig = _pilotRig;
-	_glasses = _pilotGlasses
+	_glasses = _pilotGlasses;
+};
+
+// Fixed Wing Pilot
+if (_typeOfUnit in _fwpilot) then {
+	_helmet = _fwpilotHelmet;
+	_uniform = _fwpilotUniform;
+	_rig = _fwpilotRig;
+	_glasses = _fwpilotGlasses;
 };
 
 // Crew
