@@ -6,7 +6,6 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"a3_characters_f_beta",
 		"A3_Characters_F_INDEP",
-		"A3_Characters_F_Civil",
 		"A3_Characters_F_BLUFOR",
 		"A3_Air_F_Beta_Heli_Attack_01",
 		"A3_Air_F_Beta_Heli_Attack_02",
@@ -43,7 +42,8 @@ class Mission
 		"A3_Armor_F_Slammer",
 		"A3_Armor_F_T100K",
 		"A3_Armor_F_EPB_APC_tracked_03",
-		"A3_Armor_F_EPB_MBT_03"
+		"A3_Armor_F_EPB_MBT_03",
+		"A3_Characters_F_EPC"
 	};
 	addOnsAuto[]=
 	{
@@ -52,7 +52,7 @@ class Mission
 		"A3_Characters_F_Gamma",
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
-		"A3_Characters_F_Civil",
+		"A3_Characters_F_EPC",
 		"agm_medical",
 		"dac_source",
 		"A3_Air_F_Heli_Heli_Transport_03",
@@ -3610,7 +3610,7 @@ class Mission
 					position[]={895.45319,5,2856.4194};
 					id=228;
 					side="CIV";
-					vehicle="C_man_polo_1_F";
+					vehicle="C_journalist_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
@@ -3630,7 +3630,7 @@ class Mission
 					position[]={902.64471,5,2856.1772};
 					id=229;
 					side="CIV";
-					vehicle="C_man_polo_2_F";
+					vehicle="C_journalist_F";
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
