@@ -61,7 +61,7 @@ f_radios_settings_acre2_groups_indfor = ["Alpha","Bravo","Charlie","Delta","Echo
 
 // ACRE full Duplex
 // Sets the duplex of radio transmissions. If set to true, it means that you will receive transmissions even while talking and multiple people can speak at the same time.
-[false] call acre_api_fnc_setFullDuplex;
+[true] call acre_api_fnc_setFullDuplex;
 
 // ACRE Interference
 // Sets whether transmissions will interfere with eachother. This, by default, causes signal loss when multiple people are transmitting on the same frequency.
