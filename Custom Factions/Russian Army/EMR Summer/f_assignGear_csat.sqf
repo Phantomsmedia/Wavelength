@@ -254,8 +254,8 @@ _pilotRig = ["rhs_6sh92_digi"];
 _pilotGlasses = [];
 
 // Fixed Wing Pilot
-_fwpilotUniform = ["U_I_pilotCoveralls"];
-_fwpilotHelmet = ["H_PilotHelmetFighter_I"];
+_fwpilotUniform = ["rhs_uniform_df15"];
+_fwpilotHelmet = ["rhs_zsh7a"];
 _fwpilotRig = [];
 _fwpilotGlasses = [];
 
