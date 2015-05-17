@@ -236,7 +236,7 @@ _baseHelmet = ["MNP_Boonie_DPM","MNP_Boonie_USW","MNP_Boonie_TIG","H_Booniehat_o
 _baseGlasses = [];
 
 // Vests
-_lightRig = ["V_TacVest_oli"];
+_lightRig = ["V_BandollierB_rgr"];
 _mediumRig = ["V_Chestrig_rgr"]; 	// default for all infantry classes
 _heavyRig = ["V_Chestrig_rgr"];
 
