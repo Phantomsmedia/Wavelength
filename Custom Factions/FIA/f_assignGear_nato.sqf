@@ -163,10 +163,10 @@ _baghsamg = "B_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
 // Misc. Equipment
-_sparebarrel = "AGM_SpareBarrel";			// for ARs and MMGs
-_maptools = "AGM_MapTools";                 // for SLs, DCs, and COs
-_defusalkit = "AGM_DefusalKit";             // for engineers
-_clacker = "AGM_Clacker";                   // for engineers
+_sparebarrel = "ACE_SpareBarrel";			// for ARs and MMGs
+_maptools = "ACE_MapTools";                 // for SLs, DCs, and COs
+_defusalkit = "ACE_DefusalKit";             // for engineers
+_clacker = "ACE_Clacker";                   // for engineers
 
 // ====================================================================================
 
@@ -184,7 +184,7 @@ _MMGmag_tr = "150Rnd_93x64_Mag";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
-_RATmag = "AGM_PreloadedMissileDummy";
+_RATmag = "ACE_PreloadedMissileDummy";
 
 // Medium AT
 _MAT = "launch_RPG32_F";
@@ -999,7 +999,7 @@ if (!_isMan) then
 	// Authentic Gameplay Modification
 	if (f_var_medical == 2) exitWith
 		{
-			[_unit] execVM "f\medical\AGM_converter.sqf";
+			[_unit] execVM "f\gearAll\AGM_converter.sqf";
 		};
 	};
 

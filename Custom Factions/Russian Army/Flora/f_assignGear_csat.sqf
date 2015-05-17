@@ -164,10 +164,10 @@ _baghsamg = "O_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "O_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
 // Misc. Equipment
-_sparebarrel = "AGM_SpareBarrel";			// for ARs and MMGs
-_maptools = "AGM_MapTools";                 // for SLs, DCs, and COs
-_defusalkit = "AGM_DefusalKit";             // for engineers
-_clacker = "AGM_Clacker";                   // for engineers
+_sparebarrel = "ACE_SpareBarrel";			// for ARs and MMGs
+_maptools = "ACE_MapTools";                 // for SLs, DCs, and COs
+_defusalkit = "ACE_DefusalKit";             // for engineers
+_clacker = "ACE_Clacker";                   // for engineers
 
 // ====================================================================================
 
@@ -1000,7 +1000,7 @@ if (!_isMan) then
 	// Authentic Gameplay Modification
 	if (f_var_medical == 2) exitWith
 		{
-			[_unit] execVM "f\medical\AGM_converter.sqf";
+			[_unit] execVM "f\allGear\AGM_converter.sqf";
 		};
 	};
 
