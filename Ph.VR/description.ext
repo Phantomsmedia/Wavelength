@@ -178,7 +178,7 @@ class Params
             title = "Radio System";
             values[] = {0,1,2,3};
             texts[] = {"Off","ACRE","TFR","ACRE2"};
-            default = 2;
+            default = 3;
             code = "f_var_radios = %1";
     };
 
@@ -192,7 +192,7 @@ class Params
             title = "Which Mod System?";
             values[] = {0,1,2,3};
             texts[] = {"Arma 3 Default","F3 Simple Wounding System","Authentic Gameplay Mod","Advanced Banana Environment 3"};
-            default = 2;
+            default = 3;
             code = "f_var_medical = %1";
     };
 
