@@ -15,14 +15,14 @@ f_radios_settings_acre2_disableFrequencySplit = FALSE;
 // Set a list of units that get a short wave
 // if its nil, that means all units get a radio
 // empty array means that noone gets
-f_radios_settings_acre2_shortRange = nil;
+f_radios_settings_acre2_shortRange = ["ftl","ar","aar","rat","dm","gren","r","car","smg"];
 
 // Set the list of units that get a long range
-f_radios_settings_acre2_longRange = ["co", "dc", "m", "mmgag","hmgag","matag","hatag", "mtrag","msamag","sp","vc", "pp", "eng", "engm", "uav", "div"];
+f_radios_settings_acre2_longRange = ["co", "dc","ftl","m", "mmgag","hmgag","matag","hatag", "mtrag","msamag","sp","vc", "pp", "eng", "engm", "uav", "div"];
 
 // Unit types you want to give an extra long-range radio
 // E.G: ["co", "m"] would give the CO and all medics an extra long-range radios
-f_radios_settings_acre2_extraRadios = [];
+f_radios_settings_acre2_extraRadios = ["co","dc"];
 
 // Standard Short
 f_radios_settings_acre2_standardSHRadio = "ACRE_PRC343";
