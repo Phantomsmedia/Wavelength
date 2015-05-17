@@ -472,7 +472,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_riflemag,7];
 		_unit addmagazines [_riflemag_tr,2];
 		_unit addweapon _rifle;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["mmgag"] call _backpack;
@@ -496,7 +496,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hmgag"] call _backpack;
@@ -522,7 +522,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["matag"] call _backpack;
@@ -547,7 +547,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hatag"] call _backpack;
@@ -574,7 +574,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		["mtrag"] call _backpack;
 		_attachments = [_attach1];
 	};
@@ -598,7 +598,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["msamag"] call _backpack;
@@ -623,7 +623,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hsamag"] call _backpack;
@@ -652,7 +652,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit linkItem "ItemGPS";
 		_attachments = [_attach1,_scope2];
 	};
@@ -665,7 +665,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_attachments = [];
 	};
 
