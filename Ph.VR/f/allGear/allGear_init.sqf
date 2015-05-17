@@ -29,7 +29,16 @@ call
 		// If script is being run on a client
 		if (hasInterface) then
 		{
-			[] execVM "f\medical\AGM_clientInit.sqf";
+			[] execVM "f\allGear\AGM_clientInit.sqf";
 		};
 	};
+	// Advanced Banana Environment
+	if (f_var_medical == 3) exitWith
+	{
+		// If script is being run on a client
+		if (hasInterface) then
+		{
+			[] execVM "f\allGear\ACE_clientInit.sqf";
+		};
+	};	
 };
