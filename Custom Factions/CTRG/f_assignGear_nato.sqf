@@ -97,7 +97,7 @@ _carbinemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "SMG_01_F";
 _smgmag = "30Rnd_45ACP_Mag_SMG_01";
-_smgmag_tr = "30Rnd_45ACP_Mag_SMG_01_Tracer_Green";
+_smgmag_tr = "30Rnd_45ACP_Mag_SMG_01";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
