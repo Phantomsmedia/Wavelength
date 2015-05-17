@@ -33,6 +33,7 @@
 //		pp			- air vehicle pilot / co-pilot
 //		pcc			- air vehicle co-pilot (repair) / crew chief (repair)
 //		pc			- air vehicle crew
+//		fwp			- fixed wing pilot
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
 //		uav			- UAV operator
@@ -223,6 +224,7 @@ _light = [];
 _heavy =  ["eng","engm"];
 _diver = ["div"];
 _pilot = ["pp","pcc","pc"];
+_fwpilot = ["fwp"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
 
@@ -249,6 +251,12 @@ _pilotUniform = ["rhs_uniform_cu_ocp"];
 _pilotHelmet = ["rhsusf_hgu56p"];
 _pilotRig = ["rhsusf_iotv_ocp"];
 _pilotGlasses = [];
+
+// Fixed Wing Pilot
+_fwpilotUniform = ["U_I_pilotCoveralls"];
+_fwpilotHelmet = ["H_PilotHelmetFighter_I"];
+_fwpilotRig = [];
+_fwpilotGlasses = [];
 
 // Crewman
 _crewUniform = ["rhs_uniform_cu_ocp"];
@@ -711,6 +719,17 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smgmag,5];
 		_unit addweapon _smg;
 		_unit addmagazines [_smokegrenade,2];
+		_attachments = [];
+	};
+
+// LOADOUT: FIXED WING PILOT
+	case "fwp":
+	{
+		_unit addmagazines [_pistolmag,2];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_unit addItem "ItemGPS";
+		_unit assignItem "ItemGPS";
 		_attachments = [];
 	};
 
