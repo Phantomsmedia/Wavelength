@@ -241,10 +241,10 @@ _mediumRig = ["V_TacVestIR_blk"]; 	// default for all infantry classes
 _heavyRig = ["V_PlateCarrier1_blk"];
 
 // Diver
-_diverUniform =  ["U_B_Wetsuit"];
+_diverUniform =  ["U_I_Wetsuit"];
 _diverHelmet = [];
-_diverRig = ["V_RebreatherB"];
-_diverGlasses = ["G_B_Diving"];
+_diverRig = ["V_RebreatherIA"];
+_diverGlasses = ["G_I_Diving"];
 
 // Pilot
 _pilotUniform = ["U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
