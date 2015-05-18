@@ -36,22 +36,22 @@ f_radios_settings_acre2_extraRadio = "ACRE_PRC117F";
 
 // Defines the languages that exist in the mission.
 // string id, displayname
-f_radios_settings_acre2_languages = [["english","English"],["farsi","Farsi"],["greek","Greek"]];
+f_radios_settings_acre2_languages = [["english","English"],["russian","Russian"],["arabic","Arabic"]];
 
 // defines the language that a player can speak.
 // can define multiple
 f_radios_settings_acre2_language_blufor = ["english"];
-f_radios_settings_acre2_language_opfor = ["farsi"];
-f_radios_settings_acre2_language_indfor = ["greek"];
+f_radios_settings_acre2_language_opfor = ["russian"];
+f_radios_settings_acre2_language_indfor = ["arabic"];
 
 // Channels names
 // first item in the array will correspond to the first channel
 // note these only work if f_radios_settings_acre2_disableFrequencySplit is set to false
-f_radios_settings_acre2_groups_blufor = ["Alpha Squad Net","Bravo Squad Net","Charlie Squad Net","Command Net","Delta Squad Net","Echo Squad Net","Foxtrot Squad Net","Blank Net","Blank Net","Air Net 1","Air Net 2","Air Net 3","Air Net 4","Air Net 5","Air Net 6","Air Net 7","Air Net 8","Air Net 9","Air Net 10","Armor Net 1","Armor Net 2","Armor Net 3","Armor Net 4","Armor Net 5","Armor Net 6","Armor Net 7","Armor Net 8","Armor Net 9","Inf Support Net 1","Inf Support Net 2","Inf Support Net 3","Inf Support Net 4","Inf Support Net 5","Inf Support Net 6","Inf Support Net 7","Inf Support Net 8","Inf Support Net 9","Inf Support Net 10"];
+f_radios_settings_acre2_groups_blufor = ["Alpha Squad Net","Bravo Squad Net","Charlie Squad Net","Command Net","Delta Squad Net","Echo Squad Net","Foxtrot Squad Net","Blank Net","Blank Net","Air 1","Air 2","Air 3","Air 4","Air 5","Air 6","Air 7","Air 8","Air 9","Air 10","Armor 1","Armor 2","Armor 3","Armor 4","Armor 5","Armor 6","Armor 7","Armor 8","Armor 9","Attachment 1","Attachment 2","Attachment 3","Attachment 4","Attachment 5","Attachment 6","Attachment 7","Attachment 8","Attachment 9","Attachment 10"];
 
-f_radios_settings_acre2_groups_opfor = ["Alpha Squad Net","Bravo Squad Net","Charlie Squad Net","Command Net","Delta Squad Net","Echo Squad Net","Foxtrot Squad Net","Blank Net","Blank Net","Air Net 1","Air Net 2","Air Net 3","Air Net 4","Air Net 5","Air Net 6","Air Net 7","Air Net 8","Air Net 9","Air Net 10","Armor Net 1","Armor Net 2","Armor Net 3","Armor Net 4","Armor Net 5","Armor Net 6","Armor Net 7","Armor Net 8","Armor Net 9","Inf Support Net 1","Inf Support Net 2","Inf Support Net 3","Inf Support Net 4","Inf Support Net 5","Inf Support Net 6","Inf Support Net 7","Inf Support Net 8","Inf Support Net 9","Inf Support Net 10"];
+f_radios_settings_acre2_groups_opfor = ["Alpha Squad Net","Bravo Squad Net","Charlie Squad Net","Command Net","Delta Squad Net","Echo Squad Net","Foxtrot Squad Net","Blank Net","Blank Net","Air 1","Air 2","Air 3","Air 4","Air 5","Air 6","Air 7","Air 8","Air 9","Air 10","Armor 1","Armor 2","Armor 3","Armor 4","Armor 5","Armor 6","Armor 7","Armor 8","Armor 9","Attachment 1","Attachment 2","Attachment 3","Attachment 4","Attachment 5","Attachment 6","Attachment 7","Attachment 8","Attachment 9","Attachment 10"];
 
-f_radios_settings_acre2_groups_indfor = ["Alpha Squad Net","Bravo Squad Net","Charlie Squad Net","Command Net","Delta Squad Net","Echo Squad Net","Foxtrot Squad Net","Blank Net","Blank Net","Air Net 1","Air Net 2","Air Net 3","Air Net 4","Air Net 5","Air Net 6","Air Net 7","Air Net 8","Air Net 9","Air Net 10","Armor Net 1","Armor Net 2","Armor Net 3","Armor Net 4","Armor Net 5","Armor Net 6","Armor Net 7","Armor Net 8","Armor Net 9","Inf Support Net 1","Inf Support Net 2","Inf Support Net 3","Inf Support Net 4","Inf Support Net 5","Inf Support Net 6","Inf Support Net 7","Inf Support Net 8","Inf Support Net 9","Inf Support Net 10"];
+f_radios_settings_acre2_groups_indfor = ["Alpha Squad Net","Bravo Squad Net","Charlie Squad Net","Command Net","Delta Squad Net","Echo Squad Net","Foxtrot Squad Net","Blank Net","Blank Net","Air 1","Air 2","Air 3","Air 4","Air 5","Air 6","Air 7","Air 8","Air 9","Air 10","Armor 1","Armor 2","Armor 3","Armor 4","Armor 5","Armor 6","Armor 7","Armor 8","Armor 9","Attachment 1","Attachment 2","Attachment 3","Attachment 4","Attachment 5","Attachment 6","Attachment 7","Attachment 8","Attachment 9","Attachment 10"];
 
 // ====================================================================================
 // MISC ACRE2 settings, these are all set the ACRE2 defaults
