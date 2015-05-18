@@ -253,8 +253,8 @@ _pilotRig = ["rhsusf_spc"];
 _pilotGlasses = [];
 
 // Fixed Wing Pilot
-_fwpilotUniform = ["U_I_pilotCoveralls"];
-_fwpilotHelmet = ["H_PilotHelmetFighter_I"];
+_fwpilotUniform = ["U_B_pilotCoveralls"];
+_fwpilotHelmet = ["H_PilotHelmetFighter_B"];
 _fwpilotRig = [];
 _fwpilotGlasses = [];
 
