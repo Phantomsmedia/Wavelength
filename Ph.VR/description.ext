@@ -103,6 +103,7 @@ class cfgNotifications
 		priority = 1;
 	};
 	*/
+	/*
 	// Notification for the F3 Authorised Crew Component
 	class UnauthorisedCrew {
 		title= "NON-AUTHORISED CREW!";
@@ -111,6 +112,7 @@ class cfgNotifications
 		duration = 3;
 		priority = 5;
 	};
+	*/
 
 	// Notification for the F3 Mapclick Teleport component
 	class MapClickTeleport {
@@ -176,9 +178,9 @@ class Params
     class f_param_radios
     {
             title = "Radio System";
-            values[] = {0,1,2,3};
-            texts[] = {"Off","ACRE","TFR","ACRE2"};
-            default = 3;
+            values[] = {0,1,2};
+            texts[] = {"Off","ACRE2","TFR"};
+            default = 1;
             code = "f_var_radios = %1";
     };
 
@@ -291,6 +293,7 @@ class Params
 // F3 - Caching
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
+	/*
 	class f_param_caching
 	{
 		title = "Legacy Cache AI outside distance (m). Keep it off!";
@@ -298,6 +301,7 @@ class Params
 		default = 0;
 		code = "f_param_caching = %1";
 	};
+	*/
 		class f_param_dacdebug
 	{
 		title = "Legacy DAC Debug. Keep it off!";
@@ -475,6 +479,7 @@ class CfgFunctions
 			class SetFog{};
 			class SetWeather{};
 		};
+		/*
 		class cache
 		{
 			file = "f\cache";
@@ -483,16 +488,19 @@ class CfgFunctions
 			class gCache {};
 			class gUncache {};
 		};
+		*/
 		class groupMarkers {
 			file = "f\groupMarkers";
 			class localGroupMarker{};
 			class localSpecialistMarker{};
 		};
+		/*
 		class authorisedCrew
 		{
 			file = "f\authorisedCrew";
 			class authorisedCrewCheck {};
 		};
+		*/
 		class FTMemberMarkers
 		{
 			file = "f\FTMemberMarkers";
