@@ -33,7 +33,10 @@ class Mission
 		"A3_Armor_F_T100K",
 		"A3_Armor_F_EPB_APC_tracked_03",
 		"A3_Armor_F_EPB_MBT_03",
-		"map_vr"
+		"map_vr",
+		"A3_Armor_F_Panther",
+		"A3_Armor_F_APC_Wheeled_03",
+		"A3_Armor_F_Marid"
 	};
 	addOnsAuto[]=
 	{
@@ -62,10 +65,13 @@ class Mission
 		"A3_Air_F_Gamma_Plane_Fighter_03",
 		"A3_Air_F_EPC_Plane_CAS_02",
 		"A3_Armor_F_AMV",
+		"A3_Armor_F_Panther",
 		"A3_armor_f_beta_APC_Tracked_02",
+		"A3_Armor_F_Marid",
 		"A3_Armor_F_Slammer",
 		"A3_Armor_F_T100K",
 		"A3_Armor_F_EPB_APC_tracked_03",
+		"A3_Armor_F_APC_Wheeled_03",
 		"A3_Armor_F_EPB_MBT_03",
 		"map_vr"
 	};
@@ -4251,9 +4257,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitNATO_IFV5_C";
-					init="GrpNATO_IFV5 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 5 Commander";
+					text="UnitNATO_APC1_C";
+					init="GrpNATO_APC1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 1 Commander";
 				};
 				class Item1
 				{
@@ -4264,9 +4270,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_IFV5_G";
-					init="GrpNATO_IFV5 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 5 Gunner";
+					text="UnitNATO_APC1_G";
+					init="GrpNATO_APC1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 1 Gunner";
 				};
 				class Item2
 				{
@@ -4276,9 +4282,9 @@ class Mission
 					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_IFV5_D";
-					init="GrpNATO_IFV5 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 5 Driver";
+					text="UnitNATO_APC1_D";
+					init="GrpNATO_APC1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 1 Driver";
 				};
 			};
 		};
@@ -4298,9 +4304,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitNATO_IFV6_C";
-					init="GrpNATO_IFV6 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 6 Commander";
+					text="UnitNATO_APC2_C";
+					init="GrpNATO_APC2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 2 Commander";
 				};
 				class Item1
 				{
@@ -4311,9 +4317,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_IFV6_G";
-					init="GrpNATO_IFV6 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 6 Gunner";
+					text="UnitNATO_APC2_G";
+					init="GrpNATO_APC2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 2 Gunner";
 				};
 				class Item2
 				{
@@ -4323,9 +4329,9 @@ class Mission
 					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_IFV6_D";
-					init="GrpNATO_IFV6 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 6 Driver";
+					text="UnitNATO_APC2_D";
+					init="GrpNATO_APC2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 2 Driver";
 				};
 			};
 		};
@@ -4345,9 +4351,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitNATO_IFV7_C";
-					init="GrpNATO_IFV7 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 7 Commander";
+					text="UnitNATO_APC3_C";
+					init="GrpNATO_APC3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 3 Commander";
 				};
 				class Item1
 				{
@@ -4358,9 +4364,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_IFV7_G";
-					init="GrpNATO_IFV7 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 7 Gunner";
+					text="UnitNATO_APC3_G";
+					init="GrpNATO_APC3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 3 Gunner";
 				};
 				class Item2
 				{
@@ -4370,9 +4376,9 @@ class Mission
 					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_IFV7_D";
-					init="GrpNATO_IFV7 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 7 Driver";
+					text="UnitNATO_APC3_D";
+					init="GrpNATO_APC3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 3 Driver";
 				};
 			};
 		};
@@ -4392,9 +4398,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitNATO_IFV8_C";
-					init="GrpNATO_IFV8 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 8 Commander";
+					text="UnitNATO_APC4_C";
+					init="GrpNATO_APC4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 4 Commander";
 				};
 				class Item1
 				{
@@ -4405,9 +4411,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitNATO_IFV8_G";
-					init="GrpNATO_IFV8 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 8 Gunner";
+					text="UnitNATO_APC4_G";
+					init="GrpNATO_APC4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 4 Gunner";
 				};
 				class Item2
 				{
@@ -4417,9 +4423,9 @@ class Mission
 					vehicle="B_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_IFV8_D";
-					init="GrpNATO_IFV8 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="BLUFOR IFV 8 Driver";
+					text="UnitNATO_APC4_D";
+					init="GrpNATO_APC4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="BLUFOR APC 4 Driver";
 				};
 			};
 		};
@@ -4674,9 +4680,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCSAT_IFV5_C";
-					init="GrpCSAT_IFV5 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 5 Commander";
+					text="UnitCSAT_APC1_C";
+					init="GrpCSAT_APC1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 1 Commander";
 				};
 				class Item1
 				{
@@ -4687,9 +4693,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCSAT_IFV5_G";
-					init="GrpCSAT_IFV5 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 5 Gunner";
+					text="UnitCSAT_APC1_G";
+					init="GrpCSAT_APC1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 1 Gunner";
 				};
 				class Item2
 				{
@@ -4699,9 +4705,9 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCSAT_IFV5_D";
-					init="GrpCSAT_IFV5 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 5 Driver";
+					text="UnitCSAT_APC1_D";
+					init="GrpCSAT_APC1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 1 Driver";
 				};
 			};
 		};
@@ -4721,9 +4727,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCSAT_IFV6_C";
-					init="GrpCSAT_IFV6 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 6 Commander";
+					text="UnitCSAT_APC2_C";
+					init="GrpCSAT_APC2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 2 Commander";
 				};
 				class Item1
 				{
@@ -4734,9 +4740,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCSAT_IFV6_G";
-					init="GrpCSAT_IFV6 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 6 Gunner";
+					text="UnitCSAT_APC2_G";
+					init="GrpCSAT_APC2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 2 Gunner";
 				};
 				class Item2
 				{
@@ -4746,9 +4752,9 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCSAT_IFV6_D";
-					init="GrpCSAT_IFV6 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 6 Driver";
+					text="UnitCSAT_APC2_D";
+					init="GrpCSAT_APC2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 2 Driver";
 				};
 			};
 		};
@@ -4768,9 +4774,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCSAT_IFV7_C";
-					init="GrpCSAT_IFV7 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 7 Commander";
+					text="UnitCSAT_APC3_C";
+					init="GrpCSAT_APC3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 3 Commander";
 				};
 				class Item1
 				{
@@ -4781,9 +4787,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCSAT_IFV7_G";
-					init="GrpCSAT_IFV7 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 7 Gunner";
+					text="UnitCSAT_APC3_G";
+					init="GrpCSAT_APC3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 3 Gunner";
 				};
 				class Item2
 				{
@@ -4793,9 +4799,9 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCSAT_IFV7_D";
-					init="GrpCSAT_IFV7 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 7 Driver";
+					text="UnitCSAT_APC3_D";
+					init="GrpCSAT_APC3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 3 Driver";
 				};
 			};
 		};
@@ -4815,9 +4821,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitCSAT_IFV8_C";
-					init="GrpCSAT_IFV8 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 8 Commander";
+					text="UnitCSAT_APC4_C";
+					init="GrpCSAT_APC4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 4 Commander";
 				};
 				class Item1
 				{
@@ -4828,9 +4834,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitCSAT_IFV8_G";
-					init="GrpCSAT_IFV8 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 8 Gunner";
+					text="UnitCSAT_APC4_G";
+					init="GrpCSAT_APC4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 4 Gunner";
 				};
 				class Item2
 				{
@@ -4840,9 +4846,9 @@ class Mission
 					vehicle="O_soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitCSAT_IFV8_D";
-					init="GrpCSAT_IFV8 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="OPFOR IFV 8 Driver";
+					text="UnitCSAT_APC4_D";
+					init="GrpCSAT_APC4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="OPFOR APC 4 Driver";
 				};
 			};
 		};
@@ -5097,9 +5103,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitAAF_IFV5_C";
-					init="GrpAAF_IFV5 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 5 Commander";
+					text="UnitAAF_APC1_C";
+					init="GrpAAF_APC1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 1 Commander";
 				};
 				class Item1
 				{
@@ -5110,9 +5116,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitAAF_IFV5_G";
-					init="GrpAAF_IFV5 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 5 Gunner";
+					text="UnitAAF_APC1_G";
+					init="GrpAAF_APC1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 1 Gunner";
 				};
 				class Item2
 				{
@@ -5122,9 +5128,9 @@ class Mission
 					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitAAF_IFV5_D";
-					init="GrpAAF_IFV5 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 5 Driver";
+					text="UnitAAF_APC1_D";
+					init="GrpAAF_APC1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 1 Driver";
 				};
 			};
 		};
@@ -5144,9 +5150,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitAAF_IFV6_C";
-					init="GrpAAF_IFV6 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 6 Commander";
+					text="UnitAAF_APC2_C";
+					init="GrpAAF_APC2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 2 Commander";
 				};
 				class Item1
 				{
@@ -5157,9 +5163,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitAAF_IFV6_G";
-					init="GrpAAF_IFV6 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 6 Gunner";
+					text="UnitAAF_APC2_G";
+					init="GrpAAF_APC2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 2 Gunner";
 				};
 				class Item2
 				{
@@ -5169,9 +5175,9 @@ class Mission
 					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitAAF_IFV6_D";
-					init="GrpAAF_IFV6 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 6 Driver";
+					text="UnitAAF_APC2_D";
+					init="GrpAAF_APC2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 2 Driver";
 				};
 			};
 		};
@@ -5191,9 +5197,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitAAF_IFV7_C";
-					init="GrpAAF_IFV7 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 7 Commander";
+					text="UnitAAF_APC3_C";
+					init="GrpAAF_APC3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 3 Commander";
 				};
 				class Item1
 				{
@@ -5204,9 +5210,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitAAF_IFV7_G";
-					init="GrpAAF_IFV7 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 7 Gunner";
+					text="UnitAAF_APC3_G";
+					init="GrpAAF_APC3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 3 Gunner";
 				};
 				class Item2
 				{
@@ -5216,9 +5222,9 @@ class Mission
 					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitAAF_IFV7_D";
-					init="GrpAAF_IFV7 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 7 Driver";
+					text="UnitAAF_APC3_D";
+					init="GrpAAF_APC3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 3 Driver";
 				};
 			};
 		};
@@ -5238,9 +5244,9 @@ class Mission
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
-					text="UnitAAF_IFV8_C";
-					init="GrpAAF_IFV8 = group this; [""vc"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 8 Commander";
+					text="UnitAAF_APC4_C";
+					init="GrpAAF_APC4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 4 Commander";
 				};
 				class Item1
 				{
@@ -5251,9 +5257,9 @@ class Mission
 					player="PLAY CDG";
 					rank="CORPORAL";
 					skill=0.60000002;
-					text="UnitAAF_IFV8_G";
-					init="GrpAAF_IFV8 = group this; [""vg"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 8 Gunner";
+					text="UnitAAF_APC4_G";
+					init="GrpAAF_APC4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 4 Gunner";
 				};
 				class Item2
 				{
@@ -5263,9 +5269,9 @@ class Mission
 					vehicle="I_Soldier_repair_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitAAF_IFV8_D";
-					init="GrpAAF_IFV8 = group this; [""vd"",this] call f_fnc_assignGear;";
-					description="INDFOR IFV 8 Driver";
+					text="UnitAAF_APC4_D";
+					init="GrpAAF_APC4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					description="INDFOR APC 4 Driver";
 				};
 			};
 		};
@@ -7394,9 +7400,9 @@ class Mission
 			position[]={512.18396,5,2431.2056};
 			id=490;
 			side="EMPTY";
-			vehicle="B_APC_Wheeled_01_cannon_F";
+			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
-			text="VehNATO_IFV5";
+			text="VehNATO_APC1";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item59
@@ -7404,9 +7410,9 @@ class Mission
 			position[]={524.64099,5,2427.5913};
 			id=491;
 			side="EMPTY";
-			vehicle="B_APC_Wheeled_01_cannon_F";
+			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
-			text="VehNATO_IFV6";
+			text="VehNATO_APC2";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item60
@@ -7414,9 +7420,9 @@ class Mission
 			position[]={540.30115,5,2431.0923};
 			id=492;
 			side="EMPTY";
-			vehicle="B_APC_Wheeled_01_cannon_F";
+			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
-			text="VehNATO_IFV7";
+			text="VehNATO_APC3";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item61
@@ -7424,9 +7430,9 @@ class Mission
 			position[]={552.75818,5,2427.478};
 			id=493;
 			side="EMPTY";
-			vehicle="B_APC_Wheeled_01_cannon_F";
+			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
-			text="VehNATO_IFV8";
+			text="VehNATO_APC4";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item62
@@ -7478,10 +7484,10 @@ class Mission
 			position[]={524.82617,5,405.55615};
 			id=498;
 			side="EMPTY";
-			vehicle="O_APC_Tracked_02_cannon_F";
+			vehicle="O_APC_Wheeled_02_rcws_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehCSAT_IFV5";
+			text="VehCSAT_APC1";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item67
@@ -7489,10 +7495,10 @@ class Mission
 			position[]={535.68555,5,398.47412};
 			id=499;
 			side="EMPTY";
-			vehicle="O_APC_Tracked_02_cannon_F";
+			vehicle="O_APC_Wheeled_02_rcws_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehCSAT_IFV6";
+			text="VehCSAT_APC2";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item68
@@ -7500,10 +7506,10 @@ class Mission
 			position[]={551.48047,5,405.21631};
 			id=500;
 			side="EMPTY";
-			vehicle="O_APC_Tracked_02_cannon_F";
+			vehicle="O_APC_Wheeled_02_rcws_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehCSAT_IFV7";
+			text="VehCSAT_APC3";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item69
@@ -7511,10 +7517,10 @@ class Mission
 			position[]={562.33594,5,398.13428};
 			id=501;
 			side="EMPTY";
-			vehicle="O_APC_Tracked_02_cannon_F";
+			vehicle="O_APC_Wheeled_02_rcws_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehCSAT_IFV8";
+			text="VehCSAT_APC4";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item70
@@ -7584,10 +7590,10 @@ class Mission
 			position[]={528.6394,5,1384.8721};
 			id=508;
 			side="EMPTY";
-			vehicle="I_APC_tracked_03_cannon_F";
+			vehicle="I_APC_Wheeled_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehAAF_IFV5";
+			text="VehAAF_APC1";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item77
@@ -7595,10 +7601,10 @@ class Mission
 			position[]={540.94019,5,1382.8721};
 			id=509;
 			side="EMPTY";
-			vehicle="I_APC_tracked_03_cannon_F";
+			vehicle="I_APC_Wheeled_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehAAF_IFV6";
+			text="VehAAF_APC2";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item78
@@ -7606,10 +7612,10 @@ class Mission
 			position[]={556.57495,5,1384.8213};
 			id=510;
 			side="EMPTY";
-			vehicle="I_APC_tracked_03_cannon_F";
+			vehicle="I_APC_Wheeled_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehAAF_IFV7";
+			text="VehAAF_APC3";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item79
@@ -7617,10 +7623,10 @@ class Mission
 			position[]={568.90503,5,1382.5361};
 			id=511;
 			side="EMPTY";
-			vehicle="I_APC_tracked_03_cannon_F";
+			vehicle="I_APC_Wheeled_03_cannon_F";
 			leader=1;
 			skill=0.60000002;
-			text="VehAAF_IFV8";
+			text="VehAAF_APC4";
 			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item80
