@@ -237,8 +237,8 @@ _baseGlasses = [];
 
 // Vests
 _lightRig = ["rhsusf_spc"];
-_mediumRig = ["rhsusf_spc"]; 	// default for all infantry classes
-_heavyRig = ["rhsusf_spc"];
+_mediumRig = ["MNP_Vest_NZ_1"]; 	// default for all infantry classes
+_heavyRig = ["MNP_Vest_NZ_1"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -267,7 +267,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["rhs_uniform_FROG01_wd"];
 _ghillieHelmet = ["rhs_Booniehat_marpatwd"];
-_ghillieRig = ["rhsusf_spc"];
+_ghillieRig = ["MNP_Vest_NZ_1"];
 _ghillieGlasses = [];
 
 // ====================================================================================
