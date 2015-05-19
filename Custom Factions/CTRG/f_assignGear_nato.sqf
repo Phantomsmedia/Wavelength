@@ -1,4 +1,4 @@
-// F3 - Folk ARPS Assign Gear Script - NATO
+// F3 - Folk ARPS Assign Gear Script - CTRG
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 
@@ -65,13 +65,13 @@ _silencer1 = "muzzle_snds_H";	// Primary
 _silencer2 = "muzzle_snds_M";	// Diver
 
 _scope1 = "optic_Holosight";	// Short Range
-_scope2 = "optic_Arco";			// Medium Range
-_scope3 = "optic_AMS_snd";		// Medium - Long Range
+_scope2 = "optic_MRCO";			// Medium Range
+_scope3 = "optic_KHS_blk";		// Medium - Long Range
 _scope4 = "optic_KHS_tan";		// Long Range
 
-_bipod1 = "bipod_01_F_snd";		// Light Machine Gun
-_bipod2 = "bipod_01_F_snd";		// Medium Machine Gun
-_bipod3 = "bipod_01_F_snd";		// Sniper
+_bipod1 = "bipod_01_F_blk";		// Light Machine Gun
+_bipod2 = "bipod_01_F_blk";		// Medium Machine Gun
+_bipod3 = "bipod_01_F_blk";		// Sniper Rifle
 
 // Default setup
 _attachments = [_attach1,_scope1]; // The default attachment set for most units, overwritten in the individual unitType
@@ -86,12 +86,12 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // WEAPON SELECTION
 
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
-_rifle = "arifle_MX_F";
+_rifle = "arifle_MX_Black_F";
 _riflemag = "30Rnd_65x39_caseless_mag";
 _riflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
-_carbine = "arifle_MXC_F";
+_carbine = "arifle_MXC_Black_F";
 _carbinemag = "30Rnd_65x39_caseless_mag";
 _carbinemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 
@@ -106,7 +106,7 @@ _diverMag1 = "30Rnd_556x45_Stanag";
 _diverMag2 = "20Rnd_556x45_UW_mag";
 
 // Rifle with GL and HE grenades (CO, SL, FTLs)
-_glrifle = "arifle_MX_GL_F";
+_glrifle = "arifle_MX_GL_Black_F";
 _glriflemag = "30Rnd_65x39_caseless_mag";
 _glriflemag_tr = "30Rnd_65x39_caseless_mag_Tracer";
 _glmag = "1Rnd_HE_Grenade_shell";
@@ -123,8 +123,8 @@ _glflareyellow = "UGL_FlareYellow_F";
 _glflaregreen = "UGL_FlareGreen_F";
 
 // Pistols (CO, SL, Automatic Rifleman, Medium MG Gunner)
-_pistol = "hgun_P07_F";
-_pistolmag = "16Rnd_9x21_Mag";
+_pistol = "hgun_Pistol_heavy_01_F";
+_pistolmag = "11Rnd_45ACP_Mag";
 
 // Grenades
 _grenade = "HandGrenade";
@@ -148,9 +148,9 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_mcamo";			// small
-_bagmedium = "B_Kitbag_mcamo";				// medium
-_baglarge =  "B_Carryall_mcamo"; 			// large
+_bagsmall = "B_AssaultPack_rgr";			// small
+_bagmedium = "B_Kitbag_rgr";				// medium backpack
+_baglarge =  "B_Carryall_khk"; 				// heavy backpack
 _bagmediumdiver =  "B_AssaultPack_blk";		// used by divers
 _baguav = "B_UAV_01_backpack_F";			// used by UAV operator
 _baghmgg = "B_HMG_01_weapon_F";				// used by Heavy MG gunner
@@ -173,12 +173,12 @@ _clacker = "ACE_Clacker";                   // for engineers
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
 
 // Automatic Rifleman
-_AR = "arifle_MX_SW_F";
+_AR = "arifle_MX_SW_Black_F";
 _ARmag = "100Rnd_65x39_caseless_mag";
 _ARmag_tr = "100Rnd_65x39_caseless_mag_Tracer";
 
 // Medium MG
-_MMG = "MMG_02_sand_F";
+_MMG = "MMG_02_black_F";
 _MMGmag = "130Rnd_338_Mag";
 _MMGmag_tr = "130Rnd_338_Mag";
 
@@ -187,9 +187,9 @@ _RAT = "launch_NLAW_F";
 _RATmag = "ACE_PreloadedMissileDummy";
 
 // Medium AT
-_MAT = "launch_RPG32_F";
-_MATmag1 = "RPG32_F";
-_MATmag2 = "RPG32_HE_F";
+_MAT = "launch_B_Titan_short_F";
+_MATmag1 = "Titan_AT";
+_MATmag2 = "Titan_AT";
 
 // Surface Air
 _SAM = "launch_B_Titan_F";
@@ -205,7 +205,7 @@ _DMrifle = "srifle_DMR_03_tan_F";
 _DMriflemag = "20Rnd_762x51_Mag";
 
 // Sniper
-_SNrifle = "srifle_DMR_02_sniper_F";
+_SNrifle = "srifle_DMR_02_camo_F";
 _SNrifleMag = "10Rnd_338_Mag";
 
 // Engineer items
@@ -231,14 +231,14 @@ _ghillie = ["sn","sp"];
 // Basic clothing
 // The outfit-piece is randomly selected from the array for each unit
 
-_baseUniform = ["U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"];
-_baseHelmet = ["H_HelmetB","H_HelmetSpecB"];
+_baseUniform = ["U_B_CTRG_1","U_B_CTRG_3","U_B_CTRG_2"];
+_baseHelmet = ["H_HelmetB_black","H_HelmetB_light_black","H_HelmetSpecB_blk"];
 _baseGlasses = [];
 
 // Vests
-_lightRig = ["V_Chestrig_rgr"];
-_mediumRig = ["V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"]; 	// default for all infantry classes
-_heavyRig = ["V_PlateCarrierGL_rgr"];
+_lightRig = ["V_TacVest_blk","V_TacVest_oli"];
+_mediumRig = ["V_PlateCarrierL_CTRG","V_PlateCarrierH_CTRG"]; 	// default for all infantry classes
+_heavyRig = ["V_PlateCarrierH_CTRG"];
 
 // Diver
 _diverUniform =  ["U_B_Wetsuit"];
@@ -253,13 +253,13 @@ _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Fixed Wing Pilot
-_fwpilotUniform = ["U_B_pilotCoveralls"];
-_fwpilotHelmet = ["H_PilotHelmetFighter_B"];
+_fwpilotUniform = ["U_I_pilotCoveralls"];
+_fwpilotHelmet = ["H_PilotHelmetFighter_I"];
 _fwpilotRig = [];
 _fwpilotGlasses = [];
 
 // Crewman
-_crewUniform = ["U_B_CombatUniform_mcam_tshirt"];
+_crewUniform = ["U_B_CTRG_2"];
 _crewHelmet = ["H_HelmetCrew_B"];
 _crewRig = ["V_TacVest_oli"];
 _crewGlasses = [];
@@ -267,7 +267,7 @@ _crewGlasses = [];
 // Ghillie
 _ghillieUniform = ["U_B_FullGhillie_lsh"];
 _ghillieHelmet = [];
-_ghillieRig = ["V_Chestrig_rgr"];
+_ghillieRig = ["V_Chestrig_khk"];
 _ghillieGlasses = [];
 
 // ====================================================================================
@@ -721,7 +721,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [];
 	};
-	
+
 // LOADOUT: FIXED WING PILOT
 	case "fwp":
 	{
@@ -742,7 +742,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_satchel,2];
 		_unit addItem "MineDetector";
-		__unit addItem _defusalkit;
+		_unit addItem _defusalkit;
 		_unit addItem _clacker;
 		["eng"] call _backpack;
 		_attachments = [_attach1];
@@ -757,7 +757,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_APmine,2];
 		_unit addItem "MineDetector";
-		__unit addItem _defusalkit;
+		_unit addItem _defusalkit;
 		_unit addItem _clacker;
 		["engm"] call _backpack;
 		_attachments = [_attach1];
@@ -999,7 +999,7 @@ if (!_isMan) then
 	// Authentic Gameplay Modification
 	if (f_var_medical == 2) exitWith
 		{
-			[_unit] execVM "f\allGear\AGM_converter.sqf";
+			[_unit] execVM "f\gearAll\AGM_converter.sqf";
 		};
 	};
 

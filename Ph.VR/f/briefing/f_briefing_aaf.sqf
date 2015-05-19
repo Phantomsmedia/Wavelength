@@ -29,65 +29,45 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 
 _radio = player createDiaryRecord ["diary", ["Radios","
 <br/>
-Squad Leaders
+Radio List For Long Range (152 - 117F)
 <br/> 
-Command Squad - Freq 40 (Command Net)
+Channel 1 - Alpha Squad Lead and Fireteam Leads
 <br/> 
-Alpha Squad Lead - Freq 40 (Command Net); Freq 31 (Alpha FT Net) 
+Channel 2 - Bravo Squad Lead and Fireteam Leads
 <br/>
-Bravo Squad Lead - Freq 40 (Command Net); Freq 32 (Bravo FT Net) 
+Channel 3 - Charlie Squad Lead and Fireteam Leads
 <br/>
-Charlie Squad Lead - Freq 40 (Command Net); Freq 33 (Charlie FT Net) 
+Channel 4 - Command, Squad Leads, Support
+<br/>
+Channel 5 - Delta Squad Lead and Fireteam Leads
+<br/>
+Channel 6 - Echo Squad Lead and Fireteam Leads
+<br/>
+Channel 7 - Foxtrot Squad Lead and Fireteam Leads
+<br/>
+Channel 8 - 
  <br/><br/>
-Fire Team Leaders 
+Radio List For Short Range (343) - GI and FTLs
 <br/>
-Alpha 1 Fire Team Leader - Freq 31 (Alpha FT Net) 
+Channel 1 - Alpha Squad
 <br/>
-Alpha 2 Fire Team Leader - Freq 31 (Alpha FT Net)
+Channel 2 - Bravo Squad
 <br/> 
-Alpha 3 Fire Team Leader - Freq 31 (Alpha FT Net) 
+Channel 3 - Charlie Squad
 <br/>
-Bravo 1 Fire Team Leader - Freq 32 (Bravo FT Net) 
+Channel 4 - Delta Squad
 <br/>
-Bravo 2 Fire Team Leader - Freq 32 (Bravo FT Net)
+Channel 5 - Echo Squad
 <br/> 
-Bravo 3 Fire Team Leader - Freq 32 (Bravo FT Net) 
-<br/>
-Charlie 1 Fire Team Leader - Freq 33 (Charlie FT Net) 
-<br/>
-Charlie 2 Fire Team Leader - Freq 33 (Charlie FT Net) 
-<br/>
-Charlie 3 Fire Team Leader - Freq 33 (Charlie FT Net) 
- <br/><br/>
-GI Radio Channels 
-<br/>
-Alpha 1  - Freq 31.1 (Alpha Net) 
-<br/>
-Alpha 2  - Freq 31.2 (Alpha Net) 
-<br/>
-Alpha 3  - Freq 31.3 (Alpha Net) 
-<br/>
-Bravo 1  - Freq 32.1 (Bravo Net) 
-<br/>
-Bravo 2  - Freq 32.2 (Bravo Net) 
-<br/>
-Bravo 3  - Freq 32.3 (Bravo Net) 
-<br/>
-Charlie 1  - Freq 33.1 (Charlie Net) 
-<br/>
-Charlie 2  - Freq 33.2 (Charlie Net) 
-<br/>
-Charlie 3  - Freq 33.3 (Charlie Net) 
-<br/>
-Command SR (Medic and CMD) - Channel 40.1
+Channel 6 - Foxtrot Squad
 <br/><br/>
-Support Channels
+Support Channels Intra-Element (152)
 <br/>
-From 50.1 to 50.9 for Air Support
+From 10 to 19 for Air Support
 <br/>
-From 51.1 to 51.9 for Armor Support
+From 20 to 29 for Armor Support
 <br/>
-From 52.1 to 52.9 for Infantry Support (MMG etc)
+From 30 to 39 for Infantry Support (MMG etc)
 <br/>
 "]];
 

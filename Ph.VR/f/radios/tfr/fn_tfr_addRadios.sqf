@@ -16,15 +16,15 @@ switch ((side player)) do { //longrange, shortrange, rifradio
     case (west): {
       _radio1 = "tf_rt1523g_big";
       _radio2 = TF_defaultWestPersonalRadio;
-      _radio3 = TF_defaultWestRiflemanRadio;};
+      _radio3 = TF_defaultWestPersonalRadio;};
     case (east): {
       _radio1 = "tf_mr3000_rhs";
       _radio2 = TF_defaultEastPersonalRadio;
-      _radio3 = TF_defaultEastRiflemanRadio;};
+      _radio3 = TF_defaultEastPersonalRadio;};
     default {
       _radio1 = "tf_anprc155_coyote";
       _radio2 = TF_defaultGuerPersonalRadio;
-      _radio3 = TF_defaultGuerRiflemanRadio;};
+      _radio3 = TF_defaultGuerPersonalRadio;};
 };
 
 // ====================================================================================

@@ -185,7 +185,7 @@ f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
 f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
 
 // ====================================================================================
-
+/*
 // F3 - AI Unit Caching
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -196,7 +196,7 @@ f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear?
 // 2 - cache all non-moving units, always exclude vehicle drivers
 // 3 - cache all units, incl. group leaders and vehicle drivers
 f_var_cachingAggressiveness = 2;
-
+*/
 // ====================================================================================
 
 // F3 - Radio Systems Support
@@ -206,14 +206,15 @@ f_var_cachingAggressiveness = 2;
 
 // ====================================================================================
 
-// F3 - Medical Systems Support
+// F3 - All Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// Credits: New allGear idea + ACE implementation Ph.
 
 // SWS Config Settings
 // How many extra FirstAidKits (FAKS) each player should receive when using the F3 Simple Wounding System:
 f_wound_extraFAK = 2;
 
-[] execVM "f\medical\medical_init.sqf";
+[] execVM "f\allGear\allGear_init.sqf";
 
 // ====================================================================================
 

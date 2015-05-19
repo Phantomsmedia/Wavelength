@@ -33,6 +33,7 @@
 //		pp			- air vehicle pilot / co-pilot
 //		pcc			- air vehicle co-pilot (repair) / crew chief (repair)
 //		pc			- air vehicle crew
+//		fwp			- fixed wing pilot
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
 //		uav			- UAV operator
@@ -87,12 +88,12 @@ _attachments = [_attach1,_scope1]; // The default attachment set for most units,
 // Standard Riflemen ( MMG Assistant Gunner, Assistant Automatic Rifleman, MAT Assistant Gunner, MTR Assistant Gunner, Rifleman)
 _rifle = "arifle_Mk20_F";
 _riflemag = "30Rnd_556x45_Stanag";
-_riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_riflemag_tr = "30Rnd_556x45_Stanag_Tracer_Yellow";
 
 // Standard Carabineer (Medic, Rifleman (AT), MAT Gunner, MTR Gunner, Carabineer)
 _carbine = "arifle_Mk20C_F";
 _carbinemag = "30Rnd_556x45_Stanag";
-_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_carbinemag_tr = "30Rnd_556x45_Stanag_Tracer_Yellow";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
 _smg = "hgun_PDW2000_F";
@@ -107,7 +108,7 @@ _diverMag2 = "20Rnd_556x45_UW_mag";
 // Rifle with GL and HE grenades (CO, SL, FTLs)
 _glrifle = "arifle_Mk20_GL_MRCO_pointer_F";
 _glriflemag = "30Rnd_556x45_Stanag";
-_glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Red";
+_glriflemag_tr = "30Rnd_556x45_Stanag_Tracer_Yellow";
 _glmag = "1Rnd_HE_Grenade_shell";
 
 // Smoke for FTLs, Squad Leaders, etc
@@ -130,7 +131,7 @@ _grenade = "HandGrenade";
 _smokegrenade = "SmokeShell";
 _smokegrenadegreen = "SmokeShellGreen";
 
-// Misc Medical Items.
+// Misc. Medical Items
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
@@ -161,6 +162,12 @@ _bagmtrag = "I_Mortar_01_support_F";		// used by Mortar assistant gunner
 _baghsamg = "I_AA_01_weapon_F";				// used by Heavy SAM gunner
 _baghsamag = "I_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 
+// Misc. Equipment
+_sparebarrel = "ACE_SpareBarrel";			// for ARs and MMGs
+_maptools = "ACE_MapTools";                 // for SLs, DCs, and COs
+_defusalkit = "ACE_DefusalKit";             // for engineers
+_clacker = "ACE_Clacker";                   // for engineers
+
 // ====================================================================================
 
 // UNIQUE, ROLE-SPECIFIC EQUIPMENT
@@ -177,7 +184,7 @@ _MMGmag_tr = "150Rnd_93x64_Mag";
 
 // Rifleman AT
 _RAT = "launch_NLAW_F";
-_RATmag = "AGM_PreloadedMissileDummy";
+_RATmag = "ACE_PreloadedMissileDummy";
 
 // Medium AT
 _MAT = "launch_RPG32_F";
@@ -217,6 +224,7 @@ _light = [];
 _heavy =  ["eng","engm"];
 _diver = ["div"];
 _pilot = ["pp","pcc","pc"];
+_fwpilot = ["fwp"];
 _crew = ["vc","vg","vd"];
 _ghillie = ["sn","sp"];
 
@@ -243,6 +251,12 @@ _pilotUniform = ["U_I_HeliPilotCoveralls"];
 _pilotHelmet = ["H_PilotHelmetHeli_I"];
 _pilotRig = ["V_TacVest_oli"];
 _pilotGlasses = [];
+
+// Fixed Wing Pilot
+_fwpilotUniform = ["U_I_pilotCoveralls"];
+_fwpilotHelmet = ["H_PilotHelmetFighter_I"];
+_fwpilotRig = [];
+_fwpilotGlasses = [];
 
 // Crewman
 _crewUniform = ["U_I_CombatUniform_shortsleeve"];
@@ -341,6 +355,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2];
 	};
@@ -360,6 +375,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenadegreen,2];
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2];
 	};
@@ -403,6 +419,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
+		_unit addItem _sparebarrel;
 		["ar"] call _backpack;
 		_attachments = [_attach1,_bipod1];
 	};
@@ -444,6 +461,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
+		_unit addItem _sparebarrel;
 		["mmg"] call _backpack;
 		_attachments = [_bipod2];
 	};
@@ -454,7 +472,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_riflemag,7];
 		_unit addmagazines [_riflemag_tr,2];
 		_unit addweapon _rifle;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["mmgag"] call _backpack;
@@ -478,7 +496,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hmgag"] call _backpack;
@@ -504,7 +522,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["matag"] call _backpack;
@@ -529,7 +547,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hatag"] call _backpack;
@@ -556,7 +574,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		["mtrag"] call _backpack;
 		_attachments = [_attach1];
 	};
@@ -580,7 +598,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["msamag"] call _backpack;
@@ -605,7 +623,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hsamag"] call _backpack;
@@ -634,7 +652,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_unit linkItem "ItemGPS";
 		_attachments = [_attach1,_scope2];
 	};
@@ -647,7 +665,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit addWeapon "Rangefinder";
+		_unit addWeapon "ACE_Vector";
 		_attachments = [];
 	};
 
@@ -703,6 +721,17 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [];
 	};
+	
+// LOADOUT: FIXED WING PILOT
+	case "fwp":
+	{
+		_unit addmagazines [_pistolmag,2];
+		_unit addweapon _pistol;
+		_unit addmagazines [_smokegrenade,2];
+		_unit addItem "ItemGPS";
+		_unit assignItem "ItemGPS";
+		_attachments = [];
+	};
 
 // LOADOUT: ENGINEER (DEMO)
 	case "eng":
@@ -713,6 +742,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_satchel,2];
 		_unit addItem "MineDetector";
+		__unit addItem _defusalkit;
+		_unit addItem _clacker;
 		["eng"] call _backpack;
 		_attachments = [_attach1];
 	};
@@ -726,6 +757,8 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_APmine,2];
 		_unit addItem "MineDetector";
+		__unit addItem _defusalkit;
+		_unit addItem _clacker;
 		["engm"] call _backpack;
 		_attachments = [_attach1];
 	};
@@ -735,6 +768,7 @@ switch (_typeofUnit) do
 	{
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
+		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _uavterminal;
@@ -828,7 +862,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glriflemag, 8];
 		_unit addMagazineCargoGlobal [_carbinemag, 8];
 		_unit addMagazineCargoGlobal [_armag, 5];
-		_unit addMagazineCargoGlobal [_ratmag, 1];
+		_unit addMagazineCargoGlobal [_matmag1, 1];
 		_unit addMagazineCargoGlobal [_grenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenade, 4];
 		_unit addMagazineCargoGlobal [_smokegrenadegreen, 2];
@@ -866,7 +900,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_glriflemag, 10];
 		_unit addMagazineCargoGlobal [_carbinemag, 12];
 		_unit addMagazineCargoGlobal [_armag, 8];
-		_unit addMagazineCargoGlobal [_ratmag, 2];
+		_unit addMagazineCargoGlobal [_matmag1, 2];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addmagazineCargoGlobal [_mgrenade,8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
@@ -889,7 +923,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_carbinemag, 5];
 		_unit addMagazineCargoGlobal [_glmag, 5];
 		_unit addMagazineCargoGlobal [_glsmokewhite, 4];
-		_unit addMagazineCargoGlobal [_ratmag, 2];
+		_unit addMagazineCargoGlobal [_matmag1, 2];
 		_unit addMagazineCargoGlobal [_grenade, 8];
 		_unit addMagazineCargoGlobal [_mgrenade, 8];
 		_unit addMagazineCargoGlobal [_smokegrenade, 8];
@@ -910,7 +944,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_carbinemag, 20];
 		_unit addMagazineCargoGlobal [_glmag, 20];
 		_unit addMagazineCargoGlobal [_glsmokewhite,16];
-		_unit addMagazineCargoGlobal [_ratmag, 6];
+		_unit addMagazineCargoGlobal [_matmag1, 6];
 		_unit addMagazineCargoGlobal [_grenade, 25];
 		_unit addMagazineCargoGlobal [_mgrenade, 25];
 		_unit addMagazineCargoGlobal [_smokegrenade, 25];
@@ -931,7 +965,7 @@ switch (_typeofUnit) do
 		_unit addMagazineCargoGlobal [_carbinemag, 60];
 		_unit addMagazineCargoGlobal [_glmag, 60];
 		_unit addMagazineCargoGlobal [_glsmokewhite,50];
-		_unit addMagazineCargoGlobal [_ratmag, 20];
+		_unit addMagazineCargoGlobal [_matmag1, 20];
 		_unit addMagazineCargoGlobal [_grenade, 75];
 		_unit addMagazineCargoGlobal [_mgrenade, 75];
 		_unit addMagazineCargoGlobal [_smokegrenade, 75];
@@ -965,7 +999,7 @@ if (!_isMan) then
 	// Authentic Gameplay Modification
 	if (f_var_medical == 2) exitWith
 		{
-			[_unit] execVM "f\medical\AGM_converter.sqf";
+			[_unit] execVM "f\allGear\AGM_converter.sqf";
 		};
 	};
 

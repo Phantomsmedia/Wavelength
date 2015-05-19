@@ -88,6 +88,15 @@ switch (_TypNumber) do
     _Unit_Pool_A = ["RHS_Mi8AMT_vdv","RHS_Mi8MTV3_vdv","RHS_Mi24V_vdv"];
   }; 
 //-------------------------------------------------------------------------------------------------
+    // Insurgents (RHS: Russian Armed Forces)
+  case 8:
+  {
+    _Unit_Pool_S = ["rhs_g_engineer_F","rhs_g_medic_F","rhs_g_Soldier_SL_F","rhs_g_Soldier_F","rhs_g_Soldier_AR_F","rhs_g_Soldier_lite_F","rhs_g_Soldier_LAT_F","rhs_g_Soldier_M_F","rhs_g_Soldier_exp_F"];
+    _Unit_Pool_V = ["rhs_btr70_chdkz","rhs_ural_open_chdkz","RHS_BM21_chdkz","RHS_UAZ_chdkz"];
+    _Unit_Pool_T = ["rhs_zsu234_chdkz","rhs_t72bb_chdkz","rhs_btr70_chdkz"];
+    _Unit_Pool_A = ["RHS_Mi8amt_chdkz"];
+  };
+//-------------------------------------------------------------------------------------------------
 
   Default
   {

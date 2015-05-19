@@ -84,6 +84,7 @@ class cfgNotifications
 	};
 
 	// Notifications for the F3 Safe Start Component
+	/*
 	class SafeStart
 	{
 		title = "SAFE START";
@@ -92,6 +93,7 @@ class cfgNotifications
 		duration = 10;
 		priority = 0;
 	};
+	
 	class SafeStartMissionStarting
 	{
 		title = "SAFE START";
@@ -100,7 +102,8 @@ class cfgNotifications
 		duration = 3;
 		priority = 1;
 	};
-
+	*/
+	/*
 	// Notification for the F3 Authorised Crew Component
 	class UnauthorisedCrew {
 		title= "NON-AUTHORISED CREW!";
@@ -109,6 +112,7 @@ class cfgNotifications
 		duration = 3;
 		priority = 5;
 	};
+	*/
 
 	// Notification for the F3 Mapclick Teleport component
 	class MapClickTeleport {
@@ -174,23 +178,23 @@ class Params
     class f_param_radios
     {
             title = "Radio System";
-            values[] = {0,1,2,3};
-            texts[] = {"Off","ACRE","TFR","ACRE2"};
-            default = 2;
+            values[] = {0,1,2};
+            texts[] = {"Off","ACRE2","TFR"};
+            default = 1;
             code = "f_var_radios = %1";
     };
 
 // ============================================================================================
 
-// F3 - Medical Systems Support
+// F3 - All Gear Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
     class f_param_medical
     {
-            title = "Medical System";
-            values[] = {0,1,2};
-            texts[] = {"Arma 3 Default","F3 Simple Wounding System","Authentic Gameplay Mod"};
-            default = 2;
+            title = "Which Mod System?";
+            values[] = {0,1,2,3};
+            texts[] = {"Arma 3 Default","F3 Simple Wounding System","Authentic Gameplay Mod","Advanced Banana Environment 3"};
+            default = 3;
             code = "f_var_medical = %1";
     };
 
@@ -289,6 +293,7 @@ class Params
 // F3 - Caching
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
+	/*
 	class f_param_caching
 	{
 		title = "Legacy Cache AI outside distance (m). Keep it off!";
@@ -296,6 +301,7 @@ class Params
 		default = 0;
 		code = "f_param_caching = %1";
 	};
+	*/
 		class f_param_dacdebug
 	{
 		title = "Legacy DAC Debug. Keep it off!";
@@ -473,6 +479,7 @@ class CfgFunctions
 			class SetFog{};
 			class SetWeather{};
 		};
+		/*
 		class cache
 		{
 			file = "f\cache";
@@ -481,16 +488,19 @@ class CfgFunctions
 			class gCache {};
 			class gUncache {};
 		};
+		*/
 		class groupMarkers {
 			file = "f\groupMarkers";
 			class localGroupMarker{};
 			class localSpecialistMarker{};
 		};
+		/*
 		class authorisedCrew
 		{
 			file = "f\authorisedCrew";
 			class authorisedCrewCheck {};
 		};
+		*/
 		class FTMemberMarkers
 		{
 			file = "f\FTMemberMarkers";
@@ -498,27 +508,33 @@ class CfgFunctions
 			class GetMarkerColor{};
 			class LocalFTMarkerSync{};
 		};
+		/*
 		class bodyRemoval
 		{
 			file = "f\removeBody";
 			class removeBody{};
 		};
+		*/
+		/*
 		class setAISkill
 		{
 			file = "f\setAISKill";
 			class setAISKill{};
 		};
+		*/
 		class mapClickTeleport
 		{
 			file = "f\mapClickTeleport";
 			class mapClickTeleportUnit{};
 			class mapClickTeleportGroup{};
 		};
+		/*
 		class nametag
 		{
 			file = "f\nametag";
 			class drawNameTag{};
 		};
+		*/
 		/*
 		class preMount
 		{
@@ -549,11 +565,13 @@ class CfgFunctions
 			class tfr_setRadioFrequencies{};
 			class tfr_configureSpectatorChat{};
 		};
+		/*
 		class safeStart
 		{
 			file = "f\safeStart";
 			class safety{};
 		};
+		*/
 		#include "f\simplewoundingsystem\config.hpp"
 		#include "f\spect\functions.hpp"
 
