@@ -101,44 +101,4 @@ Developed by
 	Hunter        (Gave us a running start | Member circa 2012/13)	
 	Batboyx2      (Member circa 2014)
 	
-	Great thanks to Ferstaberinde and the team, you can find most of the code within Phramework at https://github.com/ferstaberinde/F3 ! (www.ferstaberinde.com Creator of F2/F3 frameworks)
-
-
-
-Tools of The Trade
-
-	Gear Editing? Six Config Browser (http://browser.six-projects.net/cfg_weapons/classlist?version=67)
-	Notepad++ (http://notepad-plus-plus.org/)
-	TextCrawler (http://www.digitalvolcano.co.uk/textcrawler.html)
-	Github (https://github.com/batboyx2/PhanTactical-Mission-Framework)
-	Kegety's ArmA Tools Pack (http://www.kegetys.fi/category/gaming/armamods/)
-
-Beta Testers/Mission Developers
-	
-	Duck
-	Duskflame
-	Zesteh
-	Jakeen
-	KakePro
-	Shells
-	Hunter
-	CKing2013
-	Dodson
-	Sam Brooks (Sexypanda)
-	Hawk
-	Teddy
-	DownWithGravity
-	Jani J. (Phantom)
-	Batboyx2
-	Camden
-	IronDuke
-	JollyJoker
-	AngryEchoSix
-	Zesteh's Fiancee
-	Windows
-	Psikys
-	Miles (Tehfocus)
-	Othuv Nolen
-	Gruntin
-	Anyone I managed to forget
-	
+	Great thanks to Ferstaberinde and the team, you can find most of the code within Phramework at https://github.com/4/F3 ! (www.ferstaberinde.com Creator of F2/F3 frameworks)
