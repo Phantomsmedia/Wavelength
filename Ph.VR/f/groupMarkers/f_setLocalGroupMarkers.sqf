@@ -91,7 +91,7 @@ switch (_unitfaction) do
 
 		["GrpNATO_AH1",  10, "AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
 		
-		["GrpNATO_FW1",  11, "FW1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpNATO_FW1",  11, "FW1", "ColorBlack"] spawn f_fnc_localGroupMarker;
 
 	};
 
@@ -152,7 +152,7 @@ switch (_unitfaction) do
 
 		["GrpCSAT_AH1",  10, "AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
 		
-		["GrpCSAT_FW1",  11, "FW1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpCSAT_FW1",  11, "FW1", "ColorBlack"] spawn f_fnc_localGroupMarker;
 	};
 
 // ====================================================================================
@@ -212,7 +212,7 @@ switch (_unitfaction) do
 
 		["GrpAAF_AH1",  10, "AH1", "ColorRed"] spawn f_fnc_localGroupMarker;
 		
-		["GrpAAF_FW1",  11, "FW1", "ColorRed"] spawn f_fnc_localGroupMarker;
+		["GrpAAF_FW1",  11, "FW1", "ColorBlack"] spawn f_fnc_localGroupMarker;
 	};
 	
 };

@@ -6,8 +6,8 @@
 // The blocks of code below identifies equipment for this faction
 //
 // Defined loadouts:
-//		co			- commander
-//		dc 			- squad leader / deputy commander
+//		co			- platoon leader
+//		dc 			- squad leader / platoon sergeant
 //		m 			- medic
 //		ftl			- fire team leader
 //		ar 			- automatic rifleman
@@ -341,14 +341,12 @@ switch (_typeofUnit) do
 
 // ====================================================================================
 
-// LOADOUT: COMMANDER
+// LOADOUT: PLATOON LEADER
 	case "co":
 	{
-		_unit addmagazines [_glriflemag,7];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,3];
-		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_COrifle
+		_unit addmagazines [_riflemag,7];
+		_unit addmagazines [_riflemag_tr,2];
+		_unit addweapon _rifle;						//_COrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
@@ -357,11 +355,11 @@ switch (_typeofUnit) do
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
-		["g"] call _backpack;
+		["r"] call _backpack;
 		_attachments = [_attach1,_scope2,_muzzle];
 	};
 
-// LOADOUT: SQUAD LEADER & DEPUTY COMMANDER
+// LOADOUT: SQUAD LEADER & PLATOON SERGEANT
 	case "dc":
 	{
 		_unit addmagazines [_glriflemag,7];
@@ -774,6 +772,21 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _uavterminal;
 		["uav"] call _backpack;
+		_attachments = [_attach1,_muzzle];
+	};
+
+// LOADOUT: FORWARD OBSERVER
+	case "fo":
+	{
+		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addweapon _carbine;
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addWeapon "Laserdesignator";
+		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
+		["car"] call _backpack;
 		_attachments = [_attach1,_muzzle];
 	};
 
