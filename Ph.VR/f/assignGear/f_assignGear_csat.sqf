@@ -37,6 +37,7 @@
 //		eng			- engineer (demo)
 //		engm		- engineer (mines)
 //		uav			- UAV operator
+//		fo			- forward observer / JTAC
 //		div    		- divers
 //
 //		r 			- rifleman
@@ -343,11 +344,9 @@ switch (_typeofUnit) do
 // LOADOUT: COMMANDER
 	case "co":
 	{
-		_unit addmagazines [_glriflemag,7];
-		_unit addmagazines [_glriflemag_tr,2];
-		_unit addmagazines [_glmag,3];
-		_unit addmagazines [_glsmokewhite,4];
-		_unit addweapon _glrifle;					//_COrifle
+		_unit addmagazines [_riflemag,7];
+		_unit addmagazines [_riflemag_tr,2];
+		_unit addweapon _rifle;						//_COrifle
 		_unit addmagazines [_pistolmag,2];
 		_unit addweapon _pistol;
 		_unit addmagazines [_grenade,1];
@@ -356,7 +355,7 @@ switch (_typeofUnit) do
 		_unit addWeapon "Binocular";
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
-		["g"] call _backpack;
+		["r"] call _backpack;
 		_attachments = [_attach1,_scope2];
 	};
 
@@ -773,6 +772,21 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit linkItem _uavterminal;
 		["uav"] call _backpack;
+		_attachments = [_attach1];
+	};
+
+// LOADOUT: FORWARD OBSERVER
+	case "fo":
+	{
+		_unit addmagazines [_carbinemag,7];
+		_unit addmagazines [_carbinemag_tr,2];
+		_unit addweapon _carbine;
+		_unit addmagazines [_grenade,1];
+		_unit addmagazines [_smokegrenade,2];
+		_unit addWeapon "Laserdesignator_02";
+		_unit linkItem "ItemGPS";
+		_unit addItem _maptools;
+		["car"] call _backpack;
 		_attachments = [_attach1];
 	};
 
