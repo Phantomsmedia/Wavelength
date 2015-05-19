@@ -12,7 +12,7 @@ Phramework 3 Tutorial
 
 PH3 Versions:
 
-The latest version can usually be found here: (http://phantactical.com/forum/index.php?topic=2036.0).
+The latest version can usually be found here: (http://phantactical.com/forum/index.php?topic=3658.0).
 
 Ph Versions:
 
