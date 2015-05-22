@@ -37,7 +37,7 @@ Channel 2 - Bravo Squad Lead and Fireteam Leads
 <br/>
 Channel 3 - Charlie Squad Lead and Fireteam Leads
 <br/>
-Channel 4 - Command, Squad Leads, Support
+Channel 4 - PLT. HQ, Squad Leads, Support
 <br/>
 Channel 5 - Delta Squad Lead and Fireteam Leads
 <br/>
