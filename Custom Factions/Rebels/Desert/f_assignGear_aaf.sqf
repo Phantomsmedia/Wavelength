@@ -167,7 +167,7 @@ _baghsamag = "I_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 _sparebarrel = "ACE_SpareBarrel";			// for ARs and MMGs
 _maptools = "ACE_MapTools";                 // for SLs, DCs, and COs
 _defusalkit = "ACE_DefusalKit";             // for engineers
-_clacker = "ACE_Clacker";                   // for engineers
+_clacker = "ACE_Cellphone";                  // for engineers
 
 // ====================================================================================
 
