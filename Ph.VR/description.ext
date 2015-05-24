@@ -336,9 +336,9 @@ class CfgDebriefing
 {
 	class End1
 	{
-		title = "Ending #1";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #1 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -346,9 +346,9 @@ class CfgDebriefing
 
 	class End2
 	{
-		title = "Ending #2";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #2 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -356,9 +356,9 @@ class CfgDebriefing
 
 	class End3
 	{
-		title = "Ending #3";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #3 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -366,9 +366,9 @@ class CfgDebriefing
 
 	class End4
 	{
-		title = "Ending #4";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #4 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -376,9 +376,9 @@ class CfgDebriefing
 
 	class End5
 	{
-		title = "Ending #5";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #5 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
@@ -386,9 +386,9 @@ class CfgDebriefing
 
 	class End6
 	{
-		title = "Ending #6";
+		title = "Game Over";
 		subtitle = "";
-		description = "*** Insert debriefing #6 here. ***";
+		description = "The mission has ended.";
 		// pictureBackground = "";
 		// picture = "";
 		// pictureColor[] = {0.0,0.3,0.6,1};
