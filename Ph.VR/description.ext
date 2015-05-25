@@ -549,6 +549,7 @@ class CfgFunctions
 			class zeusAddAddons{};
 			class zeusAddObjects{};
 		};
+		/*
 		class acre
 		{
 			file = "f\radios\acre";
@@ -557,6 +558,7 @@ class CfgFunctions
 			class acre_setRadioFrequencies{};
 			class acre_configureSpectatorChat{};
 		};
+		*/
 		class tfr
 		{
 			file = "f\radios\tfr";
