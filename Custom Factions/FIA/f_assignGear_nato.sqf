@@ -167,7 +167,7 @@ _baghsamag = "B_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 _sparebarrel = "ACE_SpareBarrel";			// for ARs and MMGs
 _maptools = "ACE_MapTools";                 // for SLs, DCs, and COs
 _defusalkit = "ACE_DefusalKit";             // for engineers
-_clacker = "ACE_Clacker";                   // for engineers
+_clacker = "ACE_Cellphone";                  // for engineers
 
 // ====================================================================================
 
@@ -211,7 +211,7 @@ _SNrifleMag = "20Rnd_762x51_Mag";
 
 // Engineer items
 _ATmine = "ATMine_Range_Mag";
-_satchel = "DemoCharge_Remote_Mag";
+_satchel = "IEDUrbanSmall_Remote_Mag";
 _APmine = "ClaymoreDirectionalMine_Remote_Mag";
 
 // ====================================================================================
