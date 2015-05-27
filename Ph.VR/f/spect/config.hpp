@@ -712,10 +712,24 @@ class f_spec_dialog {
             text = "Okay";
             action = "ctrlShow [1315, !ctrlVisible 1315];ctrlShow [1310, !ctrlVisible 1310];ctrlShow [1300, !ctrlVisible 1300];";
         };
+        class CinematicCameraButton: RscSpectButton
+        {
+            idc = 2115;
+            x = 0.00046248 * safezoneW + safezoneX;
+            y = -5.99921e-005 * safezoneH + safezoneY;
+            w = 0.04 * safezoneW;
+            h = 0.02 * safezoneH;
+            text = "Cinematic";
+            tooltip = "Switch to cinematic camera (Exit with Numpad 0)";
+            sizeEx = "(         (           (           ((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+            onButtonClick = "[_this select 0,4] call f_fnc_HandleMenu";
+            onMouseHolding = "f_cam_menuShownTime=time";
+            onMouseMoving = "f_cam_menuShownTime=time";
+        };
         class FilterAIButton: RscSpectButton
         {
             idc = 2111;
-            x = 0.00046248 * safezoneW + safezoneX;
+            x = 0.0425375 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.04 * safezoneW;
             h = 0.02 * safezoneH;
@@ -730,7 +744,7 @@ class f_spec_dialog {
         class SideFilterButton: RscSpectButton
         {
             idc = 2112;
-            x = 0.0425375 * safezoneW + safezoneX;
+            x = 0.08461252 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.04 * safezoneW;
             h = 0.02 * safezoneH;
@@ -744,7 +758,7 @@ class f_spec_dialog {
         class TagsNameButton: RscSpectButton
         {
             idc = 2113;
-            x = 0.0846125 * safezoneW + safezoneX;
+            x = 0.12668754 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.04 * safezoneW;
             h = 0.02 * safezoneH;
@@ -758,7 +772,7 @@ class f_spec_dialog {
         class FirstPersonButton: RscSpectButton
         {
             idc = 2114;
-            x = 0.12679 * safezoneW + safezoneX;
+            x = 0.16876256 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.05 * safezoneW;
             h = 0.02 * safezoneH;
@@ -781,7 +795,7 @@ class f_spec_dialog {
         class SpecModes: RscSpectCombo
         {
             idc = 2101;
-            x = 0.178999 * safezoneW + safezoneX;
+            x = 0.21723758 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.07 * safezoneW;
             h = 0.02 * safezoneH;

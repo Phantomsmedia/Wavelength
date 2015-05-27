@@ -36,5 +36,13 @@ switch (_button) do {
     	{
     		_control ctrlSetText "First Person";
     	}
-	}
+	};
+    case 4: {
+        0 spawn {
+            [] call F_fnc_ForceExit;
+            player call bis_fnc_cameraOld;
+            waituntil {sleep 0.1; isNil "BIS_DEBUG_CAM"};
+            [player,player,player,0,true] spawn F_fnc_CamInit;
+        };
+    }
 };
