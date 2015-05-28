@@ -149,7 +149,7 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_rgr";				// small
+_bagsmall = "B_TacticalPack_blk";				// small
 _bagmedium = "B_Kitbag_rgr";					// medium
 _baglarge =  "B_Carryall_cbr"; 					// large
 _bagmediumdiver =  "B_AssaultPack_blk";			// used by divers
