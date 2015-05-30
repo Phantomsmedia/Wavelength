@@ -207,7 +207,7 @@ _DMriflemag = "rhsusf_20Rnd_762x51_m118_special_Mag";
 
 // Sniper
 _SNrifle = "rhs_weap_sr25";
-_SNrifleMag = "rhsusf_5Rnd_300winmag_xm2010";
+_SNrifleMag = "rhsusf_20Rnd_762x51_m118_special_Mag";
 
 // Engineer items
 _ATmine = "rhs_mine_M19_mag";
