@@ -117,5 +117,75 @@ if(_typeOfUnit != "NIL") then {
 
       };
 
+      // ====================================================================================
+
+	  // PRESET ASSIGNMENT
+
+	  waitUntil {uiSleep 0.3; count ([] call acre_api_fnc_getCurrentRadioList) > 0};
+	  uiSleep 1;
+
+	  _presetArray = switch (side _unit) do {
+	  	case blufor: {f_radios_settings_acre2_presets_blufor};
+	  	case opfor: {f_radios_settings_acre2_presets_opfor};
+	  	case independent: {f_radios_settings_acre2_presets_indfor};
+	  	default {f_radios_settings_acre2_presets_indfor};
+	  };
+
+	  _presetLRArray = switch (side _unit) do {
+	  	case blufor: {f_radios_settings_acre2_lr_presets_blufor};
+	  	case opfor: {f_radios_settings_acre2_lr_presets_opfor};
+	  	case independent: {f_radios_settings_acre2_lr_presets_indfor};
+	  	default {f_radios_settings_acre2_lr_presets_indfor};
+	  };
+
+	  _groupID = groupID (group _unit);
+	  _groupChannelIndex = -1;
+	  _groupLRChannelIndex = -1;
+
+	  _groupIDSplit = [_groupID, " "] call bis_fnc_splitString;
+	  if ((count _groupIDSplit) > 2) then {
+	  	_groupName = toUpper (_groupIDSplit select 1);
+	  	{
+	  		if (_groupName in _x) exitWith { _groupChannelIndex = _forEachIndex; };
+	  	} forEach _presetArray;
+	  	{
+	  		if (_groupName in _x) exitWith { _groupLRChannelIndex = _forEachIndex; };
+	  	} forEach _presetLRArray;
+	  };
+
+	  _radio343 = ["ACRE_PRC343"] call acre_api_fnc_getRadioByType;
+	  _radio148 = ["ACRE_PRC148"] call acre_api_fnc_getRadioByType;
+	  _radio152 = ["ACRE_PRC152"] call acre_api_fnc_getRadioByType;
+	  _radio117 = ["ACRE_PRC117F"] call acre_api_fnc_getRadioByType;
+
+	  if (_groupChannelIndex == -1) then {
+	  	systemChat format["Unknown group for channel presets (%1)", _groupID];
+	  	_groupChannelIndex = 0;
+	  };
+
+	  if (_groupLRChannelIndex == -1 && {((!isNil "_radio117") && {_radio117 != ""})}) then {
+  		systemChat format["Unknown group for LR channel presets (%1)", _groupID];
+	  	_groupLRChannelIndex = 0;
+	  };
+
+
+	  if ((!isNil "_radio343") && {_radio343 != ""}) then {
+	      [_radio343, (_groupChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
+	  };
+
+
+	  if ((!isNil "_radio148") && {_radio148 != ""}) then {
+	      [_radio148, (_groupChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
+	  };
+
+
+	  if ((!isNil "_radio152") && {_radio152 != ""}) then {
+	      [_radio152, (_groupChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
+	  };
+
+	  if ((!isNil "_radio117") && {_radio117 != ""}) then {
+	      [_radio117, (_groupLRChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
+	  };
+
   };
 };

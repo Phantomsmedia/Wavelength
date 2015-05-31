@@ -60,7 +60,7 @@
 
 // ATTACHMENTS - PRIMARY
 _attach1 = "";							// IR Laser
-_attach2 = "";							// Flashlight
+_attach2 = "acc_flashlight";			// Flashlight
 
 _silencer1 = "";						// Primary
 _silencer2 = "muzzle_snds_M";			// Diver
@@ -97,9 +97,9 @@ _carbinemag = "rhs_30Rnd_762x39mm";
 _carbinemag_tr = "rhs_30Rnd_762x39mm_tracer";
 
 // Standard Submachine Gun/Personal Defence Weapon (Aircraft Pilot, Submachinegunner)
-_smg = "SMG_01_F";
-_smgmag = "30Rnd_45ACP_Mag_SMG_01";
-_smgmag_tr = "30Rnd_45ACP_Mag_SMG_01";
+_smg = "hgun_PDW2000_F";
+_smgmag = "30Rnd_9x21_Mag";
+_smgmag_tr = "30Rnd_9x21_Mag";
 
 // Diver
 _diverWep = "arifle_SDAR_F";
@@ -149,7 +149,7 @@ _chemyellow =  "Chemlight_yellow";
 _chemblue = "Chemlight_blue";
 
 // Backpacks
-_bagsmall = "B_AssaultPack_rgr";				// small
+_bagsmall = "B_TacticalPack_blk";				// small
 _bagmedium = "B_Kitbag_rgr";					// medium
 _baglarge =  "B_Carryall_cbr"; 					// large
 _bagmediumdiver =  "B_AssaultPack_blk";			// used by divers
@@ -233,7 +233,7 @@ _ghillie = ["sn","sp"];
 // The outfit-piece is randomly selected from the array for each unit
 
 _baseUniform = ["U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
-_baseHelmet = ["","rhsusf_Bowman","rhsusf_bowman_cap","H_Cap_blk_ION","H_Cap_khaki_specops_UK","H_Cap_usblack"];
+_baseHelmet = ["","rhsusf_Bowman","H_Watchcap_blk","H_Cap_blk_ION","H_Cap_khaki_specops_UK","H_Cap_usblack"];
 _baseGlasses = [];
 
 // Vests
@@ -305,7 +305,7 @@ if (_isMan) then {
 	// ADD UNIVERSAL ITEMS
 	// Add items universal to all units of this faction
 
-	_unit linkItem _nvg;			// Add and equip the faction's nvgs, remove to remove nvgs
+	//_unit linkItem _nvg;			// Add and equip the faction's nvgs, remove to remove nvgs
 	_unit addItem _firstaid;		// Add a single first aid kit
 	_unit linkItem "ItemMap";		// Add and equip the map
 	_unit linkItem "ItemCompass";	// Add and equip a compass

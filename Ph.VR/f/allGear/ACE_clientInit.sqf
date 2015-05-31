@@ -13,7 +13,6 @@ _typeOfUnit = player getVariable "f_var_assignGear";
 {player removeItems _x} forEach ["FirstAidKit","Medikit","ACE_fieldDressing","ACE_morphine","ACE_epinephrine","ACE_bloodIV_500"];
 
 // Add basic items to all units
-player addItem "ACE_EarPlugs";
 {player addItem "ACE_fieldDressing"} forEach [1,2,3,4,5];
 player addItem "ACE_morphine";
 

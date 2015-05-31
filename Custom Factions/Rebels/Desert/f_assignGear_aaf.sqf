@@ -167,7 +167,7 @@ _baghsamag = "I_HMG_01_support_F";			// used by Heavy SAM assistant gunner
 _sparebarrel = "ACE_SpareBarrel";			// for ARs and MMGs
 _maptools = "ACE_MapTools";                 // for SLs, DCs, and COs
 _defusalkit = "ACE_DefusalKit";             // for engineers
-_clacker = "ACE_Clacker";                   // for engineers
+_clacker = "ACE_Cellphone";                  // for engineers
 
 // ====================================================================================
 
@@ -305,7 +305,7 @@ if (_isMan) then {
 	// ADD UNIVERSAL ITEMS
 	// Add items universal to all units of this faction
 
-	_unit linkItem _nvg;			// Add and equip the faction's nvgs, remove to remove nvgs
+	//_unit linkItem _nvg;			// Add and equip the faction's nvgs, remove to remove nvgs
 	_unit addItem _firstaid;		// Add a single first aid kit
 	_unit linkItem "ItemMap";		// Add and equip the map
 	_unit linkItem "ItemCompass";	// Add and equip a compass

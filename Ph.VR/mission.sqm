@@ -113,7 +113,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_PL";
 					init="GrpNATO_PLTHQ = group this; [""co"",this] call f_fnc_assignGear;";
-					description="BLUFOR Plt. Leader";
+					description="BLUFOR Platoon Leader";
 				};
 				class Item1
 				{
@@ -126,7 +126,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_PLTHQ_M";
 					init="GrpNATO_PLTHQ = group this; [""m"",this] call f_fnc_assignGear;";
-					description="BLUFOR Plt. HQ Medic";
+					description="BLUFOR Platoon HQ Medic";
 				};
 				class Item2
 				{
@@ -139,7 +139,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitNATO_PSG";
 					init="GrpNATO_PLTHQ = group this; [""dc"",this] call f_fnc_assignGear;";
-					description="BLUFOR Plt. Sergeant";
+					description="BLUFOR Platoon Sergeant";
 				};
 				class Item3
 				{
@@ -802,7 +802,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitCSAT_PL";
 					init="GrpCSAT_PLTHQ = group this; [""co"",this] call f_fnc_assignGear;";
-					description="OPFOR Plt. Leader";
+					description="OPFOR Platoon Leader";
 				};
 				class Item1
 				{
@@ -815,7 +815,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitCSAT_PLTHQ_M";
 					init="GrpCSAT_PLTHQ = group this; [""m"",this] call f_fnc_assignGear;";
-					description="OPFOR Plt. HQ Medic";
+					description="OPFOR Platoon HQ Medic";
 				};
 				class Item2
 				{
@@ -828,7 +828,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitCSAT_PSG";
 					init="GrpCSAT_PLTHQ = group this; [""dc"",this] call f_fnc_assignGear;";
-					description="OPFOR Plt. Sergeant";
+					description="OPFOR Platoon Sergeant";
 				};
 				class Item3
 				{
@@ -1654,7 +1654,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitAAF_PL";
 					init="GrpAAF_PLTHQ = group this; [""co"",this] call f_fnc_assignGear;";
-					description="INDFOR Plt. Leader";
+					description="INDFOR Platoon Leader";
 				};
 				class Item1
 				{
@@ -1666,7 +1666,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitAAF_PLTHQ_M";
 					init="GrpAAF_PLTHQ = group this; [""m"",this] call f_fnc_assignGear;";
-					description="INDFOR Plt. HQ Medic";
+					description="INDFOR Platoon HQ Medic";
 				};
 				class Item2
 				{
@@ -1679,7 +1679,7 @@ class Mission
 					skill=0.60000002;
 					text="UnitAAF_PSG";
 					init="GrpAAF_PLTHQ = group this; [""dc"",this] call f_fnc_assignGear;";
-					description="INDFOR Plt. Sergeant";
+					description="INDFOR Platoon Sergeant";
 				};
 				class Item3
 				{

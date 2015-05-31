@@ -13,6 +13,7 @@ _groups = [
 
 ["GrpNATO_CO","NATO CO -"],
 ["GrpNATO_DC","NATO DC -"],
+["GrpNATO_PLTHQ","NATO PLTHQ -"],
 
 ["GrpNATO_ASL","NATO ASL -"],
 ["GrpNATO_A1","NATO A1 -"],
@@ -49,6 +50,10 @@ _groups = [
 ["GrpNATO_IFV7","NATO IFV7 -"],
 ["GrpNATO_IFV8","NATO IFV8 -"],
 ["GrpNATO_TNK1","NATO TNK1 -"],
+["GrpNATO_APC1","NATO APC1 -"],
+["GrpNATO_APC2","NATO APC2 -"],
+["GrpNATO_APC3","NATO APC3 -"],
+["GrpNATO_APC4","NATO APC4 -"],
 
 ["GrpNATO_TH1","NATO TH1 -"],
 ["GrpNATO_TH2","NATO TH2 -"],
@@ -59,6 +64,7 @@ _groups = [
 ["GrpNATO_TH7","NATO TH7 -"],
 ["GrpNATO_TH8","NATO TH8 -"],
 ["GrpNATO_AH1","NATO AH1 -"],
+["GrpNATO_FW1","NATO FW1 -"],
 
 // ====================================================================================
 
@@ -67,6 +73,7 @@ _groups = [
 
 ["GrpFIA_CO","FIA CO -"],
 ["GrpFIA_DC","FIA DC -"],
+["GrpFIA_PLTHQ","FIA PLTHQ -"],
 
 ["GrpFIA_ASL","FIA ASL -"],
 ["GrpFIA_A1","FIA A1 -"],
@@ -103,6 +110,10 @@ _groups = [
 ["GrpFIA_IFV7","FIA IFV7 -"],
 ["GrpFIA_IFV8","FIA IFV8 -"],
 ["GrpFIA_TNK1","FIA TNK1 -"],
+["GrpFIA_APC1","FIA APC1 -"],
+["GrpFIA_APC2","FIA APC2 -"],
+["GrpFIA_APC3","FIA APC3 -"],
+["GrpFIA_APC4","FIA APC4 -"],
 
 ["GrpFIA_TH1","FIA TH1 -"],
 ["GrpFIA_TH2","FIA TH2 -"],
@@ -113,6 +124,7 @@ _groups = [
 ["GrpFIA_TH7","FIA TH7 -"],
 ["GrpFIA_TH8","FIA TH8 -"],
 ["GrpFIA_AH1","FIA AH1 -"],
+["GrpFIA_FW1","FIA FW1 -"],
 
 // ====================================================================================
 
@@ -121,6 +133,7 @@ _groups = [
 
 ["GrpCSAT_CO","CSAT CO -"],
 ["GrpCSAT_DC","CSAT DC -"],
+["GrpCSAT_PLTHQ","CSAT PLTHQ -"],
 
 ["GrpCSAT_ASL","CSAT ASL -"],
 ["GrpCSAT_A1","CSAT A1 -"],
@@ -157,6 +170,10 @@ _groups = [
 ["GrpCSAT_IFV7","CSAT IFV7 -"],
 ["GrpCSAT_IFV8","CSAT IFV8 -"],
 ["GrpCSAT_TNK1","CSAT TNK1 -"],
+["GrpCSAT_APC1","CSAT APC1 -"],
+["GrpCSAT_APC2","CSAT APC2 -"],
+["GrpCSAT_APC3","CSAT APC3 -"],
+["GrpCSAT_APC4","CSAT APC4 -"],
 
 ["GrpCSAT_TH1","CSAT TH1 -"],
 ["GrpCSAT_TH2","CSAT TH2 -"],
@@ -167,6 +184,7 @@ _groups = [
 ["GrpCSAT_TH7","CSAT TH7 -"],
 ["GrpCSAT_TH8","CSAT TH8 -"],
 ["GrpCSAT_AH1","CSAT AH1 -"],
+["GrpCSAT_FW1","CSAT FW1 -"],
 
 // ====================================================================================
 
@@ -175,6 +193,7 @@ _groups = [
 
 ["GrpOFIA_CO","FIA O CO -"],
 ["GrpOFIA_DC","FIA O DC -"],
+["GrpOFIA_PLTHQ","FIA O PLTHQ -"],
 
 ["GrpOFIA_ASL","FIA O ASL -"],
 ["GrpOFIA_A1","FIA O A1 -"],
@@ -211,6 +230,10 @@ _groups = [
 ["GrpOFIA_IFV7","FIA O IFV7 -"],
 ["GrpOFIA_IFV8","FIA O IFV8 -"],
 ["GrpOFIA_TNK1","FIA O TNK1 -"],
+["GrpOFIA_APC1","FIA O APC1 -"],
+["GrpOFIA_APC2","FIA O APC2 -"],
+["GrpOFIA_APC3","FIA O APC3 -"],
+["GrpOFIA_APC4","FIA O APC4 -"],
 
 ["GrpOFIA_TH1","FIA O TH1 -"],
 ["GrpOFIA_TH2","FIA O TH2 -"],
@@ -221,6 +244,7 @@ _groups = [
 ["GrpOFIA_TH7","FIA O TH7 -"],
 ["GrpOFIA_TH8","FIA O TH8 -"],
 ["GrpOFIA_AH1","FIA O AH1 -"],
+["GrpOFIA_FW1","FIA O FW1 -"],
 
 // ====================================================================================
 
@@ -229,6 +253,7 @@ _groups = [
 
 ["GrpAAF_CO","AAF CO -"],
 ["GrpAAF_DC","AAF DC -"],
+["GrpAAF_PLTHQ","AAF PLTHQ -"],
 
 ["GrpAAF_ASL","AAF ASL -"],
 ["GrpAAF_A1","AAF A1 -"],
@@ -265,6 +290,10 @@ _groups = [
 ["GrpAAF_IFV7","AAF IFV7 -"],
 ["GrpAAF_IFV8","AAF IFV8 -"],
 ["GrpAAF_TNK1","AAF TNK1 -"],
+["GrpAAF_APC1","AAF APC1 -"],
+["GrpAAF_APC2","AAF APC2 -"],
+["GrpAAF_APC3","AAF APC3 -"],
+["GrpAAF_APC4","AAF APC4 -"],
 
 ["GrpAAF_TH1","AAF TH1 -"],
 ["GrpAAF_TH2","AAF TH2 -"],
@@ -275,6 +304,7 @@ _groups = [
 ["GrpAAF_TH7","AAF TH7 -"],
 ["GrpAAF_TH8","AAF TH8 -"],
 ["GrpAAF_AH1","AAF AH1 -"],
+["GrpAAF_FW1","AAF FW1 -"],
 
 
 // ====================================================================================
@@ -284,6 +314,7 @@ _groups = [
 
 ["GrpIFIA_CO","FIA I CO -"],
 ["GrpIFIA_DC","FIA I DC -"],
+["GrpIFIA_PLTHQ","FIA PLTHQ -"],
 
 ["GrpIFIA_ASL","FIA I ASL -"],
 ["GrpIFIA_A1","FIA I A1 -"],
@@ -320,6 +351,10 @@ _groups = [
 ["GrpIFIA_IFV7","FIA I IFV7 -"],
 ["GrpIFIA_IFV8","FIA I IFV8 -"],
 ["GrpIFIA_TNK1","FIA I TNK1 -"],
+["GrpIFIA_APC1","FIA I APC1 -"],
+["GrpIFIA_APC2","FIA I APC2 -"],
+["GrpIFIA_APC3","FIA I APC3 -"],
+["GrpIFIA_APC4","FIA I APC4 -"],
 
 ["GrpIFIA_TH1","FIA I TH1 -"],
 ["GrpIFIA_TH2","FIA I TH2 -"],
@@ -329,7 +364,8 @@ _groups = [
 ["GrpIFIA_TH6","FIA I TH6 -"],
 ["GrpIFIA_TH7","FIA I TH7 -"],
 ["GrpIFIA_TH8","FIA I TH8 -"],
-["GrpIFIA_AH1","FIA I AH1 -"]
+["GrpIFIA_AH1","FIA I AH1 -"],
+["GrpIFIA_FW1","FIA I FW1 -"]
 
 // Always make sure there's no comma after the last entry!
 

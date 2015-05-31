@@ -185,6 +185,7 @@ f_var_JIP_RemoveCorpse = false;		// Remove the old corpse of respawning players?
 f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear? False will use gear assigned by F3 Gear Component if possible
 
 // ====================================================================================
+
 /*
 // F3 - AI Unit Caching
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
@@ -197,6 +198,7 @@ f_var_JIP_GearMenu = true;			// Can JIP/respawned players select their own gear?
 // 3 - cache all units, incl. group leaders and vehicle drivers
 f_var_cachingAggressiveness = 2;
 */
+
 // ====================================================================================
 
 // F3 - Radio Systems Support
@@ -232,6 +234,7 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
 // ====================================================================================
 
+/*
 // _wolfenswan - flashlight addition and NVG removal on AI
 
 {
@@ -254,6 +257,7 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
     // Forces flashlights on
     // _unit enablegunlights "forceOn";
 } forEach allUnits;
+*/
 
 // ====================================================================================
 // ==========================================
