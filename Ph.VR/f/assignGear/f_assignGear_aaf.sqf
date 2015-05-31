@@ -138,7 +138,7 @@ _medkit = "Medikit";
 
 // Optics
 _bino = "Binocular";
-_range = "ACE_Vector";
+_range = "Rangefinder";
 _laser = "Laserdesignator_03";
 
 // Night Vision Goggles (NVGoggles)
