@@ -1,4 +1,4 @@
-//Author: SIGNAL LOSS (LOLWUT)
+//Author: 
 //Description: OPFOR (CSAT) Standard
 
 class opf_f {

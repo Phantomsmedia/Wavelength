@@ -1,5 +1,5 @@
-//Author: Bismarck and Jani
-//Description: NATO Faction
+//Author: 
+//Description: BLUFOR (NATO) Standard
 // ====================================================================================
 
 class blu_f {

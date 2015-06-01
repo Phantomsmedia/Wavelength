@@ -1,5 +1,5 @@
-//Author: Poop
-//Description: Poop (yes, even more)
+//Author: 
+//Description: INFOR (AAF) Standard
 
 class ind_f {
     
