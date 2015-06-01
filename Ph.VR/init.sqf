@@ -47,20 +47,6 @@ f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
 
 // ====================================================================================
 
-// F3 - Fireteam Member Markers
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] spawn f_fnc_SetLocalFTMemberMarkers;
-
-// ====================================================================================
-
-// F3 - F3 Folk ARPS Group Markers
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
-
-// ====================================================================================
-
 // F3 - F3 Common Local Variables
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // WARNING: DO NOT DISABLE THIS COMPONENT
@@ -145,20 +131,6 @@ if(isServer) then {
 
 // [side,ObjectName or "MarkerName",100,1] execVM "f\EandEcheck\f_EandECheckLoop.sqf";
 // [["Grp1","Grp2"],ObjectName or "MarkerName",100,1] execVM "f\EandEcheck\f_EandECheckLoop.sqf";
-
-// ====================================================================================
-
-// F3 - ORBAT Notes
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\briefing\f_orbatNotes.sqf";
-
-// ====================================================================================
-
-// F3 - Loadout Notes
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\briefing\f_loadoutNotes.sqf";
 
 // ====================================================================================
 
