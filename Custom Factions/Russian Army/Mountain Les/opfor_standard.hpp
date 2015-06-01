@@ -89,9 +89,9 @@ class opf_f {
 // Leadership INF and Groupies
 
     class O_Soldier_F { // rifleman
-        uniform[] = {"rhs_uniform_flora","rhs_uniform_flora_patchless_alt"};  /// randomized
-        vest[] = {"rhs_6b23_6sh92_vog","rhs_6b23_6sh92_vog", "rhs_6b23_6sh92_vog_headset","rhs_6b23_engineer","rhs_6b23_rifleman","rhs_6b23_sniper"}; /// randomized
-        headgear[] = {"rhs_6b27m_green","rhs_6b26_ess_bala","rhs_6b26","rhs_6b27m_green_ess_bala","rhs_6b26_ess","rhs_6b26_bala","rhs_6b27m_green_ess","rhs_6b27m","rhs_6b27m_bala","rhs_6b27m_ess","rhs_6b28_green","rhs_6b28_green_ess","rhs_6b28_flora_ess","rhs_6b28_flora_ess_bala"}; /// randomized
+        uniform[] = {"rhs_uniform_flora_patchless_alt"};  /// randomized
+        vest[] = {"rhs_6b23_ML_6sh92","rhs_6b23_ML_rifleman"}; /// randomized
+        headgear[] = {"rhs_6b27m_green","rhs_6b27m_ml","rhs_6b27m_ml_ess"}; /// randomized
         backpack[] = {"rhs_sidor"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         weapons[] = {EAST_RIFLE}; /// randomized
@@ -105,8 +105,8 @@ class opf_f {
 	
     class O_officer_F: O_Soldier_F { // CO and DC
         weapons[] = {EAST_GLRIFLE};
-        vest[] = {"rhs_6b23_6sh92_vog_headset"}; /// randomized
-        headgear[] = {"rhs_6b27m_green_ess_bala"}; /// randomized
+        vest[] = {"rhs_6b13_6sh92"}; /// randomized
+        headgear[] = {"rhs_6b27m_ml"}; /// randomized
         magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_FLARE,EAST_GLRIFLE_MAG_SMOKE,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
         handguns[] = {EAST_PISTOL}; /// randomized
         linkedItems[] += {"ItemGPS","Binocular"};
@@ -216,19 +216,19 @@ class opf_f {
     };
 	
     class O_spotter_F {// Spotter
-        headgear[] = {"rhs_Booniehat_flora","rhs_fieldcap"}; /// randomized
-        uniform[] = {"rhs_uniform_flora"};  /// randomized
+        headgear[] = {"H_HelmetSpecO_ocamo"}; /// randomized
+        uniform[] = {"rhs_uniform_flora_patchless_alt"};  /// randomized
         vest[] = {"rhs_6b23_sniper"}; /// randomized
         weapons[] = {EAST_SPOTTER}; /// randomized
         magazines[] = {EAST_SPOTTER_MAG,EAST_SMOKE_WHITE};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","LaserDesignator"};
-        attachments[] = {"rhs_acc_pso1m2"};
+        attachments[] = {"optic_Hamr"};
     };
 	
     class O_sniper_F {// Sniper
         headgear[] = {"rhs_Booniehat_flora","rhs_fieldcap"}; /// randomized
-        uniform[] = {"rhs_uniform_flora"};  /// randomized
+        uniform[] = {"rhs_uniform_flora_patchless_alt"};  /// randomized
         vest[] = {"rhs_6b23_sniper"}; /// randomized
         weapons[] = {EAST_SNIPER}; /// randomized
         magazines[] = {EAST_SNIPER_MAG,EAST_SMOKE_WHITE};
@@ -251,7 +251,7 @@ class opf_f {
     };
 	
     class O_crew_F {// Crew
-        headgear[] = {"rhs_uniform_flora"}; /// randomized
+        headgear[] = {"rhs_uniform_flora_patchless_alt"}; /// randomized
         uniform[] = {"rhs_6b23_engineer"};  /// randomized
         vest[] = {"rhs_tsh4_ess_bala"}; /// randomized
         backpack[] = {"rhs_sidor"};
