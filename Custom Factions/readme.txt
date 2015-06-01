@@ -1,9 +1,7 @@
-Put the .sqf files into the assign gear located in:
+Original .hpp assignGears created by BW and F3.
 
-Ph.VR\f\assignGear\
+Put the .hpp files in the following folder.
 
-Replace the old ones if you want to use custom factions.
+Ph.VR\Loadouts
 
-Why did we move this folder?
-
-People kept it in their missions, resulting in nearly 400kb of 1000kb that wasn't being used.
+Make sure the player faction in-game corresponds to the file. INFOR -> Green Guys. OPFOR -> Red Guys. BLUFOR -> Blue Guys.

@@ -8,8 +8,6 @@
 
 // ============================================================================================
 
-// PhanTactical - RotorLib Simulation Forcing
-// Credits: Jani
 //  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off)
 // MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. <- That legacy code.
 
@@ -41,11 +39,13 @@ loadScreen = "loadLogo.jpg";
 
 // BWMF Gear
 //Credits:headswe, Pabst, Zerith
+
 #include "CfgLoadouts.hpp"
 
 // ============================================================================================
 
 //Extended Event Handlers:
+
 class Extended_InitPost_EventHandlers {
     class CAManBase {
         class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
@@ -197,20 +197,6 @@ class Params
 
 // ============================================================================================
 
-// F3 - Folk Assign Gear Script
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_backpacks
-    {
-            title = "$STR_f_param_loadouts";
-            values[] = {0,1,2};
-            texts[] = {"Light","Medium","Heavy"};
-            default = 1;
-            code = "f_param_backpacks = %1";
-    };
-
-// ============================================================================================
-
 // F3 - Radio Systems Support
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -223,34 +209,6 @@ class Params
             code = "f_var_radios = %1";
     };
 
-// ============================================================================================
-
-// F3 - All Gear Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_medical
-    {
-            title = "Which Mod System?";
-            values[] = {0,1,2};
-            texts[] = {"Arma 3 Default","Authentic Gameplay Mod","Advanced Banana Environment 3"};
-            default = 2;
-            code = "f_var_medical = %1";
-    };
-
-// ============================================================================================
-/*
-// F3 - Mission Timer/Safe Start
-// Credits: Please see the F2 online manual (http://www.ferstaberinde.com/f3/en/)
-
-    class f_param_mission_timer
-    {
-            title = "$STR_f_param_mission_timer";
-            values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
-            texts[] = {"$STR_f_param_mission_timer_off","1","2","3","4","5","6","7","8","9","10","15"};
-            default = 0;
-            code = "f_param_mission_timer = %1";
-    };
-*/
 // ============================================================================================
 /*
 // F3 - Mission Conditions Selector
@@ -289,75 +247,6 @@ class Params
  		code = "f_param_timeOfDay = %1";
 	};
 */
-// ============================================================================================
-
-// F3 - AI Skill Selector
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-/*
-	class f_param_AISkill_BLUFOR
-	{
-		title = "$STR_f_param_AISkill_BLUFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_BLUFOR = %1";
-	};
-*/
-
-/*
-	class f_param_AISkill_OPFOR
-	{
-		title = "$STR_f_param_AISkill_OPFOR";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_OPFOR = %1";
-	};
-*/
-
-/*
-	class f_param_AISkill_INDP
-	{
-		title = "$STR_f_param_AISkill_INDP";
-		values[] = {0,1,2,3};
-		texts[] = {$STR_f_param_AISkill_Option0,$STR_f_param_AISkill_Option1,$STR_f_param_AISkill_Option2,$STR_f_param_AISkill_Option3};
-		default = 1;
-		code = "f_param_AISkill_INDP = %1";
-	};
-*/
-
-// ============================================================================================
-
-// F3 - Caching
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-	/*
-	class f_param_caching
-	{
-		title = "Legacy Cache AI outside distance (m). Keep it off!";
-		values[] = {0,600,800,1000,1500,2000};
-		default = 0;
-		code = "f_param_caching = %1";
-	};
-	*/
-		class f_param_dacdebug
-	{
-		title = "Legacy DAC Debug. Keep it off!";
-		values[] = {0,1};
-		texts[] = {"Off","On"};
-		default = 0;
-		code = "f_param_dacdebug = %1";
-	};
-
-	class ws_param_hc
-	{
-		title = "Legacy Headless Client. Keep it off!";
-		values[] = {0,1};
-		texts[] = {"Off","Auto-Detect"};
-		default = 0;
-		code = "ws_param_hc = %1";
-	};
 
 // ============================================================================================
 
@@ -465,16 +354,17 @@ class CfgRespawnTemplates
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
 
 // Menu components for the JIP Menu
-#include "f\JIP\f_JIP_kitpicker.h"
-#include "f\JIP\f_JIP_grppicker.h"
+//#include "f\JIP\f_JIP_kitpicker.h"
+//#include "f\JIP\f_JIP_grppicker.h"
 
 // Menu components for the Spectator Script
-#include "f\spect\config.hpp"
+//#include "f\spect\config.hpp"
 
 // ============================================================================================
 
 // F3 - Functions
 // DO NOT REMOVE OR DISABLE THIS BLOCK OF CODE
+// Cleaned up. All the functions are located in f\config.hpp. Don't go looking.
 
 class CfgFunctions
 {
