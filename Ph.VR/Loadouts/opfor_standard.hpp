@@ -55,10 +55,10 @@ class opf_f {
     #define EAST_PISTOL_MAG "16Rnd_9x21_Mag:4"
 
     // Grenades, Smoke and Frag
-    #define WEST_GRENADE "HandGrenade:2"
-    #define WEST_SMOKE_WHITE "SmokeShell:2"
-    #define WEST_SMOKE_GREEN "SmokeShellGreen"
-    #define WEST_SMOKE_RED "SmokeShellRed"
+    #define EAST_GRENADE "HandGrenade:2"
+    #define EAST_SMOKE_WHITE "SmokeShell:2"
+    #define EAST_SMOKE_GREEN "SmokeShellGreen"
+    #define EAST_SMOKE_RED "SmokeShellRed"
 
 
 // ====================================================================================
