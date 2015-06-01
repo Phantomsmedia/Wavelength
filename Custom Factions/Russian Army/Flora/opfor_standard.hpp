@@ -43,8 +43,8 @@ class opf_f {
     #define EAST_SNIPER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
     
 	// Spotter Rifle
-    #define EAST_SPOTTER "rhs_weap_svds"
-    #define EAST_SPOTTER_MAG "rhs_10Rnd_762x54mmR_7N1:8"
+    #define EAST_SPOTTER "rhs_weap_ak74m_camo"
+    #define EAST_SPOTTER_MAG "rhs_30Rnd_545x39_AK:8"
     
 	// SMG
     #define EAST_SMG "rhs_weap_ak74m_folded"
