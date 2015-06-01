@@ -220,10 +220,8 @@ f_wound_extraFAK = 2;
 
 // ====================================================================================
 
-// Disable Friendly Fire Penalties
-// Credits: Rik (PhanTactical)
-
-[] execVM "f\friendlyfire\setPlayersRaitingToMax.sqf";
+// BWMF: Group and FTL Markers
+[] call F_Markers_fnc_playerInit;
 
 // ====================================================================================
 
