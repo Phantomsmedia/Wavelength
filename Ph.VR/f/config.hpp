@@ -135,6 +135,10 @@ class F // Defines the "owner"
 		class safety{};
 	};
 	*/
+	class setTeamColours {
+        file = "f\setTeamColours";
+        class setTeamColours {};
+    };
 	#include "spect\functions.hpp"
 
 };
