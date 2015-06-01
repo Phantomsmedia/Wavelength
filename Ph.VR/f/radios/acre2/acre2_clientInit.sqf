@@ -13,11 +13,10 @@ if (f_radios_settings_acre2_disableFrequencySplit) then {
 	_presetName = "default";
 };
 
-_ret = ["ACRE_PRC343", _presetName ] call acre_api_fnc_setPreset;
+//_ret = ["ACRE_PRC343", _presetName ] call acre_api_fnc_setPreset;
 _ret = ["ACRE_PRC148", _presetName ] call acre_api_fnc_setPreset;
 _ret = ["ACRE_PRC152", _presetName ] call acre_api_fnc_setPreset;
 _ret = ["ACRE_PRC117F", _presetName ] call acre_api_fnc_setPreset;
-_ret = ["ItemRadio", _presetName ] call acre_api_fnc_setPreset;
 
 
 // if dead, set spectator and exit
