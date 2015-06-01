@@ -8,6 +8,12 @@ class F_Markers {
         class setupDrawThings {};
     };
 };
+class F_DAC {
+    class F_DAC {
+        file = "DAC";
+        class setupDacParams {};
+    };
+};
 class F // Defines the "owner"
 {
 	class common // category

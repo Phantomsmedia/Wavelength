@@ -283,9 +283,8 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 
 // ====================================================================================
 
-// BWMF - DAC Debug Params
-
-[] execVM "DAC\bwmf_dacParams.sqf";
+// BWMF: DAC Debug Params
+[] call F_DAC_fnc_setupDacParams;
 
 // ====================================================================================
 
