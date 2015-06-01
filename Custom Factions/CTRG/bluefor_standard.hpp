@@ -1,4 +1,4 @@
-//Author: Bismarck and Jani
+//Author: 
 //Description: NATO Faction
 // ====================================================================================
 
@@ -7,22 +7,22 @@ class blu_f {
 	// Here we're creating definitions for weapons and magazines that are called later. 
     
 	//Rifle
-    #define WEST_RIFLE "arifle_MX_F"
+    #define WEST_RIFLE "arifle_MX_Black_F"
     #define WEST_RIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
     
 	//GL Rifle
-    #define WEST_GLRIFLE "arifle_MX_GL_F"
+    #define WEST_GLRIFLE "arifle_MX_GL_Black_F"
     #define WEST_GLRIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
     #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
     #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:8"
     #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
     
 	//Carbine
-    #define WEST_CARBINE "arifle_MXC_F"
+    #define WEST_CARBINE "arifle_MXC_Black_F"
     #define WEST_CARBINE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
    
    // AR
-    #define WEST_AR "arifle_MX_SW_F"
+    #define WEST_AR "arifle_MX_SW_Black_F"
     #define WEST_AR_MAG "100Rnd_65x39_caseless_mag:2"
     #define WEST_AR_MAG2 "100Rnd_65x39_caseless_mag_Tracer:2"
     
@@ -94,9 +94,9 @@ class blu_f {
 // Leadership INF and Groupies
 
     class B_Soldier_F {// rifleman
-        uniform[] = {"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};  /// randomized
-        vest[] = {"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"}; /// randomized
-        headgear[] = {"H_HelmetB","H_HelmetSpecB"}; /// randomized
+        uniform[] = {"U_B_CTRG_1","U_B_CTRG_3"};  /// randomized
+        vest[] = {"V_PlateCarrierL_CTRG","V_PlateCarrierH_CTRG"}; /// randomized
+        headgear[] = {"H_HelmetB_black","H_HelmetSpecB_blk"}; /// randomized
         backpack[] = {"B_AssaultPack_mcamo"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         weapons[] = {WEST_RIFLE}; /// randomized
