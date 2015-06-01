@@ -1,20 +1,96 @@
-==================================================
-Phramework
-==================================================
+F3 Readme.md :)
 
-Ph3 is a derivative of the [F3](http://ferstaberinde.com/f3/en//index.php?title=Main_Page) work. The content we have edited mainly consists of minor edits to gear, addition of many more factions from mods, and tweaks to the code, as well as a few minor additions. You can track F3's development at https://github.com/ferstaberinde/F3. 
+MISSION README
+==============
 
-Credits
+Mission: [ Insert name of mission ]
+Version: [ Insert version here, format: N-N-N ]
+Developer(s): [ Insert your name(s) here. ]
+Description: [ Insert short mission description here ]
 
 
-Developed by
-   
-	Jani J.       (PhanTactical Founder)
-	KakePro       (www.phantactical.com Member)
-	Teddy         (www.phantactical.com Member)
-	Gruntin       (www.phantactical.com Moderator)
-	tanaKa        (www.phantactical.com Member)	
-	Hunter        (Gave us a running start | Member circa 2012/13)	
-	Batboyx2      (Member circa 2014)
-	
-	Great thanks to Ferstaberinde and the team, you can find most of the code within Phramework at https://github.com/4/F3 ! (www.ferstaberinde.com Creator of F2/F3 frameworks)
+
+README CONTENTS
+===============
+
+01. VERSION HISTORY
+02. COPYRIGHT STATEMENT
+03. TERMS OF USE
+04. LEGAL DISCLAIMER
+05. INSTALLATION
+06. REQUIRED ADDONS
+07. NOTES
+08. CHANGE HISTORY
+
+
+
+01. VERSION HISTORY
+===================
+
+Version | Date | Notes
+
+[ Insert version, format: N-N-N ] | [ Insert date, format: DD MM CCYY ] | [ Insert short note here. ]
+
+
+
+02. COPYRIGHT STATEMENT
+=======================
+
+This mission is (c)[ CCYY ] [ Insert your name(s) here. ]. All rights reserved.
+
+
+
+03. TERMS OF USE
+================
+
+This mission (hereafter 'Software') contains files to be used in the PC simulator ArmA 3. To use the Software you must agree to the following conditions of use:
+
+1. [ Insert your name(s) here. ] (hereafter 'The Author(s)') grant to you a personal, non-exclusive license to use the Software.
+
+2. The commercial exploitation of the Software without written permission from The Author(s) is expressly prohibited.
+
+
+
+04. LEGAL DISCLAIMER
+====================
+
+The Software is distributed without any warranty; without even the implied warranty of merchantability or fitness for a particular purpose. The Software is not an official addon or tool. Use of the Software (in whole or in part) is entirely at your own risk.
+
+
+
+05. INSTALLATION
+================
+
+To begin using the Software:
+
+1. Move the file [ Insert name of your mission file here. ] into the following directory (assuming you have the Steam version of ArmA 3):
+
+C:\Program Files (x86)\Steam\steamapps\common\Arma 3\MPMissions
+
+
+
+06. REQUIRED ADDONS
+===================
+
+To play this mission the following addons are required:
+
+[ Insert name of addon ] - [URL for downloadable copy of the addon ]
+[ Insert name of addon ] - [URL for downloadable copy of the addon ]
+[ Insert name of addon ] - [URL for downloadable copy of the addon ]
+
+
+07. NOTES
+=========
+
+[ Insert your notes here. ]
+
+
+
+08. CHANGE HISTORY
+==================
+
+Version | Date
+
+[ Insert version, format: N-N-N ] | [ Insert date, format: DD MM CCYY ]
+[ Insert change #1 here. ]
+[ Insert change #2 here. ]
