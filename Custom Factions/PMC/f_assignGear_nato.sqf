@@ -247,10 +247,10 @@ _mediumRig = ["V_TacVestIR_blk"]; 	// default for all infantry classes
 _heavyRig = ["V_PlateCarrier1_blk"];
 
 // Diver
-_diverUniform =  ["U_I_Wetsuit"];
+_diverUniform =  ["U_B_Wetsuit"];
 _diverHelmet = [];
-_diverRig = ["V_RebreatherIA"];
-_diverGlasses = ["G_I_Diving"];
+_diverRig = ["V_RebreatherB"];
+_diverGlasses = ["G_B_Diving"];
 
 // Pilot
 _pilotUniform = ["U_BG_Guerilla2_2","U_BG_Guerilla2_1","U_BG_Guerilla2_3"];
@@ -259,8 +259,8 @@ _pilotRig = ["V_TacVest_blk"];
 _pilotGlasses = [];
 
 // Fixed Wing Pilot
-_fwpilotUniform = ["U_I_pilotCoveralls"];
-_fwpilotHelmet = ["H_PilotHelmetFighter_I"];
+_fwpilotUniform = ["U_B_pilotCoveralls"];
+_fwpilotHelmet = ["H_PilotHelmetFighter_B"];
 _fwpilotRig = [];
 _fwpilotGlasses = [];
 
@@ -331,7 +331,7 @@ _backpack = {
 	if (count _this > 1) then {_loadout = _this select 1};
 	switch (_typeofBackPack) do
 	{
-		#include "f_assignGear_aaf_b.sqf";
+		#include "f_assignGear_nato_b.sqf";
 	};
 };
 
@@ -1000,7 +1000,7 @@ switch (_typeofUnit) do
 
 		_unit selectweapon primaryweapon _unit;
 
-		if (true) exitwith {player globalchat format ["DEBUG (f\assignGear\f_assignGear_aaf.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
+		if (true) exitwith {player globalchat format ["DEBUG (f\assignGear\f_assignGear_nato.sqf): Unit = %1. Gear template %2 does not exist, used Rifleman instead.",_unit,_typeofunit]};
    };
 
 
