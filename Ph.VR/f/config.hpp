@@ -1,6 +1,6 @@
 class F_Markers {
     class F_Markers {
-        file = "f\pabstMarkers";
+        file = "pabstMarkers";
         class drawMap {};
         class getGroupMarkerStyle {};
         class playerInit {};
@@ -8,22 +8,16 @@ class F_Markers {
         class setupDrawThings {};
     };
 };
-class F_DAC {
-    class F_DAC {
-        file = "DAC";
-        class setupDacParams {};
-    };
-};
 class F // Defines the "owner"
 {
 	class briefing {
-        file = "f\briefing";
+        file = "briefing";
         class showBriefing;
         class showOrbatNotes;
     };
 	class common // category
 	{
-		file = "f\common";
+		file = "common";
 		// Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
 		class processParamsArray
 		{
@@ -35,25 +29,25 @@ class F // Defines the "owner"
 	};
 	class mpEnd
 	{
-		file = "f\mpEnd";
+		file = "mpEnd";
 		class mpEnd{};
 		class mpEndReceiver{};
 	};
 	class assignGear 
 	{
 	    // Defines the functions to preInit the compling of the assignGear function used by units.
-	    file = "f\assignGear";
+	    file = "assignGear";
 	    class assignGearMan {};
 	    class assignGearVehicle {};
     };
 	class setGroupID
 	{
-		file = "f\setGroupID";
+		file = "setGroupID";
 		class setGroupID{};
 	};
 	class missionConditions
 	{
-		file = "f\missionConditions";
+		file = "missionConditions";
 		class SetTime{};
 		class SetFog{};
 		class SetWeather{};
@@ -61,7 +55,7 @@ class F // Defines the "owner"
 	/*
 	class cache
 	{
-		file = "f\cache";
+		file = "cache";
 		class cInit {};
 		class cTracker {};
 		class gCache {};
@@ -69,20 +63,20 @@ class F // Defines the "owner"
 	};
 	*/
 	class groupMarkers {
-		file = "f\groupMarkers";
+		file = "groupMarkers";
 		class localGroupMarker{};
 		class localSpecialistMarker{};
 	};
 	/*
 	class authorisedCrew
 	{
-		file = "f\authorisedCrew";
+		file = "authorisedCrew";
 		class authorisedCrewCheck {};
 	};
 	*/
 	class FTMemberMarkers
 	{
-		file = "f\FTMemberMarkers";
+		file = "FTMemberMarkers";
 		class SetLocalFTMemberMarkers{};
 		class GetMarkerColor{};
 		class LocalFTMarkerSync{};
@@ -90,40 +84,40 @@ class F // Defines the "owner"
 	/*
 	class bodyRemoval
 	{
-		file = "f\removeBody";
+		file = "removeBody";
 		class removeBody{};
 	};
 	*/
 	/*
 	class setAISkill
 	{
-		file = "f\setAISKill";
+		file = "setAISKill";
 		class setAISKill{};
 	};
 	*/
 	class mapClickTeleport
 	{
-		file = "f\mapClickTeleport";
+		file = "mapClickTeleport";
 		class mapClickTeleportUnit{};
 		class mapClickTeleportGroup{};
 	};
 	/*
 	class nametag
 	{
-		file = "f\nametag";
+		file = "nametag";
 		class drawNameTag{};
 	};
 	*/
 	/*
 	class preMount
 	{
-		file = "f\preMount";
+		file = "preMount";
 		class mountGroups{};
 	};
 	*/
 	class zeus
 	{
-		file = "f\zeus";
+		file = "zeus";
 		class zeusInit{};
 		class zeusAddAddons{};
 		class zeusAddObjects{};
@@ -131,7 +125,7 @@ class F // Defines the "owner"
 	/*
 	class acre
 	{
-		file = "f\radios\acre";
+		file = "radios\acre";
 		class acre_removeRadios{};
 		class acre_addRadios{};
 		class acre_setRadioFrequencies{};
@@ -140,7 +134,7 @@ class F // Defines the "owner"
 	*/
 	class tfr
 	{
-		file = "f\radios\tfr";
+		file = "radios\tfr";
 		class tfr_removeRadios{};
 		class tfr_addRadios{};
 		class tfr_setRadioFrequencies{};
@@ -149,11 +143,10 @@ class F // Defines the "owner"
 	/*
 	class safeStart
 	{
-		file = "f\safeStart";
+		file = "safeStart";
 		class safety{};
 	};
 	*/
-	#include "f\simplewoundingsystem\config.hpp"
-	#include "f\spect\functions.hpp"
+	#include "spect\functions.hpp"
 
 };
