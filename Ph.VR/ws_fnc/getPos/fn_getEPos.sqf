@@ -2,13 +2,13 @@
 Returns the position of an entitiy
 
 USAGE
-[entity] call ws_fnc_getEPos;
+entity call ws_fnc_getEPos;
 
 PARAMETERS
 1. Can be string (markername), object, groupname or location
 
 RETURNS
-positional array
+positional array (ATL)
 */
 
 private ["_e","_pos"];

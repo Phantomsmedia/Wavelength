@@ -28,9 +28,8 @@ enableSentences false;
 // ====================================================================================
 
 // F3 - Briefing
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-f_script_briefing = [] execVM "briefing.sqf";
+[] call F_fnc_showBriefing;
+[] call F_fnc_showOrbatNotes;
 
 // ====================================================================================
 
@@ -42,23 +41,7 @@ f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
 // ====================================================================================
 
 // F3 - Buddy Team Colours
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
-
-// ====================================================================================
-
-// F3 - Fireteam Member Markers
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] spawn f_fnc_SetLocalFTMemberMarkers;
-
-// ====================================================================================
-
-// F3 - F3 Folk ARPS Group Markers
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-f_script_setGroupMarkers = [] execVM "f\groupMarkers\f_setLocalGroupMarkers.sqf";
+[] call F_fnc_setTeamColours;
 
 // ====================================================================================
 
@@ -149,20 +132,6 @@ if(isServer) then {
 
 // ====================================================================================
 
-// F3 - ORBAT Notes
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\briefing\f_orbatNotes.sqf";
-
-// ====================================================================================
-
-// F3 - Loadout Notes
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-[] execVM "f\briefing\f_loadoutNotes.sqf";
-
-// ====================================================================================
-
 // F3 - Join Group Action
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
@@ -220,10 +189,8 @@ f_wound_extraFAK = 2;
 
 // ====================================================================================
 
-// Disable Friendly Fire Penalties
-// Credits: Rik (PhanTactical)
-
-[] execVM "f\friendlyfire\setPlayersRaitingToMax.sqf";
+// BWMF: Group and FTL Markers
+[] call F_Markers_fnc_playerInit;
 
 // ====================================================================================
 
@@ -285,9 +252,8 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 
 // ====================================================================================
 
-// BWMF - DAC Debug Params
-
-[] execVM "DAC\bwmf_dacParams.sqf";
+// BWMF: DAC Debug Params
+[] call F_DAC_fnc_setupDacParams;
 
 // ====================================================================================
 
