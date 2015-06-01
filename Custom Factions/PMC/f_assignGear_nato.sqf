@@ -142,10 +142,10 @@ _range = "ACE_Vector";
 _laser = "Laserdesignator";
 
 // Night Vision Goggles (NVGoggles)
-_nvg = "NVGoggles_INDEP";
+_nvg = "NVGoggles";
 
 // UAV Terminal
-_uavterminal = "I_UavTerminal";
+_uavterminal = "B_UavTerminal";
 
 // Chemlights
 _chemgreen =  "Chemlight_green";
@@ -158,7 +158,7 @@ _bagsmall = "B_TacticalPack_blk";				// small
 _bagmedium = "B_Kitbag_rgr";					// medium
 _baglarge =  "B_Carryall_cbr"; 					// large
 _bagmediumdiver =  "B_AssaultPack_blk";			// used by divers
-_baguav = "I_UAV_01_backpack_F";				// used by UAV operator
+_baguav = "B_UAV_01_backpack_F";				// used by UAV operator
 _baghmgg = "RHS_M2_Gun_Bag";					// used by Heavy MG gunner
 _baghmgag = "RHS_M2_MiniTripod_Bag";			// used by Heavy MG assistant gunner
 _baghatg = "RDS_Tow_Gun_Bag";					// used by Heavy AT gunner
