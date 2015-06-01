@@ -58,6 +58,13 @@ class blu_f {
     #define WEST_PISTOL "hgun_ACPC2_F"
     #define WEST_PISTOL_MAG "9Rnd_45ACP_Mag:4"
 	
+	// Grenades, Smoke and Frag
+	#define WEST_GRENADE "HandGrenade"
+	#define WEST_SMOKE_WHITE "SmokeShell"
+	#define WEST_SMOKE_GREEN "SmokeShellGreen"
+	#define WEST_SMOKE_RED "SmokeShellRed"
+
+	
 // ====================================================================================
 	
     class Car {
@@ -83,15 +90,15 @@ class blu_f {
 // Leadership INF and Groupies
 
     class B_Soldier_F {// rifleman
-        uniform[] = {"U_B_CombatUniform_mcam"};  /// randomized
-        vest[] = {"rhsusf_iotv_ocp_Rifleman","rhsusf_iotv_ocp_Repair","rhsusf_iotv_ocp_Teamleader"}; /// randomized
-        headgear[] = {"rhsusf_ach_helmet_ocp","rhsusf_ach_helmet_ESS_ocp"}; /// randomized
-        backpack[] = {"rhsusf_assault_eagleaiii_ocp"}; /// randomized
+        uniform[] = {"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};  /// randomized
+        vest[] = {"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"}; /// randomized
+        headgear[] = {"H_HelmetB","H_HelmetSpecB"}; /// randomized
+        backpack[] = {"B_AssaultPack_mcamo"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         weapons[] = {WEST_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
         handguns[] = {}; /// randomized
-        magazines[] = {WEST_RIFLE_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2"};
+        magazines[] = {WEST_RIFLE_MAG,WEST_GRENADE:2,WEST_SMOKE_WHITE:2};
         items[] = {"ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"};
         attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
