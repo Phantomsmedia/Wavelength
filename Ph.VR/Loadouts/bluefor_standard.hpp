@@ -1,4 +1,4 @@
-//Author: SIGNAL LOSS
+//Author: Bismarck and Jani
 //Description: NATO Faction
 // ====================================================================================
 
