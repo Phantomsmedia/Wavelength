@@ -4,9 +4,9 @@
 
 private ["_group","_badge","_groupBadges","_roleBadge","_unit","_typeofUnit"];
 
-_badge = ""; 
+_badge = "";
 _unit = _this select 0;
-_typeofUnit = _this select 1;
+_typeofUnit = [_this select 1,"_"] call BIS_fnc_splitString;
 _faction = toLower (faction _unit);
 
 // Note all badges must be defined in description.ext or be included your modpack.
@@ -20,18 +20,18 @@ _faction = toLower (faction _unit);
 
 // Assign Insignia based on type of the unit.
 
-_roleBadge = switch (_typeofUnit) do
+_roleBadge = switch (true) do
 {
 
 // INSIGNIA: MEDIC
-	case "m":
+	case ("medic" in _typeofUnit): {
 	{
 		switch (_faction) do
-		{	
+		{
 			case "blu_f": {"NATO_Medic_Badge"};
 			case "opf_f": {"CSAT_Medic_Badge"};
 			case "ind_f": {"AAF_Medic_Badge"};
-			default {"NATO_Medic_Badge"};			
+			default {"NATO_Medic_Badge"};
 		};
 	};
 	default {""};
@@ -45,7 +45,7 @@ _roleBadge = switch (_typeofUnit) do
 _groupBadges = [];
 
 switch (_faction) do
-{	
+{
 	case "blu_f" : {
 		_groupBadges = [
 			["GrpNATO_ASL","NATO_ASL_Badge"],
@@ -143,7 +143,7 @@ if (_badge != "") then {
 	_cfgTexture = [["CfgUnitInsignia",_badge],configfile] call bis_fnc_loadclass;
 	if (_cfgTexture == configfile) exitwith {["'%1' not found in CfgUnitInsignia",_badge] call bis_fnc_error; false};
 	_texture = gettext (_cfgTexture >> "texture");
-	
+
 	_index = -1;
 	{
 		if (_x == "insignia") exitwith {_index = _foreachindex;};

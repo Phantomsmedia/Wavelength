@@ -1,5 +1,5 @@
 //Author: 
-//Description: BLUFOR (NATO) Standard
+//Description: NATO Faction
 // ====================================================================================
 
 class blu_f {
@@ -7,22 +7,22 @@ class blu_f {
 	// Here we're creating definitions for weapons and magazines that are called later. 
     
 	//Rifle
-    #define WEST_RIFLE "arifle_MX_F"
+    #define WEST_RIFLE "arifle_MX_Black_F"
     #define WEST_RIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
     
 	//GL Rifle
-    #define WEST_GLRIFLE "arifle_MX_GL_F"
+    #define WEST_GLRIFLE "arifle_MX_GL_Black_F"
     #define WEST_GLRIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
     #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
     #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:8"
     #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
     
 	//Carbine
-    #define WEST_CARBINE "arifle_MXC_F"
+    #define WEST_CARBINE "arifle_MXC_Black_F"
     #define WEST_CARBINE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
    
    // AR
-    #define WEST_AR "arifle_MX_SW_F"
+    #define WEST_AR "arifle_MX_SW_Black_F"
     #define WEST_AR_MAG "100Rnd_65x39_caseless_mag:2"
     #define WEST_AR_MAG2 "100Rnd_65x39_caseless_mag_Tracer:2"
     
@@ -94,10 +94,10 @@ class blu_f {
 // Leadership INF and Groupies
 
     class B_Soldier_F {// rifleman
-        uniform[] = {"U_B_CombatUniform_mcam","U_B_CombatUniform_mcam_vest"};  /// randomized
-        vest[] = {"V_PlateCarrier1_rgr","V_PlateCarrier2_rgr"}; /// randomized
-        headgear[] = {"H_HelmetB","H_HelmetSpecB"}; /// randomized
-        backpack[] = {"B_AssaultPack_mcamo"}; /// randomized
+        uniform[] = {"U_B_CTRG_1","U_B_CTRG_3"};  /// randomized
+        vest[] = {"V_PlateCarrierL_CTRG","V_PlateCarrierH_CTRG"}; /// randomized
+        headgear[] = {"H_HelmetB_black","H_HelmetSpecB_blk"}; /// randomized
+        backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
         weapons[] = {WEST_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
@@ -110,7 +110,7 @@ class blu_f {
 	
     class B_officer_F: B_Soldier_F {// CO and DC
         weapons[] = {WEST_GLRIFLE};
-        vest[] = {"V_PlateCarrierGL_rgr"}; /// randomized
+        vest[] = {"V_TacVest_blk"}; /// randomized
         headgear[] = {"H_HelmetSpecB_blk"}; /// randomized
         magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_SMOKE_GREEN};
         handguns[] = {WEST_PISTOL}; /// randomized
@@ -126,12 +126,12 @@ class blu_f {
     };
 	
     class B_soldier_UAV_F: B_Soldier_F {
-        backpack[] = {"B_Kitbag_mcamo"}; /// randomized
+        backpack[] = {"B_Kitbag_rgr"}; /// randomized
         linkedItems[] += {"B_uavterminal"};
     };
 	
 	class B_medic_F: B_Soldier_F {// Medic
-        vest[] = {"V_PlateCarrierSpec_rgr"}; /// randomized
+        vest[] = {"V_TacVest_oli"}; /// randomized
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_SMOKE_WHITE};
         backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"};
@@ -142,14 +142,14 @@ class blu_f {
 
     class B_Soldier_TL_F: B_Soldier_F {// FTL
         weapons[] = {WEST_GLRIFLE};
-        headgear[] = {"H_HelmetSpecB"}; /// randomized
+        headgear[] = {"H_HelmetB_light_black"}; /// randomized
         magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE,WEST_GRENADE,WEST_SMOKE_WHITE};
         backpackItems[] += {"ACE_key_west"};
         linkedItems[] += {"ItemGPS","Binocular"};
     };
 	
     class B_Soldier_AR_F: B_Soldier_F {// AR
-        vest[] = {"V_PlateCarrier2_rgr"}; /// randomized
+        vest[] = {"V_PlateCarrierL_CTRG"}; /// randomized
         weapons[] = {WEST_AR};
         magazines[] = {WEST_AR_MAG,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         handguns[] = {WEST_PISTOL}; /// randomized
@@ -221,8 +221,8 @@ class blu_f {
     };
 	
     class B_spotter_F {// Spotter
-        uniform[] = {"U_B_CombatUniform_mcam"};  /// randomized
-        vest[] = {"V_Chestrig_rgr"}; /// randomized
+        uniform[] = {"U_B_CTRG_2"};  /// randomized
+        vest[] = {"V_TacVest_blk"}; /// randomized
         headgear[] = {"H_Watchcap_camo"}; /// randomized
         weapons[] = {WEST_SPOTTER}; /// randomized
         magazines[] = {WEST_SPOTTER_MAG,WEST_SMOKE_WHITE,WEST_GRENADE};
@@ -232,8 +232,8 @@ class blu_f {
     };
 	
     class B_sniper_F {// Sniper
-        uniform[] = {"U_B_CombatUniform_mcam"};  /// randomized
-        vest[] = {"V_Chestrig_rgr"}; /// randomized
+        uniform[] = {"U_B_FullGhillie_lsh"};  /// randomized
+        vest[] = {"V_Chestrig_khk"}; /// randomized
         headgear[] = {"H_Watchcap_camo"}; /// randomized
         weapons[] = {WEST_SNIPER}; /// randomized
         magazines[] = {WEST_SNIPER_MAG,WEST_SMOKE_WHITE,WEST_GRENADE};
@@ -282,13 +282,13 @@ class blu_f {
     };
 	
     class B_soldier_exp_F: B_soldier_repair_F {// Explosive Specialist
-        backpack[] = {"B_Carryall_mcamo"};
+        backpack[] = {"B_Carryall_khk"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {WEST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
     };
 	
     class B_engineer_F: B_soldier_repair_F {// Mine Specialist
-        backpack[] = {"B_Carryall_mcamo"};
+        backpack[] = {"B_Carryall_khk"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {WEST_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
