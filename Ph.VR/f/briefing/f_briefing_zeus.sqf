@@ -29,45 +29,43 @@ _adm = player createDiaryRecord ["diary", ["Administration","
 
 _radio = player createDiaryRecord ["diary", ["Radios","
 <br/>
-Radio List For Long Range (152 - 117F)
+<font size='18'>COMMAND CHANNELS (152 & 117F)</font>
 <br/> 
-Channel 1 - Alpha Squad Lead and Fireteam Leads
+Channel 1 - Alpha Squad Leader & Fireteam Leaders
 <br/> 
-Channel 2 - Bravo Squad Lead and Fireteam Leads
+Channel 2 - Bravo Squad Leader & Fireteam Leaders
 <br/>
-Channel 3 - Charlie Squad Lead and Fireteam Leads
+Channel 3 - Charlie Squad Leader & Fireteam Leaders
 <br/>
-Channel 4 - Command, Squad Leads, Support
-<br/>
-Channel 5 - Delta Squad Lead and Fireteam Leads
-<br/>
-Channel 6 - Echo Squad Lead and Fireteam Leads
-<br/>
-Channel 7 - Foxtrot Squad Lead and Fireteam Leads
-<br/>
-Channel 8 - 
- <br/><br/>
-Radio List For Short Range (343) - GI and FTLs
-<br/>
-Channel 1 - Alpha Squad
-<br/>
-Channel 2 - Bravo Squad
-<br/> 
-Channel 3 - Charlie Squad
-<br/>
-Channel 4 - Delta Squad
-<br/>
-Channel 5 - Echo Squad
-<br/> 
-Channel 6 - Foxtrot Squad
+Channel 4 - PLT. HQ, Squad Leaders, Support
 <br/><br/>
-Support Channels Intra-Element (152)
+<font size='18'>FIRETEAM CHANNELS (343)</font>
 <br/>
-From 10 to 19 for Air Support
+Channel 1 - Alpha 1
 <br/>
-From 20 to 29 for Armor Support
+Channel 2 - Alpha 2
+<br/> 
+Channel 3 - Alpha 3
 <br/>
-From 30 to 39 for Infantry Support (MMG etc)
+Channel 4 - Bravo 1
+<br/>
+Channel 5 - Bravo 2
+<br/> 
+Channel 6 - Bravo 3
+<br/>
+Channel 7 - Charlie 1
+<br/>
+Channel 8 - Charlie 2
+<br/> 
+Channel 9 - Charlie 3
+<br/><br/>
+<font size='18'>SUPPORT CHANNELS (152)</font>
+<br/>
+Channels 10 - 19 for Infantry Support
+<br/>
+Channels 20 - 29 for Armor Support
+<br/>
+Channels 30 - 39 for Air Support
 <br/>
 "]];
 
