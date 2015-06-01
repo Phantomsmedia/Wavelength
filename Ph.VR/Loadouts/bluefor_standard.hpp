@@ -59,8 +59,8 @@ class blu_f {
     #define WEST_PISTOL_MAG "9Rnd_45ACP_Mag:4"
 	
 	// Grenades, Smoke and Frag
-	#define WEST_GRENADE "HandGrenade"
-	#define WEST_SMOKE_WHITE "SmokeShell"
+	#define WEST_GRENADE "HandGrenade:2"
+	#define WEST_SMOKE_WHITE "SmokeShell:2"
 	#define WEST_SMOKE_GREEN "SmokeShellGreen"
 	#define WEST_SMOKE_RED "SmokeShellRed"
 
@@ -71,17 +71,21 @@ class blu_f {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
         TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
     };
+	
     class Tank {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
         TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
     };
+	
     class Helicopter {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
         TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
     };
+	
     class Plane {
         TransportMagazines[] = {};
     };
+	
     class Ship_F {
         TransportMagazines[] = {};
     };
@@ -98,25 +102,25 @@ class blu_f {
         weapons[] = {WEST_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
         handguns[] = {}; /// randomized
-        magazines[] = {WEST_RIFLE_MAG,WEST_GRENADE:2,WEST_SMOKE_WHITE:2};
+        magazines[] = {WEST_RIFLE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         items[] = {"ACRE_PRC343"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14"};
-        attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles"};
+        attachments[] = {"optic_Holosight","acc_pointer_IR"};
     };
 	
     class B_officer_F: B_Soldier_F {// CO and DC
         weapons[] = {WEST_GLRIFLE};
-        vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
-        headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
+        vest[] = {"V_PlateCarrierGL_rgr"}; /// randomized
+        headgear[] = {"H_HelmetSpecB_blk"}; /// randomized
         magazines[] = {WEST_GLRIFLE_MAG,WEST_GLRIFLE_MAG_HE,WEST_GLRIFLE_MAG_SMOKE,WEST_GLRIFLE_MAG_FLARE,WEST_PISTOL_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2","rhs_mag_m18_green:2"};
         handguns[] = {WEST_PISTOL}; /// randomized
         backpackItems[] += {"ACE_key_west", "ACRE_PRC117F"};
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","ItemGPS","ACE_Vector"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles_OPFOR","ItemGPS","ACE_Vector"};
         items[] = {"ACE_MapTools","ACRE_PRC148"};
     };
 	
     class B_Soldier_SL_F: B_Officer_F {// SL
-        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","ItemGPS","Binocular"};
+        linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","NVGoggles_OPFOR","ItemGPS","Binocular"};
         items[] = {"ACE_MapTools","ACRE_PRC148", "ACRE_PRC343"};
         backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item","ACE_earplugs"};
     };
@@ -224,7 +228,7 @@ class blu_f {
         magazines[] = {WEST_SPOTTER_MAG,"rhs_mag_an_m8hc:2","rhs_mag_m67:2"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","LaserDesignator"};
-        attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
+        attachments[] = {"optic_Holosight","acc_pointer_IR"};
     };
 	
     class B_sniper_F {// Sniper
@@ -235,7 +239,7 @@ class blu_f {
         magazines[] = {WEST_SNIPER_MAG,"rhs_mag_an_m8hc:2","rhs_mag_m67:2"};
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
-        attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15side","RH_m110sd_t"};
+        attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","acc_pointer_IR","RH_m110sd_t"};
     };
 	
 // ====================================================================================
