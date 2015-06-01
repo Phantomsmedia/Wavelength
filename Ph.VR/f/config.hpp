@@ -16,6 +16,11 @@ class F_DAC {
 };
 class F // Defines the "owner"
 {
+	class briefing {
+        file = "f\briefing";
+        class showBriefing;
+        class showOrbatNotes;
+    };
 	class common // category
 	{
 		file = "f\common";
@@ -34,12 +39,13 @@ class F // Defines the "owner"
 		class mpEnd{};
 		class mpEndReceiver{};
 	};
-	class assignGear
+	class assignGear 
 	{
-		// Defines the functions to preInit the compling of the assignGear function used by units.
-		file = "f\assignGear";
-		class assignGear{};
-	};
+	    // Defines the functions to preInit the compling of the assignGear function used by units.
+	    file = "f\assignGear";
+	    class assignGearMan {};
+	    class assignGearVehicle {};
+    };
 	class setGroupID
 	{
 		file = "f\setGroupID";
