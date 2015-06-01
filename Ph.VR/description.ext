@@ -14,7 +14,7 @@
 
 // PhanTactical - RotorLib Simulation Forcing
 // Credits: Jani
-//  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off) 
+//  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off)
 // MUST BE FORCED TO DEFAULT. DO NOT CHANGE THIS. JANI WILL BEAT YOU WITH A SPATULA. <- That legacy code.
 
 forceRotorLibSimulation = 0;
@@ -40,6 +40,43 @@ onLoadName = "*** Insert mission name here. ***";
 onLoadMission = "Made with the Phramework";
 author = "*** Insert mission author name here. ***";
 loadScreen = "loadLogo.jpg";
+
+// ============================================================================================
+
+// BWMF Gear
+//Credits:headswe, Pabst, Zerith
+#include "CfgLoadouts.hpp"
+
+// ============================================================================================
+
+//Extended Event Handlers:
+class Extended_InitPost_EventHandlers {
+    class CAManBase {
+        class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
+        class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
+        class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
+    };
+    class Car {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Tank {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Helicopter {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Plane {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
+    };
+    class Ship_F {
+        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
+    };
+};
 
 // ============================================================================================
 
@@ -99,7 +136,7 @@ class cfgNotifications
 		duration = 10;
 		priority = 0;
 	};
-	
+
 	class SafeStartMissionStarting
 	{
 		title = "SAFE START";
@@ -447,143 +484,7 @@ class CfgFunctions
 {
 	#include "ws_fnc\config.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
-	class F // Defines the "owner"
-	{
-		class common // category
-		{
-			file = "f\common";
-			// Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
-			class processParamsArray
-			{
-				preInit = 1;
-				postInit = 1;
-			};
-
-			class nearPlayer{};
-		};
-		class mpEnd
-		{
-			file = "f\mpEnd";
-			class mpEnd{};
-			class mpEndReceiver{};
-		};
-		class assignGear
-		{
-			// Defines the functions to preInit the compling of the assignGear function used by units.
-			file = "f\assignGear";
-			class assignGear{};
-		};
-		class setGroupID
-		{
-			file = "f\setGroupID";
-			class setGroupID{};
-		};
-		class missionConditions
-		{
-			file = "f\missionConditions";
-			class SetTime{};
-			class SetFog{};
-			class SetWeather{};
-		};
-		/*
-		class cache
-		{
-			file = "f\cache";
-			class cInit {};
-			class cTracker {};
-			class gCache {};
-			class gUncache {};
-		};
-		*/
-		class groupMarkers {
-			file = "f\groupMarkers";
-			class localGroupMarker{};
-			class localSpecialistMarker{};
-		};
-		/*
-		class authorisedCrew
-		{
-			file = "f\authorisedCrew";
-			class authorisedCrewCheck {};
-		};
-		*/
-		class FTMemberMarkers
-		{
-			file = "f\FTMemberMarkers";
-			class SetLocalFTMemberMarkers{};
-			class GetMarkerColor{};
-			class LocalFTMarkerSync{};
-		};
-		/*
-		class bodyRemoval
-		{
-			file = "f\removeBody";
-			class removeBody{};
-		};
-		*/
-		/*
-		class setAISkill
-		{
-			file = "f\setAISKill";
-			class setAISKill{};
-		};
-		*/
-		class mapClickTeleport
-		{
-			file = "f\mapClickTeleport";
-			class mapClickTeleportUnit{};
-			class mapClickTeleportGroup{};
-		};
-		/*
-		class nametag
-		{
-			file = "f\nametag";
-			class drawNameTag{};
-		};
-		*/
-		/*
-		class preMount
-		{
-			file = "f\preMount";
-			class mountGroups{};
-		};
-		*/
-		class zeus
-		{
-			file = "f\zeus";
-			class zeusInit{};
-			class zeusAddAddons{};
-			class zeusAddObjects{};
-		};
-		/*
-		class acre
-		{
-			file = "f\radios\acre";
-			class acre_removeRadios{};
-			class acre_addRadios{};
-			class acre_setRadioFrequencies{};
-			class acre_configureSpectatorChat{};
-		};
-		*/
-		class tfr
-		{
-			file = "f\radios\tfr";
-			class tfr_removeRadios{};
-			class tfr_addRadios{};
-			class tfr_setRadioFrequencies{};
-			class tfr_configureSpectatorChat{};
-		};
-		/*
-		class safeStart
-		{
-			file = "f\safeStart";
-			class safety{};
-		};
-		*/
-		#include "f\simplewoundingsystem\config.hpp"
-		#include "f\spect\functions.hpp"
-
-	};
+	#include "f\config.hpp"
 };
 
 
