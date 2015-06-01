@@ -1,5 +1,5 @@
-//Author: Poop
-//Description: Poop (yes, even more)
+//Author: 
+//Description: Contractor Faction
 
 class ind_f {
     
