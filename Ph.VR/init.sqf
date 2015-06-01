@@ -41,9 +41,7 @@ f_script_setGroupIDs = [] execVM "f\setGroupID\f_setGroupIDs.sqf";
 // ====================================================================================
 
 // F3 - Buddy Team Colours
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-
-f_script_setTeamColours = [] execVM "f\setTeamColours\f_setTeamColours.sqf";
+[] call F_fnc_setTeamColours;
 
 // ====================================================================================
 
