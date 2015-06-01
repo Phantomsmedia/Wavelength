@@ -1,6 +1,6 @@
 class F_Markers {
     class F_Markers {
-        file = "pabstMarkers";
+        file = "f\pabstMarkers";
         class drawMap {};
         class getGroupMarkerStyle {};
         class playerInit {};
@@ -11,13 +11,13 @@ class F_Markers {
 class F // Defines the "owner"
 {
 	class briefing {
-        file = "briefing";
+        file = "f\briefing";
         class showBriefing;
         class showOrbatNotes;
     };
 	class common // category
 	{
-		file = "common";
+		file = "f\common";
 		// Defines the function to preInit (the paramArray dosent seem to be constructed at preInit stage).
 		class processParamsArray
 		{
@@ -29,25 +29,25 @@ class F // Defines the "owner"
 	};
 	class mpEnd
 	{
-		file = "mpEnd";
+		file = "f\mpEnd";
 		class mpEnd{};
 		class mpEndReceiver{};
 	};
 	class assignGear 
 	{
 	    // Defines the functions to preInit the compling of the assignGear function used by units.
-	    file = "assignGear";
+	    file = "f\assignGear";
 	    class assignGearMan {};
 	    class assignGearVehicle {};
     };
 	class setGroupID
 	{
-		file = "setGroupID";
+		file = "f\setGroupID";
 		class setGroupID{};
 	};
 	class missionConditions
 	{
-		file = "missionConditions";
+		file = "f\missionConditions";
 		class SetTime{};
 		class SetFog{};
 		class SetWeather{};
@@ -55,69 +55,57 @@ class F // Defines the "owner"
 	/*
 	class cache
 	{
-		file = "cache";
+		file = "f\cache";
 		class cInit {};
 		class cTracker {};
 		class gCache {};
 		class gUncache {};
 	};
 	*/
-	class groupMarkers {
-		file = "groupMarkers";
-		class localGroupMarker{};
-		class localSpecialistMarker{};
-	};
 	/*
 	class authorisedCrew
 	{
-		file = "authorisedCrew";
+		file = "f\authorisedCrew";
 		class authorisedCrewCheck {};
 	};
 	*/
-	class FTMemberMarkers
-	{
-		file = "FTMemberMarkers";
-		class SetLocalFTMemberMarkers{};
-		class GetMarkerColor{};
-		class LocalFTMarkerSync{};
-	};
 	/*
 	class bodyRemoval
 	{
-		file = "removeBody";
+		file = "f\removeBody";
 		class removeBody{};
 	};
 	*/
 	/*
 	class setAISkill
 	{
-		file = "setAISKill";
+		file = "f\setAISKill";
 		class setAISKill{};
 	};
 	*/
 	class mapClickTeleport
 	{
-		file = "mapClickTeleport";
+		file = "f\mapClickTeleport";
 		class mapClickTeleportUnit{};
 		class mapClickTeleportGroup{};
 	};
 	/*
 	class nametag
 	{
-		file = "nametag";
+		file = "f\nametag";
 		class drawNameTag{};
 	};
 	*/
 	/*
 	class preMount
 	{
-		file = "preMount";
+		file = "f\preMount";
 		class mountGroups{};
 	};
 	*/
 	class zeus
 	{
-		file = "zeus";
+		file = "f\zeus";
 		class zeusInit{};
 		class zeusAddAddons{};
 		class zeusAddObjects{};
@@ -125,7 +113,7 @@ class F // Defines the "owner"
 	/*
 	class acre
 	{
-		file = "radios\acre";
+		file = "f\radios\acre";
 		class acre_removeRadios{};
 		class acre_addRadios{};
 		class acre_setRadioFrequencies{};
@@ -134,7 +122,7 @@ class F // Defines the "owner"
 	*/
 	class tfr
 	{
-		file = "radios\tfr";
+		file = "f\radios\tfr";
 		class tfr_removeRadios{};
 		class tfr_addRadios{};
 		class tfr_setRadioFrequencies{};
@@ -143,7 +131,7 @@ class F // Defines the "owner"
 	/*
 	class safeStart
 	{
-		file = "safeStart";
+		file = "f\safeStart";
 		class safety{};
 	};
 	*/
