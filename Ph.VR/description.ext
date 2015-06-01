@@ -235,9 +235,9 @@ class Params
     class f_param_medical
     {
             title = "Which Mod System?";
-            values[] = {0,1,2,3};
-            texts[] = {"Arma 3 Default","F3 Simple Wounding System","Authentic Gameplay Mod","Advanced Banana Environment 3"};
-            default = 3;
+            values[] = {0,1,2};
+            texts[] = {"Arma 3 Default","Authentic Gameplay Mod","Advanced Banana Environment 3"};
+            default = 2;
             code = "f_var_medical = %1";
     };
 
@@ -484,6 +484,14 @@ class CfgFunctions
 {
 	#include "ws_fnc\config.hpp"
 	#include "taw_vd\CfgFunctions.hpp"
+
+	class F_DAC {
+	    class F_DAC {
+	        file = "DAC";
+	        class setupDacParams {};
+	    };
+	};
+
 	#include "f\config.hpp"
 };
 

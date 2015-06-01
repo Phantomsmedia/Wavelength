@@ -14,17 +14,8 @@ call
 {
 	// If 0 do nothing (Default Arma Healing)
 
-	// F3 Simple Wounding System
-	if (f_var_medical == 1) exitWith
-	{
-		// If script is being run on a client
-		if (hasInterface) then
-		{
-			[player] execVM "f\simplewoundingsystem\init.sqf";
-		};
-	};
 	// Authentic Gameplay Modification
-	if (f_var_medical == 2) exitWith
+	if (f_var_medical == 1) exitWith
 	{
 		// If script is being run on a client
 		if (hasInterface) then
@@ -33,12 +24,12 @@ call
 		};
 	};
 	// Advanced Banana Environment
-	if (f_var_medical == 3) exitWith
+	if (f_var_medical == 2) exitWith
 	{
 		// If script is being run on a client
 		if (hasInterface) then
 		{
 			[] execVM "f\allGear\ACE_clientInit.sqf";
 		};
-	};	
+	};
 };
