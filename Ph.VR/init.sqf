@@ -220,10 +220,8 @@ f_wound_extraFAK = 2;
 
 // ====================================================================================
 
-// Disable Friendly Fire Penalties
-// Credits: Rik (PhanTactical)
-
-[] execVM "f\friendlyfire\setPlayersRaitingToMax.sqf";
+// BWMF: Group and FTL Markers
+[] call F_Markers_fnc_playerInit;
 
 // ====================================================================================
 
@@ -285,9 +283,8 @@ isAIcontroller = if ((!isMultiplayer) || (isNil "HC_SLOT_1")) then {
 
 // ====================================================================================
 
-// BWMF - DAC Debug Params
-
-[] execVM "DAC\bwmf_dacParams.sqf";
+// BWMF: DAC Debug Params
+[] call F_DAC_fnc_setupDacParams;
 
 // ====================================================================================
 
