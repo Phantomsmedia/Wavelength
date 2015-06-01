@@ -136,6 +136,11 @@ _smokegrenadegreen = "rhs_mag_m18_green";
 _firstaid = "FirstAidKit";
 _medkit = "Medikit";
 
+// Optics
+_bino = "Binocular";
+_range = "ACE_Vector";
+_laser = "Laserdesignator";
+
 // Night Vision Goggles (NVGoggles)
 _nvg = "rhsusf_ANPVS_14";
 
@@ -352,7 +357,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _bino;
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
 		["r"] call _backpack;
@@ -372,7 +377,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _bino;
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
 		["g"] call _backpack;
@@ -402,7 +407,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_smokegrenadegreen,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _bino;
 		_unit linkItem "ItemGPS";
 		["g"] call _backpack;
 		_attachments = [_attach1,_scope2];
@@ -431,7 +436,7 @@ switch (_typeofUnit) do
 		_unit addweapon _rifle;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Binocular";
+		_unit addWeapon _bino;
 		["aar"] call _backpack;
 		_attachments = [_attach1,_scope1];
 	};
@@ -471,7 +476,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_riflemag,7];
 		_unit addmagazines [_riflemag_tr,2];
 		_unit addweapon _rifle;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["mmgag"] call _backpack;
@@ -495,7 +500,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hmgag"] call _backpack;
@@ -521,7 +526,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["matag"] call _backpack;
@@ -546,7 +551,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hatag"] call _backpack;
@@ -573,7 +578,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		["mtrag"] call _backpack;
 		_attachments = [_attach1];
 	};
@@ -597,7 +602,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["msamag"] call _backpack;
@@ -622,7 +627,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_carbinemag,7];
 		_unit addmagazines [_carbinemag_tr,2];
 		_unit addweapon _carbine;
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
 		["hsamag"] call _backpack;
@@ -651,7 +656,7 @@ switch (_typeofUnit) do
 		_unit addweapon _glrifle;					//_COrifle
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_unit linkItem "ItemGPS";
 		_attachments = [_attach1,_scope2];
 	};
@@ -664,7 +669,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addItem "ItemGPS";
 		_unit assignItem "ItemGPS";
-		_unit addWeapon "ACE_Vector";
+		_unit addWeapon _range;
 		_attachments = [];
 	};
 
@@ -701,7 +706,7 @@ switch (_typeofUnit) do
 		_unit assignItem "ItemGPS";
 		_attachments = [];
 	};
-
+	
 // LOADOUT: AIR VEHICLE CREW CHIEF
 	case "pcc":
 	{
@@ -720,7 +725,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_attachments = [];
 	};
-
+	
 // LOADOUT: FIXED WING PILOT
 	case "fwp":
 	{
@@ -741,7 +746,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_satchel,2];
 		_unit addItem "MineDetector";
-		_unit addItem _defusalkit;
+		__unit addItem _defusalkit;
 		_unit addItem _clacker;
 		["eng"] call _backpack;
 		_attachments = [_attach1];
@@ -756,7 +761,7 @@ switch (_typeofUnit) do
 		_unit addmagazines [_smokegrenade,2];
 		_unit addmagazines [_APmine,2];
 		_unit addItem "MineDetector";
-		_unit addItem _defusalkit;
+		__unit addItem _defusalkit;
 		_unit addItem _clacker;
 		["engm"] call _backpack;
 		_attachments = [_attach1];
@@ -783,7 +788,7 @@ switch (_typeofUnit) do
 		_unit addweapon _carbine;
 		_unit addmagazines [_grenade,1];
 		_unit addmagazines [_smokegrenade,2];
-		_unit addWeapon "Laserdesignator";
+		_unit addWeapon _laser;
 		_unit linkItem "ItemGPS";
 		_unit addItem _maptools;
 		["car"] call _backpack;
