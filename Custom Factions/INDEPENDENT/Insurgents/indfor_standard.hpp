@@ -4,7 +4,7 @@
 class ind_f {
     
 	//Rifle
-    #define IND_RIFLE "arifle_Mk20_F"
+    #define IND_RIFLE "rhs_weap_akm"
     #define IND_RIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
     
 	//GL Rifle
