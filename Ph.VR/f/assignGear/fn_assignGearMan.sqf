@@ -191,3 +191,5 @@ _a = _path >> "init";
 if (isText _a) then {
 	_unit call compile ("this = _this;"+ getText _a);
 };
+
+_unit setvariable ["f_var_assignGear_done", true,true];
