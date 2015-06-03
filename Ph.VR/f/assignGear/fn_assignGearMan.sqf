@@ -12,9 +12,9 @@ _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
 
 // INSIGNIA (todo: move to the CfgLoadouts system)
 // This block will give units insignia on their uniforms.
-[_unit,_loadout] spawn {
+/*[_unit,_loadout] spawn {
     #include "f_assignInsignia.sqf"
-};
+};*/
 
 _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
