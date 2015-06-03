@@ -168,7 +168,7 @@ _unit spawn {
   	_groupLRChannelIndex = -1;
 
   	if ((count _groupIDSplit) > 2) then {
-		_groupName = toUpper (_groupIDSplit select (count _groupIDSplit - 1));
+		_groupName = toUpper (_groupIDSplit select (count _groupIDSplit - 2));
 
 		if (_hasSR) then {
 		  	{
