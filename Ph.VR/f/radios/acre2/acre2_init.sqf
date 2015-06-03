@@ -16,7 +16,7 @@ f_radios_acre2_giveRadioAction = {
 		waitUntil{time>3};
 		systemChat format["[F3 ACRE2] Warning: No room to add radio '%1', report this to the mission maker. You now have a scroll-wheel action to get this radio.",_this select 0];
 	};
-	
+
 	//Create addAction to give radio.
 	_radioName = getText (configfile >> "CfgWeapons" >> _x >> "displayName");
 	_actionID = _unit addAction [format ["<t color='#3375D6'>[Radios] Give myself a %1 radio</t>",_radioName],
@@ -55,7 +55,7 @@ _presetSetup = [] call f_acre2_presetSetup;
 
 
 // run client stuff.
-if (hasInterface) then 
+if (hasInterface) then
 {
 	// define our languages (need to be the same order for everyone)
 	{

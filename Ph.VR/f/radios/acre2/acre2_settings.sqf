@@ -6,7 +6,7 @@
 
 // Whether any radios should be assigned at all, to any units
 // TRUE = Disable radios for all units
-f_radios_settings_acre2_disableRadios = FALSE;
+f_radios_settings_acre2_disableRadios = TRUE;
 
 // Whether or not the radio frequencies should be left as default, and not split per side
 // TRUE = Disable frequency seperation across sides
