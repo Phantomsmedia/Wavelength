@@ -30,7 +30,7 @@ f_radios_settings_acre2_extraRadios = [];
 // Standard Short
 f_radios_settings_acre2_standardSHRadio = "ACRE_PRC343";
 // Standard LongRange
-f_radios_settings_acre2_standardLRRadio = "ACRE_PRC152";
+f_radios_settings_acre2_standardLRRadio = "ACRE_PRC148";
 // Extra radio
 f_radios_settings_acre2_extraRadio = "ACRE_PRC117F";
 
@@ -46,15 +46,6 @@ f_radios_settings_acre2_languages = [["english","English"],["russian","Russian"]
 f_radios_settings_acre2_language_blufor = ["english"];
 f_radios_settings_acre2_language_opfor = ["russian"];
 f_radios_settings_acre2_language_indfor = ["arabic"];
-
-// Channels names
-// first item in the array will correspond to the first channel
-// note these only work if f_radios_settings_acre2_disableFrequencySplit is set to false
-f_radios_settings_acre2_groups_blufor = ["Alpha Net","Bravo Net","Charlie Net","Command Net","Delta Net","Echo Net","Foxtrot Net","Blank Net","Blank Net","Air 1","Air 2","Air 3","Air 4","Air 5","Air 6","Air 7","Air 8","Air 9","Air 10","Armor 1","Armor 2","Armor 3","Armor 4","Armor 5","Armor 6","Armor 7","Armor 8","Armor 9","Attachment 1","Attachment 2","Attachment 3","Attachment 4","Attachment 5","Attachment 6","Attachment 7","Attachment 8","Attachment 9","Attachment 10"];
-
-f_radios_settings_acre2_groups_opfor = ["Alpha Net","Bravo Net","Charlie Net","Command Net","Delta Net","Echo Net","Foxtrot Net","Blank Net","Blank Net","Air 1","Air 2","Air 3","Air 4","Air 5","Air 6","Air 7","Air 8","Air 9","Air 10","Armor 1","Armor 2","Armor 3","Armor 4","Armor 5","Armor 6","Armor 7","Armor 8","Armor 9","Attachment 1","Attachment 2","Attachment 3","Attachment 4","Attachment 5","Attachment 6","Attachment 7","Attachment 8","Attachment 9","Attachment 10"];
-
-f_radios_settings_acre2_groups_indfor = ["Alpha Net","Bravo Net","Charlie Net","Command Net","Delta Net","Echo Net","Foxtrot Squad Net","Blank Net","Blank Net","Air 1","Air 2","Air 3","Air 4","Air 5","Air 6","Air 7","Air 8","Air 9","Air 10","Armor 1","Armor 2","Armor 3","Armor 4","Armor 5","Armor 6","Armor 7","Armor 8","Armor 9","Attachment 1","Attachment 2","Attachment 3","Attachment 4","Attachment 5","Attachment 6","Attachment 7","Attachment 8","Attachment 9","Attachment 10"];
 
 // Channel names and group defaults
 // first item in the array will correspond to the first channel
@@ -109,7 +100,7 @@ f_radios_settings_acre2_lr_groups_blufor = [
 	["Alpha Net", []],
 	["Bravo Net", []],
 	["Charlie Net", []],
-	["Command Net", []],
+	["Command Net",
 		[
 			"CO", "DC", "PLTHQ",
 		    "ASL", "BSL", "CSL", "DSL", "ESL", "FSL",
@@ -159,7 +150,7 @@ f_radios_settings_acre2_lr_groups_blufor = [
 	["Attachment 7", ["HSAM1"]],
 	["Attachment 8", ["ST1"]],
 	["Attachment 9", ["DT1"]],
-	["Attachment 10", ["ENG1"]
+	["Attachment 10", ["ENG1"]]
 ];
 
 f_radios_settings_acre2_lr_groups_opfor = f_radios_settings_acre2_lr_groups_blufor;
