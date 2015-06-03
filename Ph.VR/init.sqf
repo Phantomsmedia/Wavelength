@@ -125,18 +125,6 @@ if(isServer) then {
 
 // ====================================================================================
 
-// F3 - All Gear
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-// Credits: New allGear idea + ACE implementation Ph.
-
-// SWS Config Settings
-// How many extra FirstAidKits (FAKS) each player should receive when using the F3 Simple Wounding System:
-f_wound_extraFAK = 2;
-
-[] execVM "f\allGear\allGear_init.sqf";
-
-// ====================================================================================
-
 // BWMF: Group and FTL Markers
 [] call F_Markers_fnc_playerInit;
 

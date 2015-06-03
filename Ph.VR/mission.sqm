@@ -112,7 +112,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_PL";
-					init="GrpNATO_PLTHQ = group this; [""co"",this] call f_fnc_assignGear;";
+					init="GrpNATO_PLTHQ = group this;";
 					description="BLUFOR Platoon Leader";
 				};
 				class Item1
@@ -125,7 +125,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_PLTHQ_M";
-					init="GrpNATO_PLTHQ = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpNATO_PLTHQ = group this;";
 					description="BLUFOR Platoon HQ Medic";
 				};
 				class Item2
@@ -138,7 +138,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_PSG";
-					init="GrpNATO_PLTHQ = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_PLTHQ = group this;";
 					description="BLUFOR Platoon Sergeant";
 				};
 				class Item3
@@ -151,7 +151,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_PLTHQ_FO";
-					init="GrpNATO_PLTHQ = group this; [""fo"",this] call f_fnc_assignGear;";
+					init="GrpNATO_PLTHQ = group this;";
 					description="BLUFOR Forward Observer";
 				};
 			};
@@ -173,7 +173,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_ASL_SL";
-					init="GrpNATO_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_ASL = group this;";
 					description="BLUFOR Alpha Squad Leader";
 				};
 				class Item1
@@ -186,7 +186,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_ASL_M";
-					init="GrpNATO_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpNATO_ASL = group this;";
 					description="BLUFOR Alpha Medic";
 				};
 			};
@@ -208,7 +208,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A1_FTL";
-					init="GrpNATO_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A1 = group this;";
 					description="BLUFOR Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -220,7 +220,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AR";
-					init="GrpNATO_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A1 = group this;";
 					description="BLUFOR Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -232,7 +232,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AAR";
-					init="GrpNATO_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A1 = group this;";
 					description="BLUFOR Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -244,7 +244,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A1_AT";
-					init="GrpNATO_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A1 = group this;";
 					description="BLUFOR Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -266,7 +266,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A2_FTL";
-					init="GrpNATO_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A2 = group this;";
 					description="BLUFOR Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -278,7 +278,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AR";
-					init="GrpNATO_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A2 = group this;";
 					description="BLUFOR Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -290,7 +290,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AAR";
-					init="GrpNATO_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A2 = group this;";
 					description="BLUFOR Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -302,7 +302,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A2_AT";
-					init="GrpNATO_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A2 = group this;";
 					description="BLUFOR Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -324,7 +324,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_A3_FTL";
-					init="GrpNATO_A3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A3 = group this;";
 					description="BLUFOR Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -336,7 +336,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A3_AR";
-					init="GrpNATO_A3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A3 = group this;";
 					description="BLUFOR Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -348,7 +348,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A3_AAR";
-					init="GrpNATO_A3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A3 = group this;";
 					description="BLUFOR Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -360,7 +360,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_A3_AT";
-					init="GrpNATO_A3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_A3 = group this;";
 					description="BLUFOR Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -382,7 +382,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_BSL_SL";
-					init="GrpNATO_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_BSL = group this;";
 					description="BLUFOR Bravo Squad Leader";
 				};
 				class Item1
@@ -395,7 +395,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_BSL_M";
-					init="GrpNATO_BSL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpNATO_BSL = group this;";
 					description="BLUFOR Bravo Medic";
 				};
 			};
@@ -417,7 +417,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B1_FTL";
-					init="GrpNATO_B1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B1 = group this;";
 					description="BLUFOR Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -429,7 +429,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AR";
-					init="GrpNATO_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B1 = group this;";
 					description="BLUFOR Bravo 1 Automatic Rifleman";
 				};
 				class Item2
@@ -441,7 +441,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AAR";
-					init="GrpNATO_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B1 = group this;";
 					description="BLUFOR Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -453,7 +453,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B1_AT";
-					init="GrpNATO_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B1 = group this;";
 					description="BLUFOR Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -475,7 +475,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B2_FTL";
-					init="GrpNATO_B2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B2 = group this;";
 					description="BLUFOR Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -487,7 +487,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AR";
-					init="GrpNATO_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B2 = group this;";
 					description="BLUFOR Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -499,7 +499,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AAR";
-					init="GrpNATO_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B2 = group this;";
 					description="BLUFOR Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -511,7 +511,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B2_AT";
-					init="GrpNATO_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B2 = group this;";
 					description="BLUFOR Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -533,7 +533,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_B3_FTL";
-					init="GrpNATO_B3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B3 = group this;";
 					description="BLUFOR Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -545,7 +545,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B3_AR";
-					init="GrpNATO_B3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B3 = group this;";
 					description="BLUFOR Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -557,7 +557,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B3_AAR";
-					init="GrpNATO_B3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B3 = group this;";
 					description="BLUFOR Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -569,7 +569,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_B3_AT";
-					init="GrpNATO_B3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_B3 = group this;";
 					description="BLUFOR Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -591,7 +591,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_CSL_SL";
-					init="GrpNATO_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_CSL = group this;";
 					description="BLUFOR Charlie Squad Leader";
 				};
 				class Item1
@@ -604,7 +604,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_CSL_M";
-					init="GrpNATO_CSL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpNATO_CSL = group this;";
 					description="BLUFOR Charlie Medic";
 				};
 			};
@@ -626,7 +626,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_C1_FTL";
-					init="GrpNATO_C1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C1 = group this;";
 					description="BLUFOR Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -638,7 +638,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C1_AR";
-					init="GrpNATO_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C1 = group this;";
 					description="BLUFOR Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -650,7 +650,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C1_AAR";
-					init="GrpNATO_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C1 = group this;";
 					description="BLUFOR Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -662,7 +662,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C1_AT";
-					init="GrpNATO_C1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C1 = group this;";
 					description="BLUFOR Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -684,7 +684,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_C2_FTL";
-					init="GrpNATO_C2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C2 = group this;";
 					description="BLUFOR Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -696,7 +696,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C2_AR";
-					init="GrpNATO_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C2 = group this;";
 					description="BLUFOR Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -708,7 +708,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C2_AAR";
-					init="GrpNATO_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C2 = group this;";
 					description="BLUFOR Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -720,7 +720,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C2_AT";
-					init="GrpNATO_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C2 = group this;";
 					description="BLUFOR Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -742,7 +742,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_C3_FTL";
-					init="GrpNATO_C3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C3 = group this;";
 					description="BLUFOR Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -754,7 +754,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C3_AR";
-					init="GrpNATO_C3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C3 = group this;";
 					description="BLUFOR Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -766,7 +766,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C3_AAR";
-					init="GrpNATO_C3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C3 = group this;";
 					description="BLUFOR Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -778,7 +778,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_C3_AT";
-					init="GrpNATO_C3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpNATO_C3 = group this;";
 					description="BLUFOR Charlie 3 Rifleman (AT)";
 				};
 			};
@@ -801,7 +801,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_PL";
-					init="GrpCSAT_PLTHQ = group this; [""co"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_PLTHQ = group this;";
 					description="OPFOR Platoon Leader";
 				};
 				class Item1
@@ -814,7 +814,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_PLTHQ_M";
-					init="GrpCSAT_PLTHQ = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_PLTHQ = group this;";
 					description="OPFOR Platoon HQ Medic";
 				};
 				class Item2
@@ -827,7 +827,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_PSG";
-					init="GrpCSAT_PLTHQ = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_PLTHQ = group this;";
 					description="OPFOR Platoon Sergeant";
 				};
 				class Item3
@@ -840,7 +840,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_PLTHQ_FO";
-					init="GrpCSAT_PLTHQ = group this; [""fo"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_PLTHQ = group this;";
 					description="INDFOR Forward Observer";
 				};
 			};
@@ -863,7 +863,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_ASL_SL";
-					init="GrpCSAT_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ASL = group this;";
 					description="OPFOR Alpha Squad Leader";
 				};
 				class Item1
@@ -877,7 +877,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_ASL_M";
-					init="GrpCSAT_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ASL = group this;";
 					description="OPFOR Alpha Medic";
 				};
 			};
@@ -900,7 +900,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_A1_FTL";
-					init="GrpCSAT_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A1 = group this;";
 					description="OPFOR Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -913,7 +913,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A1_AR";
-					init="GrpCSAT_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A1 = group this;";
 					description="OPFOR Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -926,7 +926,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A1_AAR";
-					init="GrpCSAT_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A1 = group this;";
 					description="OPFOR Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -939,7 +939,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A1_AT";
-					init="GrpCSAT_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A1 = group this;";
 					description="OPFOR Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -962,7 +962,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_A2_FTL";
-					init="GrpCSAT_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A2 = group this;";
 					description="OPFOR Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -975,7 +975,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A2_AR";
-					init="GrpCSAT_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A2 = group this;";
 					description="OPFOR Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -988,7 +988,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A2_AAR";
-					init="GrpCSAT_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A2 = group this;";
 					description="OPFOR Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1001,7 +1001,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A2_AT";
-					init="GrpCSAT_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A2 = group this;";
 					description="OPFOR Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -1024,7 +1024,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_A3_FTL";
-					init="GrpCSAT_A3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A3 = group this;";
 					description="OPFOR Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -1037,7 +1037,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A3_AR";
-					init="GrpCSAT_A3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A3 = group this;";
 					description="OPFOR Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -1050,7 +1050,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A3_AAR";
-					init="GrpCSAT_A3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A3 = group this;";
 					description="OPFOR Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1063,7 +1063,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_A3_AT";
-					init="GrpCSAT_A3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_A3 = group this;";
 					description="OPFOR Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -1086,7 +1086,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_BSL_SL";
-					init="GrpCSAT_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_BSL = group this;";
 					description="OPFOR Bravo Squad Leader";
 				};
 				class Item1
@@ -1100,7 +1100,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_BSL_M";
-					init="GrpCSAT_BSL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_BSL = group this;";
 					description="OPFOR Bravo Medic";
 				};
 			};
@@ -1123,7 +1123,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_B1_FTL";
-					init="GrpCSAT_B1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B1 = group this;";
 					description="OPFOR Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -1136,7 +1136,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B1_AR";
-					init="GrpCSAT_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B1 = group this;";
 					description="OPFOR Bravo 1 Automatic Rifleman";
 				};
 				class Item2
@@ -1149,7 +1149,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B1_AAR";
-					init="GrpCSAT_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B1 = group this;";
 					description="OPFOR Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1162,7 +1162,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B1_AT";
-					init="GrpCSAT_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B1 = group this;";
 					description="OPFOR Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -1185,7 +1185,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_B2_FTL";
-					init="GrpCSAT_B2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B2 = group this;";
 					description="OPFOR Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -1198,7 +1198,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B2_AR";
-					init="GrpCSAT_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B2 = group this;";
 					description="OPFOR Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -1211,7 +1211,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B2_AAR";
-					init="GrpCSAT_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B2 = group this;";
 					description="OPFOR Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1224,7 +1224,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B2_AT";
-					init="GrpCSAT_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B2 = group this;";
 					description="OPFOR Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -1247,7 +1247,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_B3_FTL";
-					init="GrpCSAT_B3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B3 = group this;";
 					description="OPFOR Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -1260,7 +1260,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B3_AR";
-					init="GrpCSAT_B3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B3 = group this;";
 					description="OPFOR Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -1273,7 +1273,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B3_AAR";
-					init="GrpCSAT_B3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B3 = group this;";
 					description="OPFOR Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1286,7 +1286,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_B3_AT";
-					init="GrpCSAT_B3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_B3 = group this;";
 					description="OPFOR Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -1309,7 +1309,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_CSL_SL";
-					init="GrpCSAT_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_CSL = group this;";
 					description="OPFOR Charlie Squad Leader";
 				};
 				class Item1
@@ -1323,7 +1323,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_CSL_M";
-					init="GrpCSAT_CSL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_CSL = group this;";
 					description="OPFOR Charlie Medic";
 				};
 			};
@@ -1346,7 +1346,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_C1_FTL";
-					init="GrpCSAT_C1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C1 = group this;";
 					description="OPFOR Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -1359,7 +1359,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C1_AR";
-					init="GrpCSAT_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C1 = group this;";
 					description="OPFOR Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -1372,7 +1372,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C1_AAR";
-					init="GrpCSAT_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C1 = group this;";
 					description="OPFOR Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1385,7 +1385,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C1_AT";
-					init="GrpCSAT_C1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C1 = group this;";
 					description="OPFOR Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -1408,7 +1408,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_C2_FTL";
-					init="GrpCSAT_C2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C2 = group this;";
 					description="OPFOR Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -1421,7 +1421,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C2_AR";
-					init="GrpCSAT_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C2 = group this;";
 					description="OPFOR Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -1434,7 +1434,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C2_AAR";
-					init="GrpCSAT_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C2 = group this;";
 					description="OPFOR Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1447,7 +1447,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C2_AT";
-					init="GrpCSAT_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C2 = group this;";
 					description="OPFOR Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -1470,7 +1470,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_C3_FTL";
-					init="GrpCSAT_C3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C3 = group this;";
 					description="OPFOR Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -1483,7 +1483,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C3_AR";
-					init="GrpCSAT_C3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C3 = group this;";
 					description="OPFOR Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -1496,7 +1496,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C3_AAR";
-					init="GrpCSAT_C3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C3 = group this;";
 					description="OPFOR Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1509,7 +1509,7 @@ class Mission
 					lock="UNLOCKED";
 					skill=0.60000002;
 					text="UnitCSAT_C3_AT";
-					init="GrpCSAT_C3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_C3 = group this;";
 					description="OPFOR Charlie 3 Rifleman (AT)";
 				};
 			};
@@ -1531,7 +1531,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH1_P";
-					init="GrpNATO_TH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH1 = group this;";
 					description="BLUFOR Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -1544,7 +1544,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH1_CP";
-					init="GrpNATO_TH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH1 = group this;";
 					description="BLUFOR Transport Helo 1 Co-Pilot";
 				};
 				class Item2
@@ -1557,7 +1557,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH1_G1";
-					init="GrpNATO_TH1 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH1 = group this;";
 					description="BLUFOR Transport Helo 1 Crew Chief";
 				};
 				class Item3
@@ -1570,7 +1570,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH1_G2";
-					init="GrpNATO_TH1 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH1 = group this;";
 					description="BLUFOR Transport Helo 1 Gunner";
 				};
 			};
@@ -1592,7 +1592,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH1_P";
-					init="GrpCSAT_TH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH1 = group this;";
 					description="OPFOR Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -1605,7 +1605,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH1_CP";
-					init="GrpCSAT_TH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH1 = group this;";
 					description="OPFOR Transport Helo 1 Co-Pilot";
 				};
 				class Item2
@@ -1618,7 +1618,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH1_G1";
-					init="GrpCSAT_TH1 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH1 = group this;";
 					description="OPFOR Transport Helo 1 Crew Chief";
 				};
 				class Item3
@@ -1631,7 +1631,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TH1_G2";
-					init="GrpCSAT_TH1 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH1 = group this;";
 					description="OPFOR Transport Helo 1 Gunner";
 				};
 			};
@@ -1653,7 +1653,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_PL";
-					init="GrpAAF_PLTHQ = group this; [""co"",this] call f_fnc_assignGear;";
+					init="GrpAAF_PLTHQ = group this;";
 					description="INDFOR Platoon Leader";
 				};
 				class Item1
@@ -1665,7 +1665,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_PLTHQ_M";
-					init="GrpAAF_PLTHQ = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpAAF_PLTHQ = group this;";
 					description="INDFOR Platoon HQ Medic";
 				};
 				class Item2
@@ -1678,7 +1678,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_PSG";
-					init="GrpAAF_PLTHQ = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_PLTHQ = group this;";
 					description="INDFOR Platoon Sergeant";
 				};
 				class Item3
@@ -1691,7 +1691,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_PLTHQ_FO";
-					init="GrpAAF_PLTHQ = group this; [""fo"",this] call f_fnc_assignGear;";
+					init="GrpAAF_PLTHQ = group this;";
 					description="INDFOR Forward Observer";
 				};
 			};
@@ -1713,7 +1713,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_ASL_SL";
-					init="GrpAAF_ASL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_ASL = group this;";
 					description="INDFOR Alpha Squad Leader";
 				};
 				class Item1
@@ -1725,7 +1725,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_ASL_M";
-					init="GrpAAF_ASL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpAAF_ASL = group this;";
 					description="INDFOR Alpha Medic";
 				};
 			};
@@ -1747,7 +1747,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_A1_FTL";
-					init="GrpAAF_A1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A1 = group this;";
 					description="INDFOR Alpha 1 Fireteam Leader";
 				};
 				class Item1
@@ -1759,7 +1759,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A1_AR";
-					init="GrpAAF_A1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A1 = group this;";
 					description="INDFOR Alpha 1 Automatic Rifleman";
 				};
 				class Item2
@@ -1771,7 +1771,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A1_AAR";
-					init="GrpAAF_A1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A1 = group this;";
 					description="INDFOR Alpha 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1783,7 +1783,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A1_AT";
-					init="GrpAAF_A1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A1 = group this;";
 					description="INDFOR Alpha 1 Rifleman (AT)";
 				};
 			};
@@ -1805,7 +1805,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_A2_FTL";
-					init="GrpAAF_A2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A2 = group this;";
 					description="INDFOR Alpha 2 Fireteam Leader";
 				};
 				class Item1
@@ -1817,7 +1817,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A2_AR";
-					init="GrpAAF_A2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A2 = group this;";
 					description="INDFOR Alpha 2 Automatic Rifleman";
 				};
 				class Item2
@@ -1829,7 +1829,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A2_AAR";
-					init="GrpAAF_A2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A2 = group this;";
 					description="INDFOR Alpha 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1841,7 +1841,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A2_AT";
-					init="GrpAAF_A2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A2 = group this;";
 					description="INDFOR Alpha 2 Rifleman (AT)";
 				};
 			};
@@ -1863,7 +1863,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_A3_FTL";
-					init="GrpAAF_A3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A3 = group this;";
 					description="INDFOR Alpha 3 Fireteam Leader";
 				};
 				class Item1
@@ -1875,7 +1875,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A3_AR";
-					init="GrpAAF_A3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A3 = group this;";
 					description="INDFOR Alpha 3 Automatic Rifleman";
 				};
 				class Item2
@@ -1887,7 +1887,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A3_AAR";
-					init="GrpAAF_A3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A3 = group this;";
 					description="INDFOR Alpha 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1899,7 +1899,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_A3_AT";
-					init="GrpAAF_A3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_A3 = group this;";
 					description="INDFOR Alpha 3 Rifleman (AT)";
 				};
 			};
@@ -1921,7 +1921,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_BSL_SL";
-					init="GrpAAF_BSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_BSL = group this;";
 					description="INDFOR Bravo Squad Leader";
 				};
 				class Item1
@@ -1933,7 +1933,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_BSL_M";
-					init="GrpAAF_BSL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpAAF_BSL = group this;";
 					description="INDFOR Bravo Medic";
 				};
 			};
@@ -1955,7 +1955,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_B1_FTL";
-					init="GrpAAF_B1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B1 = group this;";
 					description="INDFOR Bravo 1 Fireteam Leader";
 				};
 				class Item1
@@ -1967,7 +1967,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B1_AR";
-					init="GrpAAF_B1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B1 = group this;";
 					description="INDFOR Bravo 1 Automatic Riflemen";
 				};
 				class Item2
@@ -1979,7 +1979,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B1_AAR";
-					init="GrpAAF_B1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B1 = group this;";
 					description="INDFOR Bravo 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -1991,7 +1991,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B1_AT";
-					init="GrpAAF_B1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B1 = group this;";
 					description="INDFOR Bravo 1 Rifleman (AT)";
 				};
 			};
@@ -2013,7 +2013,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_B2_FTL";
-					init="GrpAAF_B2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B2 = group this;";
 					description="INDFOR Bravo 2 Fireteam Leader";
 				};
 				class Item1
@@ -2025,7 +2025,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B2_AR";
-					init="GrpAAF_B2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B2 = group this;";
 					description="INDFOR Bravo 2 Automatic Rifleman";
 				};
 				class Item2
@@ -2037,7 +2037,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B2_AAR";
-					init="GrpAAF_B2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B2 = group this;";
 					description="INDFOR Bravo 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2049,7 +2049,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B2_AT";
-					init="GrpAAF_B2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B2 = group this;";
 					description="INDFOR Bravo 2 Rifleman (AT)";
 				};
 			};
@@ -2071,7 +2071,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_B3_FTL";
-					init="GrpAAF_B3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B3 = group this;";
 					description="INDFOR Bravo 3 Fireteam Leader";
 				};
 				class Item1
@@ -2083,7 +2083,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B3_AR";
-					init="GrpAAF_B3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B3 = group this;";
 					description="INDFOR Bravo 3 Automatic Rifleman";
 				};
 				class Item2
@@ -2095,7 +2095,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B3_AAR";
-					init="GrpAAF_B3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B3 = group this;";
 					description="INDFOR Bravo 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2107,7 +2107,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_B3_AT";
-					init="GrpAAF_B3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_B3 = group this;";
 					description="INDFOR Bravo 3 Rifleman (AT)";
 				};
 			};
@@ -2129,7 +2129,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_CSL_SL";
-					init="GrpAAF_CSL = group this; [""dc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_CSL = group this;";
 					description="INDFOR Charlie Squad Leader";
 				};
 				class Item1
@@ -2141,7 +2141,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_CSL_M";
-					init="GrpAAF_CSL = group this; [""m"",this] call f_fnc_assignGear;";
+					init="GrpAAF_CSL = group this;";
 					description="INDFOR Charlie Medic";
 				};
 			};
@@ -2163,7 +2163,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_C1_FTL";
-					init="GrpAAF_C1 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C1 = group this;";
 					description="INDFOR Charlie 1 Fireteam Leader";
 				};
 				class Item1
@@ -2175,7 +2175,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C1_AR";
-					init="GrpAAF_C1 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C1 = group this;";
 					description="INDFOR Charlie 1 Automatic Rifleman";
 				};
 				class Item2
@@ -2187,7 +2187,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C1_AAR";
-					init="GrpAAF_C1 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C1 = group this;";
 					description="INDFOR Charlie 1 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2199,7 +2199,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C1_AT";
-					init="GrpAAF_C1 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C1 = group this;";
 					description="INDFOR Charlie 1 Rifleman (AT)";
 				};
 			};
@@ -2221,7 +2221,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_C2_FTL";
-					init="GrpAAF_C2 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C2 = group this;";
 					description="INDFOR Charlie 2 Fireteam Leader";
 				};
 				class Item1
@@ -2233,7 +2233,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C2_AR";
-					init="GrpAAF_C2 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C2 = group this;";
 					description="INDFOR Charlie 2 Automatic Rifleman";
 				};
 				class Item2
@@ -2245,7 +2245,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C2_AAR";
-					init="GrpAAF_C2 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C2 = group this;";
 					description="INDFOR Charlie 2 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2257,7 +2257,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C2_AT";
-					init="GrpAAF_C2 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C2 = group this;";
 					description="INDFOR Charlie 2 Rifleman (AT)";
 				};
 			};
@@ -2279,7 +2279,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_C3_FTL";
-					init="GrpAAF_C3 = group this; [""ftl"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C3 = group this;";
 					description="INDFOR Charlie 3 Fireteam Leader";
 				};
 				class Item1
@@ -2291,7 +2291,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C3_AR";
-					init="GrpAAF_C3 = group this; [""ar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C3 = group this;";
 					description="INDFOR Charlie 3 Automatic Rifleman";
 				};
 				class Item2
@@ -2303,7 +2303,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C3_AAR";
-					init="GrpAAF_C3 = group this; [""aar"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C3 = group this;";
 					description="INDFOR Charlie 3 Assistant Automatic Rifleman";
 				};
 				class Item3
@@ -2315,7 +2315,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_C3_AT";
-					init="GrpAAF_C3 = group this; [""rat"",this] call f_fnc_assignGear;";
+					init="GrpAAF_C3 = group this;";
 					description="INDFOR Charlie 3 Rifleman (AT)";
 				};
 			};
@@ -2337,7 +2337,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH1_P";
-					init="GrpAAF_TH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH1 = group this;";
 					description="INDFOR Transport Helo 1 Pilot";
 				};
 				class Item1
@@ -2350,7 +2350,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH1_CP";
-					init="GrpAAF_TH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH1 = group this;";
 					description="INDFOR Transport Helo 1 Co-Pilot";
 				};
 				class Item2
@@ -2363,7 +2363,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH1_G1";
-					init="GrpAAF_TH1 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH1 = group this;";
 					description="INDFOR Transport Helo 1 Crew Chief";
 				};
 				class Item3
@@ -2376,7 +2376,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TH1_G2";
-					init="GrpAAF_TH1 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH1 = group this;";
 					description="INDFOR Transport Helo 1 Gunner";
 				};
 			};
@@ -2398,7 +2398,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH2_P";
-					init="GrpNATO_TH2 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH2 = group this;";
 					description="BLUFOR Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -2411,7 +2411,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH2_CP";
-					init="GrpNATO_TH2 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH2 = group this;";
 					description="BLUFOR Transport Helo 2 Co-Pilot";
 				};
 				class Item2
@@ -2424,7 +2424,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH2_G1";
-					init="GrpNATO_TH2 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH2 = group this;";
 					description="BLUFOR Transport Helo 2 Crew Chief";
 				};
 				class Item3
@@ -2437,7 +2437,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH2_G2";
-					init="GrpNATO_TH2 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH2 = group this;";
 					description="BLUFOR Transport Helo 2 Gunner";
 				};
 			};
@@ -2459,7 +2459,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH3_P";
-					init="GrpNATO_TH3 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH3 = group this;";
 					description="BLUFOR Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -2472,7 +2472,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH3_CP";
-					init="GrpNATO_TH3 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH3 = group this;";
 					description="BLUFOR Transport Helo 3 Co-Pilot";
 				};
 				class Item2
@@ -2485,7 +2485,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH3_G1";
-					init="GrpNATO_TH3 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH3 = group this;";
 					description="BLUFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
@@ -2498,7 +2498,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH3_G2";
-					init="GrpNATO_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH3 = group this;";
 					description="BLUFOR Transport Helo 3 Gunner";
 				};
 			};
@@ -2520,7 +2520,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH4_P";
-					init="GrpNATO_TH4 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH4 = group this;";
 					description="BLUFOR Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -2533,7 +2533,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH4_CP";
-					init="GrpNATO_TH4 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH4 = group this;";
 					description="BLUFOR Transport Helo 4 Co-Pilot";
 				};
 				class Item2
@@ -2546,7 +2546,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH4_G1";
-					init="GrpNATO_TH4 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH4 = group this;";
 					description="BLUFOR Transport Helo 4 Crew Chief";
 				};
 				class Item3
@@ -2559,7 +2559,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH4_G2";
-					init="GrpNATO_TH4 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH4 = group this;";
 					description="BLUFOR Transport Helo 4 Gunner";
 				};
 			};
@@ -2581,7 +2581,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH5_P";
-					init="GrpNATO_TH5 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH5 = group this;";
 					description="BLUFOR Transport Helo 5 Pilot";
 				};
 				class Item1
@@ -2594,7 +2594,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH5_CP";
-					init="GrpNATO_TH5 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH5 = group this;";
 					description="BLUFOR Transport Helo 5 Co-Pilot";
 				};
 				class Item2
@@ -2607,7 +2607,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH5_G1";
-					init="GrpNATO_TH5 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH5 = group this;";
 					description="BLUFOR Transport Helo 5 Crew Chief";
 				};
 				class Item3
@@ -2620,7 +2620,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH5_G2";
-					init="GrpNATO_TH5 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH5 = group this;";
 					description="BLUFOR Transport Helo 5 Gunner";
 				};
 			};
@@ -2642,7 +2642,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH6_P";
-					init="GrpNATO_TH6 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH6 = group this;";
 					description="BLUFOR Transport Helo 6 Pilot";
 				};
 				class Item1
@@ -2655,7 +2655,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH6_CP";
-					init="GrpNATO_TH6 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH6 = group this;";
 					description="BLUFOR Transport Helo 6 Co-Pilot";
 				};
 				class Item2
@@ -2668,7 +2668,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH6_G1";
-					init="GrpNATO_TH6 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH6 = group this;";
 					description="BLUFOR Transport Helo 6 Crew Chief";
 				};
 				class Item3
@@ -2681,7 +2681,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH6_G2";
-					init="GrpNATO_TH6 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH6 = group this;";
 					description="BLUFOR Transport Helo 6 Gunner";
 				};
 			};
@@ -2703,7 +2703,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH7_P";
-					init="GrpNATO_TH7 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH7 = group this;";
 					description="BLUFOR Transport Helo 7 Pilot";
 				};
 				class Item1
@@ -2716,7 +2716,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH7_CP";
-					init="GrpNATO_TH7 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH7 = group this;";
 					description="BLUFOR Transport Helo 7 Co-Pilot";
 				};
 				class Item2
@@ -2729,7 +2729,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH7_G1";
-					init="GrpNATO_TH7 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH7 = group this;";
 					description="BLUFOR Transport Helo 7 Crew Chief";
 				};
 				class Item3
@@ -2742,7 +2742,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH7_G2";
-					init="GrpNATO_TH7 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH7 = group this;";
 					description="BLUFOR Transport Helo 7 Gunner";
 				};
 			};
@@ -2764,7 +2764,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_TH8_P";
-					init="GrpNATO_TH8 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH8 = group this;";
 					description="BLUFOR Transport Helo 8 Pilot";
 				};
 				class Item1
@@ -2777,7 +2777,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_TH8_CP";
-					init="GrpNATO_TH8 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH8 = group this;";
 					description="BLUFOR Transport Helo 8 Co-Pilot";
 				};
 				class Item2
@@ -2790,7 +2790,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TH8_G1";
-					init="GrpNATO_TH8 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH8 = group this;";
 					description="BLUFOR Transport Helo 8 Crew Chief";
 				};
 				class Item3
@@ -2803,7 +2803,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TH8_G2";
-					init="GrpNATO_TH8 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TH8 = group this;";
 					description="BLUFOR Transport Helo 8 Gunner";
 				};
 			};
@@ -2825,7 +2825,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitNATO_AH1_P";
-					init="GrpNATO_AH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_AH1 = group this;";
 					description="BLUFOR Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -2838,7 +2838,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitNATO_AH1_CP";
-					init="GrpNATO_AH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_AH1 = group this;";
 					description="BLUFOR Attack Helo 1 Gunner";
 				};
 			};
@@ -2860,7 +2860,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH2_P";
-					init="GrpAAF_TH2 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH2 = group this;";
 					description="INDFOR Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -2873,7 +2873,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH2_CP";
-					init="GrpAAF_TH2 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH2 = group this;";
 					description="INDFOR Transport Helo 2 Co-Pilot";
 				};
 				class Item2
@@ -2886,7 +2886,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH2_G1";
-					init="GrpAAF_TH2 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH2 = group this;";
 					description="INDFOR Transport Helo 2 Crew Chief";
 				};
 				class Item3
@@ -2899,7 +2899,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TH2_G2";
-					init="GrpAAF_TH2 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH2 = group this;";
 					description="INDFOR Transport Helo 2 Gunner";
 				};
 			};
@@ -2921,7 +2921,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH3_P";
-					init="GrpAAF_TH3 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH3 = group this;";
 					description="INDFOR Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -2934,7 +2934,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH3_CP";
-					init="GrpAAF_TH3 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH3 = group this;";
 					description="INDFOR Transport Helo 3 Co-Pilot";
 				};
 				class Item2
@@ -2947,7 +2947,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH3_G1";
-					init="GrpAAF_TH3 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH3 = group this;";
 					description="INDFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
@@ -2960,7 +2960,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TH3_G2";
-					init="GrpAAF_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH3 = group this;";
 					description="INDFOR Transport Helo 3 Gunner";
 				};
 			};
@@ -2982,7 +2982,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH4_P";
-					init="GrpAAF_TH4 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH4 = group this;";
 					description="INDFOR Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -2995,7 +2995,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH4_CP";
-					init="GrpAAF_TH4 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH4 = group this;";
 					description="INDFOR Transport Helo 4 Co-Pilot";
 				};
 				class Item2
@@ -3008,7 +3008,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH4_G1";
-					init="GrpAAF_TH4 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH4 = group this;";
 					description="INDFOR Transport Helo 4 Crew Chief";
 				};
 				class Item3
@@ -3021,7 +3021,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TH4_G2";
-					init="GrpAAF_TH4 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH4 = group this;";
 					description="INDFOR Transport Helo 4 Gunner";
 				};
 			};
@@ -3043,7 +3043,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH2_P";
-					init="GrpCSAT_TH2 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH2 = group this;";
 					description="OPFOR Transport Helo 2 Pilot";
 				};
 				class Item1
@@ -3056,7 +3056,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH2_CP";
-					init="GrpCSAT_TH2 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH2 = group this;";
 					description="OPFOR Transport Helo 2 Co-Pilot";
 				};
 				class Item2
@@ -3069,7 +3069,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH2_G1";
-					init="GrpCSAT_TH2 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH2 = group this;";
 					description="OPFOR Transport Helo 2 Crew Chief";
 				};
 				class Item3
@@ -3082,7 +3082,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TH2_G2";
-					init="GrpCSAT_TH2 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH2 = group this;";
 					description="OPFOR Transport Helo 2 Gunner";
 				};
 			};
@@ -3104,7 +3104,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH3_P";
-					init="GrpCSAT_TH3 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH3 = group this;";
 					description="OPFOR Transport Helo 3 Pilot";
 				};
 				class Item1
@@ -3117,7 +3117,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH3_CP";
-					init="GrpCSAT_TH3 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH3 = group this;";
 					description="OPFOR Transport Helo 3 Co-Pilot";
 				};
 				class Item2
@@ -3130,7 +3130,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH3_G1";
-					init="GrpCSAT_TH3 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH3 = group this;";
 					description="OPFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
@@ -3143,7 +3143,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TH3_G2";
-					init="GrpCSAT_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH3 = group this;";
 					description="OPFOR Transport Helo 3 Gunner";
 				};
 			};
@@ -3165,7 +3165,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH4_P";
-					init="GrpCSAT_TH4 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH4 = group this;";
 					description="OPFOR Transport Helo 4 Pilot";
 				};
 				class Item1
@@ -3178,7 +3178,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH4_CP";
-					init="GrpCSAT_TH4 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH4 = group this;";
 					description="OPFOR Transport Helo 4 Co-Pilot";
 				};
 				class Item2
@@ -3191,7 +3191,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH4_G1";
-					init="GrpCSAT_TH4 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH4 = group this;";
 					description="OPFOR Transport Helo 4 Crew Chief";
 				};
 				class Item3
@@ -3204,7 +3204,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TH4_G2";
-					init="GrpCSAT_TH4 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH4 = group this;";
 					description="OPFOR Transport Helo 4 Gunner";
 				};
 			};
@@ -3226,7 +3226,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH5_P";
-					init="GrpCSAT_TH5 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH5 = group this;";
 					description="OPFOR Transport Helo 5 Pilot";
 				};
 				class Item1
@@ -3239,7 +3239,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH5_CP";
-					init="GrpCSAT_TH5 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH5 = group this;";
 					description="OPFOR Transport Helo 5 Co-Pilot";
 				};
 				class Item2
@@ -3252,7 +3252,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH5_G1";
-					init="GrpCSAT_TH3 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH3 = group this;";
 					description="OPFOR Transport Helo 3 Crew Chief";
 				};
 				class Item3
@@ -3265,7 +3265,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TH5_G2";
-					init="GrpCSAT_TH3 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH3 = group this;";
 					description="OPFOR Transport Helo 3 Gunner";
 				};
 			};
@@ -3287,7 +3287,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH6_P";
-					init="GrpCSAT_TH6 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH6 = group this;";
 					description="OPFOR Transport Helo 6 Pilot";
 				};
 				class Item1
@@ -3300,7 +3300,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH6_CP";
-					init="GrpCSAT_TH6 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH6 = group this;";
 					description="OPFOR Transport Helo 6 Co-Pilot";
 				};
 				class Item2
@@ -3313,7 +3313,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH6_G1";
-					init="GrpCSAT_TH6 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH6 = group this;";
 					description="OPFOR Transport Helo 6 Crew Chief";
 				};
 				class Item3
@@ -3326,7 +3326,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TH6_G2";
-					init="GrpCSAT_TH6 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH6 = group this;";
 					description="OPFOR Transport Helo 6 Gunner";
 				};
 			};
@@ -3348,7 +3348,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH7_P";
-					init="GrpCSAT_TH7 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH7 = group this;";
 					description="OPFOR Transport Helo 7 Pilot";
 				};
 				class Item1
@@ -3361,7 +3361,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH7_CP";
-					init="GrpCSAT_TH7 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH7 = group this;";
 					description="OPFOR Transport Helo 7 Co-Pilot";
 				};
 				class Item2
@@ -3374,7 +3374,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH7_G1";
-					init="GrpCSAT_TH7 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH7 = group this;";
 					description="OPFOR Transport Helo 7 Crew Chief";
 				};
 				class Item3
@@ -3387,7 +3387,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TH7_G2";
-					init="GrpCSAT_TH7 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH7 = group this;";
 					description="OPFOR Transport Helo 7 Gunner";
 				};
 			};
@@ -3409,7 +3409,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_TH8_P";
-					init="GrpCSAT_TH8 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH8 = group this;";
 					description="OPFOR Transport Helo 8 Pilot";
 				};
 				class Item1
@@ -3422,7 +3422,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH8_CP";
-					init="GrpCSAT_TH8 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH8 = group this;";
 					description="OPFOR Transport Helo 8 Co-Pilot";
 				};
 				class Item2
@@ -3435,7 +3435,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TH8_G1";
-					init="GrpCSAT_TH8 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH8 = group this;";
 					description="OPFOR Transport Helo 8 Crew Chief";
 				};
 				class Item3
@@ -3448,7 +3448,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TH8_G2";
-					init="GrpCSAT_TH8 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TH8 = group this;";
 					description="OPFOR Transport Helo 8 Gunner";
 				};
 			};
@@ -3470,7 +3470,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitCSAT_AH1_P";
-					init="GrpCSAT_AH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_AH1 = group this;";
 					description="OPFOR Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -3483,7 +3483,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitCSAT_AH1_CP";
-					init="GrpCSAT_AH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_AH1 = group this;";
 					description="OPFOR Attack Helo 1 Gunner";
 				};
 			};
@@ -3581,7 +3581,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH5_P";
-					init="GrpAAF_TH5 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH5 = group this;";
 					description="INDFOR Transport Helo 5 Pilot";
 				};
 				class Item1
@@ -3594,7 +3594,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH5_CP";
-					init="GrpAAF_TH5 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH5 = group this;";
 					description="INDFOR Transport Helo 5 Co-Pilot";
 				};
 				class Item2
@@ -3607,7 +3607,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH5_G1";
-					init="GrpAAF_TH5 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH5 = group this;";
 					description="INDFOR Transport Helo 5 Crew Chief";
 				};
 				class Item3
@@ -3620,7 +3620,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TH5_G2";
-					init="GrpAAF_TH5 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH5 = group this;";
 					description="INDFOR Transport Helo 5 Gunner";
 				};
 			};
@@ -3642,7 +3642,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH6_P";
-					init="GrpAAF_TH6 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH6 = group this;";
 					description="INDFOR Transport Helo 6 Pilot";
 				};
 				class Item1
@@ -3655,7 +3655,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH6_CP";
-					init="GrpAAF_TH6 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH6 = group this;";
 					description="INDFOR Transport Helo 6 Co-Pilot";
 				};
 				class Item2
@@ -3668,7 +3668,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH6_G1";
-					init="GrpAAF_TH6 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH6 = group this;";
 					description="INDFOR Transport Helo 6 Crew Chief";
 				};
 				class Item3
@@ -3681,7 +3681,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TH6_G2";
-					init="GrpAAF_TH6 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH6 = group this;";
 					description="INDFOR Transport Helo 6 Gunner";
 				};
 			};
@@ -3703,7 +3703,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH7_P";
-					init="GrpAAF_TH7 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH7 = group this;";
 					description="INDFOR Transport Helo 7 Pilot";
 				};
 				class Item1
@@ -3716,7 +3716,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH7_CP";
-					init="GrpAAF_TH7 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH7 = group this;";
 					description="INDFOR Transport Helo 7 Co-Pilot";
 				};
 				class Item2
@@ -3729,7 +3729,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH7_G1";
-					init="GrpAAF_TH7 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH7 = group this;";
 					description="INDFOR Transport Helo 7 Crew Chief";
 				};
 				class Item3
@@ -3742,7 +3742,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TH7_G2";
-					init="GrpAAF_TH7 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH7 = group this;";
 					description="INDFOR Transport Helo 7 Gunner";
 				};
 			};
@@ -3764,7 +3764,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_TH8_P";
-					init="GrpAAF_TH8 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH8 = group this;";
 					description="INDFOR Transport Helo 8 Pilot";
 				};
 				class Item1
@@ -3777,7 +3777,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_TH8_CP";
-					init="GrpAAF_TH8 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH8 = group this;";
 					description="INDFOR Transport Helo 8 Co-Pilot";
 				};
 				class Item2
@@ -3790,7 +3790,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TH8_G1";
-					init="GrpAAF_TH8 = group this; [""pcc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH8 = group this;";
 					description="INDFOR Transport Helo 8 Crew Chief";
 				};
 				class Item3
@@ -3803,7 +3803,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TH8_G2";
-					init="GrpAAF_TH8 = group this; [""pc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TH8 = group this;";
 					description="INDFOR Transport Helo 8 Gunner";
 				};
 			};
@@ -3825,7 +3825,7 @@ class Mission
 					rank="CAPTAIN";
 					skill=0.60000002;
 					text="UnitAAF_AH1_P";
-					init="GrpAAF_AH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_AH1 = group this;";
 					description="INDFOR Attack Helo 1 Pilot";
 				};
 				class Item1
@@ -3838,7 +3838,7 @@ class Mission
 					rank="LIEUTENANT";
 					skill=0.60000002;
 					text="UnitAAF_AH1_CP";
-					init="GrpAAF_AH1 = group this; [""pp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_AH1 = group this;";
 					description="INDFOR Attack Helo 1 Co-Pilot";
 				};
 			};
@@ -3898,7 +3898,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="UnitNATO_FW1_P";
-					init="GrpNATO_FW1 = group this; [""fwp"",this] call f_fnc_assignGear;";
+					init="GrpNATO_FW1 = group this;";
 					description="BLUFOR Fixed Wing Pilot 1";
 				};
 			};
@@ -3920,7 +3920,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="UnitAAF_FW1_P";
-					init="GrpAAF_FW1 = group this; [""fwp"",this] call f_fnc_assignGear;";
+					init="GrpAAF_FW1 = group this;";
 					description="INDFOR Fixed Wing Pilot 1";
 				};
 			};
@@ -3942,7 +3942,7 @@ class Mission
 					rank="MAJOR";
 					skill=0.60000002;
 					text="UnitCSAT_FW1_P";
-					init="GrpCSAT_FW1 = group this; [""fwp"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_FW1 = group this;";
 					description="OPFOR Fixed Wing Pilot 1";
 				};
 			};
@@ -3964,7 +3964,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_C";
-					init="GrpNATO_IFV1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV1 = group this;";
 					description="BLUFOR IFV 1 Commander";
 				};
 				class Item1
@@ -3977,7 +3977,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_G";
-					init="GrpNATO_IFV1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV1 = group this;";
 					description="BLUFOR IFV 1 Gunner";
 				};
 				class Item2
@@ -3989,7 +3989,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV1_D";
-					init="GrpNATO_IFV1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV1 = group this;";
 					description="BLUFOR IFV 1 Driver";
 				};
 			};
@@ -4011,7 +4011,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_C";
-					init="GrpNATO_IFV2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV2 = group this;";
 					description="BLUFOR IFV 2 Commander";
 				};
 				class Item1
@@ -4024,7 +4024,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_G";
-					init="GrpNATO_IFV2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV2 = group this;";
 					description="BLUFOR IFV 2 Gunner";
 				};
 				class Item2
@@ -4036,7 +4036,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV2_D";
-					init="GrpNATO_IFV2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV2 = group this;";
 					description="BLUFOR IFV 2 Driver";
 				};
 			};
@@ -4058,7 +4058,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_C";
-					init="GrpNATO_IFV3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV3 = group this;";
 					description="BLUFOR IFV 3 Commander";
 				};
 				class Item1
@@ -4071,7 +4071,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_G";
-					init="GrpNATO_IFV3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV3 = group this;";
 					description="BLUFOR IFV 3 Gunner";
 				};
 				class Item2
@@ -4083,7 +4083,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV3_D";
-					init="GrpNATO_IFV3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV3 = group this;";
 					description="BLUFOR IFV 3 Driver";
 				};
 			};
@@ -4105,7 +4105,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_C";
-					init="GrpNATO_IFV4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV4 = group this;";
 					description="BLUFOR IFV 4 Commander";
 				};
 				class Item1
@@ -4118,7 +4118,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_G";
-					init="GrpNATO_IFV4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV4 = group this;";
 					description="BLUFOR IFV 4 Gunner";
 				};
 				class Item2
@@ -4130,7 +4130,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_IFV4_D";
-					init="GrpNATO_IFV4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_IFV4 = group this;";
 					description="BLUFOR IFV 4 Driver";
 				};
 			};
@@ -4152,7 +4152,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_APC1_C";
-					init="GrpNATO_APC1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC1 = group this;";
 					description="BLUFOR APC 1 Commander";
 				};
 				class Item1
@@ -4165,7 +4165,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_APC1_G";
-					init="GrpNATO_APC1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC1 = group this;";
 					description="BLUFOR APC 1 Gunner";
 				};
 				class Item2
@@ -4177,7 +4177,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_APC1_D";
-					init="GrpNATO_APC1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC1 = group this;";
 					description="BLUFOR APC 1 Driver";
 				};
 			};
@@ -4199,7 +4199,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_APC2_C";
-					init="GrpNATO_APC2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC2 = group this;";
 					description="BLUFOR APC 2 Commander";
 				};
 				class Item1
@@ -4212,7 +4212,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_APC2_G";
-					init="GrpNATO_APC2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC2 = group this;";
 					description="BLUFOR APC 2 Gunner";
 				};
 				class Item2
@@ -4224,7 +4224,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_APC2_D";
-					init="GrpNATO_APC2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC2 = group this;";
 					description="BLUFOR APC 2 Driver";
 				};
 			};
@@ -4246,7 +4246,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_APC3_C";
-					init="GrpNATO_APC3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC3 = group this;";
 					description="BLUFOR APC 3 Commander";
 				};
 				class Item1
@@ -4259,7 +4259,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_APC3_G";
-					init="GrpNATO_APC3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC3 = group this;";
 					description="BLUFOR APC 3 Gunner";
 				};
 				class Item2
@@ -4271,7 +4271,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_APC3_D";
-					init="GrpNATO_APC3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC3 = group this;";
 					description="BLUFOR APC 3 Driver";
 				};
 			};
@@ -4293,7 +4293,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_APC4_C";
-					init="GrpNATO_APC4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC4 = group this;";
 					description="BLUFOR APC 4 Commander";
 				};
 				class Item1
@@ -4306,7 +4306,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_APC4_G";
-					init="GrpNATO_APC4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC4 = group this;";
 					description="BLUFOR APC 4 Gunner";
 				};
 				class Item2
@@ -4318,7 +4318,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_APC4_D";
-					init="GrpNATO_APC4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_APC4 = group this;";
 					description="BLUFOR APC 4 Driver";
 				};
 			};
@@ -4340,7 +4340,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_C";
-					init="GrpNATO_TNK1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TNK1 = group this;";
 					description="BLUFOR Tank 1 Commander";
 				};
 				class Item1
@@ -4353,7 +4353,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_G";
-					init="GrpNATO_TNK1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TNK1 = group this;";
 					description="BLUFOR Tank 1 Gunner";
 				};
 				class Item2
@@ -4365,7 +4365,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_TNK1_D";
-					init="GrpNATO_TNK1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpNATO_TNK1 = group this;";
 					description="BLUFOR Tank 1 Driver";
 				};
 			};
@@ -4387,7 +4387,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_IFV1_C";
-					init="GrpCSAT_IFV1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV1 = group this;";
 					description="OPFOR IFV 1 Commander";
 				};
 				class Item1
@@ -4400,7 +4400,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_IFV1_G";
-					init="GrpCSAT_IFV1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV1 = group this;";
 					description="OPFOR IFV 1 Gunner";
 				};
 				class Item2
@@ -4412,7 +4412,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_IFV1_D";
-					init="GrpCSAT_IFV1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV1 = group this;";
 					description="OPFOR IFV 1 Driver";
 				};
 			};
@@ -4434,7 +4434,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_IFV2_C";
-					init="GrpCSAT_IFV2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV2 = group this;";
 					description="OPFOR IFV 2 Commander";
 				};
 				class Item1
@@ -4447,7 +4447,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_IFV2_G";
-					init="GrpCSAT_IFV2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV2 = group this;";
 					description="OPFOR IFV 2 Gunner";
 				};
 				class Item2
@@ -4459,7 +4459,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_IFV2_D";
-					init="GrpCSAT_IFV2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV2 = group this;";
 					description="OPFOR IFV 2 Driver";
 				};
 			};
@@ -4481,7 +4481,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_IFV3_C";
-					init="GrpCSAT_IFV3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV3 = group this;";
 					description="OPFOR IFV 3 Commander";
 				};
 				class Item1
@@ -4494,7 +4494,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_IFV3_G";
-					init="GrpCSAT_IFV3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV3 = group this;";
 					description="OPFOR IFV 3 Gunner";
 				};
 				class Item2
@@ -4506,7 +4506,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_IFV3_D";
-					init="GrpCSAT_IFV3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV3 = group this;";
 					description="OPFOR IFV 3 Driver";
 				};
 			};
@@ -4528,7 +4528,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_IFV4_C";
-					init="GrpCSAT_IFV4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV4 = group this;";
 					description="OPFOR IFV 4 Commander";
 				};
 				class Item1
@@ -4541,7 +4541,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_IFV4_G";
-					init="GrpCSAT_IFV4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV4 = group this;";
 					description="OPFOR IFV 4 Gunner";
 				};
 				class Item2
@@ -4553,7 +4553,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_IFV4_D";
-					init="GrpCSAT_IFV4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_IFV4 = group this;";
 					description="OPFOR IFV 4 Driver";
 				};
 			};
@@ -4575,7 +4575,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_APC1_C";
-					init="GrpCSAT_APC1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC1 = group this;";
 					description="OPFOR APC 1 Commander";
 				};
 				class Item1
@@ -4588,7 +4588,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_APC1_G";
-					init="GrpCSAT_APC1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC1 = group this;";
 					description="OPFOR APC 1 Gunner";
 				};
 				class Item2
@@ -4600,7 +4600,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_APC1_D";
-					init="GrpCSAT_APC1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC1 = group this;";
 					description="OPFOR APC 1 Driver";
 				};
 			};
@@ -4622,7 +4622,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_APC2_C";
-					init="GrpCSAT_APC2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC2 = group this;";
 					description="OPFOR APC 2 Commander";
 				};
 				class Item1
@@ -4635,7 +4635,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_APC2_G";
-					init="GrpCSAT_APC2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC2 = group this;";
 					description="OPFOR APC 2 Gunner";
 				};
 				class Item2
@@ -4647,7 +4647,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_APC2_D";
-					init="GrpCSAT_APC2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC2 = group this;";
 					description="OPFOR APC 2 Driver";
 				};
 			};
@@ -4669,7 +4669,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_APC3_C";
-					init="GrpCSAT_APC3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC3 = group this;";
 					description="OPFOR APC 3 Commander";
 				};
 				class Item1
@@ -4682,7 +4682,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_APC3_G";
-					init="GrpCSAT_APC3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC3 = group this;";
 					description="OPFOR APC 3 Gunner";
 				};
 				class Item2
@@ -4694,7 +4694,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_APC3_D";
-					init="GrpCSAT_APC3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC3 = group this;";
 					description="OPFOR APC 3 Driver";
 				};
 			};
@@ -4716,7 +4716,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_APC4_C";
-					init="GrpCSAT_APC4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC4 = group this;";
 					description="OPFOR APC 4 Commander";
 				};
 				class Item1
@@ -4729,7 +4729,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_APC4_G";
-					init="GrpCSAT_APC4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC4 = group this;";
 					description="OPFOR APC 4 Gunner";
 				};
 				class Item2
@@ -4741,7 +4741,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_APC4_D";
-					init="GrpCSAT_APC4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_APC4 = group this;";
 					description="OPFOR APC 4 Driver";
 				};
 			};
@@ -4763,7 +4763,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_TNK1_C";
-					init="GrpCSAT_TNK1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TNK1 = group this;";
 					description="OPFOR Tank 1 Commander";
 				};
 				class Item1
@@ -4776,7 +4776,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_TNK1_G";
-					init="GrpCSAT_TNK1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TNK1 = group this;";
 					description="OPFOR Tank 1 Gunner";
 				};
 				class Item2
@@ -4788,7 +4788,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_TNK1_D";
-					init="GrpCSAT_TNK1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_TNK1 = group this;";
 					description="OPFOR Tank 1 Driver";
 				};
 			};
@@ -4810,7 +4810,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_IFV1_C";
-					init="GrpAAF_IFV1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV1 = group this;";
 					description="INDFOR IFV 1 Commander";
 				};
 				class Item1
@@ -4823,7 +4823,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_IFV1_G";
-					init="GrpAAF_IFV1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV1 = group this;";
 					description="INDFOR IFV 1 Gunner";
 				};
 				class Item2
@@ -4835,7 +4835,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_IFV1_D";
-					init="GrpAAF_IFV1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV1 = group this;";
 					description="INDFOR IFV 1 Driver";
 				};
 			};
@@ -4857,7 +4857,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_IFV2_C";
-					init="GrpAAF_IFV2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV2 = group this;";
 					description="INDFOR IFV 2 Commander";
 				};
 				class Item1
@@ -4870,7 +4870,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_IFV2_G";
-					init="GrpAAF_IFV2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV2 = group this;";
 					description="INDFOR IFV 2 Gunner";
 				};
 				class Item2
@@ -4882,7 +4882,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_IFV2_D";
-					init="GrpAAF_IFV2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV2 = group this;";
 					description="INDFOR IFV 2 Driver";
 				};
 			};
@@ -4904,7 +4904,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_IFV3_C";
-					init="GrpAAF_IFV3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV3 = group this;";
 					description="INDFOR IFV 3 Commander";
 				};
 				class Item1
@@ -4917,7 +4917,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_IFV3_G";
-					init="GrpAAF_IFV3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV3 = group this;";
 					description="INDFOR IFV 3 Gunner";
 				};
 				class Item2
@@ -4929,7 +4929,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_IFV3_D";
-					init="GrpAAF_IFV3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV3 = group this;";
 					description="INDFOR IFV 3 Driver";
 				};
 			};
@@ -4951,7 +4951,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_IFV4_C";
-					init="GrpAAF_IFV4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV4 = group this;";
 					description="INDFOR IFV 4 Commander";
 				};
 				class Item1
@@ -4964,7 +4964,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_IFV4_G";
-					init="GrpAAF_IFV4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV4 = group this;";
 					description="INDFOR IFV 4 Gunner";
 				};
 				class Item2
@@ -4976,7 +4976,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_IFV4_D";
-					init="GrpAAF_IFV4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_IFV4 = group this;";
 					description="INDFOR IFV 4 Driver";
 				};
 			};
@@ -4998,7 +4998,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_APC1_C";
-					init="GrpAAF_APC1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC1 = group this;";
 					description="INDFOR APC 1 Commander";
 				};
 				class Item1
@@ -5011,7 +5011,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_APC1_G";
-					init="GrpAAF_APC1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC1 = group this;";
 					description="INDFOR APC 1 Gunner";
 				};
 				class Item2
@@ -5023,7 +5023,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_APC1_D";
-					init="GrpAAF_APC1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC1 = group this;";
 					description="INDFOR APC 1 Driver";
 				};
 			};
@@ -5045,7 +5045,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_APC2_C";
-					init="GrpAAF_APC2 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC2 = group this;";
 					description="INDFOR APC 2 Commander";
 				};
 				class Item1
@@ -5058,7 +5058,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_APC2_G";
-					init="GrpAAF_APC2 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC2 = group this;";
 					description="INDFOR APC 2 Gunner";
 				};
 				class Item2
@@ -5070,7 +5070,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_APC2_D";
-					init="GrpAAF_APC2 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC2 = group this;";
 					description="INDFOR APC 2 Driver";
 				};
 			};
@@ -5092,7 +5092,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_APC3_C";
-					init="GrpAAF_APC3 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC3 = group this;";
 					description="INDFOR APC 3 Commander";
 				};
 				class Item1
@@ -5105,7 +5105,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_APC3_G";
-					init="GrpAAF_APC3 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC3 = group this;";
 					description="INDFOR APC 3 Gunner";
 				};
 				class Item2
@@ -5117,7 +5117,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_APC3_D";
-					init="GrpAAF_APC3 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC3 = group this;";
 					description="INDFOR APC 3 Driver";
 				};
 			};
@@ -5139,7 +5139,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_APC4_C";
-					init="GrpAAF_APC4 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC4 = group this;";
 					description="INDFOR APC 4 Commander";
 				};
 				class Item1
@@ -5152,7 +5152,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_APC4_G";
-					init="GrpAAF_APC4 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC4 = group this;";
 					description="INDFOR APC 4 Gunner";
 				};
 				class Item2
@@ -5164,7 +5164,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_APC4_D";
-					init="GrpAAF_APC4 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_APC4 = group this;";
 					description="INDFOR APC 4 Driver";
 				};
 			};
@@ -5186,7 +5186,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_TNK1_C";
-					init="GrpAAF_TNK1 = group this; [""vc"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK1 = group this;";
 					description="INDFOR Tank 1 Commander";
 				};
 				class Item1
@@ -5199,7 +5199,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_TNK1_G";
-					init="GrpAAF_TNK1 = group this; [""vg"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK1 = group this;";
 					description="INDFOR Tank 1 Gunner";
 				};
 				class Item2
@@ -5211,7 +5211,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_TNK1_D";
-					init="GrpAAF_TNK1 = group this; [""vd"",this] call f_fnc_assignGear;";
+					init="GrpAAF_TNK1 = group this;";
 					description="INDFOR Tank 1 Driver";
 				};
 			};
@@ -5233,7 +5233,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_MMG1_AG";
-					init="GrpCSAT_MMG1 = group this; [""mmgag"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_MMG1 = group this;";
 					description="OPFOR Medium MG Team 1 Spotter";
 				};
 				class Item1
@@ -5245,7 +5245,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_MMG1_G";
-					init="GrpCSAT_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_MMG1 = group this;";
 					description="OPFOR Medium MG Team 1 Gunner";
 				};
 			};
@@ -5267,7 +5267,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_HMG1_AG";
-					init="GrpCSAT_HMG1 = group this; [""hmgag"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_HMG1 = group this;";
 					description="OPFOR Heavy MG Team 1 Spotter";
 				};
 				class Item1
@@ -5279,7 +5279,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_HMG1_G";
-					init="GrpCSAT_HMG1 = group this; [""hmgg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_HMG1 = group this;";
 					description="OPFOR Heavy MG Team 1 Gunner";
 				};
 			};
@@ -5301,7 +5301,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_MAT1_AG";
-					init="GrpCSAT_MAT1 = group this; [""matag"",this] call f_fnc_assignGear; ";
+					init="GrpCSAT_MAT1 = group this; ";
 					description="OPFOR Medium AT Team 1 Spotter";
 				};
 				class Item1
@@ -5313,7 +5313,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_MAT1_G";
-					init="GrpCSAT_MAT1 = group this; [""matg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_MAT1 = group this;";
 					description="OPFOR Medium AT Team 1 Gunner";
 				};
 			};
@@ -5335,7 +5335,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_HAT1_AG";
-					init="GrpCSAT_HAT1 = group this; [""hatag"",this] call f_fnc_assignGear; ";
+					init="GrpCSAT_HAT1 = group this; ";
 					description="OPFOR Heavy AT Team 1 Spotter";
 				};
 				class Item1
@@ -5347,7 +5347,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_HAT1_G";
-					init="GrpCSAT_HAT1 = group this; [""hatg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_HAT1 = group this;";
 					description="OPFOR Heavy AT Team 1 Gunner";
 				};
 			};
@@ -5369,7 +5369,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_MTR1_AG";
-					init="GrpCSAT_MTR1 = group this; [""mtrag"",this] call f_fnc_assignGear; ";
+					init="GrpCSAT_MTR1 = group this; ";
 					description="OPFOR Mortar Team 1 Spotter";
 				};
 				class Item1
@@ -5381,7 +5381,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_MTR1_G";
-					init="GrpCSAT_MTR1 = group this; [""mtrg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_MTR1 = group this;";
 					description="OPFOR Mortar Team 1 Gunner";
 				};
 			};
@@ -5403,7 +5403,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_MSAM1_AG";
-					init="GrpCSAT_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGear; ";
+					init="GrpCSAT_MSAM1 = group this; ";
 					description="OPFOR Medium SAM Team 1 Spotter";
 				};
 				class Item1
@@ -5415,7 +5415,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_MSAM1_G";
-					init="GrpCSAT_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_MSAM1 = group this;";
 					description="OPFOR Medium SAM Team 1 Gunner";
 				};
 			};
@@ -5437,7 +5437,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_HSAM1_AG";
-					init="GrpCSAT_HSAM1 = group this; [""hsamag"",this] call f_fnc_assignGear; ";
+					init="GrpCSAT_HSAM1 = group this; ";
 					description="OPFOR Heavy SAM Team 1 Spotter";
 				};
 				class Item1
@@ -5449,7 +5449,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_HSAM1_G";
-					init="GrpCSAT_HSAM1 = group this; [""hsamg"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_HSAM1 = group this;";
 					description="OPFOR Heavy SAM Team 1 Gunner";
 				};
 			};
@@ -5471,7 +5471,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_ST1_SP";
-					init="GrpCSAT_ST1 = group this; [""sp"",this] call f_fnc_assignGear; ";
+					init="GrpCSAT_ST1 = group this; ";
 					description="OPFOR Sniper Team 1 Spotter";
 				};
 				class Item1
@@ -5483,7 +5483,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_ST1_SN";
-					init="GrpCSAT_ST1 = group this; [""sn"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ST1 = group this;";
 					description="OPFOR Sniper Team 1 Sniper";
 				};
 			};
@@ -5505,7 +5505,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_ENG1_FTL";
-					init="GrpCSAT_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ENG1 = group this;";
 					description="OPFOR Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
@@ -5517,7 +5517,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_ENG1_A1";
-					init="GrpCSAT_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ENG1 = group this;";
 					description="OPFOR Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
@@ -5529,7 +5529,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_ENG1_A2";
-					init="GrpCSAT_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ENG1 = group this;";
 					description="OPFOR Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
@@ -5541,7 +5541,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitCSAT_ENG1_A3";
-					init="GrpCSAT_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
+					init="GrpCSAT_ENG1 = group this;";
 					description="OPFOR Engineer Team 1 Assistant (Mines)";
 				};
 			};
@@ -5563,7 +5563,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitCSAT_DT1_TL";
-					init="GrpCSAT_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpCSAT_DT1 = group this;";
 					description="OPFOR Diver Team 1 Team Leader";
 				};
 				class Item1
@@ -5576,7 +5576,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_DT1_D1";
-					init="GrpCSAT_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpCSAT_DT1 = group this;";
 					description="OPFOR Diver Team 1 Diver";
 				};
 				class Item2
@@ -5589,7 +5589,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_DT1_D2";
-					init="GrpCSAT_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpCSAT_DT1 = group this;";
 					description="OPFOR Diver Team 1 Diver";
 				};
 				class Item3
@@ -5602,7 +5602,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitCSAT_DT1_D3";
-					init="GrpCSAT_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpCSAT_DT1 = group this;";
 					description="OPFOR Diver Team 1 Diver";
 				};
 			};
@@ -5622,7 +5622,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
 				};
 				class Item1
@@ -5633,7 +5633,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
 				};
 				class Item2
@@ -5644,7 +5644,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
 				};
 				class Item3
@@ -5655,7 +5655,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
 				};
 			};
@@ -5677,7 +5677,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_AG";
-					init="GrpNATO_MMG1 = group this; [""mmgag"",this] call f_fnc_assignGear;      ";
+					init="GrpNATO_MMG1 = group this;      ";
 					description="BLUFOR Medium MG Team 1 Spotter";
 				};
 				class Item1
@@ -5689,7 +5689,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_G";
-					init="GrpNATO_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_MMG1 = group this; ";
 					description="BLUFOR Medium MG Team 1 Gunner";
 				};
 			};
@@ -5711,7 +5711,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_HMG1_AG";
-					init="GrpNATO_HMG1 = group this; [""hmgag"",this] call f_fnc_assignGear;      ";
+					init="GrpNATO_HMG1 = group this;      ";
 					description="BLUFOR Heavy MG Team 1 Spotter";
 				};
 				class Item1
@@ -5723,7 +5723,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_HMG1_G";
-					init="GrpNATO_HMG1 = group this; [""hmgg"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_HMG1 = group this; ";
 					description="BLUFOR Heavy MG Team 1 Gunner";
 				};
 			};
@@ -5745,7 +5745,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MAT1_AG";
-					init="GrpNATO_MAT1 = group this; [""matag"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_MAT1 = group this; ";
 					description="BLUFOR Medium AT Team 1 Spotter";
 				};
 				class Item1
@@ -5758,7 +5758,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MAT1_G";
-					init="GrpNATO_MAT1 = group this; [""matg"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_MAT1 = group this; ";
 					description="BLUFOR Medium AT Team 1 Gunner";
 				};
 			};
@@ -5780,7 +5780,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_HAT1_AG";
-					init="GrpNATO_HAT1 = group this; [""hatag"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_HAT1 = group this; ";
 					description="BLUFOR Heavy AT Team 1 Spotter";
 				};
 				class Item1
@@ -5793,7 +5793,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_HAT1_G";
-					init="GrpNATO_HAT1 = group this; [""hatg"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_HAT1 = group this; ";
 					description="BLUFOR Heavy AT Team 1 Gunner";
 				};
 			};
@@ -5815,7 +5815,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MTR1_AG";
-					init="GrpNATO_MTR1 = group this; [""mtrag"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_MTR1 = group this; ";
 					description="BLUFOR Mortar Team 1 Spotter";
 				};
 				class Item1
@@ -5828,7 +5828,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MTR1_G";
-					init="GrpNATO_MTR1 = group this; [""mtrg"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_MTR1 = group this; ";
 					description="BLUFOR Mortar Team 1 Gunner";
 				};
 			};
@@ -5850,7 +5850,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_MSAM1_AG";
-					init="GrpNATO_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_MSAM1 = group this; ";
 					description="BLUFOR Medium SAM Team 1 Spotter";
 				};
 				class Item1
@@ -5863,7 +5863,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_MSAM1_G";
-					init="GrpNATO_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_MSAM1 = group this; ";
 					description="BLUFOR Medium SAM Team 1 Gunner";
 				};
 			};
@@ -5885,7 +5885,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_HSAM1_AG";
-					init="GrpNATO_HSAM1 = group this; [""hsamag"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_HSAM1 = group this; ";
 					description="BLUFOR Heavy SAM Team 1 Spotter";
 				};
 				class Item1
@@ -5898,7 +5898,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_HSAM1_G";
-					init="GrpNATO_HSAM1 = group this; [""hsamg"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_HSAM1 = group this; ";
 					description="BLUFOR Heavy SAM Team 1 Gunner";
 				};
 			};
@@ -5920,7 +5920,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_ST1_SP";
-					init="GrpNATO_ST1 = group this; [""sp"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_ST1 = group this; ";
 					description="BLUFOR Sniper Team 1 Spotter";
 				};
 				class Item1
@@ -5933,7 +5933,7 @@ class Mission
 					skill=0.60000002;
 					health=0.99000001;
 					text="UnitNATO_ST1_SN";
-					init="GrpNATO_ST1 = group this; [""sn"",this] call f_fnc_assignGear; ";
+					init="GrpNATO_ST1 = group this; ";
 					description="BLUFOR Sniper Team 1 Sniper";
 				};
 			};
@@ -5955,7 +5955,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_FTL";
-					init="GrpNATO_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					init="GrpNATO_ENG1 = group this;";
 					description="BLUFOR Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
@@ -5967,7 +5967,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A1";
-					init="GrpNATO_ENG1 = group this; [""eng"",this] call f_fnc_assignGear;";
+					init="GrpNATO_ENG1 = group this;";
 					description="BLUFOR Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
@@ -5979,7 +5979,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A2";
-					init="GrpNATO_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
+					init="GrpNATO_ENG1 = group this;";
 					description="BLUFOR Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
@@ -5991,7 +5991,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_ENG1_A3";
-					init="GrpNATO_ENG1 = group this; [""engm"",this] call f_fnc_assignGear;";
+					init="GrpNATO_ENG1 = group this;";
 					description="BLUFOR Engineer Team 1 Assistant (Mines)";
 				};
 			};
@@ -6013,7 +6013,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitNATO_DT1_TL";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpNATO_DT1 = group this;";
 					description="BLUFOR Diver Team 1 Team Leader";
 				};
 				class Item1
@@ -6026,7 +6026,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DT1_D1";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpNATO_DT1 = group this;";
 					description="BLUFOR Diver Team 1 Diver";
 				};
 				class Item2
@@ -6039,7 +6039,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DT1_D2";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpNATO_DT1 = group this;";
 					description="BLUFOR Diver Team 1 Diver";
 				};
 				class Item3
@@ -6052,7 +6052,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitNATO_DT1_D3";
-					init="GrpNATO_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpNATO_DT1 = group this;";
 					description="BLUFOR Diver Team 1 Diver";
 				};
 			};
@@ -6072,7 +6072,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR Join In Progress";
 				};
 				class Item1
@@ -6083,7 +6083,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR Join In Progress";
 				};
 				class Item2
@@ -6094,7 +6094,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR Join In Progress";
 				};
 				class Item3
@@ -6105,7 +6105,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR Join In Progress";
 				};
 			};
@@ -6128,7 +6128,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_MMG1_AG";
-					init="GrpAAF_MMG1 = group this; [""mmgag"",this] call f_fnc_assignGear;  ";
+					init="GrpAAF_MMG1 = group this;  ";
 					description="INDFOR Medium MG Team 1 Spotter";
 				};
 				class Item1
@@ -6140,7 +6140,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_MMG1_G";
-					init="GrpAAF_MMG1 = group this; [""mmgg"",this] call f_fnc_assignGear;  ";
+					init="GrpAAF_MMG1 = group this;  ";
 					description="INDFOR Medium MG Team 1 Gunner";
 				};
 			};
@@ -6163,7 +6163,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_HMG1_AG";
-					init="GrpAAF_HMG1 = group this; [""hmgag"",this] call f_fnc_assignGear;  ";
+					init="GrpAAF_HMG1 = group this;  ";
 					description="INDFOR Heavy MG Team 1 Spotter";
 				};
 				class Item1
@@ -6175,7 +6175,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_HMG1_G";
-					init="GrpAAF_HMG1 = group this; [""hmgg"",this] call f_fnc_assignGear;  ";
+					init="GrpAAF_HMG1 = group this;  ";
 					description="INDFOR Heavy MG Team 1 Gunner";
 				};
 			};
@@ -6197,7 +6197,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_MAT1_AG";
-					init="GrpAAF_MAT1 = group this; [""matag"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_MAT1 = group this; ";
 					description="INDFOR Medium AT Team 1 Spotter";
 				};
 				class Item1
@@ -6209,7 +6209,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_MAT1_G";
-					init="GrpAAF_MAT1 = group this; [""matg"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_MAT1 = group this; ";
 					description="INDFOR Medium AT Team 1 Gunner";
 				};
 			};
@@ -6231,7 +6231,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_HAT1_AG";
-					init="GrpAAF_HAT1 = group this; [""hatag"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_HAT1 = group this; ";
 					description="INDFOR Heavy AT Team 1 Spotter";
 				};
 				class Item1
@@ -6243,7 +6243,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_HAT1_G";
-					init="GrpAAF_HAT1 = group this; [""hatg"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_HAT1 = group this; ";
 					description="INDFOR Heavy AT Team 1 Gunner";
 				};
 			};
@@ -6265,7 +6265,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_MTR1_AG";
-					init="GrpAAF_MTR1 = group this; [""mtrag"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_MTR1 = group this; ";
 					description="INDFOR Mortar Team 1 Spotter";
 				};
 				class Item1
@@ -6277,7 +6277,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_MTR1_G";
-					init="GrpAAF_MTR1 = group this; [""mtrg"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_MTR1 = group this; ";
 					description="INDFOR Mortar Team 1 Gunner";
 				};
 			};
@@ -6299,7 +6299,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_MSAM1_AG";
-					init="GrpAAF_MSAM1 = group this; [""msamag"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_MSAM1 = group this; ";
 					description="INDFOR Medium SAM Team 1 Spotter";
 				};
 				class Item1
@@ -6311,7 +6311,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_MSAM1_G";
-					init="GrpAAF_MSAM1 = group this; [""msamg"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_MSAM1 = group this; ";
 					description="INDFOR Medium SAM Team 1 Gunner";
 				};
 			};
@@ -6333,7 +6333,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_HSAM1_AG";
-					init="GrpAAF_HSAM1 = group this; [""hsamag"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_HSAM1 = group this; ";
 					description="INDFOR Heavy SAM Team 1 Spotter";
 				};
 				class Item1
@@ -6345,7 +6345,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_HSAM1_G";
-					init="GrpAAF_HSAM1 = group this; [""hsamg"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_HSAM1 = group this; ";
 					description="INDFOR Heavy SAM Team 1 Gunner";
 				};
 			};
@@ -6367,7 +6367,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_ST1_SP";
-					init="GrpAAF_ST1 = group this; [""sp"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_ST1 = group this; ";
 					description="INDFOR Sniper Team 1 Spotter";
 				};
 				class Item1
@@ -6379,7 +6379,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_ST1_SN";
-					init="GrpAAF_ST1 = group this; [""sn"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_ST1 = group this; ";
 					description="INDFOR Sniper Team 1 Sniper";
 				};
 			};
@@ -6400,7 +6400,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="UnitAAF_ENG1_FTL";
-					init="GrpAAF_ENG1 = group this; [""eng"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_ENG1 = group this; ";
 					description="INDFOR Engineer Team 1 Leader (Demo)";
 				};
 				class Item1
@@ -6412,7 +6412,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_ENG1_A1";
-					init="GrpAAF_ENG1 = group this; [""eng"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_ENG1 = group this; ";
 					description="INDFOR Engineer Team 1 Assistant (Demo)";
 				};
 				class Item2
@@ -6424,7 +6424,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_ENG1_A2";
-					init="GrpAAF_ENG1 = group this; [""engm"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_ENG1 = group this; ";
 					description="INDFOR Engineer Team 1 Assistant (Mines)";
 				};
 				class Item3
@@ -6436,7 +6436,7 @@ class Mission
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitAAF_ENG1_A3";
-					init="GrpAAF_ENG1 = group this; [""engm"",this] call f_fnc_assignGear; ";
+					init="GrpAAF_ENG1 = group this; ";
 					description="INDFOR Engineer Team 1 Assistant (Mines)";
 				};
 			};
@@ -6458,7 +6458,7 @@ class Mission
 					rank="SERGEANT";
 					skill=0.60000002;
 					text="UnitAAF_DT1_TL";
-					init="GrpAAF_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpAAF_DT1 = group this;";
 					description="INDFOR Diver Team 1 Team Leader";
 				};
 				class Item1
@@ -6471,7 +6471,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_DT1_D1";
-					init="GrpAAF_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpAAF_DT1 = group this;";
 					description="INDFOR Diver Team 1 Diver";
 				};
 				class Item2
@@ -6484,7 +6484,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_DT1_D2";
-					init="GrpAAF_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpAAF_DT1 = group this;";
 					description="INDFOR Diver Team 1 Diver";
 				};
 				class Item3
@@ -6497,7 +6497,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitAAF_DT1_D3";
-					init="GrpAAF_DT1 = group this; [""div"",this] call f_fnc_assignGear ";
+					init="GrpAAF_DT1 = group this;";
 					description="INDFOR Diver Team 1 Diver";
 				};
 			};
@@ -6517,7 +6517,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR Join In Progress";
 				};
 				class Item1
@@ -6528,7 +6528,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR Join In Progress";
 				};
 				class Item2
@@ -6539,7 +6539,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR Join In Progress";
 				};
 				class Item3
@@ -6550,7 +6550,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR Join In Progress";
 				};
 			};
@@ -6570,7 +6570,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR Join In Progress";
 				};
 				class Item1
@@ -6581,7 +6581,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR Join In Progress";
 				};
 				class Item2
@@ -6592,7 +6592,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR Join In Progress";
 				};
 				class Item3
@@ -6603,7 +6603,7 @@ class Mission
 					vehicle="B_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpNATO_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpNATO_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="BLUFOR Join In Progress";
 				};
 			};
@@ -6623,7 +6623,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR Join In Progress";
 				};
 				class Item1
@@ -6634,7 +6634,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR Join In Progress";
 				};
 				class Item2
@@ -6645,7 +6645,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR Join In Progress";
 				};
 				class Item3
@@ -6656,7 +6656,7 @@ class Mission
 					vehicle="I_soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpAAF_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpAAF_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="INDFOR Join In Progress";
 				};
 			};
@@ -6676,7 +6676,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
 				};
 				class Item1
@@ -6687,7 +6687,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
 				};
 				class Item2
@@ -6698,7 +6698,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
 				};
 				class Item3
@@ -6709,7 +6709,7 @@ class Mission
 					vehicle="O_Soldier_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					init="GrpCSAT_JIP = group this; [""r"",this] call f_fnc_assignGear; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
+					init="GrpCSAT_JIP = group this; nul = [this] execVM ""f\JIP\f_JIP_addReinforcementOptionsAction.sqf"";";
 					description="OPFOR Join In Progress";
 				};
 			};
@@ -6937,7 +6937,6 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR1";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item23
 		{
@@ -6947,7 +6946,6 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR2";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item24
 		{
@@ -6957,7 +6955,6 @@ class Mission
 			vehicle="I_Truck_02_transport_F";
 			skill=0.60000002;
 			text="VehAAF_TR3";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item25
 		{
@@ -6967,7 +6964,6 @@ class Mission
 			vehicle="I_MRAP_03_F";
 			skill=0.60000002;
 			text="VehAAF_CAR1";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item26
 		{
@@ -6977,7 +6973,6 @@ class Mission
 			vehicle="B_MRAP_01_F";
 			skill=0.60000002;
 			text="VehNato_CAR1";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item27
 		{
@@ -6987,7 +6982,6 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR1";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item28
 		{
@@ -6997,7 +6991,6 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR2";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item29
 		{
@@ -7007,7 +7000,6 @@ class Mission
 			vehicle="B_Truck_01_transport_F";
 			skill=0.60000002;
 			text="VehNato_TR3";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item30
 		{
@@ -7017,7 +7009,6 @@ class Mission
 			vehicle="O_MRAP_02_F";
 			skill=0.60000002;
 			text="VehCSAT_CAR1";
-			init="[""v_car"",this] call f_fnc_assignGear";
 		};
 		class Item31
 		{
@@ -7027,7 +7018,6 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR1";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item32
 		{
@@ -7037,7 +7027,6 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR2";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item33
 		{
@@ -7047,7 +7036,6 @@ class Mission
 			vehicle="O_Truck_03_transport_F";
 			skill=0.60000002;
 			text="VehCSAT_TR3";
-			init="[""v_tr"",this] call f_fnc_assignGear";
 		};
 		class Item34
 		{
@@ -7057,7 +7045,6 @@ class Mission
 			vehicle="I_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateAAF_A";
-			init="[""crate_med"",this,""ind_f""] call f_fnc_assignGear";
 		};
 		class Item35
 		{
@@ -7067,7 +7054,6 @@ class Mission
 			vehicle="I_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateAAF_B";
-			init="[""crate_med"",this,""ind_f""] call f_fnc_assignGear";
 		};
 		class Item36
 		{
@@ -7077,7 +7063,6 @@ class Mission
 			vehicle="I_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateAAF_C";
-			init="[""crate_med"",this,""ind_f""] call f_fnc_assignGear";
 		};
 		class Item37
 		{
@@ -7087,7 +7072,6 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateNATO_A";
-			init="[""crate_med"",this,""blu_f""] call f_fnc_assignGear";
 		};
 		class Item38
 		{
@@ -7097,7 +7081,6 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateNATO_B";
-			init="[""crate_med"",this,""blu_f""] call f_fnc_assignGear";
 		};
 		class Item39
 		{
@@ -7107,7 +7090,6 @@ class Mission
 			vehicle="B_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateNATO_C";
-			init="[""crate_med"",this,""blu_f""] call f_fnc_assignGear";
 		};
 		class Item40
 		{
@@ -7117,7 +7099,6 @@ class Mission
 			vehicle="O_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateCSAT_A";
-			init="[""crate_med"",this,""opf_f""] call f_fnc_assignGear";
 		};
 		class Item41
 		{
@@ -7127,7 +7108,6 @@ class Mission
 			vehicle="O_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateCSAT_B";
-			init="[""crate_med"",this,""opf_f""] call f_fnc_assignGear";
 		};
 		class Item42
 		{
@@ -7137,7 +7117,6 @@ class Mission
 			vehicle="O_supplyCrate_F";
 			skill=0.60000002;
 			text="CrateCSAT_C";
-			init="[""crate_med"",this,""opf_f""] call f_fnc_assignGear";
 		};
 		class Item43
 		{
@@ -7227,7 +7206,6 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="VehNATO_IFV1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item52
 		{
@@ -7237,7 +7215,6 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="VehNATO_IFV2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item53
 		{
@@ -7247,7 +7224,6 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="VehNATO_IFV3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item54
 		{
@@ -7257,7 +7233,6 @@ class Mission
 			vehicle="B_APC_Wheeled_01_cannon_F";
 			skill=0.60000002;
 			text="VehNATO_IFV4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item55
 		{
@@ -7267,7 +7242,6 @@ class Mission
 			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
 			text="VehNATO_APC1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item56
 		{
@@ -7277,7 +7251,6 @@ class Mission
 			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
 			text="VehNATO_APC2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item57
 		{
@@ -7287,7 +7260,6 @@ class Mission
 			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
 			text="VehNATO_APC3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item58
 		{
@@ -7297,7 +7269,6 @@ class Mission
 			vehicle="B_APC_Tracked_01_rcws_F";
 			skill=0.60000002;
 			text="VehNATO_APC4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item59
 		{
@@ -7308,7 +7279,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item60
 		{
@@ -7319,7 +7289,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item61
 		{
@@ -7330,7 +7299,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item62
 		{
@@ -7341,7 +7309,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_IFV4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item63
 		{
@@ -7352,7 +7319,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_APC1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item64
 		{
@@ -7363,7 +7329,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_APC2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item65
 		{
@@ -7374,7 +7339,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_APC3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item66
 		{
@@ -7385,7 +7349,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehCSAT_APC4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item67
 		{
@@ -7414,7 +7377,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item70
 		{
@@ -7425,7 +7387,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item71
 		{
@@ -7436,7 +7397,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item72
 		{
@@ -7447,7 +7407,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_IFV4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item73
 		{
@@ -7458,7 +7417,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_APC1";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item74
 		{
@@ -7469,7 +7427,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_APC2";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item75
 		{
@@ -7480,7 +7437,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_APC3";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item76
 		{
@@ -7491,7 +7447,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehAAF_APC4";
-			init="[""v_ifv"",this] call f_fnc_assignGear";
 		};
 		class Item77
 		{
