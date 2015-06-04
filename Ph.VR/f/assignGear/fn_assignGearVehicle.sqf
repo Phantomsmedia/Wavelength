@@ -95,3 +95,5 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
     };
     _theVehicle addWeaponCargoGlobal [_classname,_amt];
 } foreach _transportWeapons;
+
+_theVehicle setvariable ["f_var_assignGear_done", true,true];

@@ -124,6 +124,16 @@ class opf_f {
         backpack[] = {"O_UAV_01_backpack_F"}; /// randomized
         linkedItems[] += {"O_uavterminal"};
     };
+
+	class O_medic_F: O_Soldier_F {// Medic
+        //vest[] = {"rhsusf_iotv_ocp_medic"}; /// randomized
+        weapons[] = {EAST_CARBINE};
+        magazines[] = {EAST_CARBINE_MAG,EAST_SMOKE_WHITE};
+        backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14","ACE_earplugs"};
+    };
+	
+// ====================================================================================
+// Grunt Infantry	
 	
     class O_Soldier_TL_F: O_Soldier_F {// FTL
         weapons[] = {EAST_GLRIFLE};
@@ -157,13 +167,10 @@ class opf_f {
         launchers[] = {EAST_AT}; /// randomized
     };
 	
-    class O_medic_F: O_Soldier_F {// Medic
-        //vest[] = {"rhsusf_iotv_ocp_medic"}; /// randomized
-        weapons[] = {EAST_CARBINE};
-        magazines[] = {EAST_CARBINE_MAG,EAST_SMOKE_WHITE};
-        backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14","ACE_earplugs"};
-    };
-	
+
+// ====================================================================================
+// Support Infantry
+ 	
     class O_support_MG_F: O_Soldier_F {// MMG
         weapons[] = {EAST_MMG};
         magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
@@ -236,7 +243,10 @@ class opf_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
         attachments[] = {"optic_Hamr"};
     };
-	
+
+// ====================================================================================
+// Vehicle Infantry
+
     class O_Helipilot_F {// Pilot
         uniform[] = {"U_O_PilotCoveralls"};  /// randomized
         vest[] = {"V_TacVest_blk"}; /// randomized
