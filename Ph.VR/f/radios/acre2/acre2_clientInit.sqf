@@ -183,7 +183,7 @@ _unit spawn {
 	  	};
 	};
 
-	if (_groupChannelIndex == -1) then {
+	if (_groupChannelIndex == -1 && {_hasSR}) then {
 		player sideChat format["[F3 ACRE2] Warning: Unknown group for short-range channel defaults (%1)", _groupID];
 		_groupChannelIndex = 0;
 	};
