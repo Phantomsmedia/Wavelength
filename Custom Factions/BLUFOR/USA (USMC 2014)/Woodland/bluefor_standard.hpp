@@ -43,6 +43,8 @@ class blu_f {
     #define WEST_PISTOL "rhsusf_weap_m1911a1"
     #define WEST_PISTOL_MAG "rhsusf_mag_7x45acp_MHP:4"
 
+// ====================================================================================	
+	
     class Car {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
         TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
@@ -62,7 +64,9 @@ class blu_f {
         TransportMagazines[] = {};
     };
 
-
+// ====================================================================================
+// Leadership INF and Groupies
+	
     class B_Soldier_F {// rifleman
         uniform[] = {"rhs_uniform_FROG01_wd"};  /// randomized
         vest[] = {"rhsusf_spc"}; /// randomized
@@ -96,6 +100,10 @@ class blu_f {
         backpack[] = {"rhsusf_assault_eagleaiii_coy"}; /// randomized
         linkedItems[] += {"B_uavterminal"};
     };
+	
+// ====================================================================================
+// Grunt Infantry		
+	
     class B_Soldier_TL_F: B_Soldier_F {// FTL
         weapons[] = {WEST_GLRIFLE};
         headgear[] = {"rhsusf_mich_helmet_marpatwd"}; /// randomized
@@ -114,6 +122,11 @@ class blu_f {
         attachments[] = {"rhsusf_acc_ACOG_USMC"};
         linkedItems[] += {"Binocular"};
     };
+	
+    class B_Soldier_A_F: B_Soldier_AAR_F {// AAR
+
+    };	
+	
     class B_Soldier_LAT_F: B_Soldier_F {// RAT
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_AT_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2"};
@@ -125,13 +138,17 @@ class blu_f {
         magazines[] = {WEST_CARBINE_MAG,"rhs_mag_an_m8hc:6"};
         backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"};
     };
+	
+// ====================================================================================
+// Support Infantry 	
+	
     class B_support_MG_F: B_Soldier_F {// MMG
         weapons[] = {WEST_MMG};
         magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,"rhs_mag_m67:1","rhs_mag_an_m8hc:2"};
         handguns[] = {WEST_PISTOL}; /// randomized
         attachments[] = {};
     };
-    class B_Soldier_A_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
+    class B_Soldier_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
     };
@@ -188,6 +205,10 @@ class blu_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
         attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15side","RH_m110sd_t"};
     };
+	
+// ====================================================================================
+// Vehicle Infantry	
+	
     class B_Helipilot_F {// Pilot
         uniform[] = {"rhs_uniform_FROG01_wd"};  /// randomized
         vest[] = {"rhsusf_spc"}; /// randomized
@@ -201,6 +222,12 @@ class blu_f {
     class B_helicrew_F: B_Helipilot_F { // Pilot
 
     };
+	
+    class B_Pilot_F: B_Helipilot_F { // Pilot
+        uniform[] = {"U_B_PilotCoveralls"};  /// randomized
+        headgear[] = {"H_PilotHelmetFighter_B"}; /// randomized
+    };	
+	
     class B_crew_F {// Crew
         uniform[] = {"rhs_uniform_FROG01_wd"};  // randomized
         vest[] = {"rhsusf_spc"}; // randomized
@@ -228,4 +255,29 @@ class blu_f {
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {WEST_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
+	
+// ====================================================================================
+// Special Infantry
+
+    class B_diver_TL_F: B_Soldier_TL_F {// Diver TL
+        uniform[] = {"U_B_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherB"}; /// randomized
+        backpack[] = {"B_Carryall_cbr"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB"};
+        linkedItems[] += {"G_B_Diving"};
+
+    }
+
+    class B_diver_F: B_Soldier_F {// Diver
+        uniform[] = {"U_B_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherB"}; /// randomized
+        backpack[] = {"B_Carryall_cbr"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB"};
+        linkedItems[] += {"G_B_Diving"};
+
+    }	
 };

@@ -125,6 +125,9 @@ class opf_f {
         linkedItems[] += {"O_uavterminal"};
     };
 	
+// ====================================================================================
+// Grunt Infantry		
+	
     class O_Soldier_TL_F: O_Soldier_F {// FTL
         weapons[] = {EAST_GLRIFLE};
         //headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
@@ -151,6 +154,10 @@ class opf_f {
         linkedItems[] += {"Binocular"};
     };
 	
+    class O_Soldier_A_F: O_Soldier_AAR_F {// AAR
+
+    };	
+	
     class O_Soldier_LAT_F: O_Soldier_F {// RAT
         weapons[] = {EAST_CARBINE};
         magazines[] = {EAST_CARBINE_MAG,EAST_AT_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
@@ -164,13 +171,16 @@ class opf_f {
         backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14","ACE_earplugs"};
     };
 	
+// ====================================================================================
+// Support Infantry	
+	
     class O_support_MG_F: O_Soldier_F {// MMG
         weapons[] = {EAST_MMG};
         magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
         handguns[] = {EAST_PISTOL}; /// randomized
     };
 	
-    class O_Soldier_A_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
+    class O_Soldier_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {EAST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
     };
@@ -237,6 +247,9 @@ class opf_f {
         attachments[] = {"rhs_acc_pso1m2"};
     };
 	
+// ====================================================================================
+// Vehicle Infantry	
+	
     class O_Helipilot_F {// Pilot
         uniform[] = {"rhs_uniform_df15"};  /// randomized
         vest[] = {"V_TacVest_blk"}; /// randomized
@@ -250,6 +263,15 @@ class opf_f {
         attachments[] = {};
     };
 	
+    class O_helicrew_F: O_Helipilot_F { // Pilot
+
+    };
+
+    class O_Pilot_F: O_Helipilot_F { // Pilot
+        uniform[] = {"U_O_PilotCoveralls"};  /// randomized
+        headgear[] = {"H_PilotHelmetFighter_O"}; /// randomized
+    };
+		
     class O_crew_F {// Crew
         headgear[] = {"rhs_uniform_flora_patchless_alt"}; /// randomized
         uniform[] = {"rhs_6b23_engineer"};  /// randomized
@@ -286,4 +308,30 @@ class opf_f {
         magazines[] = {EAST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
         attachments[] = {"rhs_acc_dtk"};
     };
+	
+// ====================================================================================
+// Special Infantry
+
+    class O_diver_TL_F: O_Soldier_TL_F {// Diver TL
+        uniform[] = {"U_O_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherIR"}; /// randomized
+        backpack[] = {"B_Carryall_mcamo"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo"};
+        linkedItems[] += {"G_O_Diving"};
+
+    }
+
+    class O_diver_F: O_Soldier_F {// Diver
+        uniform[] = {"U_O_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherIR"}; /// randomized
+        backpack[] = {"B_Carryall_mcamo"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo"};
+        linkedItems[] += {"G_O_Diving"};
+
+    }	
+	
 };
