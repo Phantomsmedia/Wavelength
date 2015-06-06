@@ -160,6 +160,10 @@ class blu_f {
         attachments[] = {"optic_Arco"};
         linkedItems[] += {"Binocular"};
     };
+
+    class B_Soldier_A_F: B_Soldier_AAR_F {// AAR
+
+    };
 	
     class B_Soldier_LAT_F: B_Soldier_F {// RAT
         weapons[] = {WEST_CARBINE};
@@ -176,7 +180,7 @@ class blu_f {
         attachments[] = {};
     };
 	
-    class B_Soldier_A_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
+    class B_Soldier_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
     };

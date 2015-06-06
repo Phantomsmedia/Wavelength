@@ -160,6 +160,10 @@ class opf_f {
         attachments[] = {"optic_Hamr"};
         linkedItems[] += {"Binocular"};
     };
+
+    class O_Soldier_A_F: O_Soldier_AAR_F {// AAR
+
+    };
 	
     class O_Soldier_LAT_F: O_Soldier_F {// RAT
         weapons[] = {EAST_CARBINE};
@@ -177,7 +181,7 @@ class opf_f {
         handguns[] = {EAST_PISTOL}; /// randomized
     };
 	
-    class O_Soldier_A_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
+    class O_Soldier_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {EAST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
     };

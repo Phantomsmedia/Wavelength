@@ -155,6 +155,10 @@ class ind_f {
         attachments[] = {"optic_MRCO"};
         linkeditems[] += {"Binocular"};
     };
+
+    class I_Soldier_A_F: I_Soldier_AAR_F {// AAR
+
+    };
 	
     class I_Soldier_LAT_F: I_Soldier_F {// RAT
         weapons[] = {IND_CARBINE};
@@ -174,7 +178,7 @@ class ind_f {
         handguns[] = {IND_PISTOL}; /// randomized
     };
 	
-    class I_Soldier_A_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
+    class I_Soldier_AMG_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
         backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         backpackItems[] += {IND_MMG_MAG};
         linkeditems[] += {"ACE_Vector"};
