@@ -88,9 +88,9 @@ f_radios_settings_acre2_sr_groups_blufor = [
 	["Attachment 5",  []],
 	["Attachment 6",  []],
 	["Attachment 7",  []],
-	["Attachment 8",  []],
-	["Attachment 9",  []],
-	["Attachment 10", []]
+	["Attachment 8",  ["ST1"]],
+	["Attachment 9",  ["DT1"]],
+	["Attachment 10", ["ENG1"]]
 ];
 
 f_radios_settings_acre2_sr_groups_opfor = f_radios_settings_acre2_sr_groups_blufor;
