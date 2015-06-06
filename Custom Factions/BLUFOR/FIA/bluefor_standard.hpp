@@ -160,6 +160,10 @@ class blu_f {
         attachments[] = {"optic_ACO_grn"};
         linkedItems[] += {"Binocular"};
     };
+
+    class B_Soldier_A_F: B_Soldier_AAR_F {// AAR
+
+    };
 	
     class B_Soldier_LAT_F: B_Soldier_F {// RAT
         weapons[] = {WEST_CARBINE};
@@ -176,7 +180,7 @@ class blu_f {
         attachments[] = {};
     };
 	
-    class B_Soldier_A_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
+    class B_Soldier_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
     };
@@ -261,6 +265,11 @@ class blu_f {
 
     };
 	
+    class B_Pilot_F: B_Helipilot_F { // Pilot
+        uniform[] = {"U_B_PilotCoveralls"};  /// randomized
+        headgear[] = {"H_PilotHelmetFighter_B"}; /// randomized
+    };	
+	
     class B_crew_F {// Crew
         uniform[] = {"U_BG_Guerrilla_6_1"};  // randomized
         vest[] = {"V_TacVest_oli"}; // randomized
@@ -292,4 +301,29 @@ class blu_f {
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {WEST_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
+//====================================================================================
+// Special Infantry
+
+    class B_diver_TL_F: B_Soldier_TL_F {// Diver TL
+        uniform[] = {"U_B_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherB"}; /// randomized
+        backpack[] = {"B_Carryall_cbr"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB"};
+        linkedItems[] += {"G_B_Diving"};
+
+    }
+
+    class B_diver_F: B_Soldier_F {// Diver
+        uniform[] = {"U_B_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherB"}; /// randomized
+        backpack[] = {"B_Carryall_cbr"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB"};
+        linkedItems[] += {"G_B_Diving"};
+
+    }
+	
 };
