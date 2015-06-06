@@ -259,6 +259,10 @@ class ind_f {
         backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
     };
+
+    class I_helicrew_F: I_Helipilot_F { // Pilot
+
+    };
 	
     class I_crew_F {// Crew
         uniform[] = {"U_I_CombatUniform"};  /// randomized

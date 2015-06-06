@@ -259,6 +259,10 @@ class opf_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
         attachments[] = {};
     };
+
+    class O_helicrew_F: O_Helipilot_F { // Pilot
+
+    };
 	
     class O_crew_F {// Crew
         headgear[] = {"H_HelmetCrew_O"}; /// randomized
