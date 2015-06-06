@@ -179,7 +179,7 @@ class ind_f {
         handguns[] = {IND_PISTOL}; /// randomized
     };
 	
-    class I_Soldier_AMG_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
+    class I_Support_AMG_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
         backpack[] = {"B_Carryall_oli","B_Carryall_khk"}; /// randomized
         backpackItems[] += {IND_MMG_MAG};
         linkeditems[] += {"ACE_Vector"};

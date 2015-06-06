@@ -148,7 +148,7 @@ class blu_f {
         handguns[] = {WEST_PISTOL}; /// randomized
         attachments[] = {};
     };
-    class B_Soldier_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
+    class B_Support_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
     };

@@ -181,7 +181,7 @@ class opf_f {
         handguns[] = {EAST_PISTOL}; /// randomized
     };
 	
-    class O_Soldier_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
+    class O_Support_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
 		backpack[] = {"B_Carryall_oli","B_Carryall_mcamo"};
         backpackItems[] += {EAST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
