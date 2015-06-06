@@ -40,11 +40,6 @@ class F // Defines the "owner"
 	    class assignGearMan {};
 	    class assignGearVehicle {};
     };
-	class setGroupID
-	{
-		file = "f\setGroupID";
-		class setGroupID{};
-	};
 	class missionConditions
 	{
 		file = "f\missionConditions";

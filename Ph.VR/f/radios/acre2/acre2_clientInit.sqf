@@ -161,7 +161,7 @@ _unit spawn {
 	_hasLR = ((!isNil "_radioLR") && {_radioLR != ""});
 	_hasExtra = ((!isNil "_radioExtra") && {_radioExtra != ""});
 
-	_groupID = groupID (group _this);
+	_groupID = (group _this) getVariable ["F3_GroupID", "-1"];
 	_groupIDSplit = [_groupID, " "] call bis_fnc_splitString;
 
 	_groupChannelIndex = -1;
@@ -183,7 +183,7 @@ _unit spawn {
 	  	};
 	};
 
-	if (_groupChannelIndex == -1) then {
+	if (_groupChannelIndex == -1 && {_hasSR}) then {
 		player sideChat format["[F3 ACRE2] Warning: Unknown group for short-range channel defaults (%1)", _groupID];
 		_groupChannelIndex = 0;
 	};

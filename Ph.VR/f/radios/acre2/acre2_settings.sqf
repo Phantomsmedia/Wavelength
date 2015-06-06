@@ -56,7 +56,7 @@ f_radios_settings_acre2_sr_groups_blufor = [
 	["Alpha Net",     ["ASL", "A1", "A2", "A3"]],
 	["Bravo Net",     ["BSL", "B1", "B2", "B3"]],
 	["Charlie Net",   ["CSL", "C1", "C2", "C3"]],
-	["Command Net",   ["CO", "DC", "PLTHQ"]],
+	["Command Net",   ["CO", "DC", "PLT"]],
 	["Delta Net",     ["DSL", "D1", "D2", "D3"]],
 	["Echo Net",      ["ESL", "E1", "E2", "E3"]],
 	["Foxtrot Net",   ["FSL", "F1", "F2", "F3"]],
@@ -102,7 +102,7 @@ f_radios_settings_acre2_lr_groups_blufor = [
 	["Charlie Net", []],
 	["Command Net",
 		[
-			"CO", "DC", "PLTHQ",
+			"CO", "DC", "PLT",
 		    "ASL", "BSL", "CSL", "DSL", "ESL", "FSL",
 		    "TH1", "TH2", "TH3", "TH4", "TH5", "TH6", "TH7", "TH8",
 		    "AH1", "FW1",
