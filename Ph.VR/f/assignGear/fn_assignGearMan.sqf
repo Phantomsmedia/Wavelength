@@ -20,6 +20,7 @@ _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
 
 if(!isClass(_path)) exitWith {
     // _unit setVariable ["f_var_assignGear_done", true, true];
+    diag_log format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
     systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
 };
 
