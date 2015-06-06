@@ -1,4 +1,4 @@
-F3 Readme.md :)
+F3 Readme.md
 
 MISSION README
 ==============
