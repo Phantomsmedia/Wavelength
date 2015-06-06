@@ -263,6 +263,11 @@ class ind_f {
     class I_helicrew_F: I_Helipilot_F { // Pilot
 
     };
+
+    class I_Pilot_F: I_Helipilot_F { // Pilot
+        uniform[] = {"U_I_PilotCoveralls"};  /// randomized
+        headgear[] = {"H_PilotHelmetFighter_I"}; /// randomized
+    };
 	
     class I_crew_F {// Crew
         uniform[] = {"U_I_CombatUniform"};  /// randomized
@@ -295,4 +300,30 @@ class ind_f {
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {IND_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
+
+// ====================================================================================
+// Special Infantry
+
+    class I_diver_TL_F: I_Soldier_TL_F {// Diver TL
+        uniform[] = {"U_I_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherIA"}; /// randomized
+        backpack[] = {"B_Carryall_oli"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"};
+        linkedItems[] += {"G_I_Diving"};
+
+    }
+
+    class I_diver_F: I_Soldier_F {// Diver
+        uniform[] = {"U_I_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherIA"}; /// randomized
+        backpack[] = {"B_Carryall_oli"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"};
+        linkedItems[] += {"G_I_Diving"};
+
+    }
+
 };
