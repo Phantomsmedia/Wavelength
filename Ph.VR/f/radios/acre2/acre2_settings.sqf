@@ -15,7 +15,7 @@ f_radios_settings_acre2_disableFrequencySplit = FALSE;
 // Set a list of units that get a short wave
 // if its nil, that means all units get a radio
 // empty array means that noone gets
-//f_radios_settings_acre2_shortRange = ["ftl","ar","aar","rat","dm","gren","r","car","smg"];
+//f_radios_settings_acre2_shortRange = ["dc","ftl","ar","aar","rat","dm","gren","r","car","smg"];
 f_radios_settings_acre2_shortRange = [];
 
 // Set the list of units that get a long range
@@ -47,6 +47,7 @@ f_radios_settings_acre2_language_blufor = ["english"];
 f_radios_settings_acre2_language_opfor = ["russian"];
 f_radios_settings_acre2_language_indfor = ["arabic"];
 
+// ====================================================================================
 // Channel names and group defaults
 // first item in the array will correspond to the first channel
 // item definition: ["CHANNEL NAME", ["GROUP1 NAME", "GROUP2 NAME"]]
