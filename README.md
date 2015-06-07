@@ -1,3 +1,11 @@
+==================================================
+Wavelength
+==================================================
+
+WL is a derivative of the [F3](http://ferstaberinde.com/f3/en//index.php?title=Main_Page) work. The content we have edited mainly consists of minor edits to gear, addition of many more factions from mods, and tweaks to the code, as well as a few minor additions. You can track F3's development at https://github.com/ferstaberinde/F3. 
+
+==================================================
+
 F3 Readme.md, along with edits for this specific framework version.
 
 MISSION README
