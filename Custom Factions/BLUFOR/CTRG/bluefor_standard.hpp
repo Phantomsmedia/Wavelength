@@ -183,7 +183,7 @@ class blu_f {
     class B_Support_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
-        Items[] += {"ACRE_PRC148"};
+        items[] += {"ACRE_PRC148"};
     };
 	
     class B_soldier_AT_F: B_Soldier_F {// MAT Gunner
@@ -210,7 +210,7 @@ class blu_f {
     class B_Soldier_AAA_F: B_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] = {WEST_SAM_MAG};
         linkedItems[] += {"ACE_Vector"};
-        Items[] += {"ACRE_PRC148"};
+        items[] += {"ACRE_PRC148"};
     };
 	
     class B_support_Mort_F: B_Soldier_F {// Mortar Gunner

@@ -182,7 +182,7 @@ class ind_f {
         backpack[] = {"B_TacticalPack_blk"}; /// randomized
         backpackItems[] += {IND_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
-        Items[] += {"ACRE_PRC148"};
+        items[] += {"ACRE_PRC148"};
     };
 	
     class I_soldier_AT_F: I_Soldier_F {// MAT Gunner
@@ -197,7 +197,7 @@ class ind_f {
         backpack[] = {"B_TacticalPack_blk"};
         backpackItems[] += {IND_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
-        Items[] += {"ACRE_PRC148"};
+        items[] += {"ACRE_PRC148"};
     };
 	
     class I_soldier_AA_F: I_Soldier_F {// SAM Gunner
@@ -211,7 +211,7 @@ class ind_f {
     class I_Soldier_AAA_F: I_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] = {IND_SAM_MAG};
         linkedItems[] += {"ACE_Vector"};
-        Items[] += {"ACRE_PRC148"};
+        items[] += {"ACRE_PRC148"};
         backpack[] = {"B_TacticalPack_blk"};
     };
 	
@@ -225,7 +225,7 @@ class ind_f {
     class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
         backpack[] = {"I_Mortar_01_support_F"}; /// randomized
         linkedItems[] += {"ACE_Vector"};
-        Items[] += {"ACRE_PRC148"};
+        items[] += {"ACRE_PRC148"};
     };
 	
     class I_spotter_F {// Spotter
