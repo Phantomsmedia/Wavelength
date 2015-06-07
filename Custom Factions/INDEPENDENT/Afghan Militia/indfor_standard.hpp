@@ -182,7 +182,8 @@ class ind_f {
     class I_Support_AMG_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
         backpack[] = {"B_Carryall_oli","B_Carryall_khk"}; /// randomized
         backpackItems[] += {IND_MMG_MAG};
-        linkeditems[] += {"ACE_Vector"};
+        linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class I_soldier_AT_F: I_Soldier_F {// MAT Gunner
@@ -196,7 +197,8 @@ class ind_f {
     class I_Soldier_AAT_F: I_Soldier_F {// MAT Spotter/Ammo Bearer
         backpack[] = {"rhs_rpg_empty"};
         backpackItems[] += {IND_MAT_MAG};
-        linkeditems[] += {"ACE_Vector"};
+        linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class I_soldier_AA_F: I_Soldier_F {// SAM Gunner
@@ -210,7 +212,8 @@ class ind_f {
     class I_Soldier_AAA_F: I_Soldier_F {// SAM Spotter/Ammo Bearer
         backpack[] = {"B_Carryall_oli","B_Carryall_khk"};
 		backpackItems[] = {IND_SAM_MAG};
-        linkeditems[] += {"ACE_Vector"};
+        linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class I_support_Mort_F: I_Soldier_F {// Mortar Gunner
@@ -222,8 +225,8 @@ class ind_f {
 	
     class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
         backpack[] = {"I_Mortar_01_support_F"}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
-        linkeditems[] += {"ACE_Vector"};
+        linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class I_spotter_F {// Spotter

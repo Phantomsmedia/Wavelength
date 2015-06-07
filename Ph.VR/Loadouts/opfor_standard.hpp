@@ -178,12 +178,13 @@ class opf_f {
     class O_support_MG_F: O_Soldier_F {// MMG
         weapons[] = {EAST_MMG};
         magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
-        handguns[] = {EAST_PISTOL}; /// randomized
+        handguns[] = {EAST_PISTOL}; /// randomized		
     };
 	
-    class O_Soldier_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
+    class O_support_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {EAST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};		
     };
 	
     class O_soldier_AT_F: O_Soldier_F {// MAT Gunner
@@ -199,6 +200,8 @@ class opf_f {
         backpack[] = {"B_Carryall_ocamo"};
         backpackItems[] += {EAST_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
+	
     };
 	
     class O_soldier_AA_F: O_Soldier_F {// SAM Gunner
@@ -211,19 +214,21 @@ class opf_f {
     class O_Soldier_AAA_F: O_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] += {EAST_SAM_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};			
     };
 	
     class O_support_Mort_F: O_Soldier_F {// Mortar Gunner
         weapons[] = {EAST_CARBINE};
         magazines[] = {EAST_CARBINE_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
-        backpack[] = {"O_Mortar_01_weapon_F"}; /// randomized
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACRE_PRC148"};
+        backpack[] = {"O_Mortar_01_weapon_F"}; /// randomized		
     };
 	
     class O_support_AMort_F: O_Soldier_F {// Assistant Mortar
         backpack[] = {"O_Mortar_01_support_F"}; /// randomized
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};			
     };
 	
     class O_spotter_F {// Spotter
@@ -235,6 +240,7 @@ class opf_f {
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","LaserDesignator"};
         attachments[] = {"optic_Hamr"};
+        items[] += {"ACRE_PRC148"};		
     };
 	
     class O_sniper_F {// Sniper

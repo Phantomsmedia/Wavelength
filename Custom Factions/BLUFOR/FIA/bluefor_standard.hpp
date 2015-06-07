@@ -183,6 +183,7 @@ class blu_f {
     class B_Support_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class B_soldier_AT_F: B_Soldier_F {// MAT Gunner
@@ -196,7 +197,7 @@ class blu_f {
     class B_Soldier_AAT_F: B_Soldier_F {// MAT Spotter/Ammo Bearer
         backpackItems[] = {WEST_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACRE_PRC148"};
     };
 	
     class B_soldier_AA_F: B_Soldier_F {// SAM Gunner
@@ -209,6 +210,7 @@ class blu_f {
     class B_Soldier_AAA_F: B_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] = {WEST_SAM_MAG};
         linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class B_support_Mort_F: B_Soldier_F {// Mortar Gunner
@@ -221,7 +223,7 @@ class blu_f {
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
         backpack[] = {"B_Mortar_01_support_F"}; /// randomized
         linkedItems[] += {"ACE_Vector"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs","ACRE_PRC148"};
     };
 	
     class B_spotter_F {// Spotter

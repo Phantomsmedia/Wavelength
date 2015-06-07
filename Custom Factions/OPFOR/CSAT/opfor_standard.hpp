@@ -184,6 +184,7 @@ class opf_f {
     class O_Support_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {EAST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_soldier_AT_F: O_Soldier_F {// MAT Gunner
@@ -199,6 +200,7 @@ class opf_f {
         backpack[] = {"B_Carryall_ocamo"};
         backpackItems[] += {EAST_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_soldier_AA_F: O_Soldier_F {// SAM Gunner
@@ -211,6 +213,7 @@ class opf_f {
     class O_Soldier_AAA_F: O_Soldier_F {// SAM Spotter/Ammo Bearer
         backpackItems[] += {EAST_SAM_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_support_Mort_F: O_Soldier_F {// Mortar Gunner
@@ -224,6 +227,7 @@ class opf_f {
         backpack[] = {"O_Mortar_01_support_F"}; /// randomized
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_spotter_F {// Spotter
