@@ -31,21 +31,7 @@ _radio = player createDiaryRecord ["diary", ["Radios","
 <br/>
 Radio List For Long Range (152 - 117F)
 <br/> 
-Channel 1 - Alpha Squad Lead and Fireteam Leads
-<br/> 
-Channel 2 - Bravo Squad Lead and Fireteam Leads
-<br/>
-Channel 3 - Charlie Squad Lead and Fireteam Leads
-<br/>
-Channel 4 - PLT. HQ, Squad Leads, Support
-<br/>
-Channel 5 - Delta Squad Lead and Fireteam Leads
-<br/>
-Channel 6 - Echo Squad Lead and Fireteam Leads
-<br/>
-Channel 7 - Foxtrot Squad Lead and Fireteam Leads
-<br/>
-Channel 8 - 
+Channel 1 -  PLT. HQ, Squad Leads, Support
  <br/><br/>
 Radio List For Short Range (343) - GI and FTLs
 <br/>
@@ -61,7 +47,7 @@ Channel 5 - Echo Squad
 <br/> 
 Channel 6 - Foxtrot Squad
 <br/><br/>
-Support Channels Intra-Element (152)
+Support Channels Intra-Element (343)
 <br/>
 From 10 to 19 for Air Support
 <br/>
@@ -70,6 +56,7 @@ From 20 to 29 for Armor Support
 From 30 to 39 for Infantry Support (MMG etc)
 <br/>
 "]];
+
 
 // ====================================================================================
 
