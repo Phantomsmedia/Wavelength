@@ -226,7 +226,6 @@ class opf_f {
 	
     class O_support_AMort_F: O_Soldier_F {// Assistant Mortar
         backpack[] = {"O_Mortar_01_support_F"}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         linkedItems[] += {"ACE_Vector"};
         items[] += {"ACRE_PRC148"};			
     };
@@ -237,7 +236,6 @@ class opf_f {
         vest[] = {"V_Chestrig_khk"}; /// randomized
         weapons[] = {EAST_SPOTTER}; /// randomized
         magazines[] = {EAST_SPOTTER_MAG,EAST_SMOKE_WHITE};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs", "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","LaserDesignator"};
         attachments[] = {"optic_Hamr"};
         items[] += {"ACRE_PRC148"};		
