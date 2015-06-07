@@ -124,6 +124,9 @@ class opf_f {
         linkedItems[] += {"O_uavterminal"};
     };
 	
+// ====================================================================================
+// Grunt Infantry		
+	
     class O_Soldier_TL_F: O_Soldier_F {// FTL
         weapons[] = {EAST_GLRIFLE};
         //headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
@@ -150,6 +153,10 @@ class opf_f {
         linkedItems[] += {"Binocular"};
     };
 	
+    class O_Soldier_A_F: O_Soldier_AAR_F {// AAR
+
+    };	
+	
     class O_Soldier_LAT_F: O_Soldier_F {// RAT
         weapons[] = {EAST_CARBINE};
         magazines[] = {EAST_CARBINE_MAG,EAST_AT_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
@@ -164,6 +171,9 @@ class opf_f {
         backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14","ACE_earplugs"};
     };
 	
+// ====================================================================================
+// Support Infantry	
+	
     class O_support_MG_F: O_Soldier_F {// MMG
         weapons[] = {EAST_MMG};
 		backpack[] = {"B_Carryall_oli","B_Carryall_mcamo"};
@@ -171,10 +181,11 @@ class opf_f {
         handguns[] = {EAST_PISTOL}; /// randomized
     };
 	
-    class O_Soldier_A_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
+    class O_Support_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
 		backpack[] = {"B_Carryall_oli","B_Carryall_mcamo"};
         backpackItems[] += {EAST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_soldier_AT_F: O_Soldier_F {// MAT Gunner
@@ -190,6 +201,7 @@ class opf_f {
         backpack[] = {"rhs_rpg_empty"};
         backpackItems[] += {EAST_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_soldier_AA_F: O_Soldier_F {// SAM Gunner
@@ -204,6 +216,7 @@ class opf_f {
 		backpack[] = {"B_Carryall_oli","B_Carryall_mcamo"};
         backpackItems[] += {EAST_SAM_MAG};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_support_Mort_F: O_Soldier_F {// Mortar Gunner
@@ -217,6 +230,7 @@ class opf_f {
         backpack[] = {"O_Mortar_01_support_F"}; /// randomized
         items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
         linkedItems[] += {"ACE_Vector"};
+        items[] += {"ACRE_PRC148"};	
     };
 	
     class O_spotter_F {// Spotter
@@ -241,6 +255,9 @@ class opf_f {
         attachments[] = {"rhs_acc_pso1m2"};
     };
 	
+// ====================================================================================
+// Vehicle Infantry	
+	
     class O_Helipilot_F {// Pilot
         //uniform[] = {"U_O_PilotCoveralls"};  /// randomized
         //vest[] = {"V_TacVest_blk"}; /// randomized
@@ -253,6 +270,15 @@ class opf_f {
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
         attachments[] = {};
     };
+	
+    class O_helicrew_F: O_Helipilot_F { // Pilot
+
+    };
+
+    class O_Pilot_F: O_Helipilot_F { // Pilot
+        uniform[] = {"U_O_PilotCoveralls"};  /// randomized
+        headgear[] = {"H_PilotHelmetFighter_O"}; /// randomized
+    };	
 	
     class O_crew_F {// Crew
         headgear[] = {"H_HelmetCrew_O"}; /// randomized
@@ -289,4 +315,29 @@ class opf_f {
         magazines[] = {EAST_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
         attachments[] = {};
     };
+	
+// ====================================================================================
+// Special Infantry
+
+    class O_diver_TL_F: O_Soldier_TL_F {// Diver TL
+        uniform[] = {"U_O_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherIR"}; /// randomized
+        backpack[] = {"B_Carryall_mcamo"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo"};
+        linkedItems[] += {"G_O_Diving"};
+
+    }
+
+    class O_diver_F: O_Soldier_F {// Diver
+        uniform[] = {"U_O_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherIR"}; /// randomized
+        backpack[] = {"B_Carryall_mcamo"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo"};
+        linkedItems[] += {"G_O_Diving"};
+
+    }	
 };
