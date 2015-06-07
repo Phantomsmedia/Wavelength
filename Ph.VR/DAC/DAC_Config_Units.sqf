@@ -204,23 +204,23 @@ _Unit_Pool_A = [];
 case 4:
 {
 _Unit_Pool_S = [
-	"O_crew_F","O_Helipilot_F","O_recon_TL_F", 	//Vehicle crewman, Pilot, Group Leader
-	"O_recon_F", 								//Recon Scout
-	"O_recon_LAT_F", 							//Recon Scout AT
-	"O_recon_JTAC_F", 							//Recon JTAC
-	"O_Soldier_LAT_F", 							//Rifleman AT
-	"O_recon_exp_F", 							//Explosives Specialist
-	"O_recon_medic_F", 							//Recon Medic
-	"O_recon_M_F" 								//Recon Marksman
+	"O_crew_F","O_Helipilot_F","O_recon_TL_F", //Vehicle crewman, Pilot, Group Leader
+	"O_recon_F", //Recon Scout
+	"O_recon_LAT_F", //Recon Scout AT
+	"O_recon_JTAC_F", //Recon JTAC
+	"O_Soldier_LAT_F", //Rifleman AT
+	"O_recon_exp_F", //Explosives Specialist
+	"O_recon_medic_F", //Recon Medic
+	"O_recon_M_F" //Recon Marksman
 ];
 _Unit_Pool_V = [
-	"O_Quadbike_F",								//Quadbike
-	"O_MRAP_02_F" 								//Ifrit
+	"O_Quadbike_F",	//Quadbike
+	"O_MRAP_02_F" //Ifrit
 ];
 _Unit_Pool_T = [];
 _Unit_Pool_A = [
-	"O_Heli_Light_02_F", 						//ORCA Transport armed
-	"O_Heli_Light_02_unarmed_F" 				//ORCA Transport Black unarmed
+	"O_Heli_Light_02_F", //ORCA Transport armed
+	"O_Heli_Light_02_unarmed_F" //ORCA Transport Black unarmed
 ];
 };
 //-------------------------------------------------------------------------------------------------
@@ -228,23 +228,23 @@ _Unit_Pool_A = [
 case 5:
 {
 _Unit_Pool_S = [
-	"B_crew_F","B_Helipilot_F","B_recon_TL_F",	//Vehicle crewman, Pilot, Group Leader
-	"B_recon_F", 								//Recon Scout
-	"B_recon_LAT_F",							//Recon Scout AT
-	"B_recon_JTAC_F", 							//Recon JTAC
-	"B_Soldier_LAT_F", 							//Rifleman AT
-	"B_recon_exp_F", 							//Explosives Specialist
-	"B_recon_medic_F",							//Recon Medic
-	"B_recon_M_F" 								//Recon Marksman
+	"B_crew_F","B_Helipilot_F","B_recon_TL_F", //Vehicle crewman, Pilot, Group Leader
+	"B_recon_F", //Recon Scout
+	"B_recon_LAT_F", //Recon Scout AT
+	"B_recon_JTAC_F", //Recon JTAC
+	"B_Soldier_LAT_F", //Rifleman AT
+	"B_recon_exp_F", //Explosives Specialist
+	"B_recon_medic_F", //Recon Medic
+	"B_recon_M_F" //Recon Marksman
 ];
 _Unit_Pool_V = [
-	"B_Quadbike_F", 							//Quadbike
-	"B_MRAP_02_F" 								//Ifrit
+	"B_Quadbike_F", //Quadbike
+	"B_MRAP_02_F" //Ifrit
 ];
 _Unit_Pool_T = [];
 _Unit_Pool_A = [
-	"B_Heli_Light_01_armed_F", 					//AH9
-	"B_Heli_Light_01_F" 						//MH9
+	"B_Heli_Light_01_armed_F", //AH9
+	"B_Heli_Light_01_F" //MH9
 ];
 };
 //-------------------------------------------------------------------------------------------------
@@ -252,18 +252,18 @@ _Unit_Pool_A = [
 case 6:
 {
 _Unit_Pool_S = [
-	"I_crew_F","I_Helipilot_F","I_recon_TL_F", 	//Vehicle crewman, Pilot, Group Leader
-	"I_recon_F", 								//Recon Scout
-	"I_recon_LAT_F", 							//Recon Scout AT
-	"I_recon_JTAC_F",  							//Recon JTAC
-	"I_Soldier_LAT_F", 							//Rifleman AT 
-	"I_recon_exp_F", 							//Explosives Specialist
-	"I_recon_medic_F", 							//Recon Medic
-	"I_recon_M_F" 								//Recon Marksman
+	"I_crew_F","I_Helipilot_F","I_recon_TL_F", //Vehicle crewman, Pilot, Group Leader
+	"I_recon_F", //Recon Scout
+	"I_recon_LAT_F", //Recon Scout AT
+	"I_recon_JTAC_F",  //Recon JTAC
+	"I_Soldier_LAT_F", //Rifleman AT 
+	"I_recon_exp_F", //Explosives Specialist
+	"I_recon_medic_F", //Recon Medic
+	"I_recon_M_F" //Recon Marksman
 ];
 _Unit_Pool_V = [
-	"I_Quadbike_F",  							//Quadbike
-	"I_MRAP_03_F" 								//Strider
+	"I_Quadbike_F", //Quadbike
+	"I_MRAP_03_F" //Strider
 ];
 _Unit_Pool_T = [];
 _Unit_Pool_A = [];
@@ -347,8 +347,8 @@ _Unit_Pool_S = [
 	"rhs_msv_driver_armored", "rhs_msv_combatcrew", "rhs_msv_sergeant",
 	"rhs_msv_rifleman",
 	"rhs_msv_grenadier",
-	"rhs_msv_at",						//grenadier RPG
-	"rhs_msv_strelok_rpg_assist",		//grenadier RPG assistant
+	"rhs_msv_at", //grenadier RPG
+	"rhs_msv_strelok_rpg_assist", //grenadier RPG assistant
 	"rhs_msv_aa",
 	"rhs_msv_efreitor",
 	"rhs_msv_engineer",
@@ -356,19 +356,19 @@ _Unit_Pool_S = [
 	"rhs_msv_machinegunner_assistant",
 	"rhs_msv_marksman",
 	"rhs_msv_medic",
-	"rhs_msv_LAT",						//rifleman RPG-26
-	"rhs_msv_RShG2"						//rifleman RShG2
+	"rhs_msv_LAT", //rifleman RPG-26
+	"rhs_msv_RShG2" //rifleman RShG2
 	
 ];
 _Unit_Pool_V = [
-	"rhs_tigr_msv",						//MRAP	
+	"rhs_tigr_msv", //MRAP	
 	"RHS_UAZ_MSV_01",
 	"rhs_uaz_open_MSV_01",
-	"RHS_BM21_MSV_01",					//rocket truck
+	"RHS_BM21_MSV_01", //rocket truck
 	"rhs_gaz66_msv",
 	"rhs_gaz66o_msv",
-	"rhs_gaz66_r142_msv",				//radio truck
-	"rhs_gaz66_ap2_msv",				//ambulance
+	"rhs_gaz66_r142_msv", //radio truck
+	"rhs_gaz66_ap2_msv", //ambulance
 	"RHS_Ural_MSV_01",
 	"rhs_gaz66_repair_msv",
 	"RHS_Ural_Fuel_MSV_01"		
@@ -382,7 +382,7 @@ _Unit_Pool_T = [
 	"rhs_bmp1d_msv",
 	"rhs_bmp1k_msv",
 	"rhs_bmp1p_msv",
-	"rhs_brm1k_msv",					//para
+	"rhs_brm1k_msv", //para
 	"rhs_bmp2_msv",
 	"rhs_bmp2e_msv",
 	"rhs_bmp2d_msv",
@@ -399,17 +399,17 @@ case 11:
 _Unit_Pool_S = [
 	"rhsusf_army_ocp_combatcrewman", "rhsusf_army_ocp_helipilot", "rhsusf_army_ocp_teamleader",
 	"rhsusf_army_ocp_rifleman",
-	"rhsusf_army_ocp_riflemanl",		//light
-	"rhsusf_army_ocp_riflemanat",		//M136
-	"rhsusf_army_ocp_grenadier",		//grenadier
+	"rhsusf_army_ocp_riflemanl", //light
+	"rhsusf_army_ocp_riflemanat", //M136
+	"rhsusf_army_ocp_grenadier", //grenadier
 	"rhsusf_army_ocp_marksman",
 	"rhsusf_army_ocp_medic",
 	"rhsusf_army_ocp_machinegunner",
-	"rhsusf_army_ocp_machinegunnera",	//MG assistant
+	"rhsusf_army_ocp_machinegunnera", //MG assistant
 	"rhsusf_army_ocp_engineer",			
 	"rhsusf_army_ocp_autorifleman",
-	"rhsusf_army_ocp_aa",				//Stinger
-	"rhsusf_army_ocp_javelin"			//Javelin
+	"rhsusf_army_ocp_aa", //Stinger
+	"rhsusf_army_ocp_javelin" //Javelin
 
 ];
 _Unit_Pool_V = [								
