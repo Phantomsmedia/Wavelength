@@ -33,7 +33,7 @@ _input = _this select 0;
 _texture = _unknown;
 _color = [1,1,1,1];
 switch true do {
-    case (_input in ["COY","1PLT","2PLT","CO","DC"]): {
+    case (_input in ["COY","1PLT","2PLT","PLT","CO","DC"]): {
     	_texture = _hq;
     	_color = _yellow;
     };
@@ -165,12 +165,22 @@ switch true do {
     case (_input in ["IFV7","IFV8"]):
     {
         _texture = _mech;
-        _color = _orange ;
+        _color = _orange;
     };
     case (_input in ["TNK1","TNK2","TNK3"]):
     {
         _texture = _armor;
         _color = _red;
+    };
+    case (_input in ["APC1","APC2"]):
+    {
+        _texture = _mech;
+        _color = _green;
+    };
+    case (_input in ["APC3","APC4"]):
+    {
+        _texture = _mech;
+        _color = _orange;
     };
     case (_input in ["TH1","TH2"]):
     {
@@ -192,19 +202,19 @@ switch true do {
         _texture = _air;
         _color = _orange ;
     };
-    case (_input in ["AH1","AH2","AH3"]):
+    case (_input in ["AH1","AH2","AH3","FW1"]):
     {
         _texture = _air;
         _color = _orange ;
     };
-    case (_input in ["COM","DCM","P1M","P2M","AM","BM","CM","DM","EM","FM"]):
+    case (_input in ["COM","DCM","P1M","P2M","PM","AM","BM","CM","DM","EM","FM"]):
     {
         _texture = _med;
         _color = _pink;
         _size = [16,16];
     };
-	
-	
+
+
     case (_input)
 };
 [_texture,_color,_size];

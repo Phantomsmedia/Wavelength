@@ -15,7 +15,7 @@ f_radios_settings_acre2_disableFrequencySplit = FALSE;
 // Set a list of units that get a short wave
 // if its nil, that means all units get a radio
 // empty array means that noone gets
-//f_radios_settings_acre2_shortRange = ["ftl","ar","aar","rat","dm","gren","r","car","smg"];
+//f_radios_settings_acre2_shortRange = ["dc","ftl","ar","aar","rat","dm","gren","r","car","smg"];
 f_radios_settings_acre2_shortRange = [];
 
 // Set the list of units that get a long range
@@ -47,6 +47,7 @@ f_radios_settings_acre2_language_blufor = ["english"];
 f_radios_settings_acre2_language_opfor = ["russian"];
 f_radios_settings_acre2_language_indfor = ["arabic"];
 
+// ====================================================================================
 // Channel names and group defaults
 // first item in the array will correspond to the first channel
 // item definition: ["CHANNEL NAME", ["GROUP1 NAME", "GROUP2 NAME"]]
@@ -56,7 +57,7 @@ f_radios_settings_acre2_sr_groups_blufor = [
 	["Alpha Net",     ["ASL", "A1", "A2", "A3"]],
 	["Bravo Net",     ["BSL", "B1", "B2", "B3"]],
 	["Charlie Net",   ["CSL", "C1", "C2", "C3"]],
-	["Command Net",   ["CO", "DC", "PLTHQ"]],
+	["Command Net",   ["CO", "DC", "PLT"]],
 	["Delta Net",     ["DSL", "D1", "D2", "D3"]],
 	["Echo Net",      ["ESL", "E1", "E2", "E3"]],
 	["Foxtrot Net",   ["FSL", "F1", "F2", "F3"]],
@@ -88,9 +89,9 @@ f_radios_settings_acre2_sr_groups_blufor = [
 	["Attachment 5",  []],
 	["Attachment 6",  []],
 	["Attachment 7",  []],
-	["Attachment 8",  []],
-	["Attachment 9",  []],
-	["Attachment 10", []]
+	["Attachment 8",  ["ST1"]],
+	["Attachment 9",  ["DT1"]],
+	["Attachment 10", ["ENG1"]]
 ];
 
 f_radios_settings_acre2_sr_groups_opfor = f_radios_settings_acre2_sr_groups_blufor;
@@ -102,7 +103,7 @@ f_radios_settings_acre2_lr_groups_blufor = [
 	["Charlie Net", []],
 	["Command Net",
 		[
-			"CO", "DC", "PLTHQ",
+			"CO", "DC", "PLT",
 		    "ASL", "BSL", "CSL", "DSL", "ESL", "FSL",
 		    "TH1", "TH2", "TH3", "TH4", "TH5", "TH6", "TH7", "TH8",
 		    "AH1", "FW1",

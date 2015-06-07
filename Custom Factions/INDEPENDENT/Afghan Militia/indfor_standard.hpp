@@ -86,6 +86,7 @@ class ind_f {
     };
 
 // ====================================================================================
+// Leadership INF and Groupies
 
     class I_Soldier_F {// rifleman
         uniform[] = {"LOP_U_AM_Fatigue_01","LOP_U_AM_Fatigue_02","LOP_U_AM_Fatigue_03","LOP_U_AM_Fatigue_04"};  /// randomized
@@ -123,6 +124,10 @@ class ind_f {
         linkedItems[] += {"I_uavterminal"};
     };
 	
+// ====================================================================================
+// Grunt Infantry	
+	
+	
     class I_Soldier_TL_F: I_Soldier_F {// FTL
         weapons[] = {IND_GLRIFLE};
         //headgear[] = {"H_HelmetIA"}; /// randomized
@@ -145,6 +150,10 @@ class ind_f {
         linkeditems[] += {"Binocular"};
     };
 	
+    class I_Soldier_A_F: I_Soldier_AAR_F {// AAR
+
+    };	
+	
     class I_Soldier_LAT_F: I_Soldier_F {// RAT
         weapons[] = {IND_CARBINE};
         backpack[] = {"rhs_rpg_empty"}; /// randomized
@@ -160,6 +169,9 @@ class ind_f {
         backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14","ACE_earplugs"};
     };
 	
+// ====================================================================================
+// Support Infantry	
+	
     class I_support_MG_F: I_Soldier_F {// MMG
         weapons[] = {IND_MMG};
         backpack[] = {"B_Carryall_oli","B_Carryall_khk"}; /// randomized
@@ -167,10 +179,11 @@ class ind_f {
         handguns[] = {IND_PISTOL}; /// randomized
     };
 	
-    class I_Soldier_A_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
+    class I_Support_AMG_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
         backpack[] = {"B_Carryall_oli","B_Carryall_khk"}; /// randomized
         backpackItems[] += {IND_MMG_MAG};
-        linkeditems[] += {"ACE_Vector"};
+        linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class I_soldier_AT_F: I_Soldier_F {// MAT Gunner
@@ -184,7 +197,8 @@ class ind_f {
     class I_Soldier_AAT_F: I_Soldier_F {// MAT Spotter/Ammo Bearer
         backpack[] = {"rhs_rpg_empty"};
         backpackItems[] += {IND_MAT_MAG};
-        linkeditems[] += {"ACE_Vector"};
+        linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class I_soldier_AA_F: I_Soldier_F {// SAM Gunner
@@ -198,7 +212,8 @@ class ind_f {
     class I_Soldier_AAA_F: I_Soldier_F {// SAM Spotter/Ammo Bearer
         backpack[] = {"B_Carryall_oli","B_Carryall_khk"};
 		backpackItems[] = {IND_SAM_MAG};
-        linkeditems[] += {"ACE_Vector"};
+        linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class I_support_Mort_F: I_Soldier_F {// Mortar Gunner
@@ -210,8 +225,8 @@ class ind_f {
 	
     class I_support_AMort_F: I_Soldier_F {// Assistant Mortar
         backpack[] = {"I_Mortar_01_support_F"}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_earplugs"};
-        linkeditems[] += {"ACE_Vector"};
+        linkedItems[] += {"ACE_Vector"};
+        Items[] += {"ACRE_PRC148"};
     };
 	
     class I_spotter_F {// Spotter
@@ -238,6 +253,9 @@ class ind_f {
         attachments[] = {"rhs_acc_pso1m2"};
     };
 	
+// ====================================================================================
+// Vehicle Infantry	
+	
     class I_Helipilot_F {// Pilot
         //uniform[] = {"U_I_pilotCoveralls"};  /// randomized
         //vest[] = {"V_TacVest_blk"}; /// randomized
@@ -249,6 +267,15 @@ class ind_f {
         backpackItems[] += {"ACE_key_indp","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
     };
+	
+    class I_helicrew_F: I_Helipilot_F { // Pilot
+
+    };
+
+    class I_Pilot_F: I_Helipilot_F { // Pilot
+        uniform[] = {"U_I_PilotCoveralls"};  /// randomized
+        headgear[] = {"H_PilotHelmetFighter_I"}; /// randomized
+    };	
 	
     class I_crew_F {// Crew
         //uniform[] = {"U_I_CombatUniform"};  /// randomized
@@ -281,4 +308,30 @@ class ind_f {
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
         magazines[] = {IND_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
+	
+// ====================================================================================
+// Special Infantry
+
+    class I_diver_TL_F: I_Soldier_TL_F {// Diver TL
+        uniform[] = {"U_I_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherIA"}; /// randomized
+        backpack[] = {"B_Carryall_oli"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"};
+        linkedItems[] += {"G_I_Diving"};
+
+    }
+
+    class I_diver_F: I_Soldier_F {// Diver
+        uniform[] = {"U_I_Wetsuit"};  /// randomized
+        vest[] = {"V_RebreatherIA"}; /// randomized
+        backpack[] = {"B_Carryall_oli"};
+        headgear[] = {};
+
+        backpackItems[] += {"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"};
+        linkedItems[] += {"G_I_Diving"};
+
+    }		
+	
 };

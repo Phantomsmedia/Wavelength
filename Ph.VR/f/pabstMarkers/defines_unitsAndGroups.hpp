@@ -1,7 +1,6 @@
 #define UNIT_MARKERS [ \
     ["UnitNATO_COY_M","COM"], \
-    ["UnitNATO_1PLT_M","P1M"], \
-    ["UnitNATO_2PLT_M","P2M"], \
+    ["UnitNATO_PLT_M","PM"], \
     ["UnitNATO_ASL_M","AM"], \
     ["UnitNATO_BSL_M","BM"], \
     ["UnitNATO_CSL_M","CM"], \
@@ -9,36 +8,22 @@
     ["UnitNATO_ESL_M","EM"], \
     ["UnitNATO_FSL_M","FM"], \
     \
-    ["UnitCSAT_CO_M","COM"], \
-    ["UnitCSAT_DC_M","DCM"], \
-    ["UnitCSAT_ASL_M","AM"], \
-    ["UnitCSAT_BSL_M","BM"], \
-    ["UnitCSAT_CSL_M","CM"], \
+    ["UnitOPFOR_COY_M","COM"], \
+    ["UnitOPFOR_PLT_M","PM"], \
+    ["UnitOPFOR_ASL_M","AM"], \
+    ["UnitOPFOR_BSL_M","BM"], \
+    ["UnitOPFOR_CSL_M","CM"], \
     \
-    ["UnitAAF_CO_M","COM"], \
-    ["UnitAAF_DC_M","DCM"], \
-    ["UnitAAF_ASL_M","AM"], \
-    ["UnitAAF_BSL_M","BM"], \
-    ["UnitAAF_CSL_M","CM"], \
-    \
-    ["UnitMSV_ASL_VD","AV"], \
-    ["UnitMSV_BSL_VD","BV"], \
-    ["UnitMSV_CSL_VD","CV"], \
-    ["UnitMSV_DSL_VD","DV"], \
-    ["UnitMSV_ESL_VD","EV"], \
-    ["UnitMSV_FSL_VD","FV"], \
-    ["UnitMSV_ASL_SR","ASR"], \
-    ["UnitMSV_BSL_SR","BSR"], \
-    ["UnitMSV_CSL_SR","CSR"], \
-    ["UnitMSV_DSL_SR","DSR"], \
-    ["UnitMSV_ESL_SR","ESR"], \
-    ["UnitMSV_FSL_SR","FSR"] \
+    ["UnitIND_COY_M","COM"], \
+    ["UnitIND_PLT_M","PM"], \
+    ["UnitIND_ASL_M","AM"], \
+    ["UnitIND_BSL_M","BM"], \
+    ["UnitIND_CSL_M","CM"] \
     ]
     
 #define WEST_GROUPS [ \
     ["UnitNATO_COY", "NATO COY -"], \
-    ["UnitNATO_1PLT", "NATO 1PLT -"], \
-    ["UnitNATO_2PLT", "NATO 2PLT -"], \
+    ["UnitNATO_PLT", "NATO PLT -"], \
     \
     ["UnitNATO_ASL", "NATO ASL -"], \
     ["UnitNATO_A1", "NATO A1 -"], \
@@ -73,9 +58,15 @@
     ["UnitNATO_MMG1", "NATO MMG1 -"], \
     ["UnitNATO_MMG2", "NATO MMG2 -"], \
     ["UnitNATO_MMG3", "NATO MMG3 -"], \
+    ["UnitNATO_HMG1", "NATO HMG1 -"], \
+    ["UnitNATO_HMG2", "NATO HMG2 -"], \
+    ["UnitNATO_HMG3", "NATO HMG3 -"], \
     ["UnitNATO_MAT1", "NATO MAT1 -"], \
     ["UnitNATO_MAT2", "NATO MAT2 -"], \
     ["UnitNATO_MAT3", "NATO MAT3 -"], \
+    ["UnitNATO_HAT1", "NATO HAT1 -"], \
+    ["UnitNATO_HAT2", "NATO HAT2 -"], \
+    ["UnitNATO_HAT3", "NATO HAT3 -"], \
     ["UnitNATO_MTR1", "NATO MTR1 -"], \
     ["UnitNATO_MSAM1", "NATO MSAM1 -"], \
     ["UnitNATO_HSAM1", "NATO HSAM1 -"], \
@@ -92,6 +83,10 @@
     ["UnitNATO_IFV7", "NATO IFV7 -"], \
     ["UnitNATO_IFV8", "NATO IFV8 -"], \
     ["UnitNATO_TNK1", "NATO TNK1 -"], \
+    ["UnitNATO_APC1", "NATO APC1 -"], \
+    ["UnitNATO_APC2", "NATO APC2 -"], \
+    ["UnitNATO_APC3", "NATO APC3 -"], \
+    ["UnitNATO_APC4", "NATO APC4 -"], \
     \
     ["UnitNATO_TH1", "NATO TH1 -"], \
     ["UnitNATO_TH2", "NATO TH2 -"], \
@@ -102,7 +97,8 @@
     ["UnitNATO_TH7", "NATO TH7 -"], \
     ["UnitNATO_TH8", "NATO TH8 -"], \
     ["UnitNATO_AH1", "NATO AH1 -"], \
-    ["UnitNATO_AH2", "NATO AH2 -"] \
+    ["UnitNATO_AH2", "NATO AH2 -"], \
+    ["UnitNATO_FW1", "NATO FW1 -"] \
     ]\
     // ====================================================================================
 
@@ -110,7 +106,7 @@
 // Automatically assigns intelligible names to groups
 #define EAST_GROUPS [ \
     ["UnitOPFOR_CO", "OPFOR CO -"], \
-    ["UnitOPFOR_DC", "OPFOR DC -"], \
+    ["UnitOPFOR_PLT", "OPFOR PLT -"], \
     \
     ["UnitOPFOR_ASL", "OPFOR ASL -"], \
     ["UnitOPFOR_A1", "OPFOR A1 -"], \
@@ -129,8 +125,12 @@
     \
     ["UnitOPFOR_MMG1", "OPFOR MMG1 -"], \
     ["UnitOPFOR_MMG2", "OPFOR MMG2 -"], \
+    ["UnitOPFOR_HMG1", "OPFOR HMG1 -"], \
+    ["UnitOPFOR_HMG2", "OPFOR HMG2 -"], \
     ["UnitOPFOR_MAT1", "OPFOR MAT1 -"], \
     ["UnitOPFOR_MAT2", "OPFOR MAT2 -"], \
+    ["UnitOPFOR_HAT1", "OPFOR HAT1 -"], \
+    ["UnitOPFOR_HAT2", "OPFOR HAT2 -"], \
     ["UnitOPFOR_MTR1", "OPFOR MTR1 -"], \
     ["UnitOPFOR_MSAM1", "OPFOR MSAM1 -"], \
     ["UnitOPFOR_HSAM1", "OPFOR HSAM1 -"], \
@@ -147,6 +147,10 @@
     ["UnitOPFOR_IFV7", "OPFOR IFV7 -"], \
     ["UnitOPFOR_IFV8", "OPFOR IFV8 -"], \
     ["UnitOPFOR_TNK1", "OPFOR TNK1 -"], \
+    ["UnitOPFOR_APC1", "OPFOR APC1 -"], \
+    ["UnitOPFOR_APC2", "OPFOR APC2 -"], \
+    ["UnitOPFOR_APC3", "OPFOR APC3 -"], \
+    ["UnitOPFOR_APC4", "OPFOR APC4 -"], \
     \
     ["UnitOPFOR_TH1", "OPFOR TH1 -"], \
     ["UnitOPFOR_TH2", "OPFOR TH2 -"], \
@@ -157,58 +161,12 @@
     ["UnitOPFOR_TH7", "OPFOR TH7 -"], \
     ["UnitOPFOR_TH8", "OPFOR TH8 -"], \
     ["UnitOPFOR_AH1", "OPFOR AH1 -"], \
-    \
-    ["UnitMSV_CO", "MSV COY -"], \
-    ["UnitMSV_Plt1CO", "MSV 1PLT -"], \
-    ["UnitMSV_Plt2CO", "MSV 2PLT -"], \
-    ["UnitMSV_Plt3CO", "MSV 3PLT -"], \
-    \
-    ["UnitMSV_ASL", "MSV ASL -"], \
-    ["UnitMSV_BSL", "MSV BSL -"], \
-    ["UnitMSV_CSL", "MSV CSL -"], \
-    ["UnitMSV_DSL", "MSV DSL -"], \
-    ["UnitMSV_ESL", "MSV ESL -"], \
-    ["UnitMSV_FSL", "MSV FSL -"], \
-    \
-    ["UnitMSV_FOR", "MSV RECON -"], \
-    \
-    ["UnitMSV_MMG1", "MSV MMG1 -"], \
-    ["UnitMSV_MMG2", "MSV MMG2 -"], \
-    ["UnitMSV_MMG3", "MSV MMG3 -"], \
-    ["UnitMSV_MAT1", "MSV MAT1 -"], \
-    ["UnitMSV_MAT2", "MSV MAT2 -"], \
-    ["UnitMSV_MAT3", "MSV MAT3 -"], \
-    ["UnitMSV_MTR1", "MSV MTR1 -"], \
-    ["UnitMSV_MSAM1", "MSV MSAM1 -"], \
-    ["UnitMSV_HSAM1", "MSV HSAM1 -"], \
-    ["UnitMSV_ST1", "MSV ST1 -"], \
-    ["UnitMSV_DT1", "MSV DT1 -"], \
-    ["UnitMSV_ENG1", "MSV ENG1 -"], \
-    \
-    ["UnitMSV_IFV1", "MSV IFV1 -"], \
-    ["UnitMSV_IFV2", "MSV IFV2 -"], \
-    ["UnitMSV_IFV3", "MSV IFV3 -"], \
-    ["UnitMSV_IFV4", "MSV IFV4 -"], \
-    ["UnitMSV_IFV5", "MSV IFV5 -"], \
-    ["UnitMSV_IFV6", "MSV IFV6 -"], \
-    ["UnitMSV_IFV7", "MSV IFV7 -"], \
-    ["UnitMSV_IFV8", "MSV IFV8 -"], \
-    ["UnitMSV_TNK1", "MSV TNK1 -"], \
-    \
-    ["UnitMSV_TH1", "MSV TH1 -"], \
-    ["UnitMSV_TH2", "MSV TH2 -"], \
-    ["UnitMSV_TH3", "MSV TH3 -"], \
-    ["UnitMSV_TH4", "MSV TH4 -"], \
-    ["UnitMSV_TH5", "MSV TH5 -"], \
-    ["UnitMSV_TH6", "MSV TH6 -"], \
-    ["UnitMSV_TH7", "MSV TH7 -"], \
-    ["UnitMSV_TH8", "MSV TH8 -"], \
-    ["UnitMSV_AH1", "MSV AH1 -"] \
+    ["UnitOPFOR_FW1", "OPFOR FW1 -"] \
     ]
 
 #define INDP_GROUPS [ \
     ["UnitIND_CO", "IND CO -"], \
-    ["UnitIND_DC", "IND DC -"], \
+    ["UnitIND_PLT", "IND PLT -"], \
     \
     ["UnitIND_ASL", "IND ASL -"], \
     ["UnitIND_A1", "IND A1 -"], \
@@ -227,8 +185,12 @@
     \
     ["UnitIND_MMG1", "IND MMG1 -"], \
     ["UnitIND_MMG2", "IND MMG2 -"], \
+    ["UnitIND_HMG1", "IND HMG1 -"], \
+    ["UnitIND_HMG2", "IND HMG2 -"], \
     ["UnitIND_MAT1", "IND MAT1 -"], \
     ["UnitIND_MAT2", "IND MAT2 -"], \
+    ["UnitIND_HAT1", "IND HAT1 -"], \
+    ["UnitIND_HAT2", "IND HAT2 -"], \
     ["UnitIND_MTR1", "IND MTR1 -"], \
     ["UnitIND_MSAM1", "IND MSAM1 -"], \
     ["UnitIND_HSAM1", "IND HSAM1 -"], \
@@ -245,6 +207,10 @@
     ["UnitIND_IFV7", "IND IFV7 -"], \
     ["UnitIND_IFV8", "IND IFV8 -"], \
     ["UnitIND_TNK1", "IND TNK1 -"], \
+    ["UnitIND_APC1", "IND APC1 -"], \
+    ["UnitIND_APC2", "IND APC2 -"], \
+    ["UnitIND_APC3", "IND APC3 -"], \
+    ["UnitIND_APC4", "IND APC4 -"], \
     \
     ["UnitIND_TH1", "IND TH1 -"], \
     ["UnitIND_TH2", "IND TH2 -"], \
@@ -254,5 +220,6 @@
     ["UnitIND_TH6", "IND TH6 -"], \
     ["UnitIND_TH7", "IND TH7 -"], \
     ["UnitIND_TH8", "IND TH8 -"], \
-    ["UnitIND_AH1", "IND AH1 -"] \
+    ["UnitIND_AH1", "IND AH1 -"], \
+    ["UnitIND_FW1", "IND FW1 -"] \
     ]
