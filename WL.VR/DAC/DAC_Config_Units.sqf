@@ -139,7 +139,7 @@ _Unit_Pool_S = [
 	"I_soldier_repair_F", //Repair Specialist
 	"I_medic_F", //Medic
 	"I_soldier_M_F", //Marksman
-	"I_spotter_F", /Spotter
+	"I_spotter_F", //Spotter
 	"I_sniper_F" //Sniper
 ];
 _Unit_Pool_V = [
