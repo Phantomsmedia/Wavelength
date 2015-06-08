@@ -5,6 +5,7 @@
 _unit = _this select 0;
 
 if (!(local _unit)) exitWith {};
+if (!(isPlayer _unit)) exitWith {};
 
 _faction = tolower (faction _unit);
 //Check variable f_gear, otherwise default to typeof
