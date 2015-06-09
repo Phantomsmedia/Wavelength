@@ -15,9 +15,9 @@ class blu_f {
     #define WEST_CARBINE "rhs_m4_acog_usmc"
     #define WEST_CARBINE_MAG "rhs_mag_30Rnd_556x45_M855A1_Stanag:8","rhs_mag_m18_red:2"
     // AR
-    #define WEST_AR "rhs_weap_m249_pip_usmc"
-    #define WEST_AR_MAG "rhsusf_100Rnd_556x45_soft_pouch:4"
-    #define WEST_AR_MAG2 "rhsusf_100Rnd_556x45_soft_pouch:4"
+    #define WEST_AR "hlc_m249_pip1"
+    #define WEST_AR_MAG "hlc_200rnd_556x45_M_SAW:4"
+    #define WEST_AR_MAG2 "hlc_200rnd_556x45_T_SAW:4"
     // AT
     #define WEST_AT "rhs_weap_M136"
     #define WEST_AT_MAG "rhs_m136_mag"
