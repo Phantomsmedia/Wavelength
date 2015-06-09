@@ -358,7 +358,7 @@ class CfgRespawnTemplates
 //#include "f\JIP\f_JIP_grppicker.h"
 
 // Menu components for the Spectator Script
-//#include "f\spect\config.hpp"
+#include "f\spect\config.hpp"
 
 // ============================================================================================
 
