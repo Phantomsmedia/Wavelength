@@ -328,7 +328,7 @@ class opf_f {
         backpackItems[] += {"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo"};
         linkedItems[] += {"G_O_Diving"};
 
-    }
+    };
 
     class O_diver_F: O_Soldier_F {// Diver
         uniform[] = {"U_O_Wetsuit"};  /// randomized
@@ -339,5 +339,5 @@ class opf_f {
         backpackItems[] += {"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo"};
         linkedItems[] += {"G_O_Diving"};
 
-    }	
+    };	
 };
