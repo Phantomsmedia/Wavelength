@@ -316,7 +316,7 @@ class blu_f {
         backpackItems[] += {"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB"};
         linkedItems[] += {"G_B_Diving"};
 
-    }
+    };
 
     class B_diver_F: B_Soldier_F {// Diver
         uniform[] = {"U_B_Wetsuit"};  /// randomized
@@ -327,6 +327,6 @@ class blu_f {
         backpackItems[] += {"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB"};
         linkedItems[] += {"G_B_Diving"};
 
-    }
+    };
 
 };
