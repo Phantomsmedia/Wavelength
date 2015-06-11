@@ -19,6 +19,8 @@ if (f_radios_settings_acre2_disableFrequencySplit) then {
 	_presetName = "default";
 };
 
+f_radios_settings_acre2_presetName = _presetName;
+
 _ret = ["ACRE_PRC343", _presetName ] call acre_api_fnc_setPreset;
 _ret = ["ACRE_PRC148", _presetName ] call acre_api_fnc_setPreset;
 _ret = ["ACRE_PRC152", _presetName ] call acre_api_fnc_setPreset;
@@ -34,24 +36,23 @@ _unit = player;
 // ====================================================================================
 
 // Set language of the units depending on side (BABEL API)
-switch (side _unit) do {
+f_radios_settings_acre2_spokenLanguages = switch (side _unit) do {
 	case blufor: {
-		f_radios_settings_acre2_language_blufor call acre_api_fnc_babelSetSpokenLanguages;
-		[f_radios_settings_acre2_language_blufor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+		f_radios_settings_acre2_language_blufor
 	};
 	case opfor: {
-		f_radios_settings_acre2_language_opfor call acre_api_fnc_babelSetSpokenLanguages;
-		[f_radios_settings_acre2_language_opfor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+		f_radios_settings_acre2_language_opfor
 	};
 	case independent: {
-		f_radios_settings_acre2_language_indfor call acre_api_fnc_babelSetSpokenLanguages;
-		[f_radios_settings_acre2_language_indfor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+		f_radios_settings_acre2_language_indfor
 	};
 	default {
-		f_radios_settings_acre2_language_indfor call acre_api_fnc_babelSetSpokenLanguages;
-		[f_radios_settings_acre2_language_indfor select 0] call acre_api_fnc_babelSetSpeakingLanguage;
+		f_radios_settings_acre2_language_indfor
 	};
 };
+
+f_radios_settings_acre2_spokenLanguages call acre_api_fnc_babelSetSpokenLanguages;
+[f_radios_settings_acre2_spokenLanguages select 0] call acre_api_fnc_babelSetSpeakingLanguage;
 
 // ====================================================================================
 
@@ -218,5 +219,7 @@ _unit spawn {
 		};
 	    [_radioExtra, (_groupLRChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
 	};
+
+	[_groupChannelIndex, _groupLRChannelIndex] call f_acre2_briefingInit;
 
 };
