@@ -14,9 +14,6 @@ if (!hasInterface) exitWith {};
     _unitfaction = toLower (faction (leader group player));
 
     switch (true) do {
-    case (serverCommandAvailable "#kick"): {
-#include "f_briefing_admin.sqf"
-        };
     case (_unitfaction == "blu_f"): {
 #include "f_briefing_nato.sqf"
         };

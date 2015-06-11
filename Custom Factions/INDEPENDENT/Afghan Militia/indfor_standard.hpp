@@ -321,7 +321,7 @@ class ind_f {
         backpackItems[] += {"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"};
         linkedItems[] += {"G_I_Diving"};
 
-    }
+    };
 
     class I_diver_F: I_Soldier_F {// Diver
         uniform[] = {"U_I_Wetsuit"};  /// randomized
@@ -332,6 +332,6 @@ class ind_f {
         backpackItems[] += {"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"};
         linkedItems[] += {"G_I_Diving"};
 
-    }		
+    };	
 	
 };
