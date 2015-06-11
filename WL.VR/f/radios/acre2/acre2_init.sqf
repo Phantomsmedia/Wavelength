@@ -5,6 +5,7 @@
 // precompile functions
 f_acre2_presetSetup = compile preprocessFileLineNumbers "f\radios\acre2\acre2_setupPresets.sqf";
 f_acre2_clientInit = compile preprocessFileLineNumbers "f\radios\acre2\acre2_clientInit.sqf";
+f_acre2_briefingInit = compile preprocessFileLineNumbers "f\radios\acre2\acre2_briefingInit.sqf";
 f_fnc_GiveSideRadio = compile preprocessFileLineNumbers "f\radios\acre2\fn_giveSideRadio.sqf";
 
 f_radios_acre2_giveRadioAction = {
