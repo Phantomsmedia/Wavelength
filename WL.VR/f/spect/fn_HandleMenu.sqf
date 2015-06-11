@@ -44,14 +44,16 @@ switch (_button) do {
             _spectMuted = false;
             if (!isNil "ACRE_MUTE_SPECTATORS") then { _spectMuted = ACRE_MUTE_SPECTATORS; };
 
+            _camera = f_cam_camera;
+
             [] call F_fnc_ForceExit;
             ACRE_MUTE_SPECTATORS = true;
 
-            player call bis_fnc_cameraOld;
+            _camera call bis_fnc_cameraOld;
             waituntil {sleep 0.1; isNil "BIS_DEBUG_CAM"};
 
             ACRE_MUTE_SPECTATORS = _spectMuted;
-            [player,player,player,0,true] spawn F_fnc_CamInit;
+            [player,objNull,player,0,true] spawn F_fnc_CamInit;
         };
     }
 };
