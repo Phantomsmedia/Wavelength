@@ -17,6 +17,10 @@ class ind_f {
     #define IND_CARBINE "arifle_Mk20C_F"
     #define IND_CARBINE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
     
+	//Diver
+	#define SDAR "arifle_SDAR_F"
+	#define SDAR_MAG "20Rnd_556x45_UW_mag:6"
+	
 	// AR
     #define IND_AR "LMG_Mk200_F"
     #define IND_AR_MAG "200Rnd_65x39_cased_Box:9"
@@ -312,23 +316,27 @@ class ind_f {
 // Special Infantry
 
     class I_diver_TL_F: I_Soldier_TL_F {// Diver TL
-        uniform[] = {"U_I_Wetsuit"};  /// randomized
+        weapons[] = {SDAR};
+		magazines[] = {SDAR_MAG,IND_CARBINE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
+		uniform[] = {"U_I_Wetsuit"};  /// randomized
         vest[] = {"V_RebreatherIA"}; /// randomized
         backpack[] = {"B_Carryall_oli"};
         headgear[] = {};
 
-        backpackItems[] += {"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"};
+        backpackItems[] += {/*"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA",*/IND_CARBINE};
         linkedItems[] += {"G_I_Diving"};
 
     };
 
     class I_diver_F: I_Soldier_F {// Diver
-        uniform[] = {"U_I_Wetsuit"};  /// randomized
+        weapons[] = {SDAR};
+		magazines[] = {SDAR_MAG,IND_CARBINE_MAG,IND_GRENADE,IND_SMOKE_WHITE};
+		uniform[] = {"U_I_Wetsuit"};  /// randomized
         vest[] = {"V_RebreatherIA"}; /// randomized
         backpack[] = {"B_Carryall_oli"};
         headgear[] = {};
 
-        backpackItems[] += {"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA"};
+        backpackItems[] += {/*"U_I_CombatUniform","V_Chestrig_oli","H_HelmetIA",*/IND_CARBINE};
         linkedItems[] += {"G_I_Diving"};
 
     };

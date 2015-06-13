@@ -20,8 +20,12 @@ class blu_f {
 	//Carbine
     #define WEST_CARBINE "arifle_MXC_F"
     #define WEST_CARBINE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
+	
+	//Diver
+	#define SDAR "arifle_SDAR_F"
+	#define SDAR_MAG "20Rnd_556x45_UW_mag:6"
    
-   // AR
+    // AR
     #define WEST_AR "arifle_MX_SW_F"
     #define WEST_AR_MAG "100Rnd_65x39_caseless_mag:2"
     #define WEST_AR_MAG2 "100Rnd_65x39_caseless_mag_Tracer:2"
@@ -308,23 +312,27 @@ class blu_f {
 // Special Infantry
 
     class B_diver_TL_F: B_Soldier_TL_F {// Diver TL
-        uniform[] = {"U_B_Wetsuit"};  /// randomized
+        weapons[] = {SDAR};
+		magazines[] = {SDAR_MAG,WEST_CARBINE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
+		uniform[] = {"U_B_Wetsuit"};  /// randomized
         vest[] = {"V_RebreatherB"}; /// randomized
-        backpack[] = {"B_Carryall_cbr"};
+        backpack[] = {"MNP_B_WD_CA"};
         headgear[] = {};
 
-        backpackItems[] += {"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB"};
+        backpackItems[] += {/*"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB",*/WEST_CARBINE};
         linkedItems[] += {"G_B_Diving"};
 
     };
 
     class B_diver_F: B_Soldier_F {// Diver
-        uniform[] = {"U_B_Wetsuit"};  /// randomized
+        weapons[] = {SDAR};
+		magazines[] = {SDAR_MAG,WEST_CARBINE_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
+		uniform[] = {"U_B_Wetsuit"};  /// randomized
         vest[] = {"V_RebreatherB"}; /// randomized
-        backpack[] = {"B_Carryall_cbr"};
+        backpack[] = {"MNP_B_WD_CA"};
         headgear[] = {};
 
-        backpackItems[] += {"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB"};
+        backpackItems[] += {/*"U_B_CombatUniform_mcam","V_PlateCarrier1_rgr","H_HelmetB",*/WEST_CARBINE};
         linkedItems[] += {"G_B_Diving"};
 
     };

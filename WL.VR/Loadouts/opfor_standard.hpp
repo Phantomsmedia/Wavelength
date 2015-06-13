@@ -17,6 +17,10 @@ class opf_f {
     #define EAST_CARBINE "arifle_Katiba_C_F"
     #define EAST_CARBINE_MAG "30Rnd_65x39_caseless_green:8","30Rnd_65x39_caseless_green_mag_Tracer:2"
     
+	//Diver
+	#define SDAR "arifle_SDAR_F"
+	#define SDAR_MAG "20Rnd_556x45_UW_mag:6"
+	
 	// AR
     #define EAST_AR "LMG_Zafir_F"
     #define EAST_AR_MAG "150Rnd_762x54_Box:5"
@@ -317,23 +321,27 @@ class opf_f {
 // Special Infantry
 
     class O_diver_TL_F: O_Soldier_TL_F {// Diver TL
-        uniform[] = {"U_O_Wetsuit"};  /// randomized
+        weapons[] = {SDAR};
+		magazines[] = {SDAR_MAG,EAST_CARBINE_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
+		uniform[] = {"U_O_Wetsuit"};  /// randomized
         vest[] = {"V_RebreatherIR"}; /// randomized
-        backpack[] = {"B_Carryall_mcamo"};
+        backpack[] = {"MNP_B_RU1_CA"};
         headgear[] = {};
 
-        backpackItems[] += {"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo"};
+        backpackItems[] += {/*"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo",*/EAST_CARBINE};
         linkedItems[] += {"G_O_Diving"};
 
     };
 
     class O_diver_F: O_Soldier_F {// Diver
-        uniform[] = {"U_O_Wetsuit"};  /// randomized
+        weapons[] = {SDAR};
+		magazines[] = {SDAR_MAG,EAST_CARBINE_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
+		uniform[] = {"U_O_Wetsuit"};  /// randomized
         vest[] = {"V_RebreatherIR"}; /// randomized
-        backpack[] = {"B_Carryall_mcamo"};
+        backpack[] = {"MNP_B_RU1_CA"};
         headgear[] = {};
 
-        backpackItems[] += {"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo"};
+        backpackItems[] += {/*"U_O_CombatUniform_ocamo","V_HarnessO_brn","H_HelmetO_ocamo",*/EAST_CARBINE};
         linkedItems[] += {"G_O_Diving"};
 
     };
