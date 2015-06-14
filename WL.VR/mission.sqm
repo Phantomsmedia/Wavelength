@@ -7065,7 +7065,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=1;
+		items=2;
 		class Item0
 		{
 			position[]={502.27344,5,3231.4717};
@@ -7073,6 +7073,69 @@ class Mission
 			text="REQUIRED";
 			type="mil_arrow";
 			colorName="ColorRed";
+		};
+		class Item1
+		{
+			position[]={499.95096,5,3704.4907};
+			name="Example Dac Triggers";
+			text="Example Dac Zones";
+			type="mil_arrow";
+			colorName="ColorRed";
+		};
+	};
+	class Sensors
+	{
+		items=3;
+		class Item0
+		{
+			position[]={454.1713,5,3783.1035};
+			a=300;
+			b=300;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="This Generates 3 small squads of OPRFOR CSAT. They are in DAC ID Group 1";
+			name="z1";
+			expCond="true";
+			expActiv="fun =[""z1"",[1,0,0],[3,3,20,6],[],[],[],[0,0,0,0,1]] spawn DAC_Zone";
+			class Effects
+			{
+			};
+		};
+		class Item1
+		{
+			position[]={550.47607,5,3784.3696};
+			a=300;
+			b=300;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="This generates 5 groups of wheeled vehicles with fireteams in them. They are in DAC ID Group 2. WEST NATO";
+			name="z2";
+			expCond="true";
+			expActiv="fun =[""z2"",[2,0,0],[],[5,2,50,8],[],[],[1,1,1,1,1]] spawn DAC_Zone";
+			class Effects
+			{
+			};
+		};
+		class Item2
+		{
+			position[]={642.79553,5,3783.7891};
+			a=300;
+			b=300;
+			activationBy="LOGIC";
+			repeating=1;
+			interruptable=1;
+			age="UNKNOWN";
+			text="This generates 3 helicopters with fireteams for INDIFOR. They are apart of DAC ID group 3";
+			name="z3";
+			expCond="true";
+			expActiv="fun =[""z3"",[3,0,0],[],[],[],[3,3,6],[2,2,1,1,1]] spawn DAC_Zone";
+			class Effects
+			{
+			};
 		};
 	};
 };
