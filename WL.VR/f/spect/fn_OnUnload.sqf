@@ -41,8 +41,6 @@ waitUntil {sleep 0.1; scriptDone _handle};
 // Allow handler to take control over re-init
 if (f_cam_specialExit) ExitWith {};
 
-player globalChat "RE-LOADING SPEC";
-
 createDialog "f_spec_dialog";
 
 _displayDialog = (findDisplay 9228);
