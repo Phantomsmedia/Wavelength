@@ -20,6 +20,10 @@ class blu_f {
 	//Carbine
     #define WEST_CARBINE "arifle_MXC_F"
     #define WEST_CARBINE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
+
+    //Diver
+    #define SDAR "arifle_SDAR_F"
+    #define SDAR_MAG "20Rnd_556x45_UW_mag:6"
    
    // AR
     #define WEST_AR "arifle_MX_SW_F"
