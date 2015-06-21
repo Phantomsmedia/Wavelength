@@ -171,10 +171,17 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 [] call F_DAC_fnc_setupDacParams;
 
 // ====================================================================================
-// eulerfoiler - HC Round-Robin Load Balancing
+// Werthles - Split AI Groups Evenly Among Headless Clients
 // This automatically carries over units and data from Zeus or main spawn. DAC spawn works as well.
-// This is currently in use. DAC HC is not in use, it should be turned off.
 
-execVM "f\headlessclient\passToHCs.sqf";
+// WerthlesHeadless Parameters:
+// Repeating - true/Once - false,
+// Time between repeats (seconds),
+// Debug on - true/off - false,
+// Advanced balancing - true/Simple balancing - false,
+// Delay before executing (seconds),
+// Additional syncing time between groups transferred to try
+// to reduce bad unit transfer caused by desyncs (seconds) ]
+[true, 50, false, false, 30, 3] execVM "f\headlessClient\WerthlesHeadless.sqf";
 
 // ====================================================================================
