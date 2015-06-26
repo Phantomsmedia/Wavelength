@@ -11,12 +11,11 @@
  *
  */
 
+// Code from WerthlesHeadless
 PassToHC_SyncArrays = compileFinal "
     _syncGroup = _this select 0;
     _trigSyncs = _this select 1;
     _waySyncs = _this select 2;
-
-    diag_log text format[""[Werthless] = %1"", _this];
 
     {
       _wayPoint = _x;
@@ -164,6 +163,20 @@ while {true} do {
     // If load balance enabled, round robin between the HCs - else pass all to HC
     if ( _swap ) then {
       _rc = false;
+      
+      _syncTrigArray = [];
+	  {
+	    _wayNum = _forEachIndex;
+		_syncedTrigs = synchronizedTriggers _x;
+		_syncTrigArray set [_wayNum,_syncedTrigs];
+	  } forEach waypoints _x;
+
+	  _syncWayArray = [];
+	  {
+	    _wayNum = _forEachIndex;
+		_syncedWays = synchronizedWaypoints _x;
+		_syncWayArray set [_wayNum,_syncedWays];
+	  } forEach waypoints _x;
 
       if ( _loadBalance ) then {
 
@@ -201,6 +214,10 @@ while {true} do {
       if ( _rc ) then { 
         _x setVariable ["hc_transfered", true];
         _numTransfered = _numTransfered + 1; 
+        
+        [[_x, _syncTrigArray, _syncWayArray], "PassToHC_SyncArrays", true, false] call BIS_fnc_MP;
+		sleep 3;
+    	[[_x, _syncTrigArray, _syncWayArray], "PassToHC_SyncArrays", true, false] call BIS_fnc_MP;
       };
     };
   } forEach (allGroups);
