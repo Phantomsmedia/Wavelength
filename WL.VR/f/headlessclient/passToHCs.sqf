@@ -13,6 +13,8 @@
 
 if (!isServer) exitWith {};
 
+private ["_HC_ID","_HC2_ID","_HC3_ID","_rebalanceTimer","_cleanUpThreshold","_maxWait","_loadBalance","_currentHC","_numTransfered","_swap","_rc","_numHC","_numHC2","_numHC3","_numDeleted"]; 
+
 diag_log "passToHCs: Started";
 
 waitUntil {!isNil "HC"};
@@ -21,15 +23,26 @@ waitUntil {!isNull HC};
 _HC_ID = -1; // Will become the Client ID of HC
 _HC2_ID = -1; // Will become the Client ID of HC2
 _HC3_ID = -1; // Will become the Client ID of HC3
-rebalanceTimer = 60;  // Rebalance sleep timer in seconds
-cleanUpThreshold = 50; // Threshold of number of dead bodies + destroyed vehicles before forcing a clean up
+_rebalanceTimer = 60;  // Rebalance sleep timer in seconds
+_cleanUpThreshold = 50; // Threshold of number of dead bodies + destroyed vehicles before forcing a clean up
 
-diag_log format["passToHCs: First pass will begin in %1 seconds", rebalanceTimer];
+sleep 15;
+
+//If DAC is initializing after start delay wait until it finishes or timeout
+if (!isNil "DAC_Basic_Value") then {
+	_maxWait = time + 30;
+	waituntil {sleep 1; (DAC_Basic_Value > 0) || time > _maxWait};
+};
+
+//If UPSMON is initializing after start delay wait until it finishes or timeout
+if (!isNil "UPSMON_INIT") then {
+	_maxWait = time + 30;
+	waituntil {sleep 1; (UPSMON_INIT > 0) || time > _maxWait};
+};
+
+diag_log format["passToHCs: First pass will begin in %1 seconds",_rebalanceTimer];
 
 while {true} do {
-  // Rebalance every rebalanceTimer seconds to avoid hammering the server
-  sleep rebalanceTimer;
-
   // Do not enable load balancing unless more than one HC is present
   // Leave this variable false, we'll enable it automatically under the right conditions
   _loadBalance = false;
@@ -181,7 +194,7 @@ while {true} do {
   };
 
   // Force clean up dead bodies and destroyed vehicles
-  if (count allDead > cleanUpThreshold) then {
+  if (count allDead > _cleanUpThreshold) then {
     _numDeleted = 0;
     {
       deleteVehicle _x;
@@ -191,4 +204,7 @@ while {true} do {
 
     diag_log format ["passToHCs: Cleaned up %1 dead bodies/destroyed vehicles", _numDeleted];
   };
+  
+  // Rebalance every rebalanceTimer seconds to avoid hammering the server
+  sleep _rebalanceTimer;
 };
