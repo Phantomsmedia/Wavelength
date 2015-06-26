@@ -11,6 +11,28 @@
  *
  */
 
+PassToHC_SyncArrays = compileFinal "
+    _syncGroup = _this select 0;
+    _trigSyncs = _this select 1;
+    _waySyncs = _this select 2;
+
+    diag_log text format[""[Werthless] = %1"", _this];
+
+    {
+      _wayPoint = _x;
+      {
+        _x synchronizeTrigger [_wayPoint];
+      } forEach (_trigSyncs select _forEachIndex);
+    } forEach waypoints _syncGroup;
+
+    {
+      _wayPoint = _x;
+      {
+        _x synchronizeWaypoint [_wayPoint];
+      } forEach (_waySyncs select _forEachIndex);
+    } forEach waypoints _syncGroup;
+";
+
 if (!isServer) exitWith {};
 
 private ["_HC_ID","_HC2_ID","_HC3_ID","_rebalanceTimer","_cleanUpThreshold","_maxWait","_loadBalance","_currentHC","_numTransfered","_swap","_rc","_numHC","_numHC2","_numHC3","_numDeleted"]; 
@@ -30,14 +52,14 @@ sleep 15;
 
 //If DAC is initializing after start delay wait until it finishes or timeout
 if (!isNil "DAC_Basic_Value") then {
-	_maxWait = time + 30;
-	waituntil {sleep 1; (DAC_Basic_Value > 0) || time > _maxWait};
+  _maxWait = time + 30;
+  waituntil {sleep 1; (DAC_Basic_Value > 0) || time > _maxWait};
 };
 
 //If UPSMON is initializing after start delay wait until it finishes or timeout
 if (!isNil "UPSMON_INIT") then {
-	_maxWait = time + 30;
-	waituntil {sleep 1; (UPSMON_INIT > 0) || time > _maxWait};
+  _maxWait = time + 30;
+  waituntil {sleep 1; (UPSMON_INIT > 0) || time > _maxWait};
 };
 
 diag_log format["passToHCs: First pass will begin in %1 seconds",_rebalanceTimer];
@@ -144,19 +166,35 @@ while {true} do {
       _rc = false;
 
       if ( _loadBalance ) then {
-        switch (_currentHC) do {
-          case 1: { _rc = _x setGroupOwner _HC_ID; if (!isNull HC2) then { _currentHC = 2; } else { _currentHC = 3; }; };
-          case 2: { _rc = _x setGroupOwner _HC2_ID; if (!isNull HC3) then { _currentHC = 3; } else { _currentHC = 1; }; };
-          case 3: { _rc = _x setGroupOwner _HC3_ID; if (!isNull HC) then { _currentHC = 1; } else { _currentHC = 2; }; };
-          default { diag_log format["passToHCs: [ERROR] No Valid HC to pass to.  _currentHC = %1", _currentHC]; };
+
+        _ownerID = switch (_currentHC) do {
+          case 1: { if (!isNull HC2) then { _currentHC = 2; } else { _currentHC = 3; }; _HC_ID };
+          case 2: { if (!isNull HC3) then { _currentHC = 3; } else { _currentHC = 1; }; _HC2_ID };
+          case 3: { if (!isNull HC) then { _currentHC = 1; } else { _currentHC = 2; }; _HC3_ID };
+          default {-1};
         };
+
+        if (_ownerID >= 0) then {
+          _rc = _x setGroupOwner _ownerID;
+        } else {
+          diag_log format["passToHCs: [ERROR] No Valid HC to pass to.  _currentHC = %1", _currentHC]; 
+        };
+
       } else {
-        switch (_currentHC) do {
-          case 1: { _rc = _x setGroupOwner _HC_ID; };
-          case 2: { _rc = _x setGroupOwner _HC2_ID; };
-          case 3: { _rc = _x setGroupOwner _HC3_ID; };
-          default { diag_log format["passToHCs: [ERROR] No Valid HC to pass to.  _currentHC = %1", _currentHC]; };
+
+        _ownerID = switch (_currentHC) do {
+          case 1: {_HC_ID};
+          case 2: {_HC2_ID};
+          case 3: {_HC3_ID};
+          default {-1};
         };
+
+        if (_ownerID >= 0) then {
+          _rc = _x setGroupOwner _ownerID;
+        } else {
+          diag_log format["passToHCs: [ERROR] No Valid HC to pass to.  _currentHC = %1", _currentHC]; 
+        };
+
       };
 
       // If the transfer was successful, count it for accounting and diagnostic information
