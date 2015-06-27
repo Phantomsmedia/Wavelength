@@ -138,10 +138,16 @@ while {true} do {
   // Pass the AI
   _numTransfered = 0;
   {
+    _syncGroup = _x;
     _swap = true;
 
     // Check if group has already been transfered
-    if (_x getVariable ["hc_transfered", false]) then {
+    if (_syncGroup getVariable ["hc_transfered", false]) then {
+      _swap = false;
+    };
+
+    // Check if group is blacklisted
+    if (_syncGroup getVariable ["hc_blacklist", false]) then {
       _swap = false;
     };
 
@@ -158,7 +164,17 @@ while {true} do {
           if ((vehicle _x) getVariable ["hc_blacklist", false]) exitWith { _swap = false; };
         };
 
-      } forEach (units _x);
+      } forEach (units _syncGroup);
+    };
+
+    // Check if group has any waypoints synced to triggers and auto blacklist
+    if ( _swap ) then {
+      {
+        if (count (synchronizedTriggers _x) > 0) exitWith {
+          _syncGroup setVariable ["hc_blacklist", true];
+          _swap = false;
+        };
+      } forEach (waypoints _syncGroup);
     };
 
     // If load balance enabled, round robin between the HCs - else pass all to HC
