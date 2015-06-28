@@ -16,7 +16,22 @@ If you wish to have a translator that can speak more than one language you can p
 this setVariable ["f_languages", ["english","russian","arabic"]];
 ```
 
-Note that in WL, BLUFOR speaks English, OPFOR speaks Russian and INDFOR speaks Arabic. Putting other languages in the quotations will make it gibberish to all factions bar those that also have that same language in their unit. 
+Note that in WL, BLUFOR speaks English, OPFOR speaks Russian and INDFOR speaks Arabic. You can edit those defaults in lines 46 to 48 of f\radios\acre2\acre2_settings.sqf
+
+You may change the languages in the code to the following supported languages, but remember what the default factions speak!
+
+Enlish
+Russian
+Arabic
+Czech
+German
+Greek
+Farsi
+French
+Chinese
+Ukrainian 
+
+You can add more languages on line 42 of f\radios\acre2\acre2_settings.sqf
 
 ==================================================
 
