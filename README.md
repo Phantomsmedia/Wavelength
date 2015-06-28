@@ -16,6 +16,8 @@ If you wish to have a translator that can speak more than one language you can p
 this setVariable ["f_languages", ["english","russian","arabic"]];
 ```
 
+Note that in WL, BLUFOR speaks English, OPFOR speaks Russian and INDFOR speaks Arabic. Putting other languages in the quotations will make it gibberish to all factions bar those that also have that same language in their unit. 
+
 ==================================================
 
 F3 Readme.md, along with edits for this specific framework version.
