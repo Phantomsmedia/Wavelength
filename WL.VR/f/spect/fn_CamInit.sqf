@@ -56,6 +56,14 @@ switch (f_var_radios) do {
   // ACRE
   case 1: {
     [true] call acre_api_fnc_setSpectator;
+
+    _languages = [];
+    {
+      _languages pushBack (_x select 0);
+    } forEach f_radios_settings_acre2_languages;
+
+    // Allow spectators to understand all languages
+    _languages call acre_api_fnc_babelSetSpokenLanguages;
   };
   // TFR
   case 2: {
