@@ -39,7 +39,7 @@ f_radios_settings_acre2_extraRadio = "ACRE_PRC117F";
 
 // Defines the languages that exist in the mission.
 // string id, displayname
-f_radios_settings_acre2_languages = [["english","English"],["russian","Russian"],["arabic","Arabic"],["czech","Czech"],["german","German"],["greek","Greek"],["farsi","Farsi"],["french","French"],["chinese","Chinese"],["ukranian","Ukranian"]];
+f_radios_settings_acre2_languages = [["english","English"],["russian","Russian"],["arabic","Arabic"],["czech","Czech"],["german","German"],["greek","Greek"],["farsi","Farsi"],["french","French"],["chinese","Chinese"],["ukrainian","Ukrainian"]];
 
 // defines the language that a player can speak.
 // can define multiple
