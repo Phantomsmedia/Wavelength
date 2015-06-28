@@ -8,6 +8,8 @@ If you use a trigger and sync it to waypoints or units in your mission, please t
 
 That should go in his init.
 
+If you wish to have a translator that can speak more than one language you can place this in the units init line to allow him to speak any languages of your choice: this setVariable ["f_languages", ["english","russian","arabic"]];
+
 ==================================================
 
 F3 Readme.md, along with edits for this specific framework version.
