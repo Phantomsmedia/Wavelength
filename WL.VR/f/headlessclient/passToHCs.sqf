@@ -19,6 +19,10 @@ PassToHC_ReceiveMessage = compileFinal "
 
 if (!isServer) exitWith {};
 
+waitUntil{!isNil "f_param_headlessClient"};
+
+if (f_param_headlessClient == 0) exitWith {};
+
 private ["_HC_ID","_HC2_ID","_HC3_ID","_rebalanceTimer","_cleanUpThreshold","_maxWait","_loadBalance","_currentHC","_numTransfered","_swap","_rc","_numHC","_numHC2","_numHC3","_numDeleted"];
 
 PassToHC_SendMessage = compileFinal "
