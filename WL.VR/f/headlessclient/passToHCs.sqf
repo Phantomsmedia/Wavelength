@@ -174,6 +174,7 @@ while {true} do {
         
         if (groupOwner _syncGroup == _ownerID) then {
             _x setVariable ["hc_transfered", true];
+            _swap = false;
         };
     
     };
