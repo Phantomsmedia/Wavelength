@@ -29,6 +29,7 @@ if(!isClass(_path)) exitWith {
 _uniforms = getArray(_path >> "uniform");
 _vests = getArray(_path >> "vest");
 _headgears = getArray(_path >> "headgear");
+_goggles = getArray(_path >> "goggles");
 _backpack = getArray(_path >> "backpack");
 _backpackItems = getArray(_path >> "backpackItems");
 _weapons = getArray(_path >> "weapons");
@@ -91,6 +92,19 @@ if ((count _headgears) == 0) then {
         _unit addHeadgear _toAdd;
     } else {
         diag_log text format ["[BW] %1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)];
+    };
+};
+
+//Random Glasses:
+if ((count _goggles) == 0) then {
+    removeGoggles _unit;
+} else {
+    _toAdd = _goggles call BIS_fnc_selectRandom;
+    if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
+        removeGoggles _unit;
+        _unit addGoggles _toAdd;
+    } else {
+        diag_log text format ["[BW] %1 Goggles (%2) not found using default (%3)", _loadout, _toAdd, (goggles _unit)];
     };
 };
 
