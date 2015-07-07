@@ -100,7 +100,7 @@ if ((count _goggles) == 0) then {
     removeGoggles _unit;
 } else {
     _toAdd = _goggles call BIS_fnc_selectRandom;
-    if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
+    if ((!isNil "_toAdd") && {isClass (configFile >> "CfgGlasses" >> _toAdd)}) then {
         removeGoggles _unit;
         _unit addGoggles _toAdd;
     } else {
