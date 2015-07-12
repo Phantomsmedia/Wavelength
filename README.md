@@ -4,9 +4,27 @@ Wavelength
 
 WL is a derivative of the [F3](http://ferstaberinde.com/f3/en//index.php?title=Main_Page) work. The content we have edited mainly consists of minor edits to gear, addition of many more factions from mods, and tweaks to the code, as well as a few minor additions. You can track F3's development at https://github.com/ferstaberinde/F3. 
 
-If you use a trigger and sync it to waypoints or units in your mission, please tag the group leader of the units or the units the waypoints are assigned to with this init line: this setVariable ["hc_blacklist", true];
+If you wish to have a translator that can speak more than one language you can place this in the units init line to allow him to speak any languages of your choice: 
+```sqf
+this setVariable ["f_languages", ["english","russian","arabic"]];
+```
 
-That should go in his init.
+Note that in WL, BLUFOR speaks English, OPFOR speaks Russian and INDFOR speaks Arabic. You can edit those defaults in lines 46 to 48 of f\radios\acre2\acre2_settings.sqf
+
+You may change the languages in the code to the following supported languages, but remember what the default factions speak!
+
+Enlish
+Russian
+Arabic
+Czech
+German
+Greek
+Farsi
+French
+Chinese
+Ukrainian 
+
+You can add more languages on line 42 of f\radios\acre2\acre2_settings.sqf
 
 ==================================================
 

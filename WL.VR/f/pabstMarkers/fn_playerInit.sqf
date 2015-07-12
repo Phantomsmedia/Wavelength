@@ -6,6 +6,9 @@ F_Markers_delay = 3;
 //Set to false to only show markers with players in them
 F_Markers_drawNonPlayerGroups = true;
 
+//Set to false to only show markers on Full Map and GPS
+F_Markers_drawTaoMap = true;
+
 //Faction map, to show other faction's markers, but them in the same array
 F_Markers_factionMap = [
 // ["blu_f", "ind_f", "opf_f", "rhs_faction_msv", "rhs_faction_vvs"],  //uncomment to show all markers
@@ -60,7 +63,30 @@ if (!hasInterface) exitWith {};
 
     [12] call _fnc_installMapEvents;
 
-    waitUntil {sleep 5; (!isNull (uiNamespace getVariable "RscMiniMap"))};
-    ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_Markers_fnc_drawMap}];
-    // systemChat "GPS Added";
+    0 spawn {
+        waitUntil {sleep 5; (!isNull (uiNamespace getVariable "RscMiniMap"))};
+        ((uiNamespace getVariable "RscMiniMap") displayctrl 101) ctrlAddEventHandler ["draw", {_this call F_Markers_fnc_drawMap}];
+        // systemChat "GPS Added";
+    };
+
+    0 spawn {
+        if (isClass(configFile >> "CfgPatches" >> "tao_foldmap_a3") && F_Markers_drawTaoMap) then {
+            waitUntil {sleep 1; !isNil "tao_foldmap_isOpen"};
+            waitUntil {sleep 1; !isNull (uiNamespace getVariable "Tao_FoldMap")};
+
+            waitUntil {
+                waitUntil { sleep 1; !isNull (uiNamespace getVariable "Tao_FoldMap") };
+
+                ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 40) ctrlAddEventHandler ["Draw", {_this call F_Markers_fnc_drawMap;}];
+                ((uiNamespace getVariable "Tao_FoldMap") displayCtrl 41) ctrlAddEventHandler ["Draw", {_this call F_Markers_fnc_drawMap;}];
+
+                waitUntil { sleep 1; isNull (uiNamespace getVariable "Tao_FoldMap") || !tao_foldmap_doShow };
+
+                // systemChat "Tao Map Added";
+
+                false
+            };
+
+        };
+    };
 };

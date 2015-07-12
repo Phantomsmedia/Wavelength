@@ -19,6 +19,10 @@ PassToHC_ReceiveMessage = compileFinal "
 
 if (!isServer) exitWith {};
 
+waitUntil{!isNil "f_param_headlessClient"};
+
+if (f_param_headlessClient == 0) exitWith {};
+
 private ["_HC_ID","_HC2_ID","_HC3_ID","_rebalanceTimer","_cleanUpThreshold","_maxWait","_loadBalance","_currentHC","_numTransfered","_swap","_rc","_numHC","_numHC2","_numHC3","_numDeleted"];
 
 PassToHC_SendMessage = compileFinal "
@@ -140,10 +144,39 @@ while {true} do {
   {
     _syncGroup = _x;
     _swap = true;
+    
+    _ownerID = _HC_ID;
+    
+     if ( _loadBalance ) then {
+
+        _ownerID = switch (_currentHC) do {
+          case 1: { if (!isNull HC2) then { _currentHC = 2; } else { _currentHC = 3; }; _HC_ID };
+          case 2: { if (!isNull HC3) then { _currentHC = 3; } else { _currentHC = 1; }; _HC2_ID };
+          case 3: { if (!isNull HC) then { _currentHC = 1; } else { _currentHC = 2; }; _HC3_ID };
+          default {-1};
+        };
+        
+    } else {
+    
+        _ownerID = switch (_currentHC) do {
+          case 1: {_HC_ID};
+          case 2: {_HC2_ID};
+          case 3: {_HC3_ID};
+          default {-1};
+        };
+    
+    };
 
     // Check if group has already been transfered
     if (_syncGroup getVariable ["hc_transfered", false]) then {
       _swap = false;
+    } else {
+        
+        if (groupOwner _syncGroup == _ownerID) then {
+            _x setVariable ["hc_transfered", true];
+            _swap = false;
+        };
+    
     };
 
     // Check if group is blacklisted
@@ -192,37 +225,12 @@ while {true} do {
         _syncWayArray set [_wayNum,_syncedWays];
       } forEach waypoints _x;
 
-      if ( _loadBalance ) then {
-
-        _ownerID = switch (_currentHC) do {
-          case 1: { if (!isNull HC2) then { _currentHC = 2; } else { _currentHC = 3; }; _HC_ID };
-          case 2: { if (!isNull HC3) then { _currentHC = 3; } else { _currentHC = 1; }; _HC2_ID };
-          case 3: { if (!isNull HC) then { _currentHC = 1; } else { _currentHC = 2; }; _HC3_ID };
-          default {-1};
-        };
-
-        if (_ownerID >= 0) then {
-          _rc = _x setGroupOwner _ownerID;
-        } else {
-          diag_log format["passToHCs: [ERROR] No Valid HC to pass to.  _currentHC = %1", _currentHC];
-        };
-
+      if (_ownerID >= 0) then {
+        _rc = _x setGroupOwner _ownerID;
       } else {
-
-        _ownerID = switch (_currentHC) do {
-          case 1: {_HC_ID};
-          case 2: {_HC2_ID};
-          case 3: {_HC3_ID};
-          default {-1};
-        };
-
-        if (_ownerID >= 0) then {
-          _rc = _x setGroupOwner _ownerID;
-        } else {
-          diag_log format["passToHCs: [ERROR] No Valid HC to pass to.  _currentHC = %1", _currentHC];
-        };
-
+        diag_log format["passToHCs: [ERROR] No Valid HC to pass to.  _currentHC = %1", _currentHC];
       };
+
 
       // If the transfer was successful, count it for accounting and diagnostic information
       if ( _rc ) then {
