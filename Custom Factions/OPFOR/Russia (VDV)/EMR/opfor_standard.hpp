@@ -228,9 +228,8 @@ class opf_f {
 
     class O_support_AMort_F: O_Soldier_F {// Assistant Mortar
         backpack[] = {"O_Mortar_01_support_F"}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+        items[] = {"ACE_fieldDressing:3","ACE_morphine", "ACRE_PRC148"};
         linkedItems[] += {"ACE_Vector"};
-        items[] += {"ACRE_PRC148"};
     };
 
     class O_spotter_F {// Spotter
