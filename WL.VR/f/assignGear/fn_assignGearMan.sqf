@@ -53,7 +53,11 @@ if ((count _uniforms) == 0) then {
     _toAdd = _uniforms call BIS_fnc_selectRandom;
     if ((!isNil "_toAdd") && {isClass (configFile >> "CfgWeapons" >> _toAdd)}) then {
         removeUniform _unit;
-        _unit forceAddUniform _toAdd;
+        if (_unit isUniformAllowed _toAdd) then {
+            _unit addUniform _toAdd;
+        } else {
+            _unit forceAddUniform _toAdd;
+        };
     } else {
         diag_log text format ["[BW] %1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)];
     };
