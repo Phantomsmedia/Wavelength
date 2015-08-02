@@ -791,7 +791,7 @@ class Mission
 					rank="CORPORAL";
 					skill=0.60000002;
 					text="UnitOPFOR_PLT_FO";
-					description="INDFOR Forward Observer";
+					description="OPFOR Forward Observer";
 				};
 			};
 		};
