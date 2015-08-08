@@ -98,7 +98,7 @@ _Unit_Pool_V = [
 	"B_Truck_01_transport_F", //HEMTT Truck open
 	"B_Truck_01_ammo_F", //HEMTT Ammo
 	"B_Truck_01_Repair_F", //HEMTT Repair
-	"B_Truck_01_fuel_F", //HEMTT Fuel	
+	"B_Truck_01_fuel_F", //HEMTT Fuel
 	"B_Truck_01_medical_F" //HEMTT Medical
 ];
 _Unit_Pool_T = [
@@ -170,7 +170,7 @@ _Unit_Pool_A = [
 case 3:
 {
 _Unit_Pool_S = [
-	"C_man_w_worker_F","C_man_pilot_F","C_man_1",
+	"C_man_w_worker_F","C_man_pilot_F","C_man_1", //Vehicle crewman, Pilot, Group Leader
 	"C_man_polo_1_F",
 	"C_man_polo_2_F",
 	"C_man_polo_3_F",
@@ -256,7 +256,7 @@ _Unit_Pool_S = [
 	"I_recon_F", //Recon Scout
 	"I_recon_LAT_F", //Recon Scout AT
 	"I_recon_JTAC_F",  //Recon JTAC
-	"I_Soldier_LAT_F", //Rifleman AT 
+	"I_Soldier_LAT_F", //Rifleman AT
 	"I_recon_exp_F", //Explosives Specialist
 	"I_recon_medic_F", //Recon Medic
 	"I_recon_M_F" //Recon Marksman
@@ -273,7 +273,7 @@ _Unit_Pool_A = [];
 case 7:
 {
 _Unit_Pool_S = [
-	"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_SL_F",
+	"O_G_Soldier_F","O_G_Soldier_F","O_G_Soldier_SL_F", //Vehicle crewman, Pilot, Group Leader
 	"O_G_Soldier_AR_F",
 	"O_G_Soldier_LAT_F",
 	"O_G_Soldier_A_F",
@@ -295,7 +295,7 @@ _Unit_Pool_A = [];
 case 8:
 {
 _Unit_Pool_S = [
-	"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_SL_F",
+	"B_G_Soldier_F","B_G_Soldier_F","B_G_Soldier_SL_F", //Vehicle crewman, Pilot, Group Leader
 	"B_G_Soldier_AR_F",
 	"B_G_Soldier_LAT_F",
 	"B_G_Soldier_A_F",
@@ -319,7 +319,7 @@ _Unit_Pool_A = [];
 case 9:
 {
 _Unit_Pool_S = [
-	"I_G_Soldier_F","I_G_Soldier_F","I_G_Soldier_SL_F",
+	"I_G_Soldier_F","I_G_Soldier_F","I_G_Soldier_SL_F", //Vehicle crewman, Pilot, Group Leader
 	"I_G_Soldier_AR_F",
 	"I_G_Soldier_LAT_F",
 	"I_G_Soldier_A_F",
@@ -338,13 +338,13 @@ _Unit_Pool_A = [];
 };
 //-------------------------------------------------------------------------------------------------
 // RHS DAC Factions by SavageCDN and Przemro
-//------------------------------------------------------------------------------------------------- 
+//-------------------------------------------------------------------------------------------------
 // OPFOR RHS Russians								@rhs_afrf3
 // Russian Motor Rifle Troops (MSV)					rhs_faction_msv
 case 10:
 {
 _Unit_Pool_S = [
-	"rhs_msv_driver_armored", "rhs_msv_combatcrew", "rhs_msv_sergeant",
+	"rhs_msv_driver_armored", "rhs_msv_combatcrew", "rhs_msv_sergeant", //Vehicle crewman, Pilot, Group Leader
 	"rhs_msv_rifleman",
 	"rhs_msv_grenadier",
 	"rhs_msv_at", //grenadier RPG
@@ -358,10 +358,10 @@ _Unit_Pool_S = [
 	"rhs_msv_medic",
 	"rhs_msv_LAT", //rifleman RPG-26
 	"rhs_msv_RShG2" //rifleman RShG2
-	
+
 ];
 _Unit_Pool_V = [
-	"rhs_tigr_msv", //MRAP	
+	"rhs_tigr_msv", //MRAP
 	"RHS_UAZ_MSV_01",
 	"rhs_uaz_open_MSV_01",
 	"RHS_BM21_MSV_01", //rocket truck
@@ -371,7 +371,7 @@ _Unit_Pool_V = [
 	"rhs_gaz66_ap2_msv", //ambulance
 	"RHS_Ural_MSV_01",
 	"rhs_gaz66_repair_msv",
-	"RHS_Ural_Fuel_MSV_01"		
+	"RHS_Ural_Fuel_MSV_01"
 ];
 _Unit_Pool_T = [
 	"rhs_btr60_msv",
@@ -387,17 +387,17 @@ _Unit_Pool_T = [
 	"rhs_bmp2e_msv",
 	"rhs_bmp2d_msv",
 	"rhs_bmp2k_msv",
-	"rhs_prp3_msv"						
+	"rhs_prp3_msv"
 ];
 _Unit_Pool_A = [];
 };
-//------------------------------------------------------------------------------------------------- 
+//-------------------------------------------------------------------------------------------------
 // BLUFOR RHS Americans
 // US Army (Woodland)							rhs_faction_usarmy_wd
 case 11:
 {
 _Unit_Pool_S = [
-	"rhsusf_army_ocp_combatcrewman", "rhsusf_army_ocp_helipilot", "rhsusf_army_ocp_teamleader",
+	"rhsusf_army_ocp_combatcrewman", "rhsusf_army_ocp_helipilot", "rhsusf_army_ocp_teamleader", //Vehicle crewman, Pilot, Group Leader
 	"rhsusf_army_ocp_rifleman",
 	"rhsusf_army_ocp_riflemanl", //light
 	"rhsusf_army_ocp_riflemanat", //M136
@@ -406,16 +406,16 @@ _Unit_Pool_S = [
 	"rhsusf_army_ocp_medic",
 	"rhsusf_army_ocp_machinegunner",
 	"rhsusf_army_ocp_machinegunnera", //MG assistant
-	"rhsusf_army_ocp_engineer",			
+	"rhsusf_army_ocp_engineer",
 	"rhsusf_army_ocp_autorifleman",
 	"rhsusf_army_ocp_aa", //Stinger
 	"rhsusf_army_ocp_javelin" //Javelin
 
 ];
-_Unit_Pool_V = [								
+_Unit_Pool_V = [
 	"rhsusf_m998_w_2dr_fulltop",
 	"rhsusf_m998_w_2dr_halftop",
-	"rhsusf_m998_w_2dr",					
+	"rhsusf_m998_w_2dr",
 	"rhsusf_m998_w_4dr_fulltop",
 	"rhsusf_m998_w_4dr_halftop",
 	"rhsusf_m998_w_4dr",
@@ -425,12 +425,12 @@ _Unit_Pool_V = [
 _Unit_Pool_T = [
 	"RHS_M6_wd",
 	"rhsusf_m109_usarmy",
-	"RHS_M2A2_BUSKI_WD",		
+	"RHS_M2A2_BUSKI_WD",
 	"RHS_M2A3_BUSKI_wd",
 	"RHS_M2A3_BUSKIII_wd",
 	"RHS_M2A2_wd",
 	"RHS_M2A3_wd",
-	"rhsusf_m1a1aimwd_usarmy",					
+	"rhsusf_m1a1aimwd_usarmy",
 	"rhsusf_m1a1aim_tuski_wd",
 	"rhsusf_m1a2sep1wd_usarmy",
 	"rhsusf_m1a2sep1tuskiwd_usarmy"
@@ -443,7 +443,7 @@ _Unit_Pool_A = [];
 case 12:
 {
 _Unit_Pool_S = [
-	"rhs_vdv_combatcrew", "rhs_pilot", "rhs_vdv_sergeant",
+	"rhs_vdv_combatcrew", "rhs_pilot", "rhs_vdv_sergeant", //Vehicle crewman, Pilot, Group Leader
 	"rhs_vdv_RShG2",
 	"rhs_vdv_LAT",
 	"rhs_vdv_rifleman",
@@ -463,7 +463,7 @@ _Unit_Pool_V = [	// BTR here, 1 rocket = BTR dead, so IMO they fit here
 	"RHS_Ural_VDV_01",
 	"rhs_btr80_vdv",
 	"rhs_btr80a_vdv"
-]; 
+];
 _Unit_Pool_T = [
 	"rhs_bmd1p",
 	"rhs_bmd2m",
@@ -486,7 +486,7 @@ _Unit_Pool_A = [
 case 13:
 {
 _Unit_Pool_S = [
-	"rhsusf_usmc_marpat_wd_combatcrewman", "rhsusf_usmc_marpat_wd_helipilot", "rhsusf_usmc_marpat_wd_teamleader",
+	"rhsusf_usmc_marpat_wd_combatcrewman", "rhsusf_usmc_marpat_wd_helipilot", "rhsusf_usmc_marpat_wd_teamleader", //Vehicle crewman, Pilot, Group Leader
 	"rhsusf_usmc_marpat_wd_riflemanat",
 	"rhsusf_usmc_marpat_wd_rifleman",
 	"rhsusf_usmc_marpat_wd_marksman",
@@ -500,7 +500,7 @@ _Unit_Pool_V = [	// only armed vehicles
 	"rhsusf_m1025_w_s_m2_10",
 	"rhsusf_m1025_w_s_mk19_10",
 	"rhsusf_rg33_m2_usmc_wd"
-]; 
+];
 _Unit_Pool_T = [
 	"rhsusf_m1a1fep_wd",
 	"rhsusf_m1a1fep_od"
@@ -510,7 +510,7 @@ _Unit_Pool_A = [	// added A3 little bird, it is quite balanced and nice to fight
 	"RHS_UH1Y_FFAR",
 	"RHS_UH1Y",
 	"B_Heli_Light_01_armed_F"
-]; 
+];
 };
 //-------------------------------------------------------------------------------------------------
 // LOP DAC factions added by Don [6.Rus] 	(DonElSarjo)
@@ -519,26 +519,25 @@ _Unit_Pool_A = [	// added A3 little bird, it is quite balanced and nice to fight
 case 14:
 {
 _Unit_Pool_S = [
-	"LOP_AM_Infantry_AT", 
-	"LOP_AM_Infantry_AR", 
-	"LOP_AM_Infantry_Corpsman", 
-	"LOP_AM_Infantry_GL", 
-	"LOP_AM_Infantry_Engineer", 
-	"LOP_AM_Infantry_Marksman", 
-	"LOP_AM_Soldier", 
-	"LOP_AM_Infantry_SL", 
+	"LOP_AM_Infantry_Engineer", "LOP_AM_Infantry_Engineer", "LOP_AM_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
+	"LOP_AM_Infantry_AT",
+	"LOP_AM_Infantry_AR",
+	"LOP_AM_Infantry_Corpsman",
+	"LOP_AM_Infantry_GL",
+	"LOP_AM_Infantry_Marksman",
+	"LOP_AM_Soldier",
 	"LOP_AM_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_AM_Landrover", 
-	"LOP_AM_Landrover_M2", 
-	"LOP_AM_Offroad", 
-	"LOP_AM_Offroad_M2", 
+	"LOP_AM_Landrover",
+	"LOP_AM_Landrover_M2",
+	"LOP_AM_Offroad",
+	"LOP_AM_Offroad_M2",
 	"LOP_AM_Truck"
 ];
 _Unit_Pool_T = [
-	"LOP_AM_BTR60", 
-	"LOP_AM_M113_W", 
+	"LOP_AM_BTR60",
+	"LOP_AM_M113_W",
 	"LOP_AM_T72BA"
 ];
 _Unit_Pool_A = [];
@@ -548,27 +547,26 @@ _Unit_Pool_A = [];
 case 15:
 {
 _Unit_Pool_S = [
-	"LOP_AFR_Infantry_AT", 
-	"LOP_AFR_Infantry_Corpsman", 
-	"LOP_AFR_Driver", 
-	"LOP_AFR_Infantry_GL", 
-	"LOP_AFR_Infantry_IED", 
-	"LOP_AFR_Infantry_AR", 
-	"LOP_AFR_Infantry_Marksman", 
-	"LOP_AFR_Infantry", 
-	"LOP_AFR_Infantry_SL", 
+	"LOP_AFR_Driver", "LOP_AFR_Driver", "LOP_AFR_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
+	"LOP_AFR_Infantry_AT",
+	"LOP_AFR_Infantry_Corpsman",
+	"LOP_AFR_Infantry_GL",
+	"LOP_AFR_Infantry_IED",
+	"LOP_AFR_Infantry_AR",
+	"LOP_AFR_Infantry_Marksman",
+	"LOP_AFR_Infantry",
 	"LOP_AFR_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_AFR_Landrover", 
-	"LOP_AFR_Landrover_M2", 
-	"LOP_AFR_Offroad", 
-	"LOP_AFR_Offroad_M2", 
+	"LOP_AFR_Landrover",
+	"LOP_AFR_Landrover_M2",
+	"LOP_AFR_Offroad",
+	"LOP_AFR_Offroad_M2",
 	"LOP_AFR_Truck"
 ];
 _Unit_Pool_T = [
-	"LOP_AFR_BTR60", 
-	"LOP_AFR_M113_W", 
+	"LOP_AFR_BTR60",
+	"LOP_AFR_M113_W",
 	"LOP_AFR_T72BA"
 ];
 _Unit_Pool_A = [];
@@ -578,26 +576,25 @@ _Unit_Pool_A = [];
 case 16:
 {
 _Unit_Pool_S = [
-	"LOP_ISTS_Infantry_AT", 
-	"LOP_ISTS_Infantry_AR", 
-	"LOP_ISTS_Infantry_Corpsman", 
-	"LOP_ISTS_Infantry_GL", 
-	"LOP_ISTS_Infantry_Engineer", 
-	"LOP_ISTS_Infantry_Marksman", 
-	"LOP_ISTS_Soldier", 
-	"LOP_ISTS_Infantry_SL", 
+	"LOP_ISTS_Infantry_Engineer", "LOP_ISTS_Infantry_Engineer", "LOP_ISTS_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
+	"LOP_ISTS_Infantry_AT",
+	"LOP_ISTS_Infantry_AR",
+	"LOP_ISTS_Infantry_Corpsman",
+	"LOP_ISTS_Infantry_GL",
+	"LOP_ISTS_Infantry_Marksman",
+	"LOP_ISTS_Soldier",
 	"LOP_ISTS_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_ISTS_Landrover", 
-	"LOP_ISTS_Landrover_M2", 
-	"LOP_ISTS_Offroad", 
-	"LOP_ISTS_Offroad_M2", 
+	"LOP_ISTS_Landrover",
+	"LOP_ISTS_Landrover_M2",
+	"LOP_ISTS_Offroad",
+	"LOP_ISTS_Offroad_M2",
 	"LOP_ISTS_Truck"
 ];
 _Unit_Pool_T = [
-	"LOP_ISTS_BTR60", 
-	"LOP_ISTS_M113_W", 
+	"LOP_ISTS_BTR60",
+	"LOP_ISTS_M113_W",
 	"LOP_ISTS_T72BA"
 ];
 _Unit_Pool_A = [];
@@ -607,25 +604,23 @@ _Unit_Pool_A = [];
 case 17:
 {
 _Unit_Pool_S = [
-	"LOP_RACS_Infantry_AT", 
-	"LOP_RACS_Infantry_AT_Asst", 
-	"LOP_RACS_Infantry_Corpsman", 
-	"LOP_RACS_Infantry_Crewman", 
-	"LOP_RACS_Infantry_Pilot", 
-	"LOP_RACS_Infantry_Engineer", 
-	"LOP_RACS_Infantry_GL", 
-	"LOP_RACS_Infantry_MG", 
-	"LOP_RACS_Infantry_MG_Asst", 
-	"LOP_RACS_Infantry_Marksman", 
-	"LOP_RACS_Infantry_Rifleman", 
-	"LOP_RACS_Infantry_SL", 
+	"LOP_RACS_Infantry_Crewman", "LOP_RACS_Infantry_Pilot", "LOP_RACS_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
+	"LOP_RACS_Infantry_AT",
+	"LOP_RACS_Infantry_AT_Asst",
+	"LOP_RACS_Infantry_Corpsman",
+	"LOP_RACS_Infantry_Engineer",
+	"LOP_RACS_Infantry_GL",
+	"LOP_RACS_Infantry_MG",
+	"LOP_RACS_Infantry_MG_Asst",
+	"LOP_RACS_Infantry_Marksman",
+	"LOP_RACS_Infantry_Rifleman",
 	"LOP_RACS_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_RACS_Landrover", 
-	"LOP_RACS_Landrover_M2", 
-	"LOP_RACS_Offroad", 
-	"LOP_RACS_Offroad_M2", 
+	"LOP_RACS_Landrover",
+	"LOP_RACS_Landrover_M2",
+	"LOP_RACS_Offroad",
+	"LOP_RACS_Offroad_M2",
 	"LOP_RACS_Truck"
 ];
 _Unit_Pool_T = [
@@ -643,31 +638,30 @@ _Unit_Pool_A = [
 case 18:
 {
 _Unit_Pool_S = [
-	"LOP_IA_Infantry_AT", 
-	"LOP_IA_Infantry_AT_Asst", 
-	"LOP_IA_Infantry_Corpsman", 
-	"LOP_IA_Infantry_Crewman", 
-	"LOP_IA_Infantry_Engineer", 
-	"LOP_IA_Infantry_GL", 
-	"LOP_IA_Infantry_MG", 
-	"LOP_IA_Infantry_MG_Asst", 
-	"LOP_IA_Infantry_Marksman", 
-	"LOP_IA_Infantry_Rifleman", 
-	"LOP_IA_Infantry_SL", 
+	"LOP_IA_Infantry_Crewman", "LOP_IA_Infantry_Crewman", "LOP_IA_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
+	"LOP_IA_Infantry_AT",
+	"LOP_IA_Infantry_AT_Asst",
+	"LOP_IA_Infantry_Corpsman",
+	"LOP_IA_Infantry_Engineer",
+	"LOP_IA_Infantry_GL",
+	"LOP_IA_Infantry_MG",
+	"LOP_IA_Infantry_MG_Asst",
+	"LOP_IA_Infantry_Marksman",
+	"LOP_IA_Infantry_Rifleman",
 	"LOP_IA_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_IA_BM21", 
-	"LOP_IA_HEMTT_Mover_D", 
-	"LOP_IA_HEMTT_Box_D", 
-	"LOP_IA_HEMTT_Transport_D", 
-	"LOP_IA_HEMTT_Covered_D", 
-	"LOP_IA_M1025_W_M2", 
-	"LOP_IA_M1025_W_Mk19", 
-	"LOP_IA_M1025_D", 
-	"LOP_IA_M998_D_4DR", 
-	"LOP_IA_Offroad", 
-	"LOP_IA_Offroad_M2", 
+	"LOP_IA_BM21",
+	"LOP_IA_HEMTT_Mover_D",
+	"LOP_IA_HEMTT_Box_D",
+	"LOP_IA_HEMTT_Transport_D",
+	"LOP_IA_HEMTT_Covered_D",
+	"LOP_IA_M1025_W_M2",
+	"LOP_IA_M1025_W_Mk19",
+	"LOP_IA_M1025_D",
+	"LOP_IA_M998_D_4DR",
+	"LOP_IA_Offroad",
+	"LOP_IA_Offroad_M2",
 	"LOP_IA_Truck"
 ];
 _Unit_Pool_T = [
@@ -684,50 +678,48 @@ _Unit_Pool_A = [];
 case 19:
 {
 _Unit_Pool_S = [
-	"LOP_CDF_Infantry_AA", 
-	"LOP_CDF_Infantry_AA", 
-	"LOP_CDF_Infantry_AT_Asst", 
-	"LOP_CDF_Infantry_Corpsman", 
-	"LOP_CDF_Infantry_Crewman", 
-	"LOP_CDF_Infantry_Engineer", 
-	"LOP_CDF_Infantry_GL", 
-	"LOP_CDF_Infantry_MG", 
-	"LOP_CDF_Infantry_MG_Asst", 
-	"LOP_CDF_Infantry_Marksman", 
-	"LOP_CDF_Infantry_Officer", 
-	"LOP_CDF_Infantry_Pilot", 
+	"LOP_CDF_Infantry_Crewman", "LOP_CDF_Infantry_Pilot", "LOP_CDF_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
+	"LOP_CDF_Infantry_AA",
+	"LOP_CDF_Infantry_AA",
+	"LOP_CDF_Infantry_AT_Asst",
+	"LOP_CDF_Infantry_Corpsman",
+	"LOP_CDF_Infantry_Engineer",
+	"LOP_CDF_Infantry_GL",
+	"LOP_CDF_Infantry_MG",
+	"LOP_CDF_Infantry_MG_Asst",
+	"LOP_CDF_Infantry_Marksman",
+	"LOP_CDF_Infantry_Officer",
 	"LOP_CDF_Infantry_Rifleman",
-	"LOP_CDF_Infantry_SL", 
 	"LOP_CDF_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_CDF_BM21", 
-	"LOP_CDF_KAMAZ_Transport", 
-	"LOP_CDF_KAMAZ_Covered", 
+	"LOP_CDF_BM21",
+	"LOP_CDF_KAMAZ_Transport",
+	"LOP_CDF_KAMAZ_Covered",
 	"LOP_CDF_UAZ" ,
-	"LOP_CDF_UAZ_Open", 
-	"LOP_CDF_Ural", 
+	"LOP_CDF_UAZ_Open",
+	"LOP_CDF_Ural",
 	"LOP_CDF_Ural_open"
 ];
 _Unit_Pool_T = [
-	"LOP_CDF_BMD1", 
-	"LOP_CDF_BMD2", 
-	"LOP_CDF_BMP1", 
-	"LOP_CDF_BMP1D", 
-	"LOP_CDF_BMP2", 
-	"LOP_CDF_BMP2D", 
-	"LOP_CDF_BTR60", 
-	"LOP_CDF_BTR70", 
-	"LOP_CDF_T72BA", 
-	"LOP_CDF_T72BB", 
+	"LOP_CDF_BMD1",
+	"LOP_CDF_BMD2",
+	"LOP_CDF_BMP1",
+	"LOP_CDF_BMP1D",
+	"LOP_CDF_BMP2",
+	"LOP_CDF_BMP2D",
+	"LOP_CDF_BTR60",
+	"LOP_CDF_BTR70",
+	"LOP_CDF_T72BA",
+	"LOP_CDF_T72BB",
 	"LOP_CDF_ZSU234"
 ];
 _Unit_Pool_A = [
-	"LOP_CDF_Mi24V_AT", 
-	"LOP_CDF_Mi24V_FAB", 
-	"LOP_CDF_Mi24V_UPK23", 
-	"LOP_CDF_Mi8MT_Cargo", 
-	"LOP_CDF_Mi8MTV3_FAB", 
+	"LOP_CDF_Mi24V_AT",
+	"LOP_CDF_Mi24V_FAB",
+	"LOP_CDF_Mi24V_UPK23",
+	"LOP_CDF_Mi8MT_Cargo",
+	"LOP_CDF_Mi8MTV3_FAB",
 	"LOP_CDF_Mi8MTV3_UPK23"
 ];
 };
@@ -736,32 +728,31 @@ _Unit_Pool_A = [
 case 20:
 {
 _Unit_Pool_S = [
-	"LOP_AA_Infantry_AT", 
-	"LOP_AA_Infantry_AT_Asst", 
-	"LOP_AA_Infantry_Corpsman", 
-	"LOP_AA_Infantry_Crewman", 
-	"LOP_AA_Infantry_Engineer", 
-	"LOP_AA_Infantry_GL", 
-	"LOP_AA_Infantry_MG", 
-	"LOP_AA_Infantry_MG_Asst", 
-	"LOP_AA_Infantry_Marksman", 
-	"LOP_AA_Infantry_Rifleman", 
-	"LOP_AA_Infantry_SL", 
+	"LOP_AA_Infantry_Crewman", "LOP_AA_Infantry_Crewman", "LOP_AA_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
+	"LOP_AA_Infantry_AT",
+	"LOP_AA_Infantry_AT_Asst",
+	"LOP_AA_Infantry_Corpsman",
+	"LOP_AA_Infantry_Engineer",
+	"LOP_AA_Infantry_GL",
+	"LOP_AA_Infantry_MG",
+	"LOP_AA_Infantry_MG_Asst",
+	"LOP_AA_Infantry_Marksman",
+	"LOP_AA_Infantry_Rifleman",
 	"LOP_AA_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_AA_M1025_W_M2", 
-	"LOP_AA_M1025_W_Mk19", 
-	"LOP_AA_M1025_D", 
-	"LOP_AA_M998_D_4DR", 
-	"LOP_AA_Offroad", 
-	"LOP_AA_Offroad_M2", 
+	"LOP_AA_M1025_W_M2",
+	"LOP_AA_M1025_W_Mk19",
+	"LOP_AA_M1025_D",
+	"LOP_AA_M998_D_4DR",
+	"LOP_AA_Offroad",
+	"LOP_AA_Offroad_M2",
 	"LOP_AA_Truck"
 ];
 _Unit_Pool_T = [
-	"LOP_AA_BMP1", 
-	"LOP_AA_BMP2", 
-	"LOP_AA_M113_W", 
+	"LOP_AA_BMP1",
+	"LOP_AA_BMP2",
+	"LOP_AA_M113_W",
 	"LOP_AA_ZSU234"
 ];
 _Unit_Pool_A = [];
@@ -771,18 +762,18 @@ _Unit_Pool_A = [];
 case 21:
 {
 _Unit_Pool_S = [
+	"LOP_AA_Police_Rifleman", "LOP_AA_Police_Rifleman", "LOP_AA_Police_SL", //Vehicle crewman, Pilot, Group Leader
 	"LOP_AA_Police_Corpsman",
 	"LOP_AA_Police_MG",
 	"LOP_AA_Police_Rifleman",
-	"LOP_AA_Police_SL",
 	"LOP_AA_Police_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_AA_Offroad_Police", 
+	"LOP_AA_Offroad_Police",
 	"LOP_AA_Offroad_M2_Police"
 ];
 _Unit_Pool_T = [
-	"LOP_AA_Offroad_Police", 
+	"LOP_AA_Offroad_Police",
 	"LOP_AA_Offroad_M2_Police"
 ];
 _Unit_Pool_A = [];
@@ -792,41 +783,39 @@ _Unit_Pool_A = [];
 case 22:
 {
 _Unit_Pool_S = [
-	"LOP_ChDKZ_Infantry_AT", 
-	"LOP_ChDKZ_Infantry_Bardak", 
-	"LOP_ChDKZ_Infantry_Commander", 
-	"LOP_ChDKZ_Infantry_Corpsman", 
-	"LOP_ChDKZ_Infantry_Crewman", 
-	"LOP_ChDKZ_Infantry_Engineer", 
-	"LOP_ChDKZ_Infantry_GL", 
-	"LOP_ChDKZ_Infantry_MG", 
-	"LOP_ChDKZ_Infantry_Marksman", 
-	"LOP_ChDKZ_Infantry_Pilot", 
-	"LOP_ChDKZ_Infantry_Rifleman", 
-	"LOP_ChDKZ_Infantry_SL", 
+	"LOP_ChDKZ_Infantry_Crewman", "LOP_ChDKZ_Infantry_Pilot", "LOP_ChDKZ_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
+	"LOP_ChDKZ_Infantry_AT",
+	"LOP_ChDKZ_Infantry_Bardak",
+	"LOP_ChDKZ_Infantry_Commander",
+	"LOP_ChDKZ_Infantry_Corpsman",
+	"LOP_ChDKZ_Infantry_Engineer",
+	"LOP_ChDKZ_Infantry_GL",
+	"LOP_ChDKZ_Infantry_MG",
+	"LOP_ChDKZ_Infantry_Marksman",
+	"LOP_ChDKZ_Infantry_Rifleman",
 	"LOP_ChDKZ_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_ChDKZ_BM21", 
-	"LOP_ChDKZ_UAZ", 
-	"LOP_ChDKZ_UAZ_Open", 
-	"LOP_ChDKZ_Ural", 
+	"LOP_ChDKZ_BM21",
+	"LOP_ChDKZ_UAZ",
+	"LOP_ChDKZ_UAZ_Open",
+	"LOP_ChDKZ_Ural",
 	"LOP_ChDKZ_Ural_open"
 ];
 _Unit_Pool_T = [
-	"LOP_ChDKZ_BMP1", 
-	"LOP_ChDKZ_BMP1D", 
-	"LOP_ChDKZ_BMP2", 
-	"LOP_ChDKZ_BMP2D", 
-	"LOP_ChDKZ_BTR60", 
-	"LOP_ChDKZ_BTR70", 
-	"LOP_ChDKZ_T72BA", 
-	"LOP_ChDKZ_T72BB", 
+	"LOP_ChDKZ_BMP1",
+	"LOP_ChDKZ_BMP1D",
+	"LOP_ChDKZ_BMP2",
+	"LOP_ChDKZ_BMP2D",
+	"LOP_ChDKZ_BTR60",
+	"LOP_ChDKZ_BTR70",
+	"LOP_ChDKZ_T72BA",
+	"LOP_ChDKZ_T72BB",
 	"LOP_ChDKZ_ZSU234"
 ];
 _Unit_Pool_A = [
-	"LOP_ChDKZ_Mi8MT_Cargo", 
-	"LOP_ChDKZ_Mi8MTV3_FAB", 
+	"LOP_ChDKZ_Mi8MT_Cargo",
+	"LOP_ChDKZ_Mi8MTV3_FAB",
 	"LOP_ChDKZ_Mi8MTV3_UPK23"
 ];
 };
@@ -835,43 +824,41 @@ _Unit_Pool_A = [
 case 23:
 {
 _Unit_Pool_S = [
+	"LOP_SLA_Infantry_Crewman", "LOP_SLA_Infantry_Pilot", "LOP_SLA_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
 	"LOP_SLA_Infantry_AA",
 	"LOP_SLA_Infantry_AT",
 	"LOP_SLA_Infantry_AT_Asst",
 	"LOP_SLA_Infantry_Corpsman",
-	"LOP_SLA_Infantry_Crewman", 
-	"LOP_SLA_Infantry_Engineer", 
-	"LOP_SLA_Infantry_GL", 
-	"LOP_SLA_Infantry_MG", 
-	"LOP_SLA_Infantry_MG_Asst", 
-	"LOP_SLA_Infantry_Marksman", 
-	"LOP_SLA_Infantry_Officer", 
-	"LOP_SLA_Infantry_Pilot", 
-	"LOP_SLA_Infantry_Rifleman", 
-	"LOP_SLA_Infantry_SL", 
+	"LOP_SLA_Infantry_Engineer",
+	"LOP_SLA_Infantry_GL",
+	"LOP_SLA_Infantry_MG",
+	"LOP_SLA_Infantry_MG_Asst",
+	"LOP_SLA_Infantry_Marksman",
+	"LOP_SLA_Infantry_Officer",
+	"LOP_SLA_Infantry_Rifleman",
 	"LOP_SLA_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_SLA_BM21", 
-	"LOP_SLA_UAZ", 
-	"LOP_SLA_UAZ_Open", 
-	"LOP_SLA_Ural", 
+	"LOP_SLA_BM21",
+	"LOP_SLA_UAZ",
+	"LOP_SLA_UAZ_Open",
+	"LOP_SLA_Ural",
 	"LOP_SLA_Ural_open"
 ];
 _Unit_Pool_T = [
-	"LOP_SLA_BMP1", 
-	"LOP_SLA_BMP1D", 
-	"LOP_SLA_BMP2", 
-	"LOP_SLA_BMP2D", 
-	"LOP_SLA_BTR60", 
-	"LOP_SLA_BTR70", 
-	"LOP_SLA_T72BA", 
-	"LOP_SLA_T72BB", 
+	"LOP_SLA_BMP1",
+	"LOP_SLA_BMP1D",
+	"LOP_SLA_BMP2",
+	"LOP_SLA_BMP2D",
+	"LOP_SLA_BTR60",
+	"LOP_SLA_BTR70",
+	"LOP_SLA_T72BA",
+	"LOP_SLA_T72BB",
 	"LOP_SLA_ZSU234"
 ];
 _Unit_Pool_A = [
-	"LOP_SLA_Mi8MT_Cargo", 
-	"LOP_SLA_Mi8MTV3_FAB", 
+	"LOP_SLA_Mi8MT_Cargo",
+	"LOP_SLA_Mi8MTV3_FAB",
 	"LOP_SLA_Mi8MTV3_UPK23"
 ];
 };
@@ -880,37 +867,36 @@ _Unit_Pool_A = [
 case 24:
 {
 _Unit_Pool_S = [
+	"LOP_US_Infantry_Crewman", "LOP_US_Infantry_Crewman", "LOP_US_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
 	"LOP_US_Infantry_AA",
 	"LOP_US_Infantry_AT",
 	"LOP_US_Infantry_AT_Asst",
 	"LOP_US_Infantry_Corpsman",
-	"LOP_US_Infantry_Crewman", 
-	"LOP_US_Infantry_Engineer", 
-	"LOP_US_Infantry_GL", 
-	"LOP_US_Infantry_MG", 
-	"LOP_US_Infantry_MG_Asst", 
-	"LOP_US_Infantry_Marksman", 
-	"LOP_US_Infantry_Officer", 
-	"LOP_US_Infantry_Rifleman", 
-	"LOP_US_Infantry_SL", 
+	"LOP_US_Infantry_Engineer",
+	"LOP_US_Infantry_GL",
+	"LOP_US_Infantry_MG",
+	"LOP_US_Infantry_MG_Asst",
+	"LOP_US_Infantry_Marksman",
+	"LOP_US_Infantry_Officer",
+	"LOP_US_Infantry_Rifleman",
 	"LOP_US_Infantry_TL"
 ];
 _Unit_Pool_V = [
-	"LOP_US_BM21", 
-	"LOP_US_UAZ", 
-	"LOP_US_UAZ_Open", 
-	"LOP_US_Ural", 
+	"LOP_US_BM21",
+	"LOP_US_UAZ",
+	"LOP_US_UAZ_Open",
+	"LOP_US_Ural",
 	"LOP_US_Ural_open"
 ];
 _Unit_Pool_T = [
-	"LOP_US_BMP1", 
-	"LOP_US_BMP1D", 
-	"LOP_US_BMP2", 
-	"LOP_US_BMP2D", 
-	"LOP_US_BTR60", 
-	"LOP_US_BTR70", 
-	"LOP_US_T72BA", 
-	"LOP_US_T72BB", 
+	"LOP_US_BMP1",
+	"LOP_US_BMP1D",
+	"LOP_US_BMP2",
+	"LOP_US_BMP2D",
+	"LOP_US_BTR60",
+	"LOP_US_BTR70",
+	"LOP_US_T72BA",
+	"LOP_US_T72BB",
 	"LOP_US_ZSU234"
 ];
 _Unit_Pool_A = [];
@@ -920,35 +906,36 @@ _Unit_Pool_A = [];
 case 25:
 {
 _Unit_Pool_S = [
-	"LOP_AFR_Civ_Man_01", 
-	"LOP_AFR_Civ_Man_01_S", 
-	"LOP_AFR_Civ_Man_02", 
-	"LOP_AFR_Civ_Man_02_S", 
-	"LOP_AFR_Civ_Man_03", 
-	"LOP_AFR_Civ_Man_03_S", 
-	"LOP_AFR_Civ_Man_04", 
-	"LOP_AFR_Civ_Man_04_S", 
-	"LOP_AFR_Civ_Man_05", 
-	"LOP_AFR_Civ_Man_05_S", 
-	"LOP_AFR_Civ_Man_06", 
+	//Vehicle crewman, Pilot, Group Leader
+	"LOP_AFR_Civ_Man_01",
+	"LOP_AFR_Civ_Man_01_S",
+	"LOP_AFR_Civ_Man_02",
+	"LOP_AFR_Civ_Man_02_S",
+	"LOP_AFR_Civ_Man_03",
+	"LOP_AFR_Civ_Man_03_S",
+	"LOP_AFR_Civ_Man_04",
+	"LOP_AFR_Civ_Man_04_S",
+	"LOP_AFR_Civ_Man_05",
+	"LOP_AFR_Civ_Man_05_S",
+	"LOP_AFR_Civ_Man_06",
 	"LOP_AFR_Civ_Man_06_S"
 ];
 _Unit_Pool_V = [
-	"LOP_AFR_Civ_Hatchback", 
-	"LOP_AFR_Civ_Offroad", 
-	"LOP_AFR_Civ_Landrover", 
-	"LOP_AFR_Civ_UAZ", 
-	"LOP_AFR_Civ_UAZ_Open", 
-	"LOP_AFR_Civ_Ural", 
+	"LOP_AFR_Civ_Hatchback",
+	"LOP_AFR_Civ_Offroad",
+	"LOP_AFR_Civ_Landrover",
+	"LOP_AFR_Civ_UAZ",
+	"LOP_AFR_Civ_UAZ_Open",
+	"LOP_AFR_Civ_Ural",
 	"LOP_AFR_Civ_Ural_open"
 ];
 _Unit_Pool_T = [
-	"LOP_AFR_Civ_Hatchback", 
-	"LOP_AFR_Civ_Offroad", 
-	"LOP_AFR_Civ_Landrover", 
-	"LOP_AFR_Civ_UAZ", 
-	"LOP_AFR_Civ_UAZ_Open", 
-	"LOP_AFR_Civ_Ural", 
+	"LOP_AFR_Civ_Hatchback",
+	"LOP_AFR_Civ_Offroad",
+	"LOP_AFR_Civ_Landrover",
+	"LOP_AFR_Civ_UAZ",
+	"LOP_AFR_Civ_UAZ_Open",
+	"LOP_AFR_Civ_Ural",
 	"LOP_AFR_Civ_Ural_open"
 ];
 _Unit_Pool_A = [];
@@ -958,26 +945,27 @@ _Unit_Pool_A = [];
 case 26:
 {
 _Unit_Pool_S = [
-	"LOP_Tak_Civ_Man_01", 
-	"LOP_Tak_Civ_Man_02", 
+	//Vehicle crewman, Pilot, Group Leader
+	"LOP_Tak_Civ_Man_01",
+	"LOP_Tak_Civ_Man_02",
 	"LOP_Tak_Civ_Man_04"
 ];
 _Unit_Pool_V = [
-	"LOP_TAK_Civ_Hatchback", 
-	"LOP_TAK_Civ_Offroad", 
-	"LOP_TAK_Civ_Landrover", 
-	"LOP_TAK_Civ_UAZ", 
-	"LOP_TAK_Civ_UAZ_Open", 
-	"LOP_TAK_Civ_Ural", 
+	"LOP_TAK_Civ_Hatchback",
+	"LOP_TAK_Civ_Offroad",
+	"LOP_TAK_Civ_Landrover",
+	"LOP_TAK_Civ_UAZ",
+	"LOP_TAK_Civ_UAZ_Open",
+	"LOP_TAK_Civ_Ural",
 	"LOP_TAK_Civ_Ural_open"
 ];
 _Unit_Pool_T = [
-	"LOP_TAK_Civ_Hatchback", 
-	"LOP_TAK_Civ_Offroad", 
-	"LOP_TAK_Civ_Landrover", 
-	"LOP_TAK_Civ_UAZ", 
-	"LOP_TAK_Civ_UAZ_Open", 
-	"LOP_TAK_Civ_Ural", 
+	"LOP_TAK_Civ_Hatchback",
+	"LOP_TAK_Civ_Offroad",
+	"LOP_TAK_Civ_Landrover",
+	"LOP_TAK_Civ_UAZ",
+	"LOP_TAK_Civ_UAZ_Open",
+	"LOP_TAK_Civ_Ural",
 	"LOP_TAK_Civ_Ural_open"
 ];
 _Unit_Pool_A = [];
