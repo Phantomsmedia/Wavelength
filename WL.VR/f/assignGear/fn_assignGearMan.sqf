@@ -214,6 +214,10 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
     };
 } forEach _magazinesNotAdded;
 
+if (!isNil "F_GEAR_ERROR_LOADOUTS" && {isServer && hasInterface}) then {
+    systemChat format ["Failed to add magazines for unit (%1) due to space or other issue: %2", typeof _unit, F_GEAR_ERROR_LOADOUTS];
+};
+
 _a = _path >> "init";
 if (isText _a) then {
     _unit call compile ("this = _this;"+ getText _a);
