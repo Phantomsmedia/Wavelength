@@ -2,6 +2,8 @@
 // F3 - F3 Folk ARPS Assign Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
+private ["_unit", "_faction", "_loadout", "_path"];
+
 _unit = _this select 0;
 
 if (!(local _unit)) exitWith {};
@@ -16,7 +18,11 @@ _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
     #include "f_assignInsignia.sqf"
 };*/
 
-_path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+if (isNil "F_Gear_Path_Override") then {
+    _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+} else {
+    _path = [_faction, _loadout] call F_Gear_Path_Override;
+};
 
 if(!isClass(_path)) exitWith {
     if (isPlayer _unit) then {
