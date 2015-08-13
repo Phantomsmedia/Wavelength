@@ -40,13 +40,13 @@ if (!isClass _path) then {
         case (independent): {"ind_f"};
             default {"CIV_F"};
         };
-        
+
         if (isNil "F_Gear_Path_Override") then {
             _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
         } else {
             _path = [_vehConfigFaction, _defaultLoadout] call F_Gear_Path_Override;
         };
-        
+
         if (!isClass _path) then {
             if (_vehConfigSide == east) then {
                 _vehConfigFaction = "OPF_F";
@@ -73,6 +73,7 @@ clearBackpackCargoGlobal _theVehicle;
 _transportMagazines = getArray(_path >> "TransportMagazines");
 _transportItems = getArray(_path >> "TransportItems");
 _transportWeapons = getArray(_path >> "TransportWeapons");
+_transportBackpack = getArray(_path >> "TransportBackpack");
 
 // ====================================================================================
 // _transportMagazines
@@ -110,5 +111,17 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
     };
     _theVehicle addWeaponCargoGlobal [_classname,_amt];
 } foreach _transportWeapons;
+// ====================================================================================
+// _transportBackpack
+{
+    _arr = [_x,":"] call BIS_fnc_splitString;
+    _classname = _arr select 0;
+    _amt = 1;
+    if(count _arr > 1) then
+    {
+        _amt = parseNumber (_arr select 1);
+    };
+    _theVehicle addBackpackCargoGlobal [_classname,_amt];
+} foreach _transportBackpack;
 
 _theVehicle setvariable ["f_var_assignGear_done", true,true];

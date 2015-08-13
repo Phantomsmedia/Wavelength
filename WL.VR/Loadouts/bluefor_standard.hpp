@@ -84,10 +84,12 @@ class blu_f {
     class Helicopter {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
         TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
+        TransportBackpack[] = {"B_Parachute:4"};
     };
 
     class Plane {
         TransportMagazines[] = {};
+        TransportBackpack[] = {"B_Parachute:2"};
     };
 
     class Ship_F {
