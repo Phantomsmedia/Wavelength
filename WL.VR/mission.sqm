@@ -359,7 +359,7 @@ class Mission
 					id=18;
 					side="WEST";
 					vehicle="B_Soldier_SL_F";
-					player="PLAY CDG";
+					player="PLAYER COMMANDER";
 					leader=1;
 					rank="SERGEANT";
 					skill=0.60000002;
@@ -6331,6 +6331,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH1";
+			init="this setVariable [""f_var_spawnGunners"",true];";
 		};
 		class Item1
 		{
@@ -6360,6 +6361,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH2";
+			init="this setVariable [""f_var_spawnGunners"",true];";
 		};
 		class Item4
 		{
@@ -6370,6 +6372,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH3";
+			init="this setVariable [""f_var_spawnGunners"",true];";
 		};
 		class Item5
 		{
@@ -6380,6 +6383,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH4";
+			init="this setVariable [""f_var_spawnGunners"",true];";
 		};
 		class Item6
 		{
@@ -6390,6 +6394,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH5";
+			init="this setVariable [""f_var_spawnGunners"",true];";
 		};
 		class Item7
 		{
@@ -6400,6 +6405,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH6";
+			init="this setVariable [""f_var_spawnGunners"",true];";
 		};
 		class Item8
 		{
@@ -6410,6 +6416,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH7";
+			init="this setVariable [""f_var_spawnGunners"",true];";
 		};
 		class Item9
 		{
@@ -6420,6 +6427,7 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			text="VehNATO_TH8";
+			init="this setVariable [""f_var_spawnGunners"",true];";
 		};
 		class Item10
 		{
