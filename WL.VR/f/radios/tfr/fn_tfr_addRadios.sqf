@@ -8,11 +8,11 @@ private["_unit", "_typeOfUnit", "_longRange","_radio1","_radio2","_radio3", "_ba
 
 _unit = player;
 
-_typeOfUnit = _unit getVariable ["f_var_assignGear", "NIL"];
+_typeOfUnit = _unit getVariable ["F_Gear", (typeOf _unit)];
 
 // DEFINE THE RADIOS THAT WILL BE USED
 
-switch ((side player)) do { //longrange, shortrange, rifradio
+switch ((side _unit)) do { //longrange, shortrange, rifradio
     case (west): {
       _radio1 = "tf_rt1523g_big";
       _radio2 = TF_defaultWestPersonalRadio;
@@ -38,30 +38,29 @@ if(_typeOfUnit != "NIL") then {
   // If radios are enabled in the settings
   if(!f_radios_settings_tfr_disableRadios) then {
 
-
       // Set the list of units that get a rifleman's radio
-      _rifradio = ["ar","aar","rat","samag","mmgag","hmgag","matag","hatag","mtrag","sp","r","car","smg","gren"];
+      _rifradio = ["_Soldier_F","_soldier_A_F","_soldier_AR_F","_soldier_AAR_F","_soldier_LAT_F","_Soldier_AT_F","_Soldier_AAT_F","_soldier_M_F","_Soldier_AA_F","_Soldier_AAA_F","_engineer_F","_soldier_repair_F","_HeavyGunner_F",
+                    "_support_Amort_F","_support_MG_F","_support_AMG_F","_helicrew_F","_Pilot_F","_crew_F","_diver_F"];
 
       // Set the list of units that get a shortrange radio
-      _shortrange = ["co", "dc", "ftl", "m", "samg", "mmgg", "matg", "sn", "mtrg" ,"fo"];
+      _shortrange = ["_officer_F", "_soldier_SL_F", "_medic_F", "_soldier_TL_F", "_Helipilot_F","_diver_TL_F"];
 
       // Give out respective radios
-
-      if (_typeOfUnit in _rifradio) then {
+      if (({[_x,_typeOfUnit] call BIS_fnc_inString} count _rifradio) > 0) then {
         _unit linkItem _radio3;
       } else {
-        if (_typeOfUnit in _shortrange) then {
+        if (({[_x,_typeOfUnit] call BIS_fnc_inString} count _shortrange) > 0) then {
           _unit linkItem _radio2;
         };
       };
 
       // Special cases
-      _specialist = ["vc", "pp", "eng", "engm", "div","uav"];
+      _specialist = ["_sniper_F","_spotter_F"];
 
       // If unit is leader of group and in the above list, give SR. Else, give them
       // a rifleman's radio.
 
-      if (_typeOfUnit in _specialist) then {
+      if (({[_x,_typeOfUnit] call BIS_fnc_inString;} count _specialist) > 0) then {
         if (_unit == (leader (group _unit))) then {
           _unit linkItem _radio2;
         } else {
@@ -72,18 +71,18 @@ if(_typeOfUnit != "NIL") then {
       // Give out LR backpacks according to f\radios\tfr_settings.sqf.
       if(f_radios_settings_tfr_defaultLRBackpacks) then {
         if (_unit == (leader (group _unit))) then {
-          _backpackItems = backpackItems player;
+          _backpackItems = backpackItems _unit;
           removeBackpack _unit;
           _unit addBackpack _radio1;
-          {player addItemToBackpack _x;} forEach _backpackItems;
+          {_unit addItemToBackpack _x;} forEach _backpackItems;
         };
       } else {
         // If unit is in the list of units that receive a long-range radio, do so.
         if(_typeOfUnit in f_radios_settings_tfr_backpackRadios) then {
-          _backpackItems = backpackItems player;
+          _backpackItems = backpackItems _unit;
           removeBackpack _unit;
           _unit addBackpack _radio1;
-          {player addItemToBackpack _x;} forEach _backpackItems;
+          {_unit addItemToBackpack _x;} forEach _backpackItems;
         };
       };
 
