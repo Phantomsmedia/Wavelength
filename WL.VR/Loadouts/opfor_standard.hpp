@@ -9,9 +9,9 @@ class opf_f {
 	//GL Rifle
     #define EAST_GLRIFLE "arifle_Katiba_GL_F"
     #define EAST_GLRIFLE_MAG "30Rnd_65x39_caseless_green:8","30Rnd_65x39_caseless_green_mag_Tracer:2"
-    #define EAST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:1","1Rnd_SmokeRed_Grenade_shell:2"
-    #define EAST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:10"
-    #define EAST_GLRIFLE_MAG_FLARE "UGL_FlareWhite_F:2","UGL_FlareRed_F:2","UGL_FlareWhite_F:2","UGL_FlareGreen_F:2"
+    #define EAST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
+    #define EAST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
+    #define EAST_GLRIFLE_MAG_FLARE "UGL_FlareWhite_F:2","UGL_FlareRed_F:2"
 
 	//Carbine
     #define EAST_CARBINE "arifle_Katiba_C_F"
@@ -111,7 +111,7 @@ class opf_f {
         weapons[] = {EAST_GLRIFLE};
         //vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
         //headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
-        magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_FLARE,EAST_GLRIFLE_MAG_SMOKE,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
+        magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_GLRIFLE_MAG_FLARE,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
         handguns[] = {EAST_PISTOL}; /// randomized
         linkedItems[] += {"ItemGPS","Binocular"};
         backpackItems[] += {"ACE_key_east","ACRE_PRC117F"};
@@ -142,7 +142,7 @@ class opf_f {
     class O_Soldier_TL_F: O_Soldier_F {// FTL
         weapons[] = {EAST_GLRIFLE};
         //headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
-        magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_GRENADE,EAST_SMOKE_WHITE};
+        magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_GLRIFLE_MAG_FLARE,EAST_GRENADE,EAST_SMOKE_WHITE};
         linkedItems[] += {"ItemGPS","Binocular"};
         backpackItems[] += {"ACE_key_east"};
     };

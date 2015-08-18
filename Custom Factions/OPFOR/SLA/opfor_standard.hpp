@@ -10,7 +10,8 @@ class opf_f {
     #define EAST_GLRIFLE "rhs_weap_akm_gp25"
     #define EAST_GLRIFLE_MAG "rhs_30Rnd_762x39mm:8","rhs_30Rnd_762x39mm_tracer:2"
     #define EAST_GLRIFLE_MAG_SMOKE "rhs_GRD40_White:4","rhs_GRD40_Green:2","rhs_GRD40_Red:3"
-    #define EAST_GLRIFLE_MAG_HE "rhs_VOG25P:14"
+    #define EAST_GLRIFLE_MAG_HE "rhs_VOG25P:8"
+    #define EAST_GLRIFLE_MAG_FLARE "rhs_VG40OP_white:2","rhs_VG40OP_red:2"
 
 	//Carbine
     #define EAST_CARBINE "rhs_weap_akms"
@@ -110,7 +111,7 @@ class opf_f {
         weapons[] = {EAST_GLRIFLE};
         //vest[] = {"rhsusf_iotv_ocp_Grenadier"}; /// randomized
         //headgear[] = {"rhsusf_ach_helmet_headset_ocp"}; /// randomized
-        magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_FLARE,EAST_GLRIFLE_MAG_SMOKE,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
+        magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_GLRIFLE_MAG_FLARE,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
         handguns[] = {EAST_PISTOL}; /// randomized
         linkedItems[] += {"ItemGPS","Binocular"};
         backpackItems[] += {"ACE_key_east","ACRE_PRC117F"};
@@ -134,7 +135,7 @@ class opf_f {
     class O_Soldier_TL_F: O_Soldier_F {// FTL
         weapons[] = {EAST_GLRIFLE};
         //headgear[] = {"rhsusf_ach_helmet_headset_ess_ocp"}; /// randomized
-        magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_GRENADE,EAST_SMOKE_WHITE};
+        magazines[] = {EAST_GLRIFLE_MAG,EAST_GLRIFLE_MAG_HE,EAST_GLRIFLE_MAG_SMOKE,EAST_GLRIFLE_MAG_FLARE,EAST_GRENADE,EAST_SMOKE_WHITE};
         linkedItems[] += {"ItemGPS","Binocular"};
         backpackItems[] += {"ACE_key_east"};
     };
