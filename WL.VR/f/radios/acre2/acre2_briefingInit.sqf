@@ -1,11 +1,14 @@
 // 1TacF3 - ACRE2 Briefing Init
 // ====================================================================================
 
+private ["_unit", "_channelIndex", "_channelIndexLR", "_fn_numToColor", "_radiosToGive", "_languagesToSpeak", "_presetArray", "_presetLRArray", "_assignedRadioChannels", "_usedRadioIndexs", "_symbolForPresent", "_ltext", "_text", "_radioIndex", "_radioType", "_channelIndex", "_presetData", "_radio", "_frequency", "_chanNum", "_color", "_channelLine", "_text2"];
+
 _unit = player;
 _channelIndex = _this select 0;
 _channelIndexLR = _this select 1;
 
-fn_numToColor = {
+_fn_numToColor = {
+	private ["_number", "_color"];
 	_number = _this select 0;
 	_color = switch (_number) do {
 		 case -1: {"#FFFFFF"};
@@ -75,28 +78,31 @@ _text = "<br/><font size='16'>RADIO CHANNEL LISTING</font>";
 			_presetData = [_radioType, f_radios_settings_acre2_presetName] call acre_api_fnc_getPresetData;
 
 			{
-				_chanNum = _forEachIndex + 1;
-				_frequency = [_radioType, f_radios_settings_acre2_presetName, _chanNum, "frequencyTX"] call acre_api_fnc_getPresetChannelField;
-				if (_frequency >= 1000) then {
-	            	_frequency = [_frequency, 4,3] call CBA_fnc_formatNumber;
-	          	} else {
-		        	if (_frequency < 100) then {
-	            	    _frequency = format[" %1",[_frequency, 2,5] call CBA_fnc_formatNumber];
-		            } else {
-		                _frequency = [_frequency, 3,5] call CBA_fnc_formatNumber;
-		            };
-	          	};
+				try {
+					_chanNum = _forEachIndex + 1;
+					_frequency = [_radioType, f_radios_settings_acre2_presetName, _chanNum, "frequencyTX"] call acre_api_fnc_getPresetChannelField;
 
-	          	_channelLine = format["CHN %1 (%2 MHz) - %3", _chanNum, _frequency, (_x select 0)];
+					if (_frequency >= 1000) then {
+			            		_frequency = [_frequency, 4,3] call CBA_fnc_formatNumber;
+			          	} else {
+			        		if (_frequency < 100) then {
+			            	    		_frequency = format[" %1",[_frequency, 2,5] call CBA_fnc_formatNumber];
+				           	} else {
+			           		     _frequency = [_frequency, 3,5] call CBA_fnc_formatNumber;
+				           	};
+			          	};
 
-	          	if (_chanNum == (_channelIndex + 1)) then { // If player is supposed to be on this channel
-	          		_color = [_radioIndex] call fn_numToColor;
-				  	_channelLine = format[" %1 ",_symbolForPresent] + format["<font color='%1'>",_color] + _channelLine + "</font><br/>";
-	          	} else {
-	          		_channelLine = format["   "] +_channelLine + "<br/>";
-	         	};
+			          	_channelLine = format["CHN %1 (%2 MHz) - %3", _chanNum, _frequency, (_x select 0)];
 
-	         	_text = _text + _channelLine;
+			          	if (_chanNum == (_channelIndex + 1)) then { // If player is supposed to be on this channel
+			          		_color = [_radioIndex] call _fn_numToColor;
+						  	_channelLine = format[" %1 ",_symbolForPresent] + format["<font color='%1'>",_color] + _channelLine + "</font><br/>";
+			          	} else {
+			          		_channelLine = format["   "] +_channelLine + "<br/>";
+			         	};
+
+		         		_text = _text + _channelLine;
+				} catch {};
 			} forEach (_x select 1);
 
 		};
@@ -110,11 +116,11 @@ _text = "<br/><font size='16'>RADIO CHANNEL LISTING</font>";
 
 _text2 = "<br/><br/><font size='16'>MY ASSIGNED RADIOS</font><br/>";
 {
-	_color = [_forEachIndex] call fn_numToColor;
+	_color = [_forEachIndex] call _fn_numToColor;
 	_text2 = _text2 + format["<font color='%1'>%2</font><br/>",_color,getText (configfile >> "CfgWeapons" >> _x >> "displayName")];
 } forEach _radiosToGive;
 
 _text = _ltext + _text2 + _text;
 
 //Provide instructions on the page. such as * to denote a channel you are suppose to be on, explain what the colours mean.
-player createDiaryRecord ["diary", ["ACRE2", _text]];
+_unit createDiaryRecord ["diary", ["ACRE2", _text]];
