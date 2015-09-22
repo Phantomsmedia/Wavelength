@@ -325,13 +325,13 @@ f_cam_ToggleTracers = {
 	if (f_cam_toggleTracersV) then {
 		{
 			if (side _x == east) then {
-				[_x, [1,0,0,1], 2, 2, nil, 2] call hyp_fnc_traceFire; 
+				[_x, [1,0,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire; 
 			};
 			if (side _x == west) then {
-				[_x, [0,0,1,1], 2, 2, nil, 2] call hyp_fnc_traceFire; 
+				[_x, [0,0,1,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire; 
 			};
 			if (side _x == resistance) then {
-				[_x, [0,1,0,1], 2, 2, nil, 2] call hyp_fnc_traceFire; 
+				[_x, [0,1,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire; 
 			};
 		} forEach allUnits;
 	} else {
