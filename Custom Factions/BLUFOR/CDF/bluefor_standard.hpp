@@ -6,6 +6,10 @@ class blu_f {
 
 	// Here we're creating definitions for weapons and magazines that are called later.
 
+	#define MEDICAL_STANDARD "ACE_fieldDressing:3","ACE_morphine"
+	#define MEDICAL_LEADER "ACE_fieldDressing:4","ACE_morphine"
+	#define MEDICAL_MEDIC "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
+
 	//Rifle
     #define WEST_RIFLE "rhs_weap_ak74m"
     #define WEST_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK:2"

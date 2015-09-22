@@ -3,6 +3,10 @@
 
 class ind_f {
 
+	#define MEDICAL_STANDARD "ACE_fieldDressing:3","ACE_morphine"
+	#define MEDICAL_LEADER "ACE_fieldDressing:4","ACE_morphine"
+	#define MEDICAL_MEDIC "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
+
 	//Rifle
     #define IND_RIFLE "rhs_weap_ak74m_desert_npz"
     #define IND_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_7N10_AK:2"

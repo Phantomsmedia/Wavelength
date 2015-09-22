@@ -2,6 +2,10 @@
 //Description: US Desert - M4 Rifles
 
 class blu_f {
+    #define MEDICAL_STANDARD "ACE_fieldDressing:3","ACE_morphine"
+    #define MEDICAL_LEADER "ACE_fieldDressing:4","ACE_morphine"
+    #define MEDICAL_MEDIC "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
+
     //Rifle
     #define WEST_RIFLE "rhs_weap_m16a4_grip_acog_usmc"
     #define WEST_RIFLE_MAG "rhs_mag_30Rnd_556x45_M855A1_Stanag:8","rhs_mag_m18_red:2"

@@ -2,6 +2,10 @@
 //Description: OPFOR (CSAT) Standard
 
 class opf_f {
+    #define MEDICAL_STANDARD "ACE_fieldDressing:3","ACE_morphine"
+    #define MEDICAL_LEADER "ACE_fieldDressing:4","ACE_morphine"
+    #define MEDICAL_MEDIC "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
+
     //Rifle
     #define EAST_RIFLE "rhs_weap_ak74m_camo","rhs_weap_ak74m_2mag","rhs_weap_ak74m_2mag_camo","rhs_weap_ak74m","rhs_weap_ak74m_plummag"
     #define EAST_RIFLE_MAG "rhs_30Rnd_545x39_AK:8","rhs_30Rnd_545x39_AK_green:2"
