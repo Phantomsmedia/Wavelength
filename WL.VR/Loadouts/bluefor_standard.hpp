@@ -14,8 +14,8 @@ class blu_f {
     #define WEST_GLRIFLE "arifle_MX_GL_F"
     #define WEST_GLRIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
     #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
-    #define WEST_GLRIFLE_MAG_HE "rhs_mag_M433_HEDP:8"
-    #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareGreen_F:2"
+    #define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
+    #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareWhite_F:2"
 
 	//Carbine
     #define WEST_CARBINE "arifle_MXC_F"
@@ -84,10 +84,12 @@ class blu_f {
     class Helicopter {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
         TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
+        TransportBackpack[] = {"B_Parachute:4"};
     };
 
     class Plane {
         TransportMagazines[] = {};
+        TransportBackpack[] = {"B_Parachute:2"};
     };
 
     class Ship_F {

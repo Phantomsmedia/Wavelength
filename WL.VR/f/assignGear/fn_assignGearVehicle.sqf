@@ -1,6 +1,7 @@
 // F3 - F3 Folk ARPS Assign Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
+private ["_theVehicle", "_defaultLoadout", "_typeOf", "_loadout", "_faction", "_path"];
 
 //For Vehicles - Pabst Mirror
 
@@ -23,7 +24,11 @@ if (_loadout == "Empty") exitWith {
     clearBackpackCargoGlobal _theVehicle;
 };
 
-_path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+if (isNil "F_Gear_Path_Override") then {
+    _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+} else {
+    _path = [_faction, _loadout] call F_Gear_Path_Override;
+};
 
 if (!isClass _path) then {
     //No CfgLoadouts for exact loadout, try default
@@ -35,11 +40,21 @@ if (!isClass _path) then {
         case (independent): {"ind_f"};
             default {"CIV_F"};
         };
-        _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
+
+        if (isNil "F_Gear_Path_Override") then {
+            _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
+        } else {
+            _path = [_vehConfigFaction, _defaultLoadout] call F_Gear_Path_Override;
+        };
+
         if (!isClass _path) then {
             if (_vehConfigSide == east) then {
                 _vehConfigFaction = "OPF_F";
-                _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
+                if (isNil "F_Gear_Path_Override") then {
+                    _path = missionConfigFile >> "CfgLoadouts" >> _vehConfigFaction >> _defaultLoadout;
+                } else {
+                    _path = [_vehConfigFaction, _defaultLoadout] call F_Gear_Path_Override;
+                };
             };
         };
     };
@@ -58,6 +73,7 @@ clearBackpackCargoGlobal _theVehicle;
 _transportMagazines = getArray(_path >> "TransportMagazines");
 _transportItems = getArray(_path >> "TransportItems");
 _transportWeapons = getArray(_path >> "TransportWeapons");
+_transportBackpack = getArray(_path >> "TransportBackpack");
 
 // ====================================================================================
 // _transportMagazines
@@ -95,5 +111,17 @@ _transportWeapons = getArray(_path >> "TransportWeapons");
     };
     _theVehicle addWeaponCargoGlobal [_classname,_amt];
 } foreach _transportWeapons;
+// ====================================================================================
+// _transportBackpack
+{
+    _arr = [_x,":"] call BIS_fnc_splitString;
+    _classname = _arr select 0;
+    _amt = 1;
+    if(count _arr > 1) then
+    {
+        _amt = parseNumber (_arr select 1);
+    };
+    _theVehicle addBackpackCargoGlobal [_classname,_amt];
+} foreach _transportBackpack;
 
 _theVehicle setvariable ["f_var_assignGear_done", true,true];

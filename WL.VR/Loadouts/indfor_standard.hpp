@@ -11,7 +11,8 @@ class ind_f {
     #define IND_GLRIFLE "arifle_Mk20_GL_MRCO_pointer_F"
     #define IND_GLRIFLE_MAG "30Rnd_556x45_Stanag:8","30Rnd_556x45_Stanag_Tracer_Yellow:2"
     #define IND_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
-    #define IND_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:14"
+    #define IND_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
+    #define IND_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareWhite_F:2"
 
 	//Carbine
     #define IND_CARBINE "arifle_Mk20C_F"
@@ -23,12 +24,12 @@ class ind_f {
 
 	// AR
     #define IND_AR "LMG_Mk200_F"
-    #define IND_AR_MAG "200Rnd_65x39_cased_Box:9"
-    #define IND_AR_MAG2 "200Rnd_65x39_cased_Box_Tracer:5"
+    #define IND_AR_MAG "200Rnd_65x39_cased_Box:2"
+    #define IND_AR_MAG2 "200Rnd_65x39_cased_Box_Tracer:2"
 
 	// AT
     #define IND_AT "launch_NLAW_F"
-    #define IND_AT_MAG "NLAW_F:3"
+    #define IND_AT_MAG "NLAW_F"
 
 	// MMG
     #define IND_MMG "MMG_01_tan_F"
@@ -109,7 +110,7 @@ class ind_f {
 
     class I_officer_F: I_Soldier_F {// CO and DC
         weapons[] = {IND_GLRIFLE};
-        magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_PISTOL_MAG,IND_GRENADE,IND_SMOKE_WHITE};
+        magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GLRIFLE_MAG_FLARE,IND_PISTOL_MAG,IND_GRENADE,IND_SMOKE_WHITE};
         handguns[] = {IND_PISTOL}; /// randomized
         linkedItems[] += {"ItemGPS","Binocular"};
         attachments[] = {"optic_ACO_grn"};
@@ -141,7 +142,7 @@ class ind_f {
     class I_Soldier_TL_F: I_Soldier_F {// FTL
         weapons[] = {IND_GLRIFLE};
         headgear[] = {"H_HelmetIA"}; /// randomized
-        magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GRENADE,IND_SMOKE_WHITE};
+        magazines[] = {IND_GLRIFLE_MAG,IND_GLRIFLE_MAG_HE,IND_GLRIFLE_MAG_SMOKE,IND_GLRIFLE_MAG_FLARE,IND_GRENADE,IND_SMOKE_WHITE};
         linkedItems[] += {"ItemGPS","Binocular"};
         backpackItems[] += {"ACE_key_indp"};
         attachments[] = {""};
@@ -302,14 +303,14 @@ class ind_f {
         uniform[] = {"U_I_CombatUniform_shortsleeve"};  /// randomized
         backpack[] = {"B_Carryall_oli"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
-        magazines[] = {IND_CARBINE_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
+        magazines[] = {IND_SMG_MAG,"DemoCharge_Remote_Mag:3","SatchelCharge_Remote_Mag:2"};
     };
 
     class I_engineer_F: I_soldier_repair_F {// Explosive Specialist
         uniform[] = {"U_I_CombatUniform"};  /// randomized
         backpack[] = {"B_Carryall_oli"};
         backpackItems[] = {"Toolkit","ACE_DefusalKit","ACE_Clacker","MineDetector"};
-        magazines[] = {IND_CARBINE_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
+        magazines[] = {IND_SMG_MAG,"ATMine_Range_Mag:2","APERSBoundingMine_Range_Mag:2","APERSMine_Range_Mag:2"};
     };
 
 // ====================================================================================
