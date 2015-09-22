@@ -55,5 +55,13 @@ switch (_button) do {
             ACRE_MUTE_SPECTATORS = _spectMuted;
             [player,objNull,player,0,true] spawn F_fnc_CamInit;
         };
-    }
+    };
+	case 5: { // Tracers/Notracers Button
+    	[] call f_cam_ToggleTracers;
+		if (f_cam_toggleTracersV) then {
+    		_control ctrlSetText "Tracers On";
+    	} else {
+    		_control ctrlSetText "Tracers Off";
+    	}
+	}
 };
