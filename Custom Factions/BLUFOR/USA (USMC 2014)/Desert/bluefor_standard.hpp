@@ -5,6 +5,7 @@ class blu_f {
     #define MEDICAL_STANDARD "ACE_fieldDressing:3","ACE_morphine"
     #define MEDICAL_LEADER "ACE_fieldDressing:4","ACE_morphine"
     #define MEDICAL_MEDIC "ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"
+    #define MEDICAL_VEHICLE "ACE_fieldDressing:12","ACE_morphine:4"
 
     //Rifle
     #define WEST_RIFLE "rhs_weap_m16a4_grip_acog_usmc"
@@ -54,15 +55,15 @@ class blu_f {
 
     class Car {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
-        TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
+        TransportItems[] = {MEDICAL_VEHICLE};
     };
     class Tank {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE,WEST_AT_MAG};
-        TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
+        TransportItems[] = {MEDICAL_VEHICLE};
     };
     class Helicopter {
         TransportMagazines[] = {WEST_RIFLE_MAG,WEST_RIFLE_MAG,WEST_CARBINE_MAG,WEST_AR_MAG,WEST_AR_MAG,WEST_GLRIFLE_MAG_HE};
-        TransportItems[] = {"ACE_fieldDressing:12","ACE_morphine:4"};
+        TransportItems[] = {MEDICAL_VEHICLE};
     };
     class Plane {
         TransportMagazines[] = {};
@@ -79,7 +80,7 @@ class blu_f {
         vest[] = {"rhsusf_spc"}; /// randomized
         headgear[] = {"rhsusf_mich_helmet_marpatd"}; /// randomized
         backpack[] = {"rhsusf_assault_eagleaiii_coy"}; /// randomized
-        backpackItems[] = {"ACE_fieldDressing:3","ACE_morphine","ACE_IR_Strobe_item"};
+        backpackItems[] = {MEDICAL_STANDARD,"ACE_IR_Strobe_item"};
         weapons[] = {WEST_RIFLE}; /// randomized
         launchers[] = {}; /// randomized
         handguns[] = {}; /// randomized
@@ -101,7 +102,7 @@ class blu_f {
     class B_Soldier_SL_F: B_Officer_F {// SL
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","rhsusf_ANPVS_14","ItemGPS","Binocular"};
         items[] = {"ACE_MapTools","ACRE_PRC148", "ACRE_PRC343"};
-        backpackItems[] = {"ACE_fieldDressing:4","ACE_morphine","ACE_IR_Strobe_item"};
+        backpackItems[] = {MEDICAL_LEADER,"ACE_IR_Strobe_item"};
     };
     class B_soldier_UAV_F: B_Soldier_F {
         backpack[] = {"rhsusf_assault_eagleaiii_coy"}; /// randomized
@@ -143,7 +144,7 @@ class blu_f {
         vest[] = {"rhsusf_spc"}; /// randomized
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,"rhs_mag_an_m8hc:6"};
-        backpackItems[] = {"ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"};
+        backpackItems[] = {MEDICAL_MEDIC};
     };
 
 // ====================================================================================
@@ -164,13 +165,13 @@ class blu_f {
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2"};
         launchers[] = {WEST_MAT}; /// randomized
-        items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+        items[] = {MEDICAL_STANDARD};
         backpackItems[] = {WEST_MAT_MAG};
     };
     class B_Soldier_AAT_F: B_Soldier_F {// MAT Spotter/Ammo Bearer
         backpackItems[] = {WEST_MAT_MAG};
         linkedItems[] += {"ACE_Vector"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
+        items[] = {MEDICAL_STANDARD,"ACRE_PRC148"};
     };
     class B_soldier_AA_F: B_Soldier_F {// SAM Gunner
         weapons[] = {WEST_CARBINE};
@@ -186,13 +187,13 @@ class blu_f {
     class B_support_Mort_F: B_Soldier_F {// Mortar Gunner
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,"rhs_mag_m67:2","rhs_mag_an_m8hc:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+        items[] = {MEDICAL_STANDARD};
         backpack[] = {"B_Mortar_01_weapon_F"}; /// randomized
     };
     class B_support_AMort_F: B_Soldier_F {// Assistant Mortar
         backpack[] = {"B_Mortar_01_support_F"}; /// randomized
         linkedItems[] += {"ACE_Vector"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
+        items[] = {MEDICAL_STANDARD,"ACRE_PRC148"};
     };
     class B_spotter_F {// Spotter
         uniform[] = {"rhs_uniform_FROG01_d"};  /// randomized
@@ -200,7 +201,7 @@ class blu_f {
         headgear[] = {"rhsusf_mich_helmet_marpatd_norotos_arc"}; /// randomized
         weapons[] = {WEST_SPOTTER}; /// randomized
         magazines[] = {WEST_SPOTTER_MAG,"rhs_mag_an_m8hc:2","rhs_mag_m67:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine", "ACRE_PRC343"};
+        items[] = {MEDICAL_STANDARD, "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","LaserDesignator"};
         attachments[] = {"rhsusf_acc_eotech_552","rhsusf_acc_anpeq15side"};
     };
@@ -210,7 +211,7 @@ class blu_f {
         headgear[] = {"rhsusf_mich_helmet_marpatd_norotos_arc"}; /// randomized
         weapons[] = {WEST_SNIPER}; /// randomized
         magazines[] = {WEST_SNIPER_MAG,"rhs_mag_an_m8hc:2","rhs_mag_m67:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine", "ACRE_PRC343"};
+        items[] = {MEDICAL_STANDARD, "ACRE_PRC343"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
         attachments[] = {"rhsusf_acc_LEUPOLDMK4_2","rhsusf_acc_anpeq15side","RH_m110sd_t"};
     };
@@ -225,7 +226,7 @@ class blu_f {
         weapons[] = {WEST_SMG}; /// randomized
         magazines[] = {WEST_SMG_MAG,"rhs_mag_an_m8hc:2"};
         backpackItems[] += {"ACE_key_west","ACRE_PRC117F"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine","ACRE_PRC148"};
+        items[] = {MEDICAL_STANDARD,"ACRE_PRC148"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS","NVgoggles"};
     };
     class B_helicrew_F: B_Helipilot_F { // Pilot
@@ -243,7 +244,7 @@ class blu_f {
         headgear[] = {"rhsusf_cvc_helmet"}; /// randomized
         weapons[] = {WEST_CARBINE}; /// randomized
         magazines[] = {WEST_CARBINE_MAG,"rhs_mag_an_m8hc:2"};
-        items[] = {"ACE_fieldDressing:3","ACE_morphine"};
+        items[] = {MEDICAL_STANDARD};
         backpackItems[] += {"ACE_key_west","ACRE_PRC148","ACRE_PRC117F"};
         linkedItems[] = {"ItemMap","ItemCompass","ItemWatch","itemGPS"};
     };
