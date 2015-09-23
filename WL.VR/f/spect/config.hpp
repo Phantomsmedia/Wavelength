@@ -797,6 +797,20 @@ class f_spec_dialog {
             onMouseHolding = "f_cam_menuShownTime=time";
             onMouseMoving = "f_cam_menuShownTime=time";
         };
+		class ZeusButton: RscSpectButton
+        {
+            idc = 2512;
+            x = 0.2529126 * safezoneW + safezoneX;
+            y = -5.99921e-005 * safezoneH + safezoneY;
+            w = 0.04 * safezoneW;
+            h = 0.02 * safezoneH;
+            text = "Zeus";
+            tooltip = "Open Zeus interface (logged in admin only)";
+            sizeEx = "(((((safezoneW / safezoneH) min 0.9) / 1.2) / 25) * 1)";
+            onButtonClick = "[_this select 0,6] call f_fnc_HandleMenu";
+            onMouseHolding = "f_cam_menuShownTime=time";
+            onMouseMoving = "f_cam_menuShownTime=time";
+        };
         class SpecUnitBox: RscSpectList
         {
             idc = 2100;
@@ -809,7 +823,7 @@ class f_spec_dialog {
         class SpecModes: RscSpectCombo
         {
             idc = 2101;
-            x = 0.2657126 * safezoneW + safezoneX;
+            x = 0.29498762 * safezoneW + safezoneX;
             y = -5.99921e-005 * safezoneH + safezoneY;
             w = 0.07 * safezoneW;
             h = 0.02 * safezoneH;

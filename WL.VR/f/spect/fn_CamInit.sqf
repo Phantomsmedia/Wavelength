@@ -80,7 +80,7 @@ _listBox = 2100;
 lbClear _listBox;
 // set inital values.
 #include "macros.hpp"
-f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_MODESCOMBO,F_CAM_SPECTEXT,F_CAM_SPECHELP,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTIONTRACERS,F_CAM_DIVIDER];
+f_cam_controls = [F_CAM_HELPFRAME,F_CAM_HELPBACK,F_CAM_MOUSEHANDLER,F_CAM_UNITLIST,F_CAM_MODESCOMBO,F_CAM_SPECTEXT,F_CAM_SPECHELP,F_CAM_HELPCANCEL,F_CAM_HELPCANCEL,F_CAM_MINIMAP,F_CAM_FULLMAP,F_CAM_BUTTIONFILTER,F_CAM_BUTTIONTAGS,F_CAM_BUTTIONTAGSNAME,F_CAM_BUTTIONFIRSTPERSON,F_CAM_BUTTIONTRACERS,F_CAM_BUTTIONZEUS,F_CAM_DIVIDER];
 f_cam_units = [];
 f_cam_players = [];
 f_cam_startX = 0;
@@ -128,7 +128,7 @@ f_cam_muteSpectators = true;
 
 // ====================================================================================
 // Menu (Top left)
-f_cam_menuControls = [2115,2111,2112,2113,2114,2511,2101,4302];
+f_cam_menuControls = [2115,2111,2112,2113,2114,2511,2512,2101,4302];
 f_cam_menuShownTime = 0;
 f_cam_menuShown = true;
 f_cam_menuWorking = false;
@@ -338,6 +338,25 @@ f_cam_ToggleTracers = {
 		{
 			[_x] call hyp_fnc_traceFireRemove
 		} forEach allUnits;
+	};
+};
+
+f_cam_AdminZeus = {
+	if ((serverCommandAvailable "#kick") || PABST_ADMIN_playerIsAuthorized) then {
+		f_cam_forcedExit = true;
+		closeDialog 1;
+		call F_fnc_RemoveHandlers;
+		[[player], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
+		[[], "PABST_ADMIN_server_zeusConnectAllUnits", false] call BIS_fnc_mp;
+		openCuratorInterface;
+		[] spawn {
+			waitUntil {sleep 0.2; !isNull (findDisplay 312)};
+			waitUntil {sleep 0.2; ((isNull (findDisplay 312)) && (isNil "bis_fnc_moduleRemoteControl_unit"))};
+			[[], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
+			[player,player,player,0,true] spawn f_fnc_CamInit; //reinitialize spectator
+		};
+	} else {
+		systemChat "You are not authorized to use Zeus.";
 	};
 };
 
