@@ -13,17 +13,17 @@ if (isNil "f_var_medical_replacements") then {
      {
          case 1:
          {
-            f_var_medical_standard = ["ACE_fieldDressing:3","ACE_morphine"];
-            f_var_medical_leader = ["ACE_fieldDressing:4","ACE_morphine"];
-            f_var_medical_medic = ["ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"];
-            f_var_medical_vehicle = ["ACE_fieldDressing:12","ACE_morphine:4"];
+            f_var_medical_standard = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_BASIC" >> "STANDARD" >> "items");
+            f_var_medical_leader = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_BASIC" >> "LEADER" >> "items");
+            f_var_medical_medic = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_BASIC" >> "MEDIC" >> "items");
+            f_var_medical_vehicle = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_BASIC" >> "VEHICLE" >> "items");
          };
         case 2:
          {
-            f_var_medical_standard = ["ACE_fieldDressing:3","ACE_morphine"];
-            f_var_medical_leader = ["ACE_fieldDressing:4","ACE_morphine"];
-            f_var_medical_medic = ["ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"];
-            f_var_medical_vehicle = ["ACE_fieldDressing:12","ACE_morphine:4"];
+            f_var_medical_standard = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_ADVANCED" >> "STANDARD" >> "items");
+            f_var_medical_leader = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_ADVANCED" >> "LEADER" >> "items");
+            f_var_medical_medic = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_ADVANCED" >> "MEDIC" >> "items");
+            f_var_medical_vehicle = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_ADVANCED" >> "VEHICLE" >> "items");
          };
      };
 
