@@ -8,6 +8,22 @@ _unit = _this select 0;
 
 if (!(local _unit)) exitWith {};
 
+if (isNil "f_var_medical_replacements") then {
+    if (f_var_medical == 1) then {
+        f_var_medical_standard = ["ACE_fieldDressing:3","ACE_morphine"];
+        f_var_medical_leader = ["ACE_fieldDressing:4","ACE_morphine"];
+        f_var_medical_medic = ["ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"];
+        f_var_medical_vehicle = ["ACE_fieldDressing:12","ACE_morphine:4"];
+    };
+
+    f_var_medical_replacements = [
+        ["MEDICAL_STANDARD", f_var_medical_standard],
+        ["MEDICAL_LEADER", f_var_medical_leader],
+        ["MEDICAL_MEDIC", f_var_medical_medic],
+        ["MEDICAL_VEHICLE", f_var_medical_vehicle]
+    ];
+};
+
 _faction = tolower (faction _unit);
 //Check variable f_gear, otherwise default to typeof
 _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
@@ -45,6 +61,25 @@ _magazines = getArray(_path >> "magazines");
 _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
+
+if (isNil "F_Gear_Replace_MedicalItems") then {
+    F_Gear_Replace_MedicalItems = {
+        _array = _this;
+        {
+            _itemsEntry = _x;
+            _itemsIndex = _forEachIndex;
+            {
+                if ((_x select 0) == _itemsEntry) then {
+                    _array deleteAt _itemsIndex;
+                    {_array pushBack _x} forEach (_x select 1);
+                };
+            } forEach f_var_medical_replacements;
+        } forEach _array;
+    };
+};
+
+_backpackItems call F_Gear_Replace_MedicalItems;
+_items call F_Gear_Replace_MedicalItems;
 
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
