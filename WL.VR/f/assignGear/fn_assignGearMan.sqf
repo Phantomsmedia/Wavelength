@@ -9,12 +9,23 @@ _unit = _this select 0;
 if (!(local _unit)) exitWith {};
 
 if (isNil "f_var_medical_replacements") then {
-    if (f_var_medical == 1) then {
-        f_var_medical_standard = ["ACE_fieldDressing:3","ACE_morphine"];
-        f_var_medical_leader = ["ACE_fieldDressing:4","ACE_morphine"];
-        f_var_medical_medic = ["ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"];
-        f_var_medical_vehicle = ["ACE_fieldDressing:12","ACE_morphine:4"];
-    };
+     switch (f_var_medical) do
+     {
+         case 1:
+         {
+            f_var_medical_standard = ["ACE_fieldDressing:3","ACE_morphine"];
+            f_var_medical_leader = ["ACE_fieldDressing:4","ACE_morphine"];
+            f_var_medical_medic = ["ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"];
+            f_var_medical_vehicle = ["ACE_fieldDressing:12","ACE_morphine:4"];
+         };
+        case 2:
+         {
+            f_var_medical_standard = ["ACE_fieldDressing:3","ACE_morphine"];
+            f_var_medical_leader = ["ACE_fieldDressing:4","ACE_morphine"];
+            f_var_medical_medic = ["ACE_fieldDressing:31","ACE_epinephrine:8","ACE_bloodIV:2","ACE_morphine:14"];
+            f_var_medical_vehicle = ["ACE_fieldDressing:12","ACE_morphine:4"];
+         };
+     };
 
     f_var_medical_replacements = [
         ["MEDICAL_STANDARD", f_var_medical_standard],
