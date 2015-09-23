@@ -45,6 +45,7 @@ class WS
 			class attachIR {};
 			class broadcast {};
 			class showIntro {};
+			class spawnGunners {};
 		};
 		class getPos
 		{
