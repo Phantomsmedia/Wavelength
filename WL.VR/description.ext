@@ -209,19 +209,10 @@ class Params
             default = 1;
             code = "f_var_radios = %1";
     };
-    class f_param_spawnGunners
-    {
-        title = "Spawn Gunners";
-        values[] = {0,1};
-        texts[] = {"Off","On"};
-        default = 1;
-        code = "f_param_spawnGunners = %1";
-    };
 
 // ============================================================================================
 
-// F3 - Medical Systems Support
-// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+// WL - Medical Systems Support
 
     class f_param_medical
     {
@@ -230,6 +221,20 @@ class Params
             texts[] = {"Basic","Advanced"};
             default = 1;
             code = "f_var_medical = %1";
+    };
+
+// ============================================================================================
+
+// WL - Spawn Vehicle Gunners Support
+// Credits: Zriel (st1arma.es)
+
+    class f_param_spawnGunners
+    {
+        title = "Spawn Gunners";
+        values[] = {0,1};
+        texts[] = {"Off","On"};
+        default = 0;
+        code = "f_param_spawnGunners = %1";
     };
 
 // ============================================================================================
