@@ -210,6 +210,20 @@ class Params
     };
 
 // ============================================================================================
+
+// F3 - Medical Systems Support
+// Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
+
+    class f_param_medical
+    {
+            title = "ACE Medical System";
+            values[] = {1,2};
+            texts[] = {"Basic","Advanced"};
+            default = 1;
+            code = "f_var_medical = %1";
+    };
+
+// ============================================================================================
 /*
 // F3 - Mission Conditions Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
@@ -246,7 +260,7 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-	
+
     class f_param_headlessClient
     	{
 	        title = "Headless client";
