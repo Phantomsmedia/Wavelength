@@ -219,7 +219,7 @@ class Params
             title = "ACE Medical System";
             values[] = {1,2};
             texts[] = {"Basic","Advanced"};
-            default = 2;
+            default = 1;
             code = "f_var_medical = %1";
     };
 
