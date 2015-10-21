@@ -2,7 +2,7 @@
 // F3 - F3 Folk ARPS Assign Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
-private ["_unit", "_faction", "_loadout", "_path"];
+private ["_unit", "_faction", "_loadout", "_path", "_uniforms", "_vests", "_headgears", "_goggles", "_backpack", "_backpackItems", "_weapons", "_launchers", "_handguns", "_magazines", "_items", "_linkedItems", "_attachments", "_primaryWeaponSelected", "_launcherSelected", "_handgunSelected", "_primaryMagazines", "_launcherMagazines", "_handgunMagazines", "_grenadeLauncherMagazines"];
 
 _unit = _this select 0;
 
@@ -210,26 +210,52 @@ clearAllItemsFromBackpack _unit;
     };
 } foreach _linkedItems;
 
+
+// ====================================================================================
+// Weapons
+if ((count _weapons) > 0) then {_primaryWeaponSelected = _weapons call BIS_fnc_selectRandom;};
+if ((count _launchers) > 0) then {_launcherSelected = _launchers call BIS_fnc_selectRandom;};
+if ((count _handguns) > 0) then {_handgunSelected = _handguns call BIS_fnc_selectRandom;};
+
+// ====================================================================================
 // Magazines
+if (!isNil "_primaryWeaponSelected") then {
+    _primaryMagazines = getArray(configFile >> "CfgWeapons" >> _primaryWeaponSelected >> "magazines");
+        if (count getArray(configFile >> "CfgWeapons" >> _primaryWeaponSelected >> "muzzles") > 1) then {
+            _grenadeLauncher = getArray(configFile >> "CfgWeapons" >> _primaryWeaponSelected >> "muzzles") select 1;
+            _grenadeLauncherMagazines = getArray(configFile >> "CfgWeapons" >> _grenadeLauncher >> "magazines");
+        } else {_grenadeLauncherMagazines = [];};
+    } else {_primaryMagazines = [];_grenadeLauncherMagazines = [];};
+if (!isNil "_launcherSelected") then {_launcherMagazines = getArray(configFile >> "CfgWeapons" >> _launcherSelected >> "magazines");} else {_launcherMagazines = [];};
+if (!isNil "_handgunSelected") then {_handgunMagazines = getArray(configFile >> "CfgWeapons" >> _handgunSelected >> "magazines");} else {_handgunMagazines = [];};
+
 _magazinesNotAdded = [];
 {
     _arr = [_x,":"] call BIS_fnc_splitString;
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
-        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-        _unit addMagazines [_classname, _amt];
-        _notAdded = _amt - ({_x == _classname} count (magazines _unit));
-        for "_index" from 0 to (_notAdded - 1) do {
-            _magazinesNotAdded pushBack _classname;
+
+        _isPrimaryMagazine = ({_classname isKindOf [_x, configFile >> "CfgMagazines"]} count _primaryMagazines) > 0;
+        _isGLMagazine = ({_classname isKindOf [_x, configFile >> "CfgMagazines"]} count _grenadeLauncherMagazines) > 0;
+        _isLauncherMagazine = ({_classname isKindOf [_x, configFile >> "CfgMagazines"]} count _launcherMagazines) > 0;
+        _isHandgunMagazine = ({_classname isKindOf [_x, configFile >> "CfgMagazines"]} count _handgunMagazines) > 0;
+        _isGrenade = count ( "_classname in getArray( _x >> 'magazines' )" configClasses ( configFile >> "CfgWeapons" >> "Throw" ) ) > 0;
+        _isExplosive = count ( "_classname in getArray( _x >> 'magazines' )" configClasses ( configFile >> "CfgWeapons" >> "Put" ) ) > 0;
+
+        if (_isPrimaryMagazine || _isGLMagazine || _isLauncherMagazine || _isHandgunMagazine || _isGrenade || _isExplosive) then {
+            _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
+            _unit addMagazines [_classname, _amt];
+            _notAdded = _amt - ({_x == _classname} count (magazines _unit));
+            for "_index" from 0 to (_notAdded - 1) do {
+                _magazinesNotAdded pushBack _classname;
+            };
         };
     };
 } foreach _magazines;
 
-// ====================================================================================
-// Weapons
-if ((count _weapons) > 0) then {_unit addWeapon (_weapons call BIS_fnc_selectRandom);};
-if ((count _launchers) > 0) then {_unit addWeapon (_launchers call BIS_fnc_selectRandom);};
-if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectRandom);};
+if (!isNil "_primaryWeaponSelected") then {_unit addWeapon _primaryWeaponSelected;};
+if (!isNil "_launcherSelected") then {_unit addWeapon _launcherSelected;};
+if (!isNil "_handgunSelected") then {_unit addWeapon _handgunSelected;};
 
 // ====================================================================================
 // attachments
