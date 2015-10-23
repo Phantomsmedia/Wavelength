@@ -220,7 +220,7 @@ case "KeyDown":
                         waitUntil {sleep 0.1;isNull (findDisplay 312)}; // then wait until its not open
                         if(isnil "bis_fnc_moduleRemoteControl_unit") then // check if someone is being remote controled
                         {
-                            [player,player,player,0,true] spawn F_fnc_CamInit; // if not retoggle
+                            [player,player,player,0,true] spawn f_fnc_CamInit; // if not retoggle
                             _done = true;
                         }; // restart spectator once exit.
                     };

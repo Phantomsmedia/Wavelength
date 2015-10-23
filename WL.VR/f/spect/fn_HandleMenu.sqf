@@ -63,5 +63,8 @@ switch (_button) do {
     	} else {
     		_control ctrlSetText "Tracers Off";
     	}
+	};
+	case 6: {
+		[] call f_cam_AdminZeus;
 	}
 };
