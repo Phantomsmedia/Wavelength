@@ -168,7 +168,7 @@ class ind_f {
 
     class I_Soldier_LAT_F: I_Soldier_F {// RAT
         weapons[] = {IND_CARBINE};
-        backpack[] = {"rhs_rpg_empty"}; /// randomized
+        backpack[] = {}; /// randomized
         magazines[] = {IND_CARBINE_MAG,IND_AT_MAG,IND_GRENADE,IND_SMOKE_WHITE};
         launchers[] = {IND_AT}; /// randomized
         attachments[] = {""};
