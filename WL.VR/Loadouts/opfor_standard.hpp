@@ -198,7 +198,8 @@ class opf_f {
         magazines[] = {EAST_CARBINE_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
         launchers[] = {EAST_MAT}; /// randomized
         backpackItems[] += {EAST_MAT_MAG};
-        attachments[] = {"rhs_acc_1p63","rhs_acc_pgo7v","rhs_acc_dtk"};
+        attachments[] = {};
+        // attachments[] = {"rhs_acc_1p63","rhs_acc_pgo7v","rhs_acc_dtk"};
     };
 
     class O_Soldier_AAT_F: O_Soldier_F {// MAT Spotter/Ammo Bearer
