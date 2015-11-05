@@ -8,6 +8,8 @@ _unit = _this select 0;
 
 if (!(local _unit)) exitWith {};
 
+waitUntil {!isNil "f_var_setParams"};
+
 if (isNil "f_var_medical_replacements") then {
      switch (f_var_medical) do
      {
