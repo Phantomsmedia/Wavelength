@@ -8,10 +8,9 @@ _unit = _this select 0;
 
 if (!(local _unit)) exitWith {};
 
-waitUntil {!isNil "f_var_setParams"};
-
 if (isNil "f_var_medical_replacements") then {
-     switch (f_var_medical) do
+    _medicalMode = getNumber (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_MODE");
+     switch (_medicalMode) do
      {
          case 1:
          {

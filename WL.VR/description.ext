@@ -212,19 +212,6 @@ class Params
 
 // ============================================================================================
 
-// WL - Medical Systems Support
-
-    class f_param_medical
-    {
-            title = "ACE Medical System";
-            values[] = {1,2};
-            texts[] = {"Basic","Advanced"};
-            default = 1;
-            code = "f_var_medical = %1";
-    };
-
-// ============================================================================================
-
 // WL - Spawn Vehicle Gunners Support
 // Credits: Zriel (st1arma.es)
 

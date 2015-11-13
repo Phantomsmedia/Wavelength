@@ -1,5 +1,10 @@
 class CfgLoadouts {
 
+    #define MEDICAL_MODE_BASIC 1
+    #define MEDICAL_MODE_ADVANCED 2
+
+    MEDICAL_MODE = MEDICAL_MODE_BASIC;
+
     class MEDICAL_BASIC {
         class STANDARD {
             items[] = {"ACE_fieldDressing:3","ACE_morphine"};
