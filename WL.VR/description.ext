@@ -31,7 +31,7 @@ class Header
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 onLoadName = "*** Insert mission name here. ***";
-onLoadMission = "Made with Geared WL";
+onLoadMission = "Made with Nooice WL";
 author = "*** Insert mission author name here. ***";
 loadScreen = "loadLogo.jpg";
 
@@ -62,6 +62,7 @@ class Extended_InitPost_EventHandlers {
     };
     class Helicopter {
         class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
+        class F_spawnGunners { serverInit  = "_this spawn ws_fnc_spawnGunners;"; };
         class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
     };
     class Plane {
@@ -210,6 +211,20 @@ class Params
     };
 
 // ============================================================================================
+
+// WL - Spawn Vehicle Gunners Support
+// Credits: Zriel (st1arma.es)
+
+    class f_param_spawnGunners
+    {
+        title = "Spawn Gunners";
+        values[] = {0,1};
+        texts[] = {"Off","On"};
+        default = 0;
+        code = "f_param_spawnGunners = %1";
+    };
+
+// ============================================================================================
 /*
 // F3 - Mission Conditions Selector
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
@@ -246,7 +261,7 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-	
+
     class f_param_headlessClient
     	{
 	        title = "Headless client";

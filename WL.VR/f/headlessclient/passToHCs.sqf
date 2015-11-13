@@ -101,6 +101,8 @@ while {true} do {
         _HC2_ID = -1;
       };
     } catch { diag_log format ["passToHCs: [ERROR] [HC2] %1", _exception]; HC2 = objNull; _HC2_ID = -1; };
+  } else {
+	HC2 = objNull;
   };
 
   // Get HC3 Client ID else set variables to null
@@ -117,6 +119,8 @@ while {true} do {
         _HC3_ID = -1;
       };
     } catch { diag_log format ["passToHCs: [ERROR] [HC3] %1", _exception]; HC3 = objNull; _HC3_ID = -1; };
+  } else {
+	HC3 = objNull;
   };
 
   // If no HCs present, wait for HC to rejoin

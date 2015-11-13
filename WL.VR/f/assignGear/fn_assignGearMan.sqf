@@ -2,9 +2,39 @@
 // F3 - F3 Folk ARPS Assign Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
+private ["_unit", "_faction", "_loadout", "_path", "_uniforms", "_vests", "_headgears", "_goggles", "_backpack", "_backpackItems", "_weapons", "_launchers", "_handguns", "_magazines", "_items", "_linkedItems", "_attachments", "_primaryWeaponSelected", "_launcherSelected", "_handgunSelected", "_primaryMagazines", "_launcherMagazines", "_handgunMagazines", "_grenadeLauncherMagazines"];
+
 _unit = _this select 0;
 
 if (!(local _unit)) exitWith {};
+
+if (isNil "f_var_medical_replacements") then {
+    _medicalMode = getNumber (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_MODE");
+     switch (_medicalMode) do
+     {
+         case 1:
+         {
+            f_var_medical_standard = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_BASIC" >> "STANDARD" >> "items");
+            f_var_medical_leader = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_BASIC" >> "LEADER" >> "items");
+            f_var_medical_medic = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_BASIC" >> "MEDIC" >> "items");
+            f_var_medical_vehicle = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_BASIC" >> "VEHICLE" >> "items");
+         };
+        case 2:
+         {
+            f_var_medical_standard = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_ADVANCED" >> "STANDARD" >> "items");
+            f_var_medical_leader = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_ADVANCED" >> "LEADER" >> "items");
+            f_var_medical_medic = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_ADVANCED" >> "MEDIC" >> "items");
+            f_var_medical_vehicle = getArray (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_ADVANCED" >> "VEHICLE" >> "items");
+         };
+     };
+
+    f_var_medical_replacements = [
+        ["MEDICAL_STANDARD", f_var_medical_standard],
+        ["MEDICAL_LEADER", f_var_medical_leader],
+        ["MEDICAL_MEDIC", f_var_medical_medic],
+        ["MEDICAL_VEHICLE", f_var_medical_vehicle]
+    ];
+};
 
 _faction = tolower (faction _unit);
 //Check variable f_gear, otherwise default to typeof
@@ -16,7 +46,11 @@ _loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
     #include "f_assignInsignia.sqf"
 };*/
 
-_path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+if (isNil "F_Gear_Path_Override") then {
+    _path = missionConfigFile >> "CfgLoadouts" >> _faction >> _loadout;
+} else {
+    _path = [_faction, _loadout] call F_Gear_Path_Override;
+};
 
 if(!isClass(_path)) exitWith {
     if (isPlayer _unit) then {
@@ -39,6 +73,25 @@ _magazines = getArray(_path >> "magazines");
 _items = getArray(_path >> "items");
 _linkedItems = getArray(_path >> "linkedItems");
 _attachments = getArray(_path >> "attachments");
+
+if (isNil "F_Gear_Replace_MedicalItems") then {
+    F_Gear_Replace_MedicalItems = {
+        _array = _this;
+        {
+            _itemsEntry = _x;
+            _itemsIndex = _forEachIndex;
+            {
+                if ((_x select 0) == _itemsEntry) then {
+                    _array deleteAt _itemsIndex;
+                    {_array pushBack _x} forEach (_x select 1);
+                };
+            } forEach f_var_medical_replacements;
+        } forEach _array;
+    };
+};
+
+_backpackItems call F_Gear_Replace_MedicalItems;
+_items call F_Gear_Replace_MedicalItems;
 
 removeAllWeapons _unit;
 removeAllAssignedItems _unit;
@@ -158,26 +211,52 @@ clearAllItemsFromBackpack _unit;
     };
 } foreach _linkedItems;
 
+
+// ====================================================================================
+// Weapons
+if ((count _weapons) > 0) then {_primaryWeaponSelected = _weapons call BIS_fnc_selectRandom;};
+if ((count _launchers) > 0) then {_launcherSelected = _launchers call BIS_fnc_selectRandom;};
+if ((count _handguns) > 0) then {_handgunSelected = _handguns call BIS_fnc_selectRandom;};
+
+// ====================================================================================
 // Magazines
+if (!isNil "_primaryWeaponSelected") then {
+    _primaryMagazines = getArray(configFile >> "CfgWeapons" >> _primaryWeaponSelected >> "magazines");
+        if (count getArray(configFile >> "CfgWeapons" >> _primaryWeaponSelected >> "muzzles") > 1) then {
+            _grenadeLauncher = getArray(configFile >> "CfgWeapons" >> _primaryWeaponSelected >> "muzzles") select 1;
+            _grenadeLauncherMagazines = getArray(configFile >> "CfgWeapons" >> _grenadeLauncher >> "magazines");
+        } else {_grenadeLauncherMagazines = [];};
+    } else {_primaryMagazines = [];_grenadeLauncherMagazines = [];};
+if (!isNil "_launcherSelected") then {_launcherMagazines = getArray(configFile >> "CfgWeapons" >> _launcherSelected >> "magazines");} else {_launcherMagazines = [];};
+if (!isNil "_handgunSelected") then {_handgunMagazines = getArray(configFile >> "CfgWeapons" >> _handgunSelected >> "magazines");} else {_handgunMagazines = [];};
+
 _magazinesNotAdded = [];
 {
     _arr = [_x,":"] call BIS_fnc_splitString;
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
-        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-        _unit addMagazines [_classname, _amt];
-        _notAdded = _amt - ({_x == _classname} count (magazines _unit));
-        for "_index" from 0 to (_notAdded - 1) do {
-            _magazinesNotAdded pushBack _classname;
+
+        _isPrimaryMagazine = ({_classname isKindOf [_x, configFile >> "CfgMagazines"]} count _primaryMagazines) > 0;
+        _isGLMagazine = ({_classname isKindOf [_x, configFile >> "CfgMagazines"]} count _grenadeLauncherMagazines) > 0;
+        _isLauncherMagazine = ({_classname isKindOf [_x, configFile >> "CfgMagazines"]} count _launcherMagazines) > 0;
+        _isHandgunMagazine = ({_classname isKindOf [_x, configFile >> "CfgMagazines"]} count _handgunMagazines) > 0;
+        _isGrenade = count ( "_classname in getArray( _x >> 'magazines' )" configClasses ( configFile >> "CfgWeapons" >> "Throw" ) ) > 0;
+        _isExplosive = count ( "_classname in getArray( _x >> 'magazines' )" configClasses ( configFile >> "CfgWeapons" >> "Put" ) ) > 0;
+
+        if (_isPrimaryMagazine || _isGLMagazine || _isLauncherMagazine || _isHandgunMagazine || _isGrenade || _isExplosive) then {
+            _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
+            _unit addMagazines [_classname, _amt];
+            _notAdded = _amt - ({_x == _classname} count (magazines _unit));
+            for "_index" from 0 to (_notAdded - 1) do {
+                _magazinesNotAdded pushBack _classname;
+            };
         };
     };
 } foreach _magazines;
 
-// ====================================================================================
-// Weapons
-if ((count _weapons) > 0) then {_unit addWeapon (_weapons call BIS_fnc_selectRandom);};
-if ((count _launchers) > 0) then {_unit addWeapon (_launchers call BIS_fnc_selectRandom);};
-if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectRandom);};
+if (!isNil "_primaryWeaponSelected") then {_unit addWeapon _primaryWeaponSelected;};
+if (!isNil "_launcherSelected") then {_unit addWeapon _launcherSelected;};
+if (!isNil "_handgunSelected") then {_unit addWeapon _handgunSelected;};
 
 // ====================================================================================
 // attachments
@@ -204,6 +283,9 @@ if ((count _handguns) > 0) then {_unit addWeapon (_handguns call BIS_fnc_selectR
         if (!(_loadout in F_GEAR_ERROR_LOADOUTS)) then {
             F_GEAR_ERROR_LOADOUTS pushBack _loadout;
             diag_log text format ["Failed To add Magazine %1 to %2", _x, _loadout];
+            if (isServer && hasInterface) then {
+                systemChat format ["Failed To add Magazine %1 to %2", _x, _loadout];
+            };
         };
     };
 } forEach _magazinesNotAdded;

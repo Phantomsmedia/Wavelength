@@ -8,6 +8,12 @@ private ["_presetName","_ret","_unit","_spokenLanguages","_typeOfUnit"];
 
 // ====================================================================================
 
+{
+    [_x, "default2", "east"] call acre_api_fnc_copyPreset;
+    [_x, "default3", "west"] call acre_api_fnc_copyPreset;
+    [_x, "default4", "guer"] call acre_api_fnc_copyPreset;
+} forEach ["ACRE_PRC343","ACRE_PRC152","ACRE_PRC148","ACRE_PRC117F"];
+
 // Set up the radio presets according to side.
 _presetName = switch(side player) do {
     case west:{"default2"};
@@ -22,11 +28,9 @@ if (f_radios_settings_acre2_disableFrequencySplit) then {
 f_radios_settings_acre2_presetName = _presetName;
 
 _ret = ["ACRE_PRC343", _presetName ] call acre_api_fnc_setPreset;
-_ret = ["ACRE_PRC148", _presetName ] call acre_api_fnc_setPreset;
-_ret = ["ACRE_PRC152", _presetName ] call acre_api_fnc_setPreset;
 _ret = ["ACRE_PRC117F", _presetName ] call acre_api_fnc_setPreset;
-_ret = ["ItemRadio", _presetName ] call acre_api_fnc_setPreset;
-
+_ret = ["ACRE_PRC152", _presetName ] call acre_api_fnc_setPreset;
+_ret = ["ACRE_PRC148", _presetName ] call acre_api_fnc_setPreset;
 
 // if dead, set spectator and exit
 if(!alive player) exitWith {[true] call acre_api_fnc_setSpectator;};

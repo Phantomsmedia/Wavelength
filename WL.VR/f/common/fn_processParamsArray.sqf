@@ -13,3 +13,6 @@ _paramArray = paramsArray;
 		publicVariable _paramName;
 	};
 } foreach _paramArray;
+
+if (isServer) then { f_var_setParamsServer = true; publicVariable "f_var_setParamsServer";};
+f_var_setParams = true;
