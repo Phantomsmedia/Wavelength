@@ -347,5 +347,7 @@ class opf_f {
         linkedItems[] += {"G_O_Diving"};
 
     };
+    
+    class fallback: O_Soldier_F {}; //This means any faction member who doesn't match something will use this loadout
 
 };
