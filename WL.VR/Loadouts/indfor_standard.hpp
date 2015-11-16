@@ -342,5 +342,7 @@ class ind_f {
         linkedItems[] += {"G_I_Diving"};
 
     };
+    
+    class fallback: I_Soldier_F {}; //This means any faction member who doesn't match something will use this loadout
 
 };
