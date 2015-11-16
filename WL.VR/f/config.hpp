@@ -39,6 +39,7 @@ class F // Defines the "owner"
 	    file = "f\assignGear";
 	    class assignGearMan {};
 	    class assignGearVehicle {};
+	    class gearErrorLogger {};
     };
 	class missionConditions
 	{
