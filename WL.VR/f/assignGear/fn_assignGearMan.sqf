@@ -270,18 +270,42 @@ if (!isNil "_handgunSelected") then {_unit addWeapon _handgunSelected;};
 
 // ====================================================================================
 // attachments
-{
-    _arr = [_x,":"] call BIS_fnc_splitString;
-    if ((count _arr) > 0) then {
-        _classname = _arr select 0;
-        _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
-        for [{_i=1},{_i<=_amt},{_i=_i+1}] do {
-            _unit addPrimaryWeaponItem _classname;
-            _unit addSecondaryWeaponItem _classname;
-            _unit addHandgunItem _classname;
+if (!(_attachments isEqualTo [])) then {
+    //Prevents error from adding incompatible attachments
+    _primaryWeaponAttachables = [primaryWeapon _unit] call CBA_fnc_compatibleItems;
+    _secondaryWeaponAttachables = [secondaryWeapon _unit] call CBA_fnc_compatibleItems;
+    _handgunWeaponAttachables = [handgunWeapon _unit] call CBA_fnc_compatibleItems;
+    {
+        (_x splitString ":") params [["_classname", ""]]; //count makes no sense for attachments, ignore
+        _config = configFile >> "CfgWeapons" >> _classname;
+        if (isClass _config) then {
+            _addAttachment = true;
+            if (!_allowMagnifiedOptics) then {
+                _minZoom = 999; //FOV, so smaller is more zoomed in
+                {
+                    if (isNumber (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (getNumber (_x >> "opticsZoomMin"));};
+                    if (isText (_x >> "opticsZoomMin")) then {_minZoom = _minZoom min (call compile getText (_x >> "opticsZoomMin"));};
+                } forEach configProperties [_config >> "ItemInfo" >> "OpticsModes"];
+                if (_minZoom < 0.25) then {
+                    _addAttachment = false;
+                    [_unitClassname, format ["allowMagnifiedOptics is false, not adding %1 (opticsZoomMin %2)", _classname, _minZoom]] call F_fnc_gearErrorLogger;
+                };
+            };
+            if (_addAttachment) then {
+                switch (true) do {
+                    case (({_x == _classname} count _primaryWeaponAttachables) > 0): {_unit addPrimaryWeaponItem _classname;};
+                    case (({_x == _classname} count _secondaryWeaponAttachables) > 0): {_unit addSecondaryWeaponItem _classname;};
+                    case (({_x == _classname} count _handgunWeaponAttachables) > 0): {_unit addHandgunItem _classname;};
+                    default {
+                        [_unitClassname, format ["Attachment %1 not compatible with weapons %2", _classname, (weapons _unit)]] call F_fnc_gearErrorLogger;
+                    };
+                };
+            };
+        } else {
+            [_unitClassname, format ["Attachment %1 does not exist", _classname]] call F_fnc_gearErrorLogger;
         };
-    };
-} foreach _attachments;
+    } foreach _attachments;
+};
 
 //Try to add missing magazines:
 {
