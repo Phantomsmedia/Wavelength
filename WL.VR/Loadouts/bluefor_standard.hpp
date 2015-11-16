@@ -4,62 +4,61 @@
 
 class blu_f {
 
-	// Here we're creating definitions for weapons and magazines that are called later.
+    // Here we're creating definitions for weapons and magazines that are called later.
 
 
-	//Rifle
+    //Rifle
     #define WEST_RIFLE "arifle_MX_F"
     #define WEST_RIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
 
-	//GL Rifle
+    //GL Rifle
     #define WEST_GLRIFLE "arifle_MX_GL_F"
     #define WEST_GLRIFLE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
     #define WEST_GLRIFLE_MAG_SMOKE "1Rnd_Smoke_Grenade_shell:4","1Rnd_SmokeGreen_Grenade_shell:2","1Rnd_SmokeRed_Grenade_shell:3"
     #define WEST_GLRIFLE_MAG_HE "1Rnd_HE_Grenade_shell:8"
     #define WEST_GLRIFLE_MAG_FLARE "UGL_FlareRed_F:2","UGL_FlareWhite_F:2"
 
-	//Carbine
+    //Carbine
     #define WEST_CARBINE "arifle_MXC_F"
     #define WEST_CARBINE_MAG "30Rnd_65x39_caseless_mag:8","30Rnd_65x39_caseless_mag_Tracer:2"
 
-	//Diver
-	#define SDAR "arifle_SDAR_F"
-	#define SDAR_MAG "20Rnd_556x45_UW_mag:6"
+    //Diver
+    #define SDAR "arifle_SDAR_F"
+    #define SDAR_MAG "20Rnd_556x45_UW_mag:6"
 
     // AR
     #define WEST_AR "arifle_MX_SW_F"
     #define WEST_AR_MAG "100Rnd_65x39_caseless_mag:2"
     #define WEST_AR_MAG2 "100Rnd_65x39_caseless_mag_Tracer:2"
 
-	// AT
+    // AT
     #define WEST_AT "launch_NLAW_F"
     #define WEST_AT_MAG "NLAW_F"
 
-	// MMG
+    // MMG
     #define WEST_MMG "MMG_02_black_F"
     #define WEST_MMG_MAG "130Rnd_338_Mag:5"
-
-	// MAT
+    // MAT
     #define WEST_MAT "launch_B_Titan_short_F"
     #define WEST_MAT_MAG "Titan_AT:3"
 
-	// SAM
+    // SAM
     #define WEST_SAM "launch_B_Titan_F"
     #define WEST_SAM_MAG "Titan_AA:2"
 
-	// Sniper Rifle
+    // Sniper Rifle
     #define WEST_SNIPER "srifle_DMR_02_F"
     #define WEST_SNIPER_MAG "10Rnd_338_Mag:8"
 
-   // Spotter Rifle
+    // Spotter Rifle
     #define WEST_SPOTTER "arifle_MX_F"
     #define WEST_SPOTTER_MAG "30Rnd_65x39_caseless_mag:8"
 
-	// SMG
+    // SMG
     #define WEST_SMG "arifle_MXC_F"
     #define WEST_SMG_MAG "30Rnd_65x39_caseless_mag:6"
 
-   // Pistol
+    // Pistol
     #define WEST_PISTOL "hgun_ACPC2_F"
     #define WEST_PISTOL_MAG "9Rnd_45ACP_Mag:4"
 
@@ -339,5 +338,7 @@ class blu_f {
         linkedItems[] += {"G_B_Diving"};
 
     };
+    
+    class fallback: B_Soldier_F {}; //This means any faction member who doesn't match something will use this loadout
 
 };
