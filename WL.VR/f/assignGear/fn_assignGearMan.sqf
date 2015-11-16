@@ -2,11 +2,11 @@
 // F3 - F3 Folk ARPS Assign Gear
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
-private ["_unit", "_faction", "_loadout", "_path", "_uniforms", "_vests", "_headgears", "_goggles", "_backpack", "_backpackItems", "_weapons", "_launchers", "_handguns", "_magazines", "_items", "_linkedItems", "_attachments", "_primaryWeaponSelected", "_launcherSelected", "_handgunSelected", "_primaryMagazines", "_launcherMagazines", "_handgunMagazines", "_grenadeLauncherMagazines"];
-
-_unit = _this select 0;
+params ["_unit"];
 
 if (!(local _unit)) exitWith {};
+
+_startTime = diag_tickTime;
 
 if (isNil "f_var_medical_replacements") then {
     _medicalMode = getNumber (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_MODE");
@@ -37,8 +37,9 @@ if (isNil "f_var_medical_replacements") then {
 };
 
 _faction = tolower (faction _unit);
+_unitClassname = typeOf _unit;
 //Check variable f_gear, otherwise default to typeof
-_loadout = _unit getVariable ["F_Gear", (typeOf _unit)];
+_loadout = _unit getVariable ["F_Gear", _unitClassname];
 
 // INSIGNIA (todo: move to the CfgLoadouts system)
 // This block will give units insignia on their uniforms.
@@ -52,12 +53,21 @@ if (isNil "F_Gear_Path_Override") then {
     _path = [_faction, _loadout] call F_Gear_Path_Override;
 };
 
+if ((!isClass(_path)) && {(getNumber (missionConfigFile >> "CfgLoadouts" >> "useFallback")) == 1}) then {
+    // [_unitClassname, "No loadout found, attempting fallback"] call F_fnc_gearErrorLogger;
+    _path = missionConfigFile >> "CfgLoadouts" >> _faction >> "fallback";
+};
+
 if(!isClass(_path)) exitWith {
     if (isPlayer _unit) then {
-        // _unit setVariable ["f_var_assignGear_done", true, true];
-        diag_log format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
-        systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+        [_unitClassname, "No loadout found, using default gear"] call F_fnc_gearErrorLogger;
     };
+};
+
+_allowMagnifiedOptics = if (isNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics")) then {
+    1 == getNumber (missionConfigFile >> "CfgLoadouts" >> "allowMagnifiedOptics");
+} else {
+    true
 };
 
 _uniforms = getArray(_path >> "uniform");
@@ -112,7 +122,7 @@ if ((count _uniforms) == 0) then {
             _unit forceAddUniform _toAdd;
         };
     } else {
-        diag_log text format ["[BW] %1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)];
+        [_unitClassname, format ["%1 Uniform (%2) not found using default (%3)", _loadout, _toAdd, (uniform _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 //Random Vest:
@@ -124,7 +134,7 @@ if ((count _vests) == 0) then {
         removeVest _unit;
         _unit addVest _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)];
+        [_unitClassname, format ["%1 Vest (%2) not found using default (%3)", _loadout, _toAdd, (vest _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 //Random Backpack:
@@ -136,7 +146,7 @@ if ((count _backpack) == 0) then {
         removeBackpack _unit;
         _unit addBackpack _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)];
+        [_unitClassname, format ["%1 Backpack (%2) not found using default (%3)", _loadout, _toAdd, (backpack _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 //Random Headgear:
@@ -148,7 +158,7 @@ if ((count _headgears) == 0) then {
         removeHeadgear _unit;
         _unit addHeadgear _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)];
+        [_unitClassname, format ["%1 Headgear (%2) not found using default (%3)", _loadout, _toAdd, (headgear _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 
@@ -161,7 +171,7 @@ if ((count _goggles) == 0) then {
         removeGoggles _unit;
         _unit addGoggles _toAdd;
     } else {
-        diag_log text format ["[BW] %1 Goggles (%2) not found using default (%3)", _loadout, _toAdd, (goggles _unit)];
+        [_unitClassname, format ["%1 Goggles (%2) not found using default (%3)", _loadout, _toAdd, (goggles _unit)]] call F_fnc_gearErrorLogger;
     };
 };
 
@@ -170,7 +180,7 @@ clearAllItemsFromBackpack _unit;
 
 // Backpack Items
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
         _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
@@ -187,7 +197,7 @@ clearAllItemsFromBackpack _unit;
 // ====================================================================================
 // Items
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
         _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
@@ -197,7 +207,7 @@ clearAllItemsFromBackpack _unit;
     };
 } foreach _items;
 {
-    _arr = [_x,":"] call BIS_fnc_splitString;
+    _arr = _x splitString ":";
     if ((count _arr) > 0) then {
         _classname = _arr select 0;
         _amt = if (count _arr > 1) then {parseNumber (_arr select 1);} else {1};
@@ -278,15 +288,7 @@ if (!isNil "_handgunSelected") then {_unit addWeapon _handgunSelected;};
     if (_unit canAdd _x) then {
         _unit addMagazines [_x, 1];
     } else {
-        if (isNil "F_GEAR_ERROR_LOADOUTS") then {F_GEAR_ERROR_LOADOUTS = [];};
-        diag_log text format ["[BW] %1 - No room for magazine %2", _loadout, _x];
-        if (!(_loadout in F_GEAR_ERROR_LOADOUTS)) then {
-            F_GEAR_ERROR_LOADOUTS pushBack _loadout;
-            diag_log text format ["Failed To add Magazine %1 to %2", _x, _loadout];
-            if (isServer && hasInterface) then {
-                systemChat format ["Failed To add Magazine %1 to %2", _x, _loadout];
-            };
-        };
+        [_unitClassname, format ["No room for magazine %1", _x]] call F_fnc_gearErrorLogger;
     };
 } forEach _magazinesNotAdded;
 
@@ -294,5 +296,7 @@ _a = _path >> "init";
 if (isText _a) then {
     _unit call compile ("this = _this;"+ getText _a);
 };
+
+[_unitClassname, "Done", (diag_tickTime - _startTime)] call F_fnc_gearErrorLogger;
 
 _unit setVariable ["f_var_assignGear_done", true, true];
