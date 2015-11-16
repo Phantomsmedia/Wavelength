@@ -8,6 +8,23 @@ if (!hasInterface) exitWith {};
 [] spawn {
     if (player != player) then {waitUntil {player == player};};
     if (!alive player) then {waitUntil {alive player};};
+    
+    //Auto add credits from description.ext:
+    _missionName = getText (missionConfigFile >> "onLoadName");
+    _authorName = getText (missionConfigFile >> "author");
+    _worldName = getText (configFile >> "CfgWorlds" >> worldName >> "description");
+    _onLoadMission = getText (missionConfigFile >> "onLoadMission");
+    player createDiaryRecord ["diary", ["Credits", format ["
+    <font size=16>%1</font><br/>
+    <font size=13>by %2</font><br/>
+    <font size=13>on %3</font><br/>
+    <br/>
+    <br/>
+    <br/>
+    Wavelength Framework<br/>
+    %4<br/>
+    Based on F3 (http://www.ferstaberinde.com/f3/en/)
+    ", _missionName, _authorName, _worldName, _onLoadMission]]];
 
     private ["_unitfaction"];
     // If the unitfaction is different from the group leader's faction, the latters faction is used
