@@ -39,7 +39,7 @@ _speedLimit = [_this,2,15] call BIS_fnc_param;
 _finalwp = "SENTRY";
 
 // Exit the script if any of the required variables is invalid
-if (isNull _leadv || _marker == "" || !local _leadV) exitWith {};
+if (isNull _leadv || _marker == "" || !private _leadV) exitWith {};
 
 _convoy = _leadv call ws_fnc_collectObjectsNum;
 _waypoints = _marker call ws_fnc_collectMarkers;
