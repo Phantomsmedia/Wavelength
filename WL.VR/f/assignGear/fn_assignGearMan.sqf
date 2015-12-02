@@ -6,7 +6,7 @@ private ["_unit", "_faction", "_loadout", "_path", "_uniforms", "_vests", "_head
 
 _unit = _this select 0;
 
-if (!(local _unit)) exitWith {};
+if (!(private _unit)) exitWith {};
 
 if (isNil "f_var_medical_replacements") then {
     _medicalMode = getNumber (missionConfigFile >> "CfgLoadouts" >> "MEDICAL_MODE");
