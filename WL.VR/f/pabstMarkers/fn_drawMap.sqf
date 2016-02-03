@@ -35,10 +35,9 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
     };
 } foreach F_Markers_thingsToDraw;
 
-
-#define TRI_MARKER "\A3\ui_f\data\map\markers\military\start_CA.paa"
 if((ctrlMapScale _mapControl) < 0.5) then {
     {
+        _tex = _x call ST_STHud_GetIconPicture;
         _color = switch (assignedTeam _x) do {
         case "RED": {[0.9,0,0,1]};
         case "YELLOW": {[0.9,0.9,0,1]};
@@ -50,7 +49,7 @@ if((ctrlMapScale _mapControl) < 0.5) then {
         _pos = getPos _x;
         _dir = getDir _x;
         _text = if (alive _x) then {name _x} else {""};
-        _mapControl drawIcon [TRI_MARKER, _color, _pos, 12, 12, _dir, _text, 1, _textsize, 'TahomaB', "left"];
-
+        _mapControl drawIcon [_tex, [0,0,0,1], _pos, 26, 26, _dir, "", 1, _textsize, 'TahomaB', "left"];
+        _mapControl drawIcon [_tex, _color, _pos, 23, 23, _dir, _text, 1, _textsize, 'TahomaB', "left"];
     } forEach (units (group player));
 };
