@@ -76,8 +76,6 @@ class Mission
 	randomSeed=11823142;
 	class Intel
 	{
-		briefingName="*** Insert mission name here. ***";
-		overviewText="*** Insert mission description here. ***";
 		resistanceWest=0;
 		startWeather=0;
 		startWind=0;
