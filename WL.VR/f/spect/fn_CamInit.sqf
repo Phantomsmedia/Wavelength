@@ -45,6 +45,20 @@ if(isNil "f_cam_VirtualCreated") then
   waituntil{player == _newUnit};
   deleteVehicle _unit;
   f_cam_VirtualCreated = true;
+} else {
+    if (!f_cam_VirtualCreated) then {
+        createCenter sideLogic;
+        _newGrp = createGroup sideLogic;
+        _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
+        _newUnit allowDamage false;
+        _newUnit hideObjectGlobal true;
+        _newUnit enableSimulationGlobal false;
+        _newUnit setpos [0,0,5];
+        selectPlayer _newUnit;
+        waituntil{player == _newUnit};
+        deleteVehicle _unit;
+        f_cam_VirtualCreated = true;
+    };
 };
 
 if(isNull _oldUnit ) then {if(count playableUnits > 0) then {_oldUnit = (playableUnits select 0)} else {_oldUnit = (allUnits select 0)};};
