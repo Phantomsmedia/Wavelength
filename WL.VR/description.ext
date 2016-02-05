@@ -261,16 +261,16 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-
-    class f_param_headlessClient
-    	{
-	        title = "Headless client";
-	        values[] = {0,1};
-	        texts[] = {"Off","Auto-Detect"};
-	        default = 1;
-	        code = "f_param_headlessClient = %1";
-    	};
 */
+    class f_param_headlessClient
+	{
+		title = "Headless Client";
+		values[] = {0,1};
+		texts[] = {"Off","Auto-Detect"};
+		default = 1;
+		code = "f_param_headlessClient = %1";
+	};
+
 
 // ============================================================================================
 
