@@ -41,6 +41,7 @@ loadScreen = "loadLogo.jpg";
 //Credits:headswe, Pabst, Zerith
 
 #include "CfgLoadouts.hpp"
+#include "f\ace\ace_medical_settings.hpp"
 
 // ============================================================================================
 
@@ -88,7 +89,7 @@ enableDebugConsole = 1;
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // Group respawn test
-respawn = 4;
+respawn = 3;
 respawndelay = 3;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator","f_JIP"};
