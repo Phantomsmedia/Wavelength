@@ -41,6 +41,7 @@ loadScreen = "loadLogo.jpg";
 //Credits:headswe, Pabst, Zerith
 
 #include "CfgLoadouts.hpp"
+#include "f\ace\ace_medical_settings.hpp"
 
 // ============================================================================================
 
