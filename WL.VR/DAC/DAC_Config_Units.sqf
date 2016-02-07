@@ -513,464 +513,125 @@ _Unit_Pool_A = [	// added A3 little bird, it is quite balanced and nice to fight
 ];
 };
 //-------------------------------------------------------------------------------------------------
-// LOP DAC factions added by Don [6.Rus] 	(DonElSarjo)
-//-------------------------------------------------------------------------------------------------
-// Afghan Militia (Leight's Opfor Pack) - INDEPENDENT
-case 14:
-{
-_Unit_Pool_S = [
-	"LOP_AM_Infantry_Engineer", "LOP_AM_Infantry_Engineer", "LOP_AM_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_AM_Infantry_AT",
-	"LOP_AM_Infantry_AR",
-	"LOP_AM_Infantry_Corpsman",
-	"LOP_AM_Infantry_GL",
-	"LOP_AM_Infantry_Marksman",
-	"LOP_AM_Soldier",
-	"LOP_AM_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_AM_Landrover",
-	"LOP_AM_Landrover_M2",
-	"LOP_AM_Offroad",
-	"LOP_AM_Offroad_M2",
-	"LOP_AM_Truck"
-];
-_Unit_Pool_T = [
-	"LOP_AM_BTR60",
-	"LOP_AM_M113_W",
-	"LOP_AM_T72BA"
-];
-_Unit_Pool_A = [];
+//===================================================================================================//
+// BW: Bundeswehr (Flecktarn)     by TheMagnetar                                                     //
+//===================================================================================================//
+case 14: {
+    _Unit_Pool_S = [
+        "BWA3_Crew_Fleck","BWA3_Helipilot","BWA3_SL_Fleck",  // Crew, Helicopter Pilot and Squad Leader
+        "BWA3_TL_Fleck",                                     // Fire Team Leader
+        "BWA3_Rifleman_Fleck",                               // Rifleman
+        "BWA3_Rifleman_lite_Fleck",                          // Light Rifleman
+        //"BWA3_Rifleman_unarmed_Fleck",                       // Unarmed Rifleman
+        "BWA3_RiflemanG27_Fleck",                            // Rifleman with G27
+        "BWA3_RiflemanG28_Fleck",                            // Rifleman with G28
+        "BWA3_Grenadier_Fleck",                              // Grenadier
+        "BWA3_GrenadierG27_Fleck",                           // Grenadier with G27
+        "BWA3_Autorifleman_Fleck",                           // Automatic Rifleman
+        "BWA3_AutoriflemanMG5_Fleck",                        // Automatic Rifleman with MG5
+        "BWA3_CombatLifeSaver_Fleck",                        // Combat Life Saver
+        "BWA3_Marksman_Fleck",                               // Marksman
+        "BWA3_SniperG82_Fleck",                              // Sniper
+        "BWA3_Spotter_Fleck",                                // Spotter
+        "BWA3_RiflemanAT_RGW90_Fleck",                       // Antitank with RGW90
+        "BWA3_RiflemanAT_Pzf3_Fleck",                        // Antitank with Panzerfaust 3
+        "BWA3_RiflemanAA_Fliegerfaust_Fleck",                // Antiair with Fliegerfaust
+        "BWA3_Engineer_Fleck"                                // Engineer
+    ];
+    _Unit_Pool_V = [];
+    _Unit_Pool_T = [
+        "BWA3_Puma_Fleck",                            // IFV Puma
+        "BWA3_Leopard2A6M_Fleck"                      // MBT Leopard 2A6M
+    ];
+    _Unit_Pool_A = [
+        "BWA3_Tiger_Gunpod_PARS",                      // UH Tiger GunPod (PARS)
+        "BWA3_Tiger_Gunpod_FZ",                        // UH Tiger GunPod (FZ)
+        "BWA3_Tiger_Gunpod_Heavy",                     // UH Tiger GunPod (Heavy)
+        "BWA3_Tiger_RMK_PARS",                         // UH Tiger RMK (PARS)
+        "BWA3_Tiger_RMK_Universal",                    // UH Tiger RMK (Universal)
+        "BWA3_Tiger_RMK_FZ",                           // UH Tiger RMK (FZ)
+        "BWA3_Tiger_RMK_Heavy"                         // UH Tiger RMK (Heavy)
+    ];
+    };
+
+//===================================================================================================//
+// BW: Bundeswehr (Tropentarn)                                                                       //
+//===================================================================================================//
+case 15: {
+    _Unit_Pool_S = [
+        "BWA3_Crew_Fleck","BWA3_Helipilot","BWA3_TL_Tropen",  // Crew, Helicopter Pilot and Squad Leader
+        "BWA3_TL_Tropen",                                     // Fire Team Leader
+        "BWA3_Rifleman_Tropen",                               // Rifleman
+        "BWA3_Rifleman_lite_Tropen",                          // Light Rifleman
+        //"BWA3_Rifleman_unarmed_Tropen",                       // Light Rifleman
+        "BWA3_RiflemanG27_Tropen",                            // Rifleman with G27
+        "BWA3_RiflemanG28_Tropen",                            // Rifleman with G28
+        "BWA3_Grenadier_Tropen",                              // Grenadier
+        "BWA3_GrenadierG27_Tropen",                           // Grenadier with G27
+        "BWA3_Autorifleman_Tropen",                           // Automatic Rifleman
+        "BWA3_AutoriflemanMG5_Tropen",                        // Automatic Rifleman with MG5
+        "BWA3_CombatLifeSaver_Tropen",                        // Combat Life Saver
+        "BWA3_Marksman_Tropen",                               // Marksman
+        "BWA3_SniperG82_Tropen",                              // Sniper
+        "BWA3_Spotter_Tropen",                                // Spotter
+        "BWA3_RiflemanAT_RGW90_Tropen",                       // Antitank with RGW90
+        "BWA3_RiflemanAT_Pzf3_Tropen",                        // Antitank with Panzerfaust 3
+        "BWA3_RiflemanAA_Fliegerfaust_Tropen",                // Antiair with Fliegerfaust
+        "BWA3_Engineer_Tropen"                                // Engineer
+    ];
+    _Unit_Pool_V = [];
+    _Unit_Pool_T = [
+        "BWA3_Puma_Tropen",                            // IFV Puma
+        "BWA3_Leopard2A6M_Tropen"                      // MBT Leopard 2A6M
+    ];
+    _Unit_Pool_A = [
+        "BWA3_Tiger_Gunpod_PARS",                      // UH Tiger GunPod (PARS)
+        "BWA3_Tiger_Gunpod_FZ",                        // UH Tiger GunPod (FZ)
+        "BWA3_Tiger_Gunpod_Heavy",                     // UH Tiger GunPod (Heavy)
+        "BWA3_Tiger_RMK_PARS",                         // UH Tiger RMK (PARS)
+        "BWA3_Tiger_RMK_Universal",                    // UH Tiger RMK (Universal)
+        "BWA3_Tiger_RMK_FZ",                           // UH Tiger RMK (FZ)
+        "BWA3_Tiger_RMK_Heavy"                         // UH Tiger RMK (Heavy)
+    ];
 };
-//-------------------------------------------------------------------------------------------------
-// African Militia (Leight's Opfor Pack) - INDEPENDENT
-case 15:
-{
-_Unit_Pool_S = [
-	"LOP_AFR_Driver", "LOP_AFR_Driver", "LOP_AFR_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_AFR_Infantry_AT",
-	"LOP_AFR_Infantry_Corpsman",
-	"LOP_AFR_Infantry_GL",
-	"LOP_AFR_Infantry_IED",
-	"LOP_AFR_Infantry_AR",
-	"LOP_AFR_Infantry_Marksman",
-	"LOP_AFR_Infantry",
-	"LOP_AFR_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_AFR_Landrover",
-	"LOP_AFR_Landrover_M2",
-	"LOP_AFR_Offroad",
-	"LOP_AFR_Offroad_M2",
-	"LOP_AFR_Truck"
-];
-_Unit_Pool_T = [
-	"LOP_AFR_BTR60",
-	"LOP_AFR_M113_W",
-	"LOP_AFR_T72BA"
-];
-_Unit_Pool_A = [];
+
+//===================================================================================================//
+// BW: Bundeswehr Fernspäher (Flecktarn)                                                             //
+//===================================================================================================//
+case 16: {
+    _Unit_Pool_S = [
+        "BWA3_Crew_Fleck","BWA3_Helipilot","BWA3_recon_TL_Fleck",  // Crew, Helicopter Pilot and Fire Team Leader
+        "BWA3_recon_Fleck",                                        // Fernspäher Scout
+        "BWA3_recon_LAT_Fleck",                                    // Fernspäher RGW90
+        "BWA3_recon_Pioneer_Fleck",                                // Fernspäher Pioneer
+        "BWA3_recon_Medic_Fleck",                                  // Fernspäher Paramedic
+        "BWA3_recon_Marksman_Fleck",                               // Fernspäher Marksman
+        "BWA3_recon_Radioman_Fleck"                                // Fernspäher radioman
+    ];
+    _Unit_Pool_V = [];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
 };
-//-------------------------------------------------------------------------------------------------
-// ISTS (Leight's Opfor Pack) - INDEPENDENT
-case 16:
-{
-_Unit_Pool_S = [
-	"LOP_ISTS_Infantry_Engineer", "LOP_ISTS_Infantry_Engineer", "LOP_ISTS_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_ISTS_Infantry_AT",
-	"LOP_ISTS_Infantry_AR",
-	"LOP_ISTS_Infantry_Corpsman",
-	"LOP_ISTS_Infantry_GL",
-	"LOP_ISTS_Infantry_Marksman",
-	"LOP_ISTS_Soldier",
-	"LOP_ISTS_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_ISTS_Landrover",
-	"LOP_ISTS_Landrover_M2",
-	"LOP_ISTS_Offroad",
-	"LOP_ISTS_Offroad_M2",
-	"LOP_ISTS_Truck"
-];
-_Unit_Pool_T = [
-	"LOP_ISTS_BTR60",
-	"LOP_ISTS_M113_W",
-	"LOP_ISTS_T72BA"
-];
-_Unit_Pool_A = [];
+
+//===================================================================================================//
+// BW: Bundeswehr Fernspäher (Tropentarn)                                                            //
+//===================================================================================================//
+case 17: {
+    _Unit_Pool_S = [
+        "BWA3_Crew_Tropen","BWA3_Helipilot","BWA3_recon_TL_Tropen", // Crew, Helicopter Pilot and Squad Leader
+        "BWA3_recon_Tropen",                                        // Fernspäher Scout
+        "BWA3_recon_LAT_Tropen",                                    // Fernspäher RGW90
+        "BWA3_recon_Pioneer_Tropen",                                // Fernspäher Pioneer
+        "BWA3_recon_Medic_Tropen",                                  // Fernspäher Paramedic
+        "BWA3_recon_Marksman_Tropen",                               // Fernspäher Marksman
+        "BWA3_recon_Radioman_Tropen"                                // Fernspäher radioman
+    ];
+    _Unit_Pool_V = [];
+    _Unit_Pool_T = [];
+    _Unit_Pool_A = [];
 };
-//-------------------------------------------------------------------------------------------------
-// RACS (Leight's Opfor Pack) - INDEPENDENT
-case 17:
-{
-_Unit_Pool_S = [
-	"LOP_RACS_Infantry_Crewman", "LOP_RACS_Infantry_Pilot", "LOP_RACS_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_RACS_Infantry_AT",
-	"LOP_RACS_Infantry_AT_Asst",
-	"LOP_RACS_Infantry_Corpsman",
-	"LOP_RACS_Infantry_Engineer",
-	"LOP_RACS_Infantry_GL",
-	"LOP_RACS_Infantry_MG",
-	"LOP_RACS_Infantry_MG_Asst",
-	"LOP_RACS_Infantry_Marksman",
-	"LOP_RACS_Infantry_Rifleman",
-	"LOP_RACS_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_RACS_Landrover",
-	"LOP_RACS_Landrover_M2",
-	"LOP_RACS_Offroad",
-	"LOP_RACS_Offroad_M2",
-	"LOP_RACS_Truck"
-];
-_Unit_Pool_T = [
-	"LOP_RACS_M113_W",
-	"LOP_RACS_T72BA"
-];
-_Unit_Pool_A = [
-	"LOP_RACS_MH9_armed",
-	"LOP_RACS_MH9",
-	"LOP_RACS_UH60M"
-];
-};
-//-------------------------------------------------------------------------------------------------
-// Iraqi Army (Leight's Opfor Pack) - BLUFOR // no support units
-case 18:
-{
-_Unit_Pool_S = [
-	"LOP_IA_Infantry_Crewman", "LOP_IA_Infantry_Crewman", "LOP_IA_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_IA_Infantry_AT",
-	"LOP_IA_Infantry_AT_Asst",
-	"LOP_IA_Infantry_Corpsman",
-	"LOP_IA_Infantry_Engineer",
-	"LOP_IA_Infantry_GL",
-	"LOP_IA_Infantry_MG",
-	"LOP_IA_Infantry_MG_Asst",
-	"LOP_IA_Infantry_Marksman",
-	"LOP_IA_Infantry_Rifleman",
-	"LOP_IA_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_IA_BM21",
-	"LOP_IA_HEMTT_Mover_D",
-	"LOP_IA_HEMTT_Box_D",
-	"LOP_IA_HEMTT_Transport_D",
-	"LOP_IA_HEMTT_Covered_D",
-	"LOP_IA_M1025_W_M2",
-	"LOP_IA_M1025_W_Mk19",
-	"LOP_IA_M1025_D",
-	"LOP_IA_M998_D_4DR",
-	"LOP_IA_Offroad",
-	"LOP_IA_Offroad_M2",
-	"LOP_IA_Truck"
-];
-_Unit_Pool_T = [
-	"LOP_IA_BMP1",
-	"LOP_IA_BMP2",
-	"LOP_IA_M113_W",
-	"LOP_IA_M1A1_AIM_D",
-	"LOP_IA_ZSU234"
-];
-_Unit_Pool_A = [];
-};
-//-------------------------------------------------------------------------------------------------
-// Chernarus Defence Force (Leight's Opfor Pack) - BLUFOR // no support units
-case 19:
-{
-_Unit_Pool_S = [
-	"LOP_CDF_Infantry_Crewman", "LOP_CDF_Infantry_Pilot", "LOP_CDF_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_CDF_Infantry_AA",
-	"LOP_CDF_Infantry_AA",
-	"LOP_CDF_Infantry_AT_Asst",
-	"LOP_CDF_Infantry_Corpsman",
-	"LOP_CDF_Infantry_Engineer",
-	"LOP_CDF_Infantry_GL",
-	"LOP_CDF_Infantry_MG",
-	"LOP_CDF_Infantry_MG_Asst",
-	"LOP_CDF_Infantry_Marksman",
-	"LOP_CDF_Infantry_Officer",
-	"LOP_CDF_Infantry_Rifleman",
-	"LOP_CDF_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_CDF_BM21",
-	"LOP_CDF_KAMAZ_Transport",
-	"LOP_CDF_KAMAZ_Covered",
-	"LOP_CDF_UAZ" ,
-	"LOP_CDF_UAZ_Open",
-	"LOP_CDF_Ural",
-	"LOP_CDF_Ural_open"
-];
-_Unit_Pool_T = [
-	"LOP_CDF_BMD1",
-	"LOP_CDF_BMD2",
-	"LOP_CDF_BMP1",
-	"LOP_CDF_BMP1D",
-	"LOP_CDF_BMP2",
-	"LOP_CDF_BMP2D",
-	"LOP_CDF_BTR60",
-	"LOP_CDF_BTR70",
-	"LOP_CDF_T72BA",
-	"LOP_CDF_T72BB",
-	"LOP_CDF_ZSU234"
-];
-_Unit_Pool_A = [
-	"LOP_CDF_Mi24V_AT",
-	"LOP_CDF_Mi24V_FAB",
-	"LOP_CDF_Mi24V_UPK23",
-	"LOP_CDF_Mi8MT_Cargo",
-	"LOP_CDF_Mi8MTV3_FAB",
-	"LOP_CDF_Mi8MTV3_UPK23"
-];
-};
-//-------------------------------------------------------------------------------------------------
-// Afghan Army (Leight's Opfor Pack) - BLUFOR
-case 20:
-{
-_Unit_Pool_S = [
-	"LOP_AA_Infantry_Crewman", "LOP_AA_Infantry_Crewman", "LOP_AA_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_AA_Infantry_AT",
-	"LOP_AA_Infantry_AT_Asst",
-	"LOP_AA_Infantry_Corpsman",
-	"LOP_AA_Infantry_Engineer",
-	"LOP_AA_Infantry_GL",
-	"LOP_AA_Infantry_MG",
-	"LOP_AA_Infantry_MG_Asst",
-	"LOP_AA_Infantry_Marksman",
-	"LOP_AA_Infantry_Rifleman",
-	"LOP_AA_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_AA_M1025_W_M2",
-	"LOP_AA_M1025_W_Mk19",
-	"LOP_AA_M1025_D",
-	"LOP_AA_M998_D_4DR",
-	"LOP_AA_Offroad",
-	"LOP_AA_Offroad_M2",
-	"LOP_AA_Truck"
-];
-_Unit_Pool_T = [
-	"LOP_AA_BMP1",
-	"LOP_AA_BMP2",
-	"LOP_AA_M113_W",
-	"LOP_AA_ZSU234"
-];
-_Unit_Pool_A = [];
-};
-//-------------------------------------------------------------------------------------------------
-// Afghan Police (Leight's Opfor Pack) - BLUFOR
-case 21:
-{
-_Unit_Pool_S = [
-	"LOP_AA_Police_Rifleman", "LOP_AA_Police_Rifleman", "LOP_AA_Police_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_AA_Police_Corpsman",
-	"LOP_AA_Police_MG",
-	"LOP_AA_Police_Rifleman",
-	"LOP_AA_Police_TL"
-];
-_Unit_Pool_V = [
-	"LOP_AA_Offroad_Police",
-	"LOP_AA_Offroad_M2_Police"
-];
-_Unit_Pool_T = [
-	"LOP_AA_Offroad_Police",
-	"LOP_AA_Offroad_M2_Police"
-];
-_Unit_Pool_A = [];
-};
-//-------------------------------------------------------------------------------------------------
-// ChDKZ (Leight's Opfor Pack) - OPFOR
-case 22:
-{
-_Unit_Pool_S = [
-	"LOP_ChDKZ_Infantry_Crewman", "LOP_ChDKZ_Infantry_Pilot", "LOP_ChDKZ_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_ChDKZ_Infantry_AT",
-	"LOP_ChDKZ_Infantry_Bardak",
-	"LOP_ChDKZ_Infantry_Commander",
-	"LOP_ChDKZ_Infantry_Corpsman",
-	"LOP_ChDKZ_Infantry_Engineer",
-	"LOP_ChDKZ_Infantry_GL",
-	"LOP_ChDKZ_Infantry_MG",
-	"LOP_ChDKZ_Infantry_Marksman",
-	"LOP_ChDKZ_Infantry_Rifleman",
-	"LOP_ChDKZ_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_ChDKZ_BM21",
-	"LOP_ChDKZ_UAZ",
-	"LOP_ChDKZ_UAZ_Open",
-	"LOP_ChDKZ_Ural",
-	"LOP_ChDKZ_Ural_open"
-];
-_Unit_Pool_T = [
-	"LOP_ChDKZ_BMP1",
-	"LOP_ChDKZ_BMP1D",
-	"LOP_ChDKZ_BMP2",
-	"LOP_ChDKZ_BMP2D",
-	"LOP_ChDKZ_BTR60",
-	"LOP_ChDKZ_BTR70",
-	"LOP_ChDKZ_T72BA",
-	"LOP_ChDKZ_T72BB",
-	"LOP_ChDKZ_ZSU234"
-];
-_Unit_Pool_A = [
-	"LOP_ChDKZ_Mi8MT_Cargo",
-	"LOP_ChDKZ_Mi8MTV3_FAB",
-	"LOP_ChDKZ_Mi8MTV3_UPK23"
-];
-};
-//-------------------------------------------------------------------------------------------------
-// SLA (Leight's Opfor Pack) - OPFOR
-case 23:
-{
-_Unit_Pool_S = [
-	"LOP_SLA_Infantry_Crewman", "LOP_SLA_Infantry_Pilot", "LOP_SLA_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_SLA_Infantry_AA",
-	"LOP_SLA_Infantry_AT",
-	"LOP_SLA_Infantry_AT_Asst",
-	"LOP_SLA_Infantry_Corpsman",
-	"LOP_SLA_Infantry_Engineer",
-	"LOP_SLA_Infantry_GL",
-	"LOP_SLA_Infantry_MG",
-	"LOP_SLA_Infantry_MG_Asst",
-	"LOP_SLA_Infantry_Marksman",
-	"LOP_SLA_Infantry_Officer",
-	"LOP_SLA_Infantry_Rifleman",
-	"LOP_SLA_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_SLA_BM21",
-	"LOP_SLA_UAZ",
-	"LOP_SLA_UAZ_Open",
-	"LOP_SLA_Ural",
-	"LOP_SLA_Ural_open"
-];
-_Unit_Pool_T = [
-	"LOP_SLA_BMP1",
-	"LOP_SLA_BMP1D",
-	"LOP_SLA_BMP2",
-	"LOP_SLA_BMP2D",
-	"LOP_SLA_BTR60",
-	"LOP_SLA_BTR70",
-	"LOP_SLA_T72BA",
-	"LOP_SLA_T72BB",
-	"LOP_SLA_ZSU234"
-];
-_Unit_Pool_A = [
-	"LOP_SLA_Mi8MT_Cargo",
-	"LOP_SLA_Mi8MTV3_FAB",
-	"LOP_SLA_Mi8MTV3_UPK23"
-];
-};
-//-------------------------------------------------------------------------------------------------
-// Novorussian force (Leight's Opfor Pack) - OPFOR
-case 24:
-{
-_Unit_Pool_S = [
-	"LOP_US_Infantry_Crewman", "LOP_US_Infantry_Crewman", "LOP_US_Infantry_SL", //Vehicle crewman, Pilot, Group Leader
-	"LOP_US_Infantry_AA",
-	"LOP_US_Infantry_AT",
-	"LOP_US_Infantry_AT_Asst",
-	"LOP_US_Infantry_Corpsman",
-	"LOP_US_Infantry_Engineer",
-	"LOP_US_Infantry_GL",
-	"LOP_US_Infantry_MG",
-	"LOP_US_Infantry_MG_Asst",
-	"LOP_US_Infantry_Marksman",
-	"LOP_US_Infantry_Officer",
-	"LOP_US_Infantry_Rifleman",
-	"LOP_US_Infantry_TL"
-];
-_Unit_Pool_V = [
-	"LOP_US_BM21",
-	"LOP_US_UAZ",
-	"LOP_US_UAZ_Open",
-	"LOP_US_Ural",
-	"LOP_US_Ural_open"
-];
-_Unit_Pool_T = [
-	"LOP_US_BMP1",
-	"LOP_US_BMP1D",
-	"LOP_US_BMP2",
-	"LOP_US_BMP2D",
-	"LOP_US_BTR60",
-	"LOP_US_BTR70",
-	"LOP_US_T72BA",
-	"LOP_US_T72BB",
-	"LOP_US_ZSU234"
-];
-_Unit_Pool_A = [];
-};
-//-------------------------------------------------------------------------------------------------
-// African civilians (Leight's Opfor Pack) - CIV
-case 25:
-{
-_Unit_Pool_S = [
-	//Vehicle crewman, Pilot, Group Leader
-	"LOP_AFR_Civ_Man_01",
-	"LOP_AFR_Civ_Man_01_S",
-	"LOP_AFR_Civ_Man_02",
-	"LOP_AFR_Civ_Man_02_S",
-	"LOP_AFR_Civ_Man_03",
-	"LOP_AFR_Civ_Man_03_S",
-	"LOP_AFR_Civ_Man_04",
-	"LOP_AFR_Civ_Man_04_S",
-	"LOP_AFR_Civ_Man_05",
-	"LOP_AFR_Civ_Man_05_S",
-	"LOP_AFR_Civ_Man_06",
-	"LOP_AFR_Civ_Man_06_S"
-];
-_Unit_Pool_V = [
-	"LOP_AFR_Civ_Hatchback",
-	"LOP_AFR_Civ_Offroad",
-	"LOP_AFR_Civ_Landrover",
-	"LOP_AFR_Civ_UAZ",
-	"LOP_AFR_Civ_UAZ_Open",
-	"LOP_AFR_Civ_Ural",
-	"LOP_AFR_Civ_Ural_open"
-];
-_Unit_Pool_T = [
-	"LOP_AFR_Civ_Hatchback",
-	"LOP_AFR_Civ_Offroad",
-	"LOP_AFR_Civ_Landrover",
-	"LOP_AFR_Civ_UAZ",
-	"LOP_AFR_Civ_UAZ_Open",
-	"LOP_AFR_Civ_Ural",
-	"LOP_AFR_Civ_Ural_open"
-];
-_Unit_Pool_A = [];
-};
-//-------------------------------------------------------------------------------------------------
-// Takistani civilians (Leight's Opfor Pack) - CIV
-case 26:
-{
-_Unit_Pool_S = [
-	//Vehicle crewman, Pilot, Group Leader
-	"LOP_Tak_Civ_Man_01",
-	"LOP_Tak_Civ_Man_02",
-	"LOP_Tak_Civ_Man_04"
-];
-_Unit_Pool_V = [
-	"LOP_TAK_Civ_Hatchback",
-	"LOP_TAK_Civ_Offroad",
-	"LOP_TAK_Civ_Landrover",
-	"LOP_TAK_Civ_UAZ",
-	"LOP_TAK_Civ_UAZ_Open",
-	"LOP_TAK_Civ_Ural",
-	"LOP_TAK_Civ_Ural_open"
-];
-_Unit_Pool_T = [
-	"LOP_TAK_Civ_Hatchback",
-	"LOP_TAK_Civ_Offroad",
-	"LOP_TAK_Civ_Landrover",
-	"LOP_TAK_Civ_UAZ",
-	"LOP_TAK_Civ_UAZ_Open",
-	"LOP_TAK_Civ_Ural",
-	"LOP_TAK_Civ_Ural_open"
-];
-_Unit_Pool_A = [];
-};
-//-------------------------------------------------------------------------------------------------
+
+/===================================================================================================//
   Default
   {
     if(DAC_Basic_Value != 5) then
