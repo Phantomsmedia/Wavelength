@@ -123,7 +123,7 @@ class ACE_Settings
 	{
 		category = "$STR_ace_medical_Category_Medical";
 		typeName = "BOOL";
-		value = 0;
+		value = 1;
 	};
 	class ace_medical_allowLitterCreation
 	{
@@ -196,7 +196,7 @@ class ACE_Settings
 		displayName = "$STR_ace_medical_AdvancedMedicalSettings_useCondition_PAK_DisplayName";
 		description = "$STR_ace_medical_AdvancedMedicalSettings_useCondition_PAK_Description";
 		typeName = "SCALAR";
-		value = 0;
+		value = 1;
 		values[] = {"Anytime","Stable"};
 	};
 	class ace_medical_useCondition_SurgicalKit
@@ -205,7 +205,7 @@ class ACE_Settings
 		displayName = "$STR_ace_medical_AdvancedMedicalSettings_useCondition_SurgicalKit_DisplayName";
 		description = "$STR_ace_medical_AdvancedMedicalSettings_useCondition_SurgicalKit_Description";
 		typeName = "SCALAR";
-		value = 0;
+		value = 1;
 		values[] = {"Anytime","Stable"};
 	};
 	class ace_medical_keepLocalSettingsSynced
