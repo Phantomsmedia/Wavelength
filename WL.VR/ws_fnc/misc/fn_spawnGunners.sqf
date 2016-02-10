@@ -24,7 +24,7 @@ _vehicle = _this select 0;
 
 waitUntil {!isNil "f_var_setParams"};
 
-if (!(f_param_spawnGunners == 1) || !(private _vehicle) || !(_vehicle getVariable ["f_var_spawnGunners",false])) exitWith {};
+if (!(f_param_spawnGunners == 1) || !(local _vehicle) || !(_vehicle getVariable ["f_var_spawnGunners",false])) exitWith {};
 
 createVehicleCrew _vehicle;
 _crew = crew _vehicle;
