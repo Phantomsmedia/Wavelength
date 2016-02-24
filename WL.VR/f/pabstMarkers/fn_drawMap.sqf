@@ -50,10 +50,13 @@ if((ctrlMapScale _mapControl) < 0.5) then {
         _dir = getDir _x;
         _text = if (alive _x) then {name _x} else {""};
 
-        _size = 26;
-        if((ctrlMapScale _mapControl) > 0.08) then {_size = 10};
-        if((ctrlMapScale _mapControl) > 0.03) then {_size = 16};
-        if((ctrlMapScale _mapControl) > 0.015) then {_size = 20};
+        _size = -(3200/13)*(ctrlMapScale _mapControl) + 386/13;
+        if (_size < 10) then {_size = 10};
+        if (_size > 26) then {_size = 26};
+        //if((ctrlMapScale _mapControl) > 0.08) then {_size = 10};
+        //if((ctrlMapScale _mapControl) > 0.03) then {_size = 16};
+        //if((ctrlMapScale _mapControl) > 0.015) then {_size = 20};
+                //from 0.08 to 0.015, between 10 and 26
 
         _mapControl drawIcon [_tex, [0,0,0,1], _pos, _size, _size, _dir, "", 1, _textsize, 'TahomaB', "left"];
         _mapControl drawIcon [_tex, _color, _pos, _size - 3, _size - 3, _dir, _text, 1, _textsize, 'TahomaB', "left"];
