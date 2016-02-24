@@ -49,7 +49,13 @@ if((ctrlMapScale _mapControl) < 0.5) then {
         _pos = getPos _x;
         _dir = getDir _x;
         _text = if (alive _x) then {name _x} else {""};
-        _mapControl drawIcon [_tex, [0,0,0,1], _pos, 26, 26, _dir, "", 1, _textsize, 'TahomaB', "left"];
-        _mapControl drawIcon [_tex, _color, _pos, 23, 23, _dir, _text, 1, _textsize, 'TahomaB', "left"];
+
+        _size = 26;
+        if((ctrlMapScale _mapControl) > 0.08) then {_size = 12};
+        if((ctrlMapScale _mapControl) > 0.03) then {_size = 17};
+        if((ctrlMapScale _mapControl) > 0.015) then {_size = 21};
+
+        _mapControl drawIcon [_tex, [0,0,0,1], _pos, _size, _size, _dir, "", 1, _textsize, 'TahomaB', "left"];
+        _mapControl drawIcon [_tex, _color, _pos, _size - 3, _size - 3, _dir, _text, 1, _textsize, 'TahomaB', "left"];
     } forEach (units (group player));
 };
