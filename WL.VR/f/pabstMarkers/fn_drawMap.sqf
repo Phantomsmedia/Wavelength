@@ -8,19 +8,23 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
 };
 
 {
-    _data = _x getVariable ["f_var_drawSettings", []];
+    //regular marker
+	_data = _x getVariable ["f_var_drawSettings", []];
     if (_data isEqualTo []) then {
         diag_log format ["Bad f_var_drawSettings on %1", _x]
     } else {
-        _text = _data select 0;
+        _text = if ((typeName (_data select 0)) == "BOOL") then {""} else {(_data select 0)};
         _texture = _data select 1;
         _color = _data select 2;
         _size = _data select 3;
         _pos = _data select 4;
         _time = _data select 5;
+		_mot = _data select 6;
 
         if(((time - _time) > F_Markers_delay) && {!isNull (_x)}) then {
-            if(typeName _x == "GROUP") then {_pos = getpos leader _x};
+            if(typeName _x == "GROUP") then {
+				_pos = getpos leader _x;
+			};
             if(typeName _x == "OBJECT") then {_pos = getpos _x};
             _time = time;
             _data set [4,_pos];
@@ -30,8 +34,10 @@ if ((diag_tickTime - F_Markers_lastUpdate) > 5) then {
         _sizeY = _size select 1;
         _textsize = 0.05;
         if((ctrlMapScale _mapControl) > 0.1) then {_textsize = 0};
-
-        _mapControl drawIcon [_texture,_color,_pos,_sizeX,_sizeY,0,_text,1,_textsize,'TahomaB',"right"];
+        _mapControl drawIcon [_texture,_color,_pos,_sizeX,_sizeY,0,_text,0,_textsize,'TahomaB',"right"];
+		if (_mot) then {
+			_mapControl drawIcon ["\sc_mapmarkers\data\motorized.paa",_color,[_pos select 0, _pos select 1, (_pos select 2) + 1],_sizeX,_sizeY,0,_text,0,_textsize,'TahomaB',"right"];
+		};
     };
 } foreach F_Markers_thingsToDraw;
 
@@ -58,7 +64,7 @@ if((ctrlMapScale _mapControl) < 0.5) then {
         //if((ctrlMapScale _mapControl) > 0.015) then {_size = 20};
                 //from 0.08 to 0.015, between 10 and 26
 
-        _mapControl drawIcon [_tex, [0,0,0,1], _pos, _size, _size, _dir, "", 1, _textsize, 'TahomaB', "left"];
-        _mapControl drawIcon [_tex, _color, _pos, _size - 3, _size - 3, _dir, _text, 1, _textsize, 'TahomaB', "left"];
+        _mapControl drawIcon [_tex, [0,0,0,1], _pos, _size, _size, _dir, "", 0, _textsize, 'TahomaB', "left"];
+        _mapControl drawIcon [_tex, _color, _pos, _size - 4, _size - 4, _dir, _text, 0, _textsize, 'TahomaB', "left"];
     } forEach (units (group player));
 };
