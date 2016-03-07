@@ -41,39 +41,12 @@ loadScreen = "loadLogo.jpg";
 //Credits:headswe, Pabst, Zerith
 
 #include "CfgLoadouts.hpp"
+#include "f\ace\ace_settings.hpp"
 
 // ============================================================================================
 
 //Extended Event Handlers:
-
-class Extended_InitPost_EventHandlers {
-    class CAManBase {
-        class F_AssignGear { init = "_this call F_fnc_assignGearMan;"; };
-        class F_ServerGroupID { serverinit = "_this call F_Markers_fnc_serverSetupGroupID;"; };
-        class F_FixFriendlyFire { init = "if (local (_this select 0)) then {(_this select 0) addRating 100000;};";};
-    };
-    class Car {
-        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Car'] call F_fnc_assignGearVehicle;"; };
-    };
-    class Tank {
-        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Tank'] call F_fnc_assignGearVehicle;"; };
-    };
-    class Helicopter {
-        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class F_spawnGunners { serverInit  = "_this spawn ws_fnc_spawnGunners;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Helicopter'] call F_fnc_assignGearVehicle;"; };
-    };
-    class Plane {
-        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Plane'] call F_fnc_assignGearVehicle;"; };
-    };
-    class Ship_F {
-        class F_DisableThermals { init = "(_this select 0) disableTIEquipment true;"; };
-        class F_AssignVehicleGear { serverInit  = "[(_this select 0), 'Ship_F'] call F_fnc_assignGearVehicle;"; };
-    };
-};
+#include "CfgEventHandlers.hpp"
 
 // ============================================================================================
 
@@ -88,7 +61,7 @@ enableDebugConsole = 1;
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 
 // Group respawn test
-respawn = 4;
+respawn = 3;
 respawndelay = 3;
 respawnOnStart = 0;
 respawnTemplates[] = {"Seagull","f_spectator","f_JIP"};
@@ -261,16 +234,16 @@ class Params
  		isGlobal = 0;						// Execute this only on the server
  		code = "f_param_timeOfDay = %1";
 	};
-
-    class f_param_headlessClient
-    	{
-	        title = "Headless client";
-	        values[] = {0,1};
-	        texts[] = {"Off","Auto-Detect"};
-	        default = 1;
-	        code = "f_param_headlessClient = %1";
-    	};
 */
+    class f_param_headlessClient
+	{
+		title = "Headless Client";
+		values[] = {0,1};
+		texts[] = {"Off","Auto-Detect"};
+		default = 1;
+		code = "f_param_headlessClient = %1";
+	};
+
 
 // ============================================================================================
 
