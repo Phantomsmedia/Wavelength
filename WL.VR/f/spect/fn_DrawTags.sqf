@@ -57,7 +57,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
         private _name = "";
         private _cachedIcon = _x getVariable ["f_cam_cached_icon", objNull];
 
-        if (isNull _cachedIcon) {
+        if (isNull _cachedIcon) then {
           _cachedIcon = gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");
           _x setVariable ["f_cam_cached_icon", _cachedIcon];
         };
