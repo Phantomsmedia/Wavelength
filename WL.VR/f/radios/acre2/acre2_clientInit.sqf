@@ -35,12 +35,12 @@ _ret = ["ACRE_PRC148", _presetName ] call acre_api_fnc_setPreset;
 // if dead, set spectator and exit
 if(!alive player) exitWith {[true] call acre_api_fnc_setSpectator;};
 
-_unit = player;
+private _unit = player;
 
 // ====================================================================================
 
 // Check and set languages for customized unit (ex. translator)
-_spokenLanguages = _unit getVariable ["f_languages", []];
+private _spokenLanguages = _unit getVariable ["f_languages", []];
 
 if (count _spokenLanguages == 0) then {
     // Set language of the units depending on side (BABEL API)
@@ -70,8 +70,8 @@ f_radios_settings_acre2_spokenLanguages call acre_api_fnc_babelSetSpokenLanguage
 // RADIO ASSIGNMENT
 
 // Wait for gear assignation to take place
-waitUntil{(player getVariable ["f_var_assignGear_done", false])};
-_typeOfUnit = _unit getVariable ["F_Gear", (typeOf _unit)];
+waitUntil{(_unit getVariable ["f_var_assignGear_done", false])};
+private _typeOfUnit = _unit getVariable ["F_Gear", (typeOf _unit)];
 
 // REMOVE ALL RADIOS
 // Wait for ACRE2 to initialise any radios the unit has in their inventory, and then
@@ -147,40 +147,50 @@ if(!f_radios_settings_acre2_disableRadios) then {
 
 _unit spawn {
 
-    private ["_presetArray","_presetLRArray","_radioSR","_radioLR","_radioExtra","_hasSR","_hasLR","_hasExtra","_groupID","_groupIDSplit","_groupChannelIndex","_groupLRChannelIndex","_groupName"];
-
     waitUntil {uiSleep 0.1; [] call acre_api_fnc_isInitialized};
 
-    _presetArray = switch (side _this) do {
+    private _presetArray = switch (side _this) do {
         case blufor: {f_radios_settings_acre2_sr_groups_blufor};
         case opfor: {f_radios_settings_acre2_sr_groups_opfor};
         case independent: {f_radios_settings_acre2_sr_groups_indfor};
         default {f_radios_settings_acre2_sr_groups_indfor};
     };
 
-    _presetLRArray = switch (side _this) do {
+   private  _presetLRArray = switch (side _this) do {
         case blufor: {f_radios_settings_acre2_lr_groups_blufor};
         case opfor: {f_radios_settings_acre2_lr_groups_opfor};
         case independent: {f_radios_settings_acre2_lr_groups_indfor};
         default {f_radios_settings_acre2_lr_groups_indfor};
     };
 
-    _radioSR = [f_radios_settings_acre2_standardSHRadio] call acre_api_fnc_getRadioByType;
-    _radioLR = [f_radios_settings_acre2_standardLRRadio] call acre_api_fnc_getRadioByType;
-    _radioExtra = [f_radios_settings_acre2_extraRadio] call acre_api_fnc_getRadioByType;
+    private _radioSR = [f_radios_settings_acre2_standardSHRadio] call acre_api_fnc_getRadioByType;
+    private _radioLR = [f_radios_settings_acre2_standardLRRadio] call acre_api_fnc_getRadioByType;
+    private _radioExtra = [f_radios_settings_acre2_extraRadio] call acre_api_fnc_getRadioByType;
 
-    _hasSR = ((!isNil "_radioSR") && {_radioSR != ""});
-    _hasLR = ((!isNil "_radioLR") && {_radioLR != ""});
-    _hasExtra = ((!isNil "_radioExtra") && {_radioExtra != ""});
+    private _hasSR = ((!isNil "_radioSR") && {_radioSR != ""});
+    private _hasLR = ((!isNil "_radioLR") && {_radioLR != ""});
+    private _hasExtra = ((!isNil "_radioExtra") && {_radioExtra != ""});
 
-    _groupID = (group _this) getVariable ["F3_GroupID", "-1"];
-    _groupIDSplit = [_groupID, " "] call bis_fnc_splitString;
+    //Wait for F3_GroupID from server
+    private _groupID = (group _this) getVariable ["F3_GroupID", "-1"];
+    if (_groupID == "-1") then {
+      private _wait = 10;
+      waitUntil {
+        diag_log text format ["[F3 ACRE2] Warning: Waiting on F3_GroupID"];
+        uiSleep 1;
+        _wait = _wait - 1;
+        _groupID = (group _this) getVariable ["F3_GroupID", "-1"];
+        (_groupID != "-1") || {_wait < 0}
+      };
+    };
 
-    _groupChannelIndex = -1;
-    _groupLRChannelIndex = -1;
+    private _groupIDSplit = [_groupID, " "] call bis_fnc_splitString;
+
+    private _groupChannelIndex = -1;
+    private _groupLRChannelIndex = -1;
 
     if ((count _groupIDSplit) > 2) then {
-        _groupName = toUpper (_groupIDSplit select (count _groupIDSplit - 2));
+        private _groupName = toUpper (_groupIDSplit select (count _groupIDSplit - 2));
 
         if (_hasSR) then {
             {
@@ -231,6 +241,6 @@ _unit spawn {
         [_radioExtra, (_groupLRChannelIndex + 1)] call acre_api_fnc_setRadioChannel;
     };
 
-    [_groupChannelIndex, _groupLRChannelIndex] call f_acre2_briefingInit;
+    [_groupID, f_radios_settings_acre2_spokenLanguages, _groupChannelIndex, _groupLRChannelIndex] call f_acre2_briefingInit;
 
 };
