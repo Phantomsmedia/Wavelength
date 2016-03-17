@@ -1,5 +1,4 @@
 // data values
-
 private _gray	= [0.8, 0.8, 0.8, 1];
 private _purple = [0.5, 0, 0.5, 1];
 private _red	= [1, 0, 0, 1];
@@ -80,25 +79,25 @@ switch (true) do {
 
 	case (_input in ["BSL"]): {
 		_texture   = "\sc_mapmarkers\data\bsl.paa";
-		_color	   = _yellow;
+		_color	   = _blue;
 		_shortName = true;
 		_size	   = [36, 36];
 	};
 	case (_input in ["B1"]): {
 		_texture   = "\sc_mapmarkers\data\b1.paa";
-		_color	   = _yellow;
+		_color	   = _blue;
 		_shortName = true;
 		_size	   = [30, 30];
 	};
 	case (_input in ["B2"]): {
 		_texture   = "\sc_mapmarkers\data\b2.paa";
-		_color	   = _yellow;
+		_color	   = _blue;
 		_shortName = true;
 		_size	   = [30, 30];
 	};
 	case (_input in ["B3"]): {
 		_texture   = "\sc_mapmarkers\data\b3.paa";
-		_color	   = _yellow;
+		_color	   = _blue;
 		_shortName = true;
 		_size	   = [30, 30];
 	};
