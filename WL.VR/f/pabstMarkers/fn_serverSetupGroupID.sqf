@@ -1,6 +1,6 @@
 #include "defines_unitsAndGroups.hpp"
 
-_unit = _this select 0;
+params _unit = _this select 0;
 _group = group _unit;
 
 //If it has a groupID set, exit
@@ -13,7 +13,7 @@ case (independent): {INDP_GROUPS};
     default {[]};
 };
 
-_splitName = [(vehicleVarName _unit), "_"] call BIS_fnc_splitString;
+_splitName = (vehicleVarName _unit) splitString "_";
 if ((count _splitName) < 2) exitWith {};
 _nameToSearch = format ["%1_%2", (_splitName select 0), (_splitName select 1)];
 
