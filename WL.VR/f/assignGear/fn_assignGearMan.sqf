@@ -61,7 +61,7 @@ if(!isClass(_path)) exitWith {
 };
 
 if (isPlayer _unit) then {
-    diag_log format ["[BW] Setting gear for unit [%1, %2] with path as %3", _unit, (typeof _unit), _path];
+    diag_log format ["[BW] Setting gear for unit [%1, %2] with path as CfgLoadouts >> %3 >> %4", _unit, (typeof _unit), _faction, _loadout];
 };
 
 _uniforms = getArray(_path >> "uniform");
