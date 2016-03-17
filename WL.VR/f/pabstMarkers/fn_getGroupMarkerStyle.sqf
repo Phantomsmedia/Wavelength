@@ -1,9 +1,9 @@
 // data values
 private _gray	= [0.8, 0.8, 0.8, 1];
-private _purple = [0.5, 0, 0.5, 1];
+private _purple = [0.678, 0, 0.678, 1];
 private _red	= [1, 0, 0, 1];
 private _green	= [0, 1, 0, 1];
-private _blue	= [0, 0, 1, 1];
+private _blue	= [0, 0.69, 0.921, 1];
 private _yellow = [1, 1, 0, 1];
 private _orange = [1, 0.647, 0, 1];
 private _black	= [0, 0, 0, 1];
