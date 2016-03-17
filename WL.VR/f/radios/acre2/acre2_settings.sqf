@@ -151,3 +151,7 @@ f_radios_settings_acre2_lr_groups_indfor = f_radios_settings_acre2_lr_groups_blu
 // ACRE can AI hear players?
 // False - AI not hear players, true - AI hear players.
 [false] call acre_api_fnc_setRevealToAI;
+
+// ACRE PTT Delay
+// Specify a value between 0 and 1 for the amount of time, in seconds, to delay releasing the radio PTT key. This compensates for network latency issues with cutting off at the end of a transmission.
+[0.25] call acre_api_fnc_setPTTDelay;
