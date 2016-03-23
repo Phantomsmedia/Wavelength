@@ -1,5 +1,5 @@
-_control = _this select 0;
-_button = _this select 1;
+params["_control","_button"];
+
 switch (_button) do {
     case 0: { // Toggle AI BUTTON
     	f_cam_playersOnly = !f_cam_playersOnly;

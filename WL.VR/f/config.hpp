@@ -33,7 +33,7 @@ class F // Defines the "owner"
 		class mpEnd{};
 		class mpEndReceiver{};
 	};
-	class assignGear 
+	class assignGear
 	{
 	    // Defines the functions to preInit the compling of the assignGear function used by units.
 	    file = "f\assignGear";
@@ -135,5 +135,5 @@ class F // Defines the "owner"
         class setTeamColours {};
     };
 	#include "spect\functions.hpp"
-
+    #include "respawn\functions.hpp"
 };
