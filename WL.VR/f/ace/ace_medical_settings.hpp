@@ -77,7 +77,7 @@ class ace_medical_AIDamageThreshold
 {
 	category = "$STR_ace_medical_Category_Medical";
 	typeName = "SCALAR";
-	value = .3;
+	value = .5;
 };
 class ace_medical_enableUnconsciousnessAI
 {
