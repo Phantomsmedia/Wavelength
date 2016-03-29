@@ -1,4 +1,3 @@
-
 class ace_medical_level
 {
 	category = "$STR_ace_medical_Category_Medical";
@@ -30,7 +29,7 @@ class ace_medical_bleedingCoefficient
 {
 	category = "$STR_ace_medical_Category_Medical";
 	typeName = "SCALAR";
-	value = 1;
+	value = 1.2;
 };
 class ace_medical_painCoefficient
 {
@@ -72,13 +71,13 @@ class ace_medical_playerDamageThreshold
 {
 	category = "$STR_ace_medical_Category_Medical";
 	typeName = "SCALAR";
-	value = 1;
+	value = 1.5;
 };
 class ace_medical_AIDamageThreshold
 {
 	category = "$STR_ace_medical_Category_Medical";
 	typeName = "SCALAR";
-	value = 1;
+	value = 0.8;
 };
 class ace_medical_enableUnconsciousnessAI
 {
