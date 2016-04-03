@@ -2,66 +2,37 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 // params
-_this spawn {
-_unit = [_this, 0, player,[objNull]] call BIS_fnc_param;
-_oldUnit = [_this, 1, objNull,[objNull]] call BIS_fnc_param;
-_forced = [_this, 4, false,[false]] call BIS_fnc_param;
-if(isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
-// if they are jip, these are null
-if(isNull _unit ) then {_unit = cameraOn;f_cam_isJIP=true;};
-// escape the script if you are not a seagull unless forced
-if (typeof _unit != "seagull" && !_forced || !hasInterface) ExitWith {};
-// disable this to instantly switch to the spectator script.
-waituntil {missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen",true] || isNull (_oldUnit) || f_cam_isJIP || _forced };
+params [
+  ["_seagull", objNull, [objNull]],
+  ["_deadUnit", player, [objNull]],
+  ["_respawnType", 3, [3]],
+  ["_respawnDelay", 3, [3]],
+  ["_forced", false, [false]]
+];
 
+// escape the script if you are not a seagull unless forced
+if (typeof _seagull != "seagull" && !_forced || !hasInterface) exitWith {};
+if (!isNil "_seagull") then { camDestroy _seagull; };
+
+waituntil { missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_deadUnit) || _forced };
 
 // ====================================================================================
 
-if(!isnil "BIS_fnc_feedback_allowPP") then
+if(!isNil "BIS_fnc_feedback_allowPP") then
 {
   // disable effects death effects
   BIS_fnc_feedback_allowPP = false;
 };
 
-if(f_cam_isJIP) then
-{
-  ["F_ScreenSetup",false] call BIS_fnc_blackOut;
-  systemChat "Initilizing Spectator Script";
-  uiSleep 3;
-  ["F_ScreenSetup"] call BIS_fnc_blackIn;
-};
+_deadUnit setVariable ["timeOfDeath", serverTime, true];
 
-// Create a Virtual Agent to act as our player to make sure we get to keep Draw3D
-if(isNil "f_cam_VirtualCreated") then
-{
-  createCenter sideLogic;
-  _newGrp = createGroup sideLogic;
-  _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
-  _newUnit allowDamage false;
-  _newUnit hideObjectGlobal true;
-  _newUnit enableSimulationGlobal false;
-  _newUnit setpos [0,0,5];
-  selectPlayer _newUnit;
-  waituntil{player == _newUnit};
-  deleteVehicle _unit;
-  f_cam_VirtualCreated = true;
-} else {
-    if (!f_cam_VirtualCreated) then {
-        createCenter sideLogic;
-        _newGrp = createGroup sideLogic;
-        _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
-        _newUnit allowDamage false;
-        _newUnit hideObjectGlobal true;
-        _newUnit enableSimulationGlobal false;
-        _newUnit setpos [0,0,5];
-        selectPlayer _newUnit;
-        waituntil{player == _newUnit};
-        deleteVehicle _unit;
-        f_cam_VirtualCreated = true;
-    };
+if (isNull _deadUnit) then {
+  if (count playableUnits > 0) then {
+    _deadUnit = (playableUnits select 0);
+  } else {
+    _deadUnit = (allUnits select 0);
+  };
 };
-
-if(isNull _oldUnit ) then {if(count playableUnits > 0) then {_oldUnit = (playableUnits select 0)} else {_oldUnit = (allUnits select 0)};};
 
 // ====================================================================================
 
@@ -165,6 +136,7 @@ f_cam_height = 3;
 f_cam_fovZoom = 1.2;
 f_cam_scrollHeight = 0;
 f_cam_cameraMode = 0; // set camera mode (default)
+
 // ====================================================================================
 
 //script by Hypnomatic, saved me a lot of time
@@ -318,6 +290,17 @@ hyp_fnc_traceFireRemove = {
 
 f_cam_listUnits = [];
 
+f_cam_checkAcreMute = {
+  params ["_inputKey", "_inputShift", "_inputCtrl", "_inputAlt"];
+  (["ACRE2", "HeadSet"] call CBA_fnc_getKeybind select 5) params ["_key", "_modifiers"];
+  _modifiers params ["_shift", "_ctrl", "_alt"];
+
+  (_inputKey == _key &&
+    _inputShift isEqualTo _shift &&
+    _inputCtrl isEqualTo _ctrl &&
+    _inputAlt isEqualTo _alt)
+};
+
 f_cam_ToggleFPCamera = {
     f_cam_toggleCamera = !f_cam_toggleCamera;
     if(f_cam_toggleCamera) then
@@ -411,12 +394,11 @@ createDialog "f_spec_dialog";
 f_cam_helptext = "<t color='#EAA724'><br />Hold right-click to pan the camera<br />Use the scroll wheel or numpad+/- to zoom in and out.<br />Use ctrl + rightclick to fov zoom<br /><br />Press H to show and close the help window.<br />Press M to toggle between no map,minimap and full size map.<br />T for switching on tracers on the map<br/>Space to switch to freecam <br/>Press H to close this window</t>";
 ((findDisplay 9228) displayCtrl 1310) ctrlSetStructuredText parseText (f_cam_helptext);
 // create the camera and set it up.
-f_cam_camera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
+f_cam_camera = "camera" camCreate [position _deadUnit select 0, position _deadUnit select 1, 3];
+f_cam_fakecamera = "camera" camCreate [position _deadUnit select 0,position _deadUnit select 1,3];
+f_cam_curTarget = _deadUnit;
+f_cam_freecamera = "camera" camCreate [position _deadUnit select 0,position _deadUnit select 1,3];
 
-f_cam_fakecamera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
-
-f_cam_curTarget = _oldUnit;
-f_cam_freecamera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
 f_cam_camera camCommit 0;
 f_cam_fakecamera camCommit 0;
 f_cam_camera cameraEffect ["internal","back"];
@@ -433,16 +415,15 @@ cameraEffectEnableHUD true;
 showCinemaBorder false;
 f_cam_fired = [];
 {
-  _event = _x addEventHandler ["fired",{f_cam_fired = f_cam_fired - [objNull];f_cam_fired pushBack (_this select 6)}];
-  _x setVariable ["f_cam_fired_eventid",_event];
-
-} foreach (allunits + vehicles);
+  _event = _x addEventHandler ["fired", { f_cam_fired = f_cam_fired - [objNull];f_cam_fired pushBack (_this select 6) }];
+  _x setVariable ["f_cam_fired_eventid", _event];
+  nil
+} count (allunits + vehicles);
 // ====================================================================================
 // spawn sub scripts
 call f_fnc_ReloadModes;
 lbSetCurSel [2101,0];
 //f_cam_freeCam_script = [] spawn F_fnc_FreeCam;
 f_cam_updatevalues_script = [] spawn F_fnc_UpdateValues;
- ["f_spect_tags", "onEachFrame", {_this call F_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
- ["f_spect_cams", "onEachFrame", {_this call F_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;
-};
+["f_spect_tags", "onEachFrame", {_this call F_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
+["f_spect_cams", "onEachFrame", {_this call F_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;

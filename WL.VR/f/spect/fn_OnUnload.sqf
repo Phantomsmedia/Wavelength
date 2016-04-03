@@ -34,6 +34,13 @@ _handle = [] spawn {
 		_idc = ctrlIDD (uiNamespace getVariable "PABST_ADMIN_dialogControl");
 		waitUntil {sleep 0.1; isNull (findDisplay _idc)};
 	};
+	// Snippers Respawn
+	if (!isNull (findDisplay 26893)) then {
+		waitUntil {sleep 0.1; isNull (findDisplay 26893)}; // then wait until its not open
+	};
+	if (!isNull (findDisplay 26950)) then {
+		waitUntil {sleep 0.1; isNull (findDisplay 26950)}; // then wait until its not open
+	};
 };
 
 waitUntil {sleep 0.1; scriptDone _handle};

@@ -55,9 +55,13 @@ if (isNil "F_Gear_Path_Override") then {
 if(!isClass(_path)) exitWith {
     if (isPlayer _unit) then {
         // _unit setVariable ["f_var_assignGear_done", true, true];
-        diag_log format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
+        diag_log format ["[BW] No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
         systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
     };
+};
+
+if (isPlayer _unit) then {
+    diag_log format ["[BW] Setting gear for unit [%1, %2] with path as CfgLoadouts >> %3 >> %4", _unit, (typeof _unit), _faction, _loadout];
 };
 
 _uniforms = getArray(_path >> "uniform");
