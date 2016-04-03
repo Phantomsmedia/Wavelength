@@ -241,7 +241,15 @@ class Params
 		default = 1;
 		code = "f_param_headlessClient = %1";
 	};
-
+	
+    class f_param_bftm_switching_enabled
+	{
+		title = "BFTM Switching";
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+		code = "f_param_bftm_switching_enabled = %1";
+	};
 
 // ============================================================================================
 
