@@ -250,15 +250,7 @@ class Params
 		default = 1;
 		code = "f_param_bftm_switching_enabled = %1";
 	};
-	
-	class f_param_tvd_enabled
-	{
-		title = "TAW View Distance";
-		values[] = {1,0};
-		texts[] = {"Enabled","Disabled"};
-		default = 1;
-		code = "f_param_tvd_enabled = %1";
-	};
+
 // ============================================================================================
 
 // F3 - End of Params code blocks.
