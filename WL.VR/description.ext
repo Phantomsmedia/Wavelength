@@ -51,7 +51,7 @@ enableDebugConsole = 1;
 
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-respawn = "GROUP";
+respawn = "BASE";
 respawndelay = 3;
 respawnButton = 1;
 respawnOnStart = 0;
