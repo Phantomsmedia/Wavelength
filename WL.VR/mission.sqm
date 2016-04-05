@@ -7143,7 +7143,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=2;
+		items=3;
 		class Item0
 		{
 			position[]={502.27344,5,3231.4717};
@@ -7159,6 +7159,12 @@ class Mission
 			text="Example Dac Zones";
 			type="mil_arrow";
 			colorName="ColorRed";
+		};
+		class Item2
+		{
+			position[]={553.58441,5,3482.7427};
+			name="respawn";
+			type="Empty";
 		};
 	};
 	class Sensors
