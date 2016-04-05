@@ -1,11 +1,3 @@
-
-// ============================================================================================
-
-// TAW Tonic - View Distance Script
-// Credits: TAW Tonic
-
-#include "taw_vd\dialog.hpp"
-
 // ============================================================================================
 
 //  "forceRotorLibSimulation" (0 - default,options based; 1 forced On; 2 forced Off)
@@ -59,7 +51,7 @@ enableDebugConsole = 1;
 
 // F3 - Respawn Settings
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
-respawn = "GROUP";
+respawn = "BASE";
 respawndelay = 3;
 respawnButton = 1;
 respawnOnStart = 0;
@@ -241,7 +233,7 @@ class Params
 		default = 1;
 		code = "f_param_headlessClient = %1";
 	};
-	
+
     class f_param_bftm_switching_enabled
 	{
 		title = "BFTM Switching";
@@ -249,6 +241,15 @@ class Params
 		texts[] = {"Enabled","Disabled"};
 		default = 1;
 		code = "f_param_bftm_switching_enabled = %1";
+	};
+
+	class f_param_tvd_enabled
+	{
+		title = "View Distance Addon";
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+		code = "if (%1 == 0) then {tawvd_addon_disable = true;}";
 	};
 
 // ============================================================================================
@@ -360,7 +361,6 @@ class CfgRespawnTemplates {
 class CfgFunctions
 {
 	#include "ws_fnc\config.hpp"
-	#include "taw_vd\CfgFunctions.hpp"
 
 	class F_DAC {
 	    class F_DAC {
