@@ -10,10 +10,15 @@ params [
   ["_forced", false, [false]]
 ];
 
+if(isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
+// if they are jip, these are null
+if(isNull _seagull ) then {_seagull = cameraOn;f_cam_isJIP=true;};
+
 // escape the script if you are not a seagull unless forced
 if (typeof _seagull != "seagull" && !_forced || !hasInterface) exitWith {};
 if (!isNil "_seagull") then { camDestroy _seagull; };
 
+// disable this to instantly switch to the spectator script.
 waituntil { missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_deadUnit) || _forced };
 
 // ====================================================================================
@@ -24,7 +29,62 @@ if(!isNil "BIS_fnc_feedback_allowPP") then
   BIS_fnc_feedback_allowPP = false;
 };
 
-_deadUnit setVariable ["timeOfDeath", serverTime, true];
+/*_deadUnit setVariable ["timeOfDeath", serverTime, true];
+
+if (isNull _deadUnit) then {
+  if (count playableUnits > 0) then {
+    _deadUnit = (playableUnits select 0);
+  } else {
+    _deadUnit = (allUnits select 0);
+  };
+};*/
+
+
+if(f_cam_isJIP) then
+{
+  ["F_ScreenSetup",false] call BIS_fnc_blackOut;
+  systemChat "Initilizing Spectator Script";
+  uiSleep 3;
+  ["F_ScreenSetup"] call BIS_fnc_blackIn;
+};
+
+_newUnit = objNull;
+
+// Create a Virtual Agent to act as our player to make sure we get to keep Draw3D
+if(isNil "f_cam_VirtualCreated") then
+{
+  createCenter sideLogic;
+  _newGrp = createGroup sideLogic;
+  _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
+  _newUnit allowDamage false;
+  _newUnit hideObjectGlobal true;
+  _newUnit enableSimulationGlobal false;
+  _newUnit setpos [0,0,5];
+  _newUnit setVariable ["f_respawnName", name _seagull, true];
+  _newUnit setVariable ["f_respawnUID", getPlayerUID _seagull, true];
+  selectPlayer _newUnit;
+  waituntil{player == _newUnit};
+  deleteVehicle _seagull;
+  f_cam_VirtualCreated = true;
+} else {
+    if (!f_cam_VirtualCreated) then {
+        createCenter sideLogic;
+        _newGrp = createGroup sideLogic;
+        _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
+        _newUnit allowDamage false;
+        _newUnit hideObjectGlobal true;
+        _newUnit enableSimulationGlobal false;
+        _newUnit setpos [0,0,5];
+        _newUnit setVariable ["f_respawnName", name _seagull, true];
+        _newUnit setVariable ["f_respawnUID", getPlayerUID _seagull, true];
+        selectPlayer _newUnit;
+        waituntil{player == _newUnit};
+        deleteVehicle _seagull;
+        f_cam_VirtualCreated = true;
+    };
+};
+
+_newUnit setVariable ["timeOfDeath", serverTime, true];
 
 if (isNull _deadUnit) then {
   if (count playableUnits > 0) then {
@@ -350,7 +410,7 @@ f_cam_AdminZeus = {
 			waitUntil {sleep 0.2; !isNull (findDisplay 312)};
 			waitUntil {sleep 0.2; ((isNull (findDisplay 312)) && (isNil "bis_fnc_moduleRemoteControl_unit"))};
 			[[], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
-			[player,player,player,0,true] spawn f_fnc_CamInit; //reinitialize spectator
+			[player,player,3,3,true] spawn f_fnc_CamInit; //reinitialize spectator
 		};
 	} else {
 		systemChat "You are not authorized to use Zeus.";
