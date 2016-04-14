@@ -63,7 +63,7 @@ if (_leader) then {
     case "rhs_faction_msv": {"MSV "};
     default {""};
   };
-  _dummyGroup setVariable ["F3_GroupID", _groupPrefix + _groupName, true];
+  _dummyGroup setVariable ["F3_GroupID", _groupPrefix + _groupName + " -", true];
   publicVariable _groupVarName;
 }
 else {
@@ -75,6 +75,12 @@ else {
     waitUntil{ !isNil _groupVarName };
     [player] joinSilent (missionNamespace getVariable[_groupVarName, grpNull]);
  };
+};
+
+// If specator object clean up as we currently don't re-use them
+if (typeOf _oldUnit == "VirtualCurator_F") then {
+  deleteVehicle _oldUnit;
+  f_cam_VirtualCreated = false;
 };
 
 // Re-run briefing script for our new unit.
@@ -91,6 +97,6 @@ if (isClass(configFile >> "CfgPatches" >> "acre_main")) then {
   player setVariable ["F_Radio_LR", _lr, false];
   player setVariable ["F_Radio_SR", _sr, false];
   [] spawn {
-    [] call F_Radios_fnc_acreRadioSetup;
+    [] call f_acre2_clientInit;
   };
 };
