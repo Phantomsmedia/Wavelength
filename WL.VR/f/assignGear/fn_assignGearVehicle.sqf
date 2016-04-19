@@ -157,6 +157,8 @@ _transportItems call F_Gear_Replace_MedicalItems;
     };
     _theVehicle addWeaponCargoGlobal [_classname,_amt];
 } foreach _transportWeapons;
+/*
+DEPRECATED - CAUSES SERVER CRASHING
 // ====================================================================================
 // _transportBackpack
 {
@@ -169,5 +171,5 @@ _transportItems call F_Gear_Replace_MedicalItems;
     };
     _theVehicle addBackpackCargoGlobal [_classname,_amt];
 } foreach _transportBackpack;
-
+*/
 _theVehicle setvariable ["f_var_assignGear_done", true,true];
