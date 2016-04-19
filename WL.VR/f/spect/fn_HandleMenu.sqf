@@ -53,7 +53,7 @@ switch (_button) do {
             waituntil {sleep 0.1; isNil "BIS_DEBUG_CAM"};
 
             ACRE_MUTE_SPECTATORS = _spectMuted;
-            [player,objNull,player,0,true] spawn F_fnc_CamInit;
+            [player,player,3,3,true] spawn F_fnc_CamInit;
         };
     };
 	case 5: { // Tracers/Notracers Button

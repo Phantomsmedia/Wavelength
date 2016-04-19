@@ -185,7 +185,11 @@ fn_respawnMenuChangeRankAction = {
 fn_reloadDeadPlayers = {
   deadPlayerList = [];
   {
-    if (!alive _x) then { deadPlayerList pushBack _x; };
+    if (!alive _x) then {
+      deadPlayerList pushBack _x;
+    } else {
+      if (_x getVariable ["timeOfDeath", 0] > 0) then { deadPlayerList pushBack _x; };
+    };
     nil
   } count allPlayers;
 

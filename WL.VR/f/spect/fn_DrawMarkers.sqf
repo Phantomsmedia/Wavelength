@@ -41,8 +41,9 @@ if (f_cam_tracerOn) then {
 };
 
 {
-  private _cachedMarker = _x getVariable ["markerCache", objNull];
-  if (isNull _cachedMarker) then {
+  private _markerString = "#markerCache_" + _x;
+  private _cachedMarker = missionNamespace getVariable [_markerString, ""];
+  if (typeName _cachedMarker == "STRING") then {
     private _markerType = getMarkerType _x;
     private _markerShape = markerShape _x;
     private _markerPos = getMarkerPos _x;
@@ -60,12 +61,12 @@ if (f_cam_tracerOn) then {
     switch (_markerShape) do {
       case "RECTANGLE": {
         private _markerTexture = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture");
-        _x setVariable ["markerCache", [_markerShape, _markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerTexture]];
+        missionNamespace setVariable [_markerString, [_markerShape, _markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerTexture]];
         _fullmapWindow drawRectangle [_markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerTexture];
       };
       case "ELLIPSE": {
         private _markerTexture = getText (configfile >> "cfgMarkerBrushes" >> markerBrush _x >> "texture");
-        _x setVariable ["markerCache", [_markerShape, _markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerTexture]];
+        missionNamespace setVariable [_markerString, [_markerShape, _markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerTexture]];
         _fullmapWindow drawEllipse [_markerPos, _markerSize select 0, _markerSize select 1, _markerDir, _markerColor, _markerTexture];
       };
       case "ICON": {
@@ -73,7 +74,7 @@ if (f_cam_tracerOn) then {
           private _multiplier = 20;
           private _markerText = markerText _x;
           private _markerIcon = getText (configfile >> "CfgMarkers" >> _markerType >> "icon");
-          _x setVariable ["markerCache", [_markerShape, _markerType, _markerIcon, _markerColor, _markerPos, (_markerSize select 0) * _multiplier, (_markerSize select 1) * _multiplier, _markerDir, _markerText, 1]];
+          missionNamespace setVariable [_markerString, [_markerShape, _markerType, _markerIcon, _markerColor, _markerPos, (_markerSize select 0) * _multiplier, (_markerSize select 1) * _multiplier, _markerDir, _markerText, 1]];
           _fullmapWindow drawIcon [_markerIcon, _markerColor, _markerPos, (_markerSize select 0) * _multiplier, (_markerSize select 1) * _multiplier, _markerDir, _markerText, 1];
         };
       };
