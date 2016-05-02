@@ -20,7 +20,7 @@ _handle = [] spawn {
 		    waitUntil {sleep 0.1;isNull (findDisplay 312)}; // then wait until its not open
 		    if(isnil "bis_fnc_moduleRemoteControl_unit") then // check if someone is being remote controled
 		    {
-		    	[player,player,player,0,true] spawn F_fnc_CamInit;
+		    	[player,player,3,3,true] spawn F_fnc_CamInit;
 		        _done = true;
 		    }; // restart spectator once exit.
 		};
@@ -33,6 +33,13 @@ _handle = [] spawn {
 	if (!isNull (uiNamespace getVariable "PABST_ADMIN_dialogControl")) then {
 		_idc = ctrlIDD (uiNamespace getVariable "PABST_ADMIN_dialogControl");
 		waitUntil {sleep 0.1; isNull (findDisplay _idc)};
+	};
+	// Snippers Respawn
+	if (!isNull (findDisplay 26893)) then {
+		waitUntil {sleep 0.1; isNull (findDisplay 26893)}; // then wait until its not open
+	};
+	if (!isNull (findDisplay 26950)) then {
+		waitUntil {sleep 0.1; isNull (findDisplay 26950)}; // then wait until its not open
 	};
 };
 

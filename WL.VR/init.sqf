@@ -128,6 +128,8 @@ if(isServer) then {
 
 if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 
+[] execVM "f\respawn\respawn_init.sqf";
+
 // ====================================================================================
 
 /*
@@ -175,7 +177,7 @@ if (!isNil "PABST_fnc_safeStart") then {[] spawn PABST_fnc_safeStart;};
 // eulerfoiler - HC Round-Robin Load Balancing
 // This automatically carries over units and data from Zeus or main spawn. DAC spawn works as well.
 // This is currently in use. DAC HC is not in use, it should be turned off.
- 
+
 //execVM "f\headlessclient\passToHCs.sqf";
 
 // ====================================================================================
