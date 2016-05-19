@@ -1,5 +1,5 @@
-_control = _this select 0;
-_button = _this select 1;
+params["_control","_button"];
+
 switch (_button) do {
     case 0: { // Toggle AI BUTTON
     	f_cam_playersOnly = !f_cam_playersOnly;
@@ -53,7 +53,7 @@ switch (_button) do {
             waituntil {sleep 0.1; isNil "BIS_DEBUG_CAM"};
 
             ACRE_MUTE_SPECTATORS = _spectMuted;
-            [player,objNull,player,0,true] spawn F_fnc_CamInit;
+            [player,player,3,3,true] spawn F_fnc_CamInit;
         };
     };
 	case 5: { // Tracers/Notracers Button

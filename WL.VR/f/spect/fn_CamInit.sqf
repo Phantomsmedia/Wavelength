@@ -2,26 +2,43 @@
 // Credits: Please see the F3 online manual (http://www.ferstaberinde.com/f3/en/)
 // ====================================================================================
 // params
-_this spawn {
-_unit = [_this, 0, player,[objNull]] call BIS_fnc_param;
-_oldUnit = [_this, 1, objNull,[objNull]] call BIS_fnc_param;
-_forced = [_this, 4, false,[false]] call BIS_fnc_param;
+params [
+  ["_seagull", objNull, [objNull]],
+  ["_deadUnit", player, [objNull]],
+  ["_respawnType", 3, [3]],
+  ["_respawnDelay", 3, [3]],
+  ["_forced", false, [false]]
+];
+
 if(isNil "f_cam_isJIP") then { f_cam_isJIP = false; };
 // if they are jip, these are null
-if(isNull _unit ) then {_unit = cameraOn;f_cam_isJIP=true;};
-// escape the script if you are not a seagull unless forced
-if (typeof _unit != "seagull" && !_forced || !hasInterface) ExitWith {};
-// disable this to instantly switch to the spectator script.
-waituntil {missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen",true] || isNull (_oldUnit) || f_cam_isJIP || _forced };
+if(isNull _seagull ) then {_seagull = cameraOn;f_cam_isJIP=true;};
 
+// escape the script if you are not a seagull unless forced
+if (typeof _seagull != "seagull" && !_forced || !hasInterface) exitWith {};
+if (!isNil "_seagull") then { camDestroy _seagull; };
+
+// disable this to instantly switch to the spectator script.
+waituntil { missionnamespace getvariable ["BIS_fnc_feedback_allowDeathScreen", true] || isNull (_deadUnit) || _forced };
 
 // ====================================================================================
 
-if(!isnil "BIS_fnc_feedback_allowPP") then
+if(!isNil "BIS_fnc_feedback_allowPP") then
 {
   // disable effects death effects
   BIS_fnc_feedback_allowPP = false;
 };
+
+/*_deadUnit setVariable ["timeOfDeath", serverTime, true];
+
+if (isNull _deadUnit) then {
+  if (count playableUnits > 0) then {
+    _deadUnit = (playableUnits select 0);
+  } else {
+    _deadUnit = (allUnits select 0);
+  };
+};*/
+
 
 if(f_cam_isJIP) then
 {
@@ -30,6 +47,8 @@ if(f_cam_isJIP) then
   uiSleep 3;
   ["F_ScreenSetup"] call BIS_fnc_blackIn;
 };
+
+_newUnit = objNull;
 
 // Create a Virtual Agent to act as our player to make sure we get to keep Draw3D
 if(isNil "f_cam_VirtualCreated") then
@@ -41,13 +60,39 @@ if(isNil "f_cam_VirtualCreated") then
   _newUnit hideObjectGlobal true;
   _newUnit enableSimulationGlobal false;
   _newUnit setpos [0,0,5];
+  _newUnit setVariable ["f_respawnName", name _seagull, true];
+  _newUnit setVariable ["f_respawnUID", getPlayerUID _seagull, true];
   selectPlayer _newUnit;
   waituntil{player == _newUnit};
-  deleteVehicle _unit;
+  deleteVehicle _seagull;
   f_cam_VirtualCreated = true;
+} else {
+    if (!f_cam_VirtualCreated) then {
+        createCenter sideLogic;
+        _newGrp = createGroup sideLogic;
+        _newUnit = _newGrp createUnit ["VirtualCurator_F", [0,0,5], [], 0, "FORM"];
+        _newUnit allowDamage false;
+        _newUnit hideObjectGlobal true;
+        _newUnit enableSimulationGlobal false;
+        _newUnit setpos [0,0,5];
+        _newUnit setVariable ["f_respawnName", name _seagull, true];
+        _newUnit setVariable ["f_respawnUID", getPlayerUID _seagull, true];
+        selectPlayer _newUnit;
+        waituntil{player == _newUnit};
+        deleteVehicle _seagull;
+        f_cam_VirtualCreated = true;
+    };
 };
 
-if(isNull _oldUnit ) then {if(count playableUnits > 0) then {_oldUnit = (playableUnits select 0)} else {_oldUnit = (allUnits select 0)};};
+_newUnit setVariable ["timeOfDeath", serverTime, true];
+
+if (isNull _deadUnit) then {
+  if (count playableUnits > 0) then {
+    _deadUnit = (playableUnits select 0);
+  } else {
+    _deadUnit = (allUnits select 0);
+  };
+};
 
 // ====================================================================================
 
@@ -131,7 +176,7 @@ f_cam_muteSpectators = true;
 f_cam_menuControls = [2115,2111,2112,2113,2114,2511,2512,2101,4302];
 f_cam_menuShownTime = 0;
 f_cam_menuShown = true;
-f_cam_menuWorking = false;
+f_cam_menuWorking = true; [] spawn {sleep 1; f_cam_menuWorking = false;};
 f_cam_sideButton = 0; // 0 = ALL, 1 = BLUFOR , 2 = OPFOR, 3 = INDFOR , 4 = Civ
 f_cam_sideNames = ["All Sides","Blufor","Opfor","Indfor","Civ"];
 // ====================================================================================
@@ -151,6 +196,7 @@ f_cam_height = 3;
 f_cam_fovZoom = 1.2;
 f_cam_scrollHeight = 0;
 f_cam_cameraMode = 0; // set camera mode (default)
+
 // ====================================================================================
 
 //script by Hypnomatic, saved me a lot of time
@@ -164,7 +210,7 @@ addMissionEventHandler ["Draw3D", {
             _positions = _unit getVariable [format["hyp_var_tracer_projectile_%1", _x], []];
             _color     = _unit getVariable ["hyp_var_tracer_color", [1,0,0,1]];
             _muzzleVelocity = _positions select 0 select 1;
-                       
+
             for "_i" from 0 to (count _positions) - 2 do {
 
                 //Variant of Dslyecxi's awesome color tracking modification
@@ -180,7 +226,7 @@ addMissionEventHandler ["Draw3D", {
                         default {_color};
                     };
                 };
-                               
+
                 drawLine3D [_positions select _i select 0, _positions select (_i + 1) select 0, _color];
             };
         } forEach ( _unit getVariable["hyp_var_tracer_activeIndexes", []] );
@@ -195,7 +241,7 @@ hyp_fnc_traceFire = {
     _maxDistance = [_this, 4, -1, [0]] call BIS_fnc_param;
     _maxDuration = [_this, 5, -1, [0]] call BIS_fnc_param;
     _trackVel    = [_this, 6, false, [false]] call BIS_fnc_param;
- 
+
     _unit setVariable ["hyp_var_tracer_color", _color];
     _unit setVariable ["hyp_var_tracer_lifetime", _lifetime];
     _unit setVariable ["hyp_var_tracer_interval", _interval];
@@ -211,8 +257,8 @@ hyp_fnc_traceFire = {
     }];
     _unit setVariable ["hyp_var_tracer_eventHandle", _eventHandle];
     hyp_var_tracer_tracedUnits set [count hyp_var_tracer_tracedUnits, _unit];
-};  
- 
+};
+
 hyp_fnc_traceFireEvent = {
     private["_this","_params","_initialPos","_unit","_projectile","_color","_lifetime","_interval","_maxDistance",
             "_maxDuration","_startTime","_skippedFrames","_positions","_projIndex","_activeIndexes","_initialVel"];
@@ -231,10 +277,10 @@ hyp_fnc_traceFireEvent = {
     _positions     = [[_initialPos,_initialVel]];
     _projIndex     = -1;
     _activeIndexes = [];
- 
+
     _projIndex     = _unit getVariable "hyp_var_tracer_currentIndex"; //Get the index to assign to the bullet
     _unit setVariable ["hyp_var_tracer_currentIndex", _projIndex + 1]; //Increment index for next bullet
- 
+
     //Initialize final array into which all positions for the current projectile will be stored...
     _unit setVariable [format["hyp_var_tracer_projectile_%1", _projIndex], _positions];
     //...Then update the activeIndexes to indicate that the projectile is active
@@ -242,10 +288,10 @@ hyp_fnc_traceFireEvent = {
     _activeIndexes set [count _activeIndexes, _projIndex];
     _unit setVariable ["hyp_var_tracer_activeIndexes", _activeIndexes];
     _activeIndexes = nil; //Completely nil this variable just as a safety measure, as the data it holds may be outdated now
- 
+
     //Loop to run as long as the projectile's line is being updated
     waitUntil {
-       
+
         //First, handle skipping frames on an interval
         if (_interval != 0 && _skippedFrames < _interval) exitWith {_skippedFrames = _skippedFrames + 1; false}; //Check and handle if frame should be skipped
         if (_interval != 0) then {_skippedFrames = 0;}; //Reset skipped frame counter on recording a frame
@@ -254,12 +300,12 @@ hyp_fnc_traceFireEvent = {
         //Finally, handle the duration and distance checks
         if (_maxDuration != -1 && ((diag_tickTime - _startTime) >= _maxDuration)) exitWith {true}; //Break loop if duration for tracking has been exceeded
         if (_maxDistance != -1 && ((_initialPos distance _projectile) >= _maxDistance)) exitWith {true}; //Break loop if distance for tracking has been exceeded
-       
+
         //Now, checks have all been run, so let's do the actual bullet tracking stuff
         _positions set [count _positions, [position _projectile, (velocity _projectile) distance [0,0,0]]];
         _unit setVariable [format["hyp_var_tracer_projectile_%1", _projIndex], _positions];
     };
- 
+
     //Now, if a lifetime is specified, wait until it has elapsed, then delete all data for that projectile
     if (_lifetime != -1) then {
         waitUntil {(diag_tickTime - _startTime) >= _lifetime};
@@ -281,12 +327,12 @@ hyp_fnc_traceFireClear = {
     } forEach (_unit getVariable ["hyp_var_tracer_activeIndexes", []]);
     _unit setVariable ["hyp_var_tracer_activeIndexes", []];
 };
- 
+
 //Completely removes this script from a unit
 hyp_fnc_traceFireRemove = {
     private["_this","_unit"];
     _unit = _this select 0;
- 
+
     _unit removeEventHandler ["fired", (_unit getVariable ["hyp_var_tracer_eventHandle", 0])];
     {
         _unit setVariable [format["hyp_var_tracer_projectile_%1", _x], nil];
@@ -303,6 +349,17 @@ hyp_fnc_traceFireRemove = {
 
 
 f_cam_listUnits = [];
+
+f_cam_checkAcreMute = {
+  params ["_inputKey", "_inputShift", "_inputCtrl", "_inputAlt"];
+  (["ACRE2", "HeadSet"] call CBA_fnc_getKeybind select 5) params ["_key", "_modifiers"];
+  _modifiers params ["_shift", "_ctrl", "_alt"];
+
+  (_inputKey == _key &&
+    _inputShift isEqualTo _shift &&
+    _inputCtrl isEqualTo _ctrl &&
+    _inputAlt isEqualTo _alt)
+};
 
 f_cam_ToggleFPCamera = {
     f_cam_toggleCamera = !f_cam_toggleCamera;
@@ -325,13 +382,13 @@ f_cam_ToggleTracers = {
 	if (f_cam_toggleTracersV) then {
 		{
 			if (side _x == east) then {
-				[_x, [1,0,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire; 
+				[_x, [1,0,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire;
 			};
 			if (side _x == west) then {
-				[_x, [0,0,1,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire; 
+				[_x, [0,0,1,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire;
 			};
 			if (side _x == resistance) then {
-				[_x, [0,1,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire; 
+				[_x, [0,1,0,1], 0.8, 0, nil, 2] call hyp_fnc_traceFire;
 			};
 		} forEach allUnits;
 	} else {
@@ -353,7 +410,7 @@ f_cam_AdminZeus = {
 			waitUntil {sleep 0.2; !isNull (findDisplay 312)};
 			waitUntil {sleep 0.2; ((isNull (findDisplay 312)) && (isNil "bis_fnc_moduleRemoteControl_unit"))};
 			[[], "PABST_ADMIN_server_zeusConnectCurator", false] call BIS_fnc_mp;
-			[player,player,player,0,true] spawn f_fnc_CamInit; //reinitialize spectator
+			[player,player,3,3,true] spawn f_fnc_CamInit; //reinitialize spectator
 		};
 	} else {
 		systemChat "You are not authorized to use Zeus.";
@@ -397,12 +454,11 @@ createDialog "f_spec_dialog";
 f_cam_helptext = "<t color='#EAA724'><br />Hold right-click to pan the camera<br />Use the scroll wheel or numpad+/- to zoom in and out.<br />Use ctrl + rightclick to fov zoom<br /><br />Press H to show and close the help window.<br />Press M to toggle between no map,minimap and full size map.<br />T for switching on tracers on the map<br/>Space to switch to freecam <br/>Press H to close this window</t>";
 ((findDisplay 9228) displayCtrl 1310) ctrlSetStructuredText parseText (f_cam_helptext);
 // create the camera and set it up.
-f_cam_camera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
+f_cam_camera = "camera" camCreate [position _deadUnit select 0, position _deadUnit select 1, 3];
+f_cam_fakecamera = "camera" camCreate [position _deadUnit select 0,position _deadUnit select 1,3];
+f_cam_curTarget = _deadUnit;
+f_cam_freecamera = "camera" camCreate [position _deadUnit select 0,position _deadUnit select 1,3];
 
-f_cam_fakecamera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
-
-f_cam_curTarget = _oldUnit;
-f_cam_freecamera = "camera" camCreate [position _oldUnit select 0,position _oldUnit select 1,3];
 f_cam_camera camCommit 0;
 f_cam_fakecamera camCommit 0;
 f_cam_camera cameraEffect ["internal","back"];
@@ -419,16 +475,15 @@ cameraEffectEnableHUD true;
 showCinemaBorder false;
 f_cam_fired = [];
 {
-  _event = _x addEventHandler ["fired",{f_cam_fired = f_cam_fired - [objNull];f_cam_fired pushBack (_this select 6)}];
-  _x setVariable ["f_cam_fired_eventid",_event];
-
-} foreach (allunits + vehicles);
+  _event = _x addEventHandler ["fired", { f_cam_fired = f_cam_fired - [objNull];f_cam_fired pushBack (_this select 6) }];
+  _x setVariable ["f_cam_fired_eventid", _event];
+  nil
+} count (allunits + vehicles);
 // ====================================================================================
 // spawn sub scripts
 call f_fnc_ReloadModes;
 lbSetCurSel [2101,0];
 //f_cam_freeCam_script = [] spawn F_fnc_FreeCam;
 f_cam_updatevalues_script = [] spawn F_fnc_UpdateValues;
- ["f_spect_tags", "onEachFrame", {_this call F_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
- ["f_spect_cams", "onEachFrame", {_this call F_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;
-};
+["f_spect_tags", "onEachFrame", {_this call F_fnc_DrawTags}] call BIS_fnc_addStackedEventHandler;
+["f_spect_cams", "onEachFrame", {_this call F_fnc_FreeCam}] call BIS_fnc_addStackedEventHandler;

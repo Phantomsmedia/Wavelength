@@ -23,7 +23,7 @@ f_var_mapClickTeleport_textDone = localize format ["STR_f_mapClick%1Done",_strin
 // The component should not run anywhere else but where the unit is local by default
 // This check is a redundancy to ensure this
 
-if !(private _unit) exitWith {};
+if !(local _unit) exitWith {};
 
 // ====================================================================================
 
