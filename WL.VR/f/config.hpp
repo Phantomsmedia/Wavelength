@@ -11,10 +11,10 @@ class F_Markers {
 class F // Defines the "owner"
 {
 	class briefing {
-        file = "f\briefing";
-        class showBriefing;
-        class showOrbatNotes;
-    };
+    file = "f\briefing";
+    class showBriefing;
+    class showOrbatNotes;
+  };
 	class common // category
 	{
 		file = "f\common";
@@ -24,7 +24,7 @@ class F // Defines the "owner"
 			preInit = 1;
 			postInit = 1;
 		};
-
+    class getCurLeader{};
 		class nearPlayer{};
 	};
 	class mpEnd
