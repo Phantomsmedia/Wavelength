@@ -1,5 +1,7 @@
 //only run on jips joining after safestart disabled
 waitUntil {!isNull player};
+private _time = time;
+waitUntil {(player getVariable ["f_var_assignGear_done",false]) || ((time + 30) > _time)};
 _lead = [player, side player] call F_fnc_getCurLeader;
 if (typeName _lead == "BOOL") then {
   hint "Sorry, there is no available leadership unit for auto-teleportation. Contact an administrator.";
