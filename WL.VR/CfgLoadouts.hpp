@@ -28,7 +28,7 @@ class CfgLoadouts {
             items[] = {"ACE_elasticBandage:4","ACE_packingBandage:8","ACE_morphine","ACE_tourniquet:2"};
         };
         class MEDIC {
-            items[] = {"ACE_fieldDressing:15","ACE_elasticBandage:20","ACE_packingBandage:20","ACE_atropine:12","ACE_morphine:8","ACE_epinephrine:8","ACE_salineIV_500:4","ACE_personalAidKit"};
+            items[] = {"ACE_fieldDressing:15","ACE_elasticBandage:20","ACE_packingBandage:20","ACE_atropine:6","ACE_morphine:8","ACE_epinephrine:8","ACE_salineIV_500:4","ACE_personalAidKit"};
         };
         class VEHICLE: MEDIC {};
     };
