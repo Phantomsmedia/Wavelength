@@ -252,6 +252,15 @@ class Params
 		code = "if (%1 == 0) then {tawvd_addon_disable = true;}";
 	};
 
+	class f_param_autoTeleport
+	{
+		title = "Auto-teleport of JIP Clients";
+		values[] = {1,0};
+		texts[] = {"Enabled","Disabled"};
+		default = 1;
+		code = "f_param_autoTeleport = %1";
+	};
+
 // ============================================================================================
 
 // F3 - End of Params code blocks.
