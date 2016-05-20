@@ -1,6 +1,6 @@
 //only run on jips joining after safestart disabled
 waitUntil {!isNull player};
-_lead = [side player] call F_fnc_getCurLeader;
+_lead = [player, side player] call F_fnc_getCurLeader;
 if (typeName _lead == "BOOL") then {
   hint "Sorry, there is no available leadership unit for auto-teleportation. Contact an administrator.";
   systemChat "Sorry, there is no available leadership unit for auto-teleportation. Contact an administrator.";
@@ -10,7 +10,7 @@ if (vehicle _lead != _lead) then {
   //in car
   player allowDamage false; [] spawn {sleep 5; player allowDamage true}; //protect them in the case of fall damage or whatnot
   player moveInCargo (vehicle _lead);
-  sleep 0.2;
+  sleep 2;
   if !(player in (crew vehicle _lead)) then {
     //the cargo was full
     hint "Current mission leader is inside of a full vehicle. Please wait for them to dismount.";
