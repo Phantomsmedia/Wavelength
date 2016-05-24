@@ -70,7 +70,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
         }
         else {
           _name = _x getVariable ["f_cam_cached_name", objNull];
-          if (isNull _name) {
+          if (isNull _name) then {
             _name = format ["AI - %1", gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "displayName")];
             _x setVariable ["f_cam_cached_name", _name];
           };

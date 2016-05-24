@@ -298,5 +298,14 @@ _a = _path >> "init";
 if (isText _a) then {
     _unit call compile ("this = _this;"+ getText _a);
 };
+_w = (parseNumber ([_unit] call ace_movement_fnc_getWeight));
+if ((_w > 30) && (_w < 35)) then {
+    diag_log format ["[SC] Heavy loadout found %1 (%2 - %3)", _unit, (typeof _unit), ([_unit] call ace_movement_fnc_getWeight)];
+    systemChat format ["Heavy loadout found %1 (%2 - %3)", _unit, (typeof _unit), ([_unit] call ace_movement_fnc_getWeight)];
+};
+if (_w > 35) then {
+    diag_log format ["[SC] Loadout too heavy for %1 (%2 - %3)", _unit, (typeof _unit), ([_unit] call ace_movement_fnc_getWeight)];
+    systemChat format ["Loadout too heavy for %1 (%2 - %3)", _unit, (typeof _unit), ([_unit] call ace_movement_fnc_getWeight)];
+};
 
 _unit setVariable ["f_var_assignGear_done", true, true];
