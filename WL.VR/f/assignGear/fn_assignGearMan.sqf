@@ -53,7 +53,7 @@ if (isNil "F_Gear_Path_Override") then {
 };
 
 if(!isClass(_path)) exitWith {
-    if (isPlayer _unit) then {
+    if ((isPlayer _unit) && (typeOf _unit != "VirtualCurator_F")) then {
         // _unit setVariable ["f_var_assignGear_done", true, true];
         diag_log format ["[BW] No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
         systemChat format ["No loadout found for %1 (typeOf %2)", _unit, (typeof _unit)];
