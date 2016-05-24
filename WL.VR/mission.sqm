@@ -4986,7 +4986,7 @@ class Mission
 					position[]={594.20001,5,529.2583};
 					id=337;
 					side="EAST";
-					vehicle="O_Soldier_AR_F";
+					vehicle="O_HeavyGunner_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitOPFOR_MMG1_G";
@@ -5406,7 +5406,7 @@ class Mission
 					position[]={582.58704,5,2564.2227};
 					id=365;
 					side="WEST";
-					vehicle="B_soldier_AR_F";
+					vehicle="B_HeavyGunner_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitNATO_MMG1_G";
@@ -5833,7 +5833,7 @@ class Mission
 					position[]={590.07019,5,1528.2705};
 					id=393;
 					side="GUER";
-					vehicle="I_Soldier_AR_F";
+					vehicle="I_HeavyGunner_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MMG1_G";
