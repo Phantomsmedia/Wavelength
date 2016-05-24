@@ -180,14 +180,14 @@ class blu_f {
 // ====================================================================================
 // Support Infantry
 
-    class B_support_MG_F: B_Soldier_F {// MMG
+    class B_HeavyGunner_F: B_Soldier_F {// MMG
         weapons[] = {WEST_MMG};
         magazines[] = {WEST_MMG_MAG,WEST_PISTOL_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
         handguns[] = {WEST_PISTOL}; /// randomized
         attachments[] = {};
     };
 
-    class B_support_AMG_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
+    class B_Soldier_A_F: B_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {WEST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
