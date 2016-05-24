@@ -168,10 +168,6 @@ class blu_f {
         linkedItems[] += {"Binocular"};
     };
 
-    class B_Soldier_A_F: B_Soldier_AAR_F {// AAR
-
-    };
-
     class B_Soldier_LAT_F: B_Soldier_F {// RAT
         weapons[] = {WEST_CARBINE};
         magazines[] = {WEST_CARBINE_MAG,WEST_AT_MAG,WEST_GRENADE,WEST_SMOKE_WHITE};
