@@ -5833,7 +5833,7 @@ class Mission
 					position[]={590.07019,5,1528.2705};
 					id=393;
 					side="GUER";
-					vehicle="I_HeavyGunner_F";
+					vehicle="I_support_GMG_F";
 					player="PLAY CDG";
 					skill=0.60000002;
 					text="UnitIND_MMG1_G";
