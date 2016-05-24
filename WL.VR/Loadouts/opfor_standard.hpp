@@ -166,10 +166,6 @@ class opf_f {
         linkedItems[] += {"Binocular"};
     };
 
-    class O_Soldier_A_F: O_Soldier_AAR_F {// AAR
-
-    };
-
     class O_Soldier_LAT_F: O_Soldier_F {// RAT
         weapons[] = {EAST_CARBINE};
         magazines[] = {EAST_CARBINE_MAG,EAST_AT_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
@@ -180,13 +176,13 @@ class opf_f {
 // ====================================================================================
 // Support Infantry
 
-    class O_support_MG_F: O_Soldier_F {// MMG
+    class O_HeavyGunner_F: O_Soldier_F {// MMG
         weapons[] = {EAST_MMG};
         magazines[] = {EAST_MMG_MAG,EAST_PISTOL_MAG,EAST_GRENADE,EAST_SMOKE_WHITE};
         handguns[] = {EAST_PISTOL}; /// randomized
     };
 
-    class O_support_AMG_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
+    class O_Soldier_A_F: O_Soldier_F {// MMG Spotter/Ammo Bearer
         backpackItems[] += {EAST_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};
         items[] += {"ACRE_PRC148"};
