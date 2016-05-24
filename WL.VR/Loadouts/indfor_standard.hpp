@@ -173,7 +173,7 @@ class ind_f {
 // ====================================================================================
 // Support Infantry
 
-    class I_HeavyGunner_F: I_Soldier_F {// MMG
+    class I_support_GMG_F: I_Soldier_F {// MMG
         weapons[] = {IND_MMG};
         backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,IND_GRENADE,IND_SMOKE_WHITE};
