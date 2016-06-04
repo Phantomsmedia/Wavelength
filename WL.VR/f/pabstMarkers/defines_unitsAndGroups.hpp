@@ -24,7 +24,7 @@
     ["UnitIND_CSL_M","CM"], \
     ["UnitIND_DSL_M","DM"], \
     ["UnitIND_ESL_M","EM"], \
-    ["UnitIND_FSL_M","FM"], \
+    ["UnitIND_FSL_M","FM"] \
     ]
     
 #define WEST_GROUPS [ \
@@ -151,7 +151,8 @@
     ["UnitNATO_FW6", "NATO FW6 -"], \
     ["UnitNATO_FW7", "NATO FW7 -"], \
     ["UnitNATO_FW8", "NATO FW8 -"] \
-    ]\
+    ]
+	
     // ====================================================================================
 
 // GROUP IDs: OPFOR > OPFOR
@@ -280,7 +281,7 @@
     ["UnitOPFOR_FW6", "OPFOR FW6 -"], \
     ["UnitOPFOR_FW7", "OPFOR FW7 -"], \
     ["UnitOPFOR_FW8", "OPFOR FW8 -"] \
-    ]\
+    ]
 
 #define INDP_GROUPS [ \
     ["UnitIND_COY", "IND COY -"], \
@@ -406,4 +407,4 @@
     ["UnitIND_FW6", "IND FW6 -"], \
     ["UnitIND_FW7", "IND FW7 -"], \
     ["UnitIND_FW8", "IND FW8 -"] \
-    ]\
+    ]
