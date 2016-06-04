@@ -1,6 +1,6 @@
 // data values
 private _gray	= [0.8, 0.8, 0.8, 1];
-private _purple = [0.678, 0, 0.678, 1];
+private _purple = [0.678, 0, 0.678, 1];	//#AE00AE
 private _red	= [1, 0, 0, 1];			//#FF0000
 private _green	= [0, 1, 0, 1];			//#00FF00
 private _blue	= [0, 0.69, 0.921, 1];	//#00B1EC
