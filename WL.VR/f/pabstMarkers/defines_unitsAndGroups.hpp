@@ -143,13 +143,13 @@
     ["UnitNATO_AH6", "NATO AH6 -"], \
     ["UnitNATO_AH7", "NATO AH7 -"], \
     ["UnitNATO_AH8", "NATO AH8 -"], \
-    ["UnitNATO_FW1", "NATO FW1 -"] \
-    ["UnitNATO_FW2", "NATO FW2 -"] \
-    ["UnitNATO_FW3", "NATO FW3 -"] \
-    ["UnitNATO_FW4", "NATO FW4 -"] \
-    ["UnitNATO_FW5", "NATO FW5 -"] \
-    ["UnitNATO_FW6", "NATO FW6 -"] \
-    ["UnitNATO_FW7", "NATO FW7 -"] \
+    ["UnitNATO_FW1", "NATO FW1 -"], \
+    ["UnitNATO_FW2", "NATO FW2 -"], \
+    ["UnitNATO_FW3", "NATO FW3 -"], \
+    ["UnitNATO_FW4", "NATO FW4 -"], \
+    ["UnitNATO_FW5", "NATO FW5 -"], \
+    ["UnitNATO_FW6", "NATO FW6 -"], \
+    ["UnitNATO_FW7", "NATO FW7 -"], \
     ["UnitNATO_FW8", "NATO FW8 -"] \
     ]\
     // ====================================================================================
@@ -272,13 +272,13 @@
     ["UnitOPFOR_AH6", "OPFOR AH6 -"], \
     ["UnitOPFOR_AH7", "OPFOR AH7 -"], \
     ["UnitOPFOR_AH8", "OPFOR AH8 -"], \
-    ["UnitOPFOR_FW1", "OPFOR FW1 -"] \
-    ["UnitOPFOR_FW2", "OPFOR FW2 -"] \
-    ["UnitOPFOR_FW3", "OPFOR FW3 -"] \
-    ["UnitOPFOR_FW4", "OPFOR FW4 -"] \
-    ["UnitOPFOR_FW5", "OPFOR FW5 -"] \
-    ["UnitOPFOR_FW6", "OPFOR FW6 -"] \
-    ["UnitOPFOR_FW7", "OPFOR FW7 -"] \
+    ["UnitOPFOR_FW1", "OPFOR FW1 -"], \
+    ["UnitOPFOR_FW2", "OPFOR FW2 -"], \
+    ["UnitOPFOR_FW3", "OPFOR FW3 -"], \
+    ["UnitOPFOR_FW4", "OPFOR FW4 -"], \
+    ["UnitOPFOR_FW5", "OPFOR FW5 -"], \
+    ["UnitOPFOR_FW6", "OPFOR FW6 -"], \
+    ["UnitOPFOR_FW7", "OPFOR FW7 -"], \
     ["UnitOPFOR_FW8", "OPFOR FW8 -"] \
     ]\
 
@@ -398,12 +398,12 @@
     ["UnitIND_AH6", "IND AH6 -"], \
     ["UnitIND_AH7", "IND AH7 -"], \
     ["UnitIND_AH8", "IND AH8 -"], \
-    ["UnitIND_FW1", "IND FW1 -"] \
-    ["UnitIND_FW2", "IND FW2 -"] \
-    ["UnitIND_FW3", "IND FW3 -"] \
-    ["UnitIND_FW4", "IND FW4 -"] \
-    ["UnitIND_FW5", "IND FW5 -"] \
-    ["UnitIND_FW6", "IND FW6 -"] \
-    ["UnitIND_FW7", "IND FW7 -"] \
+    ["UnitIND_FW1", "IND FW1 -"], \
+    ["UnitIND_FW2", "IND FW2 -"], \
+    ["UnitIND_FW3", "IND FW3 -"], \
+    ["UnitIND_FW4", "IND FW4 -"], \
+    ["UnitIND_FW5", "IND FW5 -"], \
+    ["UnitIND_FW6", "IND FW6 -"], \
+    ["UnitIND_FW7", "IND FW7 -"], \
     ["UnitIND_FW8", "IND FW8 -"] \
     ]\
