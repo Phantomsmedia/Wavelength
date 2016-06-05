@@ -261,7 +261,7 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_A1_AT";
+					text="UnitNATO_A1_AT1";
 					description="BLUFOR Alpha 1 Rifleman (AT)";
 				};
 				class Item3
@@ -343,7 +343,7 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_A2_AT";
+					text="UnitNATO_A2_AT1";
 					description="BLUFOR Alpha 2 Rifleman (AT)";
 				};
 				class Item3
@@ -460,7 +460,7 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_B1_AT";
+					text="UnitNATO_B1_AT1";
 					description="BLUFOR Bravo 1 Rifleman (AT)";
 				};
 				class Item3
@@ -542,7 +542,7 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_B2_AT";
+					text="UnitNATO_B2_AT1";
 					description="BLUFOR Bravo 2 Rifleman (AT)";
 				};
 				class Item3
@@ -659,7 +659,7 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_C1_AT";
+					text="UnitNATO_C1_AT1";
 					description="BLUFOR Charlie 1 Rifleman (AT)";
 				};
 				class Item3
@@ -741,7 +741,7 @@ class Mission
 					vehicle="B_soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitNATO_C2_AT";
+					text="UnitNATO_C2_AT1";
 					description="BLUFOR Charlie 2 Rifleman (AT)";
 				};
 				class Item3
@@ -946,7 +946,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitOPFOR_A1_AT";
+					text="UnitOPFOR_A1_AT1";
 					description="OPFOR Alpha 1 Rifleman (AT)";
 				};
 				class Item3
@@ -1036,7 +1036,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitOPFOR_A2_AT";
+					text="UnitOPFOR_A2_AT1";
 					description="OPFOR Alpha 2 Rifleman (AT)";
 				};
 				class Item3
@@ -1163,7 +1163,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitOPFOR_B1_AT";
+					text="UnitOPFOR_B1_AT1";
 					description="OPFOR Bravo 1 Rifleman (AT)";
 				};
 				class Item3
@@ -1253,7 +1253,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitOPFOR_B2_AT";
+					text="UnitOPFOR_B2_AT1";
 					description="OPFOR Bravo 2 Rifleman (AT)";
 				};
 				class Item3
@@ -1380,7 +1380,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitOPFOR_C1_AT";
+					text="UnitOPFOR_C1_AT1";
 					description="OPFOR Charlie 1 Rifleman (AT)";
 				};
 				class Item3
@@ -1470,7 +1470,7 @@ class Mission
 					player="PLAY CDG";
 					lock="UNLOCKED";
 					skill=0.60000002;
-					text="UnitOPFOR_C2_AT";
+					text="UnitOPFOR_C2_AT1";
 					description="OPFOR Charlie 2 Rifleman (AT)";
 				};
 				class Item3
@@ -1782,7 +1782,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitIND_A1_AT";
+					text="UnitIND_A1_AT1";
 					description="INDFOR Alpha 1 Rifleman (AT)";
 				};
 				class Item3
@@ -1861,7 +1861,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitIND_A2_AT";
+					text="UnitIND_A2_AT1";
 					description="INDFOR Alpha 2 Rifleman (AT)";
 				};
 				class Item3
@@ -1973,7 +1973,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitIND_B1_AT";
+					text="UnitIND_B1_AT1";
 					description="INDFOR Bravo 1 Rifleman (AT)";
 				};
 				class Item3
@@ -2055,7 +2055,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitIND_B2_AT";
+					text="UnitIND_B2_AT1";
 					description="INDFOR Bravo 2 Rifleman (AT)";
 				};
 				class Item3
@@ -2169,7 +2169,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitIND_C1_AT";
+					text="UnitIND_C1_AT1";
 					description="INDFOR Charlie 1 Rifleman (AT)";
 				};
 				class Item3
@@ -2251,7 +2251,7 @@ class Mission
 					vehicle="I_Soldier_LAT_F";
 					player="PLAY CDG";
 					skill=0.60000002;
-					text="UnitIND_C2_AT";
+					text="UnitIND_C2_AT1";
 					description="INDFOR Charlie 2 Rifleman (AT)";
 				};
 				class Item3
