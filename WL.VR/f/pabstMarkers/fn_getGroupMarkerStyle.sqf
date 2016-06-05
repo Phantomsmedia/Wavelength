@@ -1,11 +1,11 @@
 // data values
 private _gray	= [0.8, 0.8, 0.8, 1];
-private _purple = [0.678, 0, 0.678, 1];
-private _red	= [1, 0, 0, 1];
-private _green	= [0, 1, 0, 1];
-private _blue	= [0, 0.69, 0.921, 1];
-private _yellow = [1, 1, 0, 1];
-private _orange = [1, 0.647, 0, 1];
+private _purple = [0.678, 0, 0.678, 1];	//#AE00AE
+private _red	= [1, 0, 0, 1];			//#FF0000
+private _green	= [0, 1, 0, 1];			//#00FF00
+private _blue	= [0, 0.69, 0.921, 1];	//#00B1EC
+private _yellow = [1, 1, 0, 1];			//#FFFF00
+private _orange = [1, 0.647, 0, 1];		//#ffa600
 private _black	= [0, 0, 0, 1];
 private _pink	= [1, 0.753, 0.796, 1];
 private _white	= [1, 1, 1, 1];

@@ -162,10 +162,6 @@ class ind_f {
         linkeditems[] += {"Binocular"};
     };
 
-    class I_Soldier_A_F: I_Soldier_AAR_F {// AAR
-
-    };
-
     class I_Soldier_LAT_F: I_Soldier_F {// RAT
         weapons[] = {IND_CARBINE};
         backpack[] = {}; /// randomized
@@ -177,14 +173,14 @@ class ind_f {
 // ====================================================================================
 // Support Infantry
 
-    class I_support_MG_F: I_Soldier_F {// MMG
+    class I_support_GMG_F: I_Soldier_F {// MMG
         weapons[] = {IND_MMG};
         backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         magazines[] = {IND_MMG_MAG,IND_PISTOL_MAG,IND_GRENADE,IND_SMOKE_WHITE};
         handguns[] = {IND_PISTOL}; /// randomized
     };
 
-    class I_support_AMG_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
+    class I_Soldier_A_F: I_Soldier_F {// MMG Spotter/Ammo Bearer
         backpack[] = {"B_AssaultPack_rgr"}; /// randomized
         backpackItems[] += {IND_MMG_MAG};
         linkedItems[] += {"ACE_Vector"};

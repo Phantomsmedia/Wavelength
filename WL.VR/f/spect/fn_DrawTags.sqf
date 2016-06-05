@@ -13,18 +13,17 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
     private _distToCam = (call f_cam_GetCurrentCam) distance _groupLeader;
     if (isPlayer _groupLeader) then {_isPlayerGroup = true};
     if (_distToCam < 200) then {
-      {_drawUnits pushBack _x; nil} count _x
-    }
-    else {
+      {_drawUnits pushBack _x; nil} count (units _x);
+    } else {
       _drawGroup = true;
     };
   };
 
 
   private _color = switch (side _x) do {
-      case blufor: {f_cam_blufor_color};
-      case opfor: {f_cam_opfor_color};
-      case independent: {f_cam_indep_color};
+      case west: {f_cam_blufor_color};
+      case east: {f_cam_opfor_color};
+      case resistance: {f_cam_indep_color};
       case civilian: {f_cam_civ_color};
       default {f_cam_empty_color};
   };
@@ -57,7 +56,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
         private _name = "";
         private _cachedIcon = _x getVariable ["f_cam_cached_icon", objNull];
 
-        if (isNull _cachedIcon) then {
+        if (_cachedIcon isEqualTo objNull) then {
           _cachedIcon = gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "icon");
           _x setVariable ["f_cam_cached_icon", _cachedIcon];
         };
@@ -70,7 +69,7 @@ if (!f_cam_toggleTags || f_cam_mapMode == 2) exitWith{};
         }
         else {
           _name = _x getVariable ["f_cam_cached_name", objNull];
-          if (isNull _name) {
+          if (_name isEqualTo objNull) then {
             _name = format ["AI - %1", gettext (configfile >> "CfgVehicles" >> typeOf (vehicle _x) >> "displayName")];
             _x setVariable ["f_cam_cached_name", _name];
           };
