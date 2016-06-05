@@ -9,7 +9,7 @@ _cre = player createDiaryRecord ["diary", ["Credits","
 <br/>
 *** Insert mission credits here. ***
 <br/><br/>
-Made with Wavelength.
+Made with Athena Wavelength.
 "]];
 
 // ====================================================================================
